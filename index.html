@@ -560,6 +560,57 @@
       font-family: monospace;
     }
 
+    /* ── MOBILE ──────────────────────────────────── */
+    @media (max-width: 620px) {
+      body { padding: 1.2rem 1rem; }
+
+      .header h1 { font-size: 1.7rem; }
+      .header p  { font-size: 0.78rem; }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+        margin-bottom: 0.8rem;
+      }
+      .card { padding: 0.9rem 1rem; }
+      .card .value { font-size: 1.5rem; }
+
+      .progress-card { padding: 1rem 1.1rem; }
+
+      .legend-card {
+        gap: 0.4rem 0.8rem;
+        padding: 0.8rem 1rem;
+        margin-bottom: 0.8rem;
+      }
+      .legend-item { font-size: 0.72rem; }
+
+      .weeks-card { padding: 1rem; }
+      .weeks-grid {
+        grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+        gap: 0.35rem;
+      }
+      .week-box .wnum  { font-size: 0.72rem; }
+      .week-box .wdate { font-size: 0.58rem; }
+
+      .detail-panel { padding: 1rem; }
+      .detail-panel-header h3 { font-size: 1rem; }
+
+      .kennzahlen-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+      }
+      .kz-item { padding: 0.7rem 0.8rem; }
+      .kz-value { font-size: 1.1rem; }
+
+      .tracking-section { grid-template-columns: 1fr; }
+      .tracking-block   { padding: 0.8rem; }
+
+      .notion-row { flex-wrap: wrap; }
+      .notion-rg  { width: 100%; padding-left: 1.5rem; margin-top: 0.1rem; }
+
+      .kb-hint { display: none; }
+    }
+
     /* ── FOOTER ───────────────────────────────────── */
     .footer {
       text-align: center;
