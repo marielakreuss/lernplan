@@ -1,0 +1,6 @@
+sync-notion.py
+Notion Sync.command
+.DS_Store
+*.pyc
+__pycache__/
+LERNPLAN.html

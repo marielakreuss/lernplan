@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staatsexamen 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F6F3EE;
+      --surface: #FDFCFA;
+      --border: #E8E3DA;
+      --text: #2C2416;
+      --text-muted: #9A9080;
+      --text-sub: #C4BAA8;
+      --accent: #7B5E3A;
+
+      /* Phase palette – softer, warmer, refined */
+      --rep-bg: #F0EDE8;        --rep-border: #D8D2C8;   --rep-text: #6A6258;
+      --urlaub-bg: #D6EAD8;     --urlaub-border: #8EC494; --urlaub-text: #1F5232;
+      --fokus-bg: #E8D3DC;      --fokus-border: #C49BAB; --fokus-text: #6D1F42;
+      --peru-bg: #FAF0D0;       --peru-border: #E8CE7A;  --peru-text: #8A6610;
+      --postrep-bg: #EAE0F0;    --postrep-border: #C0A8D0; --postrep-text: #5C3D78;
+      --probe-bg: #FDDDD0;      --probe-border: #F0A888; --probe-text: #C04820;
+      --wieder-bg: #EEECC8;     --wieder-border: #C8C464; --wieder-text: #5A5610;
+      --examen-bg: #FFD8EC;     --examen-border: #FF8EC0; --examen-text: #A01858;
+
+      --past-bg: #EBF0E8; --past-border: #A8C8A0; --past-text: #2A5C28;
+      --future-bg: #F0EDE8; --future-border: #D8D2C8; --future-text: #ACA49A;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2.5rem 3rem;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ───────────────────────────────────── */
+    .header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .header h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .header h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .header p {
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .header-line {
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+      margin: 0.9rem auto 0;
+      border-radius: 2px;
+      opacity: 0.5;
+    }
+
+    /* ── STATS GRID ───────────────────────────────── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 1.2rem 1.4rem;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      opacity: 0.4;
+    }
+    .card .label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-sub);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .card .value {
+      font-family: 'Lora', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--text);
+    }
+    .card .sub { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.35rem; }
+
+    /* ── PROGRESS CARD ────────────────────────────── */
+    .progress-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 1.3rem 1.5rem;
+      border: 1px solid var(--border);
+      margin-bottom: 1.2rem;
+    }
+    .progress-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.8rem;
+    }
+    .progress-top .title {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .progress-top .pct {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .bar-bg {
+      background: var(--border);
+      border-radius: 999px;
+      height: 8px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #7B5E3A 0%, #C49A72 100%);
+      transition: width 0.8s cubic-bezier(.4,0,.2,1);
+    }
+    .progress-dates {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      font-size: 0.72rem;
+      color: var(--text-sub);
+    }
+
+    /* ── LEGEND ───────────────────────────────────── */
+    .legend-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      border: 1px solid var(--border);
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.2rem;
+      align-items: center;
+    }
+    .legend-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-sub);
+      font-weight: 500;
+      margin-right: 0.3rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .legend-dot {
+      width: 10px; height: 10px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ── WEEKS CARD ───────────────────────────────── */
+    .weeks-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 1.4rem 1.5rem;
+      border: 1px solid var(--border);
+      margin-bottom: 1.2rem;
+    }
+    .weeks-header {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    .weeks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .week-box {
+      aspect-ratio: 1;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.12s, box-shadow 0.15s;
+      border: 1.5px solid transparent;
+      user-select: none;
+      background: var(--future-bg);
+      border-color: var(--future-border);
+      color: var(--future-text);
+    }
+    .week-box .wnum { font-size: 0.78rem; font-weight: 600; }
+    .week-box .wdate { font-size: 0.62rem; opacity: 0.75; margin-top: 0.1rem; }
+    .week-box:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+    .week-box.selected { outline: 2.5px solid var(--accent); outline-offset: 1px; }
+
+    .week-box.past   { background: var(--past-bg); border-color: var(--past-border); color: var(--past-text); }
+    .week-box.current {
+      background: var(--past-bg);
+      border-color: var(--past-border);
+      color: var(--past-text);
+      box-shadow: 0 0 0 2.5px var(--accent);
+    }
+
+    /* Phase-specific — override past/current/future only if phase is set */
+    .week-box.phase-rep        { background: var(--rep-bg);    border-color: var(--rep-border);    color: var(--rep-text); }
+    .week-box.phase-urlaub     { background: var(--urlaub-bg); border-color: var(--urlaub-border); color: var(--urlaub-text); }
+    .week-box.phase-fokus      { background: var(--fokus-bg);  border-color: var(--fokus-border);  color: var(--fokus-text); }
+    .week-box.phase-peru       { background: var(--peru-bg);   border-color: var(--peru-border);   color: var(--peru-text); }
+    .week-box.phase-postrep    { background: var(--postrep-bg);border-color: var(--postrep-border);color: var(--postrep-text); }
+    .week-box.phase-probe      { background: var(--probe-bg);  border-color: var(--probe-border);  color: var(--probe-text); }
+    .week-box.phase-wieder     { background: var(--wieder-bg); border-color: var(--wieder-border); color: var(--wieder-text); }
+    .week-box.phase-examen     { background: var(--examen-bg); border-color: var(--examen-border); color: var(--examen-text); font-weight: 700; }
+
+    .week-box.current.phase-rep     { box-shadow: 0 0 0 2.5px var(--rep-text); }
+    .week-box.current.phase-urlaub  { box-shadow: 0 0 0 2.5px var(--urlaub-text); }
+    .week-box.current.phase-fokus   { box-shadow: 0 0 0 2.5px var(--fokus-text); }
+    .week-box.current.phase-peru    { box-shadow: 0 0 0 2.5px var(--peru-text); }
+    .week-box.current.phase-postrep { box-shadow: 0 0 0 2.5px var(--postrep-text); }
+    .week-box.current.phase-probe   { box-shadow: 0 0 0 2.5px var(--probe-text); }
+    .week-box.current.phase-wieder  { box-shadow: 0 0 0 2.5px var(--wieder-text); }
+    .week-box.current.phase-examen  { box-shadow: 0 0 0 2.5px var(--examen-text); }
+
+    /* ── DETAIL PANEL ─────────────────────────────── */
+    .detail-panel {
+      margin-top: 1.2rem;
+      padding: 1.2rem 1.4rem;
+      border-radius: 12px;
+      border: 1.5px solid transparent;
+      display: none;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .detail-panel.show { display: block; }
+
+    /* Phase-colored panels — bg slightly lighter than week box */
+    .detail-panel.dp-rep     { background: color-mix(in srgb, var(--rep-bg) 60%, white);    border-color: var(--rep-border); }
+    .detail-panel.dp-urlaub  { background: color-mix(in srgb, var(--urlaub-bg) 60%, white); border-color: var(--urlaub-border); }
+    .detail-panel.dp-fokus   { background: color-mix(in srgb, var(--fokus-bg) 60%, white);  border-color: var(--fokus-border); }
+    .detail-panel.dp-peru    { background: color-mix(in srgb, var(--peru-bg) 60%, white);   border-color: var(--peru-border); }
+    .detail-panel.dp-postrep { background: color-mix(in srgb, var(--postrep-bg) 60%, white);border-color: var(--postrep-border); }
+    .detail-panel.dp-probe   { background: color-mix(in srgb, var(--probe-bg) 60%, white);  border-color: var(--probe-border); }
+    .detail-panel.dp-wieder  { background: color-mix(in srgb, var(--wieder-bg) 60%, white); border-color: var(--wieder-border); }
+    .detail-panel.dp-examen  { background: color-mix(in srgb, var(--examen-bg) 60%, white); border-color: var(--examen-border); }
+    .detail-panel.dp-past    { background: color-mix(in srgb, var(--past-bg) 60%, white);   border-color: var(--past-border); }
+    .detail-panel.dp-future  { background: var(--bg); border-color: var(--border); }
+
+    .detail-panel-header { margin-bottom: 1rem; }
+    .detail-panel-header h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .detail-panel-header .cases-goal {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.2rem;
+    }
+    .detail-panel-header .date-range {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    /* ── KENNZAHLEN 3-column ─────────────────────── */
+    .kennzahlen-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    .kz-item {
+      background: rgba(255,255,255,0.65);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .kz-icon { font-size: 1rem; margin-bottom: 0.1rem; }
+    .kz-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .kz-value {
+      font-family: 'Lora', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .kz-value.live {
+      color: var(--accent);
+    }
+    .kz-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+    .kz-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-sub);
+      margin-top: 0.2rem;
+    }
+    .kz-live-badge::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: #4CAF50;
+      animation: pulse 1.8s infinite;
+      flex-shrink: 0;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ── TRACKING SECTION ────────────────────────── */
+    .tracking-section {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+    .tracking-block {
+      background: rgba(255,255,255,0.65);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(0,0,0,0.07);
+    }
+    .tracking-block h5 {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+
+    /* Cases checklist */
+    .case-input-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+    .case-input-row input[type="text"] {
+      flex: 1;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.35rem 0.6rem;
+      font-size: 0.8rem;
+      font-family: 'DM Sans', sans-serif;
+      background: white;
+      color: var(--text);
+      outline: none;
+    }
+    .case-input-row input[type="text"]:focus { border-color: var(--accent); }
+    .btn-add {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: opacity 0.15s;
+    }
+    .btn-add:hover { opacity: 0.85; }
+
+    .case-list { list-style: none; }
+    .case-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0;
+      font-size: 0.82rem;
+      color: var(--text);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .case-list li:last-child { border-bottom: none; }
+    .case-list li input[type="checkbox"] { accent-color: var(--accent); cursor: pointer; }
+    .case-list li.done span { text-decoration: line-through; color: var(--text-muted); }
+    .case-list li .del-btn {
+      margin-left: auto;
+      background: none; border: none;
+      color: var(--text-sub); cursor: pointer;
+      font-size: 0.9rem; line-height: 1;
+      padding: 0 0.2rem;
+    }
+    .case-list li .del-btn:hover { color: #c0392b; }
+
+    /* ── AUFGABEN ─────────────────────────────────── */
+    .aufgaben-section { margin-top: 1rem; }
+    .aufgaben-section h4 {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .aufgaben-section ul { list-style: none; }
+    .aufgaben-section ul li {
+      padding: 0.35rem 0;
+      font-size: 0.84rem;
+      color: #444;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      line-height: 1.45;
+    }
+    .aufgaben-section ul li:last-child { border-bottom: none; }
+    .aufgaben-section ul li .li-icon { flex-shrink: 0; font-size: 0.85rem; margin-top: 0.05rem; }
+    .aufgaben-section ul li.important { color: #8B3520; }
+    .aufgaben-section ul li.success { color: #2A6030; }
+
+    /* ── NOTES TEXTAREA ────────────────────────── */
+    .notes-textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 0.7rem;
+      font-size: 0.82rem;
+      font-family: 'DM Sans', sans-serif;
+      background: white;
+      color: var(--text);
+      resize: vertical;
+      min-height: 60px;
+      outline: none;
+      line-height: 1.5;
+    }
+    .notes-textarea:focus { border-color: var(--accent); }
+
+    /* ── NOTION STRIP ───────────────────────────── */
+    .notion-strip {
+      margin-top: 0.8rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255,255,255,0.55);
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .notion-strip h5 {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .notion-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.22rem 0;
+      font-size: 0.8rem;
+      color: var(--text);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .notion-row:last-child { border-bottom: none; }
+    .notion-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .notion-dot.done     { background: #4CAF50; }
+    .notion-dot.progress { background: #2196F3; }
+    .notion-dot.open     { background: var(--border); border: 1px solid var(--text-sub); }
+    .notion-sync-note {
+      font-size: 0.64rem;
+      color: var(--text-sub);
+      margin-top: 0.4rem;
+      text-align: right;
+    }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.63rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: 0.02em;
+    }
+    .status-badge.done     { background: #E8F5E9; color: #2A6030; }
+    .status-badge.progress { background: #E3F2FD; color: #1A4A80; }
+    .status-badge.open     { background: var(--border); color: var(--text-muted); }
+    .notion-case-title { flex: 1; font-size: 0.82rem; }
+    .notion-rg { font-size: 0.7rem; color: var(--text-muted); flex-shrink: 0; }
+    .notion-sync-time { font-size: 0.61rem; color: var(--text-sub); font-weight: 400; margin-left: 0.5rem; text-transform: none; letter-spacing: 0; }
+    .notion-empty-hint { font-size: 0.79rem; color: var(--text-muted); padding: 0.3rem 0; }
+    .kb-hint {
+      font-size: 0.62rem;
+      color: var(--text-sub);
+      text-align: right;
+      margin-top: 0.5rem;
+      letter-spacing: 0.03em;
+    }
+    .kb-hint kbd {
+      display: inline-block;
+      background: var(--border);
+      border-radius: 3px;
+      padding: 0.05rem 0.3rem;
+      font-size: 0.64rem;
+      font-family: monospace;
+    }
+
+    /* ── FOOTER ───────────────────────────────────── */
+    .footer {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      margin-top: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Staatsexamen <em>2027</em></h1>
+    <p>Erstes Juristisches Staatsexamen · Bayern</p>
+    <div class="header-line"></div>
+  </header>
+
+  <div class="stats-grid">
+    <div class="card">
+      <div class="label">Tage bis zum Examen</div>
+      <div class="value" id="days-left">—</div>
+    </div>
+    <div class="card">
+      <div class="label">Aktuelle Woche</div>
+      <div class="value" id="current-week">—</div>
+      <div class="sub" id="week-range">—</div>
+    </div>
+    <div class="card">
+      <div class="label">Fälle erledigt</div>
+      <div class="value" id="faelle-count">78</div>
+      <div class="sub" id="faelle-sub">von 255 gesamt</div>
+    </div>
+    <div class="card">
+      <div class="label">Wochen verbleibend</div>
+      <div class="value" id="weeks-rem">—</div>
+      <div class="sub" id="weeks-total-sub">von — gesamt</div>
+    </div>
+    <div class="card">
+      <div class="label">Klausuren abgegeben</div>
+      <div class="value" id="klk-count">—</div>
+      <div class="sub" id="klk-sub">von — gesamt</div>
+    </div>
+    <div class="card">
+      <div class="label">Gesamtfortschritt</div>
+      <div class="value" id="pct-card">—%</div>
+    </div>
+  </div>
+
+  <div class="progress-card">
+    <div class="progress-top">
+      <span class="title">Zeitfortschritt Lernplan</span>
+      <span class="pct" id="pct-bar">—%</span>
+    </div>
+    <div class="bar-bg">
+      <div class="bar-fill" id="bar-fill" style="width:0%"></div>
+    </div>
+    <div class="progress-dates">
+      <span>1. Oktober 2025</span>
+      <span>3. März 2027</span>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend-card">
+    <span class="legend-label">Phasen:</span>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--future-bg);border:1.5px solid var(--future-border)"></div> Rep / Ausstehend</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--fokus-bg);border:1.5px solid var(--fokus-border)"></div> Fokus</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--urlaub-bg);border:1.5px solid var(--urlaub-border)"></div> Urlaub</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--peru-bg);border:1.5px solid var(--peru-border)"></div> Peru</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--postrep-bg);border:1.5px solid var(--postrep-border)"></div> Post-Rep</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--probe-bg);border:1.5px solid var(--probe-border)"></div> Probeexamen</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--wieder-bg);border:1.5px solid var(--wieder-border)"></div> Wiederholung</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--examen-bg);border:1.5px solid var(--examen-border)"></div> Examen</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--past-bg);border:1.5px solid var(--past-border)"></div> Erledigt</div>
+  </div>
+
+  <div class="weeks-card">
+    <div class="weeks-header">Alle Wochen · Klick für Details &amp; Tracking</div>
+    <div class="weeks-grid" id="weeks-grid"></div>
+
+    <div class="detail-panel" id="detail-panel">
+      <div class="detail-panel-header">
+        <h3 id="detail-title">—</h3>
+        <div class="cases-goal" id="detail-cases-goal"></div>
+        <p class="date-range" id="detail-date-range">—</p>
+      </div>
+
+      <!-- KENNZAHLEN – always 3 columns: Fälle / Klausuren / Karteikarten -->
+      <div class="kennzahlen-row" id="kz-row">
+        <div class="kz-item">
+          <div class="kz-label">Fälle / Woche</div>
+          <div class="kz-value" id="kz-faelle">—</div>
+          <div class="kz-sub" id="kz-faelle-sub"></div>
+        </div>
+        <div class="kz-item">
+          <div class="kz-label">Klausuren / Woche</div>
+          <div class="kz-value" id="kz-klausuren">—</div>
+          <div class="kz-sub" id="kz-klausuren-sub"></div>
+        </div>
+        <div class="kz-item">
+          <div class="kz-label">Karteikarten heute</div>
+          <div class="kz-value live" id="kz-karten">—</div>
+          <div class="kz-live-badge" id="kz-karten-badge">Live aus Tracking</div>
+          <div class="kz-sub" id="kz-karten-sub"></div>
+        </div>
+      </div>
+
+      <div id="detail-content-area"></div>
+
+      <!-- TRACKING: Fälle + Klausuren + Notizen -->
+      <div class="tracking-section" id="tracking-section">
+        <div class="tracking-block">
+          <h5>Fälle diese Woche <span id="notion-sync-time"></span></h5>
+          <div id="notion-faelle-list"><p class="notion-empty-hint">…</p></div>
+          <!-- versteckt: localStorage-Daten bleiben erhalten -->
+          <div style="display:none">
+            <input type="text" id="case-input" />
+            <ul id="case-list"></ul>
+          </div>
+        </div>
+        <div class="tracking-block">
+          <h5>Klausuren diese Woche</h5>
+          <div class="case-input-row">
+            <input type="text" id="klausur-input" placeholder="Klausur hinzufügen…" />
+            <button class="btn-add" onclick="addKlausur()">+</button>
+          </div>
+          <ul class="case-list" id="klausur-list"></ul>
+        </div>
+        <div class="tracking-block" style="grid-column: 1 / -1;">
+          <h5>Notizen</h5>
+          <textarea class="notes-textarea" id="notes-textarea" placeholder="Notizen zur Woche…"></textarea>
+        </div>
+      </div>
+
+      <div class="kb-hint">
+        <kbd>←</kbd> <kbd>→</kbd> Woche wechseln &nbsp;·&nbsp; <kbd>H</kbd> Heute &nbsp;·&nbsp; <kbd>Esc</kbd> Schließen
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Lernplan · Examen: 3. März 2027 · Daten lokal gespeichert</p>
+
+  <!-- Notion-Sync: wird von sync-notion.py erzeugt (optional) -->
+  <script src="notion-data.js" onerror="void(0)"></script>
+  <script>
+    // ── CONSTANTS ──────────────────────────────────────
+    const START_DATE_PLAN_CALENDAR = new Date(2025, 9, 1);
+    const EXAM_DATE   = new Date(2027, 2, 3);
+    const TODAY       = new Date();
+    const DAY  = 86400000;
+    const WEEK = DAY * 7;
+    const CASES_TOTAL = 255;
+    const INITIAL_CASES_END_W33 = 78;
+
+    const shortFmt = d => d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' });
+    const longFmt  = d => d.toLocaleDateString('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
+    const dayNames = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+
+    // Week start (Monday)
+    const START_MONDAY = new Date(START_DATE_PLAN_CALENDAR);
+    START_MONDAY.setDate(START_DATE_PLAN_CALENDAR.getDate() - (START_DATE_PLAN_CALENDAR.getDay() + 6) % 7);
+    START_MONDAY.setHours(0,0,0,0);
+
+    function getWeekNumber(date) {
+      return Math.floor((date.getTime() - START_MONDAY.getTime()) / WEEK) + 1;
+    }
+
+    // ── HEADER STATS ───────────────────────────────────
+    document.getElementById('days-left').textContent = Math.max(0, Math.ceil((EXAM_DATE - TODAY) / DAY));
+
+    const totalDays   = (EXAM_DATE - START_DATE_PLAN_CALENDAR) / DAY;
+    const elapsedDays = Math.max(0, Math.min(totalDays, (TODAY - START_DATE_PLAN_CALENDAR) / DAY));
+    const pct         = Math.round((elapsedDays / totalDays) * 100);
+
+    document.getElementById('pct-card').textContent = pct + '%';
+    document.getElementById('pct-bar').textContent  = pct + '%';
+    document.getElementById('bar-fill').style.width = pct + '%';
+
+    const totalWeeks   = getWeekNumber(EXAM_DATE);
+    const currentWeekN = getWeekNumber(TODAY);
+    const weeksLeft    = Math.max(0, totalWeeks - currentWeekN);
+
+    document.getElementById('weeks-rem').textContent       = weeksLeft;
+    document.getElementById('weeks-total-sub').textContent = 'von ' + totalWeeks + ' gesamt';
+    document.getElementById('current-week').textContent    = 'W' + currentWeekN;
+
+    const cwStart = new Date(START_MONDAY.getTime() + (currentWeekN - 1) * WEEK);
+    const cwEnd   = new Date(cwStart.getTime() + 6 * DAY);
+    document.getElementById('week-range').textContent = shortFmt(cwStart) + ' – ' + shortFmt(cwEnd);
+
+    // ── PHASE DEFINITIONS ─────────────────────────────
+    // phaseKey maps to CSS class suffix and dp- class
+    const phaseDefinitions = {};
+
+    function mkPhase(key, startDate, endDate, casesPerWeek, phaseKey, title, kennzahlen, aufgaben, cumulativeOverride) {
+      phaseDefinitions[key] = {
+        startWeek: getWeekNumber(startDate),
+        endWeek: getWeekNumber(endDate),
+        casesPerWeek,
+        phaseKey,    // e.g. 'rep', 'urlaub', ...
+        title,
+        kennzahlen,  // { faelle, faelleSub, klausuren, klausurenSub, kartenSub }
+        aufgaben,
+        cumulativeCasesOverride: cumulativeOverride ?? undefined
+      };
+    }
+
+    mkPhase('repPhase1',
+      new Date(2026,4,15), new Date(2026,4,24), 4, 'rep',
+      'Phase 1 – Rep läuft',
+      { faelle: '4', faelleSub: 'Mo+Do+Fr Nachber.', klausuren: '1 / Wo', klausurenSub: 'Sa, noch keine Nachber.', kartenSub: '30–60 min täglich' },
+      ['Schuldrecht AT & BT im Rep nachbereiten (je 1–2 Fälle/Woche)',
+       'Karteikarten täglich 30–60 min (Mo–Sa)',
+       'Klausur Sa schreiben – Nachbereitung noch zurückgestellt']
+    );
+    mkPhase('arbeitsrechtBlock',
+      new Date(2026,4,25), new Date(2026,4,31), 6, 'fokus',
+      'Arbeitsrecht-Block + freie Lernwoche',
+      { faelle: '6', faelleSub: 'inkl. AR-Block', klausuren: '1 Sa', klausurenSub: 'normal weiter', kartenSub: 'konzentriert AR' },
+      ['Arbeitsrecht 4–5 Tage en bloc: Fälle + Karteikarten konzentriert',
+       'Restliche Fälle frei wählen (Schuldrecht AT/BT)']
+    );
+    mkPhase('repPhase2',
+      new Date(2026,5,1), new Date(2026,6,8), 4, 'rep',
+      'Phase 2 – Rep weiterführen',
+      { faelle: '4', faelleSub: 'Rep-Tempo', klausuren: '1 / Wo', klausurenSub: 'Sa schreiben', kartenSub: 'täglich 30–60 min' },
+      ['Schuldrecht BT, Sachenrecht im Rep weiterführen',
+       'Karteikarten täglich – alle Gebiete abdecken',
+       'Klausur Sa schreiben']
+    );
+    mkPhase('urlaub',
+      new Date(2026,6,9), new Date(2026,6,19), 0, 'urlaub',
+      'Urlaub – komplett frei',
+      { faelle: '0', faelleSub: 'Pause', klausuren: '0', klausurenSub: 'Pause', kartenSub: 'nur wenn gewollt' },
+      ['Komplett frei – mentaler Reset vor Rep-Endphase']
+    );
+    mkPhase('repEndPhase',
+      new Date(2026,6,20), new Date(2026,7,19), 4, 'rep',
+      'Phase 3 – Rep-Endphase',
+      { faelle: '4', faelleSub: 'Rep-Tempo halten', klausuren: '1 / Wo', klausurenSub: 'Sa schreiben', kartenSub: 'täglich' },
+      ['Letzte Schuldrecht AT/BT Fälle abschließen',
+       'Wiederholung schwacher Gebiete aus Rep',
+       'Klausuren Sa schreiben – weiterhin keine Nachbereitung'],
+      120
+    );
+    mkPhase('postRepBaurecht',
+      new Date(2026,7,20), new Date(2026,7,26), 8, 'fokus',
+      'Post-Rep-Start + Baurecht-Block',
+      { faelle: '8', faelleSub: 'Post-Rep-Tempo', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'Baurecht intensiv' },
+      ['Baurecht: Intensivblock en bloc erledigen',
+       '8 Fälle/Woche: restliche Gebiete intensivieren',
+       '2 Klausuren/Woche schreiben UND nachbereiten',
+       { text: 'Baurecht direkt nach Rep-Ende priorisieren', type: 'important' }]
+    );
+    mkPhase('postRepNormal1',
+      new Date(2026,7,27), new Date(2026,8,13), 8, 'postrep',
+      'Post-Rep – Normal Lernen',
+      { faelle: '8', faelleSub: 'Post-Rep-Tempo', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'alle Gebiete' },
+      ['8 Fälle/Woche: restliche Gebiete intensivieren',
+       '2 Klausuren/Woche schreiben UND nachbereiten']
+    );
+    mkPhase('probeexamen',
+      new Date(2026,8,7), new Date(2026,8,20), 0, 'probe',
+      'Probeexamen',
+      { faelle: '0', faelleSub: 'keine neuen', klausuren: 'alle', klausurenSub: 'ernst nehmen', kartenSub: 'Routine beibehalten' },
+      ['Alle Probeexamen-Klausuren ernst nehmen und mitschreiben',
+       'Karteikarten-Routine beibehalten',
+       { text: 'Danach Schwachstellen auswerten → Nachbereitung in Peru einplanen', type: 'important' }]
+    );
+    mkPhase('postRepNormal2',
+      new Date(2026,8,21), new Date(2026,9,11), 8, 'postrep',
+      'Post-Rep – Normal Lernen',
+      { faelle: '8', faelleSub: 'Post-Rep-Tempo', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'alle Gebiete' },
+      ['8 Fälle/Woche: restliche Gebiete intensivieren',
+       '2 Klausuren/Woche schreiben UND nachbereiten']
+    );
+    mkPhase('peruFrei',
+      new Date(2026,9,12), new Date(2026,9,18), 0, 'urlaub',
+      'Peru – Woche 1 frei',
+      { faelle: '0', faelleSub: 'wirklich Pause', klausuren: '0', klausurenSub: 'frei', kartenSub: 'nur wenn gewollt' },
+      ['Ankommen, erholen, genießen']
+    );
+    mkPhase('peruLernphase',
+      new Date(2026,9,19), new Date(2026,10,8), 0, 'peru',
+      'Peru – Lernphase',
+      { faelle: '0', faelleSub: 'keine neuen', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: '1,5 h / Tag' },
+      ['Alle bisherigen Klausuren vollständig nachbereiten',
+       'Alle Karteikarten bis dato einmal komplett durchgehen (1,5h/Tag)',
+       '2 neue Klausuren/Woche schreiben + nachbereiten',
+       { text: 'Aufräum-Checkpoint: sauberer Stand für den Endspurt', type: 'success' }]
+    );
+    mkPhase('endspurtPhase5',
+      new Date(2026,10,9), new Date(2026,11,23), 8, 'postrep',
+      'Phase 5 – Endspurt',
+      { faelle: '8–10', faelleSub: 'restliche Fälle fertig', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'erhöhtes Tempo' },
+      ['Alle 255 Fälle bis ca. 20. Januar 2027 abschließen',
+       'Klausurnachbereitung läuft reibungslos',
+       'Karteikarten: erhöhtes Tempo, alle Rechtsgebiete']
+    );
+    mkPhase('weihnachtspause',
+      new Date(2026,11,24), new Date(2027,0,1), 0, 'urlaub',
+      'Weihnachtspause',
+      { faelle: '0', faelleSub: 'Pause', klausuren: '0', klausurenSub: 'Pause', kartenSub: 'nur wenn gewollt' },
+      ['Erholung vor den letzten Wochen – bewusst runterkommen']
+    );
+    mkPhase('januarFaelle',
+      new Date(2027,0,2), new Date(2027,0,20), 8, 'postrep',
+      'Januar – letzte Fälle abschließen',
+      { faelle: '8–10', faelleSub: 'alles fertig bis 20.1.', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'normal weiter' },
+      ['Alle verbleibenden Fälle bis 20. Januar abschließen',
+       'Klausurtraining weiterführen',
+       { text: 'Stichtag 20. Jan: ab hier nur noch Wiederholung – kein Neustoff', type: 'important' }]
+    );
+    mkPhase('wiederholung',
+      new Date(2027,0,20), new Date(2027,2,2), 0, 'wieder',
+      'Letzte 6 Wochen – reine Wiederholung',
+      { faelle: '0', faelleSub: 'kein Neustoff', klausuren: 'tägl.', klausurenSub: 'Prüfungssimulation', kartenSub: '2 h / Tag' },
+      ['Vollständige Wiederholung aller 255 Fälle',
+       'Tägliches Klausurtraining unter Prüfungsbedingungen',
+       'Karteikarten 2h täglich – alle Rechtsgebiete',
+       { text: 'Schlaf, Sport und mentale Stabilität zählen hier genauso', type: 'success' }],
+      255
+    );
+    mkPhase('examen',
+      new Date(2027,2,3), new Date(2027,2,3), 0, 'examen',
+      'Staatsexamen',
+      { faelle: '255', faelleSub: 'alle erledigt ✔', klausuren: '—', klausurenSub: 'Examen!', kartenSub: 'alles drin 🎉' },
+      [{ text: 'Alle Fälle abgearbeitet, Klausurtechnik gefestigt – los geht\'s!', type: 'success' }],
+      255
+    );
+
+    // Build week → phase map
+    const weekDetails = {};
+    for (let w = 1; w <= totalWeeks; w++) {
+      weekDetails[w] = null;
+      for (const key in phaseDefinitions) {
+        const p = phaseDefinitions[key];
+        if (w >= p.startWeek && w <= p.endWeek) { weekDetails[w] = p; break; }
+      }
+    }
+
+    // Cumulative cases
+    const cumulativeCasesPerWeek = {};
+    let cumCases = INITIAL_CASES_END_W33;
+    for (let w = 1; w <= totalWeeks; w++) {
+      const p = weekDetails[w];
+      if (w < 34) {
+        cumulativeCasesPerWeek[w] = INITIAL_CASES_END_W33;
+      } else if (p && typeof p.casesPerWeek !== 'undefined') {
+        cumCases = Math.min(CASES_TOTAL, cumCases + p.casesPerWeek);
+        cumulativeCasesPerWeek[w] = cumCases;
+      } else {
+        cumulativeCasesPerWeek[w] = cumCases;
+      }
+      if (p && typeof p.cumulativeCasesOverride !== 'undefined') {
+        cumulativeCasesPerWeek[w] = p.cumulativeCasesOverride;
+        cumCases = p.cumulativeCasesOverride;
+      }
+    }
+
+    // ── LOCAL STORAGE HELPERS ──────────────────────────
+    function lsKey(weekN, type) { return `stex_w${weekN}_${type}`; }
+
+    function loadCases(weekN) {
+      try { return JSON.parse(localStorage.getItem(lsKey(weekN, 'cases')) || '[]'); }
+      catch { return []; }
+    }
+    function saveCases(weekN, cases) {
+      localStorage.setItem(lsKey(weekN, 'cases'), JSON.stringify(cases));
+    }
+
+    let activeWeekN = null;
+
+    // ── GRID BUILD ─────────────────────────────────────
+    const grid   = document.getElementById('weeks-grid');
+    const panel  = document.getElementById('detail-panel');
+
+    for (let w = 1; w <= totalWeeks; w++) {
+      const ws = new Date(START_MONDAY.getTime() + (w-1) * WEEK);
+
+      const box = document.createElement('div');
+      const detail = weekDetails[w];
+      const phaseKey = detail ? detail.phaseKey : null;
+
+      let statusClass = w < currentWeekN ? 'past' : w === currentWeekN ? 'current' : 'future';
+      let phaseClass  = phaseKey ? 'phase-' + phaseKey : '';
+
+      box.className = 'week-box ' + statusClass + (phaseClass ? ' ' + phaseClass : '');
+      box.innerHTML = `<span class="wnum">W${w}</span><span class="wdate">${shortFmt(ws)}</span>`;
+
+      box.addEventListener('click', () => openPanel(w, box));
+      grid.appendChild(box);
+    }
+
+    // Add the Staatsexamen finale box after W75
+    const examBox = document.createElement('div');
+    examBox.className = 'week-box phase-examen';
+    examBox.style.cssText = 'font-weight:700;';
+    examBox.innerHTML = `<span class="wnum" style="font-size:0.7rem">3.3.</span><span class="wdate" style="font-size:0.68rem;font-weight:700">2027</span>`;
+    examBox.title = 'Staatsexamen – 3. März 2027';
+    examBox.addEventListener('click', () => openExamenPanel(examBox));
+    grid.appendChild(examBox);
+
+    // ── FÄLLE COUNTER (global, alle Wochen) ───────────
+    function countAllDoneCases() {
+      let total = INITIAL_CASES_END_W33;
+      for (let w = 1; w <= totalWeeks; w++) {
+        const cases = loadCases(w);
+        total += cases.filter(c => c.done).length;
+      }
+      return Math.min(total, CASES_TOTAL);
+    }
+
+    function updateFaelleCounter() {
+      let done;
+      if (window.NOTION_DATA) {
+        const hauptkurs = window.NOTION_DATA.cases.filter(c => c.typ === 'Hauptkurs');
+        done = hauptkurs.filter(c => c.status === 'Nachbereitet').length;
+      } else {
+        done = countAllDoneCases();
+      }
+      document.getElementById('faelle-count').textContent = done;
+      document.getElementById('faelle-sub').textContent =
+        'von ' + CASES_TOTAL + ' gesamt · ' + Math.round((done / CASES_TOTAL) * 100) + '%';
+    }
+
+    updateFaelleCounter();
+
+    function updateKlausurenCounter() {
+      if (!window.NOTION_DATA) return;
+      const { klkAbgegeben, klkGesamt } = window.NOTION_DATA.stats;
+      document.getElementById('klk-count').textContent = klkAbgegeben;
+      document.getElementById('klk-sub').textContent   =
+        'von ' + klkGesamt + ' gesamt · ' + Math.round((klkAbgegeben / klkGesamt) * 100) + '%';
+    }
+    updateKlausurenCounter();
+
+    // ── EXAMEN PANEL ───────────────────────────────────
+    function openExamenPanel(box) {
+      if (selectedBox) selectedBox.classList.remove('selected');
+      box.classList.add('selected');
+      selectedBox = box;
+      activeWeekN = null;
+
+      panel.className = 'detail-panel show dp-examen';
+      document.getElementById('detail-title').textContent = 'Staatsexamen – 3. März 2027';
+      document.getElementById('detail-cases-goal').textContent = '255/255 Fälle';
+      document.getElementById('detail-date-range').textContent = 'Mittwoch, 3. März 2027';
+
+      document.getElementById('kz-faelle').textContent     = '255';
+      document.getElementById('kz-faelle-sub').textContent = 'alle erledigt';
+      document.getElementById('kz-klausuren').textContent  = '—';
+      document.getElementById('kz-klausuren-sub').textContent = '';
+      document.getElementById('kz-karten').textContent     = '—';
+      document.getElementById('kz-karten-badge').style.display = 'none';
+      document.getElementById('kz-karten-sub').textContent = '';
+
+      document.getElementById('detail-content-area').innerHTML = `
+        <div class="aufgaben-section" style="text-align:center; padding: 1.2rem 0 0.5rem;">
+          <p style="font-family:'Lora',serif; font-size:1.3rem; font-weight:700; color:var(--examen-text); margin-bottom:0.6rem;">
+            Du hast alles gegeben.
+          </p>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6; max-width:380px; margin:0 auto;">
+            255 Fälle. Unzählige Klausuren. Hunderte Stunden.<br>
+            Heute zeigst du, was du kannst.
+          </p>
+        </div>`;
+
+      document.getElementById('tracking-section').style.display = 'none';
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // ── PANEL OPEN ─────────────────────────────────────
+    let selectedBox = null;
+
+    function openPanel(w, box) {
+      if (selectedBox) selectedBox.classList.remove('selected');
+      box.classList.add('selected');
+      selectedBox = box;
+
+      activeWeekN = w;
+      document.getElementById('tracking-section').style.display = '';
+
+      const ws = new Date(START_MONDAY.getTime() + (w-1) * WEEK);
+      const we = new Date(ws.getTime() + 6 * DAY);
+      const detail = weekDetails[w];
+      const phaseKey = detail ? detail.phaseKey : (w < currentWeekN ? 'past' : 'future');
+
+      panel.className = 'detail-panel show dp-' + phaseKey;
+
+      document.getElementById('detail-title').textContent =
+        detail && detail.title ? detail.title : 'Woche ' + w + ' von ' + totalWeeks;
+      document.getElementById('detail-date-range').textContent = longFmt(ws) + ' – ' + longFmt(we);
+
+      // Richtwert: wie viele Fälle sollte ich am Ende dieser Woche haben?
+      const target = cumulativeCasesPerWeek[w] || 0;
+      document.getElementById('detail-cases-goal').textContent =
+        'Richtwert Ende W' + w + ': ' + target + '/' + CASES_TOTAL + ' Fälle';
+
+      // ── Kennzahlen ──
+      const kz = detail ? detail.kennzahlen : null;
+      document.getElementById('kz-faelle').textContent        = kz ? kz.faelle      : '—';
+      document.getElementById('kz-faelle-sub').textContent    = kz ? kz.faelleSub   : '';
+      document.getElementById('kz-klausuren').textContent     = kz ? kz.klausuren   : '—';
+      document.getElementById('kz-klausuren-sub').textContent = kz ? kz.klausurenSub : '';
+      document.getElementById('kz-karten-sub').textContent    = kz ? kz.kartenSub   : '';
+      document.getElementById('kz-karten').textContent        = '—';
+      document.getElementById('kz-karten-badge').style.display = 'none';
+
+      // ── Aufgaben ──
+      const contentArea = document.getElementById('detail-content-area');
+      if (detail && detail.aufgaben && detail.aufgaben.length > 0) {
+        let html = '<div class="aufgaben-section"><h4>Schwerpunkte &amp; Aufgaben</h4><ul>';
+        detail.aufgaben.forEach(task => {
+          const text = typeof task === 'object' ? task.text : task;
+          const type = typeof task === 'object' ? task.type : '';
+          const icon = type === 'important' ? '!' : type === 'success' ? '✓' : '–';
+          html += `<li class="${type}"><span class="li-icon">${icon}</span><span>${text}</span></li>`;
+        });
+        html += '</ul></div>';
+        contentArea.innerHTML = html;
+      } else if (w < currentWeekN) {
+        contentArea.innerHTML = '<div class="aufgaben-section"><p style="font-size:0.85rem;color:var(--text-muted)">Woche abgeschlossen ✓</p></div>';
+      } else {
+        contentArea.innerHTML = '';
+      }
+
+      renderCases(w);
+      renderKlausuren(w);
+      renderNotes(w);
+      fetchAnkiData();
+      showNotionWeekData(w);
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // ── CASES TRACKING ────────────────────────────────
+    function renderCases(w) {
+      const cases = loadCases(w);
+      const list = document.getElementById('case-list');
+      list.innerHTML = '';
+      cases.forEach((c, i) => {
+        const li = document.createElement('li');
+        li.className = c.done ? 'done' : '';
+        li.innerHTML = `
+          <input type="checkbox" ${c.done ? 'checked' : ''}>
+          <span>${c.text}</span>
+          <button class="del-btn" title="Löschen">×</button>`;
+        li.querySelector('input').addEventListener('change', () => {
+          cases[i].done = !cases[i].done;
+          saveCases(w, cases);
+          renderCases(w);
+          updateFaelleCounter();
+        });
+        li.querySelector('.del-btn').addEventListener('click', () => {
+          cases.splice(i, 1);
+          saveCases(w, cases);
+          renderCases(w);
+          updateFaelleCounter();
+        });
+        list.appendChild(li);
+      });
+    }
+
+    function addCase() {
+      if (activeWeekN === null) return;
+      const inp = document.getElementById('case-input');
+      const text = inp.value.trim();
+      if (!text) return;
+      const cases = loadCases(activeWeekN);
+      cases.push({ text, done: false });
+      saveCases(activeWeekN, cases);
+      inp.value = '';
+      renderCases(activeWeekN);
+    }
+    document.getElementById('case-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') addCase();
+    });
+
+    // ── KLAUSUREN TRACKING ────────────────────────────
+    function loadKlausuren(weekN) {
+      try { return JSON.parse(localStorage.getItem(lsKey(weekN, 'klausuren')) || '[]'); }
+      catch { return []; }
+    }
+    function saveKlausuren(weekN, items) {
+      localStorage.setItem(lsKey(weekN, 'klausuren'), JSON.stringify(items));
+    }
+    function renderKlausuren(w) {
+      const items = loadKlausuren(w);
+      const list  = document.getElementById('klausur-list');
+      list.innerHTML = '';
+      items.forEach((c, i) => {
+        const li = document.createElement('li');
+        li.className = c.done ? 'done' : '';
+        li.innerHTML = `<input type="checkbox" ${c.done ? 'checked' : ''}><span>${c.text}</span><button class="del-btn" title="Löschen">×</button>`;
+        li.querySelector('input').addEventListener('change', () => {
+          items[i].done = !items[i].done;
+          saveKlausuren(w, items);
+          renderKlausuren(w);
+        });
+        li.querySelector('.del-btn').addEventListener('click', () => {
+          items.splice(i, 1);
+          saveKlausuren(w, items);
+          renderKlausuren(w);
+        });
+        list.appendChild(li);
+      });
+    }
+    function addKlausur() {
+      if (activeWeekN === null) return;
+      const inp  = document.getElementById('klausur-input');
+      const text = inp.value.trim();
+      if (!text) return;
+      const items = loadKlausuren(activeWeekN);
+      items.push({ text, done: false });
+      saveKlausuren(activeWeekN, items);
+      inp.value = '';
+      renderKlausuren(activeWeekN);
+    }
+    document.getElementById('klausur-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') addKlausur();
+    });
+
+    // ── NOTES ─────────────────────────────────────────
+    function renderNotes(w) {
+      const ta = document.getElementById('notes-textarea');
+      ta.value  = localStorage.getItem(lsKey(w, 'notes')) || '';
+      ta.oninput = () => {
+        if (activeWeekN !== null)
+          localStorage.setItem(lsKey(activeWeekN, 'notes'), ta.value);
+      };
+    }
+
+    // ── ANKI ──────────────────────────────────────────
+    function fetchAnkiData() {
+      const el    = document.getElementById('kz-karten');
+      const badge = document.getElementById('kz-karten-badge');
+      const sub   = document.getElementById('kz-karten-sub');
+      const anki  = window.NOTION_DATA && window.NOTION_DATA.anki;
+      if (!anki) {
+        el.textContent      = '—';
+        badge.style.display = 'none';
+        sub.textContent     = 'Anki nicht geöffnet';
+        return;
+      }
+      el.textContent      = anki.reviewedToday;
+      badge.style.display = '';
+      sub.textContent     = anki.dueNow > 0 ? anki.dueNow + ' noch fällig' : 'alle erledigt ✓';
+    }
+
+    // ── NOTION DATA ───────────────────────────────────
+    function showNotionWeekData(weekN) {
+      const list     = document.getElementById('notion-faelle-list');
+      const syncTime = document.getElementById('notion-sync-time');
+
+      if (!window.NOTION_DATA) {
+        list.innerHTML = '<p class="notion-empty-hint">Sync läuft tägl. um 8 + 20 Uhr automatisch</p>';
+        syncTime.textContent = '';
+        return;
+      }
+
+      syncTime.textContent = '· ' + window.NOTION_DATA.lastSync;
+
+      const wCases = window.NOTION_DATA.cases.filter(c => c.woche === weekN && c.typ === 'Hauptkurs');
+      if (wCases.length === 0) {
+        list.innerHTML = '<p class="notion-empty-hint">Keine Fälle diese Woche in Notion</p>';
+        return;
+      }
+
+      const statusLabel = { 'Nachbereitet': 'Nachbereitet', 'In Bearbeitung': 'In Bearbeitung' };
+      const statusCls   = { 'Nachbereitet': 'done', 'In Bearbeitung': 'progress' };
+
+      list.innerHTML = wCases.map(c => {
+        const cls   = statusCls[c.status]   || 'open';
+        const label = statusLabel[c.status] || 'Offen';
+        const rg    = (c.rechtsgebiet || []).join(', ');
+        return `<div class="notion-row">
+          <span class="status-badge ${cls}">${label}</span>
+          <span class="notion-case-title">${c.title}</span>
+          ${rg ? `<span class="notion-rg">${rg}</span>` : ''}
+        </div>`;
+      }).join('');
+    }
+
+    // ── KEYBOARD NAV ──────────────────────────────────
+    document.addEventListener('keydown', e => {
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        const delta = e.key === 'ArrowRight' ? 1 : -1;
+        const next  = (activeWeekN ?? currentWeekN) + delta;
+        if (next >= 1 && next <= totalWeeks) {
+          const boxes = document.querySelectorAll('.week-box');
+          openPanel(next, boxes[next - 1]);
+        }
+      } else if (e.key === 'h' || e.key === 'H') {
+        const boxes = document.querySelectorAll('.week-box');
+        openPanel(currentWeekN, boxes[currentWeekN - 1]);
+        boxes[currentWeekN - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (e.key === 'Escape') {
+        if (selectedBox) selectedBox.classList.remove('selected');
+        selectedBox = null;
+        activeWeekN = null;
+        document.getElementById('detail-panel').className = 'detail-panel';
+      }
+    });
+
+  </script>
+</body>
+</html>
