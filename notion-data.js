@@ -1,7 +1,10 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "22.05.2026 17:58",
-  "anki": null,
+  "lastSync": "23.05.2026 14:21",
+  "anki": {
+    "reviewedToday": 129,
+    "dueNow": 3505
+  },
   "cases": [
     {
       "title": "KLK 2149 - abgegeben am 16.5.",
