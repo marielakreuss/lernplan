@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.05.2026 14:21",
+  "lastSync": "26.05.2026 17:41",
   "anki": {
-    "reviewedToday": 129,
-    "dueNow": 3505
+    "reviewedToday": 0,
+    "dueNow": 3662
   },
   "cases": [
     {
@@ -2007,8 +2007,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 10 (sehr wichtig)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 35,
+      "datum": "2026-05-29",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -2019,7 +2019,7 @@ window.NOTION_DATA = {
       "url": "https://www.notion.so/Fall-10-sehr-wichtig-2ed539e733aa801e841bcc41c11c61b0"
     },
     {
-      "title": "Fall 9",
+      "title": "Fall 9 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -2030,10 +2030,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://www.notion.so/Fall-9-2ed539e733aa800b9dfff17f16c6d888"
+      "url": "https://www.notion.so/Fall-9-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa800b9dfff17f16c6d888"
     },
     {
-      "title": "Fall 8",
+      "title": "Fall 8 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -2044,13 +2044,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://www.notion.so/Fall-8-2ed539e733aa807b90afd4f8133fdc62"
+      "url": "https://www.notion.so/Fall-8-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa807b90afd4f8133fdc62"
     },
     {
       "title": "Fall 7 (sehr wichtig)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 35,
+      "datum": "2026-05-28",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -2063,8 +2063,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": 18,
-      "datum": "2026-01-29",
+      "woche": 35,
+      "datum": "2026-05-29",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -2077,8 +2077,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 35,
+      "datum": "2026-05-27",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -2091,8 +2091,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 35,
+      "datum": "2026-05-27",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -2103,7 +2103,7 @@ window.NOTION_DATA = {
       "url": "https://www.notion.so/Fall-4-2ed539e733aa80e99a0ec808e375e2d2"
     },
     {
-      "title": "Fall 3",
+      "title": "Fall 3 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -2114,10 +2114,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://www.notion.so/Fall-3-2ed539e733aa808286cafb5988900dc5"
+      "url": "https://www.notion.so/Fall-3-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa808286cafb5988900dc5"
     },
     {
-      "title": "Fall 2a",
+      "title": "Fall 2a (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -2128,7 +2128,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://www.notion.so/Fall-2a-2ed539e733aa80949c3ec6ffb2595d18"
+      "url": "https://www.notion.so/Fall-2a-Vertiefungsfall-2ed539e733aa80949c3ec6ffb2595d18"
     },
     {
       "title": "Fall 2 (sehr wichtig)",
@@ -2147,8 +2147,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 1 (sehr wichtig)",
       "status": "In Bearbeitung",
-      "woche": 19,
-      "datum": "2026-02-02",
+      "woche": 35,
+      "datum": "2026-05-26",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
