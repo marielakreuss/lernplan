@@ -560,6 +560,68 @@
       font-family: monospace;
     }
 
+    /* ── ZIEL-ROW ────────────────────────────────── */
+    .ziel-row {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+      padding: 0.6rem 1rem;
+      background: rgba(255,255,255,0.55);
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .ziel-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .ziel-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      width: 26px; height: 26px;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      color: var(--text);
+      transition: background 0.12s;
+      flex-shrink: 0;
+    }
+    .ziel-btn:hover { background: var(--border); }
+    .ziel-val {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 1.6rem;
+      text-align: center;
+    }
+    .ziel-val.custom { color: var(--accent); }
+    .ziel-unit { font-size: 0.8rem; color: var(--text-muted); }
+    .ziel-tag {
+      font-size: 0.62rem;
+      color: var(--text-sub);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.1rem 0.5rem;
+    }
+    .ziel-tag.custom { color: var(--accent); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, white); }
+    .ziel-reset {
+      margin-left: auto;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.75rem;
+      color: var(--text-sub);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+    }
+    .ziel-reset:hover { color: var(--accent); }
+
     /* ── MOBILE ──────────────────────────────────── */
     @media (max-width: 620px) {
       body { padding: 1.2rem 1rem; }
@@ -718,6 +780,17 @@
           <div class="kz-live-badge" id="kz-karten-badge">Live aus Tracking</div>
           <div class="kz-sub" id="kz-karten-sub"></div>
         </div>
+      </div>
+
+      <!-- WOCHENZIEL -->
+      <div class="ziel-row" id="ziel-row">
+        <span class="ziel-label">Fälle-Ziel</span>
+        <button class="ziel-btn" onclick="adjustZiel(-1)">−</button>
+        <span class="ziel-val" id="ziel-val">—</span>
+        <button class="ziel-btn" onclick="adjustZiel(+1)">+</button>
+        <span class="ziel-unit">/ Woche</span>
+        <span class="ziel-tag" id="ziel-tag">Standard</span>
+        <button class="ziel-reset" id="ziel-reset" onclick="resetZiel()" style="display:none">↺ zurücksetzen</button>
       </div>
 
       <div id="detail-content-area"></div>
@@ -1082,6 +1155,7 @@
         </div>`;
 
       document.getElementById('tracking-section').style.display = 'none';
+      document.getElementById('ziel-row').style.display = 'none';
       panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
@@ -1095,6 +1169,7 @@
 
       activeWeekN = w;
       document.getElementById('tracking-section').style.display = '';
+      document.getElementById('ziel-row').style.display = '';
 
       const ws = new Date(START_MONDAY.getTime() + (w-1) * WEEK);
       const we = new Date(ws.getTime() + 6 * DAY);
@@ -1140,6 +1215,8 @@
         contentArea.innerHTML = '';
       }
 
+      recomputeCumulative();
+      renderZiel(w);
       renderCases(w);
       renderKlausuren(w);
       renderNotes(w);
@@ -1294,6 +1371,73 @@
           ${rg ? `<span class="notion-rg">${rg}</span>` : ''}
         </div>`;
       }).join('');
+    }
+
+    // ── WOCHENZIEL ────────────────────────────────────
+    function getWeekGoal(w) {
+      const v = localStorage.getItem(lsKey(w, 'goal'));
+      return v !== null ? parseInt(v) : null;
+    }
+    function setWeekGoal(w, val) {
+      if (val === null) localStorage.removeItem(lsKey(w, 'goal'));
+      else localStorage.setItem(lsKey(w, 'goal'), val);
+    }
+    function getEffectiveCasesPerWeek(w) {
+      const override = getWeekGoal(w);
+      if (override !== null) return override;
+      const d = weekDetails[w];
+      return d ? (d.casesPerWeek || 0) : 0;
+    }
+    function recomputeCumulative() {
+      let cum = INITIAL_CASES_END_W33;
+      for (let w = 1; w <= totalWeeks; w++) {
+        const p = weekDetails[w];
+        if (w < 34) {
+          cumulativeCasesPerWeek[w] = INITIAL_CASES_END_W33;
+        } else {
+          cum = Math.min(CASES_TOTAL, cum + getEffectiveCasesPerWeek(w));
+          cumulativeCasesPerWeek[w] = cum;
+        }
+        if (p && p.cumulativeCasesOverride !== undefined) {
+          cumulativeCasesPerWeek[w] = p.cumulativeCasesOverride;
+          cum = p.cumulativeCasesOverride;
+        }
+      }
+    }
+    function renderZiel(w) {
+      const d            = weekDetails[w];
+      const phaseDefault = d ? (d.casesPerWeek || 0) : 0;
+      const override     = getWeekGoal(w);
+      const current      = override !== null ? override : phaseDefault;
+      const isCustom     = override !== null && override !== phaseDefault;
+
+      document.getElementById('ziel-val').textContent  = current;
+      document.getElementById('ziel-val').className    = 'ziel-val' + (isCustom ? ' custom' : '');
+      const tag = document.getElementById('ziel-tag');
+      tag.textContent  = isCustom ? 'angepasst' : 'Standard';
+      tag.className    = 'ziel-tag' + (isCustom ? ' custom' : '');
+      document.getElementById('ziel-reset').style.display = isCustom ? '' : 'none';
+
+      // Richtwert aktualisieren
+      const target = cumulativeCasesPerWeek[w] || 0;
+      document.getElementById('detail-cases-goal').textContent =
+        'Richtwert Ende W' + w + ': ' + target + '/' + CASES_TOTAL + ' Fälle';
+    }
+    function adjustZiel(delta) {
+      if (activeWeekN === null) return;
+      const current  = getEffectiveCasesPerWeek(activeWeekN);
+      const newVal   = Math.max(0, Math.min(20, current + delta));
+      const d        = weekDetails[activeWeekN];
+      const def      = d ? (d.casesPerWeek || 0) : 0;
+      setWeekGoal(activeWeekN, newVal === def ? null : newVal);
+      recomputeCumulative();
+      renderZiel(activeWeekN);
+    }
+    function resetZiel() {
+      if (activeWeekN === null) return;
+      setWeekGoal(activeWeekN, null);
+      recomputeCumulative();
+      renderZiel(activeWeekN);
     }
 
     // ── KEYBOARD NAV ──────────────────────────────────
