@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.06.2026 11:43",
+  "lastSync": "02.06.2026 12:30",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3762
@@ -1248,8 +1248,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-09",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -1276,8 +1276,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-09",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
