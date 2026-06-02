@@ -468,7 +468,7 @@
     .aufgaben-section ul li .li-icon { flex-shrink: 0; font-size: 0.85rem; margin-top: 0.05rem; }
     .aufgaben-section ul li.important { color: #8B3520; }
     .aufgaben-section ul li.success  { color: #2A6030; }
-    .aufgaben-section ul li.kartei   { color: #4338CA; background: #EEF2FF; border-radius: 6px; padding: 0.4rem 0.6rem; margin-top: 0.3rem; border-bottom: none !important; }
+    .aufgaben-section ul li.kartei   { color: var(--rep-text); font-weight: 500; }
 
     /* ── NOTES TEXTAREA ────────────────────────── */
     .notes-textarea {
@@ -1166,7 +1166,7 @@
         // Kartei-Fokus dieser Woche
         const fokus = window.NOTION_DATA && window.NOTION_DATA.ankiFokus && window.NOTION_DATA.ankiFokus[String(w)];
         if (fokus) {
-          html += `<li class="kartei"><span class="li-icon">🃏</span><span><strong>Kartei-Fokus:</strong> ${fokus.join(' · ')}</span></li>`;
+          html += `<li class="kartei"><span class="li-icon">◆</span><span>Kartei-Fokus: ${fokus.join(' · ')}</span></li>`;
         }
         html += '</ul></div>';
         contentArea.innerHTML = html;
