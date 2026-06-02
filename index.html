@@ -19,18 +19,18 @@
       --text-sub: #C4BAA8;
       --accent: #7B5E3A;
 
-      /* Phase palette – clean, distinct */
-      --rep-bg: #EFF6FF;        --rep-border: #BFDBFE;    --rep-text: #1E40AF;
-      --urlaub-bg: #F0FDF4;     --urlaub-border: #86EFAC; --urlaub-text: #166534;
-      --fokus-bg: #FFFBEB;      --fokus-border: #FCD34D;  --fokus-text: #92400E;
-      --peru-bg: #FEFCE8;       --peru-border: #FDE047;   --peru-text: #713F12;
-      --postrep-bg: #F5F3FF;    --postrep-border: #C4B5FD; --postrep-text: #5B21B6;
-      --probe-bg: #FFF7ED;      --probe-border: #FDBA74;  --probe-text: #9A3412;
-      --wieder-bg: #F0FDFA;     --wieder-border: #99F6E4; --wieder-text: #134E4A;
-      --examen-bg: #FEF9C3;     --examen-border: #FDE047; --examen-text: #78350F;
+      /* Phase palette – muted, calm */
+      --rep-bg: #EEF2F7;        --rep-border: #C0CDD8;    --rep-text: #3D5470;
+      --urlaub-bg: #EEF6EE;     --urlaub-border: #A0C4A0; --urlaub-text: #2A5030;
+      --fokus-bg: #F8F4E8;      --fokus-border: #D4BC80;  --fokus-text: #6A5020;
+      --peru-bg: #F7F4E8;       --peru-border: #CCC080;   --peru-text: #5A4C18;
+      --postrep-bg: #F2F0F8;    --postrep-border: #C0B4D4; --postrep-text: #4A3C68;
+      --probe-bg: #F8F0EC;      --probe-border: #D4A890;  --probe-text: #7A3C28;
+      --wieder-bg: #EEF6F2;     --wieder-border: #A0C8B0; --wieder-text: #285840;
+      --examen-bg: #F6F2DC;     --examen-border: #C8B860; --examen-text: #5A4C10;
 
-      --past-bg: #F8FAFC; --past-border: #CBD5E1; --past-text: #64748B;
-      --future-bg: #F8FAFC; --future-border: #E2E8F0; --future-text: #94A3B8;
+      --past-bg: #F4F5F6; --past-border: #CDD0D4; --past-text: #788090;
+      --future-bg: #F4F5F6; --future-border: #D8DADE; --future-text: #9AA0A8;
     }
 
     body {
@@ -836,6 +836,13 @@
       };
     }
 
+    mkPhase('vorRep',
+      new Date(2025,8,29), new Date(2026,4,14), 4, 'rep',
+      'Rep läuft',
+      { faelle: '4', faelleSub: 'Rep-Tempo', klausuren: '1 / Wo', klausurenSub: 'Sa schreiben', kartenSub: '30–60 min täglich' },
+      ['Fälle im Rep-Tempo nachbereiten',
+       'Karteikarten täglich 30–60 min']
+    );
     mkPhase('repPhase1',
       new Date(2026,4,15), new Date(2026,4,24), 4, 'rep',
       'Phase 1 – Rep läuft',
@@ -1351,16 +1358,39 @@
 
     // ── WOCHENZIEL ────────────────────────────────────
     function recomputeCumulative() {
+      // Tatsächlichen Fortschritt aus Notion holen (Hauptkurs nachbereitet)
+      const nachbereitet = window.NOTION_DATA && window.NOTION_DATA.rhythmCheck
+        ? window.NOTION_DATA.rhythmCheck.nachbereitet : null;
+
+      // Verbleibendes Tempo für Zukunftswochen berechnen
+      let adjustedPace = null;
+      if (nachbereitet !== null) {
+        let futureStudyWeeks = 0;
+        for (let w = currentWeekN; w <= totalWeeks; w++) {
+          const p = weekDetails[w];
+          if (p && p.casesPerWeek > 0) futureStudyWeeks++;
+        }
+        if (futureStudyWeeks > 0) {
+          const remaining = Math.max(0, CASES_TOTAL - nachbereitet);
+          adjustedPace = Math.ceil(remaining / futureStudyWeeks);
+        }
+      }
+
       let cum = INITIAL_CASES_END_W33;
       for (let w = 1; w <= totalWeeks; w++) {
         const p = weekDetails[w];
         if (w < 34) {
           cumulativeCasesPerWeek[w] = INITIAL_CASES_END_W33;
         } else {
-          cum = Math.min(CASES_TOTAL, cum + ((p && p.casesPerWeek) || 0));
+          // Zukünftige Studienwochen: angepasstes Tempo verwenden
+          const isStudyWeek = p && p.casesPerWeek > 0;
+          const pace = (adjustedPace !== null && w >= currentWeekN && isStudyWeek)
+            ? adjustedPace
+            : ((p && p.casesPerWeek) || 0);
+          cum = Math.min(CASES_TOTAL, cum + pace);
           cumulativeCasesPerWeek[w] = cum;
         }
-        if (p && p.cumulativeCasesOverride !== undefined) {
+        if (p && p.cumulativeCasesOverride !== undefined && w <= currentWeekN) {
           cumulativeCasesPerWeek[w] = p.cumulativeCasesOverride;
           cum = p.cumulativeCasesOverride;
         }
@@ -1374,24 +1404,9 @@
     }
 
     function renderRhythmusStatus(w) {
+      // Badge bleibt ausgeblendet – Anpassung läuft still über recomputeCumulative
       const badge = document.getElementById('rhythmus-badge');
-      if (!badge) return;
-      const rc = window.NOTION_DATA && window.NOTION_DATA.rhythmCheck;
-      if (!rc) { badge.style.display = 'none'; return; }
-      // Nur für aktuelle und nahe vergangene Wochen sinnvoll
-      const diff = w - currentWeekN;
-      if (diff > 1 || diff < -4) { badge.style.display = 'none'; return; }
-      const erwartet = cumulativeCasesPerWeek[w] || 0;
-      const ist      = rc.nachbereitet;
-      const delta    = ist - erwartet;
-      if (delta >= 0) {
-        badge.textContent = '✓ Im Rhythmus · ' + ist + ' / ' + erwartet + ' erwartet · +' + delta;
-        badge.className   = 'rhythmus-badge ok';
-      } else {
-        badge.textContent = '⚠ ' + Math.abs(delta) + ' hinter Richtwert · ' + ist + ' / ' + erwartet + ' erwartet';
-        badge.className   = 'rhythmus-badge warn';
-      }
-      badge.style.display = '';
+      if (badge) badge.style.display = 'none';
     }
 
     // ── KEYBOARD NAV ──────────────────────────────────
