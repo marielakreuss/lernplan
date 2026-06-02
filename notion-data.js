@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.06.2026 13:40",
+  "lastSync": "02.06.2026 16:46",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 3762,
+    "reviewedToday": 20,
+    "dueNow": 3752,
     "history": [
       {
         "date": "2025-09-29",
@@ -844,6 +844,10 @@ window.NOTION_DATA = {
       {
         "date": "2026-06-01",
         "count": 74
+      },
+      {
+        "date": "2026-06-02",
+        "count": 20
       }
     ]
   },
@@ -1396,8 +1400,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 1",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 39,
+      "datum": "2026-06-24",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1410,8 +1414,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 14",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-17",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1424,8 +1428,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 13",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-17",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1438,8 +1442,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 12",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-17",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1452,8 +1456,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 11",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-17",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1466,8 +1470,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1480,8 +1484,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1494,8 +1498,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 8",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1508,8 +1512,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 7",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1522,8 +1526,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1536,8 +1540,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1550,8 +1554,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1564,8 +1568,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1578,8 +1582,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 2",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1592,8 +1596,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 1",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -2138,8 +2142,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 17",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 40,
+      "datum": "2026-06-30",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2152,8 +2156,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 16",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 39,
+      "datum": "2026-06-23",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2166,8 +2170,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 15",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 39,
+      "datum": "2026-06-23",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2180,8 +2184,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 14",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 39,
+      "datum": "2026-06-23",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2293,7 +2297,7 @@ window.NOTION_DATA = {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
       "woche": 36,
-      "datum": "2026-06-02",
+      "datum": "2026-06-04",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
