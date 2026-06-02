@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.06.2026 13:24",
+  "lastSync": "02.06.2026 13:40",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3762,
@@ -2208,8 +2208,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 12",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-16",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2222,8 +2222,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 11",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-16",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2236,8 +2236,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 38,
+      "datum": "2026-06-16",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2264,8 +2264,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 8",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-09",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2278,8 +2278,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 7",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 37,
+      "datum": "2026-06-09",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2292,8 +2292,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-09",
+      "woche": 36,
+      "datum": "2026-06-02",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2320,8 +2320,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-09",
+      "woche": 36,
+      "datum": "2026-06-02",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
