@@ -1358,22 +1358,9 @@
 
     // ── WOCHENZIEL ────────────────────────────────────
     function recomputeCumulative() {
+      // Ist-Stand aus Notion (Hauptkurs nachbereitet)
       const nachbereitet = window.NOTION_DATA && window.NOTION_DATA.rhythmCheck
         ? window.NOTION_DATA.rhythmCheck.nachbereitet : null;
-
-      // Angepasstes Tempo ab jetzt berechnen
-      let adjustedPace = null;
-      if (nachbereitet !== null) {
-        let futureStudyWeeks = 0;
-        for (let w = currentWeekN; w <= totalWeeks; w++) {
-          const p = weekDetails[w];
-          if (p && p.casesPerWeek > 0) futureStudyWeeks++;
-        }
-        if (futureStudyWeeks > 0) {
-          const remaining = Math.max(0, CASES_TOTAL - nachbereitet);
-          adjustedPace = Math.ceil(remaining / futureStudyWeeks);
-        }
-      }
 
       let cum = INITIAL_CASES_END_W33;
       for (let w = 1; w <= totalWeeks; w++) {
@@ -1384,15 +1371,12 @@
           continue;
         }
 
-        // Ab aktueller Woche: vom echten Ist-Stand starten
+        // Ab aktueller Woche: vom echten Ist-Stand starten, Phasen-Tempo beibehalten
         if (w === currentWeekN && nachbereitet !== null) {
           cum = nachbereitet;
         }
 
-        const isStudyWeek = p && p.casesPerWeek > 0;
-        const useAdjusted = adjustedPace !== null && w >= currentWeekN && isStudyWeek;
-        const pace = useAdjusted ? adjustedPace : ((p && p.casesPerWeek) || 0);
-        cum = Math.min(CASES_TOTAL, cum + pace);
+        cum = Math.min(CASES_TOTAL, cum + ((p && p.casesPerWeek) || 0));
         cumulativeCasesPerWeek[w] = cum;
 
         // Milestones nur für vergangene Wochen erzwingen
