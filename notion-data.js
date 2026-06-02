@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.06.2026 12:53",
+  "lastSync": "02.06.2026 13:24",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3762,
@@ -1044,6 +1044,10 @@ window.NOTION_DATA = {
       "Familienrecht",
       "PolizeiR"
     ]
+  },
+  "rhythmCheck": {
+    "currentWeek": 36,
+    "nachbereitet": 84
   },
   "cases": [
     {
