@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.05.2026 17:41",
+  "lastSync": "02.06.2026 11:43",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 3662
+    "dueNow": 3762
   },
   "cases": [
     {
@@ -2146,7 +2146,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 1 (sehr wichtig)",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 35,
       "datum": "2026-05-26",
       "rechtsgebiet": [
@@ -4040,8 +4040,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 83,
-    "inBearbeitung": 28,
+    "nachbereitet": 84,
+    "inBearbeitung": 27,
     "total": 288,
     "klkGesamt": 33,
     "klkAbgegeben": 14
