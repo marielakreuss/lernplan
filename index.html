@@ -624,6 +624,94 @@
       .kb-hint { display: none; }
     }
 
+    /* ── DAILY LOG ───────────────────────────────── */
+    .daily-days-row {
+      display: flex;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+    }
+    .day-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.1rem;
+      padding: 0.4rem 0.55rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: white;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      min-width: 42px;
+      color: var(--text-muted);
+    }
+    .day-pill:hover { border-color: var(--accent); }
+    .day-pill.active { border-color: var(--accent); box-shadow: 0 0 0 1.5px var(--accent); color: var(--text); }
+    .day-pill.today { background: color-mix(in srgb, var(--accent) 7%, white); }
+    .day-pill .dpn { font-size: 0.7rem; font-weight: 600; }
+    .day-pill .dpd { font-size: 0.6rem; color: var(--text-sub); }
+    .day-pill .dpe { font-size: 0.82rem; line-height: 1; margin-top: 0.1rem; }
+
+    .daily-checkin-form {
+      margin-top: 0.75rem;
+      padding: 0.85rem 1rem;
+      background: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .daily-form-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .cf-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .daily-checkin-form textarea,
+    .daily-checkin-form input[type="text"] {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.42rem 0.65rem;
+      font-size: 0.82rem;
+      font-family: 'DM Sans', sans-serif;
+      background: white;
+      color: var(--text);
+      outline: none;
+      resize: none;
+      line-height: 1.45;
+    }
+    .daily-checkin-form textarea:focus,
+    .daily-checkin-form input[type="text"]:focus { border-color: var(--accent); }
+    .energie-row { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+    .energie-btn {
+      padding: 0.32rem 0.8rem;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: white;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: all 0.12s;
+      color: var(--text-muted);
+    }
+    .energie-btn:hover { border-color: var(--accent); }
+    .energie-btn.sel-niedrig { background: #FEE2E2; border-color: #FCA5A5; color: #991B1B; font-weight: 600; }
+    .energie-btn.sel-mittel  { background: #FEF9C3; border-color: #FDE047; color: #854D0E; font-weight: 600; }
+    .energie-btn.sel-gut     { background: #DCFCE7; border-color: #86EFAC; color: #166534; font-weight: 600; }
+
+    /* dot on week box */
+    .week-box .wlog-dot { font-size: 0.65rem; line-height: 1; margin-top: 0.1rem; }
+
     /* ── FOOTER ───────────────────────────────────── */
     .footer {
       text-align: center;
@@ -760,6 +848,11 @@
         <div class="tracking-block" style="grid-column: 1 / -1;">
           <h5>Notizen</h5>
           <textarea class="notes-textarea" id="notes-textarea" placeholder="Notizen zur Woche…"></textarea>
+        </div>
+        <div class="tracking-block" style="grid-column: 1 / -1;" id="daily-log-block">
+          <h5>Täglicher Check-in</h5>
+          <div class="daily-days-row" id="daily-days-row"></div>
+          <div class="daily-checkin-form" id="daily-checkin-form" style="display:none"></div>
         </div>
       </div>
 
@@ -1032,7 +1125,7 @@
       let phaseClass  = phaseKey ? 'phase-' + phaseKey : '';
 
       box.className = 'week-box ' + statusClass + (phaseClass ? ' ' + phaseClass : '');
-      box.innerHTML = `<span class="wnum">W${w}</span><span class="wdate">${shortFmt(ws)}</span>`;
+      box.innerHTML = `<span class="wnum">W${w}</span><span class="wdate">${shortFmt(ws)}</span><span class="wlog-dot" id="wlog-dot-${w}"></span>`;
 
       box.addEventListener('click', () => openPanel(w, box));
       grid.appendChild(box);
@@ -1046,6 +1139,7 @@
     examBox.title = 'Staatsexamen – 3. März 2027';
     examBox.addEventListener('click', () => openExamenPanel(examBox));
     grid.appendChild(examBox);
+    initWeekBoxLogDots();
 
     // ── FÄLLE COUNTER (global, alle Wochen) ───────────
     function countAllDoneCases() {
@@ -1182,6 +1276,7 @@
       renderCases(w);
       renderKlausuren(w);
       renderNotes(w);
+      renderDailyLog(w);
       fetchAnkiData(w);
       showNotionWeekData(w);
       panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -1397,6 +1492,154 @@
       // Badge bleibt ausgeblendet – Anpassung läuft still über recomputeCumulative
       const badge = document.getElementById('rhythmus-badge');
       if (badge) badge.style.display = 'none';
+    }
+
+    // ── DAILY LOG ─────────────────────────────────────
+    const ENERGIE_EMOJI = { niedrig: '🔴', mittel: '🟡', gut: '🟢' };
+    let activeDayDate = null;
+
+    function dayKey(date) {
+      return 'stex_day_' + date.toISOString().slice(0, 10) + '_log';
+    }
+    function loadDayLog(date) {
+      try { return JSON.parse(localStorage.getItem(dayKey(date)) || 'null'); }
+      catch { return null; }
+    }
+    function saveDayLog(date, data) {
+      const hasContent = data.gemacht.trim() || data.energie || data.morgen.trim();
+      if (hasContent) {
+        localStorage.setItem(dayKey(date), JSON.stringify(data));
+      } else {
+        localStorage.removeItem(dayKey(date));
+      }
+    }
+
+    function renderDailyLog(weekN) {
+      const row  = document.getElementById('daily-days-row');
+      const form = document.getElementById('daily-checkin-form');
+      if (!row) return;
+      activeDayDate = null;
+      form.style.display = 'none';
+      form.innerHTML = '';
+      row.innerHTML = '';
+
+      const weekStart = new Date(START_MONDAY.getTime() + (weekN - 1) * WEEK);
+      const labels = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+
+      labels.forEach((label, i) => {
+        const date   = new Date(weekStart.getTime() + i * DAY);
+        const log    = loadDayLog(date);
+        const isToday = date.toDateString() === TODAY.toDateString();
+
+        const pill = document.createElement('button');
+        pill.className = 'day-pill' + (isToday ? ' today' : '');
+        pill.dataset.iso = date.toISOString().slice(0, 10);
+        const dot = log && log.energie ? ENERGIE_EMOJI[log.energie]
+                  : (log && (log.gemacht || log.morgen) ? '✓' : '·');
+        pill.innerHTML = `<span class="dpn">${label}</span><span class="dpd">${shortFmt(date)}</span><span class="dpe">${dot}</span>`;
+        pill.addEventListener('click', () => openDayCheckin(date, pill, weekN));
+        row.appendChild(pill);
+      });
+    }
+
+    function openDayCheckin(date, pillEl, weekN) {
+      const form = document.getElementById('daily-checkin-form');
+      const row  = document.getElementById('daily-days-row');
+
+      row.querySelectorAll('.day-pill').forEach(p => p.classList.remove('active'));
+
+      if (activeDayDate && activeDayDate.toDateString() === date.toDateString()) {
+        activeDayDate = null;
+        form.style.display = 'none';
+        form.innerHTML = '';
+        return;
+      }
+      activeDayDate = date;
+      pillEl.classList.add('active');
+
+      const log = loadDayLog(date) || { gemacht: '', energie: null, morgen: '' };
+      let currentEnergie = log.energie;
+      const wochentage = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+
+      form.style.display = 'flex';
+      form.innerHTML = `
+        <div class="daily-form-date">${wochentage[date.getDay()]}, ${longFmt(date)}</div>
+        <div>
+          <div class="cf-label">Was hab ich heute gemacht?</div>
+          <textarea id="dcf-gemacht" rows="2" placeholder="Kurze Zusammenfassung des Tages…">${escHtml(log.gemacht || '')}</textarea>
+        </div>
+        <div>
+          <div class="cf-label">Energie / Fokus heute</div>
+          <div class="energie-row">
+            <button class="energie-btn${currentEnergie === 'niedrig' ? ' sel-niedrig' : ''}" data-val="niedrig">🔴 Niedrig</button>
+            <button class="energie-btn${currentEnergie === 'mittel'  ? ' sel-mittel'  : ''}" data-val="mittel">🟡 Mittel</button>
+            <button class="energie-btn${currentEnergie === 'gut'     ? ' sel-gut'     : ''}" data-val="gut">🟢 Gut</button>
+          </div>
+        </div>
+        <div>
+          <div class="cf-label">Morgen nehme ich mir vor:</div>
+          <input type="text" id="dcf-morgen" placeholder="Vorhaben für morgen…" value="${escHtml(log.morgen || '')}">
+        </div>`;
+
+      function saveLog() {
+        const data = {
+          gemacht: document.getElementById('dcf-gemacht').value,
+          energie: currentEnergie,
+          morgen:  document.getElementById('dcf-morgen').value
+        };
+        saveDayLog(date, data);
+        updateDayPillDot(date, data);
+        updateWeekBoxLogDot(weekN);
+      }
+
+      document.getElementById('dcf-gemacht').addEventListener('input', saveLog);
+      document.getElementById('dcf-morgen').addEventListener('input', saveLog);
+      form.querySelectorAll('.energie-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const val = btn.dataset.val;
+          const wasSelected = currentEnergie === val;
+          currentEnergie = wasSelected ? null : val;
+          form.querySelectorAll('.energie-btn').forEach(b => b.className = 'energie-btn');
+          if (!wasSelected) btn.classList.add('sel-' + val);
+          saveLog();
+        });
+      });
+    }
+
+    function escHtml(str) {
+      return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function updateDayPillDot(date, data) {
+      const iso  = date.toISOString().slice(0, 10);
+      const pill = document.querySelector(`.day-pill[data-iso="${iso}"]`);
+      if (!pill) return;
+      const span = pill.querySelector('.dpe');
+      if (!span) return;
+      const hasContent = data && (data.gemacht || data.energie || data.morgen);
+      span.textContent = hasContent
+        ? (data.energie ? ENERGIE_EMOJI[data.energie] : '✓')
+        : '·';
+    }
+
+    function updateWeekBoxLogDot(weekN) {
+      const el = document.getElementById('wlog-dot-' + weekN);
+      if (!el) return;
+      const weekStart = new Date(START_MONDAY.getTime() + (weekN - 1) * WEEK);
+      let indicator = '';
+      for (let i = 0; i < 7; i++) {
+        const d   = new Date(weekStart.getTime() + i * DAY);
+        const log = loadDayLog(d);
+        if (log && (log.gemacht || log.energie || log.morgen)) {
+          indicator = log.energie ? ENERGIE_EMOJI[log.energie] : '✓';
+          break;
+        }
+      }
+      el.textContent = indicator;
+    }
+
+    function initWeekBoxLogDots() {
+      for (let w = 1; w <= totalWeeks; w++) updateWeekBoxLogDot(w);
     }
 
     // ── KEYBOARD NAV ──────────────────────────────────
