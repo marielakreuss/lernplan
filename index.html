@@ -272,16 +272,20 @@
       bottom: 0; left: 0; right: 0;
       max-height: 75vh;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       padding: 1.4rem 1.6rem 2rem;
       border-radius: 16px 16px 0 0;
       border-top: 2px solid transparent;
       background: #F8F9FA;
       box-shadow: 0 -4px 32px rgba(0,0,0,0.13);
+      -webkit-transform: translateY(100%);
       transform: translateY(100%);
+      -webkit-transition: -webkit-transform 0.3s cubic-bezier(.4,0,.2,1), background 0.2s, border-color 0.2s;
       transition: transform 0.3s cubic-bezier(.4,0,.2,1), background 0.2s, border-color 0.2s;
       z-index: 100;
     }
     .detail-panel.show {
+      -webkit-transform: translateY(0);
       transform: translateY(0);
     }
     .sheet-handle {
@@ -810,7 +814,7 @@
     <div class="weeks-grid" id="weeks-grid"></div>
   </div>
 
-  <div id="sheet-backdrop" onclick="closePanel()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.25);z-index:99;"></div>
+  <div id="sheet-backdrop" onclick="closePanel()" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.25);z-index:99;"></div>
   <div class="detail-panel" id="detail-panel">
       <div class="sheet-handle"></div>
       <div class="detail-panel-header">
@@ -1621,6 +1625,22 @@
         saveDayLog(date, data);
         updateDayPillDot(date, data);
         updateWeekBoxLogDot(weekN);
+        showSavedHint();
+      }
+
+      function showSavedHint() {
+        let hint = form.querySelector('.save-hint');
+        if (!hint) {
+          hint = document.createElement('span');
+          hint.className = 'save-hint';
+          hint.style.cssText = 'font-size:0.72rem;color:#7B5E3A;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
+          hint.textContent = 'Gespeichert ✓';
+          const dateEl = form.querySelector('.daily-form-date');
+          if (dateEl) dateEl.appendChild(hint);
+        }
+        hint.style.opacity = '1';
+        clearTimeout(hint._t);
+        hint._t = setTimeout(() => { hint.style.opacity = '0'; }, 1800);
       }
 
       document.getElementById('dcf-gemacht').addEventListener('input', saveLog);
