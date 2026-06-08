@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.06.2026 15:11",
+  "lastSync": "08.06.2026 15:13",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3788,
