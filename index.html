@@ -791,9 +791,6 @@
   </div>
 
   <div class="weeks-card">
-    <div class="weeks-header">Alle Wochen · Klick für Details &amp; Tracking</div>
-    <div class="weeks-grid" id="weeks-grid"></div>
-
     <div class="detail-panel" id="detail-panel">
       <div class="detail-panel-header">
         <h3 id="detail-title">—</h3>
@@ -860,6 +857,9 @@
         <kbd>←</kbd> <kbd>→</kbd> Woche wechseln &nbsp;·&nbsp; <kbd>H</kbd> Heute &nbsp;·&nbsp; <kbd>Esc</kbd> Schließen
       </div>
     </div>
+
+    <div class="weeks-header">Alle Wochen · Klick für Details &amp; Tracking</div>
+    <div class="weeks-grid" id="weeks-grid"></div>
   </div>
 
   <p class="footer">Lernplan · Examen: 3. März 2027 · Daten lokal gespeichert</p>
@@ -1207,7 +1207,7 @@
         </div>`;
 
       document.getElementById('tracking-section').style.display = 'none';
-      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // ── PANEL OPEN ─────────────────────────────────────
@@ -1279,7 +1279,7 @@
       renderDailyLog(w);
       fetchAnkiData(w);
       showNotionWeekData(w);
-      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // ── CASES TRACKING ────────────────────────────────
