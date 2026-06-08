@@ -966,13 +966,27 @@
       ['Komplett frei – mentaler Reset vor Rep-Endphase']
     );
     mkPhase('repEndPhase',
-      new Date(2026,6,20), new Date(2026,7,19), 4, 'rep',
+      new Date(2026,6,20), new Date(2026,7,9), 4, 'rep',
       'Phase 3 – Rep-Endphase',
       { faelle: '4', faelleSub: 'Rep-Tempo halten', klausuren: '1 / Wo', klausurenSub: 'Sa schreiben', kartenSub: 'täglich' },
       ['Letzte Schuldrecht AT/BT Fälle abschließen',
        'Wiederholung schwacher Gebiete aus Rep',
        'Klausuren Sa schreiben – weiterhin keine Nachbereitung'],
       120
+    );
+    mkPhase('urlaubAugust',
+      new Date(2026,7,10), new Date(2026,7,16), 0, 'urlaub',
+      'Urlaub – komplett frei 🌴',
+      { faelle: '0', faelleSub: 'Pause', klausuren: '0', klausurenSub: 'Pause', kartenSub: 'nur wenn gewollt' },
+      [{ text: 'Komplett frei – keine Fälle, keine Klausuren', type: 'success' },
+       'Erholen und auftanken vor Post-Rep-Phase']
+    );
+    mkPhase('repEndPhase2',
+      new Date(2026,7,18), new Date(2026,7,19), 4, 'rep',
+      'Phase 3 – Rep-Endphase (Fortsetzung)',
+      { faelle: '4', faelleSub: 'Rep-Tempo halten', klausuren: '1 / Wo', klausurenSub: 'Sa schreiben', kartenSub: 'täglich' },
+      ['Wiederholung schwacher Gebiete aus Rep',
+       'Klausuren Sa schreiben – weiterhin keine Nachbereitung']
     );
     mkPhase('postRepBaurecht',
       new Date(2026,7,20), new Date(2026,7,26), 8, 'fokus',
