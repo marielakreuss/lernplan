@@ -286,10 +286,12 @@
       -webkit-transition: -webkit-transform 0.3s cubic-bezier(.4,0,.2,1), background 0.2s, border-color 0.2s;
       transition: transform 0.3s cubic-bezier(.4,0,.2,1), background 0.2s, border-color 0.2s;
       z-index: 100;
+      pointer-events: none;
     }
     .detail-panel.show {
       -webkit-transform: translateY(0);
       transform: translateY(0);
+      pointer-events: auto;
     }
     .sheet-handle {
       width: 36px; height: 4px;
