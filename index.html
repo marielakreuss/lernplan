@@ -1149,6 +1149,9 @@
     }
 
     let activeWeekN = null;
+    let selectedBox = null;
+    let activeDayDate = null;
+    const ENERGIE_EMOJI = { niedrig: '🔴', mittel: '🟡', gut: '🟢' };
 
     // ── GRID BUILD ─────────────────────────────────────
     const grid   = document.getElementById('weeks-grid');
@@ -1251,8 +1254,6 @@
     }
 
     // ── PANEL OPEN ─────────────────────────────────────
-    let selectedBox = null;
-
     function openPanel(w, box) {
       if (selectedBox) selectedBox.classList.remove('selected');
       box.classList.add('selected');
@@ -1535,9 +1536,6 @@
     }
 
     // ── DAILY LOG ─────────────────────────────────────
-    const ENERGIE_EMOJI = { niedrig: '🔴', mittel: '🟡', gut: '🟢' };
-    let activeDayDate = null;
-
     function dayKey(date) {
       return 'stex_day_' + date.toISOString().slice(0, 10) + '_log';
     }
