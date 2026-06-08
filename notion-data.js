@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.06.2026 00:17",
+  "lastSync": "08.06.2026 15:11",
   "anki": {
-    "reviewedToday": 28,
-    "dueNow": 3804,
+    "reviewedToday": 0,
+    "dueNow": 3788,
     "history": [
       {
         "date": "2025-09-29",
@@ -867,7 +867,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-08",
-        "count": 12
+        "count": 52
       }
     ]
   },
