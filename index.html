@@ -266,27 +266,42 @@
     .week-box.current.phase-examen  { box-shadow: 0 0 0 2.5px var(--examen-text); }
 
     /* ── DETAIL PANEL ─────────────────────────────── */
+    /* ── BOTTOM SHEET ─────────────────────────────── */
     .detail-panel {
-      margin-top: 1.2rem;
-      padding: 1.2rem 1.4rem;
-      border-radius: 12px;
-      border: 1.5px solid transparent;
-      display: none;
-      transition: background 0.3s, border-color 0.3s;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      max-height: 75vh;
+      overflow-y: auto;
+      padding: 1.4rem 1.6rem 2rem;
+      border-radius: 16px 16px 0 0;
+      border-top: 2px solid transparent;
+      background: #F8F9FA;
+      box-shadow: 0 -4px 32px rgba(0,0,0,0.13);
+      transform: translateY(100%);
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1), background 0.2s, border-color 0.2s;
+      z-index: 100;
     }
-    .detail-panel.show { display: block; }
+    .detail-panel.show {
+      transform: translateY(0);
+    }
+    .sheet-handle {
+      width: 36px; height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      margin: 0 auto 1.1rem;
+    }
 
-    /* Phase-colored panels — bg slightly lighter than week box */
-    .detail-panel.dp-rep     { background: color-mix(in srgb, var(--rep-bg) 60%, white);    border-color: var(--rep-border); }
-    .detail-panel.dp-urlaub  { background: color-mix(in srgb, var(--urlaub-bg) 60%, white); border-color: var(--urlaub-border); }
-    .detail-panel.dp-fokus   { background: color-mix(in srgb, var(--fokus-bg) 60%, white);  border-color: var(--fokus-border); }
-    .detail-panel.dp-peru    { background: color-mix(in srgb, var(--peru-bg) 60%, white);   border-color: var(--peru-border); }
-    .detail-panel.dp-postrep { background: color-mix(in srgb, var(--postrep-bg) 60%, white);border-color: var(--postrep-border); }
-    .detail-panel.dp-probe   { background: color-mix(in srgb, var(--probe-bg) 60%, white);  border-color: var(--probe-border); }
-    .detail-panel.dp-wieder  { background: color-mix(in srgb, var(--wieder-bg) 60%, white); border-color: var(--wieder-border); }
-    .detail-panel.dp-examen  { background: color-mix(in srgb, var(--examen-bg) 60%, white); border-color: var(--examen-border); }
-    .detail-panel.dp-past    { background: color-mix(in srgb, var(--past-bg) 60%, white);   border-color: var(--past-border); }
-    .detail-panel.dp-future  { background: var(--bg); border-color: var(--border); }
+    /* Phase-colored panels */
+    .detail-panel.dp-rep     { background: #F5F7FA; border-color: var(--rep-border); }
+    .detail-panel.dp-urlaub  { background: #F5FAF5; border-color: var(--urlaub-border); }
+    .detail-panel.dp-fokus   { background: #FBF8F1; border-color: var(--fokus-border); }
+    .detail-panel.dp-peru    { background: #FAF8F1; border-color: var(--peru-border); }
+    .detail-panel.dp-postrep { background: #F7F6FB; border-color: var(--postrep-border); }
+    .detail-panel.dp-probe   { background: #FBF6F4; border-color: var(--probe-border); }
+    .detail-panel.dp-wieder  { background: #F5FAF7; border-color: var(--wieder-border); }
+    .detail-panel.dp-examen  { background: #FAF7EA; border-color: var(--examen-border); }
+    .detail-panel.dp-past    { background: #F8F9FA; border-color: var(--past-border); }
+    .detail-panel.dp-future  { background: #F8F9FA; border-color: var(--border); }
 
     .detail-panel-header { margin-bottom: 1rem; }
     .detail-panel-header h3 {
@@ -791,7 +806,13 @@
   </div>
 
   <div class="weeks-card">
-    <div class="detail-panel" id="detail-panel">
+    <div class="weeks-header">Alle Wochen · Klick für Details &amp; Tracking</div>
+    <div class="weeks-grid" id="weeks-grid"></div>
+  </div>
+
+  <div id="sheet-backdrop" onclick="closePanel()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.25);z-index:99;"></div>
+  <div class="detail-panel" id="detail-panel">
+      <div class="sheet-handle"></div>
       <div class="detail-panel-header">
         <h3 id="detail-title">—</h3>
         <div class="cases-goal" id="detail-cases-goal"></div>
@@ -857,10 +878,6 @@
         <kbd>←</kbd> <kbd>→</kbd> Woche wechseln &nbsp;·&nbsp; <kbd>H</kbd> Heute &nbsp;·&nbsp; <kbd>Esc</kbd> Schließen
       </div>
     </div>
-
-    <div class="weeks-header">Alle Wochen · Klick für Details &amp; Tracking</div>
-    <div class="weeks-grid" id="weeks-grid"></div>
-  </div>
 
   <p class="footer">Lernplan · Examen: 3. März 2027 · Daten lokal gespeichert</p>
 
@@ -1221,7 +1238,7 @@
         </div>`;
 
       document.getElementById('tracking-section').style.display = 'none';
-      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('sheet-backdrop').style.display = 'block';
     }
 
     // ── PANEL OPEN ─────────────────────────────────────
@@ -1293,7 +1310,7 @@
       renderDailyLog(w);
       fetchAnkiData(w);
       showNotionWeekData(w);
-      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('sheet-backdrop').style.display = 'block';
     }
 
     // ── CASES TRACKING ────────────────────────────────
@@ -1671,12 +1688,17 @@
         openPanel(currentWeekN, boxes[currentWeekN - 1]);
         boxes[currentWeekN - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else if (e.key === 'Escape') {
-        if (selectedBox) selectedBox.classList.remove('selected');
-        selectedBox = null;
-        activeWeekN = null;
-        document.getElementById('detail-panel').className = 'detail-panel';
+        closePanel();
       }
     });
+
+    function closePanel() {
+      if (selectedBox) selectedBox.classList.remove('selected');
+      selectedBox = null;
+      activeWeekN = null;
+      document.getElementById('detail-panel').className = 'detail-panel';
+      document.getElementById('sheet-backdrop').style.display = 'none';
+    }
 
   </script>
 </body>
