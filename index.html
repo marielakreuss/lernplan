@@ -943,20 +943,21 @@
     window._supaOrigSet = (k,v) => origSet.call(localStorage, k, v);
     window._supaSync = { set: supaSet, del: supaDel };
 
+    let remoteRows = [];
     try {
       if (statusEl) statusEl.textContent = '☁ Sync lädt…';
       const res  = await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?select=key,value`, { headers });
-      const rows = await res.json();
-      if (Array.isArray(rows) && rows.length > 0) {
-        rows.forEach(r => window._supaOrigSet(r.key, r.value));
-        if (statusEl) statusEl.textContent = `☁ Sync OK · ${rows.length} Einträge geladen`;
-        // Seite neu rendern mit den geladenen Daten
+      remoteRows = await res.json();
+      if (!Array.isArray(remoteRows)) remoteRows = [];
+      if (remoteRows.length > 0) {
+        remoteRows.forEach(r => window._supaOrigSet(r.key, r.value));
+        if (statusEl) statusEl.textContent = `☁ Sync OK · ${remoteRows.length} Einträge geladen`;
         if (typeof initWeekBoxLogDots === 'function') initWeekBoxLogDots();
         if (typeof activeWeekN !== 'undefined' && activeWeekN !== null) {
-          if (typeof renderDailyLog === 'function') renderDailyLog(activeWeekN);
-          if (typeof renderNotes    === 'function') renderNotes(activeWeekN);
-          if (typeof renderCases    === 'function') renderCases(activeWeekN);
-          if (typeof renderKlausuren=== 'function') renderKlausuren(activeWeekN);
+          if (typeof renderDailyLog  === 'function') renderDailyLog(activeWeekN);
+          if (typeof renderNotes     === 'function') renderNotes(activeWeekN);
+          if (typeof renderCases     === 'function') renderCases(activeWeekN);
+          if (typeof renderKlausuren === 'function') renderKlausuren(activeWeekN);
         }
       } else {
         if (statusEl) statusEl.textContent = '☁ Sync bereit';
@@ -964,6 +965,18 @@
     } catch(e) {
       if (statusEl) statusEl.textContent = 'Sync offline – nur lokal';
     }
+
+    // Einmalig: alle lokalen stex_-Einträge hochladen die noch nicht in Supabase sind
+    const remoteKeys = new Set(remoteRows.map(r => r.key));
+    const localKeys  = Object.keys(localStorage).filter(k => k.startsWith(PREFIX));
+    const missing    = localKeys.filter(k => !remoteKeys.has(k));
+    if (missing.length > 0) {
+      if (statusEl) statusEl.textContent = `☁ Lade ${missing.length} alte Einträge hoch…`;
+      await Promise.all(missing.map(k => supaSet(k, localStorage.getItem(k))));
+      if (statusEl) statusEl.textContent = `☁ ${missing.length} Einträge hochgeladen ✓`;
+      setTimeout(() => { if (statusEl) statusEl.textContent = '☁ Automatisch synchronisiert'; }, 2000);
+    }
+
     setTimeout(() => {
       if (statusEl) statusEl.textContent = '☁ Automatisch synchronisiert';
     }, 3000);
