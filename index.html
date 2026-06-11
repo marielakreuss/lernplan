@@ -943,6 +943,14 @@
       if (Array.isArray(rows) && rows.length > 0) {
         rows.forEach(r => origSet(r.key, r.value));
         if (statusEl) statusEl.textContent = `☁ Sync OK · ${rows.length} Einträge geladen`;
+        // Seite neu rendern mit den geladenen Daten
+        if (typeof initWeekBoxLogDots === 'function') initWeekBoxLogDots();
+        if (typeof activeWeekN !== 'undefined' && activeWeekN !== null) {
+          if (typeof renderDailyLog === 'function') renderDailyLog(activeWeekN);
+          if (typeof renderNotes    === 'function') renderNotes(activeWeekN);
+          if (typeof renderCases    === 'function') renderCases(activeWeekN);
+          if (typeof renderKlausuren=== 'function') renderKlausuren(activeWeekN);
+        }
       } else {
         if (statusEl) statusEl.textContent = '☁ Sync bereit';
       }
