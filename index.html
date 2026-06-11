@@ -888,10 +888,73 @@
       </div>
     </div>
 
-  <p class="footer">Lernplan · Examen: 3. März 2027 · Daten lokal gespeichert</p>
+  <p class="footer" id="footer-sync">Lernplan · Examen: 3. März 2027 · <span id="sync-status">Sync wird geladen…</span></p>
 
   <!-- Notion-Sync: wird von sync-notion.py erzeugt (optional) -->
   <script src="notion-data.js" onerror="void(0)"></script>
+
+  <!-- ── SUPABASE SYNC LAYER ────────────────────────── -->
+  <script>
+  (async function initSync() {
+    const SUPA_URL = 'https://lgqunscnhtzyfjmshzbk.supabase.co';
+    const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxncXVuc2NuaHR6eWZqbXNoemJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkzODE5MjEsImV4cCI6MjA5NDk1NzkyMX0.nAfN9YpY-kujIe4edFirHEEQyw15WdQU8E8myiXtZqg';
+    const PREFIX   = 'stex_';
+    const statusEl = document.getElementById('sync-status');
+
+    const origSet    = localStorage.setItem.bind(localStorage);
+    const origRemove = localStorage.removeItem.bind(localStorage);
+
+    const headers = {
+      'apikey': SUPA_KEY,
+      'Authorization': 'Bearer ' + SUPA_KEY,
+      'Content-Type': 'application/json',
+    };
+
+    async function supaSet(key, value) {
+      try {
+        await fetch(`${SUPA_URL}/rest/v1/lernplan_sync`, {
+          method: 'POST',
+          headers: { ...headers, 'Prefer': 'resolution=merge-duplicates,return=minimal' },
+          body: JSON.stringify({ key, value, updated_at: new Date().toISOString() })
+        });
+      } catch(e) {}
+    }
+    async function supaDel(key) {
+      try {
+        await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?key=eq.${encodeURIComponent(key)}`, {
+          method: 'DELETE', headers
+        });
+      } catch(e) {}
+    }
+
+    localStorage.setItem = function(key, value) {
+      origSet(key, value);
+      if (key.startsWith(PREFIX)) supaSet(key, value);
+    };
+    localStorage.removeItem = function(key) {
+      origRemove(key);
+      if (key.startsWith(PREFIX)) supaDel(key);
+    };
+
+    try {
+      if (statusEl) statusEl.textContent = '☁ Sync lädt…';
+      const res  = await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?key=like.${PREFIX}*&select=key,value`, { headers });
+      const rows = await res.json();
+      if (Array.isArray(rows) && rows.length > 0) {
+        rows.forEach(r => origSet(r.key, r.value));
+        if (statusEl) statusEl.textContent = `☁ Sync OK · ${rows.length} Einträge geladen`;
+      } else {
+        if (statusEl) statusEl.textContent = '☁ Sync bereit';
+      }
+    } catch(e) {
+      if (statusEl) statusEl.textContent = 'Sync offline – nur lokal';
+    }
+    setTimeout(() => {
+      if (statusEl) statusEl.textContent = '☁ Automatisch synchronisiert';
+    }, 3000);
+  })();
+  </script>
+
   <script>
     // ── CONSTANTS ──────────────────────────────────────
     const START_DATE_PLAN_CALENDAR = new Date(2025, 9, 1);
