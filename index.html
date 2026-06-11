@@ -901,9 +901,6 @@
     const PREFIX   = 'stex_';
     const statusEl = document.getElementById('sync-status');
 
-    const origSet    = localStorage.setItem.bind(localStorage);
-    const origRemove = localStorage.removeItem.bind(localStorage);
-
     const headers = {
       'apikey': SUPA_KEY,
       'Authorization': 'Bearer ' + SUPA_KEY,
@@ -930,21 +927,27 @@
       } catch(e) {}
     }
 
-    localStorage.setItem = function(key, value) {
-      origSet(key, value);
+    // Prototype überschreiben – funktioniert auch in Safari
+    const origSet    = Storage.prototype.setItem;
+    const origRemove = Storage.prototype.removeItem;
+    Storage.prototype.setItem = function(key, value) {
+      origSet.call(this, key, value);
       if (key.startsWith(PREFIX)) supaSet(key, value);
     };
-    localStorage.removeItem = function(key) {
-      origRemove(key);
+    Storage.prototype.removeItem = function(key) {
+      origRemove.call(this, key);
       if (key.startsWith(PREFIX)) supaDel(key);
     };
+
+    // Alias für Supabase-Fetch ohne unser Override zu triggern
+    window._supaOrigSet = (k,v) => origSet.call(localStorage, k, v);
 
     try {
       if (statusEl) statusEl.textContent = '☁ Sync lädt…';
       const res  = await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?select=key,value`, { headers });
       const rows = await res.json();
       if (Array.isArray(rows) && rows.length > 0) {
-        rows.forEach(r => origSet(r.key, r.value));
+        rows.forEach(r => window._supaOrigSet(r.key, r.value));
         if (statusEl) statusEl.textContent = `☁ Sync OK · ${rows.length} Einträge geladen`;
         // Seite neu rendern mit den geladenen Daten
         if (typeof initWeekBoxLogDots === 'function') initWeekBoxLogDots();
