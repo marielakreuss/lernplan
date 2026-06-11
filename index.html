@@ -938,7 +938,7 @@
 
     try {
       if (statusEl) statusEl.textContent = '☁ Sync lädt…';
-      const res  = await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?key=like.${PREFIX}%&select=key,value`, { headers });
+      const res  = await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?select=key,value`, { headers });
       const rows = await res.json();
       if (Array.isArray(rows) && rows.length > 0) {
         rows.forEach(r => origSet(r.key, r.value));
