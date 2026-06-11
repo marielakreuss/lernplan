@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.06.2026 15:11",
+  "lastSync": "11.06.2026 16:50",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 3788,
+    "dueNow": 3823,
     "history": [
       {
         "date": "2025-09-29",
@@ -867,7 +867,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-08",
-        "count": 52
+        "count": 135
+      },
+      {
+        "date": "2026-06-09",
+        "count": 109
+      },
+      {
+        "date": "2026-06-10",
+        "count": 114
       }
     ]
   },
@@ -1071,14 +1079,43 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 37,
-    "nachbereitet": 87
+    "nachbereitet": 90
   },
   "cases": [
     {
+      "title": "KLK 2151 - abgegeben am 7.6.",
+      "status": "Nicht nachbereitet",
+      "woche": 38,
+      "datum": "2026-06-17",
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "SicherheitsR / PolizeiR"
+      ],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2151-abgegeben-am-7-6-37c539e733aa80f0904ec10fc1c8844a"
+    },
+    {
+      "title": "KLK 2150 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": 37,
+      "datum": "2026-06-10",
+      "rechtsgebiet": [
+        "ErbR"
+      ],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2150-nicht-abgegeben-37c539e733aa80eb82e1dd386a88e24d"
+    },
+    {
       "title": "KLK 2149 - abgegeben am 16.5.",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "Strafrecht BT",
         "StPO"
@@ -1106,8 +1143,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2148 - abgegeben am 11.5.",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 34,
+      "datum": "2026-05-20",
       "rechtsgebiet": [
         "ZPO II",
         "ErbR",
@@ -1122,8 +1159,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2147 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 33,
+      "datum": "2026-05-13",
       "rechtsgebiet": [
         "VerfassungsR",
         "Europarecht"
@@ -1137,8 +1174,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2146 - abgegeben am 26.4.",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 32,
+      "datum": "2026-05-06",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "ZPO I"
@@ -1152,8 +1189,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2145 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 31,
+      "datum": "2026-04-29",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -1476,8 +1513,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 11",
       "status": "Nicht nachbereitet",
-      "woche": 38,
-      "datum": "2026-06-17",
+      "woche": 37,
+      "datum": "2026-06-10",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1490,8 +1527,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-10",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1517,7 +1554,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 8",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-10",
       "rechtsgebiet": [
@@ -1531,7 +1568,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 7",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-10",
       "rechtsgebiet": [
@@ -1546,8 +1583,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-10",
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1560,8 +1597,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-10",
+      "woche": 36,
+      "datum": "2026-06-03",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1574,8 +1611,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": 36,
-      "datum": "2026-06-03",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1588,8 +1625,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": 36,
-      "datum": "2026-06-03",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1601,9 +1638,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 2",
-      "status": "Nicht nachbereitet",
-      "woche": 36,
-      "datum": "2026-06-03",
+      "status": "Nachbereitet",
+      "woche": 37,
+      "datum": "2026-06-08",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -5108,10 +5145,10 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 87,
+    "nachbereitet": 90,
     "inBearbeitung": 27,
-    "total": 288,
-    "klkGesamt": 33,
+    "total": 290,
+    "klkGesamt": 35,
     "klkAbgegeben": 14
   }
 };
