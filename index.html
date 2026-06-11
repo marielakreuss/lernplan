@@ -939,8 +939,9 @@
       if (key.startsWith(PREFIX)) supaDel(key);
     };
 
-    // Alias für Supabase-Fetch ohne unser Override zu triggern
+    // Globale Sync-Funktionen für direkten Aufruf
     window._supaOrigSet = (k,v) => origSet.call(localStorage, k, v);
+    window._supaSync = { set: supaSet, del: supaDel };
 
     try {
       if (statusEl) statusEl.textContent = '☁ Sync lädt…';
@@ -966,6 +967,30 @@
     setTimeout(() => {
       if (statusEl) statusEl.textContent = '☁ Automatisch synchronisiert';
     }, 3000);
+
+    // Alle 30 Sekunden neu laden falls neue Daten da sind
+    setInterval(async () => {
+      try {
+        const res  = await fetch(`${SUPA_URL}/rest/v1/lernplan_sync?select=key,value,updated_at&order=updated_at.desc`, { headers });
+        const rows = await res.json();
+        if (!Array.isArray(rows) || rows.length === 0) return;
+        // Prüfen ob neuere Daten vorhanden
+        const newestRemote = new Date(rows[0].updated_at).getTime();
+        const lastSync = window._lastSyncTime || 0;
+        if (newestRemote > lastSync) {
+          rows.forEach(r => window._supaOrigSet(r.key, r.value));
+          window._lastSyncTime = newestRemote;
+          if (typeof initWeekBoxLogDots === 'function') initWeekBoxLogDots();
+          if (typeof activeWeekN !== 'undefined' && activeWeekN !== null) {
+            if (typeof renderDailyLog  === 'function') renderDailyLog(activeWeekN);
+            if (typeof renderNotes     === 'function') renderNotes(activeWeekN);
+            if (typeof renderCases     === 'function') renderCases(activeWeekN);
+            if (typeof renderKlausuren === 'function') renderKlausuren(activeWeekN);
+          }
+          if (statusEl) { statusEl.textContent = '☁ Aktualisiert ✓'; setTimeout(()=>{ statusEl.textContent='☁ Automatisch synchronisiert'; },2000); }
+        }
+      } catch(e) {}
+    }, 30000);
   })();
   </script>
 
@@ -1622,10 +1647,14 @@
     }
     function saveDayLog(date, data) {
       const hasContent = data.gemacht.trim() || data.energie || data.morgen.trim();
+      const key = dayKey(date);
+      const val = JSON.stringify(data);
       if (hasContent) {
-        localStorage.setItem(dayKey(date), JSON.stringify(data));
+        localStorage.setItem(key, val);
+        if (window._supaSync) window._supaSync.set(key, val);
       } else {
-        localStorage.removeItem(dayKey(date));
+        localStorage.removeItem(key);
+        if (window._supaSync) window._supaSync.del(key);
       }
     }
 
