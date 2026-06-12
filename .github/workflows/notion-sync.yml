@@ -9,6 +9,9 @@ on:
     - cron: '0 20 * * *'  # 20:00 UTC = 22:00 MESZ
   workflow_dispatch:       # auch manuell startbar
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
