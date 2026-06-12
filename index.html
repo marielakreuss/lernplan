@@ -1624,11 +1624,6 @@
           continue;
         }
 
-        // Ab aktueller Woche: vom echten Ist-Stand starten, Phasen-Tempo beibehalten
-        if (w === currentWeekN && nachbereitet !== null) {
-          cum = nachbereitet;
-        }
-
         cum = Math.min(CASES_TOTAL, cum + ((p && p.casesPerWeek) || 0));
         cumulativeCasesPerWeek[w] = cum;
 
