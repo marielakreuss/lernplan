@@ -1015,7 +1015,7 @@
     const DAY  = 86400000;
     const WEEK = DAY * 7;
     const CASES_TOTAL = 255;
-    const INITIAL_CASES_END_W33 = 78;
+    const INITIAL_CASES_END_W33 = 74;
 
     const shortFmt = d => d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' });
     const longFmt  = d => d.toLocaleDateString('de-DE', { day: '2-digit', month: 'long', year: 'numeric' });
@@ -1154,9 +1154,9 @@
        '2 Klausuren/Woche schreiben UND nachbereiten']
     );
     mkPhase('probeexamen',
-      new Date(2026,8,7), new Date(2026,8,20), 0, 'probe',
+      new Date(2026,8,7), new Date(2026,8,20), 4, 'probe',
       'Probeexamen',
-      { faelle: '0', faelleSub: 'keine neuen', klausuren: 'alle', klausurenSub: 'ernst nehmen', kartenSub: 'Routine beibehalten' },
+      { faelle: '4', faelleSub: '4 / Wo', klausuren: 'alle', klausurenSub: 'ernst nehmen', kartenSub: 'Routine beibehalten' },
       ['Alle Probeexamen-Klausuren ernst nehmen und mitschreiben',
        'Karteikarten-Routine beibehalten',
        { text: 'Danach Schwachstellen auswerten → Nachbereitung in Peru einplanen', type: 'important' }]
@@ -1184,21 +1184,23 @@
        { text: 'Aufräum-Checkpoint: sauberer Stand für den Endspurt', type: 'success' }]
     );
     mkPhase('endspurtPhase5',
-      new Date(2026,10,9), new Date(2026,11,23), 8, 'postrep',
+      new Date(2026,10,9), new Date(2026,11,21), 8, 'postrep',
       'Phase 5 – Endspurt',
       { faelle: '8–10', faelleSub: 'restliche Fälle fertig', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'erhöhtes Tempo' },
       ['Alle 255 Fälle bis 31. Januar 2027 abschließen',
        'Klausurnachbereitung läuft reibungslos',
        'Karteikarten: erhöhtes Tempo, alle Rechtsgebiete']
     );
-    mkPhase('weihnachtspause',
-      new Date(2026,11,24), new Date(2027,0,1), 0, 'urlaub',
-      'Weihnachtspause',
-      { faelle: '0', faelleSub: 'Pause', klausuren: '0', klausurenSub: 'Pause', kartenSub: 'nur wenn gewollt' },
-      ['Erholung vor den letzten Wochen – bewusst runterkommen']
+    mkPhase('weihnachtenLeicht',
+      new Date(2026,11,22), new Date(2027,0,4), 4, 'urlaub',
+      'Weihnachten – leichtes Lernen',
+      { faelle: '4', faelleSub: 'ruhiges Tempo', klausuren: '1 / Wo', klausurenSub: 'wenn möglich', kartenSub: 'täglich kurz' },
+      ['4 Fälle/Woche – ruhiges Lerntempo über Weihnachten',
+       'Karteikarten täglich kurz halten',
+       { text: 'Weihnachtsabend & Feiertage = Pause, Rest der Woche weiter', type: 'success' }]
     );
     mkPhase('januarFaelle',
-      new Date(2027,0,2), new Date(2027,0,31), 8, 'postrep',
+      new Date(2027,0,5), new Date(2027,0,31), 8, 'postrep',
       'Januar – letzte Fälle abschließen',
       { faelle: '8–10', faelleSub: 'alles fertig bis 31.1.', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: 'normal weiter' },
       ['Alle verbleibenden Fälle bis 31. Januar abschließen',
