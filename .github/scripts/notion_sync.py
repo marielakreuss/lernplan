@@ -122,9 +122,19 @@ def main():
     for w in range(36, 85):
         anki_fokus[str(w)] = ANKI_FOKUS_ZYKLUS[(w - 36) % len(ANKI_FOKUS_ZYKLUS)]
 
+    # Alte Anki-Daten aus der aktuellen notion-data.js lesen und behalten
+    old_anki = None
+    try:
+        with open("notion-data.js", "r", encoding="utf-8") as f:
+            content = f.read()
+        json_str = content.replace("// Automatisch generiert von GitHub Actions\n", "").replace("window.NOTION_DATA = ", "").rstrip(";\n")
+        old_anki = json.loads(json_str).get("anki")
+    except Exception:
+        pass
+
     payload = {
         "lastSync":    datetime.now().strftime("%d.%m.%Y %H:%M"),
-        "anki":        None,
+        "anki":        old_anki,
         "ankiFokus":   anki_fokus,
         "rhythmCheck": {"currentWeek": get_week(date.today()), "nachbereitet": nachbereitet_hk},
         "cases":       cases,
