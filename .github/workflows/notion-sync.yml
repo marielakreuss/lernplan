@@ -1,0 +1,35 @@
+name: Notion Sync
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 08:00 UTC+2 = 10:00 MESZ → zu früh, daher MESZ-Offset
+    - cron: '0 6 * * *'   # 06:00 UTC = 08:00 MESZ
+    - cron: '0 12 * * *'  # 12:00 UTC = 14:00 MESZ
+    - cron: '0 16 * * *'  # 16:00 UTC = 18:00 MESZ
+    - cron: '0 20 * * *'  # 20:00 UTC = 22:00 MESZ
+  workflow_dispatch:       # auch manuell startbar
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python Setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Notion Sync
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python .github/scripts/notion_sync.py
+
+      - name: Commit & Push
+        run: |
+          git config user.name  "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add notion-data.js
+          git diff --cached --quiet || git commit -m "sync: $(date '+%d.%m.%Y %H:%M') Uhr"
+          git push
