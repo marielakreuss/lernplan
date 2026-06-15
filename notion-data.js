@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "15.06.2026 13:25",
+  "lastSync": "15.06.2026 19:59",
   "anki": {
     "reviewedToday": 3,
     "dueNow": 3858,
@@ -1125,7 +1125,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 6,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2151-abgegeben-am-7-6-37c539e733aa80f0904ec10fc1c8844a"
     },
@@ -1545,8 +1545,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 11",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-10",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1558,9 +1558,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 10",
-      "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "status": "In Bearbeitung",
+      "woche": 38,
+      "datum": "2026-06-17",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -5178,7 +5178,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 92,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 291,
     "klkGesamt": 36,
     "klkAbgegeben": 16
