@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.06.2026 11:55",
+  "lastSync": "19.06.2026 18:07",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 3943,
+    "reviewedToday": 70,
+    "dueNow": 3895,
     "history": [
       {
         "date": "2025-09-29",
@@ -895,7 +895,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-16",
-        "count": 3
+        "count": 98
+      },
+      {
+        "date": "2026-06-18",
+        "count": 102
+      },
+      {
+        "date": "2026-06-19",
+        "count": 70
       }
     ]
   },
@@ -1507,8 +1515,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 14",
       "status": "Nicht nachbereitet",
-      "woche": 38,
-      "datum": "2026-06-17",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "StPO"
       ],
@@ -1521,8 +1529,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 13",
       "status": "Nicht nachbereitet",
-      "woche": 38,
-      "datum": "2026-06-17",
+      "woche": 39,
+      "datum": "2026-06-22",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -2318,9 +2326,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 11",
-      "status": "Nicht nachbereitet",
-      "woche": 38,
-      "datum": "2026-06-16",
+      "status": "In Bearbeitung",
+      "woche": 39,
+      "datum": "2026-06-22",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -5182,7 +5190,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 95,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 291,
     "klkGesamt": 36,
     "klkAbgegeben": 16
