@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.06.2026 23:49",
+  "lastSync": "20.06.2026 14:01",
   "anki": {
-    "reviewedToday": 70,
-    "dueNow": 3895,
+    "reviewedToday": 0,
+    "dueNow": 3935,
     "history": [
       {
         "date": "2025-09-29",
@@ -1110,6 +1110,18 @@ window.NOTION_DATA = {
     "nachbereitet": 95
   },
   "cases": [
+    {
+      "title": "KLK 2153 - abgegeben am 20.6.",
+      "status": "Nicht nachbereitet",
+      "woche": 40,
+      "datum": "2026-07-01",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/KLK-2153-abgegeben-am-20-6-385539e733aa800a8d38c23881f2e045"
+    },
     {
       "title": "KLK 2152 - abgegeben am 13.6.",
       "status": "Nicht nachbereitet",
@@ -5191,8 +5203,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 95,
     "inBearbeitung": 28,
-    "total": 291,
-    "klkGesamt": 36,
-    "klkAbgegeben": 16
+    "total": 292,
+    "klkGesamt": 37,
+    "klkAbgegeben": 17
   }
 };
