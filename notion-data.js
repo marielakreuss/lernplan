@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "22.06.2026 11:38",
+  "lastSync": "22.06.2026 13:34",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3954,
@@ -1119,7 +1119,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 40,
       "datum": "2026-07-01",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "Strafrecht AT",
+        "Strafrecht BT",
+        "StPO"
+      ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
