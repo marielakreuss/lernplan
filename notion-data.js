@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "23.06.2026 21:23",
+  "lastSync": "24.06.2026 08:55",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3954,
@@ -1142,7 +1142,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 4,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2152-abgegeben-am-13-6-37f539e733aa80b9ad17e2fa86d44eff"
     },
