@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "25.06.2026 08:49",
+  "lastSync": "25.06.2026 14:12",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3954,
@@ -1549,8 +1549,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 13",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 39,
+      "datum": "2026-06-25",
       "rechtsgebiet": [
         "StPO"
       ],
