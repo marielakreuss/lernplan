@@ -1168,14 +1168,24 @@
       ['8 Fälle/Woche: restliche Gebiete intensivieren',
        '2 Klausuren/Woche schreiben UND nachbereiten']
     );
-    mkPhase('peruFrei',
-      new Date(2026,9,12), new Date(2026,9,18), 0, 'urlaub',
-      'Peru – Woche 1 frei',
-      { faelle: '0', faelleSub: 'wirklich Pause', klausuren: '0', klausurenSub: 'frei', kartenSub: 'nur wenn gewollt' },
-      ['Ankommen, erholen, genießen']
+    mkPhase('peruAnkommen',
+      new Date(2026,9,12), new Date(2026,9,17), 0, 'peru',
+      'Peru – Ankommen & sanfter Einstieg',
+      { faelle: '0', faelleSub: 'keine neuen', klausuren: '1', klausurenSub: 'erst ab Mi/Do', kartenSub: 'ab 14.10. täglich' },
+      ['12.–13.10.: komplett frei – ankommen & Jetlag auskurieren',
+       '14.–17.10.: sanft starten – 1 Klausur schreiben + nachbereiten, Karteikarten täglich (ruhig)',
+       { text: 'Ab So 18.10. beginnt die freie Reise-Woche', type: 'important' }]
+    );
+    mkPhase('peruReise',
+      new Date(2026,9,19), new Date(2026,9,25), 0, 'urlaub',
+      'Peru – Reise (komplett frei) 🌄',
+      { faelle: '0', faelleSub: 'Pause', klausuren: '0', klausurenSub: 'frei', kartenSub: 'nur wenn gewollt' },
+      [{ text: 'Reise 18.–23.10.: komplett frei – reisen & genießen', type: 'success' },
+       'Keine Lernpflicht, Karteikarten nur wenn du Lust hast',
+       'Ab 24.10. geht die Lernphase wieder los']
     );
     mkPhase('peruLernphase',
-      new Date(2026,9,19), new Date(2026,10,8), 0, 'peru',
+      new Date(2026,9,26), new Date(2026,10,8), 0, 'peru',
       'Peru – Lernphase',
       { faelle: '0', faelleSub: 'keine neuen', klausuren: '2 / Wo', klausurenSub: 'schreiben + nachber.', kartenSub: '1,5 h / Tag' },
       ['Alle bisherigen Klausuren vollständig nachbereiten',
