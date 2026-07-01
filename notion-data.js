@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "30.06.2026 21:21",
+  "lastSync": "01.07.2026 09:32",
   "anki": null,
   "ankiFokus": {
     "36": [
@@ -232,7 +232,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 5,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2153-abgegeben-am-20-6-385539e733aa800a8d38c23881f2e045"
     },
