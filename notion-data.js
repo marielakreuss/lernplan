@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "03.07.2026 13:50",
+  "lastSync": "03.07.2026 17:26",
   "anki": null,
   "ankiFokus": {
     "36": [
@@ -202,7 +202,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 40,
-    "nachbereitet": 102
+    "nachbereitet": 103
   },
   "cases": [
     {
@@ -515,8 +515,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 44,
+      "datum": "2026-07-29",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -529,8 +529,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 8",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 44,
+      "datum": "2026-07-29",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -543,8 +543,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 7",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 43,
+      "datum": "2026-07-22",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -557,8 +557,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 43,
+      "datum": "2026-07-22",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -571,8 +571,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 42,
+      "datum": "2026-07-15",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -766,7 +766,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 5",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 40,
       "datum": "2026-07-03",
       "rechtsgebiet": [
@@ -1145,8 +1145,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 44,
+      "datum": "2026-07-28",
       "rechtsgebiet": [
         "SchuldR BT"
       ],
@@ -1187,8 +1187,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 1",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 43,
+      "datum": "2026-07-21",
       "rechtsgebiet": [
         "SchuldR BT"
       ],
@@ -1299,8 +1299,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 22",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 42,
+      "datum": "2026-07-14",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -1313,8 +1313,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 21",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 42,
+      "datum": "2026-07-14",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -1341,8 +1341,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 19",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 41,
+      "datum": "2026-07-07",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -1355,8 +1355,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 18",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 41,
+      "datum": "2026-07-07",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -4315,7 +4315,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 102,
+    "nachbereitet": 103,
     "inBearbeitung": 27,
     "total": 293,
     "klkGesamt": 38,
