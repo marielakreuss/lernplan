@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "04.07.2026 20:42",
+  "lastSync": "05.07.2026 08:42",
   "anki": null,
   "ankiFokus": {
     "36": [
@@ -206,10 +206,63 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
+      "title": "KLK 2157",
+      "status": "Nicht nachbereitet",
+      "woche": 44,
+      "datum": "2026-07-29",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2157-394539e733aa808da441f48ee7fa0f9c"
+    },
+    {
+      "title": "KLK 2156 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": 43,
+      "datum": "2026-07-22",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2156-nicht-abgegeben-394539e733aa8053b2d6d9db0847afe3"
+    },
+    {
+      "title": "KLK 2155 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": 42,
+      "datum": "2026-07-15",
+      "rechtsgebiet": [
+        "BauR"
+      ],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2155-nicht-abgegeben-394539e733aa80d8991fd94e4e960657"
+    },
+    {
+      "title": "UKK 3208 - abgegeben am 5.7.",
+      "status": "Nicht nachbereitet",
+      "woche": 41,
+      "datum": "2026-07-06",
+      "rechtsgebiet": [
+        "StPO",
+        "Strafrecht BT"
+      ],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-3208-abgegeben-am-5-7-394539e733aa80248347e48346564c30"
+    },
+    {
       "title": "KLK 2154 - abgegeben am 29.6.",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 41,
+      "datum": "2026-07-08",
       "rechtsgebiet": [
         "SachenR",
         "SchuldR BT"
@@ -4317,8 +4370,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 103,
     "inBearbeitung": 27,
-    "total": 293,
-    "klkGesamt": 38,
+    "total": 297,
+    "klkGesamt": 42,
     "klkAbgegeben": 17
   }
 };
