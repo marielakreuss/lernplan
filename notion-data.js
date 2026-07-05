@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "05.07.2026 13:18",
+  "lastSync": "05.07.2026 17:10",
   "anki": null,
   "ankiFokus": {
     "36": [
