@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "07.07.2026 10:53",
+  "lastSync": "07.07.2026 14:15",
   "anki": null,
   "ankiFokus": {
     "36": [
@@ -269,8 +269,8 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
-      "abgegeben": false,
+      "bewertung": 10,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2154-abgegeben-am-29-6-38f539e733aa80a29e4be0b7675d09cc"
     },
     {
@@ -1394,8 +1394,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 19",
       "status": "Nicht nachbereitet",
-      "woche": 41,
-      "datum": "2026-07-07",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -4372,6 +4372,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 27,
     "total": 297,
     "klkGesamt": 42,
-    "klkAbgegeben": 17
+    "klkAbgegeben": 18
   }
 };
