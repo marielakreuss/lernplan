@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "21.07.2026 10:24",
+  "lastSync": "21.07.2026 13:23",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3951,
@@ -1598,7 +1598,7 @@ window.NOTION_DATA = {
       "title": "Fall 7",
       "status": "Nicht nachbereitet",
       "woche": 43,
-      "datum": "2026-07-22",
+      "datum": "2026-07-23",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -2239,10 +2239,10 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/Fall-2-310539e733aa8087bf54eacd0fc98471"
     },
     {
-      "title": "Fall 1",
+      "title": "Fall 1 (+ Mangelbegriff- Aufsatz!)",
       "status": "Nicht nachbereitet",
       "woche": 43,
-      "datum": "2026-07-21",
+      "datum": "2026-07-24",
       "rechtsgebiet": [
         "SchuldR BT"
       ],
@@ -2250,7 +2250,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa802687ddf544bd7adb57"
+      "url": "https://app.notion.com/p/Fall-1-Mangelbegriff-Aufsatz-310539e733aa802687ddf544bd7adb57"
     },
     {
       "title": "Fall 7",
@@ -2353,8 +2353,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 22",
       "status": "Nicht nachbereitet",
-      "woche": 42,
-      "datum": "2026-07-14",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2367,8 +2367,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 21",
       "status": "Nicht nachbereitet",
-      "woche": 42,
-      "datum": "2026-07-14",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -2408,9 +2408,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 18",
-      "status": "Nicht nachbereitet",
-      "woche": 41,
-      "datum": "2026-07-07",
+      "status": "In Bearbeitung",
+      "woche": 43,
+      "datum": "2026-07-21",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -5370,7 +5370,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 103,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 297,
     "klkGesamt": 42,
     "klkAbgegeben": 18
