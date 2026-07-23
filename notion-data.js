@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "23.07.2026 10:21",
+  "lastSync": "23.07.2026 13:41",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3951,
@@ -1610,9 +1610,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 6",
-      "status": "Nachbereitet",
-      "woche": 43,
-      "datum": "2026-07-22",
+      "status": "Nicht nachbereitet",
+      "woche": 44,
+      "datum": "2026-07-27",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1624,9 +1624,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 5",
-      "status": "Nicht nachbereitet",
-      "woche": 42,
-      "datum": "2026-07-15",
+      "status": "Nachbereitet",
+      "woche": 43,
+      "datum": "2026-07-22",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1639,8 +1639,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": 41,
-      "datum": "2026-07-08",
+      "woche": 43,
+      "datum": "2026-07-23",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1653,8 +1653,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": 41,
-      "datum": "2026-07-08",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
