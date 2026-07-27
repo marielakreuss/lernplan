@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "27.07.2026 11:18",
+  "lastSync": "27.07.2026 14:17",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3951,
@@ -1203,7 +1203,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 44,
-    "nachbereitet": 106
+    "nachbereitet": 107
   },
   "cases": [
     {
@@ -2240,7 +2240,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 1 (+ Mangelbegriff- Aufsatz!)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 43,
       "datum": "2026-07-24",
       "rechtsgebiet": [
@@ -5369,7 +5369,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 106,
+    "nachbereitet": 107,
     "inBearbeitung": 27,
     "total": 297,
     "klkGesamt": 42,
