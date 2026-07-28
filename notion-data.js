@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "28.07.2026 10:32",
+  "lastSync": "28.07.2026 13:49",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3951,
@@ -1207,7 +1207,47 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
-      "title": "KLK 2157",
+      "title": "UKK 1482 - abgegeben am 25.7.",
+      "status": "Nicht nachbereitet",
+      "woche": null,
+      "datum": null,
+      "rechtsgebiet": [
+        "SchuldR BT 2",
+        "SchuldR AT",
+        "ZPO II"
+      ],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1482-abgegeben-am-25-7-3ab539e733aa80e48bccc7ca842b11ab"
+    },
+    {
+      "title": "KLK 2159",
+      "status": "Nicht nachbereitet",
+      "woche": null,
+      "datum": null,
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2159-3ab539e733aa80e0ae9dddaf27319cb3"
+    },
+    {
+      "title": "KLK 2158 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": null,
+      "datum": null,
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2158-nicht-abgegeben-3ab539e733aa804d8a3fccc2e46a639b"
+    },
+    {
+      "title": "KLK 2157 - nicht abgegeben",
       "status": "Nicht nachbereitet",
       "woche": 44,
       "datum": "2026-07-29",
@@ -1216,7 +1256,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/KLK-2157-394539e733aa808da441f48ee7fa0f9c"
+      "url": "https://app.notion.com/p/KLK-2157-nicht-abgegeben-394539e733aa808da441f48ee7fa0f9c"
     },
     {
       "title": "KLK 2156 - nicht abgegeben",
@@ -2200,7 +2240,7 @@ window.NOTION_DATA = {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
       "woche": 44,
-      "datum": "2026-07-28",
+      "datum": "2026-07-31",
       "rechtsgebiet": [
         "SchuldR BT"
       ],
@@ -5371,8 +5411,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 107,
     "inBearbeitung": 28,
-    "total": 297,
-    "klkGesamt": 42,
+    "total": 300,
+    "klkGesamt": 45,
     "klkAbgegeben": 18
   }
 };
