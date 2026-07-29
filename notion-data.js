@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "29.07.2026 10:36",
+  "lastSync": "29.07.2026 13:54",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 3951,
@@ -1209,8 +1209,8 @@ window.NOTION_DATA = {
     {
       "title": "UKK 1482 - abgegeben am 25.7.",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 44,
+      "datum": "2026-07-27",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "SchuldR AT",
@@ -1225,8 +1225,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2159",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 46,
+      "datum": "2026-08-12",
       "rechtsgebiet": [],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
@@ -1237,8 +1237,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2158 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 45,
+      "datum": "2026-08-05",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -1295,8 +1295,8 @@ window.NOTION_DATA = {
       ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
-      "abgegeben": false,
+      "bewertung": 8,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-3208-abgegeben-am-5-7-394539e733aa80248347e48346564c30"
     },
     {
@@ -5413,6 +5413,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 29,
     "total": 300,
     "klkGesamt": 45,
-    "klkAbgegeben": 18
+    "klkAbgegeben": 19
   }
 };
