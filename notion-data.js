@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "01.08.2026 09:56",
+  "lastSync": "01.08.2026 13:04",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4062,
@@ -1245,8 +1245,8 @@ window.NOTION_DATA = {
     {
       "title": "UKK 1482 - abgegeben am 25.7.",
       "status": "Nicht nachbereitet",
-      "woche": 44,
-      "datum": "2026-07-27",
+      "woche": 43,
+      "datum": "2026-07-25",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "SchuldR AT",
@@ -1259,22 +1259,22 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-1482-abgegeben-am-25-7-3ab539e733aa80e48bccc7ca842b11ab"
     },
     {
-      "title": "KLK 2159",
+      "title": "KLK 2159 - nicht abgegeben (angefangen und dann )",
       "status": "Nicht nachbereitet",
-      "woche": 46,
-      "datum": "2026-08-12",
+      "woche": 44,
+      "datum": "2026-08-01",
       "rechtsgebiet": [],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/KLK-2159-3ab539e733aa80e0ae9dddaf27319cb3"
+      "url": "https://app.notion.com/p/KLK-2159-nicht-abgegeben-angefangen-und-dann-3ab539e733aa80e0ae9dddaf27319cb3"
     },
     {
       "title": "KLK 2158 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 45,
-      "datum": "2026-08-05",
+      "woche": 43,
+      "datum": "2026-07-25",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -1285,8 +1285,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2157 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 44,
-      "datum": "2026-07-29",
+      "woche": 42,
+      "datum": "2026-07-18",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -1297,8 +1297,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2156 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 43,
-      "datum": "2026-07-22",
+      "woche": 41,
+      "datum": "2026-07-11",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -1309,8 +1309,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2155 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 42,
-      "datum": "2026-07-15",
+      "woche": 40,
+      "datum": "2026-07-04",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -1323,8 +1323,8 @@ window.NOTION_DATA = {
     {
       "title": "UKK 3208 - abgegeben am 5.7.",
       "status": "Nicht nachbereitet",
-      "woche": 41,
-      "datum": "2026-07-06",
+      "woche": 40,
+      "datum": "2026-07-05",
       "rechtsgebiet": [
         "StPO",
         "Strafrecht BT"
@@ -1332,14 +1332,14 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 8,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/UKK-3208-abgegeben-am-5-7-394539e733aa80248347e48346564c30"
     },
     {
       "title": "KLK 2154 - abgegeben am 29.6.",
       "status": "Nicht nachbereitet",
-      "woche": 41,
-      "datum": "2026-07-08",
+      "woche": 40,
+      "datum": "2026-06-29",
       "rechtsgebiet": [
         "SachenR",
         "SchuldR BT"
@@ -1347,14 +1347,14 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 10,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2154-abgegeben-am-29-6-38f539e733aa80a29e4be0b7675d09cc"
     },
     {
       "title": "KLK 2153 - abgegeben am 20.6.",
       "status": "Nicht nachbereitet",
-      "woche": 40,
-      "datum": "2026-07-01",
+      "woche": 38,
+      "datum": "2026-06-20",
       "rechtsgebiet": [
         "Strafrecht AT",
         "Strafrecht BT",
@@ -1363,14 +1363,14 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2153-abgegeben-am-20-6-385539e733aa800a8d38c23881f2e045"
     },
     {
       "title": "KLK 2152 - abgegeben am 13.6.",
       "status": "Nicht nachbereitet",
-      "woche": 39,
-      "datum": "2026-06-24",
+      "woche": 37,
+      "datum": "2026-06-13",
       "rechtsgebiet": [
         "BGB AT",
         "SachenR",
@@ -1379,14 +1379,14 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2152-abgegeben-am-13-6-37f539e733aa80b9ad17e2fa86d44eff"
     },
     {
       "title": "KLK 2151 - abgegeben am 7.6.",
       "status": "Nicht nachbereitet",
-      "woche": 38,
-      "datum": "2026-06-17",
+      "woche": 36,
+      "datum": "2026-06-07",
       "rechtsgebiet": [
         "VerwaltungsR AT",
         "SicherheitsR / PolizeiR"
@@ -1394,14 +1394,14 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2151-abgegeben-am-7-6-37c539e733aa80f0904ec10fc1c8844a"
     },
     {
       "title": "KLK 2150 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 37,
-      "datum": "2026-06-10",
+      "woche": 35,
+      "datum": "2026-05-30",
       "rechtsgebiet": [
         "ErbR"
       ],
@@ -1423,7 +1423,7 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 2,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2149-abgegeben-am-16-5-362539e733aa8030b699c779d158dbd7"
     },
     {
@@ -1443,8 +1443,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2148 - abgegeben am 11.5.",
       "status": "Nicht nachbereitet",
-      "woche": 34,
-      "datum": "2026-05-20",
+      "woche": 33,
+      "datum": "2026-05-11",
       "rechtsgebiet": [
         "ZPO II",
         "ErbR",
@@ -1453,7 +1453,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2148-abgegeben-am-11-5-35e539e733aa804b8259fa5c34e18e8b"
     },
     {
@@ -1474,8 +1474,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2146 - abgegeben am 26.4.",
       "status": "Nicht nachbereitet",
-      "woche": 32,
-      "datum": "2026-05-06",
+      "woche": 30,
+      "datum": "2026-04-26",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "ZPO I"
@@ -1483,14 +1483,14 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2146-abgegeben-am-26-4-34e539e733aa8019a609e3b2498f88b8"
     },
     {
       "title": "KLK 2145 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 31,
-      "datum": "2026-04-29",
+      "woche": 29,
+      "datum": "2026-04-18",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -1501,8 +1501,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2144 - abgegeben am 13.4.",
       "status": "Nicht nachbereitet",
-      "woche": 30,
-      "datum": "2026-04-22",
+      "woche": 29,
+      "datum": "2026-04-13",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "ZPO I"
@@ -1510,14 +1510,14 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 7,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2144-abgegeben-am-13-4-341539e733aa80a2bdb9daec718aa43f"
     },
     {
       "title": "KLK 2143 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 29,
-      "datum": "2026-04-15",
+      "woche": 27,
+      "datum": "2026-04-04",
       "rechtsgebiet": [],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
@@ -1528,8 +1528,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2141 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 26,
-      "datum": "2026-03-25",
+      "woche": 24,
+      "datum": "2026-03-13",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -1540,8 +1540,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2140 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 25,
-      "datum": "2026-03-18",
+      "woche": 23,
+      "datum": "2026-03-07",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -1564,8 +1564,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2138 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 23,
-      "datum": "2026-03-04",
+      "woche": 22,
+      "datum": "2026-02-28",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -1576,8 +1576,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2137 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 22,
-      "datum": "2026-02-25",
+      "woche": 21,
+      "datum": "2026-02-21",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -1588,8 +1588,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2142 - abgegeben am 20.3.",
       "status": "Nicht nachbereitet",
-      "woche": 27,
-      "datum": "2026-04-01",
+      "woche": 25,
+      "datum": "2026-03-20",
       "rechtsgebiet": [
         "BGB AT",
         "SchuldR BT 2"
@@ -1597,7 +1597,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2142-abgegeben-am-20-3-334539e733aa807f9f76f6d9ec53cac0"
     },
     {
@@ -3143,8 +3143,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2136 - abgegeben am 7.2.",
       "status": "Nicht nachbereitet",
-      "woche": 21,
-      "datum": "2026-02-18",
+      "woche": 19,
+      "datum": "2026-02-07",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "FamilienR"
@@ -3152,14 +3152,14 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2136-abgegeben-am-7-2-2fd539e733aa8052a5d4fa3d1cae5382"
     },
     {
       "title": "KLK 2134 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 19,
-      "datum": "2026-02-04",
+      "woche": 17,
+      "datum": "2026-01-24",
       "rechtsgebiet": [
         "SachenR",
         "SchuldR AT",
@@ -3174,8 +3174,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2135 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 20,
-      "datum": "2026-02-11",
+      "woche": 18,
+      "datum": "2026-01-31",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -3566,8 +3566,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2133 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 18,
-      "datum": "2026-01-28",
+      "woche": 16,
+      "datum": "2026-01-17",
       "rechtsgebiet": [
         "Strafrecht BT"
       ],
@@ -3742,7 +3742,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2132-abgegeben-am-10-1-2e4539e733aa80e5b354cc6acb58f30b"
     },
     {
@@ -3944,8 +3944,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2131 - abgegeben am 3.1.",
       "status": "Nicht nachbereitet",
-      "woche": 16,
-      "datum": "2026-01-14",
+      "woche": 14,
+      "datum": "2026-01-03",
       "rechtsgebiet": [
         "VerfassungsR",
         "Europarecht"
@@ -3953,14 +3953,14 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 3,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2131-abgegeben-am-3-1-2dd539e733aa804c887dc1efffa3da42"
     },
     {
       "title": "KLK 2130 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 15,
-      "datum": "2026-01-07",
+      "woche": 12,
+      "datum": "2025-12-20",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "ZPO I"
@@ -3974,8 +3974,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2129 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 12,
-      "datum": "2025-12-17",
+      "woche": 11,
+      "datum": "2025-12-13",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -4448,22 +4448,22 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2128 - gegliedert am 28.11., abgegeben am 30.11.",
       "status": "In Bearbeitung",
-      "woche": 11,
-      "datum": "2025-12-10",
+      "woche": 9,
+      "datum": "2025-11-30",
       "rechtsgebiet": [
         "SachenR"
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2128-gegliedert-am-28-11-abgegeben-am-30-11-2ba539e733aa80d88e42ca423cb63629"
     },
     {
       "title": "KLK 2123 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 6,
-      "datum": "2025-11-05",
+      "woche": 4,
+      "datum": "2025-10-25",
       "rechtsgebiet": [],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
@@ -4474,8 +4474,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2124 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 7,
-      "datum": "2025-11-12",
+      "woche": 5,
+      "datum": "2025-11-01",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -4486,8 +4486,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2125 - nicht abgegeben",
       "status": "Nicht nachbereitet",
-      "woche": 8,
-      "datum": "2025-11-19",
+      "woche": 6,
+      "datum": "2025-11-08",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -4498,8 +4498,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2126 - abgegeben am 15.11.",
       "status": "Nicht nachbereitet",
-      "woche": 9,
-      "datum": "2025-11-26",
+      "woche": 7,
+      "datum": "2025-11-15",
       "rechtsgebiet": [
         "SchuldR BT 2",
         "SchuldR BT",
@@ -4508,14 +4508,14 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2126-abgegeben-am-15-11-2b7539e733aa8094b356f4a66fffa298"
     },
     {
       "title": "KLK 2127 - abgegeben am 22.11.",
       "status": "In Bearbeitung",
-      "woche": 10,
-      "datum": "2025-12-03",
+      "woche": 8,
+      "datum": "2025-11-22",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR",
         "KommunalR",
@@ -4524,7 +4524,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 2,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2127-abgegeben-am-22-11-2b4539e733aa80bfb6e6d82fb0c90720"
     },
     {
@@ -5104,8 +5104,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2122 - abgegeben am 21.10.25",
       "status": "Nicht nachbereitet",
-      "woche": 5,
-      "datum": "2025-10-29",
+      "woche": 4,
+      "datum": "2025-10-21",
       "rechtsgebiet": [
         "SachenR",
         "BGB AT",
@@ -5115,7 +5115,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2122-abgegeben-am-21-10-25-293539e733aa8090a860f7eb7987f6c7"
     },
     {
@@ -5219,8 +5219,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2121 - abgeben am 11.10.25",
       "status": "In Bearbeitung",
-      "woche": 4,
-      "datum": "2025-10-22",
+      "woche": 2,
+      "datum": "2025-10-11",
       "rechtsgebiet": [
         "Strafrecht BT",
         "Strafrecht AT",
@@ -5229,14 +5229,14 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2121-abgeben-am-11-10-25-286539e733aa808ca585ee5f38bfa2bd"
     },
     {
       "title": "KLK 2120 - nicht abgegeben, nicht angehört",
       "status": "Nicht nachbereitet",
-      "woche": 3,
-      "datum": "2025-10-15",
+      "woche": 1,
+      "datum": "2025-10-04",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -5359,8 +5359,8 @@ window.NOTION_DATA = {
     {
       "title": "KLK 2119 - abgegeben am 27.9.25",
       "status": "In Bearbeitung",
-      "woche": 2,
-      "datum": "2025-10-08",
+      "woche": 1,
+      "datum": "2025-09-27",
       "rechtsgebiet": [
         "KommunalR",
         "SicherheitsR / PolizeiR"
@@ -5368,7 +5368,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 3,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KLK-2119-abgegeben-am-27-9-25-27d539e733aa80b0a628e948881c2fe4"
     },
     {
@@ -5403,7 +5403,7 @@ window.NOTION_DATA = {
       "title": "KLK 2118 - nicht abgegeben, angehört",
       "status": "Nicht nachbereitet",
       "woche": 1,
-      "datum": "2025-10-01",
+      "datum": "2025-09-20",
       "rechtsgebiet": [
         "HGB",
         "SchuldR BT 2"
@@ -5418,7 +5418,7 @@ window.NOTION_DATA = {
       "title": "KLK 2117 - nicht abgegeben, angehört",
       "status": "Nicht nachbereitet",
       "woche": 1,
-      "datum": "2025-09-24",
+      "datum": "2025-09-13",
       "rechtsgebiet": [
         "Strafrecht AT",
         "Strafrecht BT"
@@ -5449,6 +5449,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 28,
     "total": 300,
     "klkGesamt": 45,
-    "klkAbgegeben": 19
+    "klkAbgegeben": 0
   }
 };
