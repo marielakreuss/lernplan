@@ -12,44 +12,44 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* ── Grundfläche ─────────────────────────────── */
-      --bg:            #F2F6F3;
-      --surface:       rgba(255,255,255,0.72);
+      /* ── Grundfläche: warmes Grau/Greige ──────────── */
+      --bg:            #F4F2F2;
+      --surface:       rgba(255,255,255,0.74);
       --surface-solid: #FFFFFF;
-      --surface-2:     rgba(255,255,255,0.45);
-      --border:        rgba(24,58,45,0.10);
-      --border-strong: rgba(24,58,45,0.16);
-      --text:          #16241E;
-      --text-muted:    #5E6F68;
-      --text-sub:      #94A39C;
+      --surface-2:     rgba(255,255,255,0.48);
+      --border:        rgba(58,46,50,0.10);
+      --border-strong: rgba(58,46,50,0.16);
+      --text:          #2A2427;
+      --text-muted:    #6E6467;
+      --text-sub:      #A69DA0;
 
-      /* ── Rechtsgebiete ───────────────────────────── */
-      --zr:   #1E8A5F;  --zr-l: #6FCBA1;  --zr-bg: #E7F6EE;  --zr-deep: #145A3E;
-      --or:   #33689F;  --or-l: #8CBAE6;  --or-bg: #E9F1FA;  --or-deep: #23486E;
-      --sr:   #C2455F;  --sr-l: #F0A2B2;  --sr-bg: #FBEDF0;  --sr-deep: #8C2F44;
+      /* ── Rechtsgebiete (führen die Farbe) ─────────── */
+      --zr:   #2E8465;  --zr-l: #86C9AC;  --zr-bg: #EAF4EF;  --zr-deep: #1E5E47;
+      --or:   #43698F;  --or-l: #9BBAD6;  --or-bg: #EBF0F6;  --or-deep: #2C4A67;
+      --sr:   #B25169;  --sr-l: #E3A8B6;  --sr-bg: #F8EDF0;  --sr-deep: #843B4E;
 
-      /* Primär = Zivilrecht-Grün (Hauptakzent) */
-      --accent:      #1E8A5F;
-      --accent-l:    #6FCBA1;
-      --accent-soft: #E7F6EE;
+      /* Primär: gedämpftes Altrosa – dezent, kein Fachbezug */
+      --accent:      #9B6B7E;
+      --accent-l:    #D3AFBC;
+      --accent-soft: #F6EEF1;
 
-      /* ── Phasen (gedämpft, damit die Fachfarben führen) ── */
-      --rep-bg: #EDF3F0;     --rep-border: #C0D7CB;     --rep-text: #2F6150;
-      --urlaub-bg: #E4F7EE;  --urlaub-border: #9BDEC0;  --urlaub-text: #16704B;
-      --fokus-bg: #FCF3E1;   --fokus-border: #E8D19E;   --fokus-text: #8A6218;
-      --peru-bg: #E6F4F5;    --peru-border: #A2D3D8;    --peru-text: #1B646E;
-      --postrep-bg: #EDF0FB; --postrep-border: #BEC5EE; --postrep-text: #3A4590;
-      --probe-bg: #FBECF0;   --probe-border: #EFAEBF;   --probe-text: #A33A55;
-      --wieder-bg: #E8F0FA;  --wieder-border: #ADC9EB;  --wieder-text: #2C5A91;
-      --examen-bg: #FBF1D9;  --examen-border: #E2C674;  --examen-text: #7A5910;
+      /* ── Phasen: warme Graustufen mit leichtem Farbton ── */
+      --rep-bg: #F0EEEE;     --rep-border: #D6D0D2;     --rep-text: #6B6064;
+      --urlaub-bg: #EDF2EE;  --urlaub-border: #C6D6CC;  --urlaub-text: #52705C;
+      --fokus-bg: #F7F1E9;   --fokus-border: #DFCFBC;   --fokus-text: #7D6753;
+      --peru-bg: #EDF1F2;    --peru-border: #C7D3D6;    --peru-text: #53686E;
+      --postrep-bg: #EFEEF5; --postrep-border: #CECAD9; --postrep-text: #5B5472;
+      --probe-bg: #F7EEF1;   --probe-border: #DFC0CA;   --probe-text: #8A5A69;
+      --wieder-bg: #EEF1F5;  --wieder-border: #CAD3DE;  --wieder-text: #566672;
+      --examen-bg: #F7F0E4;  --examen-border: #DCC79F;  --examen-text: #7A6238;
 
-      --past-bg: #F0F3F2;    --past-border: #D6DBD9;    --past-text: #8B9792;
-      --future-bg: #F7F9F8;  --future-border: #E2E7E5;  --future-text: #A3AEA9;
+      --past-bg: #F1EFEF;    --past-border: #DCD7D8;    --past-text: #968E90;
+      --future-bg: #F8F6F6;  --future-border: #E8E4E4;  --future-text: #B0A8AA;
 
       --radius:    18px;
       --radius-sm: 12px;
-      --shadow:    0 1px 2px rgba(20,50,40,0.04), 0 8px 24px -12px rgba(20,50,40,0.14);
-      --shadow-lg: 0 2px 4px rgba(20,50,40,0.05), 0 24px 48px -20px rgba(20,50,40,0.22);
+      --shadow:    0 1px 2px rgba(50,40,44,0.04), 0 8px 24px -12px rgba(50,40,44,0.13);
+      --shadow-lg: 0 2px 4px rgba(50,40,44,0.05), 0 24px 48px -20px rgba(50,40,44,0.20);
     }
 
     html { -webkit-text-size-adjust: 100%; }
@@ -71,9 +71,9 @@
       z-index: -1;
       pointer-events: none;
       background:
-        radial-gradient(1100px 620px at 8% -8%,   rgba(111,203,161,0.32), transparent 62%),
-        radial-gradient(950px  560px at 96% 4%,   rgba(140,186,230,0.28), transparent 60%),
-        radial-gradient(900px  760px at 50% 104%, rgba(240,162,178,0.20), transparent 62%);
+        radial-gradient(1150px 640px at 6% -10%,  rgba(196,160,175,0.22), transparent 64%),
+        radial-gradient(950px  560px at 98% 2%,   rgba(150,142,146,0.14), transparent 62%),
+        radial-gradient(900px  760px at 55% 106%, rgba(206,186,192,0.18), transparent 64%);
     }
 
     .wrap { max-width: 1240px; margin: 0 auto; }
@@ -125,7 +125,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(115deg, rgba(111,203,161,0.16), transparent 45%, rgba(140,186,230,0.14));
+      background: linear-gradient(115deg, rgba(196,160,175,0.14), transparent 48%, rgba(150,142,146,0.10));
       pointer-events: none;
     }
     .hero-main { position: relative; z-index: 1; min-width: 0; }
@@ -171,8 +171,8 @@
       white-space: nowrap;
     }
     .chip b { color: var(--text); font-weight: 600; }
-    .chip.hot { background: linear-gradient(135deg, #FFF3E0, #FFE9CC); border-color: #F0CE97; color: #8A5A12; }
-    .chip.hot b { color: #7A4C08; }
+    .chip.hot { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 26%, transparent); color: var(--accent); }
+    .chip.hot b { color: var(--accent); }
 
     /* Countdown-Ring */
     .hero-ring { position: relative; z-index: 1; flex-shrink: 0; text-align: center; }
@@ -316,7 +316,7 @@
       display: flex; align-items: flex-start; gap: 0.55rem;
       padding: 0.42rem 0; font-size: 0.86rem; line-height: 1.5;
       color: var(--text-muted);
-      border-bottom: 1px solid rgba(24,58,45,0.05);
+      border-bottom: 1px solid rgba(58,46,50,0.05);
     }
     .now-tasks li:last-child { border-bottom: none; }
     .now-tasks li .ti {
@@ -350,7 +350,7 @@
     .gauge-label { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-sub); font-weight: 600; }
     .gauge-val { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.02em; }
     .gauge-val small { font-family: 'DM Sans', sans-serif; font-size: 0.74rem; font-weight: 400; color: var(--text-muted); margin-left: 0.25rem; }
-    .track { position: relative; height: 9px; border-radius: 999px; background: rgba(24,58,45,0.08); overflow: visible; }
+    .track { position: relative; height: 9px; border-radius: 999px; background: rgba(58,46,50,0.08); overflow: visible; }
     .track > i {
       display: block; height: 100%; border-radius: 999px;
       background: linear-gradient(90deg, var(--accent), var(--accent-l));
@@ -395,10 +395,10 @@
       width: 52px; height: 52px; border-radius: 16px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem;
-      background: linear-gradient(140deg, #FFEBCF, #FFDCB4);
-      border: 1px solid #F2CE9A;
+      background: linear-gradient(140deg, #F8EFF2, #EFE1E7);
+      border: 1px solid #E4CDD6;
     }
-    .streak-flame.cold { background: linear-gradient(140deg, #EEF2F0, #E3EAE7); border-color: var(--border-strong); filter: grayscale(1); opacity: .8; }
+    .streak-flame.cold { background: linear-gradient(140deg, #F2F0F0, #E8E4E4); border-color: var(--border-strong); filter: grayscale(1); opacity: .8; }
     .streak-num { font-family: 'Outfit', sans-serif; font-size: 1.85rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; }
     .streak-cap { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.22rem; }
     .streak-facts { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-left: auto; }
@@ -410,7 +410,7 @@
     .heat-cell {
       width: 15px; height: 15px; flex: 0 0 auto;
       border-radius: 4px;
-      background: rgba(24,58,45,0.06);
+      background: rgba(58,46,50,0.06);
       border: 1px solid transparent;
     }
     .heat-cell.l1 { background: color-mix(in srgb, var(--accent) 22%, #fff); }
@@ -418,7 +418,7 @@
     .heat-cell.l3 { background: color-mix(in srgb, var(--accent) 66%, #fff); }
     .heat-cell.l4 { background: var(--accent); }
     .heat-cell.today { border-color: var(--text); }
-    .heat-cell.future { background: rgba(24,58,45,0.03); }
+    .heat-cell.future { background: rgba(58,46,50,0.03); }
     .heat-foot {
       display: flex; align-items: center; justify-content: space-between;
       gap: 0.8rem; margin-top: 0.55rem; flex-wrap: wrap;
@@ -449,7 +449,7 @@
     }
     .stat .s-value small { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 400; color: var(--text-sub); margin-left: 0.2rem; letter-spacing: 0; }
     .stat .s-sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.4rem; }
-    .stat .s-track { height: 6px; border-radius: 999px; background: rgba(24,58,45,0.08); margin-top: 0.6rem; overflow: hidden; }
+    .stat .s-track { height: 6px; border-radius: 999px; background: rgba(58,46,50,0.08); margin-top: 0.6rem; overflow: hidden; }
     .stat .s-track i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--sc), color-mix(in srgb, var(--sc) 45%, #fff)); transition: width .9s cubic-bezier(.4,0,.2,1); }
 
     /* ══ RECHTSGEBIETE ════════════════════════════════ */
@@ -462,7 +462,7 @@
     .fach-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 100px;
       background: linear-gradient(180deg, var(--fcb), transparent);
-      opacity: .75; pointer-events: none;
+      opacity: .55; pointer-events: none;
     }
     .fach-card > * { position: relative; }
     .fach-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.05rem; }
@@ -487,7 +487,7 @@
     .fm-value { font-family: 'Outfit', sans-serif; font-size: 1.35rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; color: var(--text); }
     .fm-value small { font-family: 'DM Sans', sans-serif; font-size: 0.76rem; font-weight: 400; color: var(--text-muted); margin-left: 0.3rem; letter-spacing: 0; }
     .fm-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.32rem; line-height: 1.45; }
-    .fm-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(24,58,45,0.08); margin-top: 0.45rem; }
+    .fm-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(58,46,50,0.08); margin-top: 0.45rem; }
     .fm-bar span { height: 100%; transition: width .9s cubic-bezier(.4,0,.2,1); }
     .fm-legend { display: flex; flex-wrap: wrap; gap: 0.15rem 0.7rem; margin-top: 0.4rem; font-size: 0.68rem; color: var(--text-muted); }
     .fm-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 3px; margin-right: 0.3rem; }
@@ -580,7 +580,7 @@
       padding: 1.1rem 1.6rem 2rem;
       border-radius: 22px 22px 0 0;
       border-top: 3px solid var(--accent);
-      background: #F7FAF8;
+      background: #F9F7F7;
       -webkit-backdrop-filter: blur(24px) saturate(1.3);
       backdrop-filter: blur(24px) saturate(1.3);
       box-shadow: var(--shadow-lg);
@@ -594,16 +594,16 @@
     .detail-panel.show { -webkit-transform: translateY(0); transform: translateY(0); pointer-events: auto; }
     .sheet-handle { width: 40px; height: 4px; background: var(--border-strong); border-radius: 3px; margin: 0 auto 1rem; }
 
-    .detail-panel.dp-rep     { background: #F4F8F6; border-color: var(--rep-border); }
-    .detail-panel.dp-urlaub  { background: #F2FBF6; border-color: var(--urlaub-border); }
-    .detail-panel.dp-fokus   { background: #FDF9F0; border-color: var(--fokus-border); }
-    .detail-panel.dp-peru    { background: #F2FAFB; border-color: var(--peru-border); }
-    .detail-panel.dp-postrep { background: #F5F6FD; border-color: var(--postrep-border); }
-    .detail-panel.dp-probe   { background: #FDF5F7; border-color: var(--probe-border); }
-    .detail-panel.dp-wieder  { background: #F4F8FD; border-color: var(--wieder-border); }
-    .detail-panel.dp-examen  { background: #FDF8EC; border-color: var(--examen-border); }
-    .detail-panel.dp-past    { background: #F7F9F8; border-color: var(--past-border); }
-    .detail-panel.dp-future  { background: #F8FAF9; border-color: var(--border-strong); }
+    .detail-panel.dp-rep     { background: #F8F6F6; border-color: var(--rep-border); }
+    .detail-panel.dp-urlaub  { background: #F6F9F7; border-color: var(--urlaub-border); }
+    .detail-panel.dp-fokus   { background: #FBF7F1; border-color: var(--fokus-border); }
+    .detail-panel.dp-peru    { background: #F6F9F9; border-color: var(--peru-border); }
+    .detail-panel.dp-postrep { background: #F7F6FA; border-color: var(--postrep-border); }
+    .detail-panel.dp-probe   { background: #FBF6F8; border-color: var(--probe-border); }
+    .detail-panel.dp-wieder  { background: #F6F8FA; border-color: var(--wieder-border); }
+    .detail-panel.dp-examen  { background: #FBF7EF; border-color: var(--examen-border); }
+    .detail-panel.dp-past    { background: #F8F6F6; border-color: var(--past-border); }
+    .detail-panel.dp-future  { background: #F9F7F7; border-color: var(--border-strong); }
 
     .detail-panel-header { margin-bottom: 1rem; }
     .detail-panel-header h3 { font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; }
@@ -654,7 +654,7 @@
     .case-list li {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.3rem 0; font-size: 0.83rem; color: var(--text);
-      border-bottom: 1px solid rgba(24,58,45,0.05);
+      border-bottom: 1px solid rgba(58,46,50,0.05);
     }
     .case-list li:last-child { border-bottom: none; }
     .case-list li input[type="checkbox"] { accent-color: var(--accent); cursor: pointer; }
@@ -671,7 +671,7 @@
     .aufgaben-section ul li {
       padding: 0.4rem 0; font-size: 0.85rem; color: var(--text-muted);
       display: flex; align-items: flex-start; gap: 0.55rem;
-      border-bottom: 1px solid rgba(24,58,45,0.05); line-height: 1.5;
+      border-bottom: 1px solid rgba(58,46,50,0.05); line-height: 1.5;
     }
     .aufgaben-section ul li:last-child { border-bottom: none; }
     .aufgaben-section ul li .li-icon {
@@ -697,7 +697,7 @@
     .notion-row {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.28rem 0; font-size: 0.82rem; color: var(--text);
-      border-bottom: 1px solid rgba(24,58,45,0.05);
+      border-bottom: 1px solid rgba(58,46,50,0.05);
     }
     .notion-row:last-child { border-bottom: none; }
     .status-badge {
@@ -707,7 +707,7 @@
     }
     .status-badge.done     { background: var(--zr-bg); color: var(--zr-deep); }
     .status-badge.progress { background: var(--or-bg); color: var(--or-deep); }
-    .status-badge.open     { background: rgba(24,58,45,0.07); color: var(--text-muted); }
+    .status-badge.open     { background: rgba(58,46,50,0.07); color: var(--text-muted); }
     .notion-case-title { flex: 1; font-size: 0.82rem; }
     .notion-rg { font-size: 0.7rem; color: var(--text-sub); flex-shrink: 0; }
     .notion-sync-time { font-size: 0.61rem; color: var(--text-sub); font-weight: 400; margin-left: 0.5rem; text-transform: none; letter-spacing: 0; }
@@ -715,7 +715,7 @@
 
     .kb-hint { font-size: 0.66rem; color: var(--text-sub); text-align: right; margin-top: 0.7rem; letter-spacing: 0.03em; }
     .kb-hint kbd {
-      display: inline-block; background: rgba(24,58,45,0.07); border-radius: 4px;
+      display: inline-block; background: rgba(58,46,50,0.07); border-radius: 4px;
       padding: 0.08rem 0.35rem; font-size: 0.65rem; font-family: ui-monospace, monospace;
     }
 
@@ -817,12 +817,12 @@
         <svg width="132" height="132" viewBox="0 0 132 132">
           <defs>
             <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%"   stop-color="#1E8A5F"/>
-              <stop offset="55%"  stop-color="#33689F"/>
-              <stop offset="100%" stop-color="#C2455F"/>
+              <stop offset="0%"   stop-color="#B99AA4"/>
+              <stop offset="55%"  stop-color="#9B6B7E"/>
+              <stop offset="100%" stop-color="#8A8286"/>
             </linearGradient>
           </defs>
-          <circle cx="66" cy="66" r="57" fill="none" stroke="rgba(24,58,45,0.09)" stroke-width="9"/>
+          <circle cx="66" cy="66" r="57" fill="none" stroke="rgba(58,46,50,0.09)" stroke-width="9"/>
           <circle id="ring-progress" cx="66" cy="66" r="57" fill="none" stroke="url(#ringGrad)"
                   stroke-width="9" stroke-linecap="round" stroke-dasharray="358" stroke-dashoffset="358"
                   style="transition: stroke-dashoffset 1.2s cubic-bezier(.4,0,.2,1)"/>
@@ -895,7 +895,7 @@
       <span id="heat-caption">Karteikarten pro Tag · letzte 16 Wochen</span>
       <span class="heat-scale">
         weniger
-        <i style="background:rgba(24,58,45,0.06)"></i>
+        <i style="background:rgba(58,46,50,0.06)"></i>
         <i class="heat-cell l1" style="width:11px;height:11px"></i>
         <i class="heat-cell l2" style="width:11px;height:11px"></i>
         <i class="heat-cell l3" style="width:11px;height:11px"></i>
@@ -908,31 +908,31 @@
   <!-- ══ ZAHLEN ════════════════════════════════════ -->
   <div class="section-label">Auf einen Blick</div>
   <div class="stats-grid rise d4">
-    <div class="stat glass" style="--sc:var(--zr)">
+    <div class="stat glass">
       <div class="s-label">Fälle nachbereitet</div>
       <div class="s-value" id="faelle-count">—</div>
       <div class="s-track"><i id="faelle-track" style="width:0%"></i></div>
       <div class="s-sub" id="faelle-sub">—</div>
     </div>
-    <div class="stat glass" style="--sc:var(--sr)">
-      <div class="s-label">Klausuren abgegeben</div>
+    <div class="stat glass">
+      <div class="s-label">Klausuren nachbereitet</div>
       <div class="s-value" id="klk-count">—</div>
       <div class="s-track"><i id="klk-track" style="width:0%"></i></div>
       <div class="s-sub" id="klk-sub">—</div>
     </div>
-    <div class="stat glass" style="--sc:var(--or)">
+    <div class="stat glass">
       <div class="s-label">Zeitfortschritt</div>
       <div class="s-value" id="pct-card">—<small>%</small></div>
       <div class="s-track"><i id="bar-fill" style="width:0%"></i></div>
       <div class="s-sub">1. Okt 2025 → 3. Mär 2027</div>
     </div>
-    <div class="stat glass" style="--sc:var(--accent)">
+    <div class="stat glass">
       <div class="s-label">Wochen verbleibend</div>
       <div class="s-value" id="weeks-rem">—</div>
       <div class="s-track"><i id="weeks-track" style="width:0%"></i></div>
       <div class="s-sub" id="weeks-total-sub">—</div>
     </div>
-    <div class="stat glass" style="--sc:#8A6218">
+    <div class="stat glass">
       <div class="s-label">Karten letzte 7 Tage</div>
       <div class="s-value" id="karten-7d">—</div>
       <div class="s-track"><i id="karten-track" style="width:0%"></i></div>
@@ -1496,12 +1496,26 @@
   }
   updateFaelleCounter();
 
+  // Klausuren zählen wie die Fälle nach dem Status „Nachbereitet".
+  // Die Notion-Checkbox „Geschrieben + Abgegeben" wird bewusst NICHT als
+  // Fortschritt gewertet – geschrieben ≠ aufgearbeitet.
+  function klausurenStand() {
+    const cases = (window.NOTION_DATA && window.NOTION_DATA.cases) || [];
+    const klk = cases.filter(c => c.typ === 'Klausurenkurs');
+    return {
+      gesamt:       klk.length,
+      nachbereitet: klk.filter(c => c.status === 'Nachbereitet').length,
+      inArbeit:     klk.filter(c => c.status === 'In Bearbeitung').length,
+    };
+  }
+
   function updateKlausurenCounter() {
     if (!window.NOTION_DATA) return;
-    const { klkAbgegeben, klkGesamt } = window.NOTION_DATA.stats;
-    const p = Math.round(klkAbgegeben / klkGesamt * 100);
-    document.getElementById('klk-count').innerHTML = klkAbgegeben + '<small>/ ' + klkGesamt + '</small>';
-    document.getElementById('klk-sub').textContent = p + '% · noch ' + (klkGesamt - klkAbgegeben) + ' offen';
+    const k = klausurenStand();
+    const p = k.gesamt ? Math.round(k.nachbereitet / k.gesamt * 100) : 0;
+    document.getElementById('klk-count').innerHTML = k.nachbereitet + '<small>/ ' + k.gesamt + '</small>';
+    document.getElementById('klk-sub').textContent =
+      p + '% · ' + k.inArbeit + ' in Bearbeitung · ' + (k.gesamt - k.nachbereitet - k.inArbeit) + ' offen';
     requestAnimationFrame(() => { document.getElementById('klk-track').style.width = p + '%'; });
   }
   updateKlausurenCounter();
@@ -1675,17 +1689,17 @@
     document.getElementById('now-pills').innerHTML = `
       <div class="now-pill">
         <div class="np-label">Fälle diese Woche</div>
-        <div class="np-value" style="color:var(--zr)">${kz ? kz.faelle : '—'}</div>
+        <div class="np-value">${kz ? kz.faelle : '—'}</div>
         <div class="np-sub">${kz ? kz.faelleSub : ''}</div>
       </div>
       <div class="now-pill">
         <div class="np-label">Klausuren</div>
-        <div class="np-value" style="color:var(--sr)">${kz ? kz.klausuren : '—'}</div>
+        <div class="np-value">${kz ? kz.klausuren : '—'}</div>
         <div class="np-sub">${kz ? kz.klausurenSub : ''}</div>
       </div>
       <div class="now-pill">
         <div class="np-label">Karteikarten heute</div>
-        <div class="np-value" style="color:var(--or)">${a ? (ankiMap[isoOf(TODAY)] || 0) : '—'}</div>
+        <div class="np-value">${a ? (ankiMap[isoOf(TODAY)] || 0) : '—'}</div>
         <div class="np-sub">${a ? a.dueNow.toLocaleString('de-DE') + ' fällig · ' + (kz ? kz.kartenSub : '') : 'Anki nicht erreichbar'}</div>
       </div>
       <div class="now-pill">
@@ -1727,8 +1741,8 @@
       ? `<div class="gauge-note good">Du liegst ${diff === 0 ? 'genau auf' : diff + ' Fälle über'} dem Richtwert. Weiter so.</div>`
       : `<div class="gauge-note warn">${Math.abs(diff)} Fälle unter dem Richtwert für W${currentWeekN}.</div>`;
 
-    const klk = window.NOTION_DATA && window.NOTION_DATA.stats;
-    const klkP = klk ? Math.round(klk.klkAbgegeben / klk.klkGesamt * 100) : 0;
+    const klk  = window.NOTION_DATA ? klausurenStand() : null;
+    const klkP = klk && klk.gesamt ? Math.round(klk.nachbereitet / klk.gesamt * 100) : 0;
 
     document.getElementById('now-gauges').innerHTML = `
       <div class="gauge">
@@ -1741,10 +1755,10 @@
       </div>
       <div class="gauge">
         <div class="gauge-top">
-          <span class="gauge-label">Klausuren abgegeben</span>
-          <span class="gauge-val">${klk ? klk.klkAbgegeben : '—'}<small>von ${klk ? klk.klkGesamt : '—'}</small></span>
+          <span class="gauge-label">Klausuren nachbereitet</span>
+          <span class="gauge-val">${klk ? klk.nachbereitet : '—'}<small>von ${klk ? klk.gesamt : '—'}</small></span>
         </div>
-        <div class="track"><i style="width:${klkP}%;background:linear-gradient(90deg,var(--sr),var(--sr-l))"></i></div>
+        <div class="track"><i style="width:${klkP}%"></i></div>
       </div>`;
   }
 
@@ -1810,11 +1824,11 @@
   function renderHeroChips() {
     const s   = berechneStreaks();
     const ist = faelleIst();
-    const klk = window.NOTION_DATA && window.NOTION_DATA.stats;
+    const klk = window.NOTION_DATA ? klausurenStand() : null;
     const chips = [];
     chips.push(`<span class="chip ${s.cur > 0 ? 'hot' : ''}">${s.cur > 0 ? '🔥' : '💤'} <b>${s.cur}</b> Tage Serie</span>`);
     chips.push(`<span class="chip">✓ <b>${ist}</b> von ${CASES_TOTAL} Fällen</span>`);
-    if (klk) chips.push(`<span class="chip">✎ <b>${klk.klkAbgegeben}</b> von ${klk.klkGesamt} Klausuren</span>`);
+    if (klk) chips.push(`<span class="chip">✎ <b>${klk.nachbereitet}</b> von ${klk.gesamt} Klausuren nachbereitet</span>`);
     chips.push(`<span class="chip">📅 <b>${weeksLeft}</b> Wochen übrig</span>`);
     document.getElementById('hero-chips').innerHTML = chips.join('');
   }
@@ -1834,9 +1848,9 @@
 
   // ── FORTSCHRITT NACH RECHTSGEBIET ──────────────────
   const FAECHER = [
-    { name: 'Zivilrecht',         kurz: 'ZR', color: '#1E8A5F', light: '#6FCBA1', bg: '#E7F6EE', deep: '#145A3E' },
-    { name: 'Öffentliches Recht', kurz: 'ÖR', color: '#33689F', light: '#8CBAE6', bg: '#E9F1FA', deep: '#23486E' },
-    { name: 'Strafrecht',         kurz: 'SR', color: '#C2455F', light: '#F0A2B2', bg: '#FBEDF0', deep: '#8C2F44' },
+    { name: 'Zivilrecht',         kurz: 'ZR', color: '#2E8465', light: '#86C9AC', bg: '#EAF4EF', deep: '#1E5E47' },
+    { name: 'Öffentliches Recht', kurz: 'ÖR', color: '#43698F', light: '#9BBAD6', bg: '#EBF0F6', deep: '#2C4A67' },
+    { name: 'Strafrecht',         kurz: 'SR', color: '#B25169', light: '#E3A8B6', bg: '#F8EDF0', deep: '#843B4E' },
   ];
   const NOTE_MAX = 13;
 
@@ -1855,8 +1869,8 @@
   function klausurenFuerFach(cases, fach) {
     const klk = cases.filter(c => c.typ === 'Klausurenkurs' && c.fach === fach);
     return {
-      gesamt:    klk.length,
-      abgegeben: klk.filter(c => c.abgegeben).length,
+      gesamt:       klk.length,
+      nachbereitet: klk.filter(c => c.status === 'Nachbereitet').length,
       noten: klk
         .filter(c => typeof c.bewertung === 'number' && c.datum)
         .sort((a, b) => a.datum.localeCompare(b.datum))
@@ -1899,7 +1913,7 @@
     return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img"
               aria-label="Notenentwicklung: ${noten.map(n => n.punkte).join(', ')} Punkte">
       <line x1="0" y1="${y(4).toFixed(1)}" x2="${W}" y2="${y(4).toFixed(1)}"
-            stroke="rgba(24,58,45,0.16)" stroke-width="1" stroke-dasharray="3 3"/>
+            stroke="rgba(58,46,50,0.16)" stroke-width="1" stroke-dasharray="3 3"/>
       <text x="0" y="${(y(4) + 9).toFixed(1)}" font-size="7" fill="#94A39C">4 P.</text>
       <path d="${flaeche}" fill="${light}" opacity="0.25"/>
       <path d="${line}" fill="none" stroke="${color}" stroke-width="2"
@@ -1921,7 +1935,7 @@
       sitzt:  `linear-gradient(90deg, ${f.color} 0%, ${f.light} 100%)`,
       aufbau: f.light,
       lernen: `color-mix(in srgb, ${f.light} 42%, #fff)`,
-      neu:    'rgba(24,58,45,0.12)',
+      neu:    'rgba(58,46,50,0.12)',
     };
     const seg = (n, farbe) => n > 0 ? `<span style="width:${(n / ank.total * 100).toFixed(2)}%;background:${farbe}"></span>` : '';
     return `<div class="fm">
@@ -1990,7 +2004,7 @@
           <div class="fm-value">${schnitt}${noten.length ? '<small>⌀ Punkte</small>' : ''}${
             tr ? `<span class="trend ${tr.cls}">${tr.text}</span>` : ''}</div>
           ${sparkline(noten, f.color, f.light)}
-          <div class="fm-sub">${kl.abgegeben} von ${kl.gesamt} abgegeben${
+          <div class="fm-sub">${kl.nachbereitet} von ${kl.gesamt} nachbereitet${
             noten.length
               ? ` · ${noten.length} benotet · zuletzt ${letzte.punkte} P. am ` +
                 new Date(letzte.datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })
@@ -2408,7 +2422,7 @@
       if (!hint) {
         hint = document.createElement('span');
         hint.className = 'save-hint';
-        hint.style.cssText = 'font-size:0.72rem;color:#1E8A5F;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
+        hint.style.cssText = 'font-size:0.72rem;color:#9B6B7E;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
         hint.textContent = 'Gespeichert ✓';
         const dateEl = form.querySelector('.daily-form-date');
         if (dateEl) dateEl.appendChild(hint);
