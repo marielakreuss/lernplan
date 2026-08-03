@@ -745,6 +745,128 @@
       letter-spacing: 0.04em;
     }
 
+    /* ── FORTSCHRITT NACH RECHTSGEBIET ────────────── */
+    .fach-section { margin-bottom: 1.2rem; }
+    .fach-section-header {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-sub);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+      padding-left: 0.2rem;
+    }
+    .fach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 0.9rem;
+    }
+    .fach-card {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 1.1rem 1.3rem 1.2rem;
+      position: relative;
+      overflow: hidden;
+      --fc: var(--accent);
+    }
+    .fach-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--fc), transparent);
+      opacity: 0.55;
+    }
+    .fach-card h4 {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--fc);
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.01em;
+    }
+    .fm { margin-bottom: 0.95rem; }
+    .fm:last-child { margin-bottom: 0; }
+    .fm-label {
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-sub);
+      font-weight: 500;
+      margin-bottom: 0.28rem;
+    }
+    .fm-value {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--text);
+    }
+    .fm-value small {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 0.25rem;
+    }
+    .fm-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      line-height: 1.4;
+    }
+    .fm-bar {
+      display: flex;
+      height: 7px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--border);
+      margin-top: 0.45rem;
+    }
+    .fm-bar span { height: 100%; transition: width 0.8s cubic-bezier(.4,0,.2,1); }
+    .fm-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.15rem 0.7rem;
+      margin-top: 0.35rem;
+      font-size: 0.67rem;
+      color: var(--text-muted);
+    }
+    .fm-legend i {
+      display: inline-block;
+      width: 7px; height: 7px;
+      border-radius: 2px;
+      margin-right: 0.28rem;
+      vertical-align: 0;
+    }
+    .spark { width: 100%; height: auto; display: block; margin-top: 0.35rem; overflow: visible; }
+    .spark-empty {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      font-style: italic;
+      margin-top: 0.4rem;
+    }
+    .trend {
+      font-size: 0.72rem;
+      font-weight: 500;
+      margin-left: 0.4rem;
+      white-space: nowrap;
+    }
+    .trend.up   { color: #2A5030; }
+    .trend.down { color: #7A3C28; }
+    .trend.flat { color: var(--text-muted); }
+    .fach-note {
+      font-size: 0.7rem;
+      color: var(--text-sub);
+      margin-top: 0.6rem;
+      padding-left: 0.2rem;
+    }
+
+    @media (max-width: 640px) {
+      .fach-grid { grid-template-columns: 1fr; }
+    }
+
   </style>
 </head>
 <body>
@@ -798,6 +920,13 @@
       <span>1. Oktober 2025</span>
       <span>3. März 2027</span>
     </div>
+  </div>
+
+  <!-- FORTSCHRITT NACH RECHTSGEBIET -->
+  <div class="fach-section">
+    <div class="fach-section-header">Fortschritt nach Rechtsgebiet</div>
+    <div class="fach-grid" id="fach-grid"></div>
+    <div class="fach-note" id="fach-note"></div>
   </div>
 
   <!-- LEGEND -->
@@ -1346,6 +1475,175 @@
         'von ' + klkGesamt + ' gesamt · ' + Math.round((klkAbgegeben / klkGesamt) * 100) + '%';
     }
     updateKlausurenCounter();
+
+    // ── FORTSCHRITT NACH RECHTSGEBIET ──────────────────
+    const FAECHER = [
+      { name: 'Zivilrecht',         color: '#3D5470' },
+      { name: 'Öffentliches Recht', color: '#2A5030' },
+      { name: 'Strafrecht',         color: '#7A3C28' },
+    ];
+    const NOTE_MAX = 13;   // feste Punkteskala für alle drei Sparklines (vergleichbar)
+
+    const deZahl = n => n.toLocaleString('de-DE');
+    const deNote = n => n.toFixed(1).replace('.', ',');
+
+    function faelleFuerFach(cases, fach) {
+      const hk = cases.filter(c => c.typ === 'Hauptkurs' && c.fach === fach);
+      return {
+        gesamt:       hk.length,
+        nachbereitet: hk.filter(c => c.status === 'Nachbereitet').length,
+        inBearbeitung: hk.filter(c => c.status === 'In Bearbeitung').length,
+      };
+    }
+
+    function notenFuerFach(cases, fach) {
+      return cases
+        .filter(c => c.typ === 'Klausurenkurs' && c.fach === fach &&
+                     typeof c.bewertung === 'number' && c.datum)
+        .sort((a, b) => a.datum.localeCompare(b.datum))
+        .map(c => ({ punkte: c.bewertung, datum: c.datum, title: c.title }));
+    }
+
+    function trendVon(noten) {
+      if (noten.length < 4) return null;
+      const n     = noten.map(x => x.punkte);
+      const letzte = n.slice(-3);
+      const davor  = n.slice(Math.max(0, n.length - 6), n.length - 3);
+      if (!davor.length) return null;
+      const avg = a => a.reduce((s, x) => s + x, 0) / a.length;
+      const diff = avg(letzte) - avg(davor);
+      const cls  = diff >= 0.5 ? 'up' : diff <= -0.5 ? 'down' : 'flat';
+      const pfeil = cls === 'up' ? '↗' : cls === 'down' ? '↘' : '→';
+      const vz   = diff > 0 ? '+' : '';
+      return { cls, text: `${pfeil} ${vz}${deNote(diff)} P.` };
+    }
+
+    function sparkline(noten, color) {
+      if (!noten.length) {
+        return '<p class="spark-empty">Noch keine benotete Klausur</p>';
+      }
+      const W = 240, H = 62, PL = 4, PR = 4, PT = 6, PB = 12;
+      const x = i => noten.length === 1
+        ? W / 2
+        : PL + i * (W - PL - PR) / (noten.length - 1);
+      const y = p => PT + (1 - p / NOTE_MAX) * (H - PT - PB);
+
+      const pts  = noten.map((n, i) => [x(i), y(n.punkte)]);
+      const line = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+      const flaeche = `${line} L${pts[pts.length - 1][0].toFixed(1)} ${H - PB} L${pts[0][0].toFixed(1)} ${H - PB} Z`;
+
+      const dots = pts.map((p, i) => {
+        const letzt = i === noten.length - 1;
+        const d = new Date(noten[i].datum).toLocaleDateString('de-DE',
+                    { day: '2-digit', month: '2-digit', year: '2-digit' });
+        return `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${letzt ? 3.4 : 2.2}"
+                  fill="${letzt ? color : 'var(--surface)'}" stroke="${color}" stroke-width="1.4">
+                  <title>${noten[i].punkte} Punkte · ${d}</title></circle>`;
+      }).join('');
+
+      return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img"
+                aria-label="Notenentwicklung: ${noten.map(n => n.punkte).join(', ')} Punkte">
+        <line x1="0" y1="${y(4).toFixed(1)}" x2="${W}" y2="${y(4).toFixed(1)}"
+              stroke="var(--border)" stroke-width="1" stroke-dasharray="3 3"/>
+        <text x="0" y="${(y(4) + 9).toFixed(1)}" font-size="7" fill="var(--text-sub)">4 P.</text>
+        <path d="${flaeche}" fill="${color}" opacity="0.07"/>
+        <path d="${line}" fill="none" stroke="${color}" stroke-width="1.8"
+              stroke-linejoin="round" stroke-linecap="round"/>
+        ${dots}
+      </svg>`;
+    }
+
+    function karteikartenBlock(ank, color) {
+      if (!ank || !ank.total) {
+        return `<div class="fm">
+          <div class="fm-label">Karteikarten sitzen</div>
+          <div class="fm-value">—</div>
+          <div class="fm-sub">Kein Anki-Stand – beim nächsten Sync Anki geöffnet lassen</div>
+        </div>`;
+      }
+      const pct = Math.round(ank.sitzt / ank.total * 100);
+      const seg = (n, farbe, op) => n > 0
+        ? `<span style="width:${(n / ank.total * 100).toFixed(2)}%;background:${farbe};opacity:${op}"></span>`
+        : '';
+      return `<div class="fm">
+        <div class="fm-label">Karteikarten sitzen</div>
+        <div class="fm-value">${pct}%<small>${deZahl(ank.sitzt)} von ${deZahl(ank.total)} Karten</small></div>
+        <div class="fm-bar">
+          ${seg(ank.sitzt,  color, 1)}
+          ${seg(ank.aufbau, color, 0.5)}
+          ${seg(ank.lernen, color, 0.25)}
+          ${seg(ank.neu,    'var(--text-sub)', 0.45)}
+        </div>
+        <div class="fm-legend">
+          <span><i style="background:${color}"></i>sitzt ${deZahl(ank.sitzt)}</span>
+          <span><i style="background:${color};opacity:0.5"></i>im Aufbau ${deZahl(ank.aufbau)}</span>
+          <span><i style="background:${color};opacity:0.25"></i>im Lernen ${deZahl(ank.lernen)}</span>
+          <span><i style="background:var(--text-sub);opacity:0.45"></i>neu ${deZahl(ank.neu)}</span>
+        </div>
+        <div class="fm-sub">${deZahl(ank.faellig)} Karten aktuell fällig</div>
+      </div>`;
+    }
+
+    function renderFachUebersicht() {
+      const grid = document.getElementById('fach-grid');
+      const note = document.getElementById('fach-note');
+      if (!grid) return;
+
+      if (!window.NOTION_DATA) {
+        grid.innerHTML = '<p class="spark-empty">Daten werden beim nächsten Notion-Sync geladen.</p>';
+        return;
+      }
+      const cases    = window.NOTION_DATA.cases || [];
+      const ankiFach = (window.NOTION_DATA.ankiFach && window.NOTION_DATA.ankiFach.faecher) || {};
+
+      grid.innerHTML = FAECHER.map(f => {
+        const fa    = faelleFuerFach(cases, f.name);
+        const noten = notenFuerFach(cases, f.name);
+        const ank   = ankiFach[f.name];
+
+        const faellePct = fa.gesamt ? Math.round(fa.nachbereitet / fa.gesamt * 100) : 0;
+        const schnitt   = noten.length
+          ? deNote(noten.reduce((s, n) => s + n.punkte, 0) / noten.length) : '—';
+        const tr        = trendVon(noten);
+        const letzte    = noten[noten.length - 1];
+
+        return `<div class="fach-card" style="--fc:${f.color}">
+          <h4>${f.name}</h4>
+
+          ${karteikartenBlock(ank, f.color)}
+
+          <div class="fm">
+            <div class="fm-label">Fälle nachbereitet</div>
+            <div class="fm-value">${fa.nachbereitet}<small>von ${fa.gesamt} · ${faellePct}%</small></div>
+            <div class="fm-bar">
+              <span style="width:${faellePct}%;background:${f.color}"></span>
+              <span style="width:${fa.gesamt ? (fa.inBearbeitung / fa.gesamt * 100).toFixed(2) : 0}%;background:${f.color};opacity:0.35"></span>
+            </div>
+            <div class="fm-sub">${fa.inBearbeitung} in Bearbeitung · ${fa.gesamt - fa.nachbereitet - fa.inBearbeitung} offen</div>
+          </div>
+
+          <div class="fm">
+            <div class="fm-label">Klausurnoten</div>
+            <div class="fm-value">${schnitt}${noten.length ? '<small>⌀ Punkte</small>' : ''}${
+              tr ? `<span class="trend ${tr.cls}">${tr.text}</span>` : ''}</div>
+            ${sparkline(noten, f.color)}
+            <div class="fm-sub">${
+              noten.length
+                ? `${noten.length} benotet · zuletzt ${letzte.punkte} P. am ` +
+                  new Date(letzte.datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })
+                : 'noch keine Bewertung eingetragen'
+            }</div>
+          </div>
+        </div>`;
+      }).join('');
+
+      const stand = window.NOTION_DATA.ankiFach && window.NOTION_DATA.ankiFach.stand;
+      note.textContent =
+        '„Sitzt" = Karte mit Intervall ab 21 Tagen (Anki: reif)' +
+        (stand ? ' · Kartenstand: ' + stand : '') +
+        ' · Fälle & Noten aus Notion';
+    }
+    renderFachUebersicht();
 
     // ── EXAMEN PANEL ───────────────────────────────────
     function openExamenPanel(box) {
