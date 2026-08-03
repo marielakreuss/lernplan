@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "03.08.2026 14:24",
+  "lastSync": "03.08.2026 17:50",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4104,
@@ -1255,7 +1255,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 45,
-    "nachbereitet": 109
+    "nachbereitet": 110
   },
   "cases": [
     {
@@ -2486,9 +2486,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 19",
-      "status": "In Bearbeitung",
-      "woche": 44,
-      "datum": "2026-07-28",
+      "status": "Nachbereitet",
+      "woche": 45,
+      "datum": "2026-08-03",
       "rechtsgebiet": [
         "SchuldR AT"
       ],
@@ -5461,8 +5461,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 109,
-    "inBearbeitung": 28,
+    "nachbereitet": 110,
+    "inBearbeitung": 27,
     "total": 300,
     "klkGesamt": 45,
     "klkAbgegeben": 0
