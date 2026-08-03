@@ -1477,10 +1477,11 @@
     updateKlausurenCounter();
 
     // ── FORTSCHRITT NACH RECHTSGEBIET ──────────────────
+    // Warme Palette, abgeleitet von --accent und den Phasenfarben oben
     const FAECHER = [
-      { name: 'Zivilrecht',         color: '#3D5470' },
-      { name: 'Öffentliches Recht', color: '#2A5030' },
-      { name: 'Strafrecht',         color: '#7A3C28' },
+      { name: 'Zivilrecht',         color: '#7B5E3A', light: '#C49A72' },
+      { name: 'Öffentliches Recht', color: '#6A5020', light: '#D4BC80' },
+      { name: 'Strafrecht',         color: '#7A3C28', light: '#D4A890' },
     ];
     const NOTE_MAX = 13;   // feste Punkteskala für alle drei Sparklines (vergleichbar)
 
@@ -1496,12 +1497,16 @@
       };
     }
 
-    function notenFuerFach(cases, fach) {
-      return cases
-        .filter(c => c.typ === 'Klausurenkurs' && c.fach === fach &&
-                     typeof c.bewertung === 'number' && c.datum)
-        .sort((a, b) => a.datum.localeCompare(b.datum))
-        .map(c => ({ punkte: c.bewertung, datum: c.datum, title: c.title }));
+    function klausurenFuerFach(cases, fach) {
+      const klk = cases.filter(c => c.typ === 'Klausurenkurs' && c.fach === fach);
+      return {
+        gesamt:    klk.length,
+        abgegeben: klk.filter(c => c.abgegeben).length,
+        noten: klk
+          .filter(c => typeof c.bewertung === 'number' && c.datum)
+          .sort((a, b) => a.datum.localeCompare(b.datum))
+          .map(c => ({ punkte: c.bewertung, datum: c.datum, title: c.title })),
+      };
     }
 
     function trendVon(noten) {
@@ -1518,7 +1523,7 @@
       return { cls, text: `${pfeil} ${vz}${deNote(diff)} P.` };
     }
 
-    function sparkline(noten, color) {
+    function sparkline(noten, color, light) {
       if (!noten.length) {
         return '<p class="spark-empty">Noch keine benotete Klausur</p>';
       }
@@ -1546,14 +1551,14 @@
         <line x1="0" y1="${y(4).toFixed(1)}" x2="${W}" y2="${y(4).toFixed(1)}"
               stroke="var(--border)" stroke-width="1" stroke-dasharray="3 3"/>
         <text x="0" y="${(y(4) + 9).toFixed(1)}" font-size="7" fill="var(--text-sub)">4 P.</text>
-        <path d="${flaeche}" fill="${color}" opacity="0.07"/>
+        <path d="${flaeche}" fill="${light}" opacity="0.22"/>
         <path d="${line}" fill="none" stroke="${color}" stroke-width="1.8"
               stroke-linejoin="round" stroke-linecap="round"/>
         ${dots}
       </svg>`;
     }
 
-    function karteikartenBlock(ank, color) {
+    function karteikartenBlock(ank, color, light) {
       if (!ank || !ank.total) {
         return `<div class="fm">
           <div class="fm-label">Karteikarten sitzen</div>
@@ -1561,24 +1566,30 @@
           <div class="fm-sub">Kein Anki-Stand – beim nächsten Sync Anki geöffnet lassen</div>
         </div>`;
       }
-      const pct = Math.round(ank.sitzt / ank.total * 100);
-      const seg = (n, farbe, op) => n > 0
-        ? `<span style="width:${(n / ank.total * 100).toFixed(2)}%;background:${farbe};opacity:${op}"></span>`
+      const pct  = Math.round(ank.sitzt / ank.total * 100);
+      const töne = {
+        sitzt:  `linear-gradient(90deg, ${color} 0%, ${light} 100%)`,
+        aufbau: light,
+        lernen: `color-mix(in srgb, ${light} 45%, var(--surface))`,
+        neu:    'var(--border)',
+      };
+      const seg = (n, farbe) => n > 0
+        ? `<span style="width:${(n / ank.total * 100).toFixed(2)}%;background:${farbe}"></span>`
         : '';
       return `<div class="fm">
         <div class="fm-label">Karteikarten sitzen</div>
         <div class="fm-value">${pct}%<small>${deZahl(ank.sitzt)} von ${deZahl(ank.total)} Karten</small></div>
         <div class="fm-bar">
-          ${seg(ank.sitzt,  color, 1)}
-          ${seg(ank.aufbau, color, 0.5)}
-          ${seg(ank.lernen, color, 0.25)}
-          ${seg(ank.neu,    'var(--text-sub)', 0.45)}
+          ${seg(ank.sitzt,  töne.sitzt)}
+          ${seg(ank.aufbau, töne.aufbau)}
+          ${seg(ank.lernen, töne.lernen)}
+          ${seg(ank.neu,    töne.neu)}
         </div>
         <div class="fm-legend">
           <span><i style="background:${color}"></i>sitzt ${deZahl(ank.sitzt)}</span>
-          <span><i style="background:${color};opacity:0.5"></i>im Aufbau ${deZahl(ank.aufbau)}</span>
-          <span><i style="background:${color};opacity:0.25"></i>im Lernen ${deZahl(ank.lernen)}</span>
-          <span><i style="background:var(--text-sub);opacity:0.45"></i>neu ${deZahl(ank.neu)}</span>
+          <span><i style="background:${töne.aufbau}"></i>im Aufbau ${deZahl(ank.aufbau)}</span>
+          <span><i style="background:${töne.lernen}"></i>im Lernen ${deZahl(ank.lernen)}</span>
+          <span><i style="background:${töne.neu}"></i>neu ${deZahl(ank.neu)}</span>
         </div>
         <div class="fm-sub">${deZahl(ank.faellig)} Karten aktuell fällig</div>
       </div>`;
@@ -1598,7 +1609,8 @@
 
       grid.innerHTML = FAECHER.map(f => {
         const fa    = faelleFuerFach(cases, f.name);
-        const noten = notenFuerFach(cases, f.name);
+        const kl    = klausurenFuerFach(cases, f.name);
+        const noten = kl.noten;
         const ank   = ankiFach[f.name];
 
         const faellePct = fa.gesamt ? Math.round(fa.nachbereitet / fa.gesamt * 100) : 0;
@@ -1607,17 +1619,17 @@
         const tr        = trendVon(noten);
         const letzte    = noten[noten.length - 1];
 
-        return `<div class="fach-card" style="--fc:${f.color}">
+        return `<div class="fach-card" style="--fc:${f.color};--fc-light:${f.light}">
           <h4>${f.name}</h4>
 
-          ${karteikartenBlock(ank, f.color)}
+          ${karteikartenBlock(ank, f.color, f.light)}
 
           <div class="fm">
             <div class="fm-label">Fälle nachbereitet</div>
             <div class="fm-value">${fa.nachbereitet}<small>von ${fa.gesamt} · ${faellePct}%</small></div>
             <div class="fm-bar">
-              <span style="width:${faellePct}%;background:${f.color}"></span>
-              <span style="width:${fa.gesamt ? (fa.inBearbeitung / fa.gesamt * 100).toFixed(2) : 0}%;background:${f.color};opacity:0.35"></span>
+              <span style="width:${faellePct}%;background:linear-gradient(90deg, ${f.color} 0%, ${f.light} 100%)"></span>
+              <span style="width:${fa.gesamt ? (fa.inBearbeitung / fa.gesamt * 100).toFixed(2) : 0}%;background:color-mix(in srgb, ${f.light} 45%, var(--surface))"></span>
             </div>
             <div class="fm-sub">${fa.inBearbeitung} in Bearbeitung · ${fa.gesamt - fa.nachbereitet - fa.inBearbeitung} offen</div>
           </div>
@@ -1626,12 +1638,12 @@
             <div class="fm-label">Klausurnoten</div>
             <div class="fm-value">${schnitt}${noten.length ? '<small>⌀ Punkte</small>' : ''}${
               tr ? `<span class="trend ${tr.cls}">${tr.text}</span>` : ''}</div>
-            ${sparkline(noten, f.color)}
-            <div class="fm-sub">${
+            ${sparkline(noten, f.color, f.light)}
+            <div class="fm-sub">${kl.abgegeben} von ${kl.gesamt} abgegeben${
               noten.length
-                ? `${noten.length} benotet · zuletzt ${letzte.punkte} P. am ` +
+                ? ` · ${noten.length} benotet · zuletzt ${letzte.punkte} P. am ` +
                   new Date(letzte.datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })
-                : 'noch keine Bewertung eingetragen'
+                : ' · noch keine Bewertung eingetragen'
             }</div>
           </div>
         </div>`;
