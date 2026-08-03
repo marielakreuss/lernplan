@@ -12,44 +12,46 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* ── Grundfläche: warmes Grau/Greige ──────────── */
-      --bg:            #F4F2F2;
-      --surface:       rgba(255,255,255,0.74);
+      /* ── Grundfläche: warmes Creme/Beige ──────────── */
+      --bg:            #F5F2EB;
+      --surface:       rgba(255,255,255,0.76);
       --surface-solid: #FFFFFF;
-      --surface-2:     rgba(255,255,255,0.48);
-      --border:        rgba(58,46,50,0.10);
-      --border-strong: rgba(58,46,50,0.16);
-      --text:          #2A2427;
-      --text-muted:    #6E6467;
-      --text-sub:      #A69DA0;
+      --surface-2:     rgba(255,255,255,0.50);
+      --border:        rgba(62,50,34,0.10);
+      --border-strong: rgba(62,50,34,0.17);
+      --text:          #2B2620;
+      --text-muted:    #6E6558;
+      --text-sub:      #A79E8F;
 
       /* ── Rechtsgebiete (führen die Farbe) ─────────── */
       --zr:   #2E8465;  --zr-l: #86C9AC;  --zr-bg: #EAF4EF;  --zr-deep: #1E5E47;
       --or:   #43698F;  --or-l: #9BBAD6;  --or-bg: #EBF0F6;  --or-deep: #2C4A67;
       --sr:   #B25169;  --sr-l: #E3A8B6;  --sr-bg: #F8EDF0;  --sr-deep: #843B4E;
 
-      /* Primär: gedämpftes Altrosa – dezent, kein Fachbezug */
-      --accent:      #9B6B7E;
-      --accent-l:    #D3AFBC;
-      --accent-soft: #F6EEF1;
+      /* Primär: warmes Sand/Camel – dezent, kein Fachbezug,
+         kollidiert mit keiner der drei Fachfarben */
+      --accent:      #8C6D45;   /* Text, Linien, Ränder – trägt Kontrast */
+      --accent-fill: #C2A377;   /* große Flächen: Balken, Heatmap, Fortschritt */
+      --accent-l:    #E0CDAB;
+      --accent-soft: #F6F0E4;
 
-      /* ── Phasen: warme Graustufen mit leichtem Farbton ── */
-      --rep-bg: #F0EEEE;     --rep-border: #D6D0D2;     --rep-text: #6B6064;
-      --urlaub-bg: #EDF2EE;  --urlaub-border: #C6D6CC;  --urlaub-text: #52705C;
-      --fokus-bg: #F7F1E9;   --fokus-border: #DFCFBC;   --fokus-text: #7D6753;
-      --peru-bg: #EDF1F2;    --peru-border: #C7D3D6;    --peru-text: #53686E;
-      --postrep-bg: #EFEEF5; --postrep-border: #CECAD9; --postrep-text: #5B5472;
-      --probe-bg: #F7EEF1;   --probe-border: #DFC0CA;   --probe-text: #8A5A69;
-      --wieder-bg: #EEF1F5;  --wieder-border: #CAD3DE;  --wieder-text: #566672;
-      --examen-bg: #F7F0E4;  --examen-border: #DCC79F;  --examen-text: #7A6238;
+      /* ── Phasen: warme Sandtöne mit leichtem Farbton ─── */
+      --rep-bg: #F1EEE8;     --rep-border: #D8D1C4;     --rep-text: #6B6254;
+      --urlaub-bg: #EDF2EC;  --urlaub-border: #C6D6C7;  --urlaub-text: #52705A;
+      --fokus-bg: #F8F1E4;   --fokus-border: #E2CFAE;   --fokus-text: #7D6540;
+      --peru-bg: #EDF1F1;    --peru-border: #C7D3D3;    --peru-text: #53686B;
+      --postrep-bg: #EFEEF4; --postrep-border: #CECAD7; --postrep-text: #5B5470;
+      --probe-bg: #F7EFF0;   --probe-border: #DFC2C7;   --probe-text: #8A5C64;
+      --wieder-bg: #EEF1F4;  --wieder-border: #CAD3DB;  --wieder-text: #566670;
+      --examen-bg: #F8EFDC;  --examen-border: #DCC391;  --examen-text: #7A5F2C;
 
-      --past-bg: #F1EFEF;    --past-border: #DCD7D8;    --past-text: #968E90;
-      --future-bg: #F8F6F6;  --future-border: #E8E4E4;  --future-text: #B0A8AA;
+      --past-bg: #F2EFE9;    --past-border: #DED8CB;    --past-text: #968E80;
+      --future-bg: #F8F6F1;  --future-border: #E9E4DA;  --future-text: #B0A899;
 
       --radius:    18px;
       --radius-sm: 12px;
-      --shadow:    0 1px 2px rgba(50,40,44,0.04), 0 8px 24px -12px rgba(50,40,44,0.13);
-      --shadow-lg: 0 2px 4px rgba(50,40,44,0.05), 0 24px 48px -20px rgba(50,40,44,0.20);
+      --shadow:    0 1px 2px rgba(60,48,32,0.04), 0 8px 24px -12px rgba(60,48,32,0.14);
+      --shadow-lg: 0 2px 4px rgba(60,48,32,0.05), 0 24px 48px -20px rgba(60,48,32,0.20);
     }
 
     html { -webkit-text-size-adjust: 100%; }
@@ -71,9 +73,9 @@
       z-index: -1;
       pointer-events: none;
       background:
-        radial-gradient(1150px 640px at 6% -10%,  rgba(196,160,175,0.22), transparent 64%),
-        radial-gradient(950px  560px at 98% 2%,   rgba(150,142,146,0.14), transparent 62%),
-        radial-gradient(900px  760px at 55% 106%, rgba(206,186,192,0.18), transparent 64%);
+        radial-gradient(1150px 640px at 6% -10%,  rgba(206,182,144,0.24), transparent 64%),
+        radial-gradient(950px  560px at 98% 2%,   rgba(168,158,140,0.16), transparent 62%),
+        radial-gradient(900px  760px at 55% 106%, rgba(214,196,170,0.20), transparent 64%);
     }
 
     .wrap { max-width: 1240px; margin: 0 auto; }
@@ -125,7 +127,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(115deg, rgba(196,160,175,0.14), transparent 48%, rgba(150,142,146,0.10));
+      background: linear-gradient(115deg, rgba(206,182,144,0.16), transparent 48%, rgba(168,158,140,0.12));
       pointer-events: none;
     }
     .hero-main { position: relative; z-index: 1; min-width: 0; }
@@ -316,7 +318,7 @@
       display: flex; align-items: flex-start; gap: 0.55rem;
       padding: 0.42rem 0; font-size: 0.86rem; line-height: 1.5;
       color: var(--text-muted);
-      border-bottom: 1px solid rgba(58,46,50,0.05);
+      border-bottom: 1px solid rgba(62,50,34,0.05);
     }
     .now-tasks li:last-child { border-bottom: none; }
     .now-tasks li .ti {
@@ -350,10 +352,10 @@
     .gauge-label { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-sub); font-weight: 600; }
     .gauge-val { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.02em; }
     .gauge-val small { font-family: 'DM Sans', sans-serif; font-size: 0.74rem; font-weight: 400; color: var(--text-muted); margin-left: 0.25rem; }
-    .track { position: relative; height: 9px; border-radius: 999px; background: rgba(58,46,50,0.08); overflow: visible; }
+    .track { position: relative; height: 9px; border-radius: 999px; background: rgba(62,50,34,0.08); overflow: visible; }
     .track > i {
       display: block; height: 100%; border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-l));
+      background: linear-gradient(90deg, var(--accent-fill), var(--accent-l));
       transition: width .9s cubic-bezier(.4,0,.2,1);
     }
     .track > b {
@@ -395,10 +397,10 @@
       width: 52px; height: 52px; border-radius: 16px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem;
-      background: linear-gradient(140deg, #F8EFF2, #EFE1E7);
-      border: 1px solid #E4CDD6;
+      background: linear-gradient(140deg, #F8F1E2, #F0E5CE);
+      border: 1px solid #E2D2AE;
     }
-    .streak-flame.cold { background: linear-gradient(140deg, #F2F0F0, #E8E4E4); border-color: var(--border-strong); filter: grayscale(1); opacity: .8; }
+    .streak-flame.cold { background: linear-gradient(140deg, #F2F0EA, #E9E4DA); border-color: var(--border-strong); filter: grayscale(1); opacity: .8; }
     .streak-num { font-family: 'Outfit', sans-serif; font-size: 1.85rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; }
     .streak-cap { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.22rem; }
     .streak-facts { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-left: auto; }
@@ -410,15 +412,15 @@
     .heat-cell {
       width: 15px; height: 15px; flex: 0 0 auto;
       border-radius: 4px;
-      background: rgba(58,46,50,0.06);
+      background: rgba(62,50,34,0.06);
       border: 1px solid transparent;
     }
-    .heat-cell.l1 { background: color-mix(in srgb, var(--accent) 22%, #fff); }
-    .heat-cell.l2 { background: color-mix(in srgb, var(--accent) 42%, #fff); }
-    .heat-cell.l3 { background: color-mix(in srgb, var(--accent) 66%, #fff); }
-    .heat-cell.l4 { background: var(--accent); }
+    .heat-cell.l1 { background: color-mix(in srgb, var(--accent-fill) 26%, #fff); }
+    .heat-cell.l2 { background: color-mix(in srgb, var(--accent-fill) 50%, #fff); }
+    .heat-cell.l3 { background: color-mix(in srgb, var(--accent-fill) 76%, #fff); }
+    .heat-cell.l4 { background: var(--accent-fill); }
     .heat-cell.today { border-color: var(--text); }
-    .heat-cell.future { background: rgba(58,46,50,0.03); }
+    .heat-cell.future { background: rgba(62,50,34,0.03); }
     .heat-foot {
       display: flex; align-items: center; justify-content: space-between;
       gap: 0.8rem; margin-top: 0.55rem; flex-wrap: wrap;
@@ -426,6 +428,47 @@
     }
     .heat-scale { display: flex; align-items: center; gap: 0.28rem; }
     .heat-scale i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+
+    /* ── FÄLLE PRO WOCHE ─────────────────────────── */
+    .wk-block { margin-top: 1.15rem; padding-top: 1.05rem; border-top: 1px solid var(--border); }
+    .wk-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.85rem;
+    }
+    .wk-summary { font-size: 0.76rem; color: var(--text-muted); }
+    .wk-summary b { font-family: 'Outfit', sans-serif; font-weight: 600; color: var(--text); }
+
+    .wk-plot { display: flex; align-items: flex-end; gap: 4px; height: 82px; }
+    .wk-col { flex: 1 1 0; position: relative; height: 100%; min-width: 0; }
+    .wk-bar {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      display: flex; flex-direction: column-reverse;
+      border-radius: 5px 5px 2px 2px; overflow: hidden;
+      background: rgba(62,50,34,0.06);
+      transition: height .7s cubic-bezier(.4,0,.2,1);
+    }
+    .wk-bar i { display: block; width: 100%; }
+    .wk-bar .s-nach { background: var(--accent-fill); }
+    .wk-bar .s-arb  { background: color-mix(in srgb, var(--accent-fill) 45%, #fff); }
+    .wk-bar .s-off  { background: rgba(62,50,34,0.10); }
+    .wk-soll {
+      position: absolute; left: -1px; right: -1px; height: 2px;
+      background: var(--text); opacity: 0.5; border-radius: 2px;
+    }
+    .wk-col.now .wk-bar { box-shadow: 0 0 0 1.5px var(--accent); }
+    .wk-axis { display: flex; gap: 4px; margin-top: 0.35rem; }
+    .wk-axis span {
+      flex: 1 1 0; min-width: 0; text-align: center;
+      font-size: 0.6rem; color: var(--text-sub); letter-spacing: 0.02em;
+    }
+    .wk-axis span.now { color: var(--accent); font-weight: 700; }
+    .wk-legend {
+      display: flex; flex-wrap: wrap; gap: 0.2rem 0.85rem;
+      margin-top: 0.6rem; font-size: 0.7rem; color: var(--text-muted);
+    }
+    .wk-legend span { display: inline-flex; align-items: center; gap: 0.32rem; }
+    .wk-legend i { width: 9px; height: 9px; border-radius: 3px; display: inline-block; }
+    .wk-legend i.soll { width: 12px; height: 2px; border-radius: 2px; background: var(--text); opacity: .5; }
 
     /* ══ STAT-KACHELN ═════════════════════════════════ */
     .stats-grid {
@@ -449,8 +492,8 @@
     }
     .stat .s-value small { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 400; color: var(--text-sub); margin-left: 0.2rem; letter-spacing: 0; }
     .stat .s-sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.4rem; }
-    .stat .s-track { height: 6px; border-radius: 999px; background: rgba(58,46,50,0.08); margin-top: 0.6rem; overflow: hidden; }
-    .stat .s-track i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--sc), color-mix(in srgb, var(--sc) 45%, #fff)); transition: width .9s cubic-bezier(.4,0,.2,1); }
+    .stat .s-track { height: 6px; border-radius: 999px; background: rgba(62,50,34,0.08); margin-top: 0.6rem; overflow: hidden; }
+    .stat .s-track i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent-fill), var(--accent-l)); transition: width .9s cubic-bezier(.4,0,.2,1); }
 
     /* ══ RECHTSGEBIETE ════════════════════════════════ */
     .fach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0.9rem; }
@@ -487,7 +530,7 @@
     .fm-value { font-family: 'Outfit', sans-serif; font-size: 1.35rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; color: var(--text); }
     .fm-value small { font-family: 'DM Sans', sans-serif; font-size: 0.76rem; font-weight: 400; color: var(--text-muted); margin-left: 0.3rem; letter-spacing: 0; }
     .fm-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.32rem; line-height: 1.45; }
-    .fm-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(58,46,50,0.08); margin-top: 0.45rem; }
+    .fm-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(62,50,34,0.08); margin-top: 0.45rem; }
     .fm-bar span { height: 100%; transition: width .9s cubic-bezier(.4,0,.2,1); }
     .fm-legend { display: flex; flex-wrap: wrap; gap: 0.15rem 0.7rem; margin-top: 0.4rem; font-size: 0.68rem; color: var(--text-muted); }
     .fm-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 3px; margin-right: 0.3rem; }
@@ -580,7 +623,7 @@
       padding: 1.1rem 1.6rem 2rem;
       border-radius: 22px 22px 0 0;
       border-top: 3px solid var(--accent);
-      background: #F9F7F7;
+      background: #FAF8F3;
       -webkit-backdrop-filter: blur(24px) saturate(1.3);
       backdrop-filter: blur(24px) saturate(1.3);
       box-shadow: var(--shadow-lg);
@@ -594,16 +637,16 @@
     .detail-panel.show { -webkit-transform: translateY(0); transform: translateY(0); pointer-events: auto; }
     .sheet-handle { width: 40px; height: 4px; background: var(--border-strong); border-radius: 3px; margin: 0 auto 1rem; }
 
-    .detail-panel.dp-rep     { background: #F8F6F6; border-color: var(--rep-border); }
-    .detail-panel.dp-urlaub  { background: #F6F9F7; border-color: var(--urlaub-border); }
-    .detail-panel.dp-fokus   { background: #FBF7F1; border-color: var(--fokus-border); }
+    .detail-panel.dp-rep     { background: #F9F7F1; border-color: var(--rep-border); }
+    .detail-panel.dp-urlaub  { background: #F6F9F5; border-color: var(--urlaub-border); }
+    .detail-panel.dp-fokus   { background: #FCF7EC; border-color: var(--fokus-border); }
     .detail-panel.dp-peru    { background: #F6F9F9; border-color: var(--peru-border); }
     .detail-panel.dp-postrep { background: #F7F6FA; border-color: var(--postrep-border); }
-    .detail-panel.dp-probe   { background: #FBF6F8; border-color: var(--probe-border); }
+    .detail-panel.dp-probe   { background: #FBF7F7; border-color: var(--probe-border); }
     .detail-panel.dp-wieder  { background: #F6F8FA; border-color: var(--wieder-border); }
-    .detail-panel.dp-examen  { background: #FBF7EF; border-color: var(--examen-border); }
-    .detail-panel.dp-past    { background: #F8F6F6; border-color: var(--past-border); }
-    .detail-panel.dp-future  { background: #F9F7F7; border-color: var(--border-strong); }
+    .detail-panel.dp-examen  { background: #FCF7EA; border-color: var(--examen-border); }
+    .detail-panel.dp-past    { background: #F9F7F1; border-color: var(--past-border); }
+    .detail-panel.dp-future  { background: #FAF8F3; border-color: var(--border-strong); }
 
     .detail-panel-header { margin-bottom: 1rem; }
     .detail-panel-header h3 { font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; }
@@ -654,7 +697,7 @@
     .case-list li {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.3rem 0; font-size: 0.83rem; color: var(--text);
-      border-bottom: 1px solid rgba(58,46,50,0.05);
+      border-bottom: 1px solid rgba(62,50,34,0.05);
     }
     .case-list li:last-child { border-bottom: none; }
     .case-list li input[type="checkbox"] { accent-color: var(--accent); cursor: pointer; }
@@ -671,7 +714,7 @@
     .aufgaben-section ul li {
       padding: 0.4rem 0; font-size: 0.85rem; color: var(--text-muted);
       display: flex; align-items: flex-start; gap: 0.55rem;
-      border-bottom: 1px solid rgba(58,46,50,0.05); line-height: 1.5;
+      border-bottom: 1px solid rgba(62,50,34,0.05); line-height: 1.5;
     }
     .aufgaben-section ul li:last-child { border-bottom: none; }
     .aufgaben-section ul li .li-icon {
@@ -697,7 +740,7 @@
     .notion-row {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.28rem 0; font-size: 0.82rem; color: var(--text);
-      border-bottom: 1px solid rgba(58,46,50,0.05);
+      border-bottom: 1px solid rgba(62,50,34,0.05);
     }
     .notion-row:last-child { border-bottom: none; }
     .status-badge {
@@ -707,7 +750,7 @@
     }
     .status-badge.done     { background: var(--zr-bg); color: var(--zr-deep); }
     .status-badge.progress { background: var(--or-bg); color: var(--or-deep); }
-    .status-badge.open     { background: rgba(58,46,50,0.07); color: var(--text-muted); }
+    .status-badge.open     { background: rgba(62,50,34,0.07); color: var(--text-muted); }
     .notion-case-title { flex: 1; font-size: 0.82rem; }
     .notion-rg { font-size: 0.7rem; color: var(--text-sub); flex-shrink: 0; }
     .notion-sync-time { font-size: 0.61rem; color: var(--text-sub); font-weight: 400; margin-left: 0.5rem; text-transform: none; letter-spacing: 0; }
@@ -715,7 +758,7 @@
 
     .kb-hint { font-size: 0.66rem; color: var(--text-sub); text-align: right; margin-top: 0.7rem; letter-spacing: 0.03em; }
     .kb-hint kbd {
-      display: inline-block; background: rgba(58,46,50,0.07); border-radius: 4px;
+      display: inline-block; background: rgba(62,50,34,0.07); border-radius: 4px;
       padding: 0.08rem 0.35rem; font-size: 0.65rem; font-family: ui-monospace, monospace;
     }
 
@@ -817,12 +860,12 @@
         <svg width="132" height="132" viewBox="0 0 132 132">
           <defs>
             <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%"   stop-color="#B99AA4"/>
-              <stop offset="55%"  stop-color="#9B6B7E"/>
-              <stop offset="100%" stop-color="#8A8286"/>
+              <stop offset="0%"   stop-color="#D5BE96"/>
+              <stop offset="55%"  stop-color="#8C6D45"/>
+              <stop offset="100%" stop-color="#9C9184"/>
             </linearGradient>
           </defs>
-          <circle cx="66" cy="66" r="57" fill="none" stroke="rgba(58,46,50,0.09)" stroke-width="9"/>
+          <circle cx="66" cy="66" r="57" fill="none" stroke="rgba(62,50,34,0.09)" stroke-width="9"/>
           <circle id="ring-progress" cx="66" cy="66" r="57" fill="none" stroke="url(#ringGrad)"
                   stroke-width="9" stroke-linecap="round" stroke-dasharray="358" stroke-dashoffset="358"
                   style="transition: stroke-dashoffset 1.2s cubic-bezier(.4,0,.2,1)"/>
@@ -895,13 +938,28 @@
       <span id="heat-caption">Karteikarten pro Tag · letzte 16 Wochen</span>
       <span class="heat-scale">
         weniger
-        <i style="background:rgba(58,46,50,0.06)"></i>
+        <i style="background:rgba(62,50,34,0.06)"></i>
         <i class="heat-cell l1" style="width:11px;height:11px"></i>
         <i class="heat-cell l2" style="width:11px;height:11px"></i>
         <i class="heat-cell l3" style="width:11px;height:11px"></i>
         <i class="heat-cell l4" style="width:11px;height:11px"></i>
         mehr
       </span>
+    </div>
+
+    <div class="wk-block" id="wk-block">
+      <div class="wk-head">
+        <span class="gauge-label">Fälle pro Woche · vorgenommen vs. nachbereitet</span>
+        <span class="wk-summary" id="wk-summary"></span>
+      </div>
+      <div class="wk-plot" id="wk-plot"></div>
+      <div class="wk-axis" id="wk-axis"></div>
+      <div class="wk-legend">
+        <span><i style="background:var(--accent-fill)"></i>nachbereitet</span>
+        <span><i style="background:color-mix(in srgb, var(--accent-fill) 45%, #fff)"></i>in Bearbeitung</span>
+        <span><i style="background:rgba(62,50,34,0.10)"></i>vorgenommen, offen</span>
+        <span><i class="soll"></i>Soll laut Plan</span>
+      </div>
     </div>
   </section>
 
@@ -1506,6 +1564,7 @@
       gesamt:       klk.length,
       nachbereitet: klk.filter(c => c.status === 'Nachbereitet').length,
       inArbeit:     klk.filter(c => c.status === 'In Bearbeitung').length,
+      abgegeben:    klk.filter(c => c.abgegeben).length,
     };
   }
 
@@ -1646,6 +1705,79 @@
       html += '</div>';
     }
     el.innerHTML = html;
+  }
+
+  // ── FÄLLE PRO WOCHE: vorgenommen vs. nachbereitet ──
+  // `woche` in Notion ist die GEPLANTE Woche eines Falls (es gibt bereits
+  // Einträge für kommende Wochen) – die Balken zeigen also, was sie sich
+  // vorgenommen hat und was davon tatsächlich durchgelaufen ist.
+  const WK_FENSTER = 16;
+
+  function faelleProWoche() {
+    const cases = (window.NOTION_DATA && window.NOTION_DATA.cases) || [];
+    const hk = cases.filter(c => c.typ === 'Hauptkurs' && Number.isInteger(c.woche));
+    const von = Math.max(1, currentWeekN - WK_FENSTER + 1);
+    const rows = [];
+    for (let w = von; w <= currentWeekN; w++) {
+      const inW = hk.filter(c => c.woche === w);
+      const p = weekDetails[w];
+      rows.push({
+        w,
+        nachbereitet: inW.filter(c => c.status === 'Nachbereitet').length,
+        inArbeit:     inW.filter(c => c.status === 'In Bearbeitung').length,
+        offen:        inW.filter(c => c.status === 'Nicht nachbereitet').length,
+        gesamt:       inW.length,
+        soll:         p ? (p.casesPerWeek || 0) : 0,
+      });
+    }
+    return rows;
+  }
+
+  function renderFaelleProWoche() {
+    const plot = document.getElementById('wk-plot');
+    const axis = document.getElementById('wk-axis');
+    const sum  = document.getElementById('wk-summary');
+    if (!plot) return;
+
+    if (!window.NOTION_DATA) {
+      document.getElementById('wk-block').style.display = 'none';
+      return;
+    }
+
+    const rows = faelleProWoche();
+    const max  = Math.max(6, ...rows.map(r => Math.max(r.gesamt, r.soll)));
+    const pc   = n => (n / max * 100).toFixed(2) + '%';
+
+    plot.innerHTML = rows.map(r => {
+      const anteil = n => r.gesamt ? (n / r.gesamt * 100).toFixed(2) + '%' : '0%';
+      const seg = (n, cls) => n > 0 ? `<i class="${cls}" style="height:${anteil(n)}"></i>` : '';
+      const titel = `W${r.w}: ${r.gesamt} vorgenommen · ${r.nachbereitet} nachbereitet`
+                  + (r.inArbeit ? ` · ${r.inArbeit} in Bearbeitung` : '')
+                  + ` · Soll ${r.soll}`;
+      return `<div class="wk-col${r.w === currentWeekN ? ' now' : ''}" title="${titel}">
+        <div class="wk-bar" style="height:${pc(r.gesamt)}">
+          ${seg(r.nachbereitet, 's-nach')}${seg(r.inArbeit, 's-arb')}${seg(r.offen, 's-off')}
+        </div>
+        ${r.soll > 0 ? `<span class="wk-soll" style="bottom:calc(${pc(r.soll)} - 1px)"></span>` : ''}
+      </div>`;
+    }).join('');
+
+    // Achse: nur jede zweite Woche beschriften, damit es auf dem iPhone lesbar bleibt
+    axis.innerHTML = rows.map((r, i) => {
+      const zeigen = r.w === currentWeekN || i % 2 === 0;
+      return `<span class="${r.w === currentWeekN ? 'now' : ''}">${zeigen ? r.w : ''}</span>`;
+    }).join('');
+
+    // Nur abgeschlossene Wochen bewerten – die laufende Woche ist noch offen
+    const fertig = rows.filter(r => r.w < currentWeekN);
+    if (!fertig.length) { sum.textContent = ''; return; }
+    const schnittIst  = fertig.reduce((s, r) => s + r.nachbereitet, 0) / fertig.length;
+    const schnittSoll = fertig.reduce((s, r) => s + r.soll, 0) / fertig.length;
+    const diff = schnittIst - schnittSoll;
+    const wort = Math.abs(diff) < 0.25 ? 'genau im Soll'
+               : diff > 0 ? `${deNote(diff)} über Soll`
+               : `${deNote(Math.abs(diff))} unter Soll`;
+    sum.innerHTML = `<b>${deNote(schnittIst)}</b> ⌀ nachbereitet pro Woche · Soll <b>${deNote(schnittSoll)}</b> · ${wort}`;
   }
 
   // ── DIESE WOCHE ────────────────────────────────────
@@ -1828,7 +1960,7 @@
     const chips = [];
     chips.push(`<span class="chip ${s.cur > 0 ? 'hot' : ''}">${s.cur > 0 ? '🔥' : '💤'} <b>${s.cur}</b> Tage Serie</span>`);
     chips.push(`<span class="chip">✓ <b>${ist}</b> von ${CASES_TOTAL} Fällen</span>`);
-    if (klk) chips.push(`<span class="chip">✎ <b>${klk.nachbereitet}</b> von ${klk.gesamt} Klausuren nachbereitet</span>`);
+    if (klk) chips.push(`<span class="chip">✎ <b>${klk.abgegeben}</b> Klausuren abgegeben</span>`);
     chips.push(`<span class="chip">📅 <b>${weeksLeft}</b> Wochen übrig</span>`);
     document.getElementById('hero-chips').innerHTML = chips.join('');
   }
@@ -1913,7 +2045,7 @@
     return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img"
               aria-label="Notenentwicklung: ${noten.map(n => n.punkte).join(', ')} Punkte">
       <line x1="0" y1="${y(4).toFixed(1)}" x2="${W}" y2="${y(4).toFixed(1)}"
-            stroke="rgba(58,46,50,0.16)" stroke-width="1" stroke-dasharray="3 3"/>
+            stroke="rgba(62,50,34,0.16)" stroke-width="1" stroke-dasharray="3 3"/>
       <text x="0" y="${(y(4) + 9).toFixed(1)}" font-size="7" fill="#94A39C">4 P.</text>
       <path d="${flaeche}" fill="${light}" opacity="0.25"/>
       <path d="${line}" fill="none" stroke="${color}" stroke-width="2"
@@ -1935,7 +2067,7 @@
       sitzt:  `linear-gradient(90deg, ${f.color} 0%, ${f.light} 100%)`,
       aufbau: f.light,
       lernen: `color-mix(in srgb, ${f.light} 42%, #fff)`,
-      neu:    'rgba(58,46,50,0.12)',
+      neu:    'rgba(62,50,34,0.12)',
     };
     const seg = (n, farbe) => n > 0 ? `<span style="width:${(n / ank.total * 100).toFixed(2)}%;background:${farbe}"></span>` : '';
     return `<div class="fm">
@@ -2422,7 +2554,7 @@
       if (!hint) {
         hint = document.createElement('span');
         hint.className = 'save-hint';
-        hint.style.cssText = 'font-size:0.72rem;color:#9B6B7E;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
+        hint.style.cssText = 'font-size:0.72rem;color:#8C6D45;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
         hint.textContent = 'Gespeichert ✓';
         const dateEl = form.querySelector('.daily-form-date');
         if (dateEl) dateEl.appendChild(hint);
@@ -2515,6 +2647,7 @@
   renderNow();
   renderStreak();
   renderHeatmap();
+  renderFaelleProWoche();
 </script>
 </body>
 </html>
