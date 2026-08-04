@@ -86,7 +86,10 @@ def extract_cases() -> list:
             typ = typ_obj.get("name", "")
 
             bewertung = props.get("Bewertung", {}).get("number")
-            abgegeben = bool(props.get("Abgegeben", {}).get("checkbox", False))
+            # Die Checkbox heißt in Notion "Geschrieben + Abgegeben"
+            # ("Abgegeben" nur als Fallback, falls sie mal umbenannt wird).
+            abgegeben = bool(props.get("Geschrieben + Abgegeben", {}).get("checkbox")
+                             or props.get("Abgegeben", {}).get("checkbox", False))
 
             cases.append({
                 "title":        title,
@@ -122,21 +125,29 @@ def main():
     for w in range(36, 85):
         anki_fokus[str(w)] = ANKI_FOKUS_ZYKLUS[(w - 36) % len(ANKI_FOKUS_ZYKLUS)]
 
-    # Alte Anki-Daten aus der aktuellen notion-data.js lesen und behalten
+    # Anki läuft nur auf dem Mac (AnkiConnect, localhost:8765) – hier in der
+    # Cloud ist es nie erreichbar. Deshalb den letzten bekannten Anki-Stand aus
+    # der vorhandenen notion-data.js übernehmen, statt ihn zu überschreiben.
+    # Wichtig: auch "ankiFach" mitnehmen, sonst fällt die Karteikarten-Kachel
+    # bei jedem Cloud-Sync wieder auf „Kein Anki-Stand" zurück.
     import re
     old_anki = None
+    old_anki_fach = None
     try:
         with open("notion-data.js", "r", encoding="utf-8") as f:
             content = f.read()
         m = re.search(r'window\.NOTION_DATA\s*=\s*(\{.*\})\s*;', content, re.DOTALL)
         if m:
-            old_anki = json.loads(m.group(1)).get("anki")
+            old = json.loads(m.group(1))
+            old_anki      = old.get("anki")
+            old_anki_fach = old.get("ankiFach")
     except Exception:
         pass
 
     payload = {
         "lastSync":    datetime.now().strftime("%d.%m.%Y %H:%M"),
         "anki":        old_anki,
+        "ankiFach":    old_anki_fach,
         "ankiFokus":   anki_fokus,
         "rhythmCheck": {"currentWeek": get_week(date.today()), "nachbereitet": nachbereitet_hk},
         "cases":       cases,
