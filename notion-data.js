@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.08.2026 10:36",
+  "lastSync": "04.08.2026 15:14",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4104,
+    "dueNow": 4084,
     "history": [
       {
         "date": "2025-09-29",
@@ -1052,8 +1052,42 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-02",
         "count": 43
+      },
+      {
+        "date": "2026-08-03",
+        "count": 133
       }
-    ]
+    ],
+    "stand": "2026-08-04"
+  },
+  "ankiFach": {
+    "stand": "04.08.2026 15:14",
+    "faecher": {
+      "Zivilrecht": {
+        "total": 1741,
+        "neu": 3,
+        "lernen": 615,
+        "aufbau": 147,
+        "sitzt": 976,
+        "faellig": 1193
+      },
+      "Öffentliches Recht": {
+        "total": 640,
+        "neu": 15,
+        "lernen": 349,
+        "aufbau": 63,
+        "sitzt": 213,
+        "faellig": 518
+      },
+      "Strafrecht": {
+        "total": 651,
+        "neu": 3,
+        "lernen": 538,
+        "aufbau": 15,
+        "sitzt": 95,
+        "faellig": 597
+      }
+    }
   },
   "ankiFokus": {
     "36": [
@@ -1259,6 +1293,18 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
+      "title": "KLK 2160",
+      "status": "Nicht nachbereitet",
+      "woche": 45,
+      "datum": "2026-08-08",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KLK-2160-3b2539e733aa808a8c81ed3f1ccaf3f5"
+    },
+    {
       "title": "UKK 1482 - abgegeben am 25.7.",
       "status": "Nicht nachbereitet",
       "woche": 43,
@@ -1271,7 +1317,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1482-abgegeben-am-25-7-3ab539e733aa80e48bccc7ca842b11ab"
     },
     {
@@ -1279,7 +1325,10 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 44,
       "datum": "2026-08-01",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "KommunalR",
+        "VerwaltungsR AT"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -1348,7 +1397,7 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 8,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-3208-abgegeben-am-5-7-394539e733aa80248347e48346564c30"
     },
     {
@@ -1363,7 +1412,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 10,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2154-abgegeben-am-29-6-38f539e733aa80a29e4be0b7675d09cc"
     },
     {
@@ -1379,7 +1428,7 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2153-abgegeben-am-20-6-385539e733aa800a8d38c23881f2e045"
     },
     {
@@ -1395,7 +1444,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2152-abgegeben-am-13-6-37f539e733aa80b9ad17e2fa86d44eff"
     },
     {
@@ -1410,7 +1459,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2151-abgegeben-am-7-6-37c539e733aa80f0904ec10fc1c8844a"
     },
     {
@@ -1439,7 +1488,7 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 2,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2149-abgegeben-am-16-5-362539e733aa8030b699c779d158dbd7"
     },
     {
@@ -1469,7 +1518,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2148-abgegeben-am-11-5-35e539e733aa804b8259fa5c34e18e8b"
     },
     {
@@ -1499,7 +1548,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2146-abgegeben-am-26-4-34e539e733aa8019a609e3b2498f88b8"
     },
     {
@@ -1526,7 +1575,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 7,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2144-abgegeben-am-13-4-341539e733aa80a2bdb9daec718aa43f"
     },
     {
@@ -1613,7 +1662,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2142-abgegeben-am-20-3-334539e733aa807f9f76f6d9ec53cac0"
     },
     {
@@ -2222,7 +2271,7 @@ window.NOTION_DATA = {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
       "woche": 45,
-      "datum": "2026-08-04",
+      "datum": "2026-08-07",
       "rechtsgebiet": [
         "SchuldR BT"
       ],
@@ -3168,7 +3217,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2136-abgegeben-am-7-2-2fd539e733aa8052a5d4fa3d1cae5382"
     },
     {
@@ -3758,7 +3807,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 6,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2132-abgegeben-am-10-1-2e4539e733aa80e5b354cc6acb58f30b"
     },
     {
@@ -3969,7 +4018,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 3,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2131-abgegeben-am-3-1-2dd539e733aa804c887dc1efffa3da42"
     },
     {
@@ -4472,7 +4521,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2128-gegliedert-am-28-11-abgegeben-am-30-11-2ba539e733aa80d88e42ca423cb63629"
     },
     {
@@ -4524,7 +4573,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2126-abgegeben-am-15-11-2b7539e733aa8094b356f4a66fffa298"
     },
     {
@@ -4540,7 +4589,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 2,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2127-abgegeben-am-22-11-2b4539e733aa80bfb6e6d82fb0c90720"
     },
     {
@@ -5131,7 +5180,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 4,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2122-abgegeben-am-21-10-25-293539e733aa8090a860f7eb7987f6c7"
     },
     {
@@ -5245,7 +5294,7 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": 5,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2121-abgeben-am-11-10-25-286539e733aa808ca585ee5f38bfa2bd"
     },
     {
@@ -5384,7 +5433,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": 3,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2119-abgegeben-am-27-9-25-27d539e733aa80b0a628e948881c2fe4"
     },
     {
@@ -5463,8 +5512,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 110,
     "inBearbeitung": 27,
-    "total": 300,
-    "klkGesamt": 45,
-    "klkAbgegeben": 0
+    "total": 301,
+    "klkGesamt": 46,
+    "klkAbgegeben": 20
   }
 };
