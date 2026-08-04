@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "04.08.2026 18:01",
+  "lastSync": "04.08.2026 17:48",
   "anki": {
     "reviewedToday": 31,
     "dueNow": 4053,
@@ -1293,7 +1293,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 45,
-    "nachbereitet": 110
+    "nachbereitet": 111
   },
   "cases": [
     {
@@ -2287,7 +2287,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 8",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-04",
       "rechtsgebiet": [
@@ -5514,7 +5514,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 110,
+    "nachbereitet": 111,
     "inBearbeitung": 27,
     "total": 301,
     "klkGesamt": 46,
