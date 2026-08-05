@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "05.08.2026 17:36",
+  "lastSync": "05.08.2026 22:01",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4128,
+    "reviewedToday": 14,
+    "dueNow": 4117,
     "history": [
       {
         "date": "2025-09-29",
@@ -1060,28 +1060,32 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-04",
         "count": 103
+      },
+      {
+        "date": "2026-08-05",
+        "count": 14
       }
     ],
     "stand": "2026-08-05"
   },
   "ankiFach": {
-    "stand": "05.08.2026 18:01",
+    "stand": "05.08.2026 22:01",
     "faecher": {
       "Zivilrecht": {
         "total": 1764,
         "neu": 0,
         "lernen": 643,
-        "aufbau": 145,
-        "sitzt": 976,
-        "faellig": 1238
+        "aufbau": 144,
+        "sitzt": 977,
+        "faellig": 1237
       },
       "Öffentliches Recht": {
-        "total": 645,
-        "neu": 20,
+        "total": 644,
+        "neu": 19,
         "lernen": 347,
         "aufbau": 64,
         "sitzt": 214,
-        "faellig": 517
+        "faellig": 505
       },
       "Strafrecht": {
         "total": 651,
@@ -1714,8 +1718,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": 45,
-      "datum": "2026-08-05",
+      "woche": 46,
+      "datum": "2026-08-12",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1729,7 +1733,7 @@ window.NOTION_DATA = {
       "title": "Fall 8",
       "status": "Nicht nachbereitet",
       "woche": 45,
-      "datum": "2026-08-05",
+      "datum": "2026-08-06",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1741,7 +1745,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 7",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 45,
       "datum": "2026-08-05",
       "rechtsgebiet": [
@@ -5515,7 +5519,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 111,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 301,
     "klkGesamt": 46,
     "klkAbgegeben": 20
