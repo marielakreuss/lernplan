@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.08.2026 08:57",
+  "lastSync": "07.08.2026 14:01",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4145,
+    "reviewedToday": 83,
+    "dueNow": 4124,
     "history": [
       {
         "date": "2025-09-29",
@@ -1019,15 +1019,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-24",
-        "count": 87
-      },
-      {
-        "date": "2026-07-25",
         "count": 86
       },
       {
+        "date": "2026-07-25",
+        "count": 85
+      },
+      {
         "date": "2026-07-26",
-        "count": 127
+        "count": 126
       },
       {
         "date": "2026-07-27",
@@ -1043,7 +1043,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-31",
-        "count": 145
+        "count": 144
       },
       {
         "date": "2026-08-01",
@@ -1055,7 +1055,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-03",
-        "count": 136
+        "count": 135
       },
       {
         "date": "2026-08-04",
@@ -1064,28 +1064,32 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-05",
         "count": 103
+      },
+      {
+        "date": "2026-08-07",
+        "count": 83
       }
     ],
-    "stand": "2026-08-06"
+    "stand": "2026-08-07"
   },
   "ankiFach": {
-    "stand": "06.08.2026 14:34",
+    "stand": "07.08.2026 14:01",
     "faecher": {
       "Zivilrecht": {
-        "total": 1764,
-        "neu": 0,
-        "lernen": 635,
+        "total": 1771,
+        "neu": 8,
+        "lernen": 634,
         "aufbau": 144,
         "sitzt": 985,
-        "faellig": 1250
+        "faellig": 1274
       },
       "Öffentliches Recht": {
-        "total": 643,
+        "total": 658,
         "neu": 15,
-        "lernen": 347,
-        "aufbau": 65,
-        "sitzt": 216,
-        "faellig": 521
+        "lernen": 350,
+        "aufbau": 69,
+        "sitzt": 224,
+        "faellig": 475
       },
       "Strafrecht": {
         "total": 651,
@@ -1093,7 +1097,7 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 597
+        "faellig": 598
       }
     }
   },
