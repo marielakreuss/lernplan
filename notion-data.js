@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.08.2026 14:01",
+  "lastSync": "07.08.2026 14:03",
   "anki": {
     "reviewedToday": 83,
     "dueNow": 4124,
@@ -1073,7 +1073,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-07"
   },
   "ankiFach": {
-    "stand": "07.08.2026 14:01",
+    "stand": "07.08.2026 14:03",
     "faecher": {
       "Zivilrecht": {
         "total": 1771,
