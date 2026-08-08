@@ -268,10 +268,10 @@
     .now-tasks li.kartei .ti { background: var(--or-bg); color: var(--or); }
 
     .now-fokus {
-      margin-top: 0.75rem;
       display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center;
-      font-size: 0.75rem; color: var(--text-sub);
+      font-size: 0.75rem; color: var(--text-sub); line-height: 1.5;
     }
+    .fokus-leer { color: var(--text-sub); }
     .fokus-tag {
       background: var(--or-bg); color: var(--or-deep);
       border: 1px solid color-mix(in srgb, var(--or) 22%, transparent);
@@ -1279,17 +1279,16 @@
         </div>
       </section>
 
-      <!-- Aufgaben der laufenden Woche -->
-      <section class="card glass rise d3">
-        <h4>Was diese Woche ansteht <span class="h4-note" id="now-week-hint"></span></h4>
-        <ul class="now-tasks" id="now-tasks"></ul>
-        <div class="now-fokus" id="now-fokus"></div>
-      </section>
-
       <!-- Konkrete Fälle aus Notion -->
-      <section class="card glass rise d4">
+      <section class="card glass rise d3">
         <h4>Fälle dieser Woche <span class="h4-note notion-sync-time" id="now-sync"></span></h4>
         <div id="now-notion"></div>
+      </section>
+
+      <!-- Karteikarten-Fokus, abgeleitet aus den Fällen der Woche -->
+      <section class="card glass rise d4">
+        <h4>Karteikarten-Fokus <span class="h4-note" id="now-week-hint"></span></h4>
+        <div class="now-fokus" id="now-fokus"></div>
       </section>
     </div>
 
@@ -2435,6 +2434,10 @@
 
     // Dieselbe Woche, im Reiter „Heute" nur als Zeile über den Aufgaben
     const titel = detail && detail.title ? detail.title : 'Woche ' + currentWeekN;
+
+    // Der Stundenplan liest das, solange sein eigener Zeitraum noch nicht
+    // begonnen hat – dann zeigt „Heute" die laufende Phase statt eines Plantags.
+    window.PLAN_HEUTE = { titel, phaseKey: pk };
     setzeText('now-week-hint',      '· W' + currentWeekN + ' · ' + titel);
     setzeText('heute-week-label',   '· W' + currentWeekN + ' · ' + midFmt(cwStart) + ' – ' + midFmt(cwEnd));
 
@@ -2460,38 +2463,68 @@
 
     renderHeuteTiles(kz);
 
-    // Aufgaben
+    // Aufgabenliste gibt es nur noch im Wochen-Panel, nicht mehr als Karte
     const ul = document.getElementById('now-tasks');
-    const aufgaben = (detail && detail.aufgaben) || [];
-    ul.innerHTML = aufgaben.map(t => {
-      const text = typeof t === 'object' ? t.text : t;
-      const type = typeof t === 'object' ? t.type : '';
-      const icon = type === 'important' ? '!' : type === 'success' ? '✓' : '›';
-      return `<li class="${type}"><span class="ti">${icon}</span><span>${text}</span></li>`;
-    }).join('') || '<li><span class="ti">›</span><span>Keine Vorgaben für diese Woche – freies Lernen.</span></li>';
+    if (ul) {
+      const aufgaben = (detail && detail.aufgaben) || [];
+      ul.innerHTML = aufgaben.map(t => {
+        const text = typeof t === 'object' ? t.text : t;
+        const type = typeof t === 'object' ? t.type : '';
+        const icon = type === 'important' ? '!' : type === 'success' ? '✓' : '›';
+        return `<li class="${type}"><span class="ti">${icon}</span><span>${text}</span></li>`;
+      }).join('') || '<li><span class="ti">›</span><span>Keine Vorgaben für diese Woche – freies Lernen.</span></li>';
+    }
 
-    // Kartei-Fokus
-    const fokus = window.NOTION_DATA && window.NOTION_DATA.ankiFokus && window.NOTION_DATA.ankiFokus[String(currentWeekN)];
-    document.getElementById('now-fokus').innerHTML = fokus
-      ? 'Kartei-Fokus: ' + fokus.map(f => `<span class="fokus-tag">${f}</span>`).join('')
-      : '';
-
+    renderKarteikartenFokus();
     renderNowGauges();
     renderNowWeekdots();
     renderNowNotion();
     renderHeroChips();
   }
 
-  function renderNowGauges() {
-    const ist    = faelleIst();
-    const ziel   = cumulativeCasesPerWeek[currentWeekN] || 0;
-    const diff   = ist - ziel;
-    const pIst   = Math.min(100, ist / CASES_TOTAL * 100);
-    const pZiel  = Math.min(100, ziel / CASES_TOTAL * 100);
+  /* Karteikarten-Fokus: bis 09.08.2026 kam er aus einer erfundenen
+     10-Wochen-Rotation in sync-notion.py, die mit dem tatsächlichen Stoff
+     nichts zu tun hatte. Jetzt sind es die Rechtsgebiete, die der
+     Stundenplan in derselben Woche ohnehin als Fälle vorsieht. */
+  function renderKarteikartenFokus() {
+    const box = document.getElementById('now-fokus');
+    if (!box) return;
 
-    const notiz = diff >= 0
-      ? `<div class="gauge-note good">Du liegst ${diff === 0 ? 'genau auf' : diff + ' Fälle über'} dem Richtwert. Weiter so.</div>`
-      : `<div class="gauge-note warn">${Math.abs(diff)} Fälle unter dem Richtwert für W${currentWeekN}.</div>`;
+    if (!stundenplanFaelle) { box.innerHTML = ''; return; }
+
+    const gebiete = (stundenplanFaelle.gebiete[currentWeekN] || [])
+      .filter(([name]) => name !== 'Reserve');
+
+    if (gebiete.length) {
+      box.innerHTML = 'Passend zu den Fällen dieser Woche: ' +
+        gebiete.map(([name]) => `<span class="fokus-tag">${name}</span>`).join('');
+    } else if (currentWeekN < stundenplanFaelle.ersteWoche) {
+      box.innerHTML = '<span class="fokus-leer">Ab dem Stundenplan-Start – bis dahin frei wählbar.</span>';
+    } else {
+      box.innerHTML = '<span class="fokus-leer">Diese Woche keine Fälle geplant – nur Wiederholung.</span>';
+    }
+  }
+
+  function renderNowGauges() {
+    const ist  = faelleIst();
+    const ziel = cumulativeCasesPerWeek[currentWeekN] || 0;
+
+    /* Verglichen wird gegen den Stand, der bis Ende der VORwoche fällig war –
+       der Richtwert dieser Woche ist erst am Sonntag fällig und würde sonst
+       schon am Montag als Rückstand erscheinen. */
+    const faellig    = currentWeekN > 1 ? (cumulativeCasesPerWeek[currentWeekN - 1] || 0) : 0;
+    const diff       = ist - faellig;
+    const wochenSoll = Math.max(0, ziel - faellig);
+    const pIst       = Math.min(100, ist / CASES_TOTAL * 100);
+    const pZiel      = Math.min(100, ziel / CASES_TOTAL * 100);
+
+    const stand = diff > 0 ? `${diff} Fälle Vorsprung.`
+                : diff === 0 ? 'Genau im Plan.'
+                : `${Math.abs(diff)} Fälle Rückstand aus den Vorwochen.`;
+    const woche = wochenSoll > 0
+      ? ` Diese Woche stehen ${wochenSoll} Fälle an.`
+      : ' Diese Woche sind keine Fälle geplant.';
+    const notiz = `<div class="gauge-note ${diff >= 0 ? 'good' : 'warn'}">${stand}${woche}</div>`;
 
     const klk  = window.NOTION_DATA ? klausurenStand() : null;
     const klkP = klk && klk.gesamt ? Math.round(klk.nachbereitet / klk.gesamt * 100) : 0;
@@ -2500,7 +2533,7 @@
       <div class="gauge">
         <div class="gauge-top">
           <span class="gauge-label">Fälle · Ist vs. Richtwert</span>
-          <span class="gauge-val">${ist}<small>Richtwert ${ziel}</small></span>
+          <span class="gauge-val">${ist}<small>Ende W${currentWeekN}: ${ziel}</small></span>
         </div>
         <div class="track"><i style="width:${pIst.toFixed(1)}%"></i><b style="left:calc(${pZiel.toFixed(1)}% - 1px)" title="Richtwert Ende W${currentWeekN}"></b></div>
         ${notiz}
@@ -3068,7 +3101,47 @@
   }
 
   // ── WOCHENZIEL ────────────────────────────────────
+  /* Seit 09.08.2026 gibt der Stundenplan den Richtwert vor, nicht mehr die
+     groben `casesPerWeek` der Phasen. Der Stundenplan ist so gebaut, dass er
+     die restlichen offenen Fälle genau abdeckt (ZIEL). Sein Ankerstand ist
+     deshalb CASES_TOTAL − ZIEL: der Stand, auf dem er aufsetzt. Alles davor
+     bleibt auf diesem Anker stehen – der alte Verlauf hat rückwirkend einen
+     Rückstand ausgewiesen, den der neue Plan bereits eingerechnet hat. */
+  let stundenplanFaelle = null;   // { ersteWoche, anker, proWoche: {woche: n} }
+
+  window.uebernehmeStundenplan = function (plan) {
+    const proWoche = {}, gebiete = {};
+    plan.wochen.forEach(w => {
+      const [y, m, t] = w.mo.split('-').map(Number);
+      const nr = getWeekNumber(new Date(y, m - 1, t));
+      proWoche[nr] = w.n;
+      gebiete[nr]  = w.g || [];
+    });
+    const nummern = Object.keys(proWoche).map(Number);
+    stundenplanFaelle = {
+      ersteWoche: Math.min.apply(null, nummern),
+      anker:      Math.max(0, CASES_TOTAL - plan.ziel),
+      proWoche,
+      gebiete
+    };
+    recomputeCumulative();
+    renderNowGauges();
+    renderKarteikartenFokus();
+    if (typeof activeWeekN === 'number') renderRichtwert(activeWeekN);
+  };
+
   function recomputeCumulative() {
+    if (stundenplanFaelle) {
+      const { ersteWoche, anker, proWoche } = stundenplanFaelle;
+      let cum = anker;
+      for (let w = 1; w <= totalWeeks; w++) {
+        if (w < ersteWoche) { cumulativeCasesPerWeek[w] = anker; continue; }
+        cum = Math.min(CASES_TOTAL, cum + (proWoche[w] || 0));
+        cumulativeCasesPerWeek[w] = cum;
+      }
+      return;
+    }
+
     let cum = INITIAL_CASES_END_W33;
     for (let w = 1; w <= totalWeeks; w++) {
       const p = weekDetails[w];
@@ -3531,6 +3604,8 @@
     klausurNb: {t:'15:00–16:00', l:'Klausur nachbereiten',   k:'klausur', s:'nm'},
     frei:      {t:'',            l:'Ruhetag',                k:'frei',    s:'vm'},
     freiTag:   {t:'',            l:'komplett frei',          k:'frei',    s:'vm'},
+    urlaub:    {t:'',            l:'Urlaub',                 k:'frei',    s:'vm'},
+    rep:       {t:'9:00–13:00',  l:'Rep',                    k:'fix',     s:'vm'},
     probe:     {t:'ganztags',    l:'Probeexamen',            k:'klausur', s:'vm'},
     karte15:   {t:'1,5 h',       l:'Karteikarten',           k:'karte',   s:'vm'},
     altNachb:  {t:'nach Bedarf', l:'Klausuren nachbereiten', k:'klausur', s:'nm'},
@@ -3554,7 +3629,13 @@
     peruDo:   {std:'1,5 h + 4 h', b:[B.karte15, B.mittag, B.kwPeru]},
     weihMo:   {std:'2,75 h', b:[B.karteNm, B.fallSpaet]},
     weihLang: {std:'3,25 h', b:[B.fallVm, B.karteVm, B.mittag]},
-    weihDo:   {std:'frei',  b:[B.freiTag]}
+    weihDo:   {std:'frei',  b:[B.freiTag]},
+    // Übergangswoche 17.–21.8.: vormittags noch Rep bzw. Arbeit,
+    // nachmittags je ein Fall. Am Do zusätzlich die Klausurwerkstatt.
+    urlaubTag:   {std:'—',       b:[B.urlaub]},
+    repFall:     {std:'6 h',     b:[B.rep,    B.fallNm]},
+    arbeitFall:  {std:'6 h',     b:[B.arbeit, B.fallNm]},
+    arbeitFallKw:{std:'6 h + 4 h', b:[B.arbeit, B.fallNm, B.kw]}
   };
 
   const TAGE = ['Mo','Di','Mi','Do','Fr','Sa','So'];
@@ -3565,7 +3646,8 @@
   const RASTER = {
     normal:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.lang, Do:TAG.do_,     Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
     ohneKw:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.lang, Do:TAG.doFrei,  Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
-    auslauf:    {Mo:TAG.leer, Di:TAG.leer, Mi:TAG.leer, Do:TAG.do_,     Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
+    urlaubWoche:{Mo:TAG.urlaubTag, Di:TAG.urlaubTag, Mi:TAG.urlaubTag, Do:TAG.urlaubTag, Fr:TAG.urlaubTag, Sa:TAG.urlaubTag, So:TAG.urlaubTag},
+    auslauf:    {Mo:TAG.urlaubTag, Di:TAG.repFall, Mi:TAG.repFall, Do:TAG.arbeitFallKw, Fr:TAG.arbeitFall, Sa:TAG.sa, So:TAG.so},
     probe1:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.probeTag, Do:TAG.probeTag, Fr:TAG.probeTag, Sa:TAG.probeTag, So:TAG.so},
     probe2:     {Mo:TAG.probeTag, Di:TAG.probeTag, Mi:TAG.probeTag, Do:TAG.doProbe, Fr:TAG.einFall, Sa:TAG.sa, So:TAG.so},
     peruAnkunft:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.peruLern, So:TAG.peruFrei},
@@ -3576,7 +3658,10 @@
 
   // 24 Wochen. mo = Montag der Kalenderwoche. g = Rechtsgebiete dieser Woche.
   const W = [
-    {mo:'2026-08-17', ph:'Auslaufwoche',      r:'auslauf',    ab:'2026-08-20',
+    {mo:'2026-08-10', ph:'Urlaub',            r:'urlaubWoche',
+     kw:null, kwAus:'Urlaub – kein Termin',
+     n:0,  g:[]},
+    {mo:'2026-08-17', ph:'Übergangswoche',    r:'auslauf',    ab:'2026-08-18',
      kw:{d:'2026-08-20',f:'Zivilrecht',t:'Außer Fliesen nichts gewesen'},
      n:4,  g:[['VerwR AT',2],['SchuldR BT',2]]},
     {mo:'2026-08-24', ph:'Baurecht-Block',    r:'normal',
@@ -3751,27 +3836,44 @@
 
     // Heute
     const zeigeTag = heuteKey || (woche.ab ? TAGE[(d(woche.ab).getDay() + 6) % 7] : 'Mo');
-    document.getElementById('sp-today-h').textContent =
-      (heuteKey ? 'Heute · ' : 'Erster Tag · ') + TAGE_LANG[zeigeTag];
-
-    // Solange der Stundenplan noch nicht läuft, darf der Reiter „Heute" nicht
-    // so aussehen, als gälte dieser Ablauf schon jetzt.
     const vorschauZeile = document.getElementById('sp-vorschau');
-    if (vorschauZeile) {
-      if (heuteKey) {
-        vorschauZeile.style.display = 'none';
-      } else {
+
+    // Liegt heute vor dem Stundenplan, zeigt „Heute" nicht den ersten Plantag,
+    // sondern das, was laut Lernplan gerade wirklich läuft (Rep, Urlaub …).
+    const ausserhalb = !heuteKey && heute < start;
+    const phaseHeute = window.PLAN_HEUTE || null;
+
+    if (ausserhalb && phaseHeute) {
+      document.getElementById('sp-today-h').textContent =
+        'Heute · ' + TAGE_LANG[TAGE[(heute.getDay() + 6) % 7]];
+      if (vorschauZeile) {
         vorschauZeile.style.display = '';
-        vorschauZeile.textContent = heute < start
-          ? 'Gilt noch nicht – Start ist der ' + kurz(von) + ' Bis dahin läuft der Rep-Rhythmus, siehe Aufgaben unten.'
-          : 'Außerhalb des geplanten Zeitraums – gezeigt wird die letzte Woche des Plans.';
+        vorschauZeile.textContent =
+          'Der Stundenplan greift ab ' + kurz(start) + ' – bis dahin gilt der Lernplan.';
+      }
+    } else {
+      document.getElementById('sp-today-h').textContent =
+        (heuteKey ? 'Heute · ' : 'Erster Tag · ') + TAGE_LANG[zeigeTag];
+      if (vorschauZeile) {
+        if (heuteKey) {
+          vorschauZeile.style.display = 'none';
+        } else {
+          vorschauZeile.style.display = '';
+          vorschauZeile.textContent = heute < start
+            ? 'Gilt noch nicht – Start ist der ' + kurz(von)
+            : 'Außerhalb des geplanten Zeitraums – gezeigt wird die letzte Woche des Plans.';
+        }
       }
     }
 
     const tagRaster = RASTER[woche.r][zeigeTag];
     const liste = document.getElementById('sp-blocks');
-    if (!tagRaster.b.length) {
-      liste.innerHTML = '<li class="sp-b k-pause"><span class="sp-b-l">Noch Rep – der Plan startet am Donnerstag.</span></li>';
+    if (ausserhalb && phaseHeute) {
+      const frei = /urlaub|peru|weihnacht/.test(phaseHeute.phaseKey || '');
+      liste.innerHTML = '<li class="sp-b k-' + (frei ? 'frei' : 'fix') + '">' +
+        '<span class="sp-b-l">' + esc(phaseHeute.titel) + '</span></li>';
+    } else if (!tagRaster.b.length) {
+      liste.innerHTML = '<li class="sp-b k-pause"><span class="sp-b-l">Kein Ablauf hinterlegt.</span></li>';
     } else {
       liste.innerHTML = tagRaster.b.map((block, i) => {
         const gebiet = block.f ? zuteilung[zeigeTag + '#' + i] : null;
@@ -3842,7 +3944,7 @@
     const label = document.getElementById('sp-label');
     if (label) {
       label.innerHTML = 'Stundenplan <span>· ' +
-        (vorschau && heute < start ? 'ab 20. August' : woche.ph + ', ' + kurz(von)) + '</span>';
+        (vorschau && heute < start ? 'ab ' + kurz(start) : woche.ph + ', ' + kurz(von)) + '</span>';
     }
   }
 
@@ -3907,6 +4009,17 @@
 
   try { render(); }
   catch (e) { console.error('Stundenplan konnte nicht gezeichnet werden:', e); }
+
+  // Der Stundenplan ist die verbindliche Quelle für Fälle-Richtwert und
+  // Karteikarten-Fokus – das Hauptskript rechnet damit neu.
+  try {
+    if (typeof window.uebernehmeStundenplan === 'function') {
+      window.uebernehmeStundenplan({
+        ziel:   ZIEL,
+        wochen: W.map(w => ({ mo: w.mo, n: w.n, g: w.g }))
+      });
+    }
+  } catch (e) { console.error('Richtwert konnte nicht übernommen werden:', e); }
 })();
 </script>
 
