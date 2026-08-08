@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.08.2026 08:38",
+  "lastSync": "08.08.2026 14:01",
   "anki": {
-    "reviewedToday": 83,
-    "dueNow": 4124,
+    "reviewedToday": 0,
+    "dueNow": 4200,
     "history": [
       {
         "date": "2025-09-29",
@@ -1067,21 +1067,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-07",
-        "count": 83
+        "count": 86
       }
     ],
-    "stand": "2026-08-07"
+    "stand": "2026-08-08"
   },
   "ankiFach": {
-    "stand": "07.08.2026 14:03",
+    "stand": "08.08.2026 14:01",
     "faecher": {
       "Zivilrecht": {
-        "total": 1771,
-        "neu": 8,
+        "total": 1789,
+        "neu": 26,
         "lernen": 634,
         "aufbau": 144,
         "sitzt": 985,
-        "faellig": 1274
+        "faellig": 1307
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1089,7 +1089,7 @@ window.NOTION_DATA = {
         "lernen": 350,
         "aufbau": 69,
         "sitzt": 224,
-        "faellig": 475
+        "faellig": 517
       },
       "Strafrecht": {
         "total": 651,
@@ -1097,7 +1097,7 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 598
+        "faellig": 599
       }
     }
   },
@@ -2047,7 +2047,8 @@ window.NOTION_DATA = {
       "woche": 34,
       "datum": "2026-05-22",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2061,7 +2062,8 @@ window.NOTION_DATA = {
       "woche": null,
       "datum": null,
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2075,7 +2077,8 @@ window.NOTION_DATA = {
       "woche": 34,
       "datum": "2026-05-22",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2089,7 +2092,8 @@ window.NOTION_DATA = {
       "woche": null,
       "datum": null,
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2103,7 +2107,8 @@ window.NOTION_DATA = {
       "woche": null,
       "datum": null,
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2117,7 +2122,8 @@ window.NOTION_DATA = {
       "woche": 33,
       "datum": "2026-05-13",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2131,7 +2137,8 @@ window.NOTION_DATA = {
       "woche": 33,
       "datum": "2026-05-14",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2145,7 +2152,8 @@ window.NOTION_DATA = {
       "woche": null,
       "datum": null,
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2159,7 +2167,8 @@ window.NOTION_DATA = {
       "woche": 32,
       "datum": "2026-05-06",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2173,7 +2182,8 @@ window.NOTION_DATA = {
       "woche": 31,
       "datum": "2026-04-29",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2187,7 +2197,8 @@ window.NOTION_DATA = {
       "woche": 31,
       "datum": "2026-04-27",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2201,7 +2212,8 @@ window.NOTION_DATA = {
       "woche": 30,
       "datum": "2026-04-22",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2215,7 +2227,8 @@ window.NOTION_DATA = {
       "woche": 29,
       "datum": "2026-04-15",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2229,7 +2242,8 @@ window.NOTION_DATA = {
       "woche": null,
       "datum": null,
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2243,7 +2257,8 @@ window.NOTION_DATA = {
       "woche": 27,
       "datum": "2026-04-01",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2257,7 +2272,8 @@ window.NOTION_DATA = {
       "woche": 26,
       "datum": "2026-03-25",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
@@ -2271,7 +2287,8 @@ window.NOTION_DATA = {
       "woche": 24,
       "datum": "2026-03-11",
       "rechtsgebiet": [
-        "Strafrecht AT"
+        "Strafrecht AT",
+        "StrafR"
       ],
       "fach": "Strafrecht",
       "typ": "Hauptkurs",
