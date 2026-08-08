@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.08.2026 12:33",
+  "lastSync": "08.08.2026 18:05",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4200,
+    "reviewedToday": 110,
+    "dueNow": 4126,
     "history": [
       {
         "date": "2025-09-29",
@@ -1068,20 +1068,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-07",
         "count": 86
+      },
+      {
+        "date": "2026-08-08",
+        "count": 110
       }
     ],
     "stand": "2026-08-08"
   },
   "ankiFach": {
-    "stand": "08.08.2026 14:03",
+    "stand": "08.08.2026 18:05",
     "faecher": {
       "Zivilrecht": {
         "total": 1789,
-        "neu": 26,
-        "lernen": 634,
-        "aufbau": 144,
-        "sitzt": 985,
-        "faellig": 1307
+        "neu": 13,
+        "lernen": 641,
+        "aufbau": 145,
+        "sitzt": 990,
+        "faellig": 1233
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1301,11 +1305,11 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 45,
-    "nachbereitet": 112
+    "nachbereitet": 113
   },
   "cases": [
     {
-      "title": "KLK 2160",
+      "title": "KLK 2160 - abgegeben am 8.8.2026",
       "status": "Nicht nachbereitet",
       "woche": 45,
       "datum": "2026-08-08",
@@ -1313,8 +1317,8 @@ window.NOTION_DATA = {
       "fach": "",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
-      "url": "https://app.notion.com/p/KLK-2160-3b2539e733aa808a8c81ed3f1ccaf3f5"
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/KLK-2160-abgegeben-am-8-8-2026-3b2539e733aa808a8c81ed3f1ccaf3f5"
     },
     {
       "title": "UKK 1482 - abgegeben am 25.7.",
@@ -2298,7 +2302,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 9",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-07",
       "rechtsgebiet": [
@@ -5539,10 +5543,10 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 112,
-    "inBearbeitung": 28,
+    "nachbereitet": 113,
+    "inBearbeitung": 27,
     "total": 301,
     "klkGesamt": 46,
-    "klkAbgegeben": 20
+    "klkAbgegeben": 21
   }
 };
