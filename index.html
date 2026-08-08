@@ -874,6 +874,160 @@
     .restand:disabled { opacity: 0.55; cursor: default; }
     .stand-info { display: block; margin-top: 0.45rem; opacity: 0.75; }
 
+    /* ══ STUNDENPLAN ══════════════════════════════════ */
+    .sp { padding: 0; overflow: hidden; margin-bottom: 1rem; }
+    .sp-head {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+      padding: 1.35rem 1.6rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sp-head h3 {
+      font-family: 'Outfit', sans-serif; font-size: 1.24rem; font-weight: 600;
+      letter-spacing: -0.01em; margin: 0.15rem 0 0.15rem;
+    }
+    .sp-sub { font-size: 0.83rem; color: var(--text-muted); margin: 0; }
+    .sp-chips { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .sp-chip {
+      display: inline-flex; align-items: baseline; gap: 0.32rem;
+      background: var(--accent-soft); color: var(--accent);
+      border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+      border-radius: 999px; padding: 0.28rem 0.7rem;
+      font-size: 0.74rem; font-weight: 600;
+    }
+    .sp-chip b { font-size: 0.9rem; font-weight: 700; }
+    .sp-chip.zr { background: var(--zr-bg); color: var(--zr-deep); border-color: color-mix(in srgb, var(--zr) 30%, transparent); }
+    .sp-chip.or { background: var(--or-bg); color: var(--or-deep); border-color: color-mix(in srgb, var(--or) 30%, transparent); }
+    .sp-chip.sr { background: var(--sr-bg); color: var(--sr-deep); border-color: color-mix(in srgb, var(--sr) 30%, transparent); }
+
+    /* Heute */
+    .sp-today { padding: 1.1rem 1.6rem 1.2rem; }
+    .sp-today-h {
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em;
+      font-weight: 700; color: var(--text-sub); margin-bottom: 0.7rem;
+    }
+    .sp-blocks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+    .sp-b {
+      display: flex; align-items: center; gap: 0.85rem;
+      padding: 0.6rem 0.85rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface-solid);
+      border-left: 3px solid var(--bk, var(--border-strong));
+    }
+    .sp-b-t {
+      font-variant-numeric: tabular-nums; font-weight: 600;
+      font-size: 0.84rem; color: var(--text-muted);
+      min-width: 6.9rem; flex-shrink: 0;
+    }
+    .sp-b-l { font-weight: 600; font-size: 0.92rem; }
+    .sp-b-n { font-size: 0.79rem; color: var(--text-muted); margin-left: auto; text-align: right; }
+    .sp-b.k-fall   { --bk: var(--accent-fill); background: color-mix(in srgb, var(--accent-soft) 60%, var(--surface-solid)); }
+    .sp-b.k-fall.f-zr { --bk: var(--zr); background: color-mix(in srgb, var(--zr-bg) 65%, var(--surface-solid)); }
+    .sp-b.k-fall.f-or { --bk: var(--or); background: color-mix(in srgb, var(--or-bg) 65%, var(--surface-solid)); }
+    .sp-b.k-fall.f-sr { --bk: var(--sr); background: color-mix(in srgb, var(--sr-bg) 65%, var(--surface-solid)); }
+    .sp-b.k-fix    { --bk: var(--border-strong); color: var(--text-muted); background: var(--past-bg); }
+    .sp-b.k-kw     { --bk: var(--accent); background: var(--accent-soft); }
+    .sp-b.k-klausur{ --bk: var(--accent); background: var(--accent-soft); }
+    .sp-b.k-pause  { --bk: transparent; border-style: dashed; color: var(--text-sub); background: transparent; }
+    .sp-b.k-frei   { --bk: var(--urlaub-border); background: var(--urlaub-bg); color: var(--urlaub-text); }
+    .sp-b.k-konrad { --bk: var(--accent-l); background: transparent; border-style: dashed; }
+
+    /* Wochengitter */
+    .sp-grid-wrap { overflow-x: auto; padding: 0 1.6rem 1.3rem; }
+    .sp-grid { border-collapse: separate; border-spacing: 0.3rem; width: 100%; min-width: 640px; }
+    .sp-grid th {
+      font-family: 'Outfit', sans-serif; font-size: 0.78rem; font-weight: 600;
+      color: var(--text-muted); text-align: center; padding: 0.2rem 0 0.4rem;
+    }
+    .sp-grid th.sp-heute { color: var(--accent); }
+    .sp-grid th small { display: block; font-weight: 500; font-size: 0.66rem; color: var(--text-sub); }
+    .sp-grid td {
+      vertical-align: top; width: 14.28%;
+      border-radius: var(--radius-sm);
+      background: var(--future-bg);
+      border: 1px solid var(--border);
+      padding: 0.34rem;
+    }
+    .sp-grid td.sp-heute-c { border-color: color-mix(in srgb, var(--accent) 42%, transparent); background: var(--surface-solid); }
+    .sp-grid td.sp-leer { background: transparent; border-color: transparent; }
+    .sp-cell { display: flex; flex-direction: column; gap: 0.22rem; }
+    .sp-e {
+      border-radius: 7px; padding: 0.28rem 0.4rem;
+      font-size: 0.7rem; line-height: 1.25;
+      border-left: 2.5px solid var(--bk, var(--border-strong));
+      background: var(--surface-solid);
+    }
+    .sp-e span { display: block; font-variant-numeric: tabular-nums; font-size: 0.63rem; color: var(--text-sub); }
+    .sp-e.k-fall   { --bk: var(--accent-fill); background: var(--accent-soft); font-weight: 600; }
+    .sp-e.k-fix    { --bk: var(--border-strong); background: var(--past-bg); color: var(--text-muted); }
+    .sp-e.k-kw     { --bk: var(--accent); background: var(--accent-soft); font-weight: 600; }
+    .sp-e.k-klausur{ --bk: var(--accent); background: var(--accent-soft); font-weight: 600; }
+    .sp-e.k-pause  { --bk: transparent; background: transparent; color: var(--text-sub); }
+    .sp-e.k-frei   { --bk: var(--urlaub-border); background: var(--urlaub-bg); color: var(--urlaub-text); }
+    .sp-e.k-karte, .sp-e.k-vertief, .sp-e.k-prep { --bk: var(--accent-l); }
+    .sp-rowlab {
+      font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.09em;
+      font-weight: 700; color: var(--text-sub);
+      writing-mode: horizontal-tb; white-space: nowrap;
+      padding-right: 0.5rem !important; width: 1% !important;
+      background: transparent !important; border: none !important;
+      vertical-align: middle !important;
+    }
+    .sp-foot {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      padding: 0 1.6rem 1.1rem; font-size: 0.76rem; color: var(--text-muted);
+    }
+    .sp-foot b { color: var(--text); font-weight: 600; }
+
+    /* Aufklappbares */
+    .sp-more { border-top: 1px solid var(--border); }
+    .sp-more > summary {
+      cursor: pointer; list-style: none;
+      padding: 0.85rem 1.6rem; font-size: 0.8rem; font-weight: 600;
+      color: var(--accent); user-select: none;
+    }
+    .sp-more > summary::-webkit-details-marker { display: none; }
+    .sp-more > summary::after { content: ' ▾'; }
+    .sp-more[open] > summary::after { content: ' ▴'; }
+    .sp-more > summary:hover { background: var(--accent-soft); }
+    .sp-inner { padding: 0.2rem 1.6rem 1.4rem; }
+    .sp-weeks-wrap { overflow-x: auto; }
+    .sp-weeks { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 0.78rem; }
+    .sp-weeks th {
+      text-align: left; font-weight: 600; color: var(--text-sub);
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 0.4rem 0.55rem; border-bottom: 1px solid var(--border-strong);
+    }
+    .sp-weeks td { padding: 0.45rem 0.55rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .sp-weeks td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+    .sp-weeks tr.sp-jetzt td { background: var(--accent-soft); }
+    .sp-weeks tr.sp-vorbei td { color: var(--text-sub); }
+    .sp-weeks .sp-tag {
+      display: inline-block; border-radius: 5px; padding: 0.06rem 0.34rem;
+      font-size: 0.7rem; margin: 0 0.2rem 0.15rem 0; white-space: nowrap;
+    }
+    .sp-tag.zr { background: var(--zr-bg); color: var(--zr-deep); }
+    .sp-tag.or { background: var(--or-bg); color: var(--or-deep); }
+    .sp-tag.sr { background: var(--sr-bg); color: var(--sr-deep); }
+    .sp-tag.rest { background: var(--past-bg); color: var(--text-muted); }
+    .sp-queues { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 1.3rem; }
+    .sp-q h5 {
+      font-family: 'Outfit', sans-serif; font-size: 0.82rem; font-weight: 600;
+      margin: 0 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--qc, var(--border-strong));
+    }
+    .sp-q ol { margin: 0; padding-left: 1.1rem; font-size: 0.79rem; line-height: 1.75; }
+    .sp-q li.done { color: var(--text-sub); text-decoration: line-through; }
+    .sp-q .qn { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+    .sp-hinweis {
+      margin-top: 1.3rem; padding: 0.85rem 1rem;
+      background: var(--fokus-bg); border: 1px solid var(--fokus-border);
+      border-radius: var(--radius-sm); font-size: 0.79rem; color: var(--fokus-text); line-height: 1.6;
+    }
+    .sp-hinweis b { font-weight: 700; }
+    .sp-hinweis p { margin: 0 0 0.45rem; }
+    .sp-hinweis p:last-child { margin-bottom: 0; }
+
     /* ══ MOBILE ═══════════════════════════════════════ */
     @media (max-width: 900px) {
       .now-body { grid-template-columns: 1fr; }
@@ -910,6 +1064,17 @@
       .notion-rg { width: 100%; padding-left: 0.2rem; margin-top: 0.1rem; }
       .kb-hint { display: none; }
       .heat-cell { min-width: 10px; }
+      .sp-head { padding: 1.1rem 1.1rem 0.8rem; }
+      .sp-today { padding: 1rem 1.1rem 1.1rem; }
+      .sp-grid-wrap { padding: 0 1.1rem 1.2rem; }
+      .sp-foot { padding: 0 1.1rem 1rem; gap: 0.7rem; }
+      .sp-more > summary { padding: 0.8rem 1.1rem; }
+      .sp-inner { padding: 0.2rem 1.1rem 1.2rem; }
+      .sp-b { gap: 0.6rem; padding: 0.55rem 0.7rem; }
+      .sp-b-t { min-width: 5.9rem; font-size: 0.78rem; }
+      .sp-b-l { font-size: 0.86rem; }
+      .sp-b-n { flex-basis: 100%; margin-left: 0; text-align: left; }
+      .sp-queues { grid-template-columns: 1fr; gap: 0.9rem; }
     }
   </style>
 </head>
@@ -1026,6 +1191,35 @@
         <div id="now-notion"></div>
       </div>
     </div>
+  </section>
+
+  <!-- ══ STUNDENPLAN ═══════════════════════════════ -->
+  <div class="section-label" id="sp-label">Stundenplan <span>· ab 20. August</span></div>
+  <section class="sp glass rise d3" id="stundenplan">
+    <div class="sp-head">
+      <div style="min-width:0">
+        <h3 id="sp-title">—</h3>
+        <p class="sp-sub" id="sp-sub">—</p>
+      </div>
+      <div class="sp-chips" id="sp-chips"></div>
+    </div>
+
+    <div class="sp-today">
+      <div class="sp-today-h" id="sp-today-h">Heute</div>
+      <ul class="sp-blocks" id="sp-blocks"></ul>
+    </div>
+
+    <div class="sp-grid-wrap"><table class="sp-grid" id="sp-grid"></table></div>
+    <div class="sp-foot" id="sp-foot"></div>
+
+    <details class="sp-more">
+      <summary>Alle Wochen bis 31. Januar &amp; Reihenfolge der Rechtsgebiete</summary>
+      <div class="sp-inner">
+        <div class="sp-weeks-wrap"><table class="sp-weeks" id="sp-weeks"></table></div>
+        <div class="sp-queues" id="sp-queues"></div>
+        <div class="sp-hinweis" id="sp-hinweis"></div>
+      </div>
+    </details>
   </section>
 
   <!-- ══ KONSISTENZ ════════════════════════════════ -->
@@ -3083,6 +3277,419 @@
     wkObserver = new ResizeObserver(wkNeuZeichnenWennNoetig);
     wkObserver.observe(document.getElementById('wk-chart'));
   }
+</script>
+
+<!-- ══ STUNDENPLAN ═══════════════════════════════════════════════════════
+     Post-Rep-Wochenstruktur ab 20.8.2026. Eigener Scope, damit nichts
+     aus dem Hauptskript überschrieben wird.
+     ═══════════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  // ── Stammdaten ────────────────────────────────────────────────────
+  const FACH_VON_GEBIET = {
+    'BGB AT':'zr','SchuldR AT':'zr','SchuldR BT':'zr','SchuldR BT 2':'zr',
+    'SachenR':'zr','FamilienR':'zr','ErbR':'zr','ZPO I':'zr','ZPO II':'zr',
+    'ArbeitsR':'zr','HGB':'zr',
+    'VerfassungsR':'or','VerwR AT':'or','KommunalR':'or','PolizeiR':'or',
+    'BauR':'or','StaatshaftungsR':'or','EuropaR':'or',
+    'StrafR':'sr','StPO':'sr'
+  };
+  const FACH_KEY  = { 'Zivilrecht':'zr', 'Öffentliches Recht':'or', 'Strafrecht':'sr' };
+  const FACH_NAME = { zr:'Zivilrecht', or:'Öffentliches Recht', sr:'Strafrecht' };
+
+  // Reihenfolge der Rechtsgebiete – wird von oben nach unten abgearbeitet
+  const QUEUES = {
+    zr: [['SchuldR BT 2',14],['SachenR',14],['ZPO I',7],['SchuldR AT',9],['BGB AT',8],
+         ['SchuldR BT',5],['HGB',6],['ZPO II',5],['ErbR',5],['FamilienR',2],['ArbeitsR',9]],
+    or: [['BauR',10],['KommunalR',7],['PolizeiR',7],['EuropaR',6],['VerwR AT',6],
+         ['StaatshaftungsR',3],['VerfassungsR',6]],
+    sr: [['StrafR',8],['StPO',5]]
+  };
+
+  // Bausteine eines Tages. s = Abschnitt im Wochengitter, f = 1 bedeutet Fall-Slot.
+  const B = {
+    arbeit:    {t:'9:00–13:00',  l:'Arbeit',                 k:'fix',     s:'vm'},
+    fallVm:    {t:'9:00–11:00',  l:'Fall',                   k:'fall',    s:'vm', f:1},
+    karteVm:   {t:'11:15–12:30', l:'Karteikarten',           k:'karte',   s:'vm'},
+    mittag:    {t:'12:30–14:00', l:'Mittagspause',           k:'pause',   s:'mi'},
+    karteNm:   {t:'14:30–15:15', l:'Karteikarten',           k:'karte',   s:'nm'},
+    fallSpaet: {t:'15:15–17:15', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    vertief:   {t:'17:30–19:00', l:'Vertiefung',             k:'vertief', s:'ab'},
+    fallNm:    {t:'14:00–16:00', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    fallNm2:   {t:'16:15–18:00', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    kwPrep:    {t:'14:00–15:30', l:'Vorbereitung Werkstatt', k:'prep',    s:'nm'},
+    kw:        {t:'16:00–20:00', l:'Klausurwerkstatt',       k:'kw',      s:'ab'},
+    kwPeru:    {t:'siehe unten', l:'Klausurwerkstatt online', k:'kw',     s:'ab'},
+    klausur:   {t:'9:00–14:00',  l:'Klausur schreiben',      k:'klausur', s:'vm'},
+    pauseSa:   {t:'14:00–15:00', l:'Pause',                  k:'pause',   s:'mi'},
+    klausurNb: {t:'15:00–16:00', l:'Klausur nachbereiten',   k:'klausur', s:'nm'},
+    frei:      {t:'',            l:'Ruhetag',                k:'frei',    s:'vm'},
+    freiTag:   {t:'',            l:'komplett frei',          k:'frei',    s:'vm'},
+    probe:     {t:'ganztags',    l:'Probeexamen',            k:'klausur', s:'vm'},
+    karte15:   {t:'1,5 h',       l:'Karteikarten',           k:'karte',   s:'vm'},
+    altNachb:  {t:'nach Bedarf', l:'Klausuren nachbereiten', k:'klausur', s:'nm'},
+    konrad:    {t:'18:00–20:00', l:'Konrad-Kurs (Termin offen)', k:'konrad', s:'ab'}
+  };
+
+  const TAG = {
+    moDi:  {std:'4,5 h',  b:[B.arbeit, B.karteNm, B.fallSpaet, B.vertief]},
+    lang:  {std:'7,5 h',  b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2]},
+    do_:   {std:'5 h + 4 h', b:[B.fallVm, B.karteVm, B.mittag, B.kwPrep, B.kw]},
+    doFrei:{std:'7,5 h',  b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2]},
+    sa:    {std:'6 h',    b:[B.klausur, B.pauseSa, B.klausurNb]},
+    so:    {std:'—',      b:[B.frei]},
+    // Varianten
+    einFall:  {std:'3,25 h + Klausur', b:[B.fallVm, B.karteVm, B.mittag, B.probe]},
+    probeTag: {std:'Klausur', b:[B.probe]},
+    doProbe:  {std:'5 h + 4 h', b:[B.fallVm, B.karteVm, B.mittag, B.kwPrep, B.kw]},
+    leer:     {std:'—',     b:[]},
+    peruFrei: {std:'frei',  b:[B.freiTag]},
+    peruLern: {std:'~3 h',  b:[B.karte15, B.mittag, B.altNachb]},
+    peruDo:   {std:'1,5 h + 4 h', b:[B.karte15, B.mittag, B.kwPeru]},
+    weihMo:   {std:'2,75 h', b:[B.karteNm, B.fallSpaet]},
+    weihLang: {std:'3,25 h', b:[B.fallVm, B.karteVm, B.mittag]},
+    weihDo:   {std:'frei',  b:[B.freiTag]}
+  };
+
+  const TAGE = ['Mo','Di','Mi','Do','Fr','Sa','So'];
+  const TAGE_LANG = {Mo:'Montag',Di:'Dienstag',Mi:'Mittwoch',Do:'Donnerstag',
+                     Fr:'Freitag',Sa:'Samstag',So:'Sonntag'};
+
+  // Raster-Varianten: welcher Tag welchen Ablauf hat
+  const RASTER = {
+    normal:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.lang, Do:TAG.do_,     Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
+    ohneKw:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.lang, Do:TAG.doFrei,  Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
+    auslauf:    {Mo:TAG.leer, Di:TAG.leer, Mi:TAG.leer, Do:TAG.do_,     Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
+    probe1:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.probeTag, Do:TAG.probeTag, Fr:TAG.probeTag, Sa:TAG.probeTag, So:TAG.so},
+    probe2:     {Mo:TAG.probeTag, Di:TAG.probeTag, Mi:TAG.probeTag, Do:TAG.doProbe, Fr:TAG.einFall, Sa:TAG.sa, So:TAG.so},
+    peruAnkunft:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.peruLern, So:TAG.peruFrei},
+    peruReise:  {Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.peruFrei, So:TAG.peruFrei},
+    peruLernen: {Mo:TAG.peruLern, Di:TAG.peruLern, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.so},
+    weihnacht:  {Mo:TAG.weihMo, Di:TAG.weihMo, Mi:TAG.weihLang, Do:TAG.weihDo, Fr:TAG.weihLang, Sa:TAG.sa, So:TAG.so}
+  };
+
+  // 24 Wochen. mo = Montag der Kalenderwoche. g = Rechtsgebiete dieser Woche.
+  const W = [
+    {mo:'2026-08-17', ph:'Auslaufwoche',      r:'auslauf',    ab:'2026-08-20',
+     kw:{d:'2026-08-20',f:'Zivilrecht',t:'Außer Fliesen nichts gewesen'},
+     n:4,  g:[['VerwR AT',2],['SchuldR BT',2]]},
+    {mo:'2026-08-24', ph:'Baurecht-Block',    r:'normal',
+     kw:{d:'2026-08-27',f:'Öffentliches Recht',t:'Opernabonnement'},
+     n:9,  g:[['BauR',9]]},
+    {mo:'2026-08-31', ph:'Arbeitsrecht-Block',r:'normal',
+     kw:{d:'2026-09-03',f:'Öffentliches Recht',t:'Kein Badespaß am Schlundsee'},
+     n:9,  g:[['BauR',1],['ArbeitsR',8]]},
+    {mo:'2026-09-07', ph:'Probeexamen',       r:'probe1',
+     kw:null, kwAus:'Kein Termin am 10.9.',
+     n:2,  g:[['StrafR',2]]},
+    {mo:'2026-09-14', ph:'Probeexamen',       r:'probe2',
+     kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
+     n:2,  g:[['StrafR',2]]},
+    {mo:'2026-09-21', ph:'Normal',            r:'normal',
+     kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
+     n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StrafR',1]]},
+    {mo:'2026-09-28', ph:'Normal',            r:'normal',
+     kw:{d:'2026-10-01',f:'Zivilrecht',t:'Traktor auf Abwegen'},
+     n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StPO',1]]},
+    {mo:'2026-10-05', ph:'Normal',            r:'normal',
+     kw:{d:'2026-10-08',f:'Öffentliches Recht',t:'Theaterkritik'},
+     n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
+    {mo:'2026-10-12', ph:'Peru · Ankommen',   r:'peruAnkunft',
+     kw:{d:'2026-10-15',f:'Strafrecht',t:'Strafbarkeitsrisiken II',peru:'9–13 Uhr Ortszeit'},
+     n:0,  g:[]},
+    {mo:'2026-10-19', ph:'Peru · Reisewoche', r:'peruReise',
+     kw:null, kwAus:'22.10. verpasst – Reisewoche',
+     n:0,  g:[]},
+    {mo:'2026-10-26', ph:'Peru · Lernphase',  r:'peruLernen',
+     kw:{d:'2026-10-29',f:'Öffentliches Recht',t:'Einkaufsparadies Vendicampo',peru:'10–14 Uhr Ortszeit'},
+     n:0,  g:[]},
+    {mo:'2026-11-02', ph:'Peru · Lernphase',  r:'peruLernen',
+     kw:{d:'2026-11-05',f:'Zivilrecht',t:'Ungebremste Jungfernfahrt',peru:'10–14 Uhr Ortszeit'},
+     n:0,  g:[]},
+    {mo:'2026-11-09', ph:'Endspurt',          r:'normal',
+     kw:{d:'2026-11-12',f:'Strafrecht',t:'Strafbarkeitsrisiken III'},
+     n:9,  g:[['SachenR',6],['PolizeiR',2],['StrafR',1]]},
+    {mo:'2026-11-16', ph:'Endspurt',          r:'normal',
+     kw:{d:'2026-11-19',f:'Zivilrecht',t:'Ölgemälde und Wein'},
+     n:9,  g:[['SachenR',4],['ZPO I',2],['PolizeiR',2],['StPO',1]]},
+    {mo:'2026-11-23', ph:'Endspurt',          r:'normal',
+     kw:{d:'2026-11-26',f:'Öffentliches Recht',t:'Brand mit Folgen'},
+     n:9,  g:[['ZPO I',5],['PolizeiR',3],['StrafR',1]]},
+    {mo:'2026-11-30', ph:'Endspurt',          r:'normal',
+     kw:{d:'2026-12-03',f:'Zivilrecht',t:'Hangover'},
+     n:9,  g:[['SchuldR AT',6],['EuropaR',2],['StPO',1]]},
+    {mo:'2026-12-07', ph:'Endspurt',          r:'normal',
+     kw:{d:'2026-12-10',f:'Öffentliches Recht',t:'Datenschutz im Landtag'},
+     n:9,  g:[['SchuldR AT',3],['BGB AT',3],['EuropaR',3]]},
+    {mo:'2026-12-14', ph:'Endspurt',          r:'normal',
+     kw:{d:'2026-12-17',f:'Zivilrecht',t:'An der Tankstelle'},
+     n:9,  g:[['BGB AT',5],['EuropaR',1],['VerwR AT',2],['StrafR',1]]},
+    {mo:'2026-12-21', ph:'Weihnachten',       r:'weihnacht',
+     kw:null, kwAus:'Kein Termin am 24.12.',
+     n:4,  g:[['SchuldR BT',3],['VerwR AT',1]]},
+    {mo:'2026-12-28', ph:'Weihnachten',       r:'weihnacht',
+     kw:null, kwAus:'Kein Termin am 31.12.',
+     n:4,  g:[['HGB',1],['VerwR AT',1],['Reserve',2]]},
+    {mo:'2027-01-04', ph:'Januar',            r:'normal',
+     kw:{d:'2027-01-07',f:'Zivilrecht',t:'Solaris'},
+     n:9,  g:[['HGB',5],['StPO',1],['Reserve',3]]},
+    {mo:'2027-01-11', ph:'Januar',            r:'normal',
+     kw:{d:'2027-01-14',f:'Strafrecht',t:'Strafbarkeitsrisiken IV'},
+     n:9,  g:[['ZPO II',5],['StaatshaftungsR',3],['StPO',1]]},
+    {mo:'2027-01-18', ph:'Januar',            r:'normal',
+     kw:{d:'2027-01-21',f:'Zivilrecht',t:'N.N.'},
+     n:9,  g:[['ErbR',5],['VerfassungsR',3],['Reserve',1]]},
+    {mo:'2027-01-25', ph:'Januar',            r:'normal',
+     kw:{d:'2027-01-28',f:'Öffentliches Recht',t:'Tankt in Österreich'},
+     n:9,  g:[['FamilienR',2],['ArbeitsR',1],['VerfassungsR',3],['Reserve',3]]}
+  ];
+
+  const ZIEL = 142;   // offene + in Bearbeitung befindliche Hauptkurs-Fälle
+
+  // ── Helfer ────────────────────────────────────────────────────────
+  const d = iso => { const [y,m,t] = iso.split('-').map(Number); return new Date(y, m-1, t); };
+  const kurz = dt => dt.toLocaleDateString('de-DE', {day:'numeric', month:'short'});
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  function montagVon(dt) {
+    const x = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
+    x.setDate(x.getDate() - ((x.getDay() + 6) % 7));
+    return x;
+  }
+
+  // Die Fälle einer Woche auf die Fall-Slots der Tage verteilen.
+  // Der Donnerstag bekommt bevorzugt ein Gebiet aus dem Fach der Klausurwerkstatt,
+  // damit der Stoff frisch ist, wenn sie abends dort sitzt.
+  function verteile(woche) {
+    const flach = [];
+    woche.g.forEach(([name, anzahl]) => {
+      for (let i = 0; i < anzahl; i++) flach.push(name);
+    });
+
+    const slots = [];
+    TAGE.forEach(tag => {
+      const raster = RASTER[woche.r][tag];
+      raster.b.forEach((block, i) => { if (block.f) slots.push({tag, i}); });
+    });
+
+    const zuteilung = {};
+    slots.forEach(s => { zuteilung[s.tag + '#' + s.i] = null; });
+
+    // Donnerstag zuerst bedienen
+    const kwFach = woche.kw ? FACH_KEY[woche.kw.f] : null;
+    const doSlot = slots.find(s => s.tag === 'Do');
+    if (doSlot && kwFach) {
+      const treffer = flach.findIndex(g => FACH_VON_GEBIET[g] === kwFach);
+      if (treffer >= 0) zuteilung[doSlot.tag + '#' + doSlot.i] = flach.splice(treffer, 1)[0];
+    }
+    slots.forEach(s => {
+      const key = s.tag + '#' + s.i;
+      if (zuteilung[key] === null) zuteilung[key] = flach.shift() || 'Reserve';
+    });
+    return zuteilung;
+  }
+
+  function wocheFuer(dt) {
+    const mo = montagVon(dt).getTime();
+    return W.find(w => d(w.mo).getTime() === mo) || null;
+  }
+
+  // Wie viele Fälle je Gebiet liegen vor diesem Montag bereits hinter ihr?
+  function verbraucht(bisMontag) {
+    const summe = {};
+    W.forEach(w => {
+      if (d(w.mo).getTime() >= bisMontag.getTime()) return;
+      w.g.forEach(([name, n]) => { summe[name] = (summe[name] || 0) + n; });
+    });
+    return summe;
+  }
+
+  // ── Rendern ───────────────────────────────────────────────────────
+  function render() {
+    const heute = new Date();
+    const start = d(W[0].mo);
+    const ende  = d(W[W.length - 1].mo); ende.setDate(ende.getDate() + 6);
+
+    let woche = wocheFuer(heute);
+    let vorschau = false;
+    if (!woche) {
+      vorschau = true;
+      woche = heute < start ? W[0] : W[W.length - 1];
+    }
+
+    const moDieserWoche = d(woche.mo);
+    const heuteKey = (!vorschau && heute >= start && heute <= ende)
+      ? TAGE[(heute.getDay() + 6) % 7] : null;
+    const zuteilung = verteile(woche);
+
+    // Kopf
+    const bis = new Date(moDieserWoche); bis.setDate(bis.getDate() + 6);
+    const von = woche.ab ? d(woche.ab) : moDieserWoche;
+    document.getElementById('sp-title').textContent = woche.ph;
+    document.getElementById('sp-sub').textContent =
+      (vorschau && heute < start ? 'Startet ' : '') + kurz(von) + ' – ' + kurz(bis) +
+      (woche.kw ? ' · Werkstatt ' + kurz(d(woche.kw.d)) + ': ' + woche.kw.f
+                : woche.kwAus ? ' · ' + woche.kwAus : '');
+
+    const proFach = {zr:0, or:0, sr:0};
+    woche.g.forEach(([name, n]) => {
+      const f = FACH_VON_GEBIET[name];
+      if (f) proFach[f] += n;
+    });
+    let chips = '<span class="sp-chip"><b>' + woche.n + '</b> Fälle</span>';
+    ['zr','or','sr'].forEach(f => {
+      if (proFach[f]) chips += '<span class="sp-chip ' + f + '"><b>' + proFach[f] + '</b> ' +
+        (f === 'zr' ? 'ZivilR' : f === 'or' ? 'ÖR' : 'StrafR') + '</span>';
+    });
+    document.getElementById('sp-chips').innerHTML = chips;
+
+    // Heute
+    const zeigeTag = heuteKey || (woche.ab ? TAGE[(d(woche.ab).getDay() + 6) % 7] : 'Mo');
+    document.getElementById('sp-today-h').textContent =
+      (heuteKey ? 'Heute · ' : 'Erster Tag · ') + TAGE_LANG[zeigeTag];
+
+    const tagRaster = RASTER[woche.r][zeigeTag];
+    const liste = document.getElementById('sp-blocks');
+    if (!tagRaster.b.length) {
+      liste.innerHTML = '<li class="sp-b k-pause"><span class="sp-b-l">Noch Rep – der Plan startet am Donnerstag.</span></li>';
+    } else {
+      liste.innerHTML = tagRaster.b.map((block, i) => {
+        const gebiet = block.f ? zuteilung[zeigeTag + '#' + i] : null;
+        const fach = gebiet ? FACH_VON_GEBIET[gebiet] : null;
+        const zeit = (block === B.kwPeru && woche.kw && woche.kw.peru)
+          ? '16–20 Uhr DE' : block.t;
+        const notiz = gebiet
+            ? (gebiet === 'Reserve' ? 'frei wählbar' : gebiet)
+            : (block === B.kw && woche.kw ? woche.kw.f + ' · „' + woche.kw.t + '”' : '')
+              || (block === B.kwPeru && woche.kw ? woche.kw.peru + ' · ' + woche.kw.f : '')
+              || (block === B.kwPrep && woche.kw ? woche.kw.f : '');
+        return '<li class="sp-b k-' + block.k + (fach ? ' f-' + fach : '') + '">' +
+               '<span class="sp-b-t">' + esc(zeit) + '</span>' +
+               '<span class="sp-b-l">' + esc(block.l) + '</span>' +
+               (notiz ? '<span class="sp-b-n">' + esc(notiz) + '</span>' : '') +
+               '</li>';
+      }).join('');
+    }
+
+    // Wochengitter
+    const abschnitte = [['vm','Vormittag'],['mi','Mittag'],['nm','Nachmittag'],['ab','Abend']];
+    let kopf = '<tr><th class="sp-rowlab"></th>';
+    TAGE.forEach((tag, i) => {
+      const dt = new Date(moDieserWoche); dt.setDate(dt.getDate() + i);
+      kopf += '<th' + (tag === heuteKey ? ' class="sp-heute"' : '') + '>' +
+              tag + '<small>' + kurz(dt) + '</small></th>';
+    });
+    kopf += '</tr>';
+
+    let koerper = '';
+    abschnitte.forEach(([slot, label]) => {
+      let zeile = '<tr><td class="sp-rowlab">' + label + '</td>';
+      TAGE.forEach(tag => {
+        const raster = RASTER[woche.r][tag];
+        const treffer = raster.b
+          .map((block, i) => ({block, i}))
+          .filter(x => x.block.s === slot);
+        if (!treffer.length) {
+          zeile += '<td class="sp-leer"></td>';
+          return;
+        }
+        const inhalt = treffer.map(({block, i}) => {
+          const gebiet = block.f ? zuteilung[tag + '#' + i] : null;
+          const text = gebiet
+            ? (gebiet === 'Reserve' ? 'Fall · frei' : 'Fall · ' + gebiet)
+            : block.l;
+          return '<div class="sp-e k-' + block.k + '">' + esc(text) +
+                 (block.t ? '<span>' + esc(block.t) + '</span>' : '') + '</div>';
+        }).join('');
+        zeile += '<td class="' + (tag === heuteKey ? 'sp-heute-c' : '') + '">' +
+                 '<div class="sp-cell">' + inhalt + '</div></td>';
+      });
+      koerper += zeile + '</tr>';
+    });
+    document.getElementById('sp-grid').innerHTML = kopf + koerper;
+
+    // Fußzeile: Stunden je Tag
+    document.getElementById('sp-foot').innerHTML = TAGE.map(tag => {
+      const r = RASTER[woche.r][tag];
+      return '<span>' + tag + ' <b>' + r.std + '</b></span>';
+    }).join('');
+
+    renderWochenTabelle(moDieserWoche);
+    renderQueues(moDieserWoche);
+    renderHinweis();
+
+    // Überschrift der Sektion
+    const label = document.getElementById('sp-label');
+    if (label) {
+      label.innerHTML = 'Stundenplan <span>· ' +
+        (vorschau && heute < start ? 'ab 20. August' : woche.ph + ', ' + kurz(von)) + '</span>';
+    }
+  }
+
+  function renderWochenTabelle(aktuellerMontag) {
+    let html = '<tr><th>Woche</th><th>Phase</th><th>Klausurwerkstatt</th>' +
+               '<th>Rechtsgebiete</th><th style="text-align:right">Fälle</th></tr>';
+    let summe = 0;
+    W.forEach(w => {
+      const mo = d(w.mo);
+      const von = w.ab ? d(w.ab) : mo;
+      summe += w.n;
+      const zustand = mo.getTime() === aktuellerMontag.getTime() ? 'sp-jetzt'
+                    : mo.getTime() < aktuellerMontag.getTime() ? 'sp-vorbei' : '';
+      const kwText = w.kw
+        ? kurz(d(w.kw.d)) + ' · ' + w.kw.f + (w.kw.peru ? ' (aus Peru)' : '')
+        : '<span style="color:var(--text-sub)">' + esc(w.kwAus || '—') + '</span>';
+      const gebiete = w.g.length
+        ? w.g.map(([name, n]) => {
+            const f = FACH_VON_GEBIET[name] || 'rest';
+            return '<span class="sp-tag ' + f + '">' + esc(name) + ' ×' + n + '</span>';
+          }).join('')
+        : '<span style="color:var(--text-sub)">—</span>';
+      html += '<tr class="' + zustand + '">' +
+              '<td style="white-space:nowrap">' + kurz(von) + '</td>' +
+              '<td style="white-space:nowrap">' + esc(w.ph) + '</td>' +
+              '<td>' + kwText + '</td>' +
+              '<td>' + gebiete + '</td>' +
+              '<td class="num">' + w.n + '</td></tr>';
+    });
+    html += '<tr><td colspan="4" style="text-align:right;font-weight:600;border-bottom:none">' +
+            'Summe · ' + ZIEL + ' Fälle nötig, ' + (summe - ZIEL) + ' Puffer</td>' +
+            '<td class="num" style="border-bottom:none">' + summe + '</td></tr>';
+    document.getElementById('sp-weeks').innerHTML = html;
+  }
+
+  function renderQueues(aktuellerMontag) {
+    const erledigt = verbraucht(aktuellerMontag);
+    const farben = {zr:'var(--zr)', or:'var(--or)', sr:'var(--sr)'};
+    document.getElementById('sp-queues').innerHTML = ['zr','or','sr'].map(f => {
+      const eintraege = QUEUES[f].map(([name, gesamt]) => {
+        const fertig = Math.min(erledigt[name] || 0, gesamt);
+        const offen = gesamt - fertig;
+        return '<li class="' + (offen === 0 ? 'done' : '') + '">' + esc(name) +
+               ' <span class="qn">' + (offen === 0 ? '✓' : offen + ' offen') + '</span></li>';
+      }).join('');
+      return '<div class="sp-q" style="--qc:' + farben[f] + '">' +
+             '<h5>' + FACH_NAME[f] + '</h5><ol>' + eintraege + '</ol></div>';
+    }).join('');
+  }
+
+  function renderHinweis() {
+    document.getElementById('sp-hinweis').innerHTML =
+      '<p><b>Konrad-Kurs:</b> Termine stehen noch nicht fest. Vorgesehen ist ' +
+      'Mi oder Fr 18:00–20:00 – dort kostet er keinen Fall, weil er nach dem letzten ' +
+      'Block liegt.</p>' +
+      '<p><b>Klausurwerkstatt aus Peru:</b> 16–20 Uhr deutscher Zeit sind dort 9–13 Uhr ' +
+      '(bis zur Zeitumstellung am 25.10.) bzw. 10–14 Uhr danach. Nur der 22.10. fällt in ' +
+      'die Reisewoche und entfällt.</p>' +
+      '<p><b>Nach dem 31. Januar</b> nur noch Wiederholung, kein neuer Stoff. Der letzte ' +
+      'Werkstatt-Termin am 4.2. liegt schon in dieser Phase.</p>';
+  }
+
+  try { render(); }
+  catch (e) { console.error('Stundenplan konnte nicht gezeichnet werden:', e); }
+})();
 </script>
 </body>
 </html>
