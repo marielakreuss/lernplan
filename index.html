@@ -78,8 +78,6 @@
         radial-gradient(900px  760px at 55% 106%, rgba(214,196,170,0.20), transparent 64%);
     }
 
-    .wrap { max-width: 1240px; margin: 0 auto; }
-
     /* Glas-Basis für alle Karten */
     .glass {
       background: var(--surface);
@@ -111,70 +109,6 @@
       gap: 0.6rem;
     }
     .section-label span { text-transform: none; letter-spacing: 0.02em; font-weight: 400; color: var(--text-sub); font-size: 0.72rem; }
-
-    /* ══ HERO ═════════════════════════════════════════ */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.6rem;
-      padding: 1.7rem 1.9rem;
-      margin-bottom: 1rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(115deg, rgba(206,182,144,0.16), transparent 48%, rgba(168,158,140,0.12));
-      pointer-events: none;
-    }
-    .hero-main { position: relative; z-index: 1; min-width: 0; }
-    .hero-eyebrow {
-      font-size: 0.74rem;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--text-sub);
-      font-weight: 500;
-      margin-bottom: 0.35rem;
-    }
-    .hero h1 {
-      font-family: 'Outfit', sans-serif;
-      font-size: clamp(1.8rem, 3.6vw, 2.7rem);
-      font-weight: 600;
-      letter-spacing: -0.025em;
-      line-height: 1.08;
-    }
-    .hero h1 em {
-      font-family: 'Lora', serif;
-      font-style: italic;
-      font-weight: 600;
-      color: var(--accent);
-    }
-    .hero-sub {
-      color: var(--text-muted);
-      font-size: 0.88rem;
-      margin-top: 0.4rem;
-      line-height: 1.5;
-    }
-    .hero-chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.95rem; }
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.38rem;
-      background: var(--surface-solid);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 0.34rem 0.8rem;
-      font-size: 0.79rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-    .chip b { color: var(--text); font-weight: 600; }
-    .chip.hot { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 26%, transparent); color: var(--accent); }
-    .chip.hot b { color: var(--accent); }
 
     /* Countdown-Ring */
     .hero-ring { position: relative; z-index: 1; flex-shrink: 0; text-align: center; }
@@ -451,7 +385,6 @@
       display: flex; align-items: center; gap: 1.6rem; flex-wrap: wrap;
       margin-bottom: 1.05rem;
     }
-    .streak-hero { display: flex; align-items: center; gap: 0.85rem; }
     .streak-flame {
       width: 52px; height: 52px; border-radius: 16px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
@@ -862,7 +795,6 @@
     .energie-btn.sel-mittel  { background: #FDF6E3; border-color: #E8D19E; color: #8A6218; font-weight: 700; }
     .energie-btn.sel-gut     { background: var(--zr-bg); border-color: var(--zr-l); color: var(--zr-deep); font-weight: 700; }
 
-    .footer { text-align: center; font-size: 0.72rem; color: var(--text-sub); margin-top: 1.4rem; letter-spacing: 0.03em; }
     .restand {
       font: inherit; color: var(--text-sub); background: transparent;
       border: 1px solid color-mix(in srgb, var(--text-sub) 34%, transparent);
@@ -980,17 +912,6 @@
     }
     .sp-foot b { color: var(--text); font-weight: 600; }
 
-    /* Aufklappbares */
-    .sp-more { border-top: 1px solid var(--border); }
-    .sp-more > summary {
-      cursor: pointer; list-style: none;
-      padding: 0.85rem 1.6rem; font-size: 0.8rem; font-weight: 600;
-      color: var(--accent); user-select: none;
-    }
-    .sp-more > summary::-webkit-details-marker { display: none; }
-    .sp-more > summary::after { content: ' ▾'; }
-    .sp-more[open] > summary::after { content: ' ▴'; }
-    .sp-more > summary:hover { background: var(--accent-soft); }
     .sp-inner { padding: 0.2rem 1.6rem 1.4rem; }
     .sp-weeks-wrap { overflow-x: auto; }
     .sp-weeks { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 0.78rem; }
@@ -1038,9 +959,6 @@
       }
     }
     @media (max-width: 640px) {
-      body { padding: 1.1rem 0.9rem 2.5rem; }
-      .hero { flex-direction: column; align-items: flex-start; gap: 1.1rem; padding: 1.3rem 1.2rem; }
-      .hero-ring { align-self: center; }
       .now-head { padding: 1.1rem 1.1rem 0.9rem; }
       .now-head h2 { font-size: 1.18rem; }
       .now-pills { padding: 0 1.1rem 0.9rem; gap: 0.45rem; }
@@ -1068,7 +986,6 @@
       .sp-today { padding: 1rem 1.1rem 1.1rem; }
       .sp-grid-wrap { padding: 0 1.1rem 1.2rem; }
       .sp-foot { padding: 0 1.1rem 1rem; gap: 0.7rem; }
-      .sp-more > summary { padding: 0.8rem 1.1rem; }
       .sp-inner { padding: 0.2rem 1.1rem 1.2rem; }
       .sp-b { gap: 0.6rem; padding: 0.55rem 0.7rem; }
       .sp-b-t { min-width: 5.9rem; font-size: 0.78rem; }
@@ -1076,22 +993,213 @@
       .sp-b-n { flex-basis: 100%; margin-left: 0; text-align: left; }
       .sp-queues { grid-template-columns: 1fr; gap: 0.9rem; }
     }
+
+    /* ══════════════════════════════════════════════════════════════
+       APP-SHELL · Seitenleiste + Tabs
+       Ersetzt den langen Einzel-Scroll. Vier Ebenen, je eine Frage:
+       Heute = was jetzt · Woche = was bis Sonntag ·
+       Fortschritt = wo stehe ich · Plan = was danach
+       ══════════════════════════════════════════════════════════════ */
+    body { padding: 0; }
+    .app {
+      display: grid;
+      grid-template-columns: 248px minmax(0, 1fr);
+      align-items: start;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* ── Seitenleiste ─────────────────────────────── */
+    .side {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      padding: 1.6rem 1.1rem 1.1rem;
+      border-right: 1px solid var(--border);
+      background: rgba(255,255,255,0.46);
+      -webkit-backdrop-filter: blur(16px) saturate(1.2);
+      backdrop-filter: blur(16px) saturate(1.2);
+    }
+    .side-brand { padding: 0 0.5rem; }
+    .side-brand b {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.04rem; font-weight: 600; letter-spacing: -0.02em;
+    }
+    .side-brand span {
+      display: block; font-size: 0.7rem; color: var(--text-sub);
+      margin-top: 0.15rem; letter-spacing: 0.02em;
+    }
+
+    .ring-wrap { position: relative; width: 132px; height: 132px; }
+    .ring-wrap svg { width: 100%; height: 100%; }
+    .side-ring { display: flex; flex-direction: column; align-items: center; }
+
+    .side-streak {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding: 0.6rem 0.75rem;
+      background: var(--surface-solid);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+    .side-streak .streak-flame { font-size: 1.45rem; line-height: 1; }
+    .side-streak .streak-num { font-size: 0.95rem; line-height: 1.15; }
+    .side-streak .streak-cap { font-size: 0.68rem; line-height: 1.3; margin-top: 0.1rem; }
+
+    .side-nav { display: flex; flex-direction: column; gap: 0.15rem; }
+    .nav-item {
+      display: flex; align-items: center; gap: 0.65rem; width: 100%;
+      border: none; background: none; cursor: pointer;
+      font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 500;
+      color: var(--text-muted);
+      padding: 0.6rem 0.7rem; border-radius: 11px;
+      text-align: left; white-space: nowrap;
+      transition: background 0.18s, color 0.18s;
+    }
+    .nav-item:hover { background: rgba(255,255,255,0.72); color: var(--text); }
+    .nav-item.on {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent);
+    }
+    .nav-ic { width: 1.1rem; text-align: center; font-size: 0.92rem; opacity: 0.85; }
+    .nav-badge {
+      margin-left: auto; font-size: 0.7rem; font-weight: 600;
+      color: var(--text-sub); font-variant-numeric: tabular-nums;
+    }
+    .nav-item.on .nav-badge { color: var(--accent); }
+
+    .side-foot {
+      margin-top: auto;
+      font-size: 0.68rem; color: var(--text-sub); line-height: 1.55;
+      padding: 0 0.45rem;
+    }
+    .side-foot .restand { margin: 0.35rem 0 0; }
+
+    /* ── Hauptbereich ─────────────────────────────── */
+    .main { padding: 1.7rem 2.1rem 3.5rem; min-width: 0; }
+    .topbar {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1.4rem;
+    }
+    .topbar h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.5rem, 2.6vw, 2.05rem);
+      font-weight: 600; letter-spacing: -0.025em; line-height: 1.1;
+    }
+    .topbar h1 em { font-family: 'Lora', serif; font-style: italic; font-weight: 600; color: var(--accent); }
+    .topbar .tb-sub { color: var(--text-muted); font-size: 0.83rem; margin-top: 0.3rem; }
+
+    .tab { display: none; }
+    .tab.on { display: block; animation: riseIn 0.42s cubic-bezier(.22,.9,.3,1) both; }
+    @media (prefers-reduced-motion: reduce) { .tab.on { animation: none; } }
+
+    .g2 { display: grid; grid-template-columns: minmax(0,1.45fr) minmax(0,0.9fr); gap: 1rem; align-items: start; }
+    .gcol { display: grid; gap: 1rem; align-items: start; }
+
+    .card { padding: 1.2rem 1.35rem; }
+    .card > h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.71rem; text-transform: uppercase; letter-spacing: 0.13em;
+      color: var(--text-sub); font-weight: 600; margin-bottom: 0.85rem;
+      display: flex; align-items: baseline; gap: 0.5rem;
+    }
+    .card > h4 .h4-note { text-transform: none; letter-spacing: 0.02em; font-weight: 400; }
+
+    /* Kennzahl-Kacheln (Heute) */
+    .sp-vorschau {
+      margin: -0.3rem 0 0.75rem;
+      padding: 0.55rem 0.75rem;
+      background: var(--fokus-bg);
+      border: 1px solid var(--fokus-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.76rem; line-height: 1.5; color: var(--fokus-text);
+    }
+
+    .tiles { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0.6rem; }
+    .tile {
+      padding: 0.8rem 0.9rem;
+      background: var(--surface-solid);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+    .tile .t-l {
+      font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--text-sub); font-weight: 600;
+    }
+    .tile .t-v {
+      font-family: 'Outfit', sans-serif; font-size: 1.45rem; font-weight: 600;
+      letter-spacing: -0.025em; margin-top: 0.22rem; line-height: 1.1;
+    }
+    .tile .t-s { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.15rem; line-height: 1.4; }
+
+    /* Karten ohne eigene Polsterung wieder einfangen */
+    .tab .now { margin-bottom: 0; }
+    .tab .sp   { margin-bottom: 0; }
+    .tab .weeks-card { margin-bottom: 0; }
+    .tab .stats-grid { margin-bottom: 0; }
+    .tab .section-label:first-child { margin-top: 0; }
+
+    @media (max-width: 1080px) {
+      .g2 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 980px) {
+      .app { grid-template-columns: 1fr; }
+      .side {
+        position: sticky; top: 0; z-index: 40;
+        height: auto; flex-direction: row; align-items: center; flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+        padding: 0.75rem 1rem;
+        border-right: none; border-bottom: 1px solid var(--border);
+      }
+      .side-brand { flex: 1 1 auto; padding: 0; }
+      .side-ring { flex-direction: row; align-items: center; gap: 0.55rem; }
+      .side-ring .ring-wrap { width: 46px; height: 46px; }
+      .side-ring .ring-num { font-size: 0.92rem; }
+      .side-ring .ring-cap { font-size: 0.44rem; margin-top: 0.05rem; }
+      .side-ring .ring-date { margin-top: 0; font-size: 0.68rem; max-width: 8rem; }
+      .side-streak { padding: 0.4rem 0.6rem; gap: 0.45rem; }
+      .side-streak .streak-flame { font-size: 1.1rem; }
+      .side-streak .streak-cap { display: none; }
+      .side-nav {
+        order: 9; flex-direction: row; width: 100%;
+        overflow-x: auto; gap: 0.3rem;
+        -webkit-overflow-scrolling: touch; scrollbar-width: none;
+      }
+      .side-nav::-webkit-scrollbar { display: none; }
+      .nav-item { padding: 0.45rem 0.8rem; font-size: 0.84rem; }
+      .nav-badge { display: none; }
+      .side-foot { order: 10; margin-top: 0; width: 100%; padding: 0; }
+      .main { padding: 1.3rem 1.2rem 2.8rem; }
+    }
+    @media (max-width: 640px) {
+      .main { padding: 1.1rem 0.9rem 2.5rem; }
+      .tiles { grid-template-columns: 1fr 1fr; }
+      .card { padding: 1rem 1.05rem; }
+    }
   </style>
 </head>
 <body>
-<div class="wrap">
+<div class="app">
 
-  <!-- ══ HERO ══════════════════════════════════════ -->
-  <header class="hero glass rise d1">
-    <div class="hero-main">
-      <p class="hero-eyebrow" id="hero-eyebrow">—</p>
-      <h1 id="hero-greet">Willkommen zurück, <em>Mariela</em></h1>
-      <p class="hero-sub" id="hero-sub">Erstes Juristisches Staatsexamen · Bayern · 3. März 2027</p>
-      <div class="hero-chips" id="hero-chips"></div>
+  <!-- ══════════════════════════════════════════════════
+       SEITENLEISTE · immer sichtbarer Anker
+       Ring (Tage/Prozent) und Serie stehen NUR hier –
+       deshalb sind sie aus den Kacheln unten entfernt.
+       ══════════════════════════════════════════════════ -->
+  <aside class="side">
+    <div class="side-brand">
+      <b>1. Staatsexamen</b>
+      <span>Bayern · 3. März 2027</span>
     </div>
-    <div class="hero-ring">
-      <div style="position:relative;width:132px;height:132px;">
-        <svg width="132" height="132" viewBox="0 0 132 132">
+
+    <div class="hero-ring side-ring">
+      <div class="ring-wrap">
+        <svg viewBox="0 0 132 132">
           <defs>
             <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%"   stop-color="#D5BE96"/>
@@ -1111,10 +1219,84 @@
       </div>
       <div class="ring-date" id="ring-pct">—</div>
     </div>
-  </header>
 
-  <!-- ══ POMODORO ══════════════════════════════════ -->
-  <section class="pomo glass rise d2" id="pomo">
+    <div class="side-streak">
+      <div class="streak-flame" id="streak-flame">🔥</div>
+      <div style="min-width:0">
+        <div class="streak-num" id="streak-num">—</div>
+        <div class="streak-cap" id="streak-cap">—</div>
+      </div>
+    </div>
+
+    <nav class="side-nav" id="side-nav">
+      <button class="nav-item on" data-tab="heute" type="button">
+        <span class="nav-ic">◉</span>Heute<span class="nav-badge" id="nb-heute"></span>
+      </button>
+      <button class="nav-item" data-tab="woche" type="button">
+        <span class="nav-ic">▤</span>Diese Woche<span class="nav-badge" id="nb-woche"></span>
+      </button>
+      <button class="nav-item" data-tab="fortschritt" type="button">
+        <span class="nav-ic">▨</span>Fortschritt<span class="nav-badge" id="nb-fortschritt"></span>
+      </button>
+      <button class="nav-item" data-tab="plan" type="button">
+        <span class="nav-ic">☰</span>Der ganze Weg<span class="nav-badge" id="nb-plan"></span>
+      </button>
+    </nav>
+
+    <div class="side-foot" id="footer-sync">
+      <span id="sync-status">Sync wird geladen…</span>
+      <button type="button" id="btn-restand" class="restand"
+        title="Holt den neuesten Notion-Stand. Die Anki-Zahlen kommen vom Mac-Sync (8/14/18/22 Uhr) und nur dann, wenn Anki gerade offen ist.">↻ Stand neu laden</button>
+      <span class="stand-info" id="stand-info"></span>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div style="min-width:0">
+        <h1 id="hero-greet">Willkommen zurück, <em>Mariela</em></h1>
+        <p class="tb-sub" id="hero-eyebrow">—</p>
+      </div>
+    </header>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     TAB 1 · HEUTE — „Was mache ich jetzt?"
+     ══════════════════════════════════════════════════════════════════ -->
+<section class="tab on" id="tab-heute">
+
+  <div class="tiles rise d1" id="heute-tiles"></div>
+
+  <div class="g2" style="margin-top:1rem">
+    <div class="gcol">
+
+      <!-- Tagesablauf aus dem Stundenplan -->
+      <section class="sp glass rise d2" id="stundenplan-heute">
+        <div class="sp-today" style="padding-top:1.15rem">
+          <div class="sp-today-h" id="sp-today-h">Heute</div>
+          <div class="sp-vorschau" id="sp-vorschau" style="display:none"></div>
+          <ul class="sp-blocks" id="sp-blocks"></ul>
+        </div>
+      </section>
+
+      <!-- Aufgaben der laufenden Woche -->
+      <section class="card glass rise d3">
+        <h4>Was diese Woche ansteht <span class="h4-note" id="now-week-hint"></span></h4>
+        <ul class="now-tasks" id="now-tasks"></ul>
+        <div class="now-fokus" id="now-fokus"></div>
+      </section>
+
+      <!-- Konkrete Fälle aus Notion -->
+      <section class="card glass rise d4">
+        <h4>Fälle dieser Woche <span class="h4-note notion-sync-time" id="now-sync"></span></h4>
+        <div id="now-notion"></div>
+      </section>
+    </div>
+
+    <div class="gcol">
+
+      <!-- Fokus-Timer -->
+      <section class="pomo glass rise d2" id="pomo">
     <div class="pomo-dial">
       <svg width="96" height="96" viewBox="0 0 96 96">
         <circle cx="48" cy="48" r="41" fill="none" stroke="rgba(62,50,34,0.09)" stroke-width="7"/>
@@ -1152,8 +1334,30 @@
     </div>
   </section>
 
-  <!-- ══ DIESE WOCHE ═══════════════════════════════ -->
-  <section class="now glass rise d2" id="now-card">
+      <!-- Check-in der laufenden Woche -->
+      <section class="card glass rise d3">
+        <h4>Check-in diese Woche <span class="h4-note">· Tag antippen</span></h4>
+        <div class="weekdots" id="now-weekdots"></div>
+      </section>
+
+      <!-- Absprung in die Wochenansicht -->
+      <section class="card glass rise d4">
+        <h4>Woche <span class="h4-note" id="heute-week-label"></span></h4>
+        <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.55;margin-bottom:0.8rem">
+          Fälle abhaken, Klausuren eintragen und den Tages-Check-in schreiben.
+        </p>
+        <button class="btn" onclick="openCurrentWeek()" style="width:100%">Woche öffnen</button>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     TAB 2 · DIESE WOCHE — „Was muss bis Sonntag passieren?"
+     ══════════════════════════════════════════════════════════════════ -->
+<section class="tab" id="tab-woche">
+
+  <section class="now glass rise d1" id="now-card">
     <div class="now-stripe"></div>
     <div class="now-head">
       <div style="min-width:0">
@@ -1162,40 +1366,22 @@
         <p class="now-range" id="now-range">—</p>
       </div>
       <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-        <button class="btn ghost" onclick="scrollToGrid()">Alle Wochen</button>
         <button class="btn" onclick="openCurrentWeek()">Woche öffnen</button>
       </div>
     </div>
 
     <div class="now-pills" id="now-pills"></div>
 
-    <div class="now-body">
-      <div class="now-block">
-        <h5>Was diese Woche ansteht</h5>
-        <ul class="now-tasks" id="now-tasks"></ul>
-        <div class="now-fokus" id="now-fokus"></div>
-      </div>
+    <div class="now-body" style="grid-template-columns:1fr">
       <div class="now-block">
         <h5>Wo ich stehe</h5>
         <div id="now-gauges"></div>
-        <div style="margin-top:1rem">
-          <div class="gauge-label" style="margin-bottom:0.4rem">Check-in diese Woche</div>
-          <div class="weekdots" id="now-weekdots"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="now-body" style="grid-template-columns:1fr;padding-top:0" id="now-notion-wrap">
-      <div class="now-block">
-        <h5>Fälle dieser Woche <span class="notion-sync-time" id="now-sync"></span></h5>
-        <div id="now-notion"></div>
       </div>
     </div>
   </section>
 
-  <!-- ══ STUNDENPLAN ═══════════════════════════════ -->
   <div class="section-label" id="sp-label">Stundenplan <span>· ab 20. August</span></div>
-  <section class="sp glass rise d3" id="stundenplan">
+  <section class="sp glass rise d2" id="stundenplan">
     <div class="sp-head">
       <div style="min-width:0">
         <h3 id="sp-title">—</h3>
@@ -1204,35 +1390,40 @@
       <div class="sp-chips" id="sp-chips"></div>
     </div>
 
-    <div class="sp-today">
-      <div class="sp-today-h" id="sp-today-h">Heute</div>
-      <ul class="sp-blocks" id="sp-blocks"></ul>
-    </div>
-
-    <div class="sp-grid-wrap"><table class="sp-grid" id="sp-grid"></table></div>
+    <div class="sp-grid-wrap" style="padding-top:1.1rem"><table class="sp-grid" id="sp-grid"></table></div>
     <div class="sp-foot" id="sp-foot"></div>
-
-    <details class="sp-more">
-      <summary>Alle Wochen bis 31. Januar &amp; Reihenfolge der Rechtsgebiete</summary>
-      <div class="sp-inner">
-        <div class="sp-weeks-wrap"><table class="sp-weeks" id="sp-weeks"></table></div>
-        <div class="sp-queues" id="sp-queues"></div>
-        <div class="sp-hinweis" id="sp-hinweis"></div>
-      </div>
-    </details>
   </section>
+</section>
 
-  <!-- ══ KONSISTENZ ════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════
+     TAB 3 · FORTSCHRITT — „Wo stehe ich?"
+     ══════════════════════════════════════════════════════════════════ -->
+<section class="tab" id="tab-fortschritt">
+
+  <div class="stats-grid rise d1">
+    <div class="stat glass">
+      <div class="s-label">Fälle nachbereitet</div>
+      <div class="s-value" id="faelle-count">—</div>
+      <div class="s-track"><i id="faelle-track" style="width:0%"></i></div>
+      <div class="s-sub" id="faelle-sub">—</div>
+    </div>
+    <div class="stat glass">
+      <div class="s-label">Klausuren nachbereitet</div>
+      <div class="s-value" id="klk-count">—</div>
+      <div class="s-track"><i id="klk-track" style="width:0%"></i></div>
+      <div class="s-sub" id="klk-sub">—</div>
+    </div>
+    <div class="stat glass">
+      <div class="s-label">Karten letzte 7 Tage</div>
+      <div class="s-value" id="karten-7d">—</div>
+      <div class="s-track"><i id="karten-track" style="width:0%"></i></div>
+      <div class="s-sub" id="karten-7d-sub">—</div>
+    </div>
+  </div>
+
   <div class="section-label">Konsistenz <span>· dranbleiben schlägt Intensität</span></div>
-  <section class="streak-card glass rise d3">
+  <section class="streak-card glass rise d2">
     <div class="streak-top">
-      <div class="streak-hero">
-        <div class="streak-flame" id="streak-flame">🔥</div>
-        <div>
-          <div class="streak-num" id="streak-num">—</div>
-          <div class="streak-cap" id="streak-cap">—</div>
-        </div>
-      </div>
       <div class="streak-facts" id="streak-facts"></div>
     </div>
     <div class="konsistenz-row">
@@ -1268,49 +1459,17 @@
     </div>
   </section>
 
-  <!-- ══ ZAHLEN ════════════════════════════════════ -->
-  <div class="section-label">Auf einen Blick</div>
-  <div class="stats-grid rise d4">
-    <div class="stat glass">
-      <div class="s-label">Fälle nachbereitet</div>
-      <div class="s-value" id="faelle-count">—</div>
-      <div class="s-track"><i id="faelle-track" style="width:0%"></i></div>
-      <div class="s-sub" id="faelle-sub">—</div>
-    </div>
-    <div class="stat glass">
-      <div class="s-label">Klausuren nachbereitet</div>
-      <div class="s-value" id="klk-count">—</div>
-      <div class="s-track"><i id="klk-track" style="width:0%"></i></div>
-      <div class="s-sub" id="klk-sub">—</div>
-    </div>
-    <div class="stat glass">
-      <div class="s-label">Zeitfortschritt</div>
-      <div class="s-value" id="pct-card">—<small>%</small></div>
-      <div class="s-track"><i id="bar-fill" style="width:0%"></i></div>
-      <div class="s-sub">1. Okt 2025 → 3. Mär 2027</div>
-    </div>
-    <div class="stat glass">
-      <div class="s-label">Wochen verbleibend</div>
-      <div class="s-value" id="weeks-rem">—</div>
-      <div class="s-track"><i id="weeks-track" style="width:0%"></i></div>
-      <div class="s-sub" id="weeks-total-sub">—</div>
-    </div>
-    <div class="stat glass">
-      <div class="s-label">Karten letzte 7 Tage</div>
-      <div class="s-value" id="karten-7d">—</div>
-      <div class="s-track"><i id="karten-track" style="width:0%"></i></div>
-      <div class="s-sub" id="karten-7d-sub">—</div>
-    </div>
-  </div>
-
-  <!-- ══ RECHTSGEBIETE ═════════════════════════════ -->
   <div class="section-label">Fortschritt nach Rechtsgebiet</div>
-  <div class="fach-grid rise d5" id="fach-grid"></div>
+  <div class="fach-grid rise d3" id="fach-grid"></div>
   <div class="fach-note" id="fach-note"></div>
+</section>
 
-  <!-- ══ ALLE WOCHEN ═══════════════════════════════ -->
-  <div class="section-label">Der ganze Weg</div>
-  <section class="weeks-card glass rise d6" id="weeks-section">
+<!-- ══════════════════════════════════════════════════════════════════
+     TAB 4 · DER GANZE WEG — „Was kommt danach?"
+     ══════════════════════════════════════════════════════════════════ -->
+<section class="tab" id="tab-plan">
+
+  <section class="weeks-card glass rise d1" id="weeks-section">
     <div class="weeks-head">
       <div>
         <h3>Alle Wochen bis zum Examen</h3>
@@ -1332,10 +1491,17 @@
     <div class="weeks-grid" id="weeks-grid"></div>
   </section>
 
-  <p class="footer" id="footer-sync">Lernplan · Examen: 3. März 2027 · <span id="sync-status">Sync wird geladen…</span><button
-      type="button" id="btn-restand" class="restand"
-      title="Holt den neuesten Notion-Stand. Die Anki-Zahlen kommen vom Mac-Sync (8/14/18/22 Uhr) und nur dann, wenn Anki gerade offen ist.">↻ Stand neu laden</button>
-    <span class="stand-info" id="stand-info"></span></p>
+  <div class="section-label">Stundenplan bis 31. Januar <span>· Reihenfolge der Rechtsgebiete</span></div>
+  <section class="sp glass rise d2">
+    <div class="sp-inner" style="padding:1.3rem 1.6rem 1.5rem">
+      <div class="sp-weeks-wrap"><table class="sp-weeks" id="sp-weeks"></table></div>
+      <div class="sp-queues" id="sp-queues"></div>
+      <div class="sp-hinweis" id="sp-hinweis"></div>
+    </div>
+  </section>
+</section>
+
+  </main>
 </div>
 
 <div id="sheet-backdrop" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,30,24,0.28);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);z-index:99;cursor:pointer;"></div>
@@ -1637,8 +1803,8 @@
   const elapsedDays = Math.max(0, Math.min(totalDays, (TODAY - START_DATE_PLAN_CALENDAR) / DAY));
   const pct         = Math.round((elapsedDays / totalDays) * 100);
 
-  document.getElementById('pct-card').innerHTML = pct + '<small>%</small>';
-  document.getElementById('bar-fill').style.width = pct + '%';
+  // Zeitfortschritt steht nur noch im Ring der Seitenleiste – die frühere
+  // Kachel „Zeitfortschritt" war dieselbe Zahl ein zweites Mal.
   document.getElementById('ring-pct').textContent = pct + '% des Wegs geschafft';
   const RING_LEN = 2 * Math.PI * 57;
   requestAnimationFrame(() => {
@@ -1649,12 +1815,18 @@
   const currentWeekN = getWeekNumber(TODAY);
   const weeksLeft    = Math.max(0, totalWeeks - currentWeekN);
 
-  document.getElementById('weeks-rem').textContent       = weeksLeft;
-  document.getElementById('weeks-total-sub').textContent = 'von ' + totalWeeks + ' Wochen gesamt';
-  document.getElementById('weeks-track').style.width     = Math.round(currentWeekN / totalWeeks * 100) + '%';
+  // „Wochen verbleibend" hing früher als eigene Kachel daneben; die Zahl
+  // steht jetzt als Badge in der Navigation und im Kopf der Wochenansicht.
 
   const cwStart = new Date(START_MONDAY.getTime() + (currentWeekN - 1) * WEEK);
   const cwEnd   = new Date(cwStart.getTime() + 6 * DAY);
+
+  // Schreibt nur, wenn es das Element gibt – die Reiter teilen sich die
+  // Renderfunktionen, nicht jedes Ziel existiert in jedem Ausschnitt.
+  function setzeText(id, txt) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = txt;
+  }
 
   // Begrüßung
   (function heroHeader() {
@@ -1664,6 +1836,12 @@
     document.getElementById('hero-eyebrow').textContent =
       TODAY.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) +
       ' · Woche ' + currentWeekN + ' von ' + totalWeeks;
+
+    // Zahlen in der Navigation: pro Reiter die eine Zahl, die ihn beschreibt
+    setzeText('nb-heute',       TODAY.toLocaleDateString('de-DE', { weekday: 'short' }).replace('.', ''));
+    setzeText('nb-woche',       'W' + currentWeekN);
+    setzeText('nb-fortschritt', pct + '%');
+    setzeText('nb-plan',        weeksLeft + ' W');
   })();
 
   // ── PHASE DEFINITIONS ─────────────────────────────
@@ -2255,10 +2433,14 @@
     document.getElementById('now-range').textContent =
       longFmt(cwStart) + ' – ' + longFmt(cwEnd);
 
-    // Pills
+    // Dieselbe Woche, im Reiter „Heute" nur als Zeile über den Aufgaben
+    const titel = detail && detail.title ? detail.title : 'Woche ' + currentWeekN;
+    setzeText('now-week-hint',      '· W' + currentWeekN + ' · ' + titel);
+    setzeText('heute-week-label',   '· W' + currentWeekN + ' · ' + midFmt(cwStart) + ' – ' + midFmt(cwEnd));
+
+    // Soll-Vorgaben der Woche (Ist-Stand steht direkt darunter in den Gauges)
     const kz = detail ? detail.kennzahlen : null;
     const ms = naechsterMeilenstein();
-    const a  = window.NOTION_DATA && window.NOTION_DATA.anki;
     document.getElementById('now-pills').innerHTML = `
       <div class="now-pill">
         <div class="np-label">Fälle diese Woche</div>
@@ -2266,20 +2448,17 @@
         <div class="np-sub">${kz ? kz.faelleSub : ''}</div>
       </div>
       <div class="now-pill">
-        <div class="np-label">Klausuren</div>
-        <div class="np-value">${kz ? kz.klausuren : '—'}</div>
-        <div class="np-sub">${kz ? kz.klausurenSub : ''}</div>
+        <div class="np-label">Karteikarten</div>
+        <div class="np-value" style="font-size:0.95rem;line-height:1.25">${kz ? kz.kartenSub : '—'}</div>
+        <div class="np-sub">Soll laut Plan</div>
       </div>
       <div class="now-pill">
-        <div class="np-label">Karteikarten heute</div>
-        <div class="np-value">${a ? (ankiMap[isoOf(TODAY)] || 0) : '—'}</div>
-        <div class="np-sub">${a ? a.dueNow.toLocaleString('de-DE') + ' fällig · ' + (kz ? kz.kartenSub : '') : 'Anki nicht erreichbar'}</div>
-      </div>
-      <div class="now-pill">
-        <div class="np-label">Nächster Abschnitt</div>
+        <div class="np-label">Danach</div>
         <div class="np-value" style="font-size:0.95rem;line-height:1.25">${ms ? ms.title : 'Examen'}</div>
         <div class="np-sub">${ms ? 'in ' + ms.wochen + (ms.wochen === 1 ? ' Woche · ' : ' Wochen · ') + midFmt(ms.datum) : midFmt(EXAM_DATE)}</div>
       </div>`;
+
+    renderHeuteTiles(kz);
 
     // Aufgaben
     const ul = document.getElementById('now-tasks');
@@ -2394,22 +2573,47 @@
     }).join('');
   }
 
-  function renderHeroChips() {
-    const s   = berechneStreaks();
-    const ist = faelleIst();
-    const klk = window.NOTION_DATA ? klausurenStand() : null;
-    const chips = [];
-    chips.push(`<span class="chip ${s.cur > 0 ? 'hot' : ''}">${s.cur > 0 ? '🔥' : '💤'} <b>${s.cur}</b> Tage Serie</span>`);
-    chips.push(`<span class="chip">✓ <b>${ist}</b> von ${CASES_TOTAL} Fällen</span>`);
-    if (klk) chips.push(`<span class="chip">✎ <b>${klk.abgegeben}</b> Klausuren abgegeben</span>`);
-    chips.push(`<span class="chip">📅 <b>${weeksLeft}</b> Wochen übrig</span>`);
-    document.getElementById('hero-chips').innerHTML = chips.join('');
+  /* Die drei Kacheln oben im Reiter „Heute": nur Zahlen, die heute etwas
+     ändern. Serie und Countdown stehen dauerhaft in der Seitenleiste,
+     der Gesamtstand im Reiter „Fortschritt" – hier bewusst nicht nochmal. */
+  function renderHeuteTiles(kz) {
+    const box = document.getElementById('heute-tiles');
+    if (!box) return;
+    const a       = window.NOTION_DATA && window.NOTION_DATA.anki;
+    const heute   = ankiMap[isoOf(TODAY)] || 0;
+    const faelleW = window.NOTION_DATA
+      ? window.NOTION_DATA.cases.filter(c => c.woche === currentWeekN && c.typ === 'Hauptkurs')
+      : [];
+    const offen   = faelleW.filter(c => c.status !== 'Nachbereitet').length;
+
+    box.innerHTML = `
+      <div class="tile">
+        <div class="t-l">Fälle noch offen</div>
+        <div class="t-v">${window.NOTION_DATA ? offen : '—'}</div>
+        <div class="t-s">${window.NOTION_DATA
+          ? (faelleW.length ? 'von ' + faelleW.length + ' dieser Woche' : 'in Notion noch nichts geplant')
+          : 'Notion-Stand fehlt'}${kz && kz.faelle ? ' · Soll ' + kz.faelle : ''}</div>
+      </div>
+      <div class="tile">
+        <div class="t-l">Karten heute</div>
+        <div class="t-v">${a ? heute.toLocaleString('de-DE') : '—'}</div>
+        <div class="t-s">${a ? a.dueNow.toLocaleString('de-DE') + ' noch fällig' : 'Anki war beim Sync zu'}</div>
+      </div>
+      <div class="tile">
+        <div class="t-l">Klausur diese Woche</div>
+        <div class="t-v" style="font-size:1.15rem">${kz ? kz.klausuren : '—'}</div>
+        <div class="t-s">${kz ? kz.klausurenSub : ''}</div>
+      </div>`;
   }
 
+  function renderHeroChips() { /* ersetzt durch Seitenleiste + Kacheln */ }
+
   function scrollToGrid() {
+    zeigeReiter('plan');
     document.getElementById('weeks-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
   function jumpToToday() {
+    zeigeReiter('plan');
     const boxes = document.querySelectorAll('.week-box');
     const b = boxes[currentWeekN - 1];
     if (b) { b.scrollIntoView({ behavior: 'smooth', block: 'center' }); openPanel(currentWeekN, b); }
@@ -3550,6 +3754,20 @@
     document.getElementById('sp-today-h').textContent =
       (heuteKey ? 'Heute · ' : 'Erster Tag · ') + TAGE_LANG[zeigeTag];
 
+    // Solange der Stundenplan noch nicht läuft, darf der Reiter „Heute" nicht
+    // so aussehen, als gälte dieser Ablauf schon jetzt.
+    const vorschauZeile = document.getElementById('sp-vorschau');
+    if (vorschauZeile) {
+      if (heuteKey) {
+        vorschauZeile.style.display = 'none';
+      } else {
+        vorschauZeile.style.display = '';
+        vorschauZeile.textContent = heute < start
+          ? 'Gilt noch nicht – Start ist der ' + kurz(von) + ' Bis dahin läuft der Rep-Rhythmus, siehe Aufgaben unten.'
+          : 'Außerhalb des geplanten Zeitraums – gezeigt wird die letzte Woche des Plans.';
+      }
+    }
+
     const tagRaster = RASTER[woche.r][zeigeTag];
     const liste = document.getElementById('sp-blocks');
     if (!tagRaster.b.length) {
@@ -3689,6 +3907,58 @@
 
   try { render(); }
   catch (e) { console.error('Stundenplan konnte nicht gezeichnet werden:', e); }
+})();
+</script>
+
+<!-- ══ REITER ═══════════════════════════════════════════════════════════
+     Vier Ebenen statt einer langen Seite. Der zuletzt gewählte Reiter
+     bleibt gemerkt; #heute / #woche / #fortschritt / #plan in der Adresse
+     funktionieren als direkte Links (z. B. für ein Lesezeichen). -->
+<script>
+(function () {
+  const REITER = ['heute', 'woche', 'fortschritt', 'plan'];
+  const KEY    = 'lernplan_reiter';
+
+  window.zeigeReiter = function (name, merken) {
+    if (!REITER.includes(name)) name = 'heute';
+    REITER.forEach(r => {
+      const panel = document.getElementById('tab-' + r);
+      if (panel) panel.classList.toggle('on', r === name);
+    });
+    document.querySelectorAll('.nav-item').forEach(b => {
+      const an = b.dataset.tab === name;
+      b.classList.toggle('on', an);
+      b.setAttribute('aria-current', an ? 'page' : 'false');
+    });
+    if (merken !== false) {
+      try { localStorage.setItem(KEY, name); } catch (e) {}
+    }
+    if (name !== aktuellerReiter) window.scrollTo({ top: 0, behavior: 'smooth' });
+    aktuellerReiter = name;
+  };
+
+  let aktuellerReiter = null;
+
+  document.querySelectorAll('.nav-item').forEach(b => {
+    b.addEventListener('click', () => zeigeReiter(b.dataset.tab));
+  });
+
+  // 1–4 springen direkt zum Reiter, solange nichts anderes den Fokus hat
+  document.addEventListener('keydown', e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (document.getElementById('detail-panel').classList.contains('show')) return;
+    const t = e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || e.target.isContentEditable) return;
+    const i = ['1','2','3','4'].indexOf(e.key);
+    if (i > -1) { e.preventDefault(); zeigeReiter(REITER[i]); }
+  });
+
+  const ausAdresse = location.hash.replace('#', '');
+  let start = 'heute';
+  if (REITER.includes(ausAdresse)) start = ausAdresse;
+  else { try { start = localStorage.getItem(KEY) || 'heute'; } catch (e) {} }
+  zeigeReiter(start, false);
+  aktuellerReiter = start;   // kein Scrollsprung beim ersten Zeichnen
 })();
 </script>
 </body>
