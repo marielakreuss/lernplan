@@ -272,6 +272,15 @@
       font-size: 0.75rem; color: var(--text-sub); line-height: 1.5;
     }
     .fokus-leer { color: var(--text-sub); }
+    .fokus-copy {
+      font: inherit; font-size: 0.72rem; font-weight: 600;
+      color: var(--accent); background: transparent;
+      border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+      border-radius: 999px; padding: 0.22rem 0.7rem;
+      cursor: pointer; white-space: nowrap;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .fokus-copy:hover { background: var(--accent-soft); border-color: var(--accent); }
     .fokus-tag {
       background: var(--or-bg); color: var(--or-deep);
       border: 1px solid color-mix(in srgb, var(--or) 22%, transparent);
@@ -2486,18 +2495,82 @@
      10-Wochen-Rotation in sync-notion.py, die mit dem tatsächlichen Stoff
      nichts zu tun hatte. Jetzt sind es die Rechtsgebiete, die der
      Stundenplan in derselben Woche ohnehin als Fälle vorsieht. */
+  function gebieteDerWoche(w) {
+    if (!stundenplanFaelle) return [];
+    return (stundenplanFaelle.gebiete[w] || [])
+      .map(([name]) => name)
+      .filter(name => name !== 'Reserve');
+  }
+
+  /* Die Gebietsnamen des Stundenplans auf die echten Anki-Stapel abgebildet.
+     Geprüft am 09.08.2026 gegen die Sammlung: alle 3.098 STEX-Karten liegen
+     in genau einem Gebiets-Unterdeck, keine hängt im Fach- oder Wurzeldeck.
+     Deshalb Stapel statt Tags – `deck:"X"` schließt alle Unterdecks mit ein.
+     Ändert sich ein Deckname in Anki, muss er hier nachgezogen werden. */
+  const ZR = 'STEX 🥳::Zivilrecht::', OR_ = 'STEX 🥳::Öffentliches Recht::', SR = 'STEX 🥳::Strafrecht::';
+  const GEBIET_DECKS = {
+    'BGB AT':          [ZR + '1 BGB AT'],
+    'SchuldR AT':      [ZR + '2 SchuldR AT', 'A SchuldR AT'],
+    'SchuldR BT':      [ZR + '2 SchuldR BT'],
+    'SchuldR BT 2':    [ZR + '2 SchuldR BT'],
+    'SachenR':         [ZR + '3 SachenR'],
+    'FamilienR':       [ZR + '4 Familienrecht'],
+    'ErbR':            [ZR + '5 Erbrecht'],
+    'ZPO I':           [ZR + '6 ZPO I'],
+    'ZPO II':          [ZR + '7 ZPO II'],
+    'HGB':             [ZR + '8 HandelsR'],
+    'ArbeitsR':        [ZR + 'x10 ArbeitsR'],
+    'EuropaR':         [OR_ + '1 EuropaR'],
+    'VerfassungsR':    [OR_ + '2 Staatsrecht', OR_ + '3 Grundrechte'],
+    'StaatshaftungsR': [OR_ + '4 Staatshaftungsrecht'],
+    'VerwR AT':        [OR_ + '5 VerwaltungsR AT', 'A VerwaltungsR AT'],
+    'KommunalR':       [OR_ + '6 KommunalR'],
+    'BauR':            [OR_ + '7 BauR'],
+    'PolizeiR':        [OR_ + '8 Polizei- und SicherheitsR'],
+    'StrafR':          [SR + 'StrafR AT', SR + 'StrafR BT'],
+    'StPO':            [SR + 'StPO']
+  };
+
+  function ankiSuche(gebiete) {
+    const decks = [];
+    gebiete.forEach(g => (GEBIET_DECKS[g] || []).forEach(d => {
+      if (!decks.includes(d)) decks.push(d);
+    }));
+    if (!decks.length) return '';
+    return '(' + decks.map(d => `deck:"${d}"`).join(' OR ') + ') -is:suspended';
+  }
+
+  function kopiereAnkiSuche(btn) {
+    const suche = btn.dataset.suche || '';
+    const fertig = () => {
+      const alt = btn.textContent;
+      btn.textContent = 'kopiert ✓';
+      setTimeout(() => { btn.textContent = alt; }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(suche).then(fertig, () => alert(suche));
+    } else {
+      alert(suche);
+    }
+  }
+
   function renderKarteikartenFokus() {
     const box = document.getElementById('now-fokus');
     if (!box) return;
 
     if (!stundenplanFaelle) { box.innerHTML = ''; return; }
 
-    const gebiete = (stundenplanFaelle.gebiete[currentWeekN] || [])
-      .filter(([name]) => name !== 'Reserve');
+    const gebiete = gebieteDerWoche(currentWeekN);
 
     if (gebiete.length) {
+      const suche = ankiSuche(gebiete);
       box.innerHTML = 'Passend zu den Fällen dieser Woche: ' +
-        gebiete.map(([name]) => `<span class="fokus-tag">${name}</span>`).join('');
+        gebiete.map(name => `<span class="fokus-tag">${name}</span>`).join('') +
+        (suche
+          ? `<button type="button" class="fokus-copy" data-suche="${suche.replace(/"/g, '&quot;')}"
+               onclick="kopiereAnkiSuche(this)"
+               title="In Anki im Browser einfügen (Strg/Cmd+F) oder als gefilterten Stapel verwenden">Anki-Suche kopieren</button>`
+          : '');
     } else if (currentWeekN < stundenplanFaelle.ersteWoche) {
       box.innerHTML = '<span class="fokus-leer">Ab dem Stundenplan-Start – bis dahin frei wählbar.</span>';
     } else {
@@ -2908,9 +2981,9 @@
         const icon = type === 'important' ? '!' : type === 'success' ? '✓' : '›';
         html += `<li class="${type}"><span class="li-icon">${icon}</span><span>${text}</span></li>`;
       });
-      const fokus = window.NOTION_DATA && window.NOTION_DATA.ankiFokus && window.NOTION_DATA.ankiFokus[String(w)];
-      if (fokus) {
-        html += `<li class="kartei"><span class="li-icon">◆</span><span>Kartei-Fokus: ${fokus.join(' · ')}</span></li>`;
+      const fokus = gebieteDerWoche(w);
+      if (fokus.length) {
+        html += `<li class="kartei"><span class="li-icon">◆</span><span>Karteikarten-Fokus: ${fokus.join(' · ')}</span></li>`;
       }
       html += '</ul></div>';
       contentArea.innerHTML = html;

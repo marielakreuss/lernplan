@@ -15,20 +15,6 @@ NOTION_TOKEN = os.environ["NOTION_TOKEN"]
 DATABASE_ID  = "268539e733aa806e856cec92f278d2b9"
 PLAN_START   = date(2025, 9, 29)
 
-ANKI_FOKUS_ZYKLUS = [
-    ["StrafR BT",     "KommunalR"],
-    ["StrafR AT",     "HandelsR"],
-    ["Staatsrecht",   "StaatshaftungsR"],
-    ["ZPO I",         "VerwaltungsR AT"],
-    ["SachenR",       "Erbrecht"],
-    ["ArbeitsR",      "ZPO II"],
-    ["BGB AT",        "SchuldR BT"],
-    ["EuropaR",       "GesellschaftsR"],
-    ["Familienrecht", "PolizeiR"],
-    ["Grundrechte",   "SchuldR AT"],
-]
-
-
 def get_week(d: date) -> int:
     return max(1, (d - PLAN_START).days // 7 + 1)
 
@@ -121,10 +107,6 @@ def main():
     klk_abgegeben  = sum(1 for c in cases if c["typ"] == "Klausurenkurs" and c["abgegeben"])
     nachbereitet_hk = sum(1 for c in cases if c["typ"] == "Hauptkurs" and c["status"] == "Nachbereitet")
 
-    anki_fokus = {}
-    for w in range(36, 85):
-        anki_fokus[str(w)] = ANKI_FOKUS_ZYKLUS[(w - 36) % len(ANKI_FOKUS_ZYKLUS)]
-
     # Anki läuft nur auf dem Mac (AnkiConnect, localhost:8765) – hier in der
     # Cloud ist es nie erreichbar. Deshalb den letzten bekannten Anki-Stand aus
     # der vorhandenen notion-data.js übernehmen, statt ihn zu überschreiben.
@@ -148,7 +130,6 @@ def main():
         "lastSync":    datetime.now().strftime("%d.%m.%Y %H:%M"),
         "anki":        old_anki,
         "ankiFach":    old_anki_fach,
-        "ankiFokus":   anki_fokus,
         "rhythmCheck": {"currentWeek": get_week(date.today()), "nachbereitet": nachbereitet_hk},
         "cases":       cases,
         "stats": {
