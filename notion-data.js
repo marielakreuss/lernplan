@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.08.2026 16:34",
+  "lastSync": "09.08.2026 22:01",
   "anki": {
-    "reviewedToday": 110,
-    "dueNow": 4126,
+    "reviewedToday": 0,
+    "dueNow": 4167,
     "history": [
       {
         "date": "2025-09-29",
@@ -1067,17 +1067,17 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-07",
-        "count": 86
+        "count": 112
       },
       {
         "date": "2026-08-08",
         "count": 110
       }
     ],
-    "stand": "2026-08-08"
+    "stand": "2026-08-09"
   },
   "ankiFach": {
-    "stand": "08.08.2026 22:07",
+    "stand": "09.08.2026 22:01",
     "faecher": {
       "Zivilrecht": {
         "total": 1789,
@@ -1085,7 +1085,7 @@ window.NOTION_DATA = {
         "lernen": 641,
         "aufbau": 145,
         "sitzt": 990,
-        "faellig": 1233
+        "faellig": 1272
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1093,7 +1093,7 @@ window.NOTION_DATA = {
         "lernen": 350,
         "aufbau": 69,
         "sitzt": 224,
-        "faellig": 517
+        "faellig": 518
       },
       "Strafrecht": {
         "total": 651,
@@ -1101,207 +1101,9 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 599
+        "faellig": 600
       }
     }
-  },
-  "ankiFokus": {
-    "36": [
-      "StrafR BT",
-      "KommunalR"
-    ],
-    "37": [
-      "StrafR AT",
-      "HandelsR"
-    ],
-    "38": [
-      "Staatsrecht",
-      "StaatshaftungsR"
-    ],
-    "39": [
-      "ZPO I",
-      "VerwaltungsR AT"
-    ],
-    "40": [
-      "SachenR",
-      "Erbrecht"
-    ],
-    "41": [
-      "ArbeitsR",
-      "ZPO II"
-    ],
-    "42": [
-      "BGB AT",
-      "SchuldR BT"
-    ],
-    "43": [
-      "EuropaR",
-      "GesellschaftsR"
-    ],
-    "44": [
-      "Familienrecht",
-      "PolizeiR"
-    ],
-    "45": [
-      "Grundrechte",
-      "SchuldR AT"
-    ],
-    "46": [
-      "StrafR BT",
-      "KommunalR"
-    ],
-    "47": [
-      "StrafR AT",
-      "HandelsR"
-    ],
-    "48": [
-      "Staatsrecht",
-      "StaatshaftungsR"
-    ],
-    "49": [
-      "ZPO I",
-      "VerwaltungsR AT"
-    ],
-    "50": [
-      "SachenR",
-      "Erbrecht"
-    ],
-    "51": [
-      "ArbeitsR",
-      "ZPO II"
-    ],
-    "52": [
-      "BGB AT",
-      "SchuldR BT"
-    ],
-    "53": [
-      "EuropaR",
-      "GesellschaftsR"
-    ],
-    "54": [
-      "Familienrecht",
-      "PolizeiR"
-    ],
-    "55": [
-      "Grundrechte",
-      "SchuldR AT"
-    ],
-    "56": [
-      "StrafR BT",
-      "KommunalR"
-    ],
-    "57": [
-      "StrafR AT",
-      "HandelsR"
-    ],
-    "58": [
-      "Staatsrecht",
-      "StaatshaftungsR"
-    ],
-    "59": [
-      "ZPO I",
-      "VerwaltungsR AT"
-    ],
-    "60": [
-      "SachenR",
-      "Erbrecht"
-    ],
-    "61": [
-      "ArbeitsR",
-      "ZPO II"
-    ],
-    "62": [
-      "BGB AT",
-      "SchuldR BT"
-    ],
-    "63": [
-      "EuropaR",
-      "GesellschaftsR"
-    ],
-    "64": [
-      "Familienrecht",
-      "PolizeiR"
-    ],
-    "65": [
-      "Grundrechte",
-      "SchuldR AT"
-    ],
-    "66": [
-      "StrafR BT",
-      "KommunalR"
-    ],
-    "67": [
-      "StrafR AT",
-      "HandelsR"
-    ],
-    "68": [
-      "Staatsrecht",
-      "StaatshaftungsR"
-    ],
-    "69": [
-      "ZPO I",
-      "VerwaltungsR AT"
-    ],
-    "70": [
-      "SachenR",
-      "Erbrecht"
-    ],
-    "71": [
-      "ArbeitsR",
-      "ZPO II"
-    ],
-    "72": [
-      "BGB AT",
-      "SchuldR BT"
-    ],
-    "73": [
-      "EuropaR",
-      "GesellschaftsR"
-    ],
-    "74": [
-      "Familienrecht",
-      "PolizeiR"
-    ],
-    "75": [
-      "Grundrechte",
-      "SchuldR AT"
-    ],
-    "76": [
-      "StrafR BT",
-      "KommunalR"
-    ],
-    "77": [
-      "StrafR AT",
-      "HandelsR"
-    ],
-    "78": [
-      "Staatsrecht",
-      "StaatshaftungsR"
-    ],
-    "79": [
-      "ZPO I",
-      "VerwaltungsR AT"
-    ],
-    "80": [
-      "SachenR",
-      "Erbrecht"
-    ],
-    "81": [
-      "ArbeitsR",
-      "ZPO II"
-    ],
-    "82": [
-      "BGB AT",
-      "SchuldR BT"
-    ],
-    "83": [
-      "EuropaR",
-      "GesellschaftsR"
-    ],
-    "84": [
-      "Familienrecht",
-      "PolizeiR"
-    ]
   },
   "rhythmCheck": {
     "currentWeek": 45,
