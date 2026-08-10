@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.08.2026 20:18",
+  "lastSync": "10.08.2026 08:44",
   "anki": {
-    "reviewedToday": 1,
-    "dueNow": 4167,
+    "reviewedToday": 0,
+    "dueNow": 4169,
     "history": [
       {
         "date": "2025-09-29",
@@ -263,7 +263,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-13",
-        "count": 135
+        "count": 134
       },
       {
         "date": "2025-12-14",
@@ -271,7 +271,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-15",
-        "count": 116
+        "count": 114
       },
       {
         "date": "2025-12-16",
@@ -1007,23 +1007,23 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-21",
-        "count": 100
+        "count": 98
       },
       {
         "date": "2026-07-22",
-        "count": 106
+        "count": 104
       },
       {
         "date": "2026-07-23",
-        "count": 117
+        "count": 116
       },
       {
         "date": "2026-07-24",
-        "count": 86
+        "count": 83
       },
       {
         "date": "2026-07-25",
-        "count": 85
+        "count": 84
       },
       {
         "date": "2026-07-26",
@@ -1035,7 +1035,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-28",
-        "count": 101
+        "count": 98
       },
       {
         "date": "2026-07-29",
@@ -1043,7 +1043,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-31",
-        "count": 144
+        "count": 142
       },
       {
         "date": "2026-08-01",
@@ -1051,7 +1051,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-02",
-        "count": 105
+        "count": 104
       },
       {
         "date": "2026-08-03",
@@ -1063,7 +1063,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-05",
-        "count": 103
+        "count": 101
       },
       {
         "date": "2026-08-07",
@@ -1075,21 +1075,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-09",
-        "count": 1
+        "count": 115
       }
     ],
-    "stand": "2026-08-09"
+    "stand": "2026-08-10"
   },
   "ankiFach": {
-    "stand": "09.08.2026 22:08",
+    "stand": "10.08.2026 08:43",
     "faecher": {
       "Zivilrecht": {
         "total": 1789,
-        "neu": 13,
+        "neu": 4,
         "lernen": 641,
         "aufbau": 145,
-        "sitzt": 990,
-        "faellig": 1272
+        "sitzt": 999,
+        "faellig": 1253
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1097,7 +1097,7 @@ window.NOTION_DATA = {
         "lernen": 350,
         "aufbau": 69,
         "sitzt": 224,
-        "faellig": 518
+        "faellig": 538
       },
       "Strafrecht": {
         "total": 651,
@@ -1105,12 +1105,12 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 600
+        "faellig": 601
       }
     }
   },
   "rhythmCheck": {
-    "currentWeek": 45,
+    "currentWeek": 46,
     "nachbereitet": 113
   },
   "cases": [
