@@ -3857,7 +3857,10 @@
     probe:     {t:'ganztags',    l:'Probeexamen',            k:'klausur', s:'vm'},
     karte15:   {t:'1,5 h',       l:'Karteikarten',           k:'karte',   s:'vm'},
     altNachb:  {t:'nach Bedarf', l:'Klausuren nachbereiten', k:'klausur', s:'nm'},
-    konrad:    {t:'18:00–20:00', l:'Konrad-Kurs (Termin offen)', k:'konrad', s:'ab'}
+    // Einmal im Monat ab September, Datum kommt jeweils ~14 Tage vorher per Mail.
+    // Sie wählt pro Monat eine der beiden Varianten.
+    konradDo:  {t:'ab 17:00',    l:'Konrad-Kurs digital',    k:'konrad', s:'ab'},
+    konradFr:  {t:'16:30–19:00', l:'Konrad-Kurs München',    k:'konrad', s:'ab'}
   };
 
   const TAG = {
@@ -4245,9 +4248,14 @@
 
   function renderHinweis() {
     document.getElementById('sp-hinweis').innerHTML =
-      '<p><b>Konrad-Kurs:</b> Termine stehen noch nicht fest. Vorgesehen ist ' +
-      'Mi oder Fr 18:00–20:00 – dort kostet er keinen Fall, weil er nach dem letzten ' +
-      'Block liegt.</p>' +
+      '<p><b>Konrad-Kurs:</b> einmal im Monat ab September, wahlweise <b>digital ' +
+      'donnerstags ab 17:00</b> oder <b>in Präsenz in München freitags ab 16:30</b> ' +
+      '(ca. 2,5 Std.). Sie wählt pro Monat einen der beiden Termine; das genaue Datum ' +
+      'kommt mit den Kursunterlagen, gut 14 Tage vorher per Mail. ' +
+      'Der Donnerstagstermin liegt mitten in der Klausurwerkstatt (16–20 Uhr) – digital ' +
+      'geht also nur an einem werkstattfreien Donnerstag (10.9., 24.12., 31.12.). ' +
+      'Der Freitagstermin kostet den zweiten Fall des Tages (16:15–18:00), also einen ' +
+      'Fall in der jeweiligen Woche.</p>' +
       '<p><b>Klausurwerkstatt aus Peru:</b> 16–20 Uhr deutscher Zeit sind dort 9–13 Uhr ' +
       '(bis zur Zeitumstellung am 25.10.) bzw. 10–14 Uhr danach. Nur der 22.10. fällt in ' +
       'die Reisewoche und entfällt.</p>' +
