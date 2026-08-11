@@ -1787,8 +1787,8 @@
     if (notion) {
       const jetzt = window.NOTION_DATA || {};
       // Den frischeren Anki-Stand behalten: die Datei kennt ihn nicht.
-      if (standZeit(jetzt.ankiFach) >= standZeit(notion.ankiFach)) notion.ankiFach = jetzt.ankiFach;
-      if (standZeit(jetzt.anki) >= standZeit(notion.anki)) notion.anki = jetzt.anki;
+      if (jetzt.ankiFach && standZeit(jetzt.ankiFach) >= standZeit(notion.ankiFach)) notion.ankiFach = jetzt.ankiFach;
+      if (jetzt.anki && standZeit(jetzt.anki) >= standZeit(notion.anki)) notion.anki = jetzt.anki;
 
       if (notion.lastSync !== jetzt.lastSync) {
         localStorage.setItem(KEY, JSON.stringify(notion));
