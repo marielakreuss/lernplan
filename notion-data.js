@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "11.08.2026 13:28",
+  "lastSync": "11.08.2026 15:15",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4112,
+    "reviewedToday": 3,
+    "dueNow": 4110,
     "history": [
       {
         "date": "2025-09-29",
@@ -1088,12 +1088,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-10",
         "count": 241
+      },
+      {
+        "date": "2026-08-11",
+        "count": 3
       }
     ],
     "stand": "2026-08-11"
   },
   "ankiFach": {
-    "stand": "11.08.2026 13:28",
+    "stand": "11.08.2026 15:15",
     "faecher": {
       "Zivilrecht": {
         "total": 1789,
@@ -1101,7 +1105,7 @@ window.NOTION_DATA = {
         "lernen": 629,
         "aufbau": 152,
         "sitzt": 1008,
-        "faellig": 1228
+        "faellig": 1226
       },
       "Öffentliches Recht": {
         "total": 658,
