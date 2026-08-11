@@ -1255,7 +1255,7 @@
     <div class="side-foot" id="footer-sync">
       <span id="sync-status">Sync wird geladen…</span>
       <button type="button" id="btn-restand" class="restand"
-        title="Holt den neuesten Notion-Stand. Die Anki-Zahlen kommen vom Mac-Sync (8/14/18/22 Uhr) und nur dann, wenn Anki gerade offen ist.">↻ Stand neu laden</button>
+        title="Holt den neuesten Notion-Stand und liest Anki direkt aus, sofern Anki auf diesem Mac offen ist. Sonst bleiben die Karteikarten-Zahlen beim letzten Sync-Stand (8/14/18/22 Uhr).">↻ Stand neu laden</button>
       <span class="stand-info" id="stand-info"></span>
     </div>
   </aside>
@@ -1593,6 +1593,14 @@
     return m ? new Date(+m[3], +m[2] - 1, +m[1], +m[4], +m[5]).getTime() : 0;
   };
 
+  // Ein Anki-Stand trägt entweder 'dd.mm.yyyy HH:MM' (ankiFach), ein ISO-Datum
+  // (anki) oder – wenn er live gelesen wurde – zusätzlich standTs in ms.
+  const isoZeit = s => {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || '');
+    return m ? new Date(+m[1], +m[2] - 1, +m[3]).getTime() : 0;
+  };
+  const standZeit = v => v ? (v.standTs || zeit(v.stand) || isoZeit(v.stand)) : 0;
+
   let alt = null;
   try { alt = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
 
@@ -1604,10 +1612,14 @@
 
   const d = window.NOTION_DATA;
   if (d) {
-    // Anki-Teile einzeln nachziehen – der Cloud-Sync liefert sie nicht mit.
-    if (alt) {
-      if (!d.ankiFach && alt.ankiFach) d.ankiFach = alt.ankiFach;
-      if (alt.anki && (!d.anki || !(d.anki.history || []).length)) d.anki = alt.anki;
+    // Anki-Teile einzeln nachziehen: der Cloud-Sync kommt nie an Anki heran und
+    // schleppt nur den alten Stand mit. Es gewinnt deshalb der jüngere von
+    // beiden – sonst überschreibt die Datei einen live gelesenen Stand.
+    if (alt && alt !== d) {
+      const hist = v => ((v && v.history) || []).length;
+      if (alt.ankiFach && standZeit(alt.ankiFach) > standZeit(d.ankiFach)) d.ankiFach = alt.ankiFach;
+      if (alt.anki && (standZeit(alt.anki) > standZeit(d.anki) ||
+                       (hist(alt.anki) && !hist(d.anki)))) d.anki = alt.anki;
     }
     // „Heute gelernt" nur zeigen, wenn der Anki-Stand auch von heute ist –
     // sonst würde ein übernommener Stand die Heatmap für heute auffüllen.
@@ -1622,14 +1634,130 @@
   }
 
   // ── Fußzeile: woher die Zahlen stammen ──────────────────────────────
-  const info = document.getElementById('stand-info');
-  if (info) {
+  function standInfo() {
+    const info = document.getElementById('stand-info');
+    if (!info) return;
+    const akt = window.NOTION_DATA;
     const teile = [];
-    if (d && d.lastSync) teile.push('Notion ' + d.lastSync);
-    const ankiStand = d && d.ankiFach && d.ankiFach.stand;
-    teile.push(ankiStand ? 'Anki ' + ankiStand : 'Anki: noch kein Stand');
+    if (akt && akt.lastSync) teile.push('Notion ' + akt.lastSync);
+    const af = akt && akt.ankiFach;
+    teile.push(!af || !af.stand ? 'Anki: noch kein Stand'
+             : af.live          ? 'Anki live ' + af.stand
+                                : 'Anki ' + af.stand);
     info.textContent = teile.join(' · ');
   }
+  standInfo();
+
+  // ── Anki direkt lesen ───────────────────────────────────────────────
+  // AnkiConnect hört auf 127.0.0.1:8765, also auf demselben Mac. Ist Anki
+  // offen, kommen die Karteikarten-Zahlen sekundenaktuell aus dem Programm
+  // und der Umweg über den Mac-Sync (8/14/18/22 Uhr) entfällt. Ist Anki zu –
+  // oder läuft die Seite auf dem iPhone – schlägt die Anfrage sofort fehl und
+  // es bleibt beim zuletzt bekannten Stand mit Datum. Voraussetzung ist, dass
+  // diese Adresse in AnkiConnect unter webCorsOriginList freigegeben ist.
+  const ANKI_URL = 'http://127.0.0.1:8765';
+  const PLAN_START = '2025-09-29';
+
+  // Dieselbe Zuordnung wie in sync-notion.py: aktiv gelernt wird nur im
+  // Stex-Deck plus den zwei losen Decks. Die toten Uni-/Rep-Decks würden die
+  // Quote verwässern. Wer hier etwas ändert, ändert es auch dort.
+  const ANKI_DECKS = {
+    'Zivilrecht':         ['deck:"STEX 🥳::Zivilrecht"', 'deck:"A SchuldR AT"'],
+    'Öffentliches Recht': ['deck:"STEX 🥳::Öffentliches Recht"', 'deck:"A VerwaltungsR AT"'],
+    'Strafrecht':         ['deck:"STEX 🥳::Strafrecht"'],
+  };
+
+  const zweistellig = n => String(n).padStart(2, '0');
+  const heuteIso = () => {
+    const h = new Date();
+    return h.getFullYear() + '-' + zweistellig(h.getMonth() + 1) + '-' + zweistellig(h.getDate());
+  };
+
+  async function ankiLesen() {
+    // Alles in einer einzigen Anfrage – 'multi' bündelt die Teilabfragen.
+    const abfragen = [];
+    Object.keys(ANKI_DECKS).forEach(fach => {
+      const basis = '(' + ANKI_DECKS[fach].join(' OR ') + ') -is:suspended';
+      [ '', ' is:new', ' is:learn',
+        ' -is:new -is:learn "prop:ivl<21"',
+        ' -is:new -is:learn "prop:ivl>=21"', ' is:due'
+      ].forEach(z => abfragen.push({ action: 'findCards', params: { query: basis + z } }));
+    });
+
+    const ctrl = new AbortController();
+    const stopp = setTimeout(() => ctrl.abort(), 8000);
+    let res;
+    try {
+      res = await fetch(ANKI_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        signal: ctrl.signal,
+        body: JSON.stringify({ action: 'multi', version: 6, params: { actions: [
+          { action: 'getNumCardsReviewedToday' },
+          { action: 'findCards', params: { query: 'is:due' } },
+          { action: 'getNumCardsReviewedByDay' },
+          ...abfragen
+        ] } })
+      });
+    } finally { clearTimeout(stopp); }
+    if (!res.ok) throw new Error(res.status);
+
+    const r = (await res.json()).result;
+    if (!Array.isArray(r)) throw new Error('unerwartete Antwort');
+    const anzahl = v => Array.isArray(v) ? v.length : 0;
+
+    const jetzt = Date.now();
+    const anki = {
+      reviewedToday: typeof r[0] === 'number' ? r[0] : 0,
+      dueNow:        anzahl(r[1]),
+      // getNumCardsReviewedByDay liefert [[datum, anzahl], …] über die ganze
+      // Sammlung; für die Heatmap zählt nur die Zeit ab Planbeginn.
+      history: (Array.isArray(r[2]) ? r[2] : [])
+        .filter(x => Array.isArray(x) && x[0] >= PLAN_START)
+        .map(x => ({ date: x[0], count: x[1] }))
+        .sort((a, b) => a.date < b.date ? -1 : 1),
+      stand: heuteIso(),
+      standTs: jetzt,
+      live: true,
+    };
+
+    const faecher = {};
+    let i = 3;
+    Object.keys(ANKI_DECKS).forEach(fach => {
+      const [total, neu, lernen, aufbau, sitzt, faellig] =
+        [0, 1, 2, 3, 4, 5].map(k => anzahl(r[i + k]));
+      i += 6;
+      if (total) faecher[fach] = { total, neu, lernen, aufbau, sitzt, faellig };
+    });
+    if (!Object.keys(faecher).length) throw new Error('keine Karten gefunden');
+
+    const t = new Date();
+    const ankiFach = {
+      stand: zweistellig(t.getDate()) + '.' + zweistellig(t.getMonth() + 1) + '.' +
+             t.getFullYear() + ' ' + zweistellig(t.getHours()) + ':' + zweistellig(t.getMinutes()),
+      standTs: jetzt,
+      live: true,
+      faecher,
+    };
+    return { anki, ankiFach };
+  }
+
+  // Übernimmt einen frisch gelesenen Stand, ohne die Seite neu zu laden.
+  function ankiUebernehmen(neu) {
+    const akt = window.NOTION_DATA || (window.NOTION_DATA = {});
+    akt.anki = neu.anki;
+    akt.ankiFach = neu.ankiFach;
+    try { localStorage.setItem(KEY, JSON.stringify(akt)); } catch (e) {}
+    // Die Renderfunktionen stehen erst im Hauptskript weiter unten; läuft der
+    // Lesevorgang schneller, greift dessen eigener Erstaufbau die Zahlen ab.
+    ['renderFachUebersicht', 'renderNow', 'renderStreak', 'renderHeatmap'].forEach(n => {
+      try { if (typeof window[n] === 'function') window[n](); } catch (e) { console.error(n, e); }
+    });
+    standInfo();
+  }
+
+  // Beim Öffnen einmal versuchen: ist Anki auf, stimmen die Zahlen sofort.
+  const ankiBeimStart = ankiLesen().then(ankiUebernehmen).catch(() => {});
 
   // ── Refresh-Knopf ───────────────────────────────────────────────────
   const btn = document.getElementById('btn-restand');
@@ -1638,31 +1766,48 @@
     const label = btn.textContent;
     btn.disabled = true;
     btn.textContent = '↻ lädt…';
-    try {
+
+    // Notion aus der Datei, Anki aus dem laufenden Programm – parallel.
+    const notionLesen = (async () => {
       // Cache umgehen – GitHub Pages liefert die Datei sonst minutenlang alt aus.
       const res = await fetch('notion-data.js?t=' + Date.now(), { cache: 'no-store' });
       if (!res.ok) throw new Error(res.status);
       const m = /window\.NOTION_DATA\s*=\s*(\{[\s\S]*\})\s*;/.exec(await res.text());
       if (!m) throw new Error('keine Daten');
-      const neu = JSON.parse(m[1]);
+      return JSON.parse(m[1]);
+    })();
 
+    const [notion, anki] = await Promise.all([
+      notionLesen.catch(() => null),
+      ankiLesen().catch(() => null),
+    ]);
+
+    if (anki) ankiUebernehmen(anki);
+
+    if (notion) {
       const jetzt = window.NOTION_DATA || {};
-      if (!neu.ankiFach && jetzt.ankiFach) neu.ankiFach = jetzt.ankiFach;
-      if (jetzt.anki && (!neu.anki || !(neu.anki.history || []).length)) neu.anki = jetzt.anki;
+      // Den frischeren Anki-Stand behalten: die Datei kennt ihn nicht.
+      if (standZeit(jetzt.ankiFach) >= standZeit(notion.ankiFach)) notion.ankiFach = jetzt.ankiFach;
+      if (standZeit(jetzt.anki) >= standZeit(notion.anki)) notion.anki = jetzt.anki;
 
-      if (neu.lastSync === jetzt.lastSync &&
-          JSON.stringify(neu.ankiFach) === JSON.stringify(jetzt.ankiFach)) {
-        btn.textContent = '✓ schon aktuell';
-        setTimeout(() => { btn.disabled = false; btn.textContent = label; }, 1800);
+      if (notion.lastSync !== jetzt.lastSync) {
+        localStorage.setItem(KEY, JSON.stringify(notion));
+        location.reload();
         return;
       }
-      localStorage.setItem(KEY, JSON.stringify(neu));
-      location.reload();
-    } catch (e) {
-      btn.textContent = '↻ offline';
-      setTimeout(() => { btn.disabled = false; btn.textContent = label; }, 2200);
     }
+
+    btn.textContent = !notion && !anki ? '↻ offline'
+                    : anki             ? '✓ Anki aktuell'
+                                       : '✓ schon aktuell';
+    btn.title = anki ? 'Anki wurde gerade direkt ausgelesen.'
+                     : 'Anki war nicht erreichbar – dafür muss Anki auf diesem Mac offen sein.';
+    setTimeout(() => { btn.disabled = false; btn.textContent = label; }, 2200);
   });
+
+  // Für die Konsole: window.ankiStand() liest von Hand nach.
+  window.ankiStand = () => ankiLesen().then(v => { ankiUebernehmen(v); return v.ankiFach; });
+  void ankiBeimStart;
 })();
 </script>
 
@@ -1803,6 +1948,24 @@
     return Math.floor((date.getTime() - START_MONDAY.getTime()) / WEEK) + 1;
   }
 
+  /* Wochenanfänge kalendarisch rechnen, nicht in Millisekunden: über die
+     Zeitumstellung hinweg ist eine Woche 167 oder 169 Stunden lang. Mit
+     `+ n * WEEK` landete jede Woche nach dem 25.10.2026 auf Sonntag 23 Uhr
+     und wurde als der Vortag angezeigt. */
+  function montagDerWoche(w) {
+    const d = new Date(START_MONDAY);
+    d.setDate(d.getDate() + (w - 1) * 7);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
+  function tagInWoche(start, i) {
+    const d = new Date(start);
+    d.setDate(d.getDate() + i);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
   // ── KENNZAHLEN OBEN ────────────────────────────────
   const daysLeft = Math.max(0, Math.ceil((EXAM_DATE - TODAY) / DAY));
   document.getElementById('days-left').textContent = daysLeft;
@@ -1826,7 +1989,7 @@
   // „Wochen verbleibend" hing früher als eigene Kachel daneben; die Zahl
   // steht jetzt als Badge in der Navigation und im Kopf der Wochenansicht.
 
-  const cwStart = new Date(START_MONDAY.getTime() + (currentWeekN - 1) * WEEK);
+  const cwStart = montagDerWoche(currentWeekN);
   const cwEnd   = new Date(cwStart.getTime() + 6 * DAY);
 
   // Schreibt nur, wenn es das Element gibt – die Reiter teilen sich die
@@ -2085,7 +2248,7 @@
   const panel = document.getElementById('detail-panel');
 
   for (let w = 1; w <= totalWeeks; w++) {
-    const ws = new Date(START_MONDAY.getTime() + (w-1) * WEEK);
+    const ws = montagDerWoche(w);
 
     const box = document.createElement('div');
     const detail = weekDetails[w];
@@ -2224,7 +2387,7 @@
     // diese Woche
     let woche = 0;
     for (let i = 0; i < 7; i++) {
-      const d = new Date(cwStart.getTime() + i * DAY);
+      const d = tagInWoche(cwStart, i);
       if (d > TODAY) break;
       if (istAktiv(d)) woche++;
     }
@@ -2419,14 +2582,26 @@
     wieder: 'var(--wieder-bg)', examen: 'var(--examen-bg)'
   };
 
+  /* Wie eine Woche heißt, sagt ab dem Stundenplan-Start der Stundenplan –
+     sonst hätte dieselbe Woche zwei Namen („Rep-Endphase (Fortsetzung)"
+     hier, „Übergangswoche" dort). Davor gilt weiter der Phasentitel.
+     Nicht in weekDetails hineinschreiben: ein Phasenobjekt gehört mehreren
+     Wochen, eine Zuweisung würde alle umbenennen. */
+  const titelDerWoche = {};
+
+  function wochenTitel(w) {
+    if (titelDerWoche[w]) return titelDerWoche[w];
+    const p = weekDetails[w];
+    return p && p.title ? p.title : 'Woche ' + w;
+  }
+
   function naechsterMeilenstein() {
     let w = currentWeekN;
-    const jetzt = weekDetails[w];
-    while (w <= totalWeeks && weekDetails[w] === jetzt) w++;
+    const jetzt = wochenTitel(currentWeekN);
+    while (w <= totalWeeks && wochenTitel(w) === jetzt) w++;
     if (w > totalWeeks) return null;
-    const p = weekDetails[w];
-    const d = new Date(START_MONDAY.getTime() + (w - 1) * WEEK);
-    return { title: p ? p.title : 'Nächste Phase', datum: d, wochen: w - currentWeekN };
+    const d = montagDerWoche(w);
+    return { title: wochenTitel(w), datum: d, wochen: w - currentWeekN };
   }
 
   function renderNow() {
@@ -2437,12 +2612,12 @@
     card.style.setProperty('--nc-bg', PHASE_BG[pk] || 'var(--accent-soft)');
 
     document.getElementById('now-badge').textContent = 'Diese Woche · W' + currentWeekN;
-    document.getElementById('now-title').textContent = detail && detail.title ? detail.title : 'Woche ' + currentWeekN;
+    document.getElementById('now-title').textContent = wochenTitel(currentWeekN);
     document.getElementById('now-range').textContent =
       longFmt(cwStart) + ' – ' + longFmt(cwEnd);
 
     // Dieselbe Woche, im Reiter „Heute" nur als Zeile über den Aufgaben
-    const titel = detail && detail.title ? detail.title : 'Woche ' + currentWeekN;
+    const titel = wochenTitel(currentWeekN);
 
     // Der Stundenplan liest das, solange sein eigener Zeitraum noch nicht
     // begonnen hat – dann zeigt „Heute" die laufende Phase statt eines Plantags.
@@ -2626,7 +2801,7 @@
     const labels = ['Mo','Di','Mi','Do','Fr','Sa','So'];
     row.innerHTML = '';
     labels.forEach((label, i) => {
-      const date  = new Date(cwStart.getTime() + i * DAY);
+      const date  = tagInWoche(cwStart, i);
       const log   = loadDayLog(date);
       const isTod = date.toDateString() === TODAY.toDateString();
       const fut   = date > TODAY && !isTod;
@@ -2948,7 +3123,7 @@
     activeWeekN = w;
     document.getElementById('tracking-section').style.display = '';
 
-    const ws = new Date(START_MONDAY.getTime() + (w-1) * WEEK);
+    const ws = montagDerWoche(w);
     const we = new Date(ws.getTime() + 6 * DAY);
     const detail = weekDetails[w];
     const phaseKey = detail ? detail.phaseKey : (w < currentWeekN ? 'past' : 'future');
@@ -2956,7 +3131,7 @@
     panel.className = 'detail-panel show dp-' + phaseKey;
 
     document.getElementById('detail-title').textContent =
-      detail && detail.title ? detail.title : 'Woche ' + w + ' von ' + totalWeeks;
+      (detail || titelDerWoche[w]) ? wochenTitel(w) : 'Woche ' + w + ' von ' + totalWeeks;
     document.getElementById('detail-date-range').textContent = longFmt(ws) + ' – ' + longFmt(we);
 
     const target = cumulativeCasesPerWeek[w] || 0;
@@ -3119,7 +3294,7 @@
     const isCurrent = w === currentWeekN;
 
     if (isPast || isCurrent) {
-      const weekStart = new Date(START_MONDAY.getTime() + (w - 1) * WEEK);
+      const weekStart = montagDerWoche(w);
       const weekEnd   = new Date(weekStart.getTime() + WEEK);
       const history   = anki.history || [];
       const weekSum   = history
@@ -3189,6 +3364,7 @@
       const nr = getWeekNumber(new Date(y, m - 1, t));
       proWoche[nr] = w.n;
       gebiete[nr]  = w.g || [];
+      if (w.ph) titelDerWoche[nr] = w.ph;
     });
     const nummern = Object.keys(proWoche).map(Number);
     stundenplanFaelle = {
@@ -3198,8 +3374,7 @@
       gebiete
     };
     recomputeCumulative();
-    renderNowGauges();
-    renderKarteikartenFokus();
+    renderNow();          // zeichnet Titel, Kennzahlen, Gauges und Fokus neu
     if (typeof activeWeekN === 'number') renderRichtwert(activeWeekN);
   };
 
@@ -3268,7 +3443,7 @@
     form.innerHTML = '';
     row.innerHTML = '';
 
-    const weekStart = new Date(START_MONDAY.getTime() + (weekN - 1) * WEEK);
+    const weekStart = montagDerWoche(weekN);
     const labels = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
 
     labels.forEach((label, i) => {
@@ -3385,7 +3560,7 @@
   function updateWeekBoxLogDot(weekN) {
     const el = document.getElementById('wlog-dot-' + weekN);
     if (!el) return;
-    const weekStart = new Date(START_MONDAY.getTime() + (weekN - 1) * WEEK);
+    const weekStart = montagDerWoche(weekN);
     const counts = { niedrig: 0, mittel: 0, gut: 0 };
     let hasLog = false;
     for (let i = 0; i < 7; i++) {
@@ -3506,7 +3681,7 @@
   function pomoZaehlerRender() {
     const heute = pomoZahl(new Date());
     let woche = 0;
-    for (let i = 0; i < 7; i++) woche += pomoZahl(new Date(cwStart.getTime() + i * DAY));
+    for (let i = 0; i < 7; i++) woche += pomoZahl(tagInWoche(cwStart, i));
 
     document.getElementById('pomo-heute').textContent   = heute;
     document.getElementById('pomo-woche').textContent   = woche;
@@ -3749,13 +3924,13 @@
     {mo:'2026-09-14', ph:'Probeexamen',       r:'probe2',
      kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
      n:2,  g:[['StrafR',2]]},
-    {mo:'2026-09-21', ph:'Normal',            r:'normal',
+    {mo:'2026-09-21', ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
      n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StrafR',1]]},
-    {mo:'2026-09-28', ph:'Normal',            r:'normal',
+    {mo:'2026-09-28', ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-01',f:'Zivilrecht',t:'Traktor auf Abwegen'},
      n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StPO',1]]},
-    {mo:'2026-10-05', ph:'Normal',            r:'normal',
+    {mo:'2026-10-05', ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-08',f:'Öffentliches Recht',t:'Theaterkritik'},
      n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
     {mo:'2026-10-12', ph:'Peru · Ankommen',   r:'peruAnkunft',
@@ -4089,7 +4264,7 @@
     if (typeof window.uebernehmeStundenplan === 'function') {
       window.uebernehmeStundenplan({
         ziel:   ZIEL,
-        wochen: W.map(w => ({ mo: w.mo, n: w.n, g: w.g }))
+        wochen: W.map(w => ({ mo: w.mo, n: w.n, g: w.g, ph: w.ph }))
       });
     }
   } catch (e) { console.error('Richtwert konnte nicht übernommen werden:', e); }
