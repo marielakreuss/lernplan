@@ -288,6 +288,45 @@
       font-size: 0.75rem; font-weight: 600;
     }
 
+    /* Rotations-Wiederholung: pro Tag ein Gebiet, das sonst liegen bleibt.
+       Die Fachfarbe trägt hier Bedeutung – sie sagt, welches Fach dran ist. */
+    .rot-f-zr { --f: var(--zr); --f-bg: var(--zr-bg); --f-deep: var(--zr-deep); }
+    .rot-f-or { --f: var(--or); --f-bg: var(--or-bg); --f-deep: var(--or-deep); }
+    .rot-f-sr { --f: var(--sr); --f-bg: var(--sr-bg); --f-deep: var(--sr-deep); }
+
+    .rot-heute { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: baseline; }
+    .rot-fach {
+      background: var(--f-bg); color: var(--f-deep);
+      border: 1px solid color-mix(in srgb, var(--f) 22%, transparent);
+      border-radius: 7px; padding: 0.2rem 0.55rem;
+      font-size: 0.7rem; font-weight: 600; white-space: nowrap;
+    }
+    .rot-gebiet { font-size: 1rem; font-weight: 650; color: var(--text); }
+    .rot-zahl   { font-size: 0.75rem; color: var(--text-sub); }
+    .rot-hinweis { font-size: 0.72rem; color: var(--text-sub); flex-basis: 100%; line-height: 1.5; }
+
+    .rot-woche { display: grid; }
+    .rot-row {
+      display: grid; grid-template-columns: 2rem 6.5rem 1fr auto;
+      gap: 0.6rem; align-items: center;
+      padding: 0.5rem 0.1rem; border-bottom: 1px solid var(--border);
+      font-size: 0.8rem; color: var(--text-muted);
+    }
+    .rot-row:last-child { border-bottom: 0; }
+    .rot-row.heute { color: var(--text); font-weight: 600; }
+    .rot-row.heute .rot-tag { color: var(--accent); }
+    .rot-tag { font-size: 0.72rem; font-weight: 700; color: var(--text-sub); }
+    .rot-dot {
+      width: 0.5rem; height: 0.5rem; border-radius: 50%;
+      background: var(--f); display: inline-block; margin-right: 0.4rem;
+      vertical-align: 0.02rem;
+    }
+    .rot-row .rot-zahl { text-align: right; white-space: nowrap; }
+    @media (max-width: 560px) {
+      .rot-row { grid-template-columns: 1.8rem 1fr auto; }
+      .rot-row .rot-fachname { display: none; }
+    }
+
     /* Ist / Richtwert */
     .gauge { margin-bottom: 1rem; }
     .gauge:last-child { margin-bottom: 0; }
@@ -1299,6 +1338,12 @@
         <h4>Karteikarten-Fokus <span class="h4-note" id="now-week-hint"></span></h4>
         <div class="now-fokus" id="now-fokus"></div>
       </section>
+
+      <!-- Rotations-Wiederholung: das Gebiet, das sonst liegen bleibt -->
+      <section class="card glass rise d4">
+        <h4>Wiederholung heute <span class="h4-note" id="rot-stand"></span></h4>
+        <div class="rot-heute" id="rot-heute"></div>
+      </section>
     </div>
 
     <div class="gcol">
@@ -1386,6 +1431,11 @@
         <div id="now-gauges"></div>
       </div>
     </div>
+  </section>
+
+  <div class="section-label">Wiederholung <span>· ein liegengebliebenes Gebiet pro Tag</span></div>
+  <section class="card glass rise d2">
+    <div class="rot-woche" id="rot-woche"></div>
   </section>
 
   <div class="section-label" id="sp-label">Stundenplan <span>· ab 20. August</span></div>
@@ -1620,6 +1670,10 @@
       if (alt.ankiFach && standZeit(alt.ankiFach) > standZeit(d.ankiFach)) d.ankiFach = alt.ankiFach;
       if (alt.anki && (standZeit(alt.anki) > standZeit(d.anki) ||
                        (hist(alt.anki) && !hist(d.anki)))) d.anki = alt.anki;
+      // Gleiche Regel für die Rotations-Wiederholung: auch sie stammt aus Anki
+      // und kann in einer Cloud-Sync-Datei fehlen.
+      if (alt.ankiGebiet && standZeit(alt.ankiGebiet) > standZeit(d.ankiGebiet)) d.ankiGebiet = alt.ankiGebiet;
+      if (alt.wiederholung && standZeit(alt.wiederholung) > standZeit(d.wiederholung)) d.wiederholung = alt.wiederholung;
     }
     // „Heute gelernt" nur zeigen, wenn der Anki-Stand auch von heute ist –
     // sonst würde ein übernommener Stand die Heatmap für heute auffüllen.
@@ -2660,6 +2714,7 @@
     }
 
     renderKarteikartenFokus();
+    renderRotation();
     renderNowGauges();
     renderNowWeekdots();
     renderNowNotion();
@@ -2751,6 +2806,77 @@
     } else {
       box.innerHTML = '<span class="fokus-leer">Diese Woche keine Fälle geplant – nur Wiederholung.</span>';
     }
+  }
+
+  /* ── Rotations-Wiederholung ─────────────────────────────────────────────
+     Der Karteikarten-Fokus oben deckt nur die zwei Gebiete ab, die diese Woche
+     im Stundenplan stehen – dort gehen ihre ~100 Karten am Tag ohnehin hin.
+     Diese Karte hält daneben einen gedeckelten Slot für genau ein Gebiet frei,
+     das sonst liegen bleibt: sechs pro Woche (2× ZR, 2× ÖR, 2× StrafR),
+     Sonntag frei, ausgewählt nach Rückstand.
+
+     Hier wird bewusst nur angezeigt, nie gerechnet. Die Auswahl kommt fertig
+     aus sync-notion.py, weil Safari den Zugriff auf localhost blockiert, sobald
+     die Seite über HTTPS kommt – live aus Anki lesen geht auf der Pages-Adresse
+     also nicht. */
+  const ROT_FACH = {
+    'Zivilrecht':         { k: 'zr', kurz: 'Zivilrecht' },
+    'Öffentliches Recht': { k: 'or', kurz: 'Öff. Recht' },
+    'Strafrecht':         { k: 'sr', kurz: 'Strafrecht' }
+  };
+  const ROT_LEER = '<span class="fokus-leer">Noch kein Stand – der Sync braucht Anki einmal offen.</span>';
+
+  function rotationDaten() {
+    const w = window.NOTION_DATA && window.NOTION_DATA.wiederholung;
+    return (w && Array.isArray(w.slots) && w.slots.length) ? w : null;
+  }
+
+  function renderRotation() {
+    const rot = rotationDaten();
+    renderRotationHeute(rot);
+    renderRotationWoche(rot);
+  }
+
+  function renderRotationHeute(rot) {
+    const box = document.getElementById('rot-heute');
+    if (!box) return;
+    setzeText('rot-stand', rot ? '· Stand ' + rot.stand : '');
+
+    if (!rot) { box.innerHTML = ROT_LEER; return; }
+
+    const heute = rot.slots.find(s => s.wtag === TODAY.getDay());
+    if (!heute) {
+      box.innerHTML = '<span class="fokus-leer">Sonntag – heute keine Rotation. Morgen geht es weiter.</span>';
+      return;
+    }
+
+    const fach  = ROT_FACH[heute.fach] || { k: 'zr', kurz: heute.fach };
+    const limit = rot.limit || heute.limit || 25;
+    box.innerHTML =
+      `<span class="rot-fach rot-f-${fach.k}">${heute.fach}</span>` +
+      `<span class="rot-gebiet">${heute.gebiet}</span>` +
+      `<span class="rot-zahl">${limit} von ${heute.faellig} fälligen</span>` +
+      `<button type="button" class="fokus-copy" data-suche="${heute.suche.replace(/"/g, '&quot;')}"
+         onclick="kopiereAnkiSuche(this)"
+         title="In den gefilterten Stapel „🔁 Rotation“ einfügen und neu aufbauen">Anki-Suche kopieren</button>` +
+      `<span class="rot-hinweis">In „🔁 Rotation“ einfügen, dann neu aufbauen – einmal morgens, ` +
+      `nicht mitten in der Sitzung.</span>`;
+  }
+
+  function renderRotationWoche(rot) {
+    const box = document.getElementById('rot-woche');
+    if (!box) return;
+    if (!rot) { box.innerHTML = ROT_LEER; return; }
+
+    box.innerHTML = rot.slots.map(s => {
+      const fach = ROT_FACH[s.fach] || { k: 'zr', kurz: s.fach };
+      return `<div class="rot-row rot-f-${fach.k}${s.wtag === TODAY.getDay() ? ' heute' : ''}">
+          <span class="rot-tag">${s.tag}</span>
+          <span class="rot-fachname"><span class="rot-dot"></span>${fach.kurz}</span>
+          <span>${s.gebiet}</span>
+          <span class="rot-zahl">${s.faellig} fällig</span>
+        </div>`;
+    }).join('');
   }
 
   function renderNowGauges() {

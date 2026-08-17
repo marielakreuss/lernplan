@@ -110,26 +110,35 @@ def main():
     # Anki läuft nur auf dem Mac (AnkiConnect, localhost:8765) – hier in der
     # Cloud ist es nie erreichbar. Deshalb den letzten bekannten Anki-Stand aus
     # der vorhandenen notion-data.js übernehmen, statt ihn zu überschreiben.
-    # Wichtig: auch "ankiFach" mitnehmen, sonst fällt die Karteikarten-Kachel
-    # bei jedem Cloud-Sync wieder auf „Kein Anki-Stand" zurück.
+    # Wichtig: auch "ankiFach", "ankiGebiet" und "wiederholung" mitnehmen, sonst
+    # fällt die Karteikarten-Kachel bei jedem Cloud-Sync wieder auf „Kein
+    # Anki-Stand" zurück und die Wiederholungs-Rotation verschwindet. Jedes neue
+    # Anki-Feld in sync-notion.py muss hier ergänzt werden – genau das war schon
+    # zweimal die Ursache verschwundener Anki-Zahlen.
     import re
     old_anki = None
     old_anki_fach = None
+    old_anki_gebiet = None
+    old_wiederholung = None
     try:
         with open("notion-data.js", "r", encoding="utf-8") as f:
             content = f.read()
         m = re.search(r'window\.NOTION_DATA\s*=\s*(\{.*\})\s*;', content, re.DOTALL)
         if m:
             old = json.loads(m.group(1))
-            old_anki      = old.get("anki")
-            old_anki_fach = old.get("ankiFach")
+            old_anki         = old.get("anki")
+            old_anki_fach    = old.get("ankiFach")
+            old_anki_gebiet  = old.get("ankiGebiet")
+            old_wiederholung = old.get("wiederholung")
     except Exception:
         pass
 
     payload = {
-        "lastSync":    datetime.now().strftime("%d.%m.%Y %H:%M"),
-        "anki":        old_anki,
-        "ankiFach":    old_anki_fach,
+        "lastSync":     datetime.now().strftime("%d.%m.%Y %H:%M"),
+        "anki":         old_anki,
+        "ankiFach":     old_anki_fach,
+        "ankiGebiet":   old_anki_gebiet,
+        "wiederholung": old_wiederholung,
         "rhythmCheck": {"currentWeek": get_week(date.today()), "nachbereitet": nachbereitet_hk},
         "cases":       cases,
         "stats": {
