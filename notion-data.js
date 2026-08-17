@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.08.2026 16:26",
+  "lastSync": "17.08.2026 22:07",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4207,
+    "reviewedToday": 108,
+    "dueNow": 4115,
     "history": [
       {
         "date": "2025-09-29",
@@ -18,7 +18,7 @@ window.NOTION_DATA = {
         "count": 66
       },
       {
-        "date": "2025-10-03",
+        "date": "2025-10-02",
         "count": 46
       },
       {
@@ -55,11 +55,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-13",
-        "count": 21
+        "count": 50
       },
       {
         "date": "2025-10-14",
-        "count": 168
+        "count": 139
       },
       {
         "date": "2025-10-15",
@@ -79,15 +79,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-20",
-        "count": 3
+        "count": 6
       },
       {
         "date": "2025-10-21",
-        "count": 63
+        "count": 141
       },
       {
         "date": "2025-10-22",
-        "count": 253
+        "count": 172
       },
       {
         "date": "2025-10-23",
@@ -163,11 +163,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-13",
-        "count": 91
+        "count": 197
       },
       {
         "date": "2025-11-14",
-        "count": 186
+        "count": 80
       },
       {
         "date": "2025-11-16",
@@ -226,8 +226,12 @@ window.NOTION_DATA = {
         "count": 80
       },
       {
+        "date": "2025-12-02",
+        "count": 46
+      },
+      {
         "date": "2025-12-03",
-        "count": 128
+        "count": 82
       },
       {
         "date": "2025-12-04",
@@ -235,11 +239,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-05",
-        "count": 62
-      },
-      {
-        "date": "2025-12-06",
-        "count": 2
+        "count": 64
       },
       {
         "date": "2025-12-07",
@@ -255,11 +255,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-10",
-        "count": 101
-      },
-      {
-        "date": "2025-12-11",
-        "count": 2
+        "count": 103
       },
       {
         "date": "2025-12-12",
@@ -343,15 +339,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-09",
-        "count": 60
+        "count": 72
       },
       {
         "date": "2026-01-10",
-        "count": 70
+        "count": 93
       },
       {
         "date": "2026-01-11",
-        "count": 96
+        "count": 61
       },
       {
         "date": "2026-01-12",
@@ -379,11 +375,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-20",
-        "count": 66
+        "count": 85
       },
       {
         "date": "2026-01-21",
-        "count": 82
+        "count": 63
       },
       {
         "date": "2026-01-23",
@@ -403,11 +399,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-27",
-        "count": 30
-      },
-      {
-        "date": "2026-01-28",
-        "count": 35
+        "count": 65
       },
       {
         "date": "2026-01-29",
@@ -419,11 +411,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-31",
-        "count": 25
+        "count": 81
       },
       {
         "date": "2026-02-01",
-        "count": 98
+        "count": 42
       },
       {
         "date": "2026-02-02",
@@ -439,23 +431,23 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-06",
-        "count": 5
+        "count": 28
       },
       {
         "date": "2026-02-07",
-        "count": 125
+        "count": 102
       },
       {
         "date": "2026-02-08",
-        "count": 25
+        "count": 60
       },
       {
         "date": "2026-02-09",
-        "count": 85
+        "count": 72
       },
       {
         "date": "2026-02-10",
-        "count": 153
+        "count": 131
       },
       {
         "date": "2026-02-11",
@@ -531,11 +523,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-04",
-        "count": 74
+        "count": 80
       },
       {
         "date": "2026-03-05",
-        "count": 143
+        "count": 137
       },
       {
         "date": "2026-03-06",
@@ -627,19 +619,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-30",
-        "count": 73
+        "count": 94
       },
       {
         "date": "2026-03-31",
-        "count": 124
+        "count": 103
       },
       {
         "date": "2026-04-01",
-        "count": 66
+        "count": 96
       },
       {
         "date": "2026-04-02",
-        "count": 32
+        "count": 2
       },
       {
         "date": "2026-04-03",
@@ -655,15 +647,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-06",
-        "count": 126
+        "count": 138
       },
       {
         "date": "2026-04-07",
-        "count": 134
+        "count": 152
       },
       {
         "date": "2026-04-08",
-        "count": 201
+        "count": 171
       },
       {
         "date": "2026-04-09",
@@ -687,11 +679,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-15",
-        "count": 50
+        "count": 109
       },
       {
         "date": "2026-04-16",
-        "count": 133
+        "count": 74
       },
       {
         "date": "2026-04-17",
@@ -723,11 +715,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-26",
-        "count": 13
+        "count": 36
       },
       {
         "date": "2026-04-27",
-        "count": 140
+        "count": 117
       },
       {
         "date": "2026-04-28",
@@ -743,11 +735,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-01",
-        "count": 44
+        "count": 87
       },
       {
         "date": "2026-05-02",
-        "count": 89
+        "count": 46
       },
       {
         "date": "2026-05-03",
@@ -763,11 +755,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-06",
-        "count": 65
+        "count": 90
       },
       {
         "date": "2026-05-07",
-        "count": 178
+        "count": 153
       },
       {
         "date": "2026-05-08",
@@ -787,11 +779,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-14",
-        "count": 31
+        "count": 41
       },
       {
         "date": "2026-05-15",
-        "count": 96
+        "count": 86
       },
       {
         "date": "2026-05-16",
@@ -803,11 +795,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-18",
-        "count": 14
+        "count": 19
       },
       {
         "date": "2026-05-19",
-        "count": 171
+        "count": 166
       },
       {
         "date": "2026-05-20",
@@ -839,11 +831,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-28",
-        "count": 112
-      },
-      {
-        "date": "2026-05-29",
-        "count": 4
+        "count": 116
       },
       {
         "date": "2026-05-30",
@@ -867,19 +855,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-05",
-        "count": 14
+        "count": 109
       },
       {
         "date": "2026-06-06",
-        "count": 141
+        "count": 55
       },
       {
         "date": "2026-06-07",
-        "count": 49
+        "count": 56
       },
       {
         "date": "2026-06-08",
-        "count": 151
+        "count": 135
       },
       {
         "date": "2026-06-09",
@@ -931,11 +919,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-23",
-        "count": 84
+        "count": 104
       },
       {
         "date": "2026-06-24",
-        "count": 131
+        "count": 111
       },
       {
         "date": "2026-06-25",
@@ -954,8 +942,12 @@ window.NOTION_DATA = {
         "count": 37
       },
       {
+        "date": "2026-07-01",
+        "count": 49
+      },
+      {
         "date": "2026-07-02",
-        "count": 192
+        "count": 143
       },
       {
         "date": "2026-07-03",
@@ -971,15 +963,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-06",
-        "count": 102
+        "count": 119
       },
       {
         "date": "2026-07-07",
-        "count": 114
+        "count": 113
       },
       {
         "date": "2026-07-08",
-        "count": 44
+        "count": 28
       },
       {
         "date": "2026-07-09",
@@ -1031,19 +1023,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-25",
-        "count": 42
+        "count": 85
       },
       {
         "date": "2026-07-26",
-        "count": 169
+        "count": 126
       },
       {
         "date": "2026-07-27",
-        "count": 70
+        "count": 112
       },
       {
         "date": "2026-07-28",
-        "count": 143
+        "count": 101
       },
       {
         "date": "2026-07-29",
@@ -1083,11 +1075,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-09",
-        "count": 82
+        "count": 115
       },
       {
         "date": "2026-08-10",
-        "count": 241
+        "count": 208
       },
       {
         "date": "2026-08-11",
@@ -1104,28 +1096,32 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-14",
         "count": 111
+      },
+      {
+        "date": "2026-08-17",
+        "count": 108
       }
     ],
     "stand": "2026-08-17"
   },
   "ankiFach": {
-    "stand": "17.08.2026 14:58",
+    "stand": "17.08.2026 21:50",
     "faecher": {
       "Zivilrecht": {
         "total": 1789,
         "neu": 0,
-        "lernen": 597,
-        "aufbau": 157,
-        "sitzt": 1035,
-        "faellig": 1292
+        "lernen": 583,
+        "aufbau": 160,
+        "sitzt": 1046,
+        "faellig": 1225
       },
       "Öffentliches Recht": {
         "total": 658,
         "neu": 15,
-        "lernen": 332,
-        "aufbau": 73,
-        "sitzt": 238,
-        "faellig": 531
+        "lernen": 330,
+        "aufbau": 74,
+        "sitzt": 239,
+        "faellig": 506
       },
       "Strafrecht": {
         "total": 651,
@@ -1138,7 +1134,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "17.08.2026 14:58",
+    "stand": "17.08.2026 22:07",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1146,22 +1142,22 @@ window.NOTION_DATA = {
         "faellig": 150,
         "u30": 104,
         "u90": 0,
-        "rated30": 79,
+        "rated30": 80,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
         "fach": "Zivilrecht",
-        "total": 279,
+        "total": 259,
         "faellig": 31,
         "u30": 14,
         "u90": 0,
-        "rated30": 191,
+        "rated30": 179,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
         "fach": "Zivilrecht",
         "total": 283,
-        "faellig": 61,
+        "faellig": 67,
         "u30": 47,
         "u90": 0,
         "rated30": 139,
@@ -1277,17 +1273,17 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 167,
-        "faellig": 30,
+        "total": 177,
+        "faellig": 26,
         "u30": 7,
         "u90": 2,
-        "rated30": 121,
+        "rated30": 132,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
         "fach": "Öffentliches Recht",
         "total": 63,
-        "faellig": 60,
+        "faellig": 58,
         "u30": 58,
         "u90": 58,
         "rated30": 5,
@@ -1296,7 +1292,7 @@ window.NOTION_DATA = {
       "BauR": {
         "fach": "Öffentliches Recht",
         "total": 21,
-        "faellig": 9,
+        "faellig": 0,
         "u30": 0,
         "u90": 0,
         "rated30": 21,
@@ -1343,7 +1339,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "17.08.2026 14:58",
+    "stand": "17.08.2026 22:07",
     "slots": [
       {
         "tag": "Mo",
