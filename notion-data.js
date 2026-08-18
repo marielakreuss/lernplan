@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.08.2026 23:50",
+  "lastSync": "19.08.2026 00:11",
   "anki": {
-    "reviewedToday": 67,
-    "dueNow": 4058,
+    "reviewedToday": 75,
+    "dueNow": 4052,
     "history": [
       {
         "date": "2025-09-29",
@@ -1103,21 +1103,25 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-18",
-        "count": 67
+        "count": 73
+      },
+      {
+        "date": "2026-08-19",
+        "count": 5
       }
     ],
-    "stand": "2026-08-18"
+    "stand": "2026-08-19"
   },
   "ankiFach": {
-    "stand": "18.08.2026 23:49",
+    "stand": "19.08.2026 00:11",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
-        "neu": 1,
-        "lernen": 576,
-        "aufbau": 162,
+        "neu": 0,
+        "lernen": 574,
+        "aufbau": 165,
         "sitzt": 1051,
-        "faellig": 1203
+        "faellig": 1194
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1138,7 +1142,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "18.08.2026 23:50",
+    "stand": "19.08.2026 00:11",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1155,7 +1159,7 @@ window.NOTION_DATA = {
         "faellig": 34,
         "u30": 15,
         "u90": 0,
-        "rated30": 143,
+        "rated30": 144,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
@@ -1164,7 +1168,7 @@ window.NOTION_DATA = {
         "faellig": 79,
         "u30": 47,
         "u90": 0,
-        "rated30": 140,
+        "rated30": 141,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
       },
       "SachenR": {
@@ -1343,7 +1347,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "18.08.2026 23:50",
+    "stand": "19.08.2026 00:11",
     "slots": [
       {
         "tag": "Mo",
