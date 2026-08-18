@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.08.2026 16:30",
+  "lastSync": "18.08.2026 18:52",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4098,
@@ -1105,7 +1105,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-18"
   },
   "ankiFach": {
-    "stand": "18.08.2026 17:56",
+    "stand": "18.08.2026 18:52",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
@@ -1134,7 +1134,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "18.08.2026 17:56",
+    "stand": "18.08.2026 18:52",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1339,7 +1339,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "18.08.2026 17:56",
+    "stand": "18.08.2026 18:52",
     "slots": [
       {
         "tag": "Mo",
@@ -1422,9 +1422,9 @@ window.NOTION_DATA = {
       "woche": 45,
       "datum": "2026-08-08",
       "rechtsgebiet": [],
-      "fach": "",
+      "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 9,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KLK-2160-abgegeben-am-8-8-2026-3b2539e733aa808a8c81ed3f1ccaf3f5"
     },
@@ -1440,7 +1440,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 5,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1482-abgegeben-am-25-7-3ab539e733aa80e48bccc7ca842b11ab"
     },
