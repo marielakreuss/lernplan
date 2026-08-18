@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.08.2026 20:11",
+  "lastSync": "18.08.2026 22:46",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4098,
+    "reviewedToday": 24,
+    "dueNow": 4088,
     "history": [
       {
         "date": "2025-09-29",
@@ -1100,12 +1100,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-17",
         "count": 108
+      },
+      {
+        "date": "2026-08-18",
+        "count": 24
       }
     ],
     "stand": "2026-08-18"
   },
   "ankiFach": {
-    "stand": "18.08.2026 22:03",
+    "stand": "18.08.2026 22:46",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
@@ -1118,10 +1122,10 @@ window.NOTION_DATA = {
       "Öffentliches Recht": {
         "total": 658,
         "neu": 15,
-        "lernen": 330,
+        "lernen": 331,
         "aufbau": 74,
-        "sitzt": 239,
-        "faellig": 496
+        "sitzt": 238,
+        "faellig": 485
       },
       "Strafrecht": {
         "total": 651,
@@ -1134,7 +1138,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "18.08.2026 22:03",
+    "stand": "18.08.2026 22:46",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1248,9 +1252,9 @@ window.NOTION_DATA = {
         "fach": "Öffentliches Recht",
         "total": 156,
         "faellig": 122,
-        "u30": 147,
-        "u90": 146,
-        "rated30": 1,
+        "u30": 122,
+        "u90": 121,
+        "rated30": 26,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::2 Staatsrecht\") -is:suspended is:due -deck:filtered"
       },
       "Grundrechte": {
@@ -1339,7 +1343,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "18.08.2026 22:03",
+    "stand": "18.08.2026 22:46",
     "slots": [
       {
         "tag": "Mo",
