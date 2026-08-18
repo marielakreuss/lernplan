@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.08.2026 00:11",
+  "lastSync": "19.08.2026 00:48",
   "anki": {
-    "reviewedToday": 75,
-    "dueNow": 4052,
+    "reviewedToday": 100,
+    "dueNow": 4030,
     "history": [
       {
         "date": "2025-09-29",
@@ -1107,21 +1107,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-19",
-        "count": 5
+        "count": 27
       }
     ],
     "stand": "2026-08-19"
   },
   "ankiFach": {
-    "stand": "19.08.2026 00:11",
+    "stand": "19.08.2026 00:48",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
         "neu": 0,
-        "lernen": 574,
-        "aufbau": 165,
-        "sitzt": 1051,
-        "faellig": 1194
+        "lernen": 565,
+        "aufbau": 171,
+        "sitzt": 1054,
+        "faellig": 1179
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1129,7 +1129,7 @@ window.NOTION_DATA = {
         "lernen": 331,
         "aufbau": 74,
         "sitzt": 238,
-        "faellig": 471
+        "faellig": 467
       },
       "Strafrecht": {
         "total": 651,
@@ -1142,7 +1142,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "19.08.2026 00:11",
+    "stand": "19.08.2026 00:48",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1159,7 +1159,7 @@ window.NOTION_DATA = {
         "faellig": 34,
         "u30": 15,
         "u90": 0,
-        "rated30": 144,
+        "rated30": 145,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
@@ -1347,7 +1347,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "19.08.2026 00:11",
+    "stand": "19.08.2026 00:48",
     "slots": [
       {
         "tag": "Mo",
