@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.08.2026 17:49",
+  "lastSync": "18.08.2026 17:56",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4164,
+    "dueNow": 4098,
     "history": [
       {
         "date": "2025-09-29",
@@ -1105,7 +1105,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-18"
   },
   "ankiFach": {
-    "stand": "18.08.2026 17:49",
+    "stand": "18.08.2026 17:56",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
@@ -1113,7 +1113,7 @@ window.NOTION_DATA = {
         "lernen": 583,
         "aufbau": 160,
         "sitzt": 1046,
-        "faellig": 1260
+        "faellig": 1218
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1121,7 +1121,7 @@ window.NOTION_DATA = {
         "lernen": 330,
         "aufbau": 74,
         "sitzt": 239,
-        "faellig": 520
+        "faellig": 496
       },
       "Strafrecht": {
         "total": 651,
@@ -1134,7 +1134,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "18.08.2026 17:49",
+    "stand": "18.08.2026 17:56",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1157,7 +1157,7 @@ window.NOTION_DATA = {
       "SchuldR BT": {
         "fach": "Zivilrecht",
         "total": 284,
-        "faellig": 77,
+        "faellig": 100,
         "u30": 47,
         "u90": 0,
         "rated30": 139,
@@ -1247,7 +1247,7 @@ window.NOTION_DATA = {
       "Staatsrecht": {
         "fach": "Öffentliches Recht",
         "total": 156,
-        "faellig": 147,
+        "faellig": 122,
         "u30": 147,
         "u90": 146,
         "rated30": 1,
@@ -1274,7 +1274,7 @@ window.NOTION_DATA = {
       "VerwR AT": {
         "fach": "Öffentliches Recht",
         "total": 177,
-        "faellig": 33,
+        "faellig": 44,
         "u30": 13,
         "u90": 2,
         "rated30": 132,
@@ -1339,7 +1339,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "18.08.2026 17:49",
+    "stand": "18.08.2026 17:56",
     "slots": [
       {
         "tag": "Mo",
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
         "wtag": 2,
         "fach": "Öffentliches Recht",
         "gebiet": "Staatsrecht",
-        "faellig": 147,
+        "faellig": 122,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::2 Staatsrecht\") -is:suspended is:due -deck:filtered"
       },
