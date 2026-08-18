@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.08.2026 22:46",
+  "lastSync": "18.08.2026 23:07",
   "anki": {
-    "reviewedToday": 24,
-    "dueNow": 4088,
+    "reviewedToday": 57,
+    "dueNow": 4068,
     "history": [
       {
         "date": "2025-09-29",
@@ -1103,21 +1103,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-18",
-        "count": 24
+        "count": 57
       }
     ],
     "stand": "2026-08-18"
   },
   "ankiFach": {
-    "stand": "18.08.2026 22:46",
+    "stand": "18.08.2026 23:07",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
         "neu": 1,
-        "lernen": 583,
-        "aufbau": 160,
-        "sitzt": 1046,
-        "faellig": 1218
+        "lernen": 581,
+        "aufbau": 161,
+        "sitzt": 1047,
+        "faellig": 1213
       },
       "Öffentliches Recht": {
         "total": 658,
@@ -1125,7 +1125,7 @@ window.NOTION_DATA = {
         "lernen": 331,
         "aufbau": 74,
         "sitzt": 238,
-        "faellig": 485
+        "faellig": 471
       },
       "Strafrecht": {
         "total": 651,
@@ -1138,12 +1138,12 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "18.08.2026 22:46",
+    "stand": "18.08.2026 23:07",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
         "total": 300,
-        "faellig": 154,
+        "faellig": 150,
         "u30": 106,
         "u90": 0,
         "rated30": 80,
@@ -1151,17 +1151,17 @@ window.NOTION_DATA = {
       },
       "SchuldR AT": {
         "fach": "Zivilrecht",
-        "total": 259,
-        "faellig": 39,
+        "total": 223,
+        "faellig": 34,
         "u30": 15,
         "u90": 0,
-        "rated30": 179,
+        "rated30": 143,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
         "fach": "Zivilrecht",
         "total": 284,
-        "faellig": 100,
+        "faellig": 79,
         "u30": 47,
         "u90": 0,
         "rated30": 139,
@@ -1215,7 +1215,7 @@ window.NOTION_DATA = {
       "HGB": {
         "fach": "Zivilrecht",
         "total": 77,
-        "faellig": 59,
+        "faellig": 57,
         "u30": 52,
         "u90": 32,
         "rated30": 13,
@@ -1343,7 +1343,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "18.08.2026 22:46",
+    "stand": "18.08.2026 23:07",
     "slots": [
       {
         "tag": "Mo",
