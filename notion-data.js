@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.08.2026 04:20",
+  "lastSync": "19.08.2026 07:26",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4105,
@@ -1113,7 +1113,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-19"
   },
   "ankiFach": {
-    "stand": "19.08.2026 04:20",
+    "stand": "19.08.2026 07:26",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
@@ -1142,7 +1142,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "19.08.2026 04:20",
+    "stand": "19.08.2026 07:26",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1347,7 +1347,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "19.08.2026 04:20",
+    "stand": "19.08.2026 07:26",
     "slots": [
       {
         "tag": "Mo",
