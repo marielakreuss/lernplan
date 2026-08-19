@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.08.2026 12:32",
+  "lastSync": "19.08.2026 15:24",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4105,
@@ -1113,7 +1113,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-19"
   },
   "ankiFach": {
-    "stand": "19.08.2026 07:26",
+    "stand": "19.08.2026 15:24",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
@@ -1142,7 +1142,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "19.08.2026 07:26",
+    "stand": "19.08.2026 15:24",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1165,7 +1165,7 @@ window.NOTION_DATA = {
       "SchuldR BT": {
         "fach": "Zivilrecht",
         "total": 284,
-        "faellig": 93,
+        "faellig": 74,
         "u30": 49,
         "u90": 0,
         "rated30": 141,
@@ -1255,7 +1255,7 @@ window.NOTION_DATA = {
       "Staatsrecht": {
         "fach": "Öffentliches Recht",
         "total": 156,
-        "faellig": 122,
+        "faellig": 145,
         "u30": 122,
         "u90": 121,
         "rated30": 26,
@@ -1282,7 +1282,7 @@ window.NOTION_DATA = {
       "VerwR AT": {
         "fach": "Öffentliches Recht",
         "total": 177,
-        "faellig": 57,
+        "faellig": 51,
         "u30": 13,
         "u90": 2,
         "rated30": 130,
@@ -1347,7 +1347,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "19.08.2026 07:26",
+    "stand": "19.08.2026 15:24",
     "slots": [
       {
         "tag": "Mo",
@@ -1363,7 +1363,7 @@ window.NOTION_DATA = {
         "wtag": 2,
         "fach": "Öffentliches Recht",
         "gebiet": "Staatsrecht",
-        "faellig": 122,
+        "faellig": 145,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::2 Staatsrecht\") -is:suspended is:due -deck:filtered"
       },
@@ -1800,8 +1800,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 12",
       "status": "Nicht nachbereitet",
-      "woche": 47,
-      "datum": "2026-08-19",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1814,8 +1814,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 11",
       "status": "Nicht nachbereitet",
-      "woche": 46,
-      "datum": "2026-08-12",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1828,8 +1828,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": 46,
-      "datum": "2026-08-12",
+      "woche": 47,
+      "datum": "2026-08-20",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1842,8 +1842,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": 46,
-      "datum": "2026-08-12",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1856,8 +1856,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 8",
       "status": "Nicht nachbereitet",
-      "woche": 46,
-      "datum": "2026-08-10",
+      "woche": 47,
+      "datum": "2026-08-19",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
