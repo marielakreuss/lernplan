@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.08.2026 16:49",
+  "lastSync": "20.08.2026 17:17",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4146,
+    "reviewedToday": 7,
+    "dueNow": 4145,
     "history": [
       {
         "date": "2025-09-29",
@@ -1108,28 +1108,32 @@ window.NOTION_DATA = {
       {
         "date": "2026-08-19",
         "count": 27
+      },
+      {
+        "date": "2026-08-20",
+        "count": 7
       }
     ],
     "stand": "2026-08-20"
   },
   "ankiFach": {
-    "stand": "20.08.2026 16:49",
+    "stand": "20.08.2026 17:17",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
         "neu": 0,
-        "lernen": 565,
-        "aufbau": 171,
+        "lernen": 566,
+        "aufbau": 170,
         "sitzt": 1054,
         "faellig": 1246
       },
       "Öffentliches Recht": {
-        "total": 676,
-        "neu": 33,
-        "lernen": 331,
+        "total": 677,
+        "neu": 34,
+        "lernen": 332,
         "aufbau": 74,
-        "sitzt": 238,
-        "faellig": 515
+        "sitzt": 237,
+        "faellig": 514
       },
       "Strafrecht": {
         "total": 651,
@@ -1142,7 +1146,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "20.08.2026 16:49",
+    "stand": "20.08.2026 17:17",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1166,9 +1170,9 @@ window.NOTION_DATA = {
         "fach": "Zivilrecht",
         "total": 284,
         "faellig": 84,
-        "u30": 49,
+        "u30": 44,
         "u90": 0,
-        "rated30": 136,
+        "rated30": 141,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
       },
       "SachenR": {
@@ -1281,11 +1285,11 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 189,
+        "total": 190,
         "faellig": 52,
-        "u30": 14,
-        "u90": 2,
-        "rated30": 128,
+        "u30": 12,
+        "u90": 0,
+        "rated30": 130,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1347,7 +1351,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "20.08.2026 16:49",
+    "stand": "20.08.2026 17:17",
     "slots": [
       {
         "tag": "Mo",
@@ -1407,7 +1411,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 47,
-    "nachbereitet": 113
+    "nachbereitet": 114
   },
   "cases": [
     {
@@ -1855,7 +1859,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 8",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 47,
       "datum": "2026-08-19",
       "rechtsgebiet": [
@@ -5659,8 +5663,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 113,
-    "inBearbeitung": 29,
+    "nachbereitet": 114,
+    "inBearbeitung": 28,
     "total": 302,
     "klkGesamt": 47,
     "klkAbgegeben": 21
