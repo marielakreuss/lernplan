@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.08.2026 20:16",
+  "lastSync": "20.08.2026 23:04",
   "anki": {
-    "reviewedToday": 7,
-    "dueNow": 4145,
+    "reviewedToday": 38,
+    "dueNow": 4129,
     "history": [
       {
         "date": "2025-09-29",
@@ -1111,29 +1111,29 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-20",
-        "count": 7
+        "count": 38
       }
     ],
     "stand": "2026-08-20"
   },
   "ankiFach": {
-    "stand": "20.08.2026 19:50",
+    "stand": "20.08.2026 23:04",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
         "neu": 0,
         "lernen": 566,
-        "aufbau": 170,
-        "sitzt": 1054,
-        "faellig": 1246
+        "aufbau": 169,
+        "sitzt": 1055,
+        "faellig": 1233
       },
       "Öffentliches Recht": {
         "total": 677,
         "neu": 34,
-        "lernen": 332,
+        "lernen": 333,
         "aufbau": 74,
-        "sitzt": 237,
-        "faellig": 514
+        "sitzt": 236,
+        "faellig": 511
       },
       "Strafrecht": {
         "total": 651,
@@ -1146,7 +1146,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "20.08.2026 19:50",
+    "stand": "20.08.2026 23:04",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1170,9 +1170,9 @@ window.NOTION_DATA = {
         "fach": "Zivilrecht",
         "total": 284,
         "faellig": 84,
-        "u30": 44,
+        "u30": 31,
         "u90": 0,
-        "rated30": 141,
+        "rated30": 154,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
       },
       "SachenR": {
@@ -1287,9 +1287,9 @@ window.NOTION_DATA = {
         "fach": "Öffentliches Recht",
         "total": 190,
         "faellig": 52,
-        "u30": 12,
+        "u30": 8,
         "u90": 0,
-        "rated30": 130,
+        "rated30": 134,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1351,7 +1351,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "20.08.2026 19:50",
+    "stand": "20.08.2026 23:04",
     "slots": [
       {
         "tag": "Mo",
