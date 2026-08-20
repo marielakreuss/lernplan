@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.08.2026 12:34",
+  "lastSync": "20.08.2026 15:24",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4146,
@@ -1113,7 +1113,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-20"
   },
   "ankiFach": {
-    "stand": "20.08.2026 08:09",
+    "stand": "20.08.2026 15:24",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
@@ -1142,7 +1142,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "20.08.2026 08:09",
+    "stand": "20.08.2026 15:24",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1347,7 +1347,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "20.08.2026 08:09",
+    "stand": "20.08.2026 15:24",
     "slots": [
       {
         "tag": "Mo",
@@ -1855,7 +1855,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 8",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 47,
       "datum": "2026-08-19",
       "rechtsgebiet": [
@@ -2446,7 +2446,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 7",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 47,
       "datum": "2026-08-18",
       "rechtsgebiet": [
@@ -2462,7 +2462,7 @@ window.NOTION_DATA = {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
       "woche": 47,
-      "datum": "2026-08-19",
+      "datum": "2026-08-21",
       "rechtsgebiet": [
         "SchuldR BT"
       ],
@@ -5660,7 +5660,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 113,
-    "inBearbeitung": 27,
+    "inBearbeitung": 29,
     "total": 302,
     "klkGesamt": 47,
     "klkAbgegeben": 21
