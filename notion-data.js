@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.08.2026 17:04",
+  "lastSync": "21.08.2026 17:32",
   "anki": {
     "reviewedToday": 43,
     "dueNow": 4126,
@@ -1121,11 +1121,11 @@ window.NOTION_DATA = {
     "stand": "2026-08-21"
   },
   "ankiFach": {
-    "stand": "21.08.2026 17:04",
+    "stand": "21.08.2026 17:32",
     "faecher": {
       "Zivilrecht": {
-        "total": 1800,
-        "neu": 10,
+        "total": 1804,
+        "neu": 14,
         "lernen": 564,
         "aufbau": 168,
         "sitzt": 1058,
@@ -1150,7 +1150,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "21.08.2026 17:04",
+    "stand": "21.08.2026 17:32",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1172,7 +1172,7 @@ window.NOTION_DATA = {
       },
       "SchuldR BT": {
         "fach": "Zivilrecht",
-        "total": 294,
+        "total": 298,
         "faellig": 103,
         "u30": 34,
         "u90": 0,
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "21.08.2026 17:04",
+    "stand": "21.08.2026 17:32",
     "slots": [
       {
         "tag": "Mo",
@@ -1415,7 +1415,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 47,
-    "nachbereitet": 114
+    "nachbereitet": 115
   },
   "cases": [
     {
@@ -1851,8 +1851,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": 47,
-      "datum": "2026-08-20",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -1865,8 +1865,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 48,
+      "datum": "2026-08-24",
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -2469,7 +2469,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 7",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 47,
       "datum": "2026-08-18",
       "rechtsgebiet": [
@@ -5682,8 +5682,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 114,
-    "inBearbeitung": 28,
+    "nachbereitet": 115,
+    "inBearbeitung": 27,
     "total": 303,
     "klkGesamt": 48,
     "klkAbgegeben": 21
