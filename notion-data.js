@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.08.2026 20:13",
+  "lastSync": "22.08.2026 00:10",
   "anki": {
     "reviewedToday": 96,
     "dueNow": 4093,
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "21.08.2026 18:57",
+    "stand": "22.08.2026 00:10",
     "slots": [
       {
         "tag": "Mo",
