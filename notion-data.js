@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.08.2026 18:36",
+  "lastSync": "21.08.2026 18:57",
   "anki": {
-    "reviewedToday": 43,
-    "dueNow": 4126,
+    "reviewedToday": 96,
+    "dueNow": 4093,
     "history": [
       {
         "date": "2025-09-29",
@@ -1115,21 +1115,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-21",
-        "count": 43
+        "count": 97
       }
     ],
     "stand": "2026-08-21"
   },
   "ankiFach": {
-    "stand": "21.08.2026 18:36",
+    "stand": "21.08.2026 18:57",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
-        "neu": 25,
-        "lernen": 564,
-        "aufbau": 168,
-        "sitzt": 1058,
-        "faellig": 1236
+        "neu": 13,
+        "lernen": 571,
+        "aufbau": 164,
+        "sitzt": 1067,
+        "faellig": 1200
       },
       "Öffentliches Recht": {
         "total": 677,
@@ -1150,7 +1150,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "21.08.2026 18:36",
+    "stand": "21.08.2026 18:57",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1158,7 +1158,7 @@ window.NOTION_DATA = {
         "faellig": 154,
         "u30": 112,
         "u90": 0,
-        "rated30": 78,
+        "rated30": 81,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
@@ -1167,7 +1167,7 @@ window.NOTION_DATA = {
         "faellig": 34,
         "u30": 16,
         "u90": 0,
-        "rated30": 139,
+        "rated30": 141,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
@@ -1176,7 +1176,7 @@ window.NOTION_DATA = {
         "faellig": 75,
         "u30": 34,
         "u90": 0,
-        "rated30": 155,
+        "rated30": 170,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
       },
       "SachenR": {
@@ -1203,7 +1203,7 @@ window.NOTION_DATA = {
         "faellig": 98,
         "u30": 93,
         "u90": 65,
-        "rated30": 0,
+        "rated30": 1,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::5 Erbrecht\") -is:suspended is:due -deck:filtered"
       },
       "ZPO I": {
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "21.08.2026 18:36",
+    "stand": "21.08.2026 18:57",
     "slots": [
       {
         "tag": "Mo",
