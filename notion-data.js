@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.08.2026 14:56",
+  "lastSync": "21.08.2026 15:17",
   "anki": {
-    "reviewedToday": 4,
-    "dueNow": 4149,
+    "reviewedToday": 43,
+    "dueNow": 4126,
     "history": [
       {
         "date": "2025-09-29",
@@ -1115,21 +1115,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-21",
-        "count": 4
+        "count": 43
       }
     ],
     "stand": "2026-08-21"
   },
   "ankiFach": {
-    "stand": "21.08.2026 14:56",
+    "stand": "21.08.2026 15:17",
     "faecher": {
       "Zivilrecht": {
         "total": 1790,
         "neu": 0,
-        "lernen": 566,
-        "aufbau": 169,
-        "sitzt": 1055,
-        "faellig": 1259
+        "lernen": 564,
+        "aufbau": 168,
+        "sitzt": 1058,
+        "faellig": 1236
       },
       "Öffentliches Recht": {
         "total": 677,
@@ -1150,7 +1150,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "21.08.2026 14:56",
+    "stand": "21.08.2026 15:17",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1210,9 +1210,9 @@ window.NOTION_DATA = {
         "fach": "Zivilrecht",
         "total": 174,
         "faellig": 145,
-        "u30": 168,
-        "u90": 159,
-        "rated30": 4,
+        "u30": 145,
+        "u90": 136,
+        "rated30": 27,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::6 ZPO I\") -is:suspended is:due -deck:filtered"
       },
       "ZPO II": {
@@ -1254,7 +1254,7 @@ window.NOTION_DATA = {
       "EuropaR": {
         "fach": "Öffentliches Recht",
         "total": 82,
-        "faellig": 79,
+        "faellig": 54,
         "u30": 74,
         "u90": 74,
         "rated30": 0,
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "21.08.2026 14:56",
+    "stand": "21.08.2026 15:17",
     "slots": [
       {
         "tag": "Mo",
@@ -1398,7 +1398,7 @@ window.NOTION_DATA = {
         "wtag": 5,
         "fach": "Öffentliches Recht",
         "gebiet": "EuropaR",
-        "faellig": 79,
+        "faellig": 54,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::1 EuropaR\") -is:suspended is:due -deck:filtered"
       },
