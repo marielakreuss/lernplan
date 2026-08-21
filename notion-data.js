@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.08.2026 16:33",
+  "lastSync": "21.08.2026 18:36",
   "anki": {
     "reviewedToday": 43,
     "dueNow": 4126,
@@ -1121,11 +1121,11 @@ window.NOTION_DATA = {
     "stand": "2026-08-21"
   },
   "ankiFach": {
-    "stand": "21.08.2026 18:15",
+    "stand": "21.08.2026 18:36",
     "faecher": {
       "Zivilrecht": {
-        "total": 1811,
-        "neu": 21,
+        "total": 1815,
+        "neu": 25,
         "lernen": 564,
         "aufbau": 168,
         "sitzt": 1058,
@@ -1150,12 +1150,12 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "21.08.2026 18:15",
+    "stand": "21.08.2026 18:36",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
-        "total": 301,
-        "faellig": 171,
+        "total": 302,
+        "faellig": 154,
         "u30": 112,
         "u90": 0,
         "rated30": 78,
@@ -1164,7 +1164,7 @@ window.NOTION_DATA = {
       "SchuldR AT": {
         "fach": "Zivilrecht",
         "total": 223,
-        "faellig": 55,
+        "faellig": 34,
         "u30": 16,
         "u90": 0,
         "rated30": 139,
@@ -1172,8 +1172,8 @@ window.NOTION_DATA = {
       },
       "SchuldR BT": {
         "fach": "Zivilrecht",
-        "total": 304,
-        "faellig": 103,
+        "total": 307,
+        "faellig": 75,
         "u30": 34,
         "u90": 0,
         "rated30": 155,
@@ -1182,7 +1182,7 @@ window.NOTION_DATA = {
       "SachenR": {
         "fach": "Zivilrecht",
         "total": 320,
-        "faellig": 289,
+        "faellig": 288,
         "u30": 260,
         "u90": 232,
         "rated30": 32,
@@ -1200,7 +1200,7 @@ window.NOTION_DATA = {
       "ErbR": {
         "fach": "Zivilrecht",
         "total": 100,
-        "faellig": 99,
+        "faellig": 98,
         "u30": 93,
         "u90": 65,
         "rated30": 0,
@@ -1227,7 +1227,7 @@ window.NOTION_DATA = {
       "HGB": {
         "fach": "Zivilrecht",
         "total": 77,
-        "faellig": 61,
+        "faellig": 58,
         "u30": 52,
         "u90": 32,
         "rated30": 13,
@@ -1355,14 +1355,14 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "21.08.2026 18:15",
+    "stand": "21.08.2026 18:36",
     "slots": [
       {
         "tag": "Mo",
         "wtag": 1,
         "fach": "Zivilrecht",
         "gebiet": "SachenR",
-        "faellig": 289,
+        "faellig": 288,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
       },
