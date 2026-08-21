@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.08.2026 16:21",
+  "lastSync": "21.08.2026 16:43",
   "anki": {
     "reviewedToday": 43,
     "dueNow": 4126,
@@ -1121,11 +1121,11 @@ window.NOTION_DATA = {
     "stand": "2026-08-21"
   },
   "ankiFach": {
-    "stand": "21.08.2026 16:21",
+    "stand": "21.08.2026 16:42",
     "faecher": {
       "Zivilrecht": {
-        "total": 1796,
-        "neu": 6,
+        "total": 1799,
+        "neu": 9,
         "lernen": 564,
         "aufbau": 168,
         "sitzt": 1058,
@@ -1150,7 +1150,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "21.08.2026 16:21",
+    "stand": "21.08.2026 16:42",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1172,7 +1172,7 @@ window.NOTION_DATA = {
       },
       "SchuldR BT": {
         "fach": "Zivilrecht",
-        "total": 290,
+        "total": 293,
         "faellig": 103,
         "u30": 34,
         "u90": 0,
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "21.08.2026 16:21",
+    "stand": "21.08.2026 16:42",
     "slots": [
       {
         "tag": "Mo",
