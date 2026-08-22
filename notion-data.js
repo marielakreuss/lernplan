@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "22.08.2026 19:05",
+  "lastSync": "22.08.2026 21:07",
   "anki": {
-    "reviewedToday": 36,
-    "dueNow": 4141,
+    "reviewedToday": 65,
+    "dueNow": 4120,
     "history": [
       {
         "date": "2025-09-29",
@@ -1119,21 +1119,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-22",
-        "count": 36
+        "count": 65
       }
     ],
     "stand": "2026-08-22"
   },
   "ankiFach": {
-    "stand": "22.08.2026 19:05",
+    "stand": "22.08.2026 21:07",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
-        "neu": 9,
-        "lernen": 574,
-        "aufbau": 164,
-        "sitzt": 1068,
-        "faellig": 1231
+        "neu": 5,
+        "lernen": 570,
+        "aufbau": 169,
+        "sitzt": 1071,
+        "faellig": 1211
       },
       "Öffentliches Recht": {
         "total": 678,
@@ -1154,7 +1154,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "22.08.2026 19:05",
+    "stand": "22.08.2026 21:07",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1162,7 +1162,7 @@ window.NOTION_DATA = {
         "faellig": 155,
         "u30": 116,
         "u90": 0,
-        "rated30": 77,
+        "rated30": 78,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
@@ -1171,7 +1171,7 @@ window.NOTION_DATA = {
         "faellig": 34,
         "u30": 17,
         "u90": 0,
-        "rated30": 136,
+        "rated30": 137,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
@@ -1180,7 +1180,7 @@ window.NOTION_DATA = {
         "faellig": 76,
         "u30": 35,
         "u90": 0,
-        "rated30": 175,
+        "rated30": 179,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
       },
       "SachenR": {
@@ -1359,7 +1359,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 47,
     "limit": 25,
-    "stand": "22.08.2026 19:05",
+    "stand": "22.08.2026 21:07",
     "slots": [
       {
         "tag": "Mo",
