@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.08.2026 12:35",
+  "lastSync": "24.08.2026 15:34",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4158,
@@ -1359,7 +1359,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "24.08.2026 07:04",
+    "stand": "24.08.2026 15:34",
     "slots": [
       {
         "tag": "Mo",
@@ -1869,8 +1869,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": 48,
-      "datum": "2026-08-24",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "VerwaltungsR AT"
       ],
@@ -4549,8 +4549,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 48,
+      "datum": "2026-08-28",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4563,8 +4563,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 48,
+      "datum": "2026-08-28",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4577,8 +4577,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 8",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 48,
+      "datum": "2026-08-28",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4591,8 +4591,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 7",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 48,
+      "datum": "2026-08-27",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4605,8 +4605,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 48,
+      "datum": "2026-08-27",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4619,8 +4619,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": 12,
-      "datum": "2025-12-18",
+      "woche": 48,
+      "datum": "2026-08-26",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4633,8 +4633,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": 12,
-      "datum": "2025-12-18",
+      "woche": 48,
+      "datum": "2026-08-26",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4647,8 +4647,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": 11,
-      "datum": "2025-12-11",
+      "woche": 48,
+      "datum": "2026-08-26",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4661,8 +4661,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 2",
       "status": "Nicht nachbereitet",
-      "woche": 11,
-      "datum": "2025-12-11",
+      "woche": 48,
+      "datum": "2026-08-25",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4675,8 +4675,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 1",
       "status": "Nicht nachbereitet",
-      "woche": 11,
-      "datum": "2025-12-11",
+      "woche": 48,
+      "datum": "2026-08-24",
       "rechtsgebiet": [
         "BauR"
       ],
