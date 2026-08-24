@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.08.2026 15:39",
+  "lastSync": "24.08.2026 16:01",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4138,
@@ -1129,7 +1129,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-24"
   },
   "ankiFach": {
-    "stand": "24.08.2026 15:39",
+    "stand": "24.08.2026 16:01",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1158,7 +1158,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "24.08.2026 15:39",
+    "stand": "24.08.2026 16:01",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1190,7 +1190,7 @@ window.NOTION_DATA = {
       "SachenR": {
         "fach": "Zivilrecht",
         "total": 320,
-        "faellig": 289,
+        "faellig": 264,
         "u30": 262,
         "u90": 234,
         "rated30": 32,
@@ -1262,7 +1262,7 @@ window.NOTION_DATA = {
       "EuropaR": {
         "fach": "Öffentliches Recht",
         "total": 82,
-        "faellig": 54,
+        "faellig": 79,
         "u30": 74,
         "u90": 73,
         "rated30": 1,
@@ -1363,14 +1363,14 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "24.08.2026 15:39",
+    "stand": "24.08.2026 16:01",
     "slots": [
       {
         "tag": "Mo",
         "wtag": 1,
         "fach": "Zivilrecht",
         "gebiet": "SachenR",
-        "faellig": 289,
+        "faellig": 264,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
       },
@@ -1406,7 +1406,7 @@ window.NOTION_DATA = {
         "wtag": 5,
         "fach": "Öffentliches Recht",
         "gebiet": "EuropaR",
-        "faellig": 54,
+        "faellig": 79,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::1 EuropaR\") -is:suspended is:due -deck:filtered"
       },
