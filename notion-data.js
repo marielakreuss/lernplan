@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.08.2026 19:12",
+  "lastSync": "24.08.2026 22:14",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4138,
@@ -1129,7 +1129,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-24"
   },
   "ankiFach": {
-    "stand": "24.08.2026 19:12",
+    "stand": "24.08.2026 22:14",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1140,8 +1140,8 @@ window.NOTION_DATA = {
         "faellig": 1221
       },
       "Öffentliches Recht": {
-        "total": 695,
-        "neu": 36,
+        "total": 698,
+        "neu": 39,
         "lernen": 339,
         "aufbau": 78,
         "sitzt": 242,
@@ -1158,7 +1158,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "24.08.2026 19:12",
+    "stand": "24.08.2026 22:14",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1315,7 +1315,7 @@ window.NOTION_DATA = {
       },
       "BauR": {
         "fach": "Öffentliches Recht",
-        "total": 41,
+        "total": 44,
         "faellig": 9,
         "u30": 0,
         "u90": 0,
@@ -1363,7 +1363,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "24.08.2026 19:12",
+    "stand": "24.08.2026 22:14",
     "slots": [
       {
         "tag": "Mo",
@@ -4678,7 +4678,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "BauR Fall 1",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 48,
       "datum": "2026-08-24",
       "rechtsgebiet": [
@@ -5691,7 +5691,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 116,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 303,
     "klkGesamt": 48,
     "klkAbgegeben": 21
