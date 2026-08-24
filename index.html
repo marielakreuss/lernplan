@@ -1212,7 +1212,10 @@
       .g2 { grid-template-columns: 1fr; }
     }
     @media (max-width: 980px) {
-      .app { grid-template-columns: 1fr; }
+      /* minmax(0,1fr) statt 1fr: sonst zieht die Tab-Leiste (.side-nav,
+         Inhalt ~496px) die Grid-Spalte auf ihre Mindestbreite auf und die
+         ganze Seite laesst sich auf dem iPhone seitlich wegschieben. */
+      .app { grid-template-columns: minmax(0, 1fr); }
       .side {
         position: sticky; top: 0; z-index: 40;
         height: auto; flex-direction: row; align-items: center; flex-wrap: wrap;
@@ -1230,7 +1233,7 @@
       .side-streak .streak-flame { font-size: 1.1rem; }
       .side-streak .streak-cap { display: none; }
       .side-nav {
-        order: 9; flex-direction: row; width: 100%;
+        order: 9; flex-direction: row; width: 100%; min-width: 0;
         overflow-x: auto; gap: 0.3rem;
         -webkit-overflow-scrolling: touch; scrollbar-width: none;
       }
