@@ -868,6 +868,22 @@
     }
     .sp-sub { font-size: 0.83rem; color: var(--text-muted); margin: 0; }
     .sp-chips { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .sp-head-r { display: flex; flex-direction: column; align-items: flex-end; gap: 0.55rem; }
+    .sp-ics-zeile { display: flex; align-items: center; gap: 0.6rem; }
+    .sp-ics-alle {
+      font-family: inherit; background: none; border: none; padding: 0;
+      font-size: 0.78rem; color: var(--text-muted); cursor: pointer;
+      text-decoration: underline; text-underline-offset: 2px;
+    }
+    .sp-ics-alle:hover { color: var(--text); }
+    .sp-ics-info {
+      margin: 0; font-size: 0.76rem; color: var(--text-muted);
+      text-align: right; max-width: 24rem; min-height: 1em;
+    }
+    @media (max-width: 640px) {
+      .sp-head-r { align-items: flex-start; width: 100%; }
+      .sp-ics-info { text-align: left; }
+    }
     .sp-chip {
       display: inline-flex; align-items: baseline; gap: 0.32rem;
       background: var(--accent-soft); color: var(--accent);
@@ -1445,7 +1461,16 @@
         <h3 id="sp-title">—</h3>
         <p class="sp-sub" id="sp-sub">—</p>
       </div>
-      <div class="sp-chips" id="sp-chips"></div>
+      <div class="sp-head-r">
+        <div class="sp-chips" id="sp-chips"></div>
+        <div class="sp-ics-zeile">
+          <button type="button" class="btn ghost" id="sp-ics"
+            title="Legt die Fälle dieser Woche aus Notion auf den Stundenplan und lädt sie als Kalenderdatei. Datei öffnen, um sie in den iCloud-Kalender zu übernehmen.">↓ Woche als Kalender</button>
+          <button type="button" class="sp-ics-alle" id="sp-ics-alle"
+            title="Alle 25 Wochen in einer Datei – für den einmaligen Import.">alle Wochen</button>
+        </div>
+        <p class="sp-ics-info" id="sp-ics-info"></p>
+      </div>
     </div>
 
     <div class="sp-grid-wrap" style="padding-top:1.1rem"><table class="sp-grid" id="sp-grid"></table></div>
@@ -4157,6 +4182,319 @@
     return zuteilung;
   }
 
+  // ══ Kalender-Baukasten · Anfang ═══════════════════════════════════
+  // Baut aus einer Woche eine .ics-Datei. Wird vom Knopf in der
+  // Wochenansicht benutzt und von Kalender/kalender-export.mjs aus
+  // dieser Datei herausgeschnitten - deshalb steht hier nichts, was
+  // ein DOM braucht, und die Fälle kommen als Argument herein.
+
+  const ICS_ENC = new TextEncoder(), ICS_DEC = new TextDecoder();
+  const BERLIN = 'Europe/Berlin', LIMA = 'America/Lima';
+
+  // Blöcke, deren Zeit im Plan Freitext ist ('1,5 h', 'nach Bedarf').
+  const ERSATZZEIT = {karte15: [9,0,10,30], altNachb: [14,0,16,0], kwPeru: [16,0,20,0]};
+  const blockName = b => Object.keys(B).find(k => B[k] === b);
+
+  // Notion schreibt manche Gebiete anders als der Stundenplan.
+  const GEBIET_ALIAS = {
+    'SicherheitsR / PolizeiR': 'PolizeiR', 'Europarecht': 'EuropaR',
+    'VerwaltungsR AT': 'VerwR AT', 'Strafrecht AT': 'StrafR'
+  };
+  const planGebiet = n => GEBIET_ALIAS[n] || n;
+
+  // ── Zeit ──────────────────────────────────────────────────────────
+  function zonenVersatz(ts, tz) {
+    const f = new Intl.DateTimeFormat('en-US', {timeZone: tz, hour12: false,
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit'});
+    const p = {};
+    for (const {type, value} of f.formatToParts(new Date(ts))) p[type] = value;
+    const h = p.hour === '24' ? 0 : Number(p.hour);
+    return Date.UTC(+p.year, p.month - 1, +p.day, h, +p.minute, +p.second) - ts;
+  }
+  // Wanduhrzeit in einer Zeitzone -> echter Zeitpunkt
+  function alsUtc(y, m, t, h, min, tz) {
+    const naiv = Date.UTC(y, m - 1, t, h, min);
+    let ts = naiv;
+    for (let i = 0; i < 3; i++) {
+      const neu = naiv - zonenVersatz(ts, tz);
+      if (neu === ts) break;
+      ts = neu;
+    }
+    return ts;
+  }
+  const utcStempel = ts => new Date(ts).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const datumsStempel = dt => dt.getFullYear() +
+    String(dt.getMonth() + 1).padStart(2, '0') + String(dt.getDate()).padStart(2, '0');
+  const isoTag = dt => dt.getFullYear() + '-' +
+    String(dt.getMonth() + 1).padStart(2, '0') + '-' + String(dt.getDate()).padStart(2, '0');
+
+  // ── Fälle aus Notion für eine Woche ───────────────────────────────
+  const fallNummer = c => {
+    const m = String(c.title || '').match(/(\d+)\s*$/);
+    return m ? +m[1] : 9999;
+  };
+  const nachNummer = (a, b) => fallNummer(a) - fallNummer(b) ||
+    String(a.title).localeCompare(String(b.title), 'de');
+
+  function fallSlots(w) {
+    const s = [];
+    TAGE.forEach(tag => {
+      RASTER[w.r][tag].b.forEach((block, i) => { if (block.f) s.push({tag, i, block}); });
+    });
+    return s;
+  }
+
+  // Was hat sie sich für diese Woche vorgenommen? Zuerst zählt, was in
+  // Notion auf einen Tag dieser Woche datiert ist. Reicht das nicht für
+  // alle Slots, wird nach der Gebiets-Vorgabe der Woche aufgefüllt -
+  // dabei gelten nur Daten *dieser* Woche als Planung; alte Daten aus
+  // früheren Wochen sind Historie und sperren einen Fall nicht.
+  function faelleDerWoche(w, cases) {
+    const slots = fallSlots(w);
+    const [y, m, t] = w.mo.split('-').map(Number);
+    const mo = new Date(y, m - 1, t), so = new Date(y, m - 1, t + 6);
+    const vonIso = isoTag(mo), bisIso = isoTag(so);
+
+    const offen = (cases || []).filter(c =>
+      c.typ === 'Hauptkurs' && c.status !== 'Nachbereitet');
+    const kennung = c => c.url || c.title;
+
+    const geplant = offen.filter(c => c.datum && c.datum >= vonIso && c.datum <= bisIso)
+                         .sort(nachNummer);
+    const vergeben = new Set(geplant.map(kennung));
+
+    // Rest nach Gebiets-Vorgabe auffüllen, aber nur so weit, wie Slots frei sind
+    const uebrigProGebiet = {};
+    w.g.forEach(([g, n]) => { uebrigProGebiet[g] = (uebrigProGebiet[g] || 0) + n; });
+    geplant.forEach(c => {
+      const g = (c.rechtsgebiet || []).map(planGebiet).find(x => uebrigProGebiet[x] > 0);
+      if (g) uebrigProGebiet[g]--;
+    });
+
+    let fehlt = Math.max(0, slots.length - geplant.length);
+    const rest = [];
+    w.g.forEach(([g]) => {
+      if (g === 'Reserve') return;
+      const passend = offen
+        .filter(c => !vergeben.has(kennung(c)) &&
+                     (c.rechtsgebiet || []).map(planGebiet).includes(g))
+        .sort(nachNummer);
+      for (const c of passend) {
+        if (uebrigProGebiet[g] <= 0 || fehlt <= 0) break;
+        vergeben.add(kennung(c)); rest.push(c);
+        uebrigProGebiet[g]--; fehlt--;
+      }
+    });
+    return {geplant, rest, slots};
+  }
+
+  // Fälle auf die Slots der Woche legen.
+  function verteileFaelle(w, cases) {
+    const {geplant, rest, slots} = faelleDerWoche(w, cases);
+    // Wochen ganz ohne Fall-Slot sind bewusst fallfrei (Urlaub, Peru, Reisewoche).
+    // Dort darf auch nichts als Ganztagstermin hängenbleiben; die Fälle werden
+    // in einer späteren Woche über die Gebiets-Vorgabe wieder eingesammelt.
+    if (!slots.length) return {zuteilung: {}, ueberhang: [], anzahl: 0};
+    const zuteilung = {}, ueberhang = [];
+    const frei = slots.slice();
+
+    // 1. Was auf einen Tag datiert ist, kommt auf die Slots dieses Tages.
+    TAGE.forEach(tag => {
+      const desTages = geplant.filter(c => {
+        const [jy, jm, jt] = c.datum.split('-').map(Number);
+        return TAGE[(new Date(jy, jm - 1, jt).getDay() + 6) % 7] === tag;
+      });
+      const tagSlots = frei.filter(s => s.tag === tag);
+      desTages.forEach((c, i) => {
+        if (i < tagSlots.length) {
+          zuteilung[tagSlots[i].tag + '#' + tagSlots[i].i] = c;
+          frei.splice(frei.indexOf(tagSlots[i]), 1);
+        } else ueberhang.push({tag, fall: c});
+      });
+    });
+
+    // 2. Freie Slots: erst der Überhang (besser ein echter Termin als ein
+    //    Ganztags-Klotz), dann die Auffüllung nach Gebiets-Vorgabe.
+    const nachschub = ueberhang.splice(0, frei.length).map(u => u.fall).concat(rest);
+    frei.forEach(s => { const c = nachschub.shift(); if (c) zuteilung[s.tag + '#' + s.i] = c; });
+
+    return {zuteilung, ueberhang, anzahl: geplant.length + rest.length};
+  }
+
+  // ── ICS ───────────────────────────────────────────────────────────
+  const icsEsc = s => String(s)
+    .replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
+
+  // RFC 5545: höchstens 75 Oktett je Zeile, Fortsetzung mit Leerzeichen.
+  function icsFalte(zeile) {
+    const b = ICS_ENC.encode(zeile);
+    if (b.length <= 75) return zeile;
+    const teile = [];
+    let i = 0, grenze = 75;
+    while (i < b.length) {
+      let e = Math.min(i + grenze, b.length);
+      while (e > i && e < b.length && (b[e] & 0xc0) === 0x80) e--;   // nicht im Zeichen trennen
+      teile.push((i ? ' ' : '') + ICS_DEC.decode(b.slice(i, e)));
+      i = e; grenze = 74;
+    }
+    return teile.join('\r\n');
+  }
+
+  function icsTermin(e, stempel) {
+    const z = ['BEGIN:VEVENT', 'UID:' + e.uid, 'DTSTAMP:' + stempel, 'SEQUENCE:0'];
+    if (e.ganztags) z.push('DTSTART;VALUE=DATE:' + e.start, 'DTEND;VALUE=DATE:' + e.ende);
+    else            z.push('DTSTART:' + e.start, 'DTEND:' + e.ende);
+    z.push('SUMMARY:' + icsEsc(e.titel));
+    if (e.notiz) z.push('DESCRIPTION:' + icsEsc(e.notiz));
+    if (e.url)   z.push('URL:' + e.url);
+    z.push('TRANSP:' + (e.frei ? 'TRANSPARENT' : 'OPAQUE'), 'STATUS:CONFIRMED', 'END:VEVENT');
+    return z.map(icsFalte).join('\r\n');
+  }
+
+  function icsKalender(name, termine, stempel) {
+    // termine kommen bereits gefaltet - ein zweiter Faltlauf würde END:VEVENT zerschneiden
+    const kopf = ['BEGIN:VCALENDAR', 'VERSION:2.0',
+      'PRODID:-//Mariela Kreuss//Stex-Lernplan//DE', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+      'X-WR-CALNAME:' + icsEsc(name), 'X-WR-TIMEZONE:Europe/Berlin'].map(icsFalte);
+    return [...kopf, ...termine.map(e => icsTermin(e, stempel)), 'END:VCALENDAR']
+      .join('\r\n') + '\r\n';
+  }
+
+  // ── Woche -> Termine ──────────────────────────────────────────────
+  function icsWochenTermine(w, cases) {
+    const {zuteilung, ueberhang} = verteileFaelle(w, cases);
+    const nachPlan = verteile(w);                       // Gebiet, falls kein Notion-Fall da ist
+    const [jy, jm, jt] = w.mo.split('-').map(Number);
+    const montag = new Date(jy, jm - 1, jt);
+    const peru = w.r.startsWith('peru');
+    const termine = [];
+    let offenerFreiblock = null;
+
+    const freiAbschliessen = () => {
+      if (!offenerFreiblock) return;
+      const f = offenerFreiblock;
+      const endeTag = new Date(f.von); endeTag.setDate(endeTag.getDate() + f.tage);
+      termine.push({uid: 'stex-' + w.mo + '-frei-' + datumsStempel(f.von) + '@lernplan.marielakreuss',
+        ganztags: true, frei: true, start: datumsStempel(f.von),
+        ende: datumsStempel(endeTag), titel: f.titel, notiz: w.ph});
+      offenerFreiblock = null;
+    };
+
+    TAGE.forEach((tag, idx) => {
+      const datum = new Date(montag); datum.setDate(datum.getDate() + idx);
+      const raster = RASTER[w.r][tag];
+      const nurFrei = raster.b.length > 0 && raster.b.every(b => b.k === 'frei');
+
+      if (nurFrei) {
+        const titel = raster.b[0].l;
+        if (offenerFreiblock && offenerFreiblock.titel === titel) offenerFreiblock.tage++;
+        else { freiAbschliessen(); offenerFreiblock = {von: datum, tage: 1, titel}; }
+        return;
+      }
+      freiAbschliessen();
+
+      raster.b.forEach((block, i) => {
+        if (block.k === 'pause') return;                 // Mittagspause muss nicht in den Kalender
+        const uid = 'stex-' + w.mo + '-' + tag + '-' + i + '@lernplan.marielakreuss';
+        const schluessel = blockName(block);
+
+        if (block.t === 'ganztags') {                    // Probeexamen
+          const morgen = new Date(datum); morgen.setDate(morgen.getDate() + 1);
+          termine.push({uid, ganztags: true, start: datumsStempel(datum),
+            ende: datumsStempel(morgen), titel: block.l, notiz: w.ph});
+          return;
+        }
+
+        // Am Peru-Donnerstag läuft die Werkstatt 9-13 bzw. 10-14 Ortszeit;
+        // die Karteikarten (im Plan nur '1,5 h') müssen dahinter.
+        let zeiten = (schluessel === 'karte15' && raster.b.includes(B.kwPeru))
+          ? [14, 30, 16, 0] : ERSATZZEIT[schluessel];
+        if (!zeiten) {
+          const m = block.t.match(/^(\d{1,2}):(\d{2})[–-](\d{1,2}):(\d{2})$/);
+          if (!m) return;                                // ohne Uhrzeit kein Termin
+          zeiten = [+m[1], +m[2], +m[3], +m[4]];
+        }
+        // Alles nach Ortszeit; nur die Werkstatt bleibt auf deutscher Uhr.
+        const tz = (peru && schluessel !== 'kwPeru') ? LIMA : BERLIN;
+        const [y, mo, t] = [datum.getFullYear(), datum.getMonth() + 1, datum.getDate()];
+
+        let titel = block.l, notiz = '', url = '';
+        const istFall = !!block.f;
+        if (block.f) {
+          const fall = zuteilung[tag + '#' + i];
+          if (fall) {
+            titel = fall.title;
+            notiz = [(fall.rechtsgebiet || []).join(', '), fall.fach, fall.status]
+              .filter(Boolean).join(' · ');
+            url = fall.url || '';
+          } else {
+            const gebiet = nachPlan[tag + '#' + i];
+            titel = gebiet === 'Reserve' ? 'Fall · frei wählbar' : 'Fall · ' + gebiet;
+            notiz = gebiet === 'Reserve' ? 'Reserve-Slot' : 'kein offener Fall in Notion';
+          }
+        } else if (block.k === 'kw' && w.kw) {
+          titel = block.l + ' · ' + w.kw.f;
+          notiz = '„' + w.kw.t + '”' + (w.kw.peru ? ' · vor Ort ' + w.kw.peru : '');
+        } else if (schluessel === 'kwPrep' && w.kw) {
+          titel = block.l + ' · ' + w.kw.f;
+          notiz = '„' + w.kw.t + '”';
+        } else if (block.k === 'karte') {
+          const fokus = w.g.filter(([n]) => n !== 'Reserve').map(([n]) => n).join(', ');
+          notiz = fokus ? 'Fokus: ' + fokus : '';
+        } else if (schluessel === 'altNachb') {
+          notiz = 'nach Bedarf';
+        }
+
+        termine.push({uid,
+          start: utcStempel(alsUtc(y, mo, t, zeiten[0], zeiten[1], tz)),
+          ende:  utcStempel(alsUtc(y, mo, t, zeiten[2], zeiten[3], tz)),
+          titel, notiz: notiz || w.ph, url, istFall, frei: false});
+      });
+    });
+    freiAbschliessen();
+
+    // Was nirgends mehr in einen Slot passt: Ganztagstermin an seinem Tag,
+    // damit kein vorgenommener Fall still unter den Tisch fällt.
+    ueberhang.forEach((u, n) => {
+      const datum = new Date(montag); datum.setDate(datum.getDate() + TAGE.indexOf(u.tag));
+      const morgen = new Date(datum); morgen.setDate(morgen.getDate() + 1);
+      termine.push({uid: 'stex-' + w.mo + '-rest-' + n + '@lernplan.marielakreuss',
+        ganztags: true, start: datumsStempel(datum), ende: datumsStempel(morgen),
+        titel: u.fall.title, url: u.fall.url || '', istFall: true,
+        notiz: 'Ohne festen Slot – an diesem Tag ist der Stundenplan voll.'});
+    });
+    return termine;
+  }
+
+  function isoKw(dt) {
+    const t = new Date(Date.UTC(dt.getFullYear(), dt.getMonth(), dt.getDate()));
+    t.setUTCDate(t.getUTCDate() - ((t.getUTCDay() + 6) % 7) + 3);
+    const j = new Date(Date.UTC(t.getUTCFullYear(), 0, 4));
+    return 1 + Math.round(((t - j) / 864e5 - 3 + ((j.getUTCDay() + 6) % 7)) / 7);
+  }
+  const icsDateiName = s => s
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .replace(/Ä/g, 'Ae').replace(/Ö/g, 'Oe').replace(/Ü/g, 'Ue')
+    .replace(/·/g, '-').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/[^\w-]/g, '');
+
+  // Eine Woche als fertige Datei: {datei, text, termine, ueberhang}
+  function icsFuerWoche(w, cases) {
+    const [y, m, t] = w.mo.split('-').map(Number);
+    const kwNr = String(isoKw(new Date(y, m - 1, t))).padStart(2, '0');
+    const termine = icsWochenTermine(w, cases);
+    const stempel = utcStempel(Date.now());
+    return {
+      datei: w.mo + '_KW' + kwNr + '_' + icsDateiName(w.ph) + '.ics',
+      text: icsKalender('Stex KW' + kwNr + ' · ' + w.ph, termine, stempel),
+      termine,
+      faelle: termine.filter(e => e.istFall).length,
+      ueberhang: termine.filter(e => /Ohne festen Slot/.test(e.notiz || '')).length
+    };
+  }
+  // ══ Kalender-Baukasten · Ende ═════════════════════════════════════
+
+
   function wocheFuer(dt) {
     const mo = montagVon(dt).getTime();
     return W.find(w => d(w.mo).getTime() === mo) || null;
@@ -4173,6 +4511,8 @@
   }
 
   // ── Rendern ───────────────────────────────────────────────────────
+  let gezeigteWoche = null;
+
   function render() {
     const heute = new Date();
     const start = d(W[0].mo);
@@ -4184,6 +4524,7 @@
       vorschau = true;
       woche = heute < start ? W[0] : W[W.length - 1];
     }
+    gezeigteWoche = woche;
 
     const moDieserWoche = d(woche.mo);
     const heuteKey = (!vorschau && heute >= start && heute <= ende)
@@ -4391,6 +4732,54 @@
 
   try { render(); }
   catch (e) { console.error('Stundenplan konnte nicht gezeichnet werden:', e); }
+
+  // ── Kalender-Knopf ────────────────────────────────────────────────
+  const notionFaelle = () => {
+    const D = window.NOTION_DATA;
+    return (D && Array.isArray(D.cases)) ? D.cases : [];
+  };
+  const knopfInfo = txt => {
+    const el = document.getElementById('sp-ics-info');
+    if (el) el.textContent = txt;
+  };
+  function ladeHerunter(datei, text) {
+    const blob = new Blob([text], {type: 'text/calendar;charset=utf-8'});
+    const url  = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = datei;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }
+
+  const knopf = document.getElementById('sp-ics');
+  if (knopf) knopf.addEventListener('click', function () {
+    try {
+      const cases = notionFaelle();
+      const r = icsFuerWoche(gezeigteWoche || W[0], cases);
+      ladeHerunter(r.datei, r.text);
+      knopfInfo(r.faelle + ' Fälle, ' + r.termine.length + ' Termine' +
+        (r.ueberhang ? ' · ' + r.ueberhang + ' ohne festen Slot (als Ganztagstermin)' : '') +
+        (cases.length ? '' : ' · Notion-Stand nicht geladen, nur Gebiete'));
+    } catch (e) {
+      console.error('Kalender-Export fehlgeschlagen:', e);
+      knopfInfo('Export fehlgeschlagen – Details stehen in der Konsole.');
+    }
+  });
+
+  const knopfAlle = document.getElementById('sp-ics-alle');
+  if (knopfAlle) knopfAlle.addEventListener('click', function () {
+    try {
+      const cases = notionFaelle();
+      const termine = [];
+      W.forEach(w => termine.push(...icsWochenTermine(w, cases)));
+      ladeHerunter('Stex-alle-Wochen.ics',
+        icsKalender('Stex Lernplan · alle Wochen', termine, utcStempel(Date.now())));
+      knopfInfo(W.length + ' Wochen, ' + termine.length + ' Termine geladen.');
+    } catch (e) {
+      console.error('Kalender-Export fehlgeschlagen:', e);
+      knopfInfo('Export fehlgeschlagen – Details stehen in der Konsole.');
+    }
+  });
 
   // Der Stundenplan ist die verbindliche Quelle für Fälle-Richtwert und
   // Karteikarten-Fokus – das Hauptskript rechnet damit neu.
