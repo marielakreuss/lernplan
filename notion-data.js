@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "25.08.2026 15:03",
+  "lastSync": "25.08.2026 15:25",
   "anki": {
-    "reviewedToday": 2,
-    "dueNow": 4133,
+    "reviewedToday": 30,
+    "dueNow": 4135,
     "history": [
       {
         "date": "2025-09-29",
@@ -1131,13 +1131,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-25",
-        "count": 2
+        "count": 32
       }
     ],
     "stand": "2026-08-25"
   },
   "ankiFach": {
-    "stand": "25.08.2026 15:03",
+    "stand": "25.08.2026 15:24",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1149,11 +1149,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 698,
-        "neu": 34,
-        "lernen": 333,
+        "neu": 19,
+        "lernen": 348,
         "aufbau": 81,
         "sitzt": 250,
-        "faellig": 505
+        "faellig": 504
       },
       "Strafrecht": {
         "total": 651,
@@ -1166,7 +1166,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "25.08.2026 15:03",
+    "stand": "25.08.2026 15:24",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1324,10 +1324,10 @@ window.NOTION_DATA = {
       "BauR": {
         "fach": "Öffentliches Recht",
         "total": 44,
-        "faellig": 6,
+        "faellig": 5,
         "u30": 0,
         "u90": 0,
-        "rated30": 29,
+        "rated30": 44,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1371,7 +1371,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "25.08.2026 15:03",
+    "stand": "25.08.2026 15:24",
     "slots": [
       {
         "tag": "Mo",
