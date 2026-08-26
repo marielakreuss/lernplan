@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.08.2026 12:43",
+  "lastSync": "26.08.2026 14:48",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4167,
@@ -1137,7 +1137,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-26"
   },
   "ankiFach": {
-    "stand": "26.08.2026 14:27",
+    "stand": "26.08.2026 14:48",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1148,12 +1148,12 @@ window.NOTION_DATA = {
         "faellig": 1252
       },
       "Öffentliches Recht": {
-        "total": 724,
-        "neu": 32,
-        "lernen": 356,
+        "total": 726,
+        "neu": 33,
+        "lernen": 357,
         "aufbau": 83,
         "sitzt": 253,
-        "faellig": 524
+        "faellig": 525
       },
       "Strafrecht": {
         "total": 651,
@@ -1166,7 +1166,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "26.08.2026 14:27",
+    "stand": "26.08.2026 14:48",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1305,10 +1305,10 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 206,
-        "faellig": 43,
-        "u30": 21,
-        "u90": 0,
+        "total": 207,
+        "faellig": 44,
+        "u30": 22,
+        "u90": 1,
         "rated30": 136,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
@@ -1323,7 +1323,7 @@ window.NOTION_DATA = {
       },
       "BauR": {
         "fach": "Öffentliches Recht",
-        "total": 53,
+        "total": 54,
         "faellig": 24,
         "u30": 0,
         "u90": 0,
@@ -1371,7 +1371,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "26.08.2026 14:27",
+    "stand": "26.08.2026 14:48",
     "slots": [
       {
         "tag": "Mo",
