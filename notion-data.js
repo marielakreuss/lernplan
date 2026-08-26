@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.08.2026 14:48",
+  "lastSync": "26.08.2026 15:09",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4167,
@@ -1137,7 +1137,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-26"
   },
   "ankiFach": {
-    "stand": "26.08.2026 14:48",
+    "stand": "26.08.2026 15:09",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1166,7 +1166,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "26.08.2026 14:48",
+    "stand": "26.08.2026 15:09",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1371,7 +1371,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "26.08.2026 14:48",
+    "stand": "26.08.2026 15:09",
     "slots": [
       {
         "tag": "Mo",
@@ -1431,7 +1431,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 48,
-    "nachbereitet": 118
+    "nachbereitet": 119
   },
   "cases": [
     {
@@ -4658,7 +4658,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "BauR Fall 3",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-26",
       "rechtsgebiet": [
@@ -5698,7 +5698,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 118,
+    "nachbereitet": 119,
     "inBearbeitung": 27,
     "total": 303,
     "klkGesamt": 48,
