@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.08.2026 21:47",
+  "lastSync": "26.08.2026 22:08",
   "anki": {
-    "reviewedToday": 28,
-    "dueNow": 4156,
+    "reviewedToday": 55,
+    "dueNow": 4147,
     "history": [
       {
         "date": "2025-09-29",
@@ -1135,13 +1135,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-26",
-        "count": 28
+        "count": 55
       }
     ],
     "stand": "2026-08-26"
   },
   "ankiFach": {
-    "stand": "26.08.2026 21:47",
+    "stand": "26.08.2026 22:08",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1153,11 +1153,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 744,
-        "neu": 51,
-        "lernen": 357,
+        "neu": 41,
+        "lernen": 367,
         "aufbau": 83,
         "sitzt": 253,
-        "faellig": 514
+        "faellig": 504
       },
       "Strafrecht": {
         "total": 651,
@@ -1170,7 +1170,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "26.08.2026 21:47",
+    "stand": "26.08.2026 22:08",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1313,7 +1313,7 @@ window.NOTION_DATA = {
         "faellig": 26,
         "u30": 21,
         "u90": 0,
-        "rated30": 162,
+        "rated30": 172,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1331,7 +1331,7 @@ window.NOTION_DATA = {
         "faellig": 0,
         "u30": 0,
         "u90": 0,
-        "rated30": 51,
+        "rated30": 55,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1375,7 +1375,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "26.08.2026 21:47",
+    "stand": "26.08.2026 22:08",
     "slots": [
       {
         "tag": "Mo",
