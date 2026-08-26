@@ -1,25 +1,17 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.08.2026 16:56",
+  "lastSync": "26.08.2026 17:31",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4167,
     "history": [
       {
-        "date": "2025-09-29",
-        "count": 56
-      },
-      {
-        "date": "2025-09-30",
-        "count": 56
-      },
-      {
         "date": "2025-10-01",
-        "count": 66
+        "count": 2
       },
       {
         "date": "2025-10-02",
-        "count": 46
+        "count": 7
       },
       {
         "date": "2025-10-04",
@@ -27,175 +19,167 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-05",
-        "count": 162
+        "count": 102
       },
       {
         "date": "2025-10-06",
-        "count": 75
+        "count": 57
       },
       {
         "date": "2025-10-07",
-        "count": 60
+        "count": 30
       },
       {
         "date": "2025-10-08",
-        "count": 113
+        "count": 25
       },
       {
         "date": "2025-10-09",
-        "count": 149
+        "count": 92
       },
       {
         "date": "2025-10-10",
-        "count": 128
+        "count": 67
       },
       {
         "date": "2025-10-12",
-        "count": 55
+        "count": 21
       },
       {
         "date": "2025-10-13",
-        "count": 50
+        "count": 15
       },
       {
         "date": "2025-10-14",
-        "count": 139
-      },
-      {
-        "date": "2025-10-15",
-        "count": 54
-      },
-      {
-        "date": "2025-10-16",
-        "count": 31
-      },
-      {
-        "date": "2025-10-17",
-        "count": 31
-      },
-      {
-        "date": "2025-10-19",
-        "count": 58
-      },
-      {
-        "date": "2025-10-20",
-        "count": 6
-      },
-      {
-        "date": "2025-10-21",
-        "count": 141
-      },
-      {
-        "date": "2025-10-22",
-        "count": 172
-      },
-      {
-        "date": "2025-10-23",
-        "count": 38
-      },
-      {
-        "date": "2025-10-24",
-        "count": 178
-      },
-      {
-        "date": "2025-10-26",
-        "count": 122
-      },
-      {
-        "date": "2025-10-27",
-        "count": 64
-      },
-      {
-        "date": "2025-10-28",
-        "count": 39
-      },
-      {
-        "date": "2025-10-29",
-        "count": 61
-      },
-      {
-        "date": "2025-10-30",
-        "count": 104
-      },
-      {
-        "date": "2025-10-31",
-        "count": 66
-      },
-      {
-        "date": "2025-11-02",
-        "count": 62
-      },
-      {
-        "date": "2025-11-03",
-        "count": 103
-      },
-      {
-        "date": "2025-11-04",
-        "count": 169
-      },
-      {
-        "date": "2025-11-05",
-        "count": 165
-      },
-      {
-        "date": "2025-11-06",
-        "count": 134
-      },
-      {
-        "date": "2025-11-07",
         "count": 63
       },
       {
-        "date": "2025-11-09",
+        "date": "2025-10-15",
+        "count": 26
+      },
+      {
+        "date": "2025-10-16",
+        "count": 19
+      },
+      {
+        "date": "2025-10-17",
+        "count": 15
+      },
+      {
+        "date": "2025-10-19",
+        "count": 29
+      },
+      {
+        "date": "2025-10-20",
+        "count": 2
+      },
+      {
+        "date": "2025-10-21",
+        "count": 68
+      },
+      {
+        "date": "2025-10-22",
+        "count": 131
+      },
+      {
+        "date": "2025-10-23",
+        "count": 32
+      },
+      {
+        "date": "2025-10-24",
+        "count": 108
+      },
+      {
+        "date": "2025-10-26",
+        "count": 78
+      },
+      {
+        "date": "2025-10-27",
+        "count": 41
+      },
+      {
+        "date": "2025-10-28",
+        "count": 27
+      },
+      {
+        "date": "2025-10-29",
+        "count": 38
+      },
+      {
+        "date": "2025-10-30",
+        "count": 75
+      },
+      {
+        "date": "2025-10-31",
+        "count": 55
+      },
+      {
+        "date": "2025-11-02",
+        "count": 59
+      },
+      {
+        "date": "2025-11-03",
+        "count": 60
+      },
+      {
+        "date": "2025-11-04",
+        "count": 156
+      },
+      {
+        "date": "2025-11-05",
         "count": 132
       },
       {
+        "date": "2025-11-06",
+        "count": 94
+      },
+      {
+        "date": "2025-11-07",
+        "count": 43
+      },
+      {
+        "date": "2025-11-09",
+        "count": 130
+      },
+      {
         "date": "2025-11-10",
-        "count": 126
+        "count": 66
       },
       {
         "date": "2025-11-11",
-        "count": 84
+        "count": 62
       },
       {
         "date": "2025-11-12",
-        "count": 22
+        "count": 4
       },
       {
         "date": "2025-11-13",
-        "count": 197
+        "count": 108
       },
       {
         "date": "2025-11-14",
         "count": 80
       },
       {
-        "date": "2025-11-16",
-        "count": 17
-      },
-      {
         "date": "2025-11-17",
-        "count": 203
+        "count": 124
       },
       {
         "date": "2025-11-18",
-        "count": 117
+        "count": 56
       },
       {
         "date": "2025-11-19",
-        "count": 39
+        "count": 20
       },
       {
         "date": "2025-11-20",
-        "count": 86
-      },
-      {
-        "date": "2025-11-21",
-        "count": 90
+        "count": 61
       },
       {
         "date": "2025-11-23",
-        "count": 57
+        "count": 8
       },
       {
         "date": "2025-11-24",
@@ -203,35 +187,31 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-25",
-        "count": 66
+        "count": 25
       },
       {
         "date": "2025-11-26",
-        "count": 71
+        "count": 38
       },
       {
         "date": "2025-11-28",
-        "count": 66
+        "count": 2
       },
       {
         "date": "2025-11-29",
-        "count": 209
+        "count": 133
       },
       {
         "date": "2025-11-30",
-        "count": 98
+        "count": 11
       },
       {
         "date": "2025-12-01",
         "count": 80
       },
       {
-        "date": "2025-12-02",
-        "count": 46
-      },
-      {
         "date": "2025-12-03",
-        "count": 82
+        "count": 80
       },
       {
         "date": "2025-12-04",
@@ -239,7 +219,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-05",
-        "count": 64
+        "count": 57
       },
       {
         "date": "2025-12-07",
@@ -251,23 +231,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-09",
-        "count": 114
+        "count": 2
       },
       {
         "date": "2025-12-10",
         "count": 103
       },
       {
-        "date": "2025-12-12",
-        "count": 22
-      },
-      {
         "date": "2025-12-13",
         "count": 135
-      },
-      {
-        "date": "2025-12-14",
-        "count": 100
       },
       {
         "date": "2025-12-15",
@@ -275,11 +247,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-12-16",
-        "count": 81
-      },
-      {
-        "date": "2025-12-17",
-        "count": 97
+        "count": 2
       },
       {
         "date": "2025-12-19",
@@ -306,32 +274,16 @@ window.NOTION_DATA = {
         "count": 188
       },
       {
-        "date": "2025-12-29",
-        "count": 101
-      },
-      {
         "date": "2025-12-30",
         "count": 9
       },
       {
         "date": "2025-12-31",
-        "count": 85
-      },
-      {
-        "date": "2026-01-02",
-        "count": 108
-      },
-      {
-        "date": "2026-01-04",
-        "count": 81
+        "count": 66
       },
       {
         "date": "2026-01-05",
         "count": 54
-      },
-      {
-        "date": "2026-01-06",
-        "count": 73
       },
       {
         "date": "2026-01-07",
@@ -343,7 +295,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-10",
-        "count": 93
+        "count": 91
       },
       {
         "date": "2026-01-11",
@@ -371,7 +323,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-19",
-        "count": 116
+        "count": 18
       },
       {
         "date": "2026-01-20",
@@ -415,7 +367,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-01",
-        "count": 42
+        "count": 2
       },
       {
         "date": "2026-02-02",
@@ -447,59 +399,59 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-10",
-        "count": 131
+        "count": 64
       },
       {
         "date": "2026-02-11",
-        "count": 90
+        "count": 64
       },
       {
         "date": "2026-02-12",
-        "count": 60
+        "count": 42
       },
       {
         "date": "2026-02-14",
-        "count": 100
+        "count": 93
       },
       {
         "date": "2026-02-15",
-        "count": 69
+        "count": 59
       },
       {
         "date": "2026-02-16",
-        "count": 106
+        "count": 104
       },
       {
         "date": "2026-02-17",
-        "count": 160
+        "count": 133
       },
       {
         "date": "2026-02-19",
-        "count": 124
+        "count": 107
       },
       {
         "date": "2026-02-20",
-        "count": 125
+        "count": 111
       },
       {
         "date": "2026-02-21",
-        "count": 41
+        "count": 38
       },
       {
         "date": "2026-02-22",
-        "count": 47
+        "count": 36
       },
       {
         "date": "2026-02-23",
-        "count": 70
+        "count": 63
       },
       {
         "date": "2026-02-24",
-        "count": 102
+        "count": 93
       },
       {
         "date": "2026-02-25",
-        "count": 149
+        "count": 140
       },
       {
         "date": "2026-02-26",
@@ -507,23 +459,23 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-27",
-        "count": 87
+        "count": 76
       },
       {
         "date": "2026-02-28",
-        "count": 58
+        "count": 57
       },
       {
         "date": "2026-03-02",
-        "count": 62
+        "count": 57
       },
       {
         "date": "2026-03-03",
-        "count": 80
+        "count": 19
       },
       {
         "date": "2026-03-04",
-        "count": 80
+        "count": 40
       },
       {
         "date": "2026-03-05",
@@ -531,15 +483,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-06",
-        "count": 153
+        "count": 123
       },
       {
         "date": "2026-03-07",
-        "count": 181
+        "count": 158
       },
       {
         "date": "2026-03-09",
-        "count": 164
+        "count": 149
       },
       {
         "date": "2026-03-10",
@@ -555,15 +507,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-13",
-        "count": 84
+        "count": 42
       },
       {
         "date": "2026-03-15",
-        "count": 205
+        "count": 185
       },
       {
         "date": "2026-03-16",
-        "count": 183
+        "count": 171
       },
       {
         "date": "2026-03-17",
@@ -571,19 +523,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-18",
-        "count": 187
+        "count": 175
       },
       {
         "date": "2026-03-19",
-        "count": 150
-      },
-      {
-        "date": "2026-03-20",
         "count": 145
       },
       {
+        "date": "2026-03-20",
+        "count": 142
+      },
+      {
         "date": "2026-03-21",
-        "count": 151
+        "count": 145
       },
       {
         "date": "2026-03-22",
@@ -591,11 +543,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-23",
-        "count": 93
+        "count": 90
       },
       {
         "date": "2026-03-24",
-        "count": 91
+        "count": 82
       },
       {
         "date": "2026-03-25",
@@ -615,19 +567,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-29",
-        "count": 212
+        "count": 186
       },
       {
         "date": "2026-03-30",
-        "count": 94
+        "count": 86
       },
       {
         "date": "2026-03-31",
-        "count": 103
+        "count": 98
       },
       {
         "date": "2026-04-01",
-        "count": 96
+        "count": 91
       },
       {
         "date": "2026-04-02",
@@ -635,11 +587,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-03",
-        "count": 204
+        "count": 192
       },
       {
         "date": "2026-04-04",
-        "count": 172
+        "count": 166
       },
       {
         "date": "2026-04-05",
@@ -651,23 +603,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-07",
-        "count": 152
+        "count": 91
       },
       {
         "date": "2026-04-08",
-        "count": 171
+        "count": 41
       },
       {
         "date": "2026-04-09",
-        "count": 53
+        "count": 51
       },
       {
         "date": "2026-04-10",
         "count": 39
-      },
-      {
-        "date": "2026-04-11",
-        "count": 72
       },
       {
         "date": "2026-04-13",
@@ -675,7 +623,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-14",
-        "count": 190
+        "count": 37
       },
       {
         "date": "2026-04-15",
@@ -707,7 +655,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-04-24",
-        "count": 123
+        "count": 121
       },
       {
         "date": "2026-04-25",
@@ -747,11 +695,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-04",
-        "count": 204
+        "count": 202
       },
       {
         "date": "2026-05-05",
-        "count": 103
+        "count": 102
       },
       {
         "date": "2026-05-06",
@@ -771,7 +719,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-11",
-        "count": 107
+        "count": 106
       },
       {
         "date": "2026-05-13",
@@ -811,11 +759,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-22",
-        "count": 113
+        "count": 112
       },
       {
         "date": "2026-05-23",
-        "count": 129
+        "count": 128
       },
       {
         "date": "2026-05-25",
@@ -863,7 +811,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-07",
-        "count": 56
+        "count": 45
       },
       {
         "date": "2026-06-08",
@@ -923,11 +871,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-24",
-        "count": 111
+        "count": 73
       },
       {
         "date": "2026-06-25",
-        "count": 132
+        "count": 109
       },
       {
         "date": "2026-06-26",
@@ -947,11 +895,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-02",
-        "count": 143
+        "count": 119
       },
       {
         "date": "2026-07-03",
-        "count": 80
+        "count": 64
       },
       {
         "date": "2026-07-04",
@@ -959,15 +907,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-05",
-        "count": 170
+        "count": 142
       },
       {
         "date": "2026-07-06",
-        "count": 119
+        "count": 113
       },
       {
         "date": "2026-07-07",
-        "count": 113
+        "count": 91
       },
       {
         "date": "2026-07-08",
@@ -975,7 +923,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-09",
-        "count": 166
+        "count": 143
       },
       {
         "date": "2026-07-13",
@@ -983,47 +931,43 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-14",
-        "count": 63
+        "count": 37
       },
       {
         "date": "2026-07-15",
-        "count": 61
+        "count": 54
       },
       {
         "date": "2026-07-16",
-        "count": 111
+        "count": 107
       },
       {
         "date": "2026-07-17",
-        "count": 64
+        "count": 59
       },
       {
         "date": "2026-07-18",
-        "count": 75
-      },
-      {
-        "date": "2026-07-20",
-        "count": 8
+        "count": 39
       },
       {
         "date": "2026-07-21",
-        "count": 100
+        "count": 92
       },
       {
         "date": "2026-07-22",
-        "count": 106
+        "count": 40
       },
       {
         "date": "2026-07-23",
-        "count": 117
+        "count": 49
       },
       {
         "date": "2026-07-24",
-        "count": 86
+        "count": 42
       },
       {
         "date": "2026-07-25",
-        "count": 85
+        "count": 39
       },
       {
         "date": "2026-07-26",
@@ -1031,15 +975,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-27",
-        "count": 112
+        "count": 34
       },
       {
         "date": "2026-07-28",
-        "count": 101
+        "count": 96
       },
       {
         "date": "2026-07-29",
-        "count": 112
+        "count": 39
       },
       {
         "date": "2026-07-31",
@@ -1047,27 +991,27 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-01",
-        "count": 105
+        "count": 29
       },
       {
         "date": "2026-08-02",
-        "count": 105
+        "count": 90
       },
       {
         "date": "2026-08-03",
-        "count": 135
+        "count": 109
       },
       {
         "date": "2026-08-04",
-        "count": 103
+        "count": 98
       },
       {
         "date": "2026-08-05",
-        "count": 103
+        "count": 51
       },
       {
         "date": "2026-08-07",
-        "count": 112
+        "count": 33
       },
       {
         "date": "2026-08-08",
@@ -1079,11 +1023,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-10",
-        "count": 208
+        "count": 131
       },
       {
         "date": "2026-08-11",
-        "count": 112
+        "count": 80
       },
       {
         "date": "2026-08-12",
@@ -1091,27 +1035,27 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-13",
-        "count": 129
+        "count": 72
       },
       {
         "date": "2026-08-14",
-        "count": 111
+        "count": 87
       },
       {
         "date": "2026-08-17",
-        "count": 108
+        "count": 78
       },
       {
         "date": "2026-08-18",
-        "count": 73
+        "count": 21
       },
       {
         "date": "2026-08-19",
-        "count": 27
+        "count": 23
       },
       {
         "date": "2026-08-20",
-        "count": 104
+        "count": 41
       },
       {
         "date": "2026-08-21",
@@ -1119,19 +1063,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-22",
-        "count": 65
+        "count": 64
       },
       {
         "date": "2026-08-23",
         "count": 66
       },
       {
-        "date": "2026-08-24",
-        "count": 73
-      },
-      {
         "date": "2026-08-25",
-        "count": 122
+        "count": 38
       }
     ],
     "stand": "2026-08-26"
@@ -1371,7 +1311,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "26.08.2026 16:55",
+    "stand": "26.08.2026 17:31",
     "slots": [
       {
         "tag": "Mo",
