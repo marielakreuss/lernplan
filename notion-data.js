@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.08.2026 14:04",
+  "lastSync": "27.08.2026 14:28",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4212,
@@ -1141,7 +1141,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-27"
   },
   "ankiFach": {
-    "stand": "27.08.2026 14:04",
+    "stand": "27.08.2026 14:28",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1152,8 +1152,8 @@ window.NOTION_DATA = {
         "faellig": 1274
       },
       "Öffentliches Recht": {
-        "total": 758,
-        "neu": 30,
+        "total": 762,
+        "neu": 34,
         "lernen": 391,
         "aufbau": 84,
         "sitzt": 253,
@@ -1170,7 +1170,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "27.08.2026 14:04",
+    "stand": "27.08.2026 14:28",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1309,7 +1309,7 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 254,
+        "total": 255,
         "faellig": 32,
         "u30": 20,
         "u90": 0,
@@ -1327,7 +1327,7 @@ window.NOTION_DATA = {
       },
       "BauR": {
         "fach": "Öffentliches Recht",
-        "total": 82,
+        "total": 85,
         "faellig": 1,
         "u30": 0,
         "u90": 0,
@@ -1375,7 +1375,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "27.08.2026 14:04",
+    "stand": "27.08.2026 14:28",
     "slots": [
       {
         "tag": "Mo",
@@ -1435,7 +1435,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 48,
-    "nachbereitet": 120
+    "nachbereitet": 121
   },
   "cases": [
     {
@@ -4634,7 +4634,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "BauR Fall 5",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-26",
       "rechtsgebiet": [
@@ -5702,7 +5702,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 120,
+    "nachbereitet": 121,
     "inBearbeitung": 27,
     "total": 303,
     "klkGesamt": 48,
