@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.08.2026 15:11",
+  "lastSync": "27.08.2026 17:22",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4212,
@@ -1375,7 +1375,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "27.08.2026 15:11",
+    "stand": "27.08.2026 17:22",
     "slots": [
       {
         "tag": "Mo",
@@ -4620,7 +4620,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "BauR Fall 6",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 48,
       "datum": "2026-08-27",
       "rechtsgebiet": [
@@ -5703,7 +5703,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 121,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 303,
     "klkGesamt": 48,
     "klkAbgegeben": 21
