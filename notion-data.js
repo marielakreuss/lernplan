@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.08.2026 22:34",
+  "lastSync": "27.08.2026 03:36",
   "anki": {
-    "reviewedToday": 112,
-    "dueNow": 4128,
+    "reviewedToday": 133,
+    "dueNow": 4114,
     "history": [
       {
         "date": "2025-09-29",
@@ -1135,13 +1135,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-26",
-        "count": 112
+        "count": 133
       }
     ],
-    "stand": "2026-08-26"
+    "stand": "2026-08-27"
   },
   "ankiFach": {
-    "stand": "26.08.2026 22:29",
+    "stand": "27.08.2026 03:36",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1153,11 +1153,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 744,
-        "neu": 19,
-        "lernen": 388,
+        "neu": 16,
+        "lernen": 391,
         "aufbau": 84,
         "sitzt": 253,
-        "faellig": 486
+        "faellig": 472
       },
       "Strafrecht": {
         "total": 651,
@@ -1170,7 +1170,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "26.08.2026 22:29",
+    "stand": "27.08.2026 03:36",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1313,7 +1313,7 @@ window.NOTION_DATA = {
         "faellig": 26,
         "u30": 20,
         "u90": 0,
-        "rated30": 195,
+        "rated30": 198,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1331,7 +1331,7 @@ window.NOTION_DATA = {
         "faellig": 0,
         "u30": 0,
         "u90": 0,
-        "rated30": 66,
+        "rated30": 69,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1375,7 +1375,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "26.08.2026 22:29",
+    "stand": "27.08.2026 03:36",
     "slots": [
       {
         "tag": "Mo",
