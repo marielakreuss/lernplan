@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.08.2026 10:31",
+  "lastSync": "28.08.2026 10:53",
   "anki": {
-    "reviewedToday": 1,
-    "dueNow": 4257,
+    "reviewedToday": 30,
+    "dueNow": 4245,
     "history": [
       {
         "date": "2025-09-29",
@@ -1143,13 +1143,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-28",
-        "count": 16
+        "count": 45
       }
     ],
     "stand": "2026-08-28"
   },
   "ankiFach": {
-    "stand": "28.08.2026 10:31",
+    "stand": "28.08.2026 10:52",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1161,11 +1161,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 768,
-        "neu": 21,
-        "lernen": 410,
+        "neu": 20,
+        "lernen": 411,
         "aufbau": 82,
         "sitzt": 255,
-        "faellig": 554
+        "faellig": 541
       },
       "Strafrecht": {
         "total": 651,
@@ -1178,7 +1178,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "28.08.2026 10:31",
+    "stand": "28.08.2026 10:52",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1321,7 +1321,7 @@ window.NOTION_DATA = {
         "faellig": 26,
         "u30": 20,
         "u90": 0,
-        "rated30": 203,
+        "rated30": 204,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1339,7 +1339,7 @@ window.NOTION_DATA = {
         "faellig": 0,
         "u30": 0,
         "u90": 0,
-        "rated30": 86,
+        "rated30": 87,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1383,7 +1383,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "28.08.2026 10:31",
+    "stand": "28.08.2026 10:52",
     "slots": [
       {
         "tag": "Mo",
