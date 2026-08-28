@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.08.2026 17:01",
+  "lastSync": "28.08.2026 17:23",
   "anki": {
     "reviewedToday": 32,
     "dueNow": 4244,
@@ -1149,7 +1149,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-28"
   },
   "ankiFach": {
-    "stand": "28.08.2026 17:01",
+    "stand": "28.08.2026 17:23",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1178,7 +1178,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "28.08.2026 17:01",
+    "stand": "28.08.2026 17:23",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1383,7 +1383,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "28.08.2026 17:01",
+    "stand": "28.08.2026 17:23",
     "slots": [
       {
         "tag": "Mo",
@@ -1443,7 +1443,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 48,
-    "nachbereitet": 122
+    "nachbereitet": 123
   },
   "cases": [
     {
@@ -4614,7 +4614,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "BauR Fall 7",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-27",
       "rechtsgebiet": [
@@ -5710,8 +5710,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 122,
-    "inBearbeitung": 28,
+    "nachbereitet": 123,
+    "inBearbeitung": 27,
     "total": 303,
     "klkGesamt": 48,
     "klkAbgegeben": 21
