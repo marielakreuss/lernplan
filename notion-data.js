@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "29.08.2026 16:02",
+  "lastSync": "29.08.2026 19:14",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4294,
@@ -1446,6 +1446,21 @@ window.NOTION_DATA = {
     "nachbereitet": 124
   },
   "cases": [
+    {
+      "title": "KW 2 - abgegeben am 29.8.26",
+      "status": "Nicht nachbereitet",
+      "woche": 48,
+      "datum": "2026-08-29",
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "KommunalR"
+      ],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/KW-2-abgegeben-am-29-8-26-3cb539e733aa80a9a7fcd372a34efbbc"
+    },
     {
       "title": "KW 1 - gegliedert + Besprechung am 20.8.",
       "status": "Nicht nachbereitet",
@@ -5712,8 +5727,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 124,
     "inBearbeitung": 27,
-    "total": 303,
-    "klkGesamt": 48,
-    "klkAbgegeben": 21
+    "total": 304,
+    "klkGesamt": 49,
+    "klkAbgegeben": 22
   }
 };
