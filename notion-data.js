@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "29.08.2026 02:34",
+  "lastSync": "29.08.2026 09:52",
   "anki": {
-    "reviewedToday": 81,
-    "dueNow": 4223,
+    "reviewedToday": 0,
+    "dueNow": 4294,
     "history": [
       {
         "date": "2025-09-29",
@@ -1146,10 +1146,10 @@ window.NOTION_DATA = {
         "count": 96
       }
     ],
-    "stand": "2026-08-28"
+    "stand": "2026-08-29"
   },
   "ankiFach": {
-    "stand": "28.08.2026 23:47",
+    "stand": "29.08.2026 08:08",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1157,15 +1157,15 @@ window.NOTION_DATA = {
         "lernen": 569,
         "aufbau": 171,
         "sitzt": 1075,
-        "faellig": 1311
+        "faellig": 1322
       },
       "Öffentliches Recht": {
-        "total": 797,
-        "neu": 47,
+        "total": 798,
+        "neu": 48,
         "lernen": 413,
         "aufbau": 82,
         "sitzt": 255,
-        "faellig": 520
+        "faellig": 580
       },
       "Strafrecht": {
         "total": 651,
@@ -1178,22 +1178,22 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "28.08.2026 23:47",
+    "stand": "29.08.2026 08:08",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
         "total": 302,
-        "faellig": 174,
-        "u30": 126,
-        "u90": 1,
+        "faellig": 175,
+        "u30": 127,
+        "u90": 2,
         "rated30": 73,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
         "fach": "Zivilrecht",
         "total": 223,
-        "faellig": 49,
-        "u30": 18,
+        "faellig": 53,
+        "u30": 19,
         "u90": 0,
         "rated30": 128,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
@@ -1201,8 +1201,8 @@ window.NOTION_DATA = {
       "SchuldR BT": {
         "fach": "Zivilrecht",
         "total": 307,
-        "faellig": 115,
-        "u30": 39,
+        "faellig": 119,
+        "u30": 41,
         "u90": 0,
         "rated30": 175,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
@@ -1210,8 +1210,8 @@ window.NOTION_DATA = {
       "SachenR": {
         "fach": "Zivilrecht",
         "total": 320,
-        "faellig": 269,
-        "u30": 265,
+        "faellig": 271,
+        "u30": 266,
         "u90": 237,
         "rated30": 31,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
@@ -1275,7 +1275,7 @@ window.NOTION_DATA = {
         "total": 91,
         "faellig": 91,
         "u30": 91,
-        "u90": 9,
+        "u90": 29,
         "rated30": 0,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
@@ -1318,7 +1318,7 @@ window.NOTION_DATA = {
       "VerwR AT": {
         "fach": "Öffentliches Recht",
         "total": 260,
-        "faellig": 26,
+        "faellig": 50,
         "u30": 20,
         "u90": 0,
         "rated30": 184,
@@ -1335,8 +1335,8 @@ window.NOTION_DATA = {
       },
       "BauR": {
         "fach": "Öffentliches Recht",
-        "total": 108,
-        "faellig": 0,
+        "total": 109,
+        "faellig": 36,
         "u30": 0,
         "u90": 0,
         "rated30": 88,
@@ -1355,7 +1355,7 @@ window.NOTION_DATA = {
         "fach": "Strafrecht",
         "total": 174,
         "faellig": 164,
-        "u30": 155,
+        "u30": 156,
         "u90": 52,
         "rated30": 0,
         "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR AT\") -is:suspended is:due -deck:filtered"
@@ -1373,7 +1373,7 @@ window.NOTION_DATA = {
         "fach": "Strafrecht",
         "total": 114,
         "faellig": 114,
-        "u30": 111,
+        "u30": 112,
         "u90": 0,
         "rated30": 0,
         "suche": "(deck:\"STEX 🥳::Strafrecht::StPO\") -is:suspended is:due -deck:filtered"
@@ -1383,14 +1383,14 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "28.08.2026 23:47",
+    "stand": "29.08.2026 08:08",
     "slots": [
       {
         "tag": "Mo",
         "wtag": 1,
         "fach": "Zivilrecht",
         "gebiet": "SachenR",
-        "faellig": 269,
+        "faellig": 271,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
       },
