@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "30.08.2026 15:51",
+  "lastSync": "30.08.2026 18:04",
   "anki": {
-    "reviewedToday": 83,
-    "dueNow": 4281,
+    "reviewedToday": 102,
+    "dueNow": 4269,
     "history": [
       {
         "date": "2025-09-29",
@@ -1147,13 +1147,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-30",
-        "count": 83
+        "count": 102
       }
     ],
     "stand": "2026-08-30"
   },
   "ankiFach": {
-    "stand": "30.08.2026 17:43",
+    "stand": "30.08.2026 18:04",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1161,15 +1161,15 @@ window.NOTION_DATA = {
         "lernen": 569,
         "aufbau": 171,
         "sitzt": 1075,
-        "faellig": 1330
+        "faellig": 1329
       },
       "Öffentliches Recht": {
-        "total": 798,
-        "neu": 41,
-        "lernen": 418,
+        "total": 797,
+        "neu": 37,
+        "lernen": 422,
         "aufbau": 82,
-        "sitzt": 257,
-        "faellig": 559
+        "sitzt": 256,
+        "faellig": 547
       },
       "Strafrecht": {
         "total": 651,
@@ -1182,7 +1182,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "30.08.2026 17:43",
+    "stand": "30.08.2026 18:04",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1321,11 +1321,11 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 313,
+        "total": 312,
         "faellig": 26,
         "u30": 21,
         "u90": 1,
-        "rated30": 231,
+        "rated30": 234,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1343,7 +1343,7 @@ window.NOTION_DATA = {
         "faellig": 0,
         "u30": 0,
         "u90": 0,
-        "rated30": 92,
+        "rated30": 94,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1387,7 +1387,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "30.08.2026 17:43",
+    "stand": "30.08.2026 18:04",
     "slots": [
       {
         "tag": "Mo",
