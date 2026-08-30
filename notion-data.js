@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "30.08.2026 16:18",
+  "lastSync": "30.08.2026 17:00",
   "anki": {
-    "reviewedToday": 69,
-    "dueNow": 4289,
+    "reviewedToday": 73,
+    "dueNow": 4288,
     "history": [
       {
         "date": "2025-09-29",
@@ -1147,13 +1147,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-30",
-        "count": 69
+        "count": 73
       }
     ],
     "stand": "2026-08-30"
   },
   "ankiFach": {
-    "stand": "30.08.2026 16:18",
+    "stand": "30.08.2026 17:00",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1165,11 +1165,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 798,
-        "neu": 43,
-        "lernen": 416,
+        "neu": 42,
+        "lernen": 417,
         "aufbau": 82,
         "sitzt": 257,
-        "faellig": 567
+        "faellig": 566
       },
       "Strafrecht": {
         "total": 651,
@@ -1182,7 +1182,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "30.08.2026 16:18",
+    "stand": "30.08.2026 17:00",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1325,7 +1325,7 @@ window.NOTION_DATA = {
         "faellig": 26,
         "u30": 21,
         "u90": 1,
-        "rated30": 229,
+        "rated30": 230,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1387,7 +1387,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "30.08.2026 16:18",
+    "stand": "30.08.2026 17:00",
     "slots": [
       {
         "tag": "Mo",
