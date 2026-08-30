@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "30.08.2026 15:35",
+  "lastSync": "30.08.2026 15:57",
   "anki": {
-    "reviewedToday": 38,
-    "dueNow": 4305,
+    "reviewedToday": 55,
+    "dueNow": 4298,
     "history": [
       {
         "date": "2025-09-29",
@@ -1147,13 +1147,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-08-30",
-        "count": 38
+        "count": 55
       }
     ],
     "stand": "2026-08-30"
   },
   "ankiFach": {
-    "stand": "30.08.2026 15:35",
+    "stand": "30.08.2026 15:56",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1165,11 +1165,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 798,
-        "neu": 46,
-        "lernen": 413,
-        "aufbau": 83,
-        "sitzt": 256,
-        "faellig": 583
+        "neu": 44,
+        "lernen": 415,
+        "aufbau": 82,
+        "sitzt": 257,
+        "faellig": 575
       },
       "Strafrecht": {
         "total": 651,
@@ -1182,7 +1182,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "30.08.2026 15:35",
+    "stand": "30.08.2026 15:56",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1321,11 +1321,11 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 314,
+        "total": 313,
         "faellig": 26,
         "u30": 21,
         "u90": 1,
-        "rated30": 227,
+        "rated30": 228,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
@@ -1343,7 +1343,7 @@ window.NOTION_DATA = {
         "faellig": 0,
         "u30": 0,
         "u90": 0,
-        "rated30": 90,
+        "rated30": 91,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1387,7 +1387,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "30.08.2026 15:35",
+    "stand": "30.08.2026 15:56",
     "slots": [
       {
         "tag": "Mo",
