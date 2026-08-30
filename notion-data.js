@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "30.08.2026 19:03",
+  "lastSync": "30.08.2026 22:07",
   "anki": {
     "reviewedToday": 110,
     "dueNow": 4263,
@@ -1153,7 +1153,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-30"
   },
   "ankiFach": {
-    "stand": "30.08.2026 18:25",
+    "stand": "30.08.2026 22:06",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1182,7 +1182,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "30.08.2026 18:25",
+    "stand": "30.08.2026 22:07",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1387,7 +1387,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 48,
     "limit": 25,
-    "stand": "30.08.2026 18:25",
+    "stand": "30.08.2026 22:07",
     "slots": [
       {
         "tag": "Mo",
