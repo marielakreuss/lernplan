@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "31.08.2026 12:17",
+  "lastSync": "31.08.2026 15:25",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4328,
@@ -1153,7 +1153,7 @@ window.NOTION_DATA = {
     "stand": "2026-08-31"
   },
   "ankiFach": {
-    "stand": "31.08.2026 04:46",
+    "stand": "31.08.2026 15:25",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1182,7 +1182,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "31.08.2026 04:46",
+    "stand": "31.08.2026 15:25",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1387,7 +1387,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "31.08.2026 04:46",
+    "stand": "31.08.2026 15:25",
     "slots": [
       {
         "tag": "Mo",
@@ -3694,10 +3694,10 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/Fall-15-2ed539e733aa80b2aec8d0ba3fe7279e"
     },
     {
-      "title": "Fall 10 (sehr wichtig)",
+      "title": "ArbR Fall 10 (sehr wichtig)",
       "status": "Nicht nachbereitet",
-      "woche": 35,
-      "datum": "2026-05-29",
+      "woche": 50,
+      "datum": "2026-09-08",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3705,13 +3705,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-sehr-wichtig-2ed539e733aa801e841bcc41c11c61b0"
+      "url": "https://app.notion.com/p/ArbR-Fall-10-sehr-wichtig-2ed539e733aa801e841bcc41c11c61b0"
     },
     {
-      "title": "Fall 9 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
+      "title": "ArbR Fall 9 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 50,
+      "datum": "2026-09-07",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3719,13 +3719,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa800b9dfff17f16c6d888"
+      "url": "https://app.notion.com/p/ArbR-Fall-9-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa800b9dfff17f16c6d888"
     },
     {
-      "title": "Fall 8 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
+      "title": "ArbR Fall 8 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 49,
+      "datum": "2026-09-04",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3733,13 +3733,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa807b90afd4f8133fdc62"
+      "url": "https://app.notion.com/p/ArbR-Fall-8-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa807b90afd4f8133fdc62"
     },
     {
-      "title": "Fall 7 (sehr wichtig)",
+      "title": "ArbR Fall 7 (sehr wichtig)",
       "status": "Nicht nachbereitet",
-      "woche": 35,
-      "datum": "2026-05-28",
+      "woche": 49,
+      "datum": "2026-09-04",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3747,13 +3747,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-sehr-wichtig-2ed539e733aa80e8ad5ffb859154c98b"
+      "url": "https://app.notion.com/p/ArbR-Fall-7-sehr-wichtig-2ed539e733aa80e8ad5ffb859154c98b"
     },
     {
-      "title": "Fall 6",
+      "title": "ArbR Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": 35,
-      "datum": "2026-05-29",
+      "woche": 49,
+      "datum": "2026-09-04",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3761,13 +3761,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-2ed539e733aa80e9abfcdcf00244aac1"
+      "url": "https://app.notion.com/p/ArbR-Fall-6-2ed539e733aa80e9abfcdcf00244aac1"
     },
     {
-      "title": "Fall 5",
+      "title": "ArbR Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": 35,
-      "datum": "2026-05-27",
+      "woche": 49,
+      "datum": "2026-09-03",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3775,13 +3775,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2ed539e733aa80a7b7e4ff86baafdcbd"
+      "url": "https://app.notion.com/p/ArbR-Fall-5-2ed539e733aa80a7b7e4ff86baafdcbd"
     },
     {
-      "title": "Fall 4",
+      "title": "ArbR Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": 35,
-      "datum": "2026-05-27",
+      "woche": 49,
+      "datum": "2026-09-02",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3789,13 +3789,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2ed539e733aa80e99a0ec808e375e2d2"
+      "url": "https://app.notion.com/p/ArbR-Fall-4-2ed539e733aa80e99a0ec808e375e2d2"
     },
     {
-      "title": "Fall 3 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
+      "title": "ArbR Fall 3 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 49,
+      "datum": "2026-09-02",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3803,13 +3803,13 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa808286cafb5988900dc5"
+      "url": "https://app.notion.com/p/ArbR-Fall-3-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa808286cafb5988900dc5"
     },
     {
-      "title": "Fall 2a (Vertiefungsfall)",
+      "title": "ArbR Fall 2a (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 49,
+      "datum": "2026-09-02",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3817,10 +3817,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2a-Vertiefungsfall-2ed539e733aa80949c3ec6ffb2595d18"
+      "url": "https://app.notion.com/p/ArbR-Fall-2a-Vertiefungsfall-2ed539e733aa80949c3ec6ffb2595d18"
     },
     {
-      "title": "Fall 2 (sehr wichtig)",
+      "title": "ArbR Fall 2 (sehr wichtig)",
       "status": "Nachbereitet",
       "woche": 18,
       "datum": "2026-01-29",
@@ -3831,10 +3831,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-sehr-wichtig-2ed539e733aa8090ab65cbc94f0793bc"
+      "url": "https://app.notion.com/p/ArbR-Fall-2-sehr-wichtig-2ed539e733aa8090ab65cbc94f0793bc"
     },
     {
-      "title": "Fall 1 (sehr wichtig)",
+      "title": "ArbR Fall 1 (sehr wichtig)",
       "status": "Nachbereitet",
       "woche": 35,
       "datum": "2026-05-26",
@@ -3845,7 +3845,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-sehr-wichtig-2ed539e733aa8091bb7cc686d1cd8365"
+      "url": "https://app.notion.com/p/ArbR-Fall-1-sehr-wichtig-2ed539e733aa8091bb7cc686d1cd8365"
     },
     {
       "title": "KLK 2133 - nicht abgegeben",
@@ -4592,8 +4592,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 10",
       "status": "Nicht nachbereitet",
-      "woche": 48,
-      "datum": "2026-08-28",
+      "woche": 49,
+      "datum": "2026-09-01",
       "rechtsgebiet": [
         "BauR"
       ],
@@ -4606,8 +4606,8 @@ window.NOTION_DATA = {
     {
       "title": "BauR Fall 9",
       "status": "Nicht nachbereitet",
-      "woche": 48,
-      "datum": "2026-08-28",
+      "woche": 49,
+      "datum": "2026-08-31",
       "rechtsgebiet": [
         "BauR"
       ],
