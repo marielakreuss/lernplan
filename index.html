@@ -4074,10 +4074,10 @@
      n:9,  g:[['BauR',9]]},
     {mo:'2026-08-31', ph:'Arbeitsrecht-Block',r:'normal',
      kw:{d:'2026-09-03',f:'Öffentliches Recht',t:'Kein Badespaß am Schlundsee'},
-     n:9,  g:[['BauR',1],['ArbeitsR',8]]},
+     n:9,  g:[['BauR',2],['ArbeitsR',7]], doVorzug:false},
     {mo:'2026-09-07', ph:'Probeexamen',       r:'probe1',
      kw:null, kwAus:'Kein Termin am 10.9.',
-     n:2,  g:[['StrafR',2]]},
+     n:2,  g:[['ArbeitsR',2]]},
     {mo:'2026-09-14', ph:'Probeexamen',       r:'probe2',
      kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
      n:2,  g:[['StrafR',2]]},
@@ -4137,7 +4137,7 @@
      n:9,  g:[['ErbR',5],['VerfassungsR',3],['Reserve',1]]},
     {mo:'2027-01-25', ph:'Januar',            r:'normal',
      kw:{d:'2027-01-28',f:'Öffentliches Recht',t:'Tankt in Österreich'},
-     n:9,  g:[['FamilienR',2],['ArbeitsR',1],['VerfassungsR',3],['Reserve',3]]}
+     n:9,  g:[['FamilienR',2],['StrafR',2],['VerfassungsR',3],['Reserve',2]]}
   ];
 
   const ZIEL = 142;   // offene + in Bearbeitung befindliche Hauptkurs-Fälle
@@ -4171,10 +4171,12 @@
     const zuteilung = {};
     slots.forEach(s => { zuteilung[s.tag + '#' + s.i] = null; });
 
-    // Donnerstag zuerst bedienen
+    // Donnerstag zuerst bedienen. doVorzug:false schaltet das für eine
+    // Woche ab, wenn die Reihenfolge der Gebiete wichtiger ist als der
+    // frische Stoff am Werkstatt-Abend.
     const kwFach = woche.kw ? FACH_KEY[woche.kw.f] : null;
     const doSlot = slots.find(s => s.tag === 'Do');
-    if (doSlot && kwFach) {
+    if (doSlot && kwFach && woche.doVorzug !== false) {
       const treffer = flach.findIndex(g => FACH_VON_GEBIET[g] === kwFach);
       if (treffer >= 0) zuteilung[doSlot.tag + '#' + doSlot.i] = flach.splice(treffer, 1)[0];
     }
