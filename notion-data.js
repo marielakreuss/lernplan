@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "01.09.2026 18:29",
+  "lastSync": "01.09.2026 19:13",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4344,
@@ -1447,7 +1447,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 49,
-    "nachbereitet": 125
+    "nachbereitet": 126
   },
   "cases": [
     {
@@ -4591,7 +4591,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "BauR Fall 10",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-01",
       "rechtsgebiet": [
@@ -5729,7 +5729,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 125,
+    "nachbereitet": 126,
     "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
