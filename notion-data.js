@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.09.2026 10:53",
+  "lastSync": "02.09.2026 11:15",
   "anki": {
-    "reviewedToday": 76,
-    "dueNow": 4327,
+    "reviewedToday": 128,
+    "dueNow": 4323,
     "history": [
       {
         "date": "2025-09-29",
@@ -1155,13 +1155,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-02",
-        "count": 76
+        "count": 128
       }
     ],
     "stand": "2026-09-02"
   },
   "ankiFach": {
-    "stand": "02.09.2026 10:53",
+    "stand": "02.09.2026 11:14",
     "faecher": {
       "Zivilrecht": {
         "total": 1815,
@@ -1173,8 +1173,8 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 851,
-        "neu": 69,
-        "lernen": 443,
+        "neu": 32,
+        "lernen": 480,
         "aufbau": 83,
         "sitzt": 256,
         "faellig": 569
@@ -1190,7 +1190,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "02.09.2026 10:53",
+    "stand": "02.09.2026 11:15",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1321,7 +1321,7 @@ window.NOTION_DATA = {
       "StaatshaftungsR": {
         "fach": "Öffentliches Recht",
         "total": 40,
-        "faellig": 39,
+        "faellig": 40,
         "u30": 38,
         "u90": 37,
         "rated30": 1,
@@ -1329,17 +1329,17 @@ window.NOTION_DATA = {
       },
       "VerwR AT": {
         "fach": "Öffentliches Recht",
-        "total": 359,
-        "faellig": 31,
-        "u30": 21,
-        "u90": 1,
-        "rated30": 262,
+        "total": 259,
+        "faellig": 63,
+        "u30": 20,
+        "u90": 0,
+        "rated30": 191,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
       },
       "KommunalR": {
         "fach": "Öffentliches Recht",
         "total": 63,
-        "faellig": 58,
+        "faellig": 59,
         "u30": 58,
         "u90": 58,
         "rated30": 6,
@@ -1348,10 +1348,10 @@ window.NOTION_DATA = {
       "BauR": {
         "fach": "Öffentliches Recht",
         "total": 162,
-        "faellig": 4,
+        "faellig": 46,
         "u30": 0,
         "u90": 0,
-        "rated30": 126,
+        "rated30": 155,
         "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
       },
       "PolizeiR": {
@@ -1395,7 +1395,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "02.09.2026 10:53",
+    "stand": "02.09.2026 11:15",
     "slots": [
       {
         "tag": "Mo",
