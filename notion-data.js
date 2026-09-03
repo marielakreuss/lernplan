@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.09.2026 15:33",
+  "lastSync": "03.09.2026 15:54",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4432,
@@ -1161,11 +1161,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-03"
   },
   "ankiFach": {
-    "stand": "03.09.2026 15:33",
+    "stand": "03.09.2026 15:54",
     "faecher": {
       "Zivilrecht": {
-        "total": 1857,
-        "neu": 42,
+        "total": 1858,
+        "neu": 43,
         "lernen": 569,
         "aufbau": 171,
         "sitzt": 1075,
@@ -1190,7 +1190,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "03.09.2026 15:33",
+    "stand": "03.09.2026 15:54",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1249,7 +1249,7 @@ window.NOTION_DATA = {
       "ZPO I": {
         "fach": "Zivilrecht",
         "total": 174,
-        "faellig": 167,
+        "faellig": 166,
         "u30": 145,
         "u90": 140,
         "rated30": 27,
@@ -1284,8 +1284,8 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 131,
-        "faellig": 1,
+        "total": 132,
+        "faellig": 2,
         "u30": 90,
         "u90": 89,
         "rated30": 1,
@@ -1395,7 +1395,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "03.09.2026 15:33",
+    "stand": "03.09.2026 15:54",
     "slots": [
       {
         "tag": "Mo",
@@ -1429,7 +1429,7 @@ window.NOTION_DATA = {
         "wtag": 4,
         "fach": "Zivilrecht",
         "gebiet": "ZPO I",
-        "faellig": 167,
+        "faellig": 166,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::6 ZPO I\") -is:suspended is:due -deck:filtered"
       },
