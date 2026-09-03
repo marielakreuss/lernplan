@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.09.2026 16:37",
+  "lastSync": "03.09.2026 16:58",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4432,
+    "reviewedToday": 5,
+    "dueNow": 4431,
     "history": [
       {
         "date": "2025-09-29",
@@ -1156,20 +1156,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-02",
         "count": 175
+      },
+      {
+        "date": "2026-09-03",
+        "count": 5
       }
     ],
     "stand": "2026-09-03"
   },
   "ankiFach": {
-    "stand": "03.09.2026 16:37",
+    "stand": "03.09.2026 16:58",
     "faecher": {
       "Zivilrecht": {
-        "total": 1862,
-        "neu": 47,
+        "total": 1865,
+        "neu": 50,
         "lernen": 569,
         "aufbau": 171,
         "sitzt": 1075,
-        "faellig": 1376
+        "faellig": 1375
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1190,7 +1194,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "03.09.2026 16:37",
+    "stand": "03.09.2026 16:58",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1284,11 +1288,11 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 136,
-        "faellig": 2,
-        "u30": 90,
-        "u90": 89,
-        "rated30": 1,
+        "total": 139,
+        "faellig": 1,
+        "u30": 86,
+        "u90": 85,
+        "rated30": 5,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1395,7 +1399,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "03.09.2026 16:37",
+    "stand": "03.09.2026 16:58",
     "slots": [
       {
         "tag": "Mo",
@@ -1455,7 +1459,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 49,
-    "nachbereitet": 127
+    "nachbereitet": 128
   },
   "cases": [
     {
@@ -3801,7 +3805,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 3 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-02",
       "rechtsgebiet": [
@@ -5737,8 +5741,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 127,
-    "inBearbeitung": 28,
+    "nachbereitet": 128,
+    "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
     "klkAbgegeben": 22
