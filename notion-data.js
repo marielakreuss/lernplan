@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.09.2026 15:36",
+  "lastSync": "03.09.2026 17:41",
   "anki": {
-    "reviewedToday": 10,
-    "dueNow": 4430,
+    "reviewedToday": 60,
+    "dueNow": 4421,
     "history": [
       {
         "date": "2025-09-29",
@@ -1159,21 +1159,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-03",
-        "count": 10
+        "count": 60
       }
     ],
     "stand": "2026-09-03"
   },
   "ankiFach": {
-    "stand": "03.09.2026 17:19",
+    "stand": "03.09.2026 17:41",
     "faecher": {
       "Zivilrecht": {
         "total": 1865,
-        "neu": 50,
-        "lernen": 569,
+        "neu": 36,
+        "lernen": 584,
         "aufbau": 171,
-        "sitzt": 1075,
-        "faellig": 1374
+        "sitzt": 1074,
+        "faellig": 1363
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1194,15 +1194,15 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "03.09.2026 17:19",
+    "stand": "03.09.2026 17:41",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
         "total": 304,
         "faellig": 188,
-        "u30": 132,
+        "u30": 131,
         "u90": 12,
-        "rated30": 60,
+        "rated30": 62,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
@@ -1290,9 +1290,9 @@ window.NOTION_DATA = {
         "fach": "Zivilrecht",
         "total": 139,
         "faellig": 1,
-        "u30": 82,
-        "u90": 81,
-        "rated30": 9,
+        "u30": 57,
+        "u90": 56,
+        "rated30": 47,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1399,7 +1399,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "03.09.2026 17:19",
+    "stand": "03.09.2026 17:41",
     "slots": [
       {
         "tag": "Mo",
