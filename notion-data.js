@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.09.2026 16:58",
+  "lastSync": "03.09.2026 17:19",
   "anki": {
-    "reviewedToday": 5,
-    "dueNow": 4431,
+    "reviewedToday": 10,
+    "dueNow": 4430,
     "history": [
       {
         "date": "2025-09-29",
@@ -1159,13 +1159,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-03",
-        "count": 5
+        "count": 10
       }
     ],
     "stand": "2026-09-03"
   },
   "ankiFach": {
-    "stand": "03.09.2026 16:58",
+    "stand": "03.09.2026 17:19",
     "faecher": {
       "Zivilrecht": {
         "total": 1865,
@@ -1173,7 +1173,7 @@ window.NOTION_DATA = {
         "lernen": 569,
         "aufbau": 171,
         "sitzt": 1075,
-        "faellig": 1375
+        "faellig": 1374
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1194,7 +1194,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "03.09.2026 16:58",
+    "stand": "03.09.2026 17:19",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1254,9 +1254,9 @@ window.NOTION_DATA = {
         "fach": "Zivilrecht",
         "total": 174,
         "faellig": 166,
-        "u30": 145,
+        "u30": 144,
         "u90": 140,
-        "rated30": 27,
+        "rated30": 28,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::6 ZPO I\") -is:suspended is:due -deck:filtered"
       },
       "ZPO II": {
@@ -1290,9 +1290,9 @@ window.NOTION_DATA = {
         "fach": "Zivilrecht",
         "total": 139,
         "faellig": 1,
-        "u30": 86,
-        "u90": 85,
-        "rated30": 5,
+        "u30": 82,
+        "u90": 81,
+        "rated30": 9,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1399,7 +1399,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "03.09.2026 16:58",
+    "stand": "03.09.2026 17:19",
     "slots": [
       {
         "tag": "Mo",
