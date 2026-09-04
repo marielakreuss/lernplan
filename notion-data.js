@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.09.2026 15:34",
+  "lastSync": "04.09.2026 18:08",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4486,
@@ -1165,11 +1165,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-04"
   },
   "ankiFach": {
-    "stand": "04.09.2026 17:13",
+    "stand": "04.09.2026 18:08",
     "faecher": {
       "Zivilrecht": {
-        "total": 1888,
-        "neu": 51,
+        "total": 1891,
+        "neu": 54,
         "lernen": 592,
         "aufbau": 171,
         "sitzt": 1074,
@@ -1194,7 +1194,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "04.09.2026 17:13",
+    "stand": "04.09.2026 18:08",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1288,7 +1288,7 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 161,
+        "total": 164,
         "faellig": 1,
         "u30": 43,
         "u90": 43,
@@ -1399,7 +1399,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "04.09.2026 17:13",
+    "stand": "04.09.2026 18:08",
     "slots": [
       {
         "tag": "Mo",
@@ -1459,7 +1459,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 49,
-    "nachbereitet": 129
+    "nachbereitet": 130
   },
   "cases": [
     {
@@ -3777,7 +3777,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 5",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-03",
       "rechtsgebiet": [
@@ -5741,7 +5741,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 129,
+    "nachbereitet": 130,
     "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
