@@ -1,4 +1,4 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
   "lastSync": "04.09.2026 18:50",
   "anki": {
@@ -3767,7 +3767,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 6",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 49,
       "datum": "2026-09-04",
       "rechtsgebiet": [
@@ -5746,7 +5746,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 130,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 304,
     "klkGesamt": 49,
     "klkAbgegeben": 22
