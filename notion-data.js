@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "05.09.2026 12:48",
+  "lastSync": "05.09.2026 13:30",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4567,
@@ -1169,11 +1169,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-05"
   },
   "ankiFach": {
-    "stand": "05.09.2026 12:48",
+    "stand": "05.09.2026 13:30",
     "faecher": {
       "Zivilrecht": {
-        "total": 1893,
-        "neu": 0,
+        "total": 1901,
+        "neu": 8,
         "lernen": 648,
         "aufbau": 171,
         "sitzt": 1074,
@@ -1198,7 +1198,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "05.09.2026 12:48",
+    "stand": "05.09.2026 13:30",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1292,7 +1292,7 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 166,
+        "total": 174,
         "faellig": 50,
         "u30": 43,
         "u90": 43,
@@ -1403,7 +1403,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "05.09.2026 12:48",
+    "stand": "05.09.2026 13:30",
     "slots": [
       {
         "tag": "Mo",
@@ -1463,7 +1463,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 49,
-    "nachbereitet": 130
+    "nachbereitet": 131
   },
   "cases": [
     {
@@ -3767,7 +3767,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 6",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-04",
       "rechtsgebiet": [
@@ -5745,8 +5745,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 130,
-    "inBearbeitung": 28,
+    "nachbereitet": 131,
+    "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
     "klkAbgegeben": 22
