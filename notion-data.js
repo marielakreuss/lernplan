@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "05.09.2026 15:16",
+  "lastSync": "05.09.2026 15:37",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4567,
@@ -1403,7 +1403,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "05.09.2026 15:16",
+    "stand": "05.09.2026 15:36",
     "slots": [
       {
         "tag": "Mo",
@@ -1463,7 +1463,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 49,
-    "nachbereitet": 131
+    "nachbereitet": 132
   },
   "cases": [
     {
@@ -3753,7 +3753,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 7 (sehr wichtig)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-04",
       "rechtsgebiet": [
@@ -5745,7 +5745,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 131,
+    "nachbereitet": 132,
     "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
