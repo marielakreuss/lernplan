@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "05.09.2026 21:26",
+  "lastSync": "05.09.2026 22:27",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4567,
+    "reviewedToday": 12,
+    "dueNow": 4562,
     "history": [
       {
         "date": "2025-09-29",
@@ -1164,20 +1164,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-04",
         "count": 110
+      },
+      {
+        "date": "2026-09-05",
+        "count": 12
       }
     ],
     "stand": "2026-09-05"
   },
   "ankiFach": {
-    "stand": "05.09.2026 15:16",
+    "stand": "05.09.2026 22:27",
     "faecher": {
       "Zivilrecht": {
-        "total": 1908,
-        "neu": 15,
+        "total": 1909,
+        "neu": 16,
         "lernen": 648,
         "aufbau": 171,
         "sitzt": 1074,
-        "faellig": 1474
+        "faellig": 1469
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1198,12 +1202,12 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "05.09.2026 15:16",
+    "stand": "05.09.2026 22:27",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
         "total": 304,
-        "faellig": 193,
+        "faellig": 192,
         "u30": 136,
         "u90": 15,
         "rated30": 63,
@@ -1230,7 +1234,7 @@ window.NOTION_DATA = {
       "SachenR": {
         "fach": "Zivilrecht",
         "total": 320,
-        "faellig": 272,
+        "faellig": 271,
         "u30": 268,
         "u90": 240,
         "rated30": 27,
@@ -1257,7 +1261,7 @@ window.NOTION_DATA = {
       "ZPO I": {
         "fach": "Zivilrecht",
         "total": 178,
-        "faellig": 167,
+        "faellig": 166,
         "u30": 144,
         "u90": 141,
         "rated30": 29,
@@ -1292,8 +1296,8 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 178,
-        "faellig": 50,
+        "total": 179,
+        "faellig": 1,
         "u30": 43,
         "u90": 43,
         "rated30": 123,
@@ -1403,14 +1407,14 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "05.09.2026 21:26",
+    "stand": "05.09.2026 22:27",
     "slots": [
       {
         "tag": "Mo",
         "wtag": 1,
         "fach": "Zivilrecht",
         "gebiet": "SachenR",
-        "faellig": 272,
+        "faellig": 271,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
       },
@@ -1437,7 +1441,7 @@ window.NOTION_DATA = {
         "wtag": 4,
         "fach": "Zivilrecht",
         "gebiet": "ZPO I",
-        "faellig": 167,
+        "faellig": 166,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::6 ZPO I\") -is:suspended is:due -deck:filtered"
       },
