@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.09.2026 14:00",
+  "lastSync": "06.09.2026 14:03",
   "anki": {
-    "reviewedToday": 28,
-    "dueNow": 4575,
+    "reviewedToday": 35,
+    "dueNow": 4571,
     "history": [
       {
         "date": "2025-09-29",
@@ -391,7 +391,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-25",
-        "count": 189
+        "count": 214
       },
       {
         "date": "2026-01-26",
@@ -403,7 +403,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-29",
-        "count": 31
+        "count": 86
       },
       {
         "date": "2026-01-30",
@@ -423,7 +423,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-03",
-        "count": 67
+        "count": 85
       },
       {
         "date": "2026-02-05",
@@ -819,23 +819,23 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-25",
-        "count": 11
+        "count": 84
       },
       {
         "date": "2026-05-26",
-        "count": 72
+        "count": 127
       },
       {
         "date": "2026-05-27",
-        "count": 2
+        "count": 75
       },
       {
         "date": "2026-05-28",
-        "count": 5
+        "count": 116
       },
       {
         "date": "2026-05-30",
-        "count": 13
+        "count": 44
       },
       {
         "date": "2026-05-31",
@@ -843,7 +843,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-06-01",
-        "count": 3
+        "count": 74
       },
       {
         "date": "2026-06-02",
@@ -1155,29 +1155,29 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-02",
-        "count": 174
+        "count": 175
       },
       {
         "date": "2026-09-03",
-        "count": 8
+        "count": 100
       },
       {
         "date": "2026-09-04",
-        "count": 6
+        "count": 110
       },
       {
         "date": "2026-09-05",
-        "count": 1
+        "count": 27
       },
       {
         "date": "2026-09-06",
-        "count": 32
+        "count": 68
       }
     ],
     "stand": "2026-09-06"
   },
   "ankiFach": {
-    "stand": "06.09.2026 14:00",
+    "stand": "06.09.2026 14:03",
     "faecher": {
       "Zivilrecht": {
         "total": 1909,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
         "lernen": 664,
         "aufbau": 171,
         "sitzt": 1074,
-        "faellig": 1478
+        "faellig": 1475
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1206,7 +1206,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "06.09.2026 14:00",
+    "stand": "06.09.2026 14:03",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1411,7 +1411,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "06.09.2026 14:00",
+    "stand": "06.09.2026 14:03",
     "slots": [
       {
         "tag": "Mo",
