@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.09.2026 09:59",
+  "lastSync": "06.09.2026 13:17",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4573,
+    "reviewedToday": 3,
+    "dueNow": 4574,
     "history": [
       {
         "date": "2025-09-29",
@@ -1171,21 +1171,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-06",
-        "count": 33
+        "count": 36
       }
     ],
     "stand": "2026-09-06"
   },
   "ankiFach": {
-    "stand": "06.09.2026 08:22",
+    "stand": "06.09.2026 13:17",
     "faecher": {
       "Zivilrecht": {
         "total": 1909,
-        "neu": 15,
-        "lernen": 649,
+        "neu": 12,
+        "lernen": 652,
         "aufbau": 171,
         "sitzt": 1074,
-        "faellig": 1478
+        "faellig": 1479
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1206,12 +1206,12 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "06.09.2026 08:33",
+    "stand": "06.09.2026 13:17",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
         "total": 304,
-        "faellig": 193,
+        "faellig": 200,
         "u30": 140,
         "u90": 16,
         "rated30": 63,
@@ -1238,7 +1238,7 @@ window.NOTION_DATA = {
       "SachenR": {
         "fach": "Zivilrecht",
         "total": 320,
-        "faellig": 271,
+        "faellig": 272,
         "u30": 268,
         "u90": 240,
         "rated30": 27,
@@ -1265,7 +1265,7 @@ window.NOTION_DATA = {
       "ZPO I": {
         "fach": "Zivilrecht",
         "total": 178,
-        "faellig": 166,
+        "faellig": 169,
         "u30": 144,
         "u90": 141,
         "rated30": 29,
@@ -1301,10 +1301,10 @@ window.NOTION_DATA = {
       "ArbeitsR": {
         "fach": "Zivilrecht",
         "total": 179,
-        "faellig": 3,
+        "faellig": 162,
         "u30": 43,
         "u90": 43,
-        "rated30": 124,
+        "rated30": 127,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1411,14 +1411,14 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "06.09.2026 08:33",
+    "stand": "06.09.2026 13:17",
     "slots": [
       {
         "tag": "Mo",
         "wtag": 1,
         "fach": "Zivilrecht",
         "gebiet": "SachenR",
-        "faellig": 271,
+        "faellig": 272,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
       },
@@ -1445,7 +1445,7 @@ window.NOTION_DATA = {
         "wtag": 4,
         "fach": "Zivilrecht",
         "gebiet": "ZPO I",
-        "faellig": 166,
+        "faellig": 169,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::6 ZPO I\") -is:suspended is:due -deck:filtered"
       },
