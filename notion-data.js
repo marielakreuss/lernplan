@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.09.2026 14:03",
+  "lastSync": "06.09.2026 14:21",
   "anki": {
-    "reviewedToday": 35,
-    "dueNow": 4571,
+    "reviewedToday": 84,
+    "dueNow": 4534,
     "history": [
       {
         "date": "2025-09-29",
@@ -1171,13 +1171,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-06",
-        "count": 68
+        "count": 117
       }
     ],
     "stand": "2026-09-06"
   },
   "ankiFach": {
-    "stand": "06.09.2026 14:03",
+    "stand": "06.09.2026 14:21",
     "faecher": {
       "Zivilrecht": {
         "total": 1909,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
         "lernen": 664,
         "aufbau": 171,
         "sitzt": 1074,
-        "faellig": 1475
+        "faellig": 1430
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1206,7 +1206,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "06.09.2026 14:03",
+    "stand": "06.09.2026 14:21",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
         "faellig": 193,
         "u30": 140,
         "u90": 16,
-        "rated30": 63,
+        "rated30": 64,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
@@ -1411,7 +1411,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 49,
     "limit": 25,
-    "stand": "06.09.2026 14:03",
+    "stand": "06.09.2026 14:21",
     "slots": [
       {
         "tag": "Mo",
