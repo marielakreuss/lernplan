@@ -962,6 +962,10 @@
     .sp-e.k-pause  { --bk: transparent; background: transparent; color: var(--text-sub); }
     .sp-e.k-frei   { --bk: var(--urlaub-border); background: var(--urlaub-bg); color: var(--urlaub-text); }
     .sp-e.k-karte, .sp-e.k-vertief, .sp-e.k-prep { --bk: var(--accent-l); }
+    .sp-e.k-konrad { --bk: var(--accent-l); border: 1px dashed var(--border-strong);
+                     border-left: 2.5px solid var(--bk); background: transparent; }
+    .sp-b.k-konrad.gewaehlt, .sp-e.k-konrad.gewaehlt {
+      --bk: var(--accent); border-style: solid; background: var(--accent-soft); font-weight: 600; }
     .sp-rowlab {
       font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.09em;
       font-weight: 700; color: var(--text-sub);
@@ -4013,7 +4017,7 @@
     altNachb:  {t:'nach Bedarf', l:'Klausuren nachbereiten', k:'klausur', s:'nm'},
     // Einmal im Monat ab September, Datum kommt jeweils ~14 Tage vorher per Mail.
     // Sie wählt pro Monat eine der beiden Varianten.
-    konradDo:  {t:'ab 17:00',    l:'Konrad-Kurs digital',    k:'konrad', s:'ab'},
+    konradDo:  {t:'17:00–19:30', l:'Konrad-Kurs digital',    k:'konrad', s:'ab'},
     konradFr:  {t:'16:30–19:00', l:'Konrad-Kurs München',    k:'konrad', s:'ab'}
   };
 
@@ -4080,6 +4084,9 @@
      n:2,  g:[['ArbeitsR',2]]},
     {mo:'2026-09-14', ph:'Probeexamen',       r:'probe2',
      kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
+     konrad:{nr:1, do:'2026-09-17', fr:'2026-09-18', wahl:null,
+             doNote:'gleichzeitig Klausurwerkstatt',
+             frNote:'gleichzeitig Probeexamen'},
      n:2,  g:[['StrafR',2]]},
     {mo:'2026-09-21', ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
@@ -4092,6 +4099,9 @@
      n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
     {mo:'2026-10-12', ph:'Peru · Ankommen',   r:'peruAnkunft',
      kw:{d:'2026-10-15',f:'Strafrecht',t:'Strafbarkeitsrisiken II',peru:'9–13 Uhr Ortszeit'},
+     konrad:{nr:2, do:'2026-10-15', fr:'2026-10-16', wahl:null,
+             doNote:'aus Peru 10:00 Ortszeit – gleichzeitig Werkstatt',
+             frNote:'Präsenz München – aus Peru nicht möglich'},
      n:0,  g:[]},
     {mo:'2026-10-19', ph:'Peru · Reisewoche', r:'peruReise',
      kw:null, kwAus:'22.10. verpasst – Reisewoche',
@@ -4107,6 +4117,9 @@
      n:9,  g:[['SachenR',6],['PolizeiR',2],['StrafR',1]]},
     {mo:'2026-11-16', ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-19',f:'Zivilrecht',t:'Ölgemälde und Wein'},
+     konrad:{nr:3, do:'2026-11-19', fr:'2026-11-20', wahl:null,
+             doNote:'gleichzeitig Klausurwerkstatt',
+             frNote:'kostet den Fall 16:15–18:00'},
      n:9,  g:[['SachenR',4],['ZPO I',2],['PolizeiR',2],['StPO',1]]},
     {mo:'2026-11-23', ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-26',f:'Öffentliches Recht',t:'Brand mit Folgen'},
@@ -4119,6 +4132,9 @@
      n:9,  g:[['SchuldR AT',3],['BGB AT',3],['EuropaR',3]]},
     {mo:'2026-12-14', ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-17',f:'Zivilrecht',t:'An der Tankstelle'},
+     konrad:{nr:4, do:'2026-12-17', fr:'2026-12-18', wahl:null,
+             doNote:'gleichzeitig Klausurwerkstatt',
+             frNote:'kostet den Fall 16:15–18:00'},
      n:9,  g:[['BGB AT',5],['EuropaR',1],['VerwR AT',2],['StrafR',1]]},
     {mo:'2026-12-21', ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 24.12.',
@@ -4131,6 +4147,9 @@
      n:9,  g:[['HGB',5],['StPO',1],['Reserve',3]]},
     {mo:'2027-01-11', ph:'Januar',            r:'normal',
      kw:{d:'2027-01-14',f:'Strafrecht',t:'Strafbarkeitsrisiken IV'},
+     konrad:{nr:5, do:'2027-01-14', fr:'2027-01-15', wahl:null,
+             doNote:'gleichzeitig Klausurwerkstatt',
+             frNote:'kostet den Fall 16:15–18:00'},
      n:9,  g:[['ZPO II',5],['StaatshaftungsR',3],['StPO',1]]},
     {mo:'2027-01-18', ph:'Januar',            r:'normal',
      kw:{d:'2027-01-21',f:'Zivilrecht',t:'N.N.'},
@@ -4141,6 +4160,41 @@
   ];
 
   const ZIEL = 142;   // offene + in Bearbeitung befindliche Hauptkurs-Fälle
+
+  // ── Konrad-Kurs ───────────────────────────────────────────────────
+  // Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027, einmal im Monat: entweder
+  // Do digital ab 17:00 oder Fr in Präsenz in München ab 16:30. Solange
+  // `wahl` null ist, stehen beide Tage gestrichelt im Plan; sobald 'do'
+  // oder 'fr' eingetragen ist, bleibt nur der gewählte Termin stehen –
+  // und der Freitagstermin nimmt dann den Fall-Slot 16:15–18:00 weg.
+  function konradAmTag(w, tag) {
+    const k = w.konrad;
+    if (!k) return null;
+    if (tag === 'Do' && k.wahl !== 'fr') return {block: B.konradDo, datum: k.do, note: k.doNote, wahl: k.wahl};
+    if (tag === 'Fr' && k.wahl !== 'do') return {block: B.konradFr, datum: k.fr, note: k.frNote, wahl: k.wahl};
+    return null;
+  }
+
+  // Immer über diese Funktion an das Tagesraster gehen, nie direkt über
+  // RASTER – sonst fehlt der Konrad-Termin bzw. bleibt ein Fall-Slot
+  // stehen, den der Präsenztermin längst belegt.
+  function rasterFuer(w, tag) {
+    const basis = RASTER[w.r][tag];
+    const k = konradAmTag(w, tag);
+    if (!k) return basis;
+    const b = (k.block === B.konradFr && k.wahl === 'fr')
+      ? basis.b.filter(x => x !== B.fallNm2)
+      : basis.b;
+    return {std: basis.std, b: b.concat([k.block])};
+  }
+
+  // Notiz am Konrad-Block: was an diesem Tag dagegen spricht bzw. dass
+  // die Wahl zwischen den beiden Terminen noch offen ist.
+  function konradNotiz(w, tag) {
+    const k = konradAmTag(w, tag);
+    if (!k) return '';
+    return (k.wahl ? '' : 'Termin offen · ') + (k.note || '');
+  }
 
   // ── Helfer ────────────────────────────────────────────────────────
   const d = iso => { const [y,m,t] = iso.split('-').map(Number); return new Date(y, m-1, t); };
@@ -4164,7 +4218,7 @@
 
     const slots = [];
     TAGE.forEach(tag => {
-      const raster = RASTER[woche.r][tag];
+      const raster = rasterFuer(woche, tag);
       raster.b.forEach((block, i) => { if (block.f) slots.push({tag, i}); });
     });
 
@@ -4245,7 +4299,7 @@
   function fallSlots(w) {
     const s = [];
     TAGE.forEach(tag => {
-      RASTER[w.r][tag].b.forEach((block, i) => { if (block.f) s.push({tag, i, block}); });
+      rasterFuer(w, tag).b.forEach((block, i) => { if (block.f) s.push({tag, i, block}); });
     });
     return s;
   }
@@ -4388,7 +4442,7 @@
 
     TAGE.forEach((tag, idx) => {
       const datum = new Date(montag); datum.setDate(datum.getDate() + idx);
-      const raster = RASTER[w.r][tag];
+      const raster = rasterFuer(w, tag);
       const nurFrei = raster.b.length > 0 && raster.b.every(b => b.k === 'frei');
 
       if (nurFrei) {
@@ -4420,8 +4474,9 @@
           if (!m) return;                                // ohne Uhrzeit kein Termin
           zeiten = [+m[1], +m[2], +m[3], +m[4]];
         }
-        // Alles nach Ortszeit; nur die Werkstatt bleibt auf deutscher Uhr.
-        const tz = (peru && schluessel !== 'kwPeru') ? LIMA : BERLIN;
+        // Alles nach Ortszeit; Werkstatt und Konrad-Kurs bleiben auf deutscher Uhr.
+        const deutscheUhr = schluessel === 'kwPeru' || block.k === 'konrad';
+        const tz = (peru && !deutscheUhr) ? LIMA : BERLIN;
         const [y, mo, t] = [datum.getFullYear(), datum.getMonth() + 1, datum.getDate()];
 
         let titel = block.l, notiz = '', url = '';
@@ -4444,6 +4499,10 @@
         } else if (schluessel === 'kwPrep' && w.kw) {
           titel = block.l + ' · ' + w.kw.f;
           notiz = '„' + w.kw.t + '”';
+        } else if (block.k === 'konrad') {
+          const k = konradAmTag(w, tag);
+          if (!k.wahl) titel = block.l + ' · Termin wählen';
+          notiz = 'Klausurenkurs ÖR I' + (k.note ? ' · ' + k.note : '');
         } else if (block.k === 'karte') {
           const fokus = w.g.filter(([n]) => n !== 'Reserve').map(([n]) => n).join(', ');
           notiz = fokus ? 'Fokus: ' + fokus : '';
@@ -4589,7 +4648,7 @@
       }
     }
 
-    const tagRaster = RASTER[woche.r][zeigeTag];
+    const tagRaster = rasterFuer(woche, zeigeTag);
     const liste = document.getElementById('sp-blocks');
     if (ausserhalb && phaseHeute) {
       const frei = /urlaub|peru|weihnacht/.test(phaseHeute.phaseKey || '');
@@ -4607,8 +4666,11 @@
             ? (gebiet === 'Reserve' ? 'frei wählbar' : gebiet)
             : (block === B.kw && woche.kw ? woche.kw.f + ' · „' + woche.kw.t + '”' : '')
               || (block === B.kwPeru && woche.kw ? woche.kw.peru + ' · ' + woche.kw.f : '')
-              || (block === B.kwPrep && woche.kw ? woche.kw.f : '');
-        return '<li class="sp-b k-' + block.k + (fach ? ' f-' + fach : '') + '">' +
+              || (block === B.kwPrep && woche.kw ? woche.kw.f : '')
+              || (block.k === 'konrad' ? konradNotiz(woche, zeigeTag) : '');
+        const gewaehlt = block.k === 'konrad' && woche.konrad && woche.konrad.wahl;
+        return '<li class="sp-b k-' + block.k + (fach ? ' f-' + fach : '') +
+               (gewaehlt ? ' gewaehlt' : '') + '">' +
                '<span class="sp-b-t">' + esc(zeit) + '</span>' +
                '<span class="sp-b-l">' + esc(block.l) + '</span>' +
                (notiz ? '<span class="sp-b-n">' + esc(notiz) + '</span>' : '') +
@@ -4630,7 +4692,7 @@
     abschnitte.forEach(([slot, label]) => {
       let zeile = '<tr><td class="sp-rowlab">' + label + '</td>';
       TAGE.forEach(tag => {
-        const raster = RASTER[woche.r][tag];
+        const raster = rasterFuer(woche, tag);
         const treffer = raster.b
           .map((block, i) => ({block, i}))
           .filter(x => x.block.s === slot);
@@ -4643,7 +4705,9 @@
           const text = gebiet
             ? (gebiet === 'Reserve' ? 'Fall · frei' : 'Fall · ' + gebiet)
             : block.l;
-          return '<div class="sp-e k-' + block.k + '">' + esc(text) +
+          const gewaehlt = block.k === 'konrad' && woche.konrad && woche.konrad.wahl;
+          return '<div class="sp-e k-' + block.k + (gewaehlt ? ' gewaehlt' : '') +
+                 '">' + esc(text) +
                  (block.t ? '<span>' + esc(block.t) + '</span>' : '') + '</div>';
         }).join('');
         zeile += '<td class="' + (tag === heuteKey ? 'sp-heute-c' : '') + '">' +
@@ -4655,7 +4719,7 @@
 
     // Fußzeile: Stunden je Tag
     document.getElementById('sp-foot').innerHTML = TAGE.map(tag => {
-      const r = RASTER[woche.r][tag];
+      const r = rasterFuer(woche, tag);
       return '<span>' + tag + ' <b>' + r.std + '</b></span>';
     }).join('');
 
@@ -4672,7 +4736,7 @@
   }
 
   function renderWochenTabelle(aktuellerMontag) {
-    let html = '<tr><th>Woche</th><th>Phase</th><th>Klausurwerkstatt</th>' +
+    let html = '<tr><th>Woche</th><th>Phase</th><th>Klausurwerkstatt</th><th>Konrad</th>' +
                '<th>Rechtsgebiete</th><th style="text-align:right">Fälle</th></tr>';
     let summe = 0;
     W.forEach(w => {
@@ -4684,6 +4748,12 @@
       const kwText = w.kw
         ? kurz(d(w.kw.d)) + ' · ' + w.kw.f + (w.kw.peru ? ' (aus Peru)' : '')
         : '<span style="color:var(--text-sub)">' + esc(w.kwAus || '—') + '</span>';
+      const konradText = !w.konrad
+        ? '<span style="color:var(--text-sub)">—</span>'
+        : w.konrad.wahl === 'do' ? kurz(d(w.konrad.do)) + ' · digital'
+        : w.konrad.wahl === 'fr' ? kurz(d(w.konrad.fr)) + ' · München'
+        : kurz(d(w.konrad.do)) + ' / ' + kurz(d(w.konrad.fr)) +
+          '<span style="color:var(--text-sub)"> · offen</span>';
       const gebiete = w.g.length
         ? w.g.map(([name, n]) => {
             const f = FACH_VON_GEBIET[name] || 'rest';
@@ -4694,10 +4764,11 @@
               '<td style="white-space:nowrap">' + kurz(von) + '</td>' +
               '<td style="white-space:nowrap">' + esc(w.ph) + '</td>' +
               '<td>' + kwText + '</td>' +
+              '<td style="white-space:nowrap">' + konradText + '</td>' +
               '<td>' + gebiete + '</td>' +
               '<td class="num">' + w.n + '</td></tr>';
     });
-    html += '<tr><td colspan="4" style="text-align:right;font-weight:600;border-bottom:none">' +
+    html += '<tr><td colspan="5" style="text-align:right;font-weight:600;border-bottom:none">' +
             'Summe · ' + ZIEL + ' Fälle nötig, ' + (summe - ZIEL) + ' Puffer</td>' +
             '<td class="num" style="border-bottom:none">' + summe + '</td></tr>';
     document.getElementById('sp-weeks').innerHTML = html;
@@ -4720,14 +4791,21 @@
 
   function renderHinweis() {
     document.getElementById('sp-hinweis').innerHTML =
-      '<p><b>Konrad-Kurs:</b> einmal im Monat ab September, wahlweise <b>digital ' +
-      'donnerstags ab 17:00</b> oder <b>in Präsenz in München freitags ab 16:30</b> ' +
-      '(ca. 2,5 Std.). Sie wählt pro Monat einen der beiden Termine; das genaue Datum ' +
-      'kommt mit den Kursunterlagen, gut 14 Tage vorher per Mail. ' +
-      'Der Donnerstagstermin liegt mitten in der Klausurwerkstatt (16–20 Uhr) – digital ' +
-      'geht also nur an einem werkstattfreien Donnerstag (10.9., 24.12., 31.12.). ' +
-      'Der Freitagstermin kostet den zweiten Fall des Tages (16:15–18:00), also einen ' +
-      'Fall in der jeweiligen Woche.</p>' +
+      '<p><b>Konrad-Kurs (Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027):</b> sechs Termine, '  +
+      'je einer im Monat, wahlweise <b>digital donnerstags ab 17:00</b> oder <b>in Präsenz '  +
+      'in München freitags ab 16:30</b> (ca. 2,5 Std.). Im Plan stehen beide Tage '           +
+      'gestrichelt, bis die Wahl feststeht:</p>'                                              +
+      '<ul><li>1) Do 17.9. / Fr 18.9. 2026 – Do ist Werkstatt, Fr ist Probeexamen-Tag</li>'   +
+      '<li>2) Do 15.10. / Fr 16.10. 2026 – in Peru: Präsenz fällt weg, digital wäre 10:00 '   +
+      'Ortszeit und damit mitten in der Werkstatt</li>'                                       +
+      '<li>3) Do 19.11. / Fr 20.11. 2026</li>'                                                +
+      '<li>4) Do 17.12. / Fr 18.12. 2026</li>'                                                +
+      '<li>5) Do 14.1. / Fr 15.1. 2027</li>'                                                  +
+      '<li>6) Do 11.2. / Fr 12.2. 2027 – nach dem 31.1., also außerhalb des Wochenplans; '    +
+      'am 11.2. ist keine Werkstatt mehr, digital geht dort also</li></ul>'                   +
+      '<p>Der Donnerstagstermin liegt jedes Mal mitten in der Klausurwerkstatt (16–20 Uhr). ' +
+      'Der Freitagstermin kostet den zweiten Fall des Tages (16:15–18:00), also einen Fall '  +
+      'in der jeweiligen Woche.</p>' +
       '<p><b>Klausurwerkstatt aus Peru:</b> 16–20 Uhr deutscher Zeit sind dort 9–13 Uhr ' +
       '(bis zur Zeitumstellung am 25.10.) bzw. 10–14 Uhr danach. Nur der 22.10. fällt in ' +
       'die Reisewoche und entfällt.</p>' +
