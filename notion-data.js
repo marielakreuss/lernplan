@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.09.2026 22:47",
+  "lastSync": "07.09.2026 23:10",
   "anki": {
-    "reviewedToday": 34,
-    "dueNow": 4581,
+    "reviewedToday": 59,
+    "dueNow": 4568,
     "history": [
       {
         "date": "2025-09-29",
@@ -1175,21 +1175,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-07",
-        "count": 34
+        "count": 59
       }
     ],
     "stand": "2026-09-07"
   },
   "ankiFach": {
-    "stand": "07.09.2026 22:47",
+    "stand": "07.09.2026 23:10",
     "faecher": {
       "Zivilrecht": {
         "total": 1920,
         "neu": 0,
-        "lernen": 674,
+        "lernen": 673,
         "aufbau": 171,
-        "sitzt": 1075,
-        "faellig": 1468
+        "sitzt": 1076,
+        "faellig": 1455
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1210,7 +1210,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "07.09.2026 22:47",
+    "stand": "07.09.2026 23:10",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1305,10 +1305,10 @@ window.NOTION_DATA = {
       "ArbeitsR": {
         "fach": "Zivilrecht",
         "total": 190,
-        "faellig": 141,
-        "u30": 34,
-        "u90": 34,
-        "rated30": 156,
+        "faellig": 128,
+        "u30": 21,
+        "u90": 21,
+        "rated30": 169,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1415,7 +1415,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "07.09.2026 22:47",
+    "stand": "07.09.2026 23:10",
     "slots": [
       {
         "tag": "Mo",
