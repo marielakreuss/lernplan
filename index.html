@@ -4036,6 +4036,11 @@
     peruFrei: {std:'frei',  b:[B.freiTag]},
     peruLern: {std:'~3 h',  b:[B.karte15, B.mittag, B.altNachb]},
     peruDo:   {std:'1,5 h + 4 h', b:[B.karte15, B.mittag, B.kwPeru]},
+    // Konrad-Wochen mit Präsenztermin: der Freitag verliert den Fall
+    // 16:15–18:00, dafür rückt am Donnerstag ein Fall in den Slot, in dem
+    // sonst die Werkstatt vorbereitet wird – sie geht dort unvorbereitet hin.
+    doKonrad: {std:'5,5 h + 4 h',   b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.kw]},
+    frKonrad: {std:'5,75 h + 2,5 h',b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.konradFr]},
     weihMo:   {std:'2,75 h', b:[B.karteNm, B.fallSpaet]},
     weihLang: {std:'3,25 h', b:[B.fallVm, B.karteVm, B.mittag]},
     weihDo:   {std:'frei',  b:[B.freiTag]},
@@ -4084,9 +4089,9 @@
      n:2,  g:[['ArbeitsR',2]]},
     {mo:'2026-09-14', ph:'Probeexamen',       r:'probe2',
      kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
-     konrad:{nr:1, do:'2026-09-17', fr:'2026-09-18', wahl:null,
+     konrad:{nr:1, do:'2026-09-17', fr:'2026-09-18', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
-             frNote:'gleichzeitig Probeexamen'},
+             frNote:'gleichzeitig Probeexamen – kein Fall zu verschieben'},
      n:2,  g:[['StrafR',2]]},
     {mo:'2026-09-21', ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
@@ -4099,7 +4104,7 @@
      n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
     {mo:'2026-10-12', ph:'Peru · Ankommen',   r:'peruAnkunft',
      kw:{d:'2026-10-15',f:'Strafrecht',t:'Strafbarkeitsrisiken II',peru:'9–13 Uhr Ortszeit'},
-     konrad:{nr:2, do:'2026-10-15', fr:'2026-10-16', wahl:null,
+     konrad:{nr:2, do:'2026-10-15', fr:'2026-10-16', wahl:'do',
              doNote:'aus Peru 10:00 Ortszeit – gleichzeitig Werkstatt',
              frNote:'Präsenz München – aus Peru nicht möglich'},
      n:0,  g:[]},
@@ -4117,9 +4122,9 @@
      n:9,  g:[['SachenR',6],['PolizeiR',2],['StrafR',1]]},
     {mo:'2026-11-16', ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-19',f:'Zivilrecht',t:'Ölgemälde und Wein'},
-     konrad:{nr:3, do:'2026-11-19', fr:'2026-11-20', wahl:null,
+     konrad:{nr:3, do:'2026-11-19', fr:'2026-11-20', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
-             frNote:'kostet den Fall 16:15–18:00'},
+             frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['SachenR',4],['ZPO I',2],['PolizeiR',2],['StPO',1]]},
     {mo:'2026-11-23', ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-26',f:'Öffentliches Recht',t:'Brand mit Folgen'},
@@ -4132,9 +4137,9 @@
      n:9,  g:[['SchuldR AT',3],['BGB AT',3],['EuropaR',3]]},
     {mo:'2026-12-14', ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-17',f:'Zivilrecht',t:'An der Tankstelle'},
-     konrad:{nr:4, do:'2026-12-17', fr:'2026-12-18', wahl:null,
+     konrad:{nr:4, do:'2026-12-17', fr:'2026-12-18', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
-             frNote:'kostet den Fall 16:15–18:00'},
+             frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['BGB AT',5],['EuropaR',1],['VerwR AT',2],['StrafR',1]]},
     {mo:'2026-12-21', ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 24.12.',
@@ -4147,9 +4152,9 @@
      n:9,  g:[['HGB',5],['StPO',1],['Reserve',3]]},
     {mo:'2027-01-11', ph:'Januar',            r:'normal',
      kw:{d:'2027-01-14',f:'Strafrecht',t:'Strafbarkeitsrisiken IV'},
-     konrad:{nr:5, do:'2027-01-14', fr:'2027-01-15', wahl:null,
+     konrad:{nr:5, do:'2027-01-14', fr:'2027-01-15', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
-             frNote:'kostet den Fall 16:15–18:00'},
+             frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['ZPO II',5],['StaatshaftungsR',3],['StPO',1]]},
     {mo:'2027-01-18', ph:'Januar',            r:'normal',
      kw:{d:'2027-01-21',f:'Zivilrecht',t:'N.N.'},
@@ -4180,12 +4185,18 @@
   // stehen, den der Präsenztermin längst belegt.
   function rasterFuer(w, tag) {
     const basis = RASTER[w.r][tag];
+    if (!w.konrad) return basis;
+    // Präsenz in München am Freitag: der Fall 16:15–18:00 entfällt dort und
+    // rückt auf den Donnerstag in den Vorbereitungs-Slot der Werkstatt.
+    // Greift nur, wenn der Freitag überhaupt einen zweiten Fall hat – in
+    // einer Probeexamens-Woche gibt es keinen zu verschieben.
+    if (w.konrad.wahl === 'fr' && RASTER[w.r].Fr.b.includes(B.fallNm2)) {
+      if (tag === 'Do') return TAG.doKonrad;
+      if (tag === 'Fr') return TAG.frKonrad;
+      return basis;
+    }
     const k = konradAmTag(w, tag);
-    if (!k) return basis;
-    const b = (k.block === B.konradFr && k.wahl === 'fr')
-      ? basis.b.filter(x => x !== B.fallNm2)
-      : basis.b;
-    return {std: basis.std, b: b.concat([k.block])};
+    return k ? {std: basis.std, b: basis.b.concat([k.block])} : basis;
   }
 
   // Notiz am Konrad-Block: was an diesem Tag dagegen spricht bzw. dass
@@ -4791,21 +4802,18 @@
 
   function renderHinweis() {
     document.getElementById('sp-hinweis').innerHTML =
-      '<p><b>Konrad-Kurs (Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027):</b> sechs Termine, '  +
-      'je einer im Monat, wahlweise <b>digital donnerstags ab 17:00</b> oder <b>in Präsenz '  +
-      'in München freitags ab 16:30</b> (ca. 2,5 Std.). Im Plan stehen beide Tage '           +
-      'gestrichelt, bis die Wahl feststeht:</p>'                                              +
-      '<ul><li>1) Do 17.9. / Fr 18.9. 2026 – Do ist Werkstatt, Fr ist Probeexamen-Tag</li>'   +
-      '<li>2) Do 15.10. / Fr 16.10. 2026 – in Peru: Präsenz fällt weg, digital wäre 10:00 '   +
-      'Ortszeit und damit mitten in der Werkstatt</li>'                                       +
-      '<li>3) Do 19.11. / Fr 20.11. 2026</li>'                                                +
-      '<li>4) Do 17.12. / Fr 18.12. 2026</li>'                                                +
-      '<li>5) Do 14.1. / Fr 15.1. 2027</li>'                                                  +
-      '<li>6) Do 11.2. / Fr 12.2. 2027 – nach dem 31.1., also außerhalb des Wochenplans; '    +
-      'am 11.2. ist keine Werkstatt mehr, digital geht dort also</li></ul>'                   +
-      '<p>Der Donnerstagstermin liegt jedes Mal mitten in der Klausurwerkstatt (16–20 Uhr). ' +
-      'Der Freitagstermin kostet den zweiten Fall des Tages (16:15–18:00), also einen Fall '  +
-      'in der jeweiligen Woche.</p>' +
+      '<p><b>Konrad-Kurs (Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027):</b> sechs Termine, ' +
+      'je einer im Monat. Gebucht ist überall der <b>Präsenztermin in München, freitags ab '  +
+      '16:30</b> – nur aus Peru geht das nicht, dort der digitale Donnerstag ab 17:00:</p>'   +
+      '<ul><li>Fr 18.9.2026 – fällt auf den Probeexamens-Tag</li>'                            +
+      '<li>Do 15.10.2026 <b>digital aus Peru</b> – 10:00 Ortszeit, also mitten in der '       +
+      'Werkstatt; Präsenz in München fällt weg</li>'                                          +
+      '<li>Fr 20.11.2026</li><li>Fr 18.12.2026</li><li>Fr 15.1.2027</li>'                     +
+      '<li>Fr 12.2.2027 – nach dem 31.1. und damit außerhalb des Wochenplans</li></ul>'       +
+      '<p>An einem Konrad-Freitag entfällt der Fall 16:15–18:00. Er rückt auf den '           +
+      '<b>Donnerstag 14:00–16:00</b>, in den Slot der Werkstatt-Vorbereitung – sie geht an '  +
+      'diesem Donnerstag also unvorbereitet in die Klausurwerkstatt. Die Woche behält damit ' +
+      'ihre neun Fälle.</p>' +
       '<p><b>Klausurwerkstatt aus Peru:</b> 16–20 Uhr deutscher Zeit sind dort 9–13 Uhr ' +
       '(bis zur Zeitumstellung am 25.10.) bzw. 10–14 Uhr danach. Nur der 22.10. fällt in ' +
       'die Reisewoche und entfällt.</p>' +
