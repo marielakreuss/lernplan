@@ -4053,7 +4053,9 @@
     sa:    {std:'6 h',    b:[B.klausur, B.pauseSa, B.klausurNb]},
     so:    {std:'—',      b:[B.frei]},
     // Varianten
-    einFall:  {std:'3,25 h + Klausur', b:[B.fallVm, B.karteVm, B.mittag, B.probe]},
+    // Freitag nach dem Probeexamen (18.9.): ein Fall am Vormittag,
+    // der Nachmittag bleibt frei. Das Probeexamen läuft nur 9.–16.9.
+    nachProbe:{std:'3,25 h',  b:[B.fallVm, B.karteVm, B.mittag]},
     probeTag: {std:'Klausur', b:[B.probe]},
     doProbe:  {std:'5 h + 4 h', b:[B.fallVm, B.karteVm, B.mittag, B.kwPrep, B.kw]},
     leer:     {std:'—',     b:[]},
@@ -4087,7 +4089,7 @@
     urlaubWoche:{Mo:TAG.urlaubTag, Di:TAG.urlaubTag, Mi:TAG.urlaubTag, Do:TAG.urlaubTag, Fr:TAG.urlaubTag, Sa:TAG.urlaubTag, So:TAG.urlaubTag},
     auslauf:    {Mo:TAG.urlaubTag, Di:TAG.repFall, Mi:TAG.repFall, Do:TAG.arbeitFallKw, Fr:TAG.arbeitFall, Sa:TAG.sa, So:TAG.so},
     probe1:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.probeTag, Do:TAG.probeTag, Fr:TAG.probeTag, Sa:TAG.probeTag, So:TAG.so},
-    probe2:     {Mo:TAG.probeTag, Di:TAG.probeTag, Mi:TAG.probeTag, Do:TAG.doProbe, Fr:TAG.einFall, Sa:TAG.sa, So:TAG.so},
+    probe2:     {Mo:TAG.probeTag, Di:TAG.probeTag, Mi:TAG.probeTag, Do:TAG.doProbe, Fr:TAG.nachProbe, Sa:TAG.sa, So:TAG.so},
     peruAnkunft:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.peruLern, So:TAG.peruFrei},
     peruReise:  {Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.peruFrei, So:TAG.peruFrei},
     peruLernen: {Mo:TAG.peruLern, Di:TAG.peruLern, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.so},
@@ -4115,7 +4117,7 @@
      kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
      konrad:{nr:1, do:'2026-09-17', fr:'2026-09-18', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
-             frNote:'gleichzeitig Probeexamen – kein Fall zu verschieben'},
+             frNote:'nach dem Probeexamen – kein Fall zu verschieben'},
      n:2,  g:[['StrafR',2]]},
     {mo:'2026-09-21', ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
@@ -4866,7 +4868,7 @@
       '<p><b>Konrad-Kurs (Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027):</b> sechs Termine, ' +
       'je einer im Monat. Gebucht ist überall der <b>Präsenztermin in München, freitags ab '  +
       '16:30</b> – nur aus Peru geht das nicht, dort der digitale Donnerstag ab 17:00:</p>'   +
-      '<ul><li>Fr 18.9.2026 – fällt auf den Probeexamens-Tag</li>'                            +
+      '<ul><li>Fr 18.9.2026 – zwei Tage nach dem Probeexamen</li>'                            +
       '<li>Do 15.10.2026 <b>digital aus Peru</b> – 10:00 Ortszeit, also mitten in der '       +
       'Werkstatt; Präsenz in München fällt weg</li>'                                          +
       '<li>Fr 20.11.2026</li><li>Fr 18.12.2026</li><li>Fr 15.1.2027</li>'                     +
