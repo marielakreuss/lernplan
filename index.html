@@ -929,6 +929,24 @@
     .sp-b.k-frei   { --bk: var(--urlaub-border); background: var(--urlaub-bg); color: var(--urlaub-text); }
     .sp-b.k-konrad { --bk: var(--accent-l); background: transparent; border-style: dashed; }
 
+    /* Wochen-Navigation */
+    .sp-nav { display: flex; align-items: center; gap: 0.3rem; }
+    .sp-nav button {
+      font: inherit; font-size: 0.82rem; line-height: 1;
+      padding: 0.34rem 0.6rem; cursor: pointer;
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--surface-solid); color: var(--text-muted);
+    }
+    .sp-nav button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .sp-nav button:disabled { opacity: 0.35; cursor: default; }
+    .sp-nav .sp-nav-pfeil { font-size: 1rem; padding: 0.24rem 0.55rem; }
+    .sp-nav-pos {
+      font-size: 0.73rem; color: var(--text-sub); white-space: nowrap;
+      font-variant-numeric: tabular-nums; margin-left: 0.15rem;
+    }
+    .sp-weeks tr.sp-klick { cursor: pointer; }
+    .sp-weeks tr.sp-klick:hover td { background: var(--accent-soft); }
+
     /* Wochengitter */
     .sp-grid-wrap { overflow-x: auto; padding: 0 1.6rem 1.3rem; }
     .sp-grid { border-collapse: separate; border-spacing: 0.3rem; width: 100%; min-width: 640px; }
@@ -1469,6 +1487,12 @@
         <p class="sp-sub" id="sp-sub">—</p>
       </div>
       <div class="sp-head-r">
+        <div class="sp-nav">
+          <button type="button" class="sp-nav-pfeil" id="sp-prev" aria-label="Woche zurück" title="Woche zurück (←)">‹</button>
+          <button type="button" id="sp-heute-btn" title="Zurück zur laufenden Woche">Heute</button>
+          <button type="button" class="sp-nav-pfeil" id="sp-next" aria-label="Woche vor" title="Woche vor (→)">›</button>
+          <span class="sp-nav-pos" id="sp-nav-pos"></span>
+        </div>
         <div class="sp-chips" id="sp-chips"></div>
         <div class="sp-ics-zeile">
           <button type="button" class="btn ghost" id="sp-ics"
@@ -4586,7 +4610,20 @@
   }
 
   // ── Rendern ───────────────────────────────────────────────────────
+  // `zeigeIndex` ist die Woche, die die Wochenansicht zeigt - über die
+  // Pfeile im Kopf oder einen Klick in die Wochentabelle auch eine andere
+  // als die laufende. Der Block „Heute" bleibt davon unberührt; er hängt
+  // immer an der Woche, in der wir gerade wirklich stehen.
   let gezeigteWoche = null;
+  let zeigeIndex = null;
+
+  function zeigeWoche(i) {
+    zeigeIndex = Math.max(0, Math.min(W.length - 1, i));
+    render();
+    const ziel = document.getElementById('stundenplan');
+    if (ziel && ziel.scrollIntoView) ziel.scrollIntoView({block: 'nearest', behavior: 'smooth'});
+  }
+  window.zeigeStundenplanWoche = zeigeWoche;
 
   function render() {
     const heute = new Date();
@@ -4599,19 +4636,28 @@
       vorschau = true;
       woche = heute < start ? W[0] : W[W.length - 1];
     }
+    // Ab hier zwei Wochen: `heuteWoche` füttert den Block „Heute",
+    // `woche` die Wochenansicht - beim Blättern laufen sie auseinander.
+    const heuteWoche = woche;
+    const heuteIndex = W.indexOf(heuteWoche);
+    if (zeigeIndex === null || !W[zeigeIndex]) zeigeIndex = heuteIndex;
+    woche = W[zeigeIndex];
     gezeigteWoche = woche;
 
     const moDieserWoche = d(woche.mo);
     const heuteKey = (!vorschau && heute >= start && heute <= ende)
       ? TAGE[(heute.getDay() + 6) % 7] : null;
+    // Der Tag wird nur markiert, wenn die gezeigte Woche die laufende ist.
+    const heuteImGitter = (woche === heuteWoche) ? heuteKey : null;
     const zuteilung = verteile(woche);
+    const zuteilungHeute = (woche === heuteWoche) ? zuteilung : verteile(heuteWoche);
 
     // Kopf
     const bis = new Date(moDieserWoche); bis.setDate(bis.getDate() + 6);
     const von = woche.ab ? d(woche.ab) : moDieserWoche;
     document.getElementById('sp-title').textContent = woche.ph;
     document.getElementById('sp-sub').textContent =
-      (vorschau && heute < start ? 'Startet ' : '') + kurz(von) + ' – ' + kurz(bis) +
+      (moDieserWoche > heute ? 'Startet ' : '') + kurz(von) + ' – ' + kurz(bis) +
       (woche.kw ? ' · Werkstatt ' + kurz(d(woche.kw.d)) + ': ' + woche.kw.f
                 : woche.kwAus ? ' · ' + woche.kwAus : '');
 
@@ -4627,8 +4673,20 @@
     });
     document.getElementById('sp-chips').innerHTML = chips;
 
+    // Navigation
+    const prev = document.getElementById('sp-prev');
+    const next = document.getElementById('sp-next');
+    const heuteBtn = document.getElementById('sp-heute-btn');
+    const pos = document.getElementById('sp-nav-pos');
+    if (prev) prev.disabled = zeigeIndex <= 0;
+    if (next) next.disabled = zeigeIndex >= W.length - 1;
+    if (heuteBtn) heuteBtn.disabled = zeigeIndex === heuteIndex;
+    if (pos) pos.textContent = 'Woche ' + (zeigeIndex + 1) + ' von ' + W.length +
+      (zeigeIndex === heuteIndex ? ' · aktuell'
+        : zeigeIndex < heuteIndex ? ' · vergangen' : ' · kommt noch');
+
     // Heute
-    const zeigeTag = heuteKey || (woche.ab ? TAGE[(d(woche.ab).getDay() + 6) % 7] : 'Mo');
+    const zeigeTag = heuteKey || (heuteWoche.ab ? TAGE[(d(heuteWoche.ab).getDay() + 6) % 7] : 'Mo');
     const vorschauZeile = document.getElementById('sp-vorschau');
 
     // Liegt heute vor dem Stundenplan, zeigt „Heute" nicht den ersten Plantag,
@@ -4653,13 +4711,13 @@
         } else {
           vorschauZeile.style.display = '';
           vorschauZeile.textContent = heute < start
-            ? 'Gilt noch nicht – Start ist der ' + kurz(von)
+            ? 'Gilt noch nicht – Start ist der ' + kurz(start)
             : 'Außerhalb des geplanten Zeitraums – gezeigt wird die letzte Woche des Plans.';
         }
       }
     }
 
-    const tagRaster = rasterFuer(woche, zeigeTag);
+    const tagRaster = rasterFuer(heuteWoche, zeigeTag);
     const liste = document.getElementById('sp-blocks');
     if (ausserhalb && phaseHeute) {
       const frei = /urlaub|peru|weihnacht/.test(phaseHeute.phaseKey || '');
@@ -4669,17 +4727,18 @@
       liste.innerHTML = '<li class="sp-b k-pause"><span class="sp-b-l">Kein Ablauf hinterlegt.</span></li>';
     } else {
       liste.innerHTML = tagRaster.b.map((block, i) => {
-        const gebiet = block.f ? zuteilung[zeigeTag + '#' + i] : null;
+        const hw = heuteWoche;
+        const gebiet = block.f ? zuteilungHeute[zeigeTag + '#' + i] : null;
         const fach = gebiet ? FACH_VON_GEBIET[gebiet] : null;
-        const zeit = (block === B.kwPeru && woche.kw && woche.kw.peru)
+        const zeit = (block === B.kwPeru && hw.kw && hw.kw.peru)
           ? '16–20 Uhr DE' : block.t;
         const notiz = gebiet
             ? (gebiet === 'Reserve' ? 'frei wählbar' : gebiet)
-            : (block === B.kw && woche.kw ? woche.kw.f + ' · „' + woche.kw.t + '”' : '')
-              || (block === B.kwPeru && woche.kw ? woche.kw.peru + ' · ' + woche.kw.f : '')
-              || (block === B.kwPrep && woche.kw ? woche.kw.f : '')
-              || (block.k === 'konrad' ? konradNotiz(woche, zeigeTag) : '');
-        const gewaehlt = block.k === 'konrad' && woche.konrad && woche.konrad.wahl;
+            : (block === B.kw && hw.kw ? hw.kw.f + ' · „' + hw.kw.t + '”' : '')
+              || (block === B.kwPeru && hw.kw ? hw.kw.peru + ' · ' + hw.kw.f : '')
+              || (block === B.kwPrep && hw.kw ? hw.kw.f : '')
+              || (block.k === 'konrad' ? konradNotiz(hw, zeigeTag) : '');
+        const gewaehlt = block.k === 'konrad' && hw.konrad && hw.konrad.wahl;
         return '<li class="sp-b k-' + block.k + (fach ? ' f-' + fach : '') +
                (gewaehlt ? ' gewaehlt' : '') + '">' +
                '<span class="sp-b-t">' + esc(zeit) + '</span>' +
@@ -4694,7 +4753,7 @@
     let kopf = '<tr><th class="sp-rowlab"></th>';
     TAGE.forEach((tag, i) => {
       const dt = new Date(moDieserWoche); dt.setDate(dt.getDate() + i);
-      kopf += '<th' + (tag === heuteKey ? ' class="sp-heute"' : '') + '>' +
+      kopf += '<th' + (tag === heuteImGitter ? ' class="sp-heute"' : '') + '>' +
               tag + '<small>' + kurz(dt) + '</small></th>';
     });
     kopf += '</tr>';
@@ -4721,7 +4780,7 @@
                  '">' + esc(text) +
                  (block.t ? '<span>' + esc(block.t) + '</span>' : '') + '</div>';
         }).join('');
-        zeile += '<td class="' + (tag === heuteKey ? 'sp-heute-c' : '') + '">' +
+        zeile += '<td class="' + (tag === heuteImGitter ? 'sp-heute-c' : '') + '">' +
                  '<div class="sp-cell">' + inhalt + '</div></td>';
       });
       koerper += zeile + '</tr>';
@@ -4734,7 +4793,7 @@
       return '<span>' + tag + ' <b>' + r.std + '</b></span>';
     }).join('');
 
-    renderWochenTabelle(moDieserWoche);
+    renderWochenTabelle(moDieserWoche, d(heuteWoche.mo));
     renderQueues(moDieserWoche);
     renderHinweis();
 
@@ -4746,7 +4805,7 @@
     }
   }
 
-  function renderWochenTabelle(aktuellerMontag) {
+  function renderWochenTabelle(gezeigterMontag, laufenderMontag) {
     let html = '<tr><th>Woche</th><th>Phase</th><th>Klausurwerkstatt</th><th>Konrad</th>' +
                '<th>Rechtsgebiete</th><th style="text-align:right">Fälle</th></tr>';
     let summe = 0;
@@ -4754,8 +4813,9 @@
       const mo = d(w.mo);
       const von = w.ab ? d(w.ab) : mo;
       summe += w.n;
-      const zustand = mo.getTime() === aktuellerMontag.getTime() ? 'sp-jetzt'
-                    : mo.getTime() < aktuellerMontag.getTime() ? 'sp-vorbei' : '';
+      const zustand = 'sp-klick' +
+        (mo.getTime() === gezeigterMontag.getTime() ? ' sp-jetzt' : '') +
+        (mo.getTime() < laufenderMontag.getTime() ? ' sp-vorbei' : '');
       const kwText = w.kw
         ? kurz(d(w.kw.d)) + ' · ' + w.kw.f + (w.kw.peru ? ' (aus Peru)' : '')
         : '<span style="color:var(--text-sub)">' + esc(w.kwAus || '—') + '</span>';
@@ -4771,7 +4831,8 @@
             return '<span class="sp-tag ' + f + '">' + esc(name) + ' ×' + n + '</span>';
           }).join('')
         : '<span style="color:var(--text-sub)">—</span>';
-      html += '<tr class="' + zustand + '">' +
+      html += '<tr class="' + zustand + '" data-woche="' + W.indexOf(w) + '" ' +
+              'title="Diese Woche im Stundenplan zeigen">' +
               '<td style="white-space:nowrap">' + kurz(von) + '</td>' +
               '<td style="white-space:nowrap">' + esc(w.ph) + '</td>' +
               '<td>' + kwText + '</td>' +
@@ -4823,6 +4884,33 @@
 
   try { render(); }
   catch (e) { console.error('Stundenplan konnte nicht gezeichnet werden:', e); }
+
+  // ── Blättern ──────────────────────────────────────────────────────
+  const anKnopf = (id, fn) => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', fn);
+  };
+  anKnopf('sp-prev',      () => zeigeWoche(zeigeIndex - 1));
+  anKnopf('sp-next',      () => zeigeWoche(zeigeIndex + 1));
+  anKnopf('sp-heute-btn', () => { zeigeIndex = null; render(); });
+
+  // Klick auf eine Zeile der Wochentabelle springt in diese Woche.
+  const tabelle = document.getElementById('sp-weeks');
+  if (tabelle) tabelle.addEventListener('click', ev => {
+    const zeile = ev.target.closest('tr[data-woche]');
+    if (zeile) zeigeWoche(+zeile.dataset.woche);
+  });
+
+  // Pfeiltasten, solange nicht gerade in einem Feld getippt wird.
+  document.addEventListener('keydown', ev => {
+    if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+    const t = ev.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    const reiter = document.getElementById('tab-woche');
+    if (!reiter || !reiter.classList.contains('on')) return;
+    if (ev.key === 'ArrowLeft')  { ev.preventDefault(); zeigeWoche(zeigeIndex - 1); }
+    if (ev.key === 'ArrowRight') { ev.preventDefault(); zeigeWoche(zeigeIndex + 1); }
+  });
 
   // ── Kalender-Knopf ────────────────────────────────────────────────
   const notionFaelle = () => {
