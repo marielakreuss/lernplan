@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "07.09.2026 13:58",
+  "lastSync": "07.09.2026 17:01",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4588,
@@ -1471,7 +1471,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 50,
-    "nachbereitet": 132
+    "nachbereitet": 133
   },
   "cases": [
     {
@@ -3721,7 +3721,7 @@ window.NOTION_DATA = {
       "title": "ArbR Fall 10 (sehr wichtig)",
       "status": "Nicht nachbereitet",
       "woche": 50,
-      "datum": "2026-09-07",
+      "datum": "2026-09-08",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -3747,9 +3747,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 8 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
-      "status": "Nicht nachbereitet",
-      "woche": 49,
-      "datum": "2026-09-04",
+      "status": "Nachbereitet",
+      "woche": 50,
+      "datum": "2026-09-07",
       "rechtsgebiet": [
         "ArbeitsR"
       ],
@@ -5753,7 +5753,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 132,
+    "nachbereitet": 133,
     "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
