@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.09.2026 11:33",
+  "lastSync": "08.09.2026 11:47",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4606,
+    "reviewedToday": 3,
+    "dueNow": 4608,
     "history": [
       {
         "date": "2025-09-29",
@@ -1176,20 +1176,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-07",
         "count": 102
+      },
+      {
+        "date": "2026-09-08",
+        "count": 3
       }
     ],
     "stand": "2026-09-08"
   },
   "ankiFach": {
-    "stand": "08.09.2026 11:33",
+    "stand": "08.09.2026 11:47",
     "faecher": {
       "Zivilrecht": {
-        "total": 1935,
-        "neu": 15,
-        "lernen": 672,
+        "total": 1937,
+        "neu": 10,
+        "lernen": 679,
         "aufbau": 171,
         "sitzt": 1077,
-        "faellig": 1489
+        "faellig": 1492
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1210,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "08.09.2026 11:33",
+    "stand": "08.09.2026 11:47",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1304,11 +1308,11 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 205,
+        "total": 207,
         "faellig": 152,
         "u30": 14,
         "u90": 14,
-        "rated30": 176,
+        "rated30": 183,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1415,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "08.09.2026 11:33",
+    "stand": "08.09.2026 11:47",
     "slots": [
       {
         "tag": "Mo",
@@ -1475,7 +1479,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 50,
-    "nachbereitet": 133
+    "nachbereitet": 134
   },
   "cases": [
     {
@@ -3723,7 +3727,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 10 (sehr wichtig)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 50,
       "datum": "2026-09-08",
       "rechtsgebiet": [
@@ -5757,7 +5761,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 133,
+    "nachbereitet": 134,
     "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
