@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.09.2026 11:47",
+  "lastSync": "08.09.2026 11:54",
   "anki": {
-    "reviewedToday": 3,
-    "dueNow": 4608,
+    "reviewedToday": 16,
+    "dueNow": 4613,
     "history": [
       {
         "date": "2025-09-29",
@@ -1179,21 +1179,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-08",
-        "count": 3
+        "count": 16
       }
     ],
     "stand": "2026-09-08"
   },
   "ankiFach": {
-    "stand": "08.09.2026 11:47",
+    "stand": "08.09.2026 11:54",
     "faecher": {
       "Zivilrecht": {
         "total": 1937,
-        "neu": 10,
-        "lernen": 679,
+        "neu": 0,
+        "lernen": 689,
         "aufbau": 171,
         "sitzt": 1077,
-        "faellig": 1492
+        "faellig": 1496
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "08.09.2026 11:47",
+    "stand": "08.09.2026 11:54",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1312,7 +1312,7 @@ window.NOTION_DATA = {
         "faellig": 152,
         "u30": 14,
         "u90": 14,
-        "rated30": 183,
+        "rated30": 193,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
       },
       "EuropaR": {
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "08.09.2026 11:47",
+    "stand": "08.09.2026 11:54",
     "slots": [
       {
         "tag": "Mo",
