@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.09.2026 17:02",
+  "lastSync": "08.09.2026 17:23",
   "anki": {
     "reviewedToday": 27,
     "dueNow": 4606,
@@ -1185,11 +1185,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-08"
   },
   "ankiFach": {
-    "stand": "08.09.2026 17:02",
+    "stand": "08.09.2026 17:23",
     "faecher": {
       "Zivilrecht": {
-        "total": 1949,
-        "neu": 12,
+        "total": 1956,
+        "neu": 19,
         "lernen": 689,
         "aufbau": 171,
         "sitzt": 1077,
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "08.09.2026 17:02",
+    "stand": "08.09.2026 17:23",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1308,7 +1308,7 @@ window.NOTION_DATA = {
       },
       "ArbeitsR": {
         "fach": "Zivilrecht",
-        "total": 219,
+        "total": 226,
         "faellig": 152,
         "u30": 14,
         "u90": 14,
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "08.09.2026 17:02",
+    "stand": "08.09.2026 17:23",
     "slots": [
       {
         "tag": "Mo",
@@ -1479,7 +1479,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 50,
-    "nachbereitet": 134
+    "nachbereitet": 135
   },
   "cases": [
     {
@@ -3741,7 +3741,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "ArbR Fall 9 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 50,
       "datum": "2026-09-08",
       "rechtsgebiet": [
@@ -5761,7 +5761,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 134,
+    "nachbereitet": 135,
     "inBearbeitung": 27,
     "total": 304,
     "klkGesamt": 49,
