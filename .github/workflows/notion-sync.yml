@@ -1,11 +1,12 @@
 name: Notion Sync
 
 on:
+  # Zweimal taeglich statt fuenfmal (08.09.2026). Der Cloud-Sync ist nur das
+  # Netz fuer "Mac war aus" – Anki kann er ohnehin nicht lesen, und die
+  # Notion-Zahlen bewegen sich rund 1,4-mal am Tag. Den Rest macht der
+  # stuendliche Mac-Sync (com.mariela.notionsync).
   schedule:
-    - cron: '0 8 * * *'   # 08:00 UTC+2 = 10:00 MESZ → zu früh, daher MESZ-Offset
     - cron: '0 6 * * *'   # 06:00 UTC = 08:00 MESZ
-    - cron: '0 12 * * *'  # 12:00 UTC = 14:00 MESZ
-    - cron: '0 16 * * *'  # 16:00 UTC = 18:00 MESZ
     - cron: '0 20 * * *'  # 20:00 UTC = 22:00 MESZ
   workflow_dispatch:       # auch manuell startbar
 
