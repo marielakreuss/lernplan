@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.09.2026 10:29",
+  "lastSync": "09.09.2026 13:10",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4673,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-09"
   },
   "ankiFach": {
-    "stand": "09.09.2026 08:53",
+    "stand": "09.09.2026 13:10",
     "faecher": {
       "Zivilrecht": {
         "total": 1955,
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "09.09.2026 08:53",
+    "stand": "09.09.2026 13:10",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "09.09.2026 08:53",
+    "stand": "09.09.2026 13:10",
     "slots": [
       {
         "tag": "Mo",
@@ -1482,6 +1482,61 @@ window.NOTION_DATA = {
     "nachbereitet": 135
   },
   "cases": [
+    {
+      "title": "KW 3 - nicht abgegeben, gegliedert",
+      "status": "Nicht nachbereitet",
+      "woche": 49,
+      "datum": "2026-09-03",
+      "rechtsgebiet": [
+        "SicherheitsR / PolizeiR",
+        "VerwaltungsR AT"
+      ],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-3-nicht-abgegeben-gegliedert-3d6539e733aa805eac95cfb05f0efcdf"
+    },
+    {
+      "title": "Konrad 1 - Licht für Kühe",
+      "status": "Nicht nachbereitet",
+      "woche": 51,
+      "datum": "2026-09-18",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-1-Licht-f-r-K-he-3d6539e733aa80b2bdbbffbc0cf1ac04"
+    },
+    {
+      "title": "Konrad 1: Dachdeckersorgen",
+      "status": "Nicht nachbereitet",
+      "woche": 51,
+      "datum": "2026-09-18",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-1-Dachdeckersorgen-3d6539e733aa803cb8ffeacba7f53c6c"
+    },
+    {
+      "title": "UKK 1483 (Probestex) - abgegeben am 9.9.26",
+      "status": "Nicht nachbereitet",
+      "woche": 50,
+      "datum": "2026-09-09",
+      "rechtsgebiet": [
+        "SachenR",
+        "ErbR",
+        "ZPO I"
+      ],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/UKK-1483-Probestex-abgegeben-am-9-9-26-3d6539e733aa805b8235e231944f1e77"
+    },
     {
       "title": "KW 2 - abgegeben am 29.8.26",
       "status": "Nicht nachbereitet",
@@ -5763,8 +5818,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 135,
     "inBearbeitung": 27,
-    "total": 304,
-    "klkGesamt": 49,
-    "klkAbgegeben": 22
+    "total": 308,
+    "klkGesamt": 53,
+    "klkAbgegeben": 23
   }
 };
