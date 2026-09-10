@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "10.09.2026 16:47",
+  "lastSync": "10.09.2026 22:18",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4705,
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "10.09.2026 16:47",
+    "stand": "10.09.2026 22:18",
     "slots": [
       {
         "tag": "Mo",
@@ -1482,6 +1482,23 @@ window.NOTION_DATA = {
     "nachbereitet": 135
   },
   "cases": [
+    {
+      "title": "UKK 1483 (Probestex) - abgegeben am 10.9.2026",
+      "status": "Nicht nachbereitet",
+      "woche": 50,
+      "datum": "2026-09-10",
+      "rechtsgebiet": [
+        "ZPO I",
+        "SchuldR BT",
+        "SchuldR AT",
+        "BGB AT"
+      ],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/UKK-1483-Probestex-abgegeben-am-10-9-2026-3d7539e733aa80d5a439fcdb93ba6dc7"
+    },
     {
       "title": "KW 3 - nicht abgegeben, gegliedert",
       "status": "Nicht nachbereitet",
@@ -5818,8 +5835,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 135,
     "inBearbeitung": 27,
-    "total": 308,
-    "klkGesamt": 53,
-    "klkAbgegeben": 23
+    "total": 309,
+    "klkGesamt": 54,
+    "klkAbgegeben": 24
   }
 };
