@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "11.09.2026 08:57",
+  "lastSync": "11.09.2026 09:59",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4705,
+    "dueNow": 4734,
     "history": [
       {
         "date": "2025-09-29",
@@ -1182,10 +1182,10 @@ window.NOTION_DATA = {
         "count": 118
       }
     ],
-    "stand": "2026-09-10"
+    "stand": "2026-09-11"
   },
   "ankiFach": {
-    "stand": "10.09.2026 15:47",
+    "stand": "11.09.2026 09:59",
     "faecher": {
       "Zivilrecht": {
         "total": 1955,
@@ -1193,7 +1193,7 @@ window.NOTION_DATA = {
         "lernen": 706,
         "aufbau": 171,
         "sitzt": 1078,
-        "faellig": 1575
+        "faellig": 1598
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1201,7 +1201,7 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 729
+        "faellig": 734
       },
       "Strafrecht": {
         "total": 651,
@@ -1209,38 +1209,38 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 625
+        "faellig": 626
       }
     }
   },
   "ankiGebiet": {
-    "stand": "10.09.2026 15:47",
+    "stand": "11.09.2026 09:59",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
         "total": 304,
-        "faellig": 205,
-        "u30": 142,
+        "faellig": 209,
+        "u30": 143,
         "u90": 31,
-        "rated30": 51,
+        "rated30": 50,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR AT": {
         "fach": "Zivilrecht",
         "total": 223,
-        "faellig": 106,
+        "faellig": 112,
         "u30": 25,
         "u90": 0,
-        "rated30": 76,
+        "rated30": 70,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
       },
       "SchuldR BT": {
         "fach": "Zivilrecht",
         "total": 307,
-        "faellig": 197,
-        "u30": 52,
+        "faellig": 203,
+        "u30": 53,
         "u90": 6,
-        "rated30": 143,
+        "rated30": 141,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
       },
       "SachenR": {
@@ -1248,8 +1248,8 @@ window.NOTION_DATA = {
         "total": 320,
         "faellig": 273,
         "u30": 270,
-        "u90": 243,
-        "rated30": 24,
+        "u90": 244,
+        "rated30": 20,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
       },
       "FamilienR": {
@@ -1266,7 +1266,7 @@ window.NOTION_DATA = {
         "total": 100,
         "faellig": 98,
         "u30": 97,
-        "u90": 74,
+        "u90": 75,
         "rated30": 1,
         "suche": "(deck:\"STEX 🥳::Zivilrecht::5 Erbrecht\") -is:suspended is:due -deck:filtered"
       },
@@ -1309,7 +1309,7 @@ window.NOTION_DATA = {
       "ArbeitsR": {
         "fach": "Zivilrecht",
         "total": 225,
-        "faellig": 194,
+        "faellig": 201,
         "u30": 12,
         "u90": 12,
         "rated30": 213,
@@ -1354,7 +1354,7 @@ window.NOTION_DATA = {
       "VerwR AT": {
         "fach": "Öffentliches Recht",
         "total": 259,
-        "faellig": 118,
+        "faellig": 122,
         "u30": 20,
         "u90": 0,
         "rated30": 172,
@@ -1372,7 +1372,7 @@ window.NOTION_DATA = {
       "BauR": {
         "fach": "Öffentliches Recht",
         "total": 162,
-        "faellig": 115,
+        "faellig": 116,
         "u30": 0,
         "u90": 0,
         "rated30": 157,
@@ -1390,9 +1390,9 @@ window.NOTION_DATA = {
       "StrafR AT": {
         "fach": "Strafrecht",
         "total": 174,
-        "faellig": 166,
+        "faellig": 167,
         "u30": 158,
-        "u90": 100,
+        "u90": 102,
         "rated30": 0,
         "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR AT\") -is:suspended is:due -deck:filtered"
       },
@@ -1401,7 +1401,7 @@ window.NOTION_DATA = {
         "total": 363,
         "faellig": 345,
         "u30": 331,
-        "u90": 251,
+        "u90": 252,
         "rated30": 0,
         "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR BT\") -is:suspended is:due -deck:filtered"
       },
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "11.09.2026 08:57",
+    "stand": "11.09.2026 09:59",
     "slots": [
       {
         "tag": "Mo",
@@ -1471,7 +1471,7 @@ window.NOTION_DATA = {
         "wtag": 6,
         "fach": "Strafrecht",
         "gebiet": "StrafR AT",
-        "faellig": 166,
+        "faellig": 167,
         "limit": 25,
         "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR AT\") -is:suspended is:due -deck:filtered"
       }
@@ -1483,7 +1483,23 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
-      "title": "UKK 1483 (Probestex) - abgegeben am 10.9.2026",
+      "title": "UKK 1485 (Probestex)",
+      "status": "Nicht nachbereitet",
+      "woche": 50,
+      "datum": "2026-09-11",
+      "rechtsgebiet": [
+        "SchuldR BT 2",
+        "BGB AT",
+        "ZPO I"
+      ],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1485-Probestex-3d8539e733aa800ca393c20bfb7a4909"
+    },
+    {
+      "title": "UKK 1484 (Probestex) - abgegeben am 10.9.2026",
       "status": "Nicht nachbereitet",
       "woche": 50,
       "datum": "2026-09-10",
@@ -1497,7 +1513,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": true,
-      "url": "https://app.notion.com/p/UKK-1483-Probestex-abgegeben-am-10-9-2026-3d7539e733aa80d5a439fcdb93ba6dc7"
+      "url": "https://app.notion.com/p/UKK-1484-Probestex-abgegeben-am-10-9-2026-3d7539e733aa80d5a439fcdb93ba6dc7"
     },
     {
       "title": "KW 3 - nicht abgegeben, gegliedert",
@@ -5835,8 +5851,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 135,
     "inBearbeitung": 27,
-    "total": 309,
-    "klkGesamt": 54,
+    "total": 310,
+    "klkGesamt": 55,
     "klkAbgegeben": 24
   }
 };
