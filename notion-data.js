@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "11.09.2026 10:19",
+  "lastSync": "11.09.2026 16:43",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4734,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-11"
   },
   "ankiFach": {
-    "stand": "11.09.2026 09:59",
+    "stand": "11.09.2026 16:42",
     "faecher": {
       "Zivilrecht": {
         "total": 1955,
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "11.09.2026 09:59",
+    "stand": "11.09.2026 16:42",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 50,
     "limit": 25,
-    "stand": "11.09.2026 09:59",
+    "stand": "11.09.2026 16:42",
     "slots": [
       {
         "tag": "Mo",
@@ -1483,7 +1483,7 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
-      "title": "UKK 1485 (Probestex)",
+      "title": "UKK 1485 (Probestex) - abgegeben am 11.9.2026",
       "status": "Nicht nachbereitet",
       "woche": 50,
       "datum": "2026-09-11",
@@ -1495,8 +1495,8 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
-      "url": "https://app.notion.com/p/UKK-1485-Probestex-3d8539e733aa800ca393c20bfb7a4909"
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/UKK-1485-Probestex-abgegeben-am-11-9-2026-3d8539e733aa800ca393c20bfb7a4909"
     },
     {
       "title": "UKK 1484 (Probestex) - abgegeben am 10.9.2026",
@@ -5853,6 +5853,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 27,
     "total": 310,
     "klkGesamt": 55,
-    "klkAbgegeben": 24
+    "klkAbgegeben": 25
   }
 };
