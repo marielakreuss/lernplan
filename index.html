@@ -4517,6 +4517,7 @@
     arbeitFallKw:{std:'6 h + 4 h', b:[B.arbeit, B.fallNm, B.kw]}
   };
 
+  const FACH_KURZ = {'Zivilrecht':'ZR', 'Öffentliches Recht':'ÖR', 'Strafrecht':'StrafR'};
   const TAGE = ['Mo','Di','Mi','Do','Fr','Sa','So'];
   const TAGE_LANG = {Mo:'Montag',Di:'Dienstag',Mi:'Mittwoch',Do:'Donnerstag',
                      Fr:'Freitag',Sa:'Samstag',So:'Sonntag'};
@@ -4558,13 +4559,13 @@
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'nach dem Probeexamen – kein Fall zu verschieben'},
      n:2,  g:[['StrafR',2]]},
-    {mo:'2026-09-21', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
+    {mo:'2026-09-21', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
      n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StrafR',1]]},
     {mo:'2026-09-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-01',f:'Zivilrecht',t:'Traktor auf Abwegen'},
      n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StPO',1]]},
-    {mo:'2026-10-05', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
+    {mo:'2026-10-05', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-08',f:'Öffentliches Recht',t:'Theaterkritik'},
      n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
     {mo:'2026-10-12', ph:'Peru · Ankommen',   r:'peruAnkunft',
@@ -4576,13 +4577,13 @@
     {mo:'2026-10-19', ph:'Peru · Reisewoche', r:'peruReise',
      kw:null, kwAus:'22.10. verpasst – Reisewoche',
      n:0,  g:[]},
-    {mo:'2026-10-26', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Peru · Lernphase',  r:'peruLernen',
+    {mo:'2026-10-26', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Peru · Lernphase',  r:'peruLernen',
      kw:{d:'2026-10-29',f:'Öffentliches Recht',t:'Einkaufsparadies Vendicampo',peru:'10–14 Uhr Ortszeit'},
      n:0,  g:[]},
     {mo:'2026-11-02', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Peru · Lernphase',  r:'peruLernen',
      kw:{d:'2026-11-05',f:'Zivilrecht',t:'Ungebremste Jungfernfahrt',peru:'10–14 Uhr Ortszeit'},
      n:0,  g:[]},
-    {mo:'2026-11-09', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Endspurt',          r:'normal',
+    {mo:'2026-11-09', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-12',f:'Strafrecht',t:'Strafbarkeitsrisiken III'},
      n:9,  g:[['SachenR',6],['PolizeiR',2],['StrafR',1]]},
     {mo:'2026-11-16', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'normal',
@@ -4591,13 +4592,13 @@
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['SachenR',4],['ZPO I',2],['PolizeiR',2],['StPO',1]]},
-    {mo:'2026-11-23', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Endspurt',          r:'normal',
+    {mo:'2026-11-23', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-26',f:'Öffentliches Recht',t:'Brand mit Folgen'},
      n:9,  g:[['ZPO I',5],['PolizeiR',3],['StrafR',1]]},
     {mo:'2026-11-30', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-03',f:'Zivilrecht',t:'Hangover'},
      n:9,  g:[['SchuldR AT',6],['EuropaR',2],['StPO',1]]},
-    {mo:'2026-12-07', sa:{q:'Uni-Klausurenkurs',f:'Strafrecht'}, ph:'Endspurt',          r:'normal',
+    {mo:'2026-12-07', sa:{q:'Uni-KK',f:'Strafrecht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-10',f:'Öffentliches Recht',t:'Datenschutz im Landtag'},
      n:9,  g:[['SchuldR AT',3],['BGB AT',3],['EuropaR',3]]},
     {mo:'2026-12-14', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'normal',
@@ -4606,13 +4607,13 @@
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['BGB AT',5],['EuropaR',1],['VerwR AT',2],['StrafR',1]]},
-    {mo:'2026-12-21', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Weihnachten',       r:'weihnacht',
+    {mo:'2026-12-21', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 24.12.',
      n:4,  g:[['SchuldR BT',3],['VerwR AT',1]]},
     {mo:'2026-12-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 31.12.',
      n:4,  g:[['HGB',1],['VerwR AT',1],['Reserve',2]]},
-    {mo:'2027-01-04', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Januar',            r:'normal',
+    {mo:'2027-01-04', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-07',f:'Zivilrecht',t:'Solaris'},
      n:9,  g:[['HGB',5],['StPO',1],['Reserve',3]]},
     {mo:'2027-01-11', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Januar',            r:'normal',
@@ -4621,10 +4622,10 @@
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['ZPO II',5],['StaatshaftungsR',3],['StPO',1]]},
-    {mo:'2027-01-18', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Januar',            r:'normal',
+    {mo:'2027-01-18', sa:{q:'Uni-KK',f:'Zivilrecht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-21',f:'Zivilrecht',t:'N.N.'},
      n:9,  g:[['ErbR',5],['VerfassungsR',3],['Reserve',1]]},
-    {mo:'2027-01-25', sa:{q:'Uni-Klausurenkurs',f:'Strafrecht'}, ph:'Januar',            r:'normal',
+    {mo:'2027-01-25', sa:{q:'Uni-KK',f:'Strafrecht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-28',f:'Öffentliches Recht',t:'Tankt in Österreich'},
      n:9,  g:[['FamilienR',2],['StrafR',2],['VerfassungsR',3],['Reserve',2]]}
   ];
@@ -5269,8 +5270,8 @@
           // Die beiden Schreibblöcke tragen ihr Fach, damit die Mischung
           // der Woche im Gitter ablesbar ist.
           let klFach = null;
-          if (block === B.klausurDo && woche.kw)  { klFach = FACH_KEY[woche.kw.f]; text = 'Werkstattklausur · ' + woche.kw.f; }
-          if (block === B.klausur   && woche.sa)  { klFach = FACH_KEY[woche.sa.f]; text = woche.sa.q + ' · ' + woche.sa.f; }
+          if (block === B.klausurDo && woche.kw)  { klFach = FACH_KEY[woche.kw.f]; text = 'Schreiben · ' + FACH_KURZ[woche.kw.f]; }
+          if (block === B.klausur   && woche.sa)  { klFach = FACH_KEY[woche.sa.f]; text = woche.sa.q + ' · ' + FACH_KURZ[woche.sa.f]; }
           if (block === B.kw        && woche.kw)  { klFach = FACH_KEY[woche.kw.f]; }
           const fachK = gebiet ? FACH_VON_GEBIET[gebiet] : klFach;
           const gewaehlt = block.k === 'konrad' && woche.konrad && woche.konrad.wahl;
