@@ -12,46 +12,46 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* ── Grundfläche: warmes Creme/Beige ──────────── */
-      --bg:            #F5F2EB;
-      --surface:       rgba(255,255,255,0.76);
+      /* ── Grundfläche: helles Creme, Pastellflächen tragen die Farbe ── */
+      --bg:            #FBF6F0;
+      --surface:       rgba(255,255,255,0.88);
       --surface-solid: #FFFFFF;
-      --surface-2:     rgba(255,255,255,0.50);
-      --border:        rgba(62,50,34,0.10);
-      --border-strong: rgba(62,50,34,0.17);
-      --text:          #2B2620;
-      --text-muted:    #6E6558;
-      --text-sub:      #A79E8F;
+      --surface-2:     rgba(255,255,255,0.62);
+      --border:        rgba(60,44,34,0.09);
+      --border-strong: rgba(60,44,34,0.15);
+      --text:          #241F1C;
+      --text-muted:    #6B6058;
+      --text-sub:      #A79B90;
 
       /* ── Rechtsgebiete (führen die Farbe) ─────────── */
-      --zr:   #2E8465;  --zr-l: #86C9AC;  --zr-bg: #EAF4EF;  --zr-deep: #1E5E47;
-      --or:   #43698F;  --or-l: #9BBAD6;  --or-bg: #EBF0F6;  --or-deep: #2C4A67;
-      --sr:   #B25169;  --sr-l: #E3A8B6;  --sr-bg: #F8EDF0;  --sr-deep: #843B4E;
+      --zr:   #2F8A63;  --zr-l: #9FE0C4;  --zr-bg: #DDF3E8;  --zr-deep: #1D6146;
+      --or:   #6257A6;  --or-l: #C3BBEE;  --or-bg: #E8E4FA;  --or-deep: #443C7B;
+      --sr:   #C0566A;  --sr-l: #F3B3BB;  --sr-bg: #FCE3E4;  --sr-deep: #8E3A4B;
 
-      /* Primär: warmes Sand/Camel – dezent, kein Fachbezug,
-         kollidiert mit keiner der drei Fachfarben */
-      --accent:      #8C6D45;   /* Text, Linien, Ränder – trägt Kontrast */
-      --accent-fill: #C2A377;   /* große Flächen: Balken, Heatmap, Fortschritt */
-      --accent-l:    #E0CDAB;
-      --accent-soft: #F6F0E4;
+      /* Primär: warmes Apricot – kein Fachbezug, kollidiert mit keiner
+         der drei Fachfarben und trägt als Fläche wie als Linie. */
+      --accent:      #B5793A;   /* Text, Linien, Ränder – trägt Kontrast */
+      --accent-fill: #F0BA80;   /* große Flächen: Balken, Heatmap, Fortschritt */
+      --accent-l:    #FAE0BE;
+      --accent-soft: #FDF2E4;
 
-      /* ── Phasen: warme Sandtöne mit leichtem Farbton ─── */
-      --rep-bg: #F1EEE8;     --rep-border: #D8D1C4;     --rep-text: #6B6254;
-      --urlaub-bg: #EDF2EC;  --urlaub-border: #C6D6C7;  --urlaub-text: #52705A;
-      --fokus-bg: #F8F1E4;   --fokus-border: #E2CFAE;   --fokus-text: #7D6540;
-      --peru-bg: #EDF1F1;    --peru-border: #C7D3D3;    --peru-text: #53686B;
-      --postrep-bg: #EFEEF4; --postrep-border: #CECAD7; --postrep-text: #5B5470;
-      --probe-bg: #F7EFF0;   --probe-border: #DFC2C7;   --probe-text: #8A5C64;
-      --wieder-bg: #EEF1F4;  --wieder-border: #CAD3DB;  --wieder-text: #566670;
-      --examen-bg: #F8EFDC;  --examen-border: #DCC391;  --examen-text: #7A5F2C;
+      /* ── Phasen: Pastellflächen, je Phase ein eigener Ton ─── */
+      --rep-bg: #F3EEE7;     --rep-border: #E0D6C8;     --rep-text: #6E6153;
+      --urlaub-bg: #DDF3E8;  --urlaub-border: #ABDCC5;  --urlaub-text: #2F7256;
+      --fokus-bg: #FDEBD4;   --fokus-border: #F0C894;   --fokus-text: #90632C;
+      --peru-bg: #DEF0F1;    --peru-border: #A9D2D6;    --peru-text: #35696F;
+      --postrep-bg: #E8E4FA; --postrep-border: #C0B8EB; --postrep-text: #4E4489;
+      --probe-bg: #FCE3E4;   --probe-border: #EFB4BC;   --probe-text: #9B4557;
+      --wieder-bg: #E7ECF5;  --wieder-border: #BFCCE3;  --wieder-text: #46587A;
+      --examen-bg: #FBE6C4;  --examen-border: #E7BE7C;  --examen-text: #8A6222;
 
-      --past-bg: #F2EFE9;    --past-border: #DED8CB;    --past-text: #968E80;
-      --future-bg: #F8F6F1;  --future-border: #E9E4DA;  --future-text: #B0A899;
+      --past-bg: #F4EFE9;    --past-border: #E4DBD0;    --past-text: #9A8F84;
+      --future-bg: #FDFAF6;  --future-border: #EDE5DB;  --future-text: #B4A99E;
 
-      --radius:    18px;
-      --radius-sm: 12px;
-      --shadow:    0 1px 2px rgba(60,48,32,0.04), 0 8px 24px -12px rgba(60,48,32,0.14);
-      --shadow-lg: 0 2px 4px rgba(60,48,32,0.05), 0 24px 48px -20px rgba(60,48,32,0.20);
+      --radius:    24px;
+      --radius-sm: 16px;
+      --shadow:    0 1px 2px rgba(70,50,38,0.04), 0 14px 34px -16px rgba(70,50,38,0.18);
+      --shadow-lg: 0 2px 6px rgba(70,50,38,0.05), 0 30px 60px -24px rgba(70,50,38,0.24);
     }
 
     html { -webkit-text-size-adjust: 100%; }
@@ -73,16 +73,16 @@
       z-index: -1;
       pointer-events: none;
       background:
-        radial-gradient(1150px 640px at 6% -10%,  rgba(206,182,144,0.24), transparent 64%),
-        radial-gradient(950px  560px at 98% 2%,   rgba(168,158,140,0.16), transparent 62%),
-        radial-gradient(900px  760px at 55% 106%, rgba(214,196,170,0.20), transparent 64%);
+        radial-gradient(1100px 620px at 4% -12%,  rgba(159,224,196,0.38), transparent 62%),
+        radial-gradient(980px  560px at 99% -4%,  rgba(250,224,190,0.52), transparent 60%),
+        radial-gradient(900px  740px at 58% 108%, rgba(195,187,238,0.32), transparent 62%);
     }
 
     /* Glas-Basis für alle Karten */
     .glass {
       background: var(--surface);
-      -webkit-backdrop-filter: blur(18px) saturate(1.25);
-      backdrop-filter: blur(18px) saturate(1.25);
+      -webkit-backdrop-filter: blur(20px) saturate(1.3);
+      backdrop-filter: blur(20px) saturate(1.3);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -977,6 +977,11 @@
     .sp-e.k-fix    { --bk: var(--border-strong); background: var(--past-bg); color: var(--text-muted); }
     .sp-e.k-kw     { --bk: var(--accent); background: var(--accent-soft); font-weight: 600; }
     .sp-e.k-klausur{ --bk: var(--accent); background: var(--accent-soft); font-weight: 600; }
+    /* Die beiden Schreibblöcke und die Werkstatt tragen die Farbe ihres
+       Fachs, damit die Mischung der Woche im Gitter sichtbar wird. */
+    .sp-e.f-zr { --bk: var(--zr); background: var(--zr-bg); }
+    .sp-e.f-or { --bk: var(--or); background: var(--or-bg); }
+    .sp-e.f-sr { --bk: var(--sr); background: var(--sr-bg); }
     .sp-e.k-pause  { --bk: transparent; background: transparent; color: var(--text-sub); }
     .sp-e.k-frei   { --bk: var(--urlaub-border); background: var(--urlaub-bg); color: var(--urlaub-text); }
     .sp-e.k-karte, .sp-e.k-vertief, .sp-e.k-prep { --bk: var(--accent-l); }
@@ -1141,23 +1146,26 @@
       border: none; background: none; cursor: pointer;
       font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 500;
       color: var(--text-muted);
-      padding: 0.6rem 0.7rem; border-radius: 11px;
+      padding: 0.62rem 0.95rem; border-radius: 999px;
       text-align: left; white-space: nowrap;
-      transition: background 0.18s, color 0.18s;
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
     }
-    .nav-item:hover { background: rgba(255,255,255,0.72); color: var(--text); }
+    .nav-item:hover { background: rgba(255,255,255,0.82); color: var(--text); }
+    /* Aktiver Punkt als volle dunkle Pille – ein einziger kräftiger Akzent
+       in der ganzen Leiste, alles andere bleibt ruhig. */
     .nav-item.on {
-      background: var(--accent-soft);
-      color: var(--accent);
+      background: var(--text);
+      color: #FFFFFF;
       font-weight: 600;
-      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent);
+      box-shadow: 0 6px 16px -8px rgba(36,31,28,0.55);
     }
+    .nav-item.on .nav-ic { opacity: 1; }
     .nav-ic { width: 1.1rem; text-align: center; font-size: 0.92rem; opacity: 0.85; }
     .nav-badge {
       margin-left: auto; font-size: 0.7rem; font-weight: 600;
       color: var(--text-sub); font-variant-numeric: tabular-nums;
     }
-    .nav-item.on .nav-badge { color: var(--accent); }
+    .nav-item.on .nav-badge { color: rgba(255,255,255,0.78); }
 
     .side-foot {
       margin-top: auto;
@@ -1270,6 +1278,191 @@
       .tiles { grid-template-columns: 1fr 1fr; }
       .card { padding: 1rem 1.05rem; }
     }
+
+    /* ══ ZWISCHENSTAND ═══════════════════════════════════════════════
+       Eigener Reiter, eigene Bausteine. Die Pastellflächen der drei
+       Fächer tragen hier dieselbe Bedeutung wie im Stundenplan. */
+    #tab-zwischenstand { --zs-band: rgba(192,86,106,0.07); --zs-line: rgba(60,44,34,0.22); }
+
+    .zs-head { margin-bottom: 1.6rem; }
+    .zs-eyebrow {
+      font-family: 'Outfit', sans-serif; font-size: 0.7rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.14em; color: var(--text-sub);
+      margin-bottom: 0.75rem;
+    }
+    .zs-title {
+      font-family: 'Outfit', sans-serif; font-size: clamp(1.9rem, 4vw, 2.9rem);
+      font-weight: 600; line-height: 1.1; letter-spacing: -0.03em;
+      color: var(--text); margin-bottom: 0.8rem;
+    }
+    .zs-lead {
+      font-size: 1.02rem; line-height: 1.65; color: var(--text-muted);
+      max-width: 62ch;
+    }
+
+    .zs-kpis {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem;
+      margin: 1.8rem 0 0.4rem;
+    }
+    .zs-kpi {
+      background: var(--surface-solid); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 1.05rem 1.1rem;
+      box-shadow: var(--shadow);
+    }
+    .zs-kpi b {
+      font-family: 'Outfit', sans-serif; font-size: 1.85rem; font-weight: 600;
+      line-height: 1; letter-spacing: -0.03em; display: block;
+      font-variant-numeric: tabular-nums; color: var(--text);
+    }
+    .zs-kpi span {
+      display: block; margin-top: 0.5rem; font-size: 0.76rem;
+      line-height: 1.4; color: var(--text-sub);
+    }
+    .zs-kpi.hi { background: var(--accent-soft); border-color: var(--accent-l); }
+    .zs-kpi.hi b { color: var(--accent); }
+    .zs-kpi.hi span { color: var(--accent); opacity: 0.78; }
+    @media (max-width: 780px) { .zs-kpis { grid-template-columns: repeat(2, 1fr); } }
+
+    .zs-card { padding: 1.3rem 1.4rem; }
+    .zs-chart { display: block; width: 100%; height: auto; overflow: visible; }
+    .zs-ax { font-family: 'Outfit', sans-serif; font-size: 10.5px; fill: var(--text-sub); }
+    .zs-ax.zs-acc { fill: var(--accent); }
+    .zs-ax.zs-b   { font-weight: 600; fill: var(--text-muted); }
+    .zs-dot { stroke: var(--surface-solid); stroke-width: 1.5; }
+    .zs-dot.d-zr { fill: var(--zr); }
+    .zs-dot.d-or { fill: var(--or); }
+    .zs-dot.d-sr { fill: var(--sr); }
+
+    .zs-legende {
+      display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem;
+      margin-top: 0.9rem; padding-top: 0.85rem; border-top: 1px solid var(--border);
+      font-size: 0.76rem; color: var(--text-sub);
+    }
+    .zs-legende span { display: flex; align-items: center; gap: 0.42rem; }
+    .zs-legende i { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .zs-legende i.d-zr { background: var(--zr); }
+    .zs-legende i.d-or { background: var(--or); }
+    .zs-legende i.d-sr { background: var(--sr); }
+    .zs-legende i.l-avg { width: 18px; height: 3px; border-radius: 2px; background: var(--accent-fill); }
+
+    .zs-tabelle { overflow-x: auto; }
+    .zs-tabelle table { border-collapse: collapse; width: 100%; min-width: 460px; }
+    .zs-tabelle th {
+      font-family: 'Outfit', sans-serif; font-size: 0.68rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-sub);
+      text-align: left; padding: 0 0.9rem 0.6rem 0; border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .zs-tabelle td {
+      padding: 0.7rem 0.9rem 0.7rem 0; border-bottom: 1px solid var(--border);
+      font-size: 0.88rem; vertical-align: baseline; color: var(--text);
+    }
+    .zs-tabelle tr:last-child td { border-bottom: 0; }
+    .zs-tabelle .r { text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; }
+    .zs-tabelle td em {
+      display: block; font-style: normal; font-size: 0.74rem;
+      color: var(--text-sub); margin-top: 0.15rem;
+    }
+    .zs-tabelle .pkt {
+      display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+      margin-right: 0.5rem; vertical-align: 0.05rem;
+    }
+    .pkt.d-zr { background: var(--zr); } .pkt.d-or { background: var(--or); } .pkt.d-sr { background: var(--sr); }
+
+    .zs-note {
+      font-size: 0.79rem; line-height: 1.6; color: var(--text-sub);
+      margin-top: 0.9rem; max-width: 70ch;
+    }
+
+    .zs-hebel {
+      padding: 1.4rem 1.5rem;
+      background: linear-gradient(140deg, var(--accent-soft), var(--surface-solid) 72%);
+      border-color: var(--accent-l);
+    }
+    .zs-hebel-kopf {
+      font-family: 'Outfit', sans-serif; font-size: 1.22rem; font-weight: 600;
+      letter-spacing: -0.02em; color: var(--accent); margin-bottom: 0.6rem;
+    }
+    .zs-hebel > p { font-size: 0.92rem; line-height: 1.65; color: var(--text-muted); max-width: 68ch; }
+    .zs-belege { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 1.2rem; }
+    .zs-beleg {
+      background: var(--surface-solid); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 0.9rem 1rem;
+    }
+    .zs-beleg b {
+      display: block; font-family: 'Outfit', sans-serif; font-size: 0.8rem;
+      font-weight: 600; color: var(--text); margin-bottom: 0.4rem;
+    }
+    .zs-beleg span { font-size: 0.78rem; line-height: 1.55; color: var(--text-muted); }
+    @media (max-width: 860px) { .zs-belege { grid-template-columns: 1fr; } }
+
+    .zs-befunde { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
+    @media (max-width: 900px) { .zs-befunde { grid-template-columns: 1fr; } }
+    .zs-befund { padding: 1.25rem 1.35rem; position: relative; }
+    .zs-nr {
+      font-family: 'Outfit', sans-serif; font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.1em; color: var(--accent);
+      background: var(--accent-soft); border-radius: 999px;
+      padding: 0.2rem 0.6rem; display: inline-block; margin-bottom: 0.7rem;
+    }
+    .zs-befund h4 {
+      font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600;
+      letter-spacing: -0.015em; color: var(--text); margin-bottom: 0.5rem; line-height: 1.3;
+    }
+    .zs-befund > p { font-size: 0.86rem; line-height: 1.62; color: var(--text-muted); }
+
+    .zs-balken, .zs-quoten { display: grid; gap: 0.42rem; margin: 1rem 0 0.2rem; }
+    .zs-balken > div, .zs-quoten > div {
+      display: grid; grid-template-columns: 9.5rem 1fr 2.3rem;
+      align-items: center; gap: 0.7rem;
+    }
+    .zs-balken span, .zs-quoten span { font-size: 0.76rem; color: var(--text-muted); }
+    .zs-balken i, .zs-quoten i {
+      height: 8px; border-radius: 999px; background: var(--accent-fill);
+      display: block; min-width: 4px;
+    }
+    .zs-balken > div { background: none; }
+    .zs-balken > div > i { background: var(--accent-fill); }
+    .zs-balken .tot > i { background: var(--sr); }
+    .zs-balken .tot span, .zs-balken .tot b { color: var(--sr); }
+    .zs-quoten i.d-zr { background: var(--zr-l); }
+    .zs-quoten i.d-or { background: var(--or-l); }
+    .zs-quoten i.d-sr { background: var(--sr-l); }
+    .zs-balken b, .zs-quoten b {
+      font-size: 0.78rem; font-weight: 600; text-align: right;
+      font-variant-numeric: tabular-nums; color: var(--text-muted);
+    }
+    @media (max-width: 520px) {
+      .zs-balken > div, .zs-quoten > div { grid-template-columns: 7rem 1fr 2.1rem; }
+    }
+
+    .zs-raster { display: flex; flex-wrap: wrap; gap: 5px; margin: 1rem 0 0.2rem; }
+    .zs-z {
+      min-width: 2.3rem; height: 1.8rem; padding: 0 0.35rem;
+      border-radius: 8px; background: var(--past-bg); border: 1px solid var(--past-border);
+      font-size: 0.66rem; color: var(--text-sub);
+      display: flex; align-items: center; justify-content: center;
+      font-variant-numeric: tabular-nums;
+    }
+    .zs-z.wip { background: var(--accent-soft); border-color: var(--accent-l); color: var(--accent); }
+
+    .zs-moves { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+    @media (max-width: 1000px) { .zs-moves { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 660px)  { .zs-moves { grid-template-columns: 1fr; } }
+    .zs-move { padding: 1.2rem 1.3rem; }
+    .zs-move-tag {
+      font-family: 'Outfit', sans-serif; font-size: 0.64rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-sub);
+      margin-bottom: 0.55rem;
+    }
+    .zs-move h4 {
+      font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 600;
+      letter-spacing: -0.015em; color: var(--text); margin-bottom: 0.45rem; line-height: 1.3;
+    }
+    .zs-move p { font-size: 0.84rem; line-height: 1.6; color: var(--text-muted); }
+    .zs-move.keep { background: linear-gradient(140deg, var(--zr-bg), var(--surface-solid) 78%); border-color: var(--zr-l); }
+    .zs-move.keep .zs-move-tag { color: var(--zr); }
+
   </style>
 </head>
 <body>
@@ -1329,6 +1522,9 @@
       </button>
       <button class="nav-item" data-tab="plan" type="button">
         <span class="nav-ic">☰</span>Der ganze Weg<span class="nav-badge" id="nb-plan"></span>
+      </button>
+      <button class="nav-item" data-tab="zwischenstand" type="button">
+        <span class="nav-ic">◈</span>Zwischenstand<span class="nav-badge" id="nb-zwischenstand"></span>
       </button>
     </nav>
 
@@ -1613,6 +1809,200 @@
       <div class="sp-hinweis" id="sp-hinweis"></div>
     </div>
   </section>
+</section>
+
+<!-- ══ ZWISCHENSTAND ══════════════════════════════════════════════════
+     Fazit aus zwölf Monaten Vorbereitung, Stand 11.09.2026. Bewusst
+     statisch: die Zahlen sind ein Schnitt zu diesem Datum und sollen
+     nicht mitlaufen, sonst verliert die Auswertung ihren Bezugspunkt.
+     Neue Korrekturen ändern die Notenreihe in ZS_NOTEN weiter unten. -->
+<section class="tab" id="tab-zwischenstand">
+
+  <div class="zs-head rise d1">
+    <div>
+      <div class="zs-eyebrow">Zwischenstand · Stand 11. September 2026</div>
+      <h2 class="zs-title">Ein Jahr liegt hinter dir.<br>Die Kurve zeigt nach oben.</h2>
+      <p class="zs-lead">Neun Klausuren im ersten Halbjahr mit 4,3, zwölf im zweiten mit 5,8, die letzten fünf mit 7,4 und zwei Prädikaten. Die Steigerung verteilt sich über alle drei Fächer und mehrere Korrektoren, ist also kein Ausreißer.</p>
+    </div>
+  </div>
+
+  <div class="zs-kpis rise d2">
+    <div class="zs-kpi"><b>21</b><span>benotete Klausuren in zwölf Monaten</span></div>
+    <div class="zs-kpi"><b>17</b><span>davon über der Bestehensgrenze</span></div>
+    <div class="zs-kpi hi"><b>7,4</b><span>Schnitt der letzten fünf</span></div>
+    <div class="zs-kpi hi"><b>+1,5</b><span>Punkte Halbjahresschnitt</span></div>
+  </div>
+
+  <div class="section-label">Notenverlauf <span>· jeder Punkt eine benotete Klausur</span></div>
+  <div class="zs-card glass rise d3">
+<svg viewBox="0 0 740 236" class="zs-chart" role="img" aria-label="Notenverlauf der 21 benoteten Klausuren, September 2025 bis August 2026">
+      <rect x="44" y="135.6" width="668" height="60.4" rx="6" fill="var(--zs-band)"/>
+      <line x1="44" y1="196.0" x2="712" y2="196.0" stroke="var(--border)" stroke-width="1"/>
+      <text x="36" y="199.5" text-anchor="end" class="zs-ax">0</text>
+      <line x1="44" y1="165.8" x2="712" y2="165.8" stroke="var(--border)" stroke-width="1"/>
+      <text x="36" y="169.3" text-anchor="end" class="zs-ax">2</text>
+      <line x1="44" y1="135.6" x2="712" y2="135.6" stroke="var(--border)" stroke-width="1"/>
+      <text x="36" y="139.1" text-anchor="end" class="zs-ax">4</text>
+      <line x1="44" y1="105.5" x2="712" y2="105.5" stroke="var(--border)" stroke-width="1"/>
+      <text x="36" y="109.0" text-anchor="end" class="zs-ax">6</text>
+      <line x1="44" y1="75.3" x2="712" y2="75.3" stroke="var(--border)" stroke-width="1"/>
+      <text x="36" y="78.8" text-anchor="end" class="zs-ax">8</text>
+      <line x1="44" y1="45.1" x2="712" y2="45.1" stroke="var(--border)" stroke-width="1"/>
+      <text x="36" y="48.6" text-anchor="end" class="zs-ax">10</text>
+      <line x1="44" y1="60.2" x2="712" y2="60.2" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="3 4"/>
+      <text x="712" y="54.2" text-anchor="end" class="zs-ax zs-acc">Prädikat 9</text>
+      <text x="712" y="129.6" text-anchor="end" class="zs-ax">bestanden ab 4</text>
+      <text x="66.0" y="214.0" text-anchor="middle" class="zs-ax">Okt 25</text>
+      <text x="188.0" y="214.0" text-anchor="middle" class="zs-ax">Dez</text>
+      <text x="312.0" y="214.0" text-anchor="middle" class="zs-ax">Feb 26</text>
+      <text x="430.0" y="214.0" text-anchor="middle" class="zs-ax">Apr</text>
+      <text x="552.0" y="214.0" text-anchor="middle" class="zs-ax">Jun</text>
+      <text x="674.0" y="214.0" text-anchor="middle" class="zs-ax">Aug</text>
+      <polyline points="58.0,150.7 86.0,120.5 106.0,135.6 156.0,120.5 170.0,165.8 186.0,120.5 254.0,150.7 290.0,105.5 324.0,105.5 406.0,135.6 454.0,90.4 480.0,105.5 510.0,135.6 556.0,165.8 564.0,105.5 576.0,135.6 590.0,120.5 608.0,45.1 620.0,75.3 660.0,120.5 688.0,60.2" fill="none" stroke="var(--zs-line)" stroke-width="1.4" stroke-linejoin="round"/>
+      <line x1="58.0" y1="130.7" x2="386.0" y2="130.7" stroke="var(--accent-fill)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="388.0" y1="108.0" x2="688.0" y2="108.0" stroke="var(--accent-fill)" stroke-width="3" stroke-linecap="round"/>
+      <text x="222.0" y="145.7" text-anchor="middle" class="zs-ax zs-b">&#216; 4,3</text>
+      <text x="538.0" y="100.0" text-anchor="middle" class="zs-ax zs-b">&#216; 5,8</text>
+      <circle cx="58.0" cy="150.7" r="4.5" class="zs-dot d-or"><title>2119 · ÖR · 3 Punkte</title></circle>
+      <circle cx="86.0" cy="120.5" r="4.5" class="zs-dot d-sr"><title>2121 · StrafR · 5 Punkte</title></circle>
+      <circle cx="106.0" cy="135.6" r="4.5" class="zs-dot d-zr"><title>2122 · ZR · 4 Punkte</title></circle>
+      <circle cx="156.0" cy="120.5" r="4.5" class="zs-dot d-zr"><title>2126 · ZR · 5 Punkte</title></circle>
+      <circle cx="170.0" cy="165.8" r="4.5" class="zs-dot d-or"><title>2127 · ÖR · 2 Punkte</title></circle>
+      <circle cx="186.0" cy="120.5" r="4.5" class="zs-dot d-zr"><title>2128 · ZR · 5 Punkte</title></circle>
+      <circle cx="254.0" cy="150.7" r="4.5" class="zs-dot d-or"><title>2131 · ÖR · 3 Punkte</title></circle>
+      <circle cx="290.0" cy="105.5" r="4.5" class="zs-dot d-zr"><title>2132 · ZR · 6 Punkte</title></circle>
+      <circle cx="324.0" cy="105.5" r="4.5" class="zs-dot d-zr"><title>2136 · ZR · 6 Punkte</title></circle>
+      <circle cx="406.0" cy="135.6" r="4.5" class="zs-dot d-zr"><title>2142 · ZR · 4 Punkte</title></circle>
+      <circle cx="454.0" cy="90.4" r="4.5" class="zs-dot d-zr"><title>2144 · ZR · 7 Punkte</title></circle>
+      <circle cx="480.0" cy="105.5" r="4.5" class="zs-dot d-zr"><title>2146 · ZR · 6 Punkte</title></circle>
+      <circle cx="510.0" cy="135.6" r="4.5" class="zs-dot d-zr"><title>2148 · ZR · 4 Punkte</title></circle>
+      <circle cx="556.0" cy="165.8" r="4.5" class="zs-dot d-sr"><title>2149 · StrafR · 2 Punkte</title></circle>
+      <circle cx="564.0" cy="105.5" r="4.5" class="zs-dot d-or"><title>2151 · ÖR · 6 Punkte</title></circle>
+      <circle cx="576.0" cy="135.6" r="4.5" class="zs-dot d-zr"><title>2152 · ZR · 4 Punkte</title></circle>
+      <circle cx="590.0" cy="120.5" r="4.5" class="zs-dot d-sr"><title>2153 · StrafR · 5 Punkte</title></circle>
+      <circle cx="608.0" cy="45.1" r="4.5" class="zs-dot d-zr"><title>2154 · ZR · 10 Punkte</title></circle>
+      <circle cx="620.0" cy="75.3" r="4.5" class="zs-dot d-sr"><title>3208 · StrafR · 8 Punkte</title></circle>
+      <circle cx="660.0" cy="120.5" r="4.5" class="zs-dot d-zr"><title>1482 · ZR · 5 Punkte</title></circle>
+      <circle cx="688.0" cy="60.2" r="4.5" class="zs-dot d-zr"><title>2160 · ZR · 9 Punkte</title></circle>
+      <text x="608.0" y="35.1" text-anchor="middle" class="zs-ax zs-b">2154</text>
+      <text x="620.0" y="65.3" text-anchor="middle" class="zs-ax zs-b">3208</text>
+      <text x="688.0" y="50.2" text-anchor="middle" class="zs-ax zs-b">2160</text>
+      </svg>
+    <div class="zs-legende">
+      <span><i class="d-zr"></i>Zivilrecht</span>
+      <span><i class="d-or"></i>Öffentliches Recht</span>
+      <span><i class="d-sr"></i>Strafrecht</span>
+      <span><i class="l-avg"></i>Halbjahresschnitt</span>
+    </div>
+  </div>
+
+  <div class="section-label">Nach Fach <span>· gemessen am Gewicht im Examen</span></div>
+  <div class="zs-card glass rise d4">
+    <div class="zs-tabelle">
+      <table>
+        <thead><tr><th>Fach</th><th class="r">Klausuren</th><th class="r">Ø gesamt</th><th class="r">Ø seit März</th><th class="r">zuletzt</th><th>im Examen</th></tr></thead>
+        <tbody>
+          <tr><td><i class="pkt d-zr"></i>Zivilrecht<em>bestätigtes Standbein</em></td><td class="r">13</td><td class="r">5,8</td><td class="r">6,1</td><td class="r">9</td><td>3 von 6</td></tr>
+          <tr><td><i class="pkt d-or"></i>Öffentliches Recht<em>seit 7. Juni keine benotete mehr</em></td><td class="r">4</td><td class="r">3,5</td><td class="r">6,0</td><td class="r">6</td><td>2 von 6</td></tr>
+          <tr><td><i class="pkt d-sr"></i>Strafrecht<em>Karteikarten stillgelegt</em></td><td class="r">4</td><td class="r">5,0</td><td class="r">5,0</td><td class="r">8</td><td>1 von 6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="zs-note">Der Schnitt im öffentlichen Recht steht auf vier Klausuren, drei davon aus dem ersten Halbjahr. Das heißt nicht, dass das Fach schwach ist, sondern dass zu wenig Rückmeldung da ist, um es zu beurteilen. Genau das ändert die neue Klausurverteilung.</p>
+  </div>
+
+  <div class="section-label">Der eine Hebel <span>· steht in jeder der drei letzten Korrekturen</span></div>
+  <div class="zs-hebel glass rise d5">
+    <div class="zs-hebel-kopf">Du erkennst den Schwerpunkt und kürzt ihn dann</div>
+    <p>Das ist kein Wissensproblem mehr. Der Korrektor der Zehn-Punkte-Klausur schreibt, du erkennst die wesentlichen Probleme und verwendest die richtigen Normen. Was fehlt, sind Zeilen an den zwei bis drei Stellen, die die Punkte tragen.</p>
+    <div class="zs-belege">
+      <div class="zs-beleg"><b>2160 · 9 Punkte</b><span>Paragraf 765 in drei Sätzen abgehandelt. Der Korrektor nennt es wörtlich einen „viel zu schnell abgebügelten“ Schwerpunkt; erwartet war eine dreistufige Auslegung.</span></div>
+      <div class="zs-beleg"><b>2154 · 10 Punkte</b><span>Alle Schwerpunkte erkannt und richtig gelöst. Das Anwartschaftsrecht nur festgestellt statt ausgeführt, Paragraf 254 und Paragraf 139 fehlen ganz.</span></div>
+      <div class="zs-beleg"><b>1482 · 5 Punkte</b><span>Drittschadensliquidation komplett übersehen, invitatio ad offerendum als Standard übersprungen. „Die Ansätze sind erkennbar, Sie müssen diese vertiefen.“</span></div>
+    </div>
+  </div>
+
+  <div class="section-label">Die offenen Baustellen <span>· aus Notion und Anki, Stand 10.09.</span></div>
+  <div class="zs-befunde rise d6">
+
+    <div class="zs-befund glass">
+      <span class="zs-nr">01</span>
+      <h4>Die Wiederholungsrotation läuft nicht</h4>
+      <p>Drei der sechs vorgesehenen Slots standen in dreißig Tagen auf null. Gelaufen sind stattdessen die vier Gebiete, die der Stundenplan gerade als Fallblock vorsieht.</p>
+      <div class="zs-balken">
+        <div><span>Sachenrecht · Mo</span><i style="width:24%"></i><b>24</b></div>
+        <div><span>Staatsrecht · Di</span><i style="width:26%"></i><b>26</b></div>
+        <div class="tot"><span>Strafrecht BT · Mi</span><i style="width:2%"></i><b>0</b></div>
+        <div><span>ZPO I · Do</span><i style="width:32%"></i><b>32</b></div>
+        <div class="tot"><span>Europarecht · Fr</span><i style="width:2%"></i><b>1</b></div>
+        <div class="tot"><span>Strafrecht AT · Sa</span><i style="width:2%"></i><b>0</b></div>
+      </div>
+      <p class="zs-note">Erwartbar wären rund 100 Karten je Gebiet und Monat. Es liegt nicht an der Disziplin: in denselben dreißig Tagen hast du 2.395 Karten an 24 Tagen gelernt. Der tägliche Handgriff mit dem gefilterten Stapel fällt aus, nicht das Lernen.</p>
+    </div>
+
+    <div class="zs-befund glass">
+      <span class="zs-nr">02</span>
+      <h4>Strafrecht steht still</h4>
+      <p>651 Karten, davon 625 fällig, 95 sitzen. Das sind 15 Prozent gegenüber 55 im Zivilrecht. In dreißig Tagen ist in keinem der drei Strafrechtsstapel eine Karte gelaufen, Strafprozessrecht eingeschlossen.</p>
+      <div class="zs-quoten">
+        <div><span>Zivilrecht</span><i class="d-zr" style="width:55%"></i><b>55 %</b></div>
+        <div><span>Öffentliches Recht</span><i class="d-or" style="width:30%"></i><b>30 %</b></div>
+        <div><span>Strafrecht</span><i class="d-sr" style="width:15%"></i><b>15 %</b></div>
+      </div>
+      <p class="zs-note">Anteil der Karten, die sitzen. Strafrecht ist nur eine von sechs Examensklausuren, die Rechnung geht also zunächst auf. Sie geht nicht auf, wenn diese eine Klausur unter vier Punkten landet, und in der mündlichen Prüfung gar nicht.</p>
+    </div>
+
+    <div class="zs-befund glass">
+      <span class="zs-nr">03</span>
+      <h4>24 abgegebene Klausuren, keine fertig nachbereitet</h4>
+      <p>Vier stehen auf „In Bearbeitung“, zwanzig auf „Nicht nachbereitet“, keine auf „Nachbereitet“. Die älteste ist vom 27. September 2025.</p>
+      <div class="zs-raster" id="zs-raster"></div>
+      <p class="zs-note">Im Rep war das eine bewusste Entscheidung und richtig. Seit dem Umbau hat der Dienstagabend einen festen Slot dafür, und der Peru-Block Ende Oktober räumt den Rückstand ab. Das geht nur in der schmalen Form: drei bis acht Karten ziehen, eine Zeile in der Fehlerliste, fertig. Die ausgearbeitete Analyse liegt zu jeder dieser Klausuren schon vor.</p>
+    </div>
+
+    <div class="zs-befund glass">
+      <span class="zs-nr">04</span>
+      <h4>Die Fallrechnung ist knapp, aber sie trägt</h4>
+      <p>120 offene Hauptkursfälle, 127 Fallslots bis zum 31. Januar. Sieben Slots Luft, im Plan bereits als Reserve verbucht. Die vier Peru-Wochen sind eingerechnet, eine Krankheitswoche nicht.</p>
+      <p class="zs-note">Seit dem Umbau auf 90-Minuten-Slots kostet ein Fall eine halbe Stunde weniger. Damit ist die zweite ausgeschriebene Klausur pro Woche bezahlt, ohne dass ein Fall wegfällt. Die Zielzahl im Stundenplan stand bis zum Umbau auf 142 und hat den Fortschritt dadurch untertrieben; sie steht jetzt auf dem tatsächlichen Stand von 120.</p>
+    </div>
+
+  </div>
+
+  <div class="section-label">Was sich ab jetzt ändert <span>· im Stundenplan bereits umgesetzt</span></div>
+  <div class="zs-moves rise d6">
+    <div class="zs-move glass">
+      <div class="zs-move-tag">Klausur</div>
+      <h4>Zwei ausgeschriebene Klausuren pro Woche</h4>
+      <p>Donnerstagvormittag die Werkstattklausur unter Prüfungsbedingungen, abends dieselbe Klausur in der Werkstatt besprechen. Samstag der Uni-Klausurenkurs. Gliedern trainiert Problemerkennung, und die sitzt. Tiefe entsteht nur beim Ausschreiben.</p>
+    </div>
+    <div class="zs-move glass">
+      <div class="zs-move-tag">Technik</div>
+      <h4>Schwerpunktbudget vor dem Schreiben</h4>
+      <p>Nach dem Lesen, vor dem Gliedern: zwei bis drei Schwerpunkte markieren und jedem eine Seitenzahl geben. Untergrenze anderthalb Seiten. Bei Zeitnot wird am Nebenschauplatz gekürzt, nie am Kern.</p>
+    </div>
+    <div class="zs-move glass">
+      <div class="zs-move-tag">Rückkopplung</div>
+      <h4>Eine Fehlerliste statt 21 Analysen</h4>
+      <p>Eine Seite, höchstens zwölf Zeilen, je Zeile ein wiederkehrender Fehler. Gelesen in den zehn Minuten vor jeder Klausur. Nach jeder Korrektur eine Zeile ergänzen oder streichen.</p>
+    </div>
+    <div class="zs-move glass">
+      <div class="zs-move-tag">Fälle</div>
+      <h4>90 statt 120 Minuten pro Fall</h4>
+      <p>Sachverhalt lesen, zwanzig Minuten selbst gliedern, Lösung einmal gegen die eigene Gliederung lesen, nur Abweichungen notieren. Nicht zweimal lesen, Karten gebündelt am Ende. Der eigene Versuch bleibt Pflicht.</p>
+    </div>
+    <div class="zs-move glass">
+      <div class="zs-move-tag">Karteikarten</div>
+      <h4>Rotation ohne täglichen Handgriff</h4>
+      <p>Feste Tageslimits auf den sechs Gebietsstapeln statt eines neuen Filterstapels jeden Morgen. Dazu ein Strafrechtsblock im November, wie im August beim Baurecht.</p>
+    </div>
+    <div class="zs-move glass keep">
+      <div class="zs-move-tag">Bleibt</div>
+      <h4>Samstag, Kartenvolumen, Sonntag</h4>
+      <p>Zwölf Monate Klausur ohne Lücke, 2.395 Karten in dreißig Tagen, und ein konsequent freier Sonntag. Das sind die drei Gründe, warum nach einem Jahr noch Luft ist. Nicht anfassen, auch nicht im Januar.</p>
+    </div>
+  </div>
+
 </section>
 
   </main>
@@ -4047,14 +4437,19 @@
   // Bausteine eines Tages. s = Abschnitt im Wochengitter, f = 1 bedeutet Fall-Slot.
   const B = {
     arbeit:    {t:'9:00–13:00',  l:'Arbeit',                 k:'fix',     s:'vm'},
-    fallVm:    {t:'9:00–11:00',  l:'Fall',                   k:'fall',    s:'vm', f:1},
-    karteVm:   {t:'11:15–12:30', l:'Karteikarten',           k:'karte',   s:'vm'},
-    mittag:    {t:'12:30–14:00', l:'Mittagspause',           k:'pause',   s:'mi'},
+    fallVm:    {t:'9:00–10:30',  l:'Fall',                   k:'fall',    s:'vm', f:1},
+    karteVm:   {t:'10:45–12:00', l:'Karteikarten',           k:'karte',   s:'vm'},
+    mittag:    {t:'12:00–14:00', l:'Mittagspause',           k:'pause',   s:'mi'},
     karteNm:   {t:'14:30–15:15', l:'Karteikarten',           k:'karte',   s:'nm'},
-    fallSpaet: {t:'15:15–17:15', l:'Fall',                   k:'fall',    s:'nm', f:1},
-    vertief:   {t:'17:30–19:00', l:'Vertiefung',             k:'vertief', s:'ab'},
-    fallNm:    {t:'14:00–16:00', l:'Fall',                   k:'fall',    s:'nm', f:1},
-    fallNm2:   {t:'16:15–18:00', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    fallSpaet: {t:'15:15–16:45', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    fallAbend: {t:'17:00–18:30', l:'Fall',                   k:'fall',    s:'ab', f:1},
+    nachber:   {t:'17:00–18:30', l:'Klausuren nachbereiten', k:'klausur', s:'ab'},
+    vertief:   {t:'17:30–18:30', l:'Vertiefung',             k:'vertief', s:'ab'},
+    fallNm:    {t:'14:00–15:30', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    fallNm2:   {t:'15:45–17:15', l:'Fall',                   k:'fall',    s:'nm', f:1},
+    klausurDo: {t:'9:00–14:00',  l:'Werkstattklausur schreiben', k:'klausur', s:'vm'},
+    mittagDo:  {t:'14:00–14:45', l:'Mittagspause',           k:'pause',   s:'mi'},
+    karteDo:   {t:'14:45–16:00', l:'Karteikarten',           k:'karte',   s:'nm'},
     kwPrep:    {t:'14:00–15:30', l:'Vorbereitung Werkstatt', k:'prep',    s:'nm'},
     kw:        {t:'16:00–20:00', l:'Klausurwerkstatt',       k:'kw',      s:'ab'},
     kwPeru:    {t:'siehe unten', l:'Klausurwerkstatt online', k:'kw',     s:'ab'},
@@ -4075,10 +4470,17 @@
   };
 
   const TAG = {
-    moDi:  {std:'4,5 h',  b:[B.arbeit, B.karteNm, B.fallSpaet, B.vertief]},
-    lang:  {std:'7,5 h',  b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2]},
-    do_:   {std:'5 h + 4 h', b:[B.fallVm, B.karteVm, B.mittag, B.kwPrep, B.kw]},
-    doFrei:{std:'7,5 h',  b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2]},
+    // Mo bekommt zwei Faelle, Di einen Fall plus den festen Slot fuer die
+    // Klausurnachbereitung - ab hier wird woechentlich nachbereitet, nicht
+    // mehr gesammelt. Zusammen mit Mi/Fr (je 3) bleiben es neun Faelle.
+    moDi:  {std:'4,5 h',  b:[B.arbeit, B.karteNm, B.fallSpaet, B.fallAbend]},
+    diTag: {std:'4,5 h',  b:[B.arbeit, B.karteNm, B.fallSpaet, B.nachber]},
+    lang:  {std:'7,5 h',  b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2, B.vertief]},
+    // Donnerstag ist Schreibtag: die Werkstattklausur wird vormittags unter
+    // Pruefungsbedingungen ausgeschrieben und abends in der Werkstatt
+    // besprochen. Die alte Vorbereitungsstunde entfaellt dadurch.
+    do_:   {std:'6,25 h + 4 h', b:[B.klausurDo, B.mittagDo, B.karteDo, B.kw]},
+    doFrei:{std:'7,5 h',  b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2, B.vertief]},
     sa:    {std:'6 h',    b:[B.klausur, B.pauseSa, B.klausurNb]},
     so:    {std:'—',      b:[B.frei]},
     // Varianten
@@ -4086,8 +4488,11 @@
     // Konrad. Der Nachmittag bleibt **bewusst** frei - nicht mit einer
     // Nachbereitung füllen, das ist so gewollt. Das Probeexamen läuft 9.-16.9.
     nachProbe:{std:'3,25 h',  b:[B.fallVm, B.karteVm, B.mittag]},
+    // Probeexamenswoche: Montag behaelt den alten Zuschnitt mit nur
+    // einem Fall, die Woche ist auf n:2 gerechnet.
+    moProbe:  {std:'4,5 h',   b:[B.arbeit, B.karteNm, B.fallSpaet, B.vertief]},
     probeTag: {std:'Klausur', b:[B.probe]},
-    doProbe:  {std:'5 h + 4 h', b:[B.fallVm, B.karteVm, B.mittag, B.kwPrep, B.kw]},
+    doProbe:  {std:'5 h + 4 h', b:[B.fallVm, B.karteVm, B.mittag, B.kwPrep, B.kw]},  // Probeexamenswoche: kein Schreibtag
     leer:     {std:'—',     b:[]},
     peruFrei: {std:'frei',  b:[B.freiTag]},
     peruLern: {std:'~3 h',  b:[B.karte15, B.mittag, B.altNachb]},
@@ -4095,8 +4500,12 @@
     // Konrad-Wochen mit Präsenztermin: der Freitag verliert den Fall
     // 16:15–18:00, dafür rückt am Donnerstag ein Fall in den Slot, in dem
     // sonst die Werkstatt vorbereitet wird – sie geht dort unvorbereitet hin.
-    doKonrad: {std:'5,5 h + 4 h',   b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.kw]},
-    frKonrad: {std:'5,75 h + 2,5 h',b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.konradFr]},
+    doKonrad: {std:'6,25 h + 4 h',  b:[B.klausurDo, B.mittagDo, B.karteDo, B.kw]},
+    // Praesenz in Muenchen am Freitag: dort faellt der Fall 15:45-17:15 weg.
+    // Er rueckt auf den Mittwochabend in den Vertiefungs-Slot, die Woche
+    // behaelt ihre neun Faelle.
+    miKonrad: {std:'8 h',           b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2, B.fallAbend]},
+    frKonrad: {std:'5,25 h + 2,5 h',b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.konradFr]},
     weihMo:   {std:'2,75 h', b:[B.karteNm, B.fallSpaet]},
     weihLang: {std:'3,25 h', b:[B.fallVm, B.karteVm, B.mittag]},
     weihDo:   {std:'frei',  b:[B.freiTag]},
@@ -4114,11 +4523,11 @@
 
   // Raster-Varianten: welcher Tag welchen Ablauf hat
   const RASTER = {
-    normal:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.lang, Do:TAG.do_,     Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
-    ohneKw:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.lang, Do:TAG.doFrei,  Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
+    normal:     {Mo:TAG.moDi, Di:TAG.diTag, Mi:TAG.lang, Do:TAG.do_,    Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
+    ohneKw:     {Mo:TAG.moDi, Di:TAG.diTag, Mi:TAG.lang, Do:TAG.doFrei, Fr:TAG.lang,    Sa:TAG.sa,       So:TAG.so},
     urlaubWoche:{Mo:TAG.urlaubTag, Di:TAG.urlaubTag, Mi:TAG.urlaubTag, Do:TAG.urlaubTag, Fr:TAG.urlaubTag, Sa:TAG.urlaubTag, So:TAG.urlaubTag},
     auslauf:    {Mo:TAG.urlaubTag, Di:TAG.repFall, Mi:TAG.repFall, Do:TAG.arbeitFallKw, Fr:TAG.arbeitFall, Sa:TAG.sa, So:TAG.so},
-    probe1:     {Mo:TAG.moDi, Di:TAG.moDi, Mi:TAG.probeTag, Do:TAG.probeTag, Fr:TAG.probeTag, Sa:TAG.probeTag, So:TAG.so},
+    probe1:     {Mo:TAG.moProbe, Di:TAG.diTag, Mi:TAG.probeTag, Do:TAG.probeTag, Fr:TAG.probeTag, Sa:TAG.probeTag, So:TAG.so},
     probe2:     {Mo:TAG.probeTag, Di:TAG.probeTag, Mi:TAG.probeTag, Do:TAG.doProbe, Fr:TAG.nachProbe, Sa:TAG.sa, So:TAG.so},
     peruAnkunft:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.peruLern, So:TAG.peruFrei},
     peruReise:  {Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.peruFrei, So:TAG.peruFrei},
@@ -4143,19 +4552,19 @@
     {mo:'2026-09-07', ph:'Probeexamen',       r:'probe1',
      kw:null, kwAus:'Kein Termin am 10.9.',
      n:2,  g:[['ArbeitsR',2]]},
-    {mo:'2026-09-14', ph:'Probeexamen',       r:'probe2',
+    {mo:'2026-09-14', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Probeexamen',       r:'probe2',
      kw:{d:'2026-09-17',f:'Zivilrecht',t:'Die offene Handelsgesellschaft und ihre Feinde'},
      konrad:{nr:1, do:'2026-09-17', fr:'2026-09-18', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'nach dem Probeexamen – kein Fall zu verschieben'},
      n:2,  g:[['StrafR',2]]},
-    {mo:'2026-09-21', ph:'Regelwoche',        r:'normal',
+    {mo:'2026-09-21', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-09-24',f:'Strafrecht',t:'Strafbarkeitsrisiken I'},
      n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StrafR',1]]},
-    {mo:'2026-09-28', ph:'Regelwoche',        r:'normal',
+    {mo:'2026-09-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-01',f:'Zivilrecht',t:'Traktor auf Abwegen'},
      n:9,  g:[['SchuldR BT 2',6],['KommunalR',2],['StPO',1]]},
-    {mo:'2026-10-05', ph:'Regelwoche',        r:'normal',
+    {mo:'2026-10-05', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-08',f:'Öffentliches Recht',t:'Theaterkritik'},
      n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
     {mo:'2026-10-12', ph:'Peru · Ankommen',   r:'peruAnkunft',
@@ -4167,60 +4576,63 @@
     {mo:'2026-10-19', ph:'Peru · Reisewoche', r:'peruReise',
      kw:null, kwAus:'22.10. verpasst – Reisewoche',
      n:0,  g:[]},
-    {mo:'2026-10-26', ph:'Peru · Lernphase',  r:'peruLernen',
+    {mo:'2026-10-26', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Peru · Lernphase',  r:'peruLernen',
      kw:{d:'2026-10-29',f:'Öffentliches Recht',t:'Einkaufsparadies Vendicampo',peru:'10–14 Uhr Ortszeit'},
      n:0,  g:[]},
-    {mo:'2026-11-02', ph:'Peru · Lernphase',  r:'peruLernen',
+    {mo:'2026-11-02', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Peru · Lernphase',  r:'peruLernen',
      kw:{d:'2026-11-05',f:'Zivilrecht',t:'Ungebremste Jungfernfahrt',peru:'10–14 Uhr Ortszeit'},
      n:0,  g:[]},
-    {mo:'2026-11-09', ph:'Endspurt',          r:'normal',
+    {mo:'2026-11-09', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-12',f:'Strafrecht',t:'Strafbarkeitsrisiken III'},
      n:9,  g:[['SachenR',6],['PolizeiR',2],['StrafR',1]]},
-    {mo:'2026-11-16', ph:'Endspurt',          r:'normal',
+    {mo:'2026-11-16', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-19',f:'Zivilrecht',t:'Ölgemälde und Wein'},
      konrad:{nr:3, do:'2026-11-19', fr:'2026-11-20', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['SachenR',4],['ZPO I',2],['PolizeiR',2],['StPO',1]]},
-    {mo:'2026-11-23', ph:'Endspurt',          r:'normal',
+    {mo:'2026-11-23', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-11-26',f:'Öffentliches Recht',t:'Brand mit Folgen'},
      n:9,  g:[['ZPO I',5],['PolizeiR',3],['StrafR',1]]},
-    {mo:'2026-11-30', ph:'Endspurt',          r:'normal',
+    {mo:'2026-11-30', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-03',f:'Zivilrecht',t:'Hangover'},
      n:9,  g:[['SchuldR AT',6],['EuropaR',2],['StPO',1]]},
-    {mo:'2026-12-07', ph:'Endspurt',          r:'normal',
+    {mo:'2026-12-07', sa:{q:'Uni-Klausurenkurs',f:'Strafrecht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-10',f:'Öffentliches Recht',t:'Datenschutz im Landtag'},
      n:9,  g:[['SchuldR AT',3],['BGB AT',3],['EuropaR',3]]},
-    {mo:'2026-12-14', ph:'Endspurt',          r:'normal',
+    {mo:'2026-12-14', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'normal',
      kw:{d:'2026-12-17',f:'Zivilrecht',t:'An der Tankstelle'},
      konrad:{nr:4, do:'2026-12-17', fr:'2026-12-18', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['BGB AT',5],['EuropaR',1],['VerwR AT',2],['StrafR',1]]},
-    {mo:'2026-12-21', ph:'Weihnachten',       r:'weihnacht',
+    {mo:'2026-12-21', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 24.12.',
      n:4,  g:[['SchuldR BT',3],['VerwR AT',1]]},
-    {mo:'2026-12-28', ph:'Weihnachten',       r:'weihnacht',
+    {mo:'2026-12-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 31.12.',
      n:4,  g:[['HGB',1],['VerwR AT',1],['Reserve',2]]},
-    {mo:'2027-01-04', ph:'Januar',            r:'normal',
+    {mo:'2027-01-04', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-07',f:'Zivilrecht',t:'Solaris'},
      n:9,  g:[['HGB',5],['StPO',1],['Reserve',3]]},
-    {mo:'2027-01-11', ph:'Januar',            r:'normal',
+    {mo:'2027-01-11', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-14',f:'Strafrecht',t:'Strafbarkeitsrisiken IV'},
      konrad:{nr:5, do:'2027-01-14', fr:'2027-01-15', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
      n:9,  g:[['ZPO II',5],['StaatshaftungsR',3],['StPO',1]]},
-    {mo:'2027-01-18', ph:'Januar',            r:'normal',
+    {mo:'2027-01-18', sa:{q:'Uni-Klausurenkurs',f:'Zivilrecht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-21',f:'Zivilrecht',t:'N.N.'},
      n:9,  g:[['ErbR',5],['VerfassungsR',3],['Reserve',1]]},
-    {mo:'2027-01-25', ph:'Januar',            r:'normal',
+    {mo:'2027-01-25', sa:{q:'Uni-Klausurenkurs',f:'Strafrecht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-28',f:'Öffentliches Recht',t:'Tankt in Österreich'},
      n:9,  g:[['FamilienR',2],['StrafR',2],['VerfassungsR',3],['Reserve',2]]}
   ];
 
-  const ZIEL = 142;   // offene + in Bearbeitung befindliche Hauptkurs-Fälle
+  // Offene + in Bearbeitung befindliche Hauptkurs-Fälle. Steht seit
+  // 11.09.2026 auf dem tatsächlichen Notion-Stand (255 gesamt, 135
+  // nachbereitet) – vorher 142, was den Fortschritt untertrieben hat.
+  const ZIEL = 120;
 
   // ── Konrad-Kurs ───────────────────────────────────────────────────
   // Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027, einmal im Monat: entweder
@@ -4242,12 +4654,12 @@
   function rasterFuer(w, tag) {
     const basis = RASTER[w.r][tag];
     if (!w.konrad) return basis;
-    // Präsenz in München am Freitag: der Fall 16:15–18:00 entfällt dort und
-    // rückt auf den Donnerstag in den Vorbereitungs-Slot der Werkstatt.
+    // Präsenz in München am Freitag: der Fall 15:45–17:15 entfällt dort und
+    // rückt auf den Mittwochabend in den Vertiefungs-Slot.
     // Greift nur, wenn der Freitag überhaupt einen zweiten Fall hat – in
     // einer Probeexamens-Woche gibt es keinen zu verschieben.
     if (w.konrad.wahl === 'fr' && RASTER[w.r].Fr.b.includes(B.fallNm2)) {
-      if (tag === 'Do') return TAG.doKonrad;
+      if (tag === 'Mi') return TAG.miKonrad;
       if (tag === 'Fr') return TAG.frKonrad;
       return basis;
     }
@@ -4292,14 +4704,16 @@
     const zuteilung = {};
     slots.forEach(s => { zuteilung[s.tag + '#' + s.i] = null; });
 
-    // Donnerstag zuerst bedienen. doVorzug:false schaltet das für eine
-    // Woche ab, wenn die Reihenfolge der Gebiete wichtiger ist als der
-    // frische Stoff am Werkstatt-Abend.
+    // Seit dem Umbau auf den Schreibtag hat der Donnerstag keinen Fall-Slot
+    // mehr. Der letzte Fall vor der Werkstattklausur liegt am Mittwoch –
+    // dorthin wandert das Gebiet aus dem Fach der Klausur, damit der Stoff
+    // frisch ist, wenn sie am Donnerstagmorgen schreibt. doVorzug:false
+    // schaltet das für eine Woche ab.
     const kwFach = woche.kw ? FACH_KEY[woche.kw.f] : null;
-    const doSlot = slots.find(s => s.tag === 'Do');
-    if (doSlot && kwFach && woche.doVorzug !== false) {
+    const vorSlot = slots.filter(s => s.tag === 'Mi').pop() || slots.find(s => s.tag === 'Do');
+    if (vorSlot && kwFach && woche.doVorzug !== false) {
       const treffer = flach.findIndex(g => FACH_VON_GEBIET[g] === kwFach);
-      if (treffer >= 0) zuteilung[doSlot.tag + '#' + doSlot.i] = flach.splice(treffer, 1)[0];
+      if (treffer >= 0) zuteilung[vorSlot.tag + '#' + vorSlot.i] = flach.splice(treffer, 1)[0];
     }
     slots.forEach(s => {
       const key = s.tag + '#' + s.i;
@@ -4580,6 +4994,12 @@
         } else if (block.k === 'kw' && w.kw) {
           titel = block.l + ' · ' + w.kw.f;
           notiz = '„' + w.kw.t + '”' + (w.kw.peru ? ' · vor Ort ' + w.kw.peru : '');
+        } else if (schluessel === 'klausurDo' && w.kw) {
+          titel = 'Werkstattklausur schreiben · ' + w.kw.f;
+          notiz = '„' + w.kw.t + '”';
+        } else if (schluessel === 'klausur' && w.sa) {
+          titel = 'Klausur schreiben · ' + w.sa.f;
+          notiz = w.sa.q;
         } else if (schluessel === 'kwPrep' && w.kw) {
           titel = block.l + ' · ' + w.kw.f;
           notiz = '„' + w.kw.t + '”';
@@ -4805,6 +5225,8 @@
             ? (gebiet === 'Reserve' ? 'frei wählbar' : gebiet)
             : (block === B.kw && hw.kw ? hw.kw.f + ' · „' + hw.kw.t + '”' : '')
               || (block === B.kwPeru && hw.kw ? hw.kw.peru + ' · ' + hw.kw.f : '')
+              || (block === B.klausurDo && hw.kw ? hw.kw.f + ' · „' + hw.kw.t + '”' : '')
+              || (block === B.klausur && hw.sa ? hw.sa.q + ' · ' + hw.sa.f : '')
               || (block === B.kwPrep && hw.kw ? hw.kw.f : '')
               || (block.k === 'konrad' ? konradNotiz(hw, zeigeTag) : '');
         const gewaehlt = block.k === 'konrad' && hw.konrad && hw.konrad.wahl;
@@ -4841,11 +5263,19 @@
         }
         const inhalt = treffer.map(({block, i}) => {
           const gebiet = block.f ? zuteilung[tag + '#' + i] : null;
-          const text = gebiet
+          let text = gebiet
             ? (gebiet === 'Reserve' ? 'Fall · frei' : 'Fall · ' + gebiet)
             : block.l;
+          // Die beiden Schreibblöcke tragen ihr Fach, damit die Mischung
+          // der Woche im Gitter ablesbar ist.
+          let klFach = null;
+          if (block === B.klausurDo && woche.kw)  { klFach = FACH_KEY[woche.kw.f]; text = 'Werkstattklausur · ' + woche.kw.f; }
+          if (block === B.klausur   && woche.sa)  { klFach = FACH_KEY[woche.sa.f]; text = woche.sa.q + ' · ' + woche.sa.f; }
+          if (block === B.kw        && woche.kw)  { klFach = FACH_KEY[woche.kw.f]; }
+          const fachK = gebiet ? FACH_VON_GEBIET[gebiet] : klFach;
           const gewaehlt = block.k === 'konrad' && woche.konrad && woche.konrad.wahl;
-          return '<div class="sp-e k-' + block.k + (gewaehlt ? ' gewaehlt' : '') +
+          return '<div class="sp-e k-' + block.k + (fachK ? ' f-' + fachK : '') +
+                 (gewaehlt ? ' gewaehlt' : '') +
                  '">' + esc(text) +
                  (block.t ? '<span>' + esc(block.t) + '</span>' : '') + '</div>';
         }).join('');
@@ -5054,12 +5484,13 @@
 </script>
 
 <!-- ══ REITER ═══════════════════════════════════════════════════════════
-     Vier Ebenen statt einer langen Seite. Der zuletzt gewählte Reiter
-     bleibt gemerkt; #heute / #woche / #fortschritt / #plan in der Adresse
-     funktionieren als direkte Links (z. B. für ein Lesezeichen). -->
+     Fünf Ebenen statt einer langen Seite. Der zuletzt gewählte Reiter
+     bleibt gemerkt; #heute / #woche / #fortschritt / #plan / #zwischenstand
+     in der Adresse funktionieren als direkte Links (z. B. für ein
+     Lesezeichen). Die Tasten 1-5 springen direkt. -->
 <script>
 (function () {
-  const REITER = ['heute', 'woche', 'fortschritt', 'plan'];
+  const REITER = ['heute', 'woche', 'fortschritt', 'plan', 'zwischenstand'];
   const KEY    = 'lernplan_reiter';
 
   window.zeigeReiter = function (name, merken) {
@@ -5086,15 +5517,30 @@
     b.addEventListener('click', () => zeigeReiter(b.dataset.tab));
   });
 
-  // 1–4 springen direkt zum Reiter, solange nichts anderes den Fokus hat
+  // 1–5 springen direkt zum Reiter, solange nichts anderes den Fokus hat
   document.addEventListener('keydown', e => {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     if (document.getElementById('detail-panel').classList.contains('show')) return;
     const t = e.target.tagName;
     if (t === 'INPUT' || t === 'TEXTAREA' || e.target.isContentEditable) return;
-    const i = ['1','2','3','4'].indexOf(e.key);
+    const i = ['1','2','3','4','5'].indexOf(e.key);
     if (i > -1) { e.preventDefault(); zeigeReiter(REITER[i]); }
   });
+
+  // Raster der 24 abgegebenen Klausuren im Zwischenstand. Statischer
+  // Schnitt vom 11.09.2026 - 'wip' sind die vier auf "In Bearbeitung".
+  const ZS_KLAUSUREN = [
+    ['2119','wip'],['2121','wip'],['2122',''],['2126',''],['2127','wip'],['2128','wip'],
+    ['2131',''],['2132',''],['2136',''],['2142',''],['2144',''],['2146',''],['2148',''],
+    ['2149',''],['2151',''],['2152',''],['2153',''],['2154',''],['3208',''],['1482',''],
+    ['2160',''],['KW 2',''],['1483',''],['1483','']
+  ];
+  const zsRaster = document.getElementById('zs-raster');
+  if (zsRaster) {
+    zsRaster.innerHTML = ZS_KLAUSUREN
+      .map(([nr, z]) => '<span class="zs-z' + (z ? ' wip' : '') + '">' + nr + '</span>')
+      .join('');
+  }
 
   const ausAdresse = location.hash.replace('#', '');
   let start = 'heute';
