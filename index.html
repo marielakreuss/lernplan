@@ -3943,8 +3943,13 @@
       }
     });
     const nummern = Object.keys(proWoche).map(Number);
+    let ersteWoche = Math.min.apply(null, nummern);
+    if (plan.zielAb) {
+      const [y, m, t] = plan.zielAb.split('-').map(Number);
+      ersteWoche = getWeekNumber(new Date(y, m - 1, t));
+    }
     stundenplanFaelle = {
-      ersteWoche: Math.min.apply(null, nummern),
+      ersteWoche,
       anker:      Math.max(0, CASES_TOTAL - plan.ziel),
       proWoche,
       gebiete,
@@ -4634,6 +4639,11 @@
   // 11.09.2026 auf dem tatsächlichen Notion-Stand (255 gesamt, 135
   // nachbereitet) – vorher 142, was den Fortschritt untertrieben hat.
   const ZIEL = 120;
+  // Erste Woche, die ZIEL abdecken muss. Wochen davor sind im Notion-Stand
+  // bereits enthalten – ohne dieses Datum zählte der Richtwert ihre n
+  // (0+4+9+9+2) ein zweites Mal und meldete 24 Fälle Scheinrückstand.
+  // Bei jeder Neufestsetzung von ZIEL mitziehen.
+  const ZIEL_AB = '2026-09-14';
 
   // ── Konrad-Kurs ───────────────────────────────────────────────────
   // Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027, einmal im Monat: entweder
@@ -5473,6 +5483,7 @@
     if (typeof window.uebernehmeStundenplan === 'function') {
       window.uebernehmeStundenplan({
         ziel:   ZIEL,
+        zielAb: ZIEL_AB,
         wochen: W.map(w => {
           const k = klausurenDerWoche(w);
           return { mo: w.mo, n: w.n, g: w.g, ph: w.ph,
