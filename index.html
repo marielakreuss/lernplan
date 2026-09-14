@@ -1031,14 +1031,6 @@
     .sp-q ol { margin: 0; padding-left: 1.1rem; font-size: 0.79rem; line-height: 1.75; }
     .sp-q li.done { color: var(--text-sub); text-decoration: line-through; }
     .sp-q .qn { color: var(--text-muted); font-variant-numeric: tabular-nums; }
-    .sp-hinweis {
-      margin-top: 1.3rem; padding: 0.85rem 1rem;
-      background: var(--fokus-bg); border: 1px solid var(--fokus-border);
-      border-radius: var(--radius-sm); font-size: 0.79rem; color: var(--fokus-text); line-height: 1.6;
-    }
-    .sp-hinweis b { font-weight: 700; }
-    .sp-hinweis p { margin: 0 0 0.45rem; }
-    .sp-hinweis p:last-child { margin-bottom: 0; }
 
     /* ══ MOBILE ═══════════════════════════════════════ */
     @media (max-width: 900px) {
@@ -1806,7 +1798,6 @@
     <div class="sp-inner" style="padding:1.3rem 1.6rem 1.5rem">
       <div class="sp-weeks-wrap"><table class="sp-weeks" id="sp-weeks"></table></div>
       <div class="sp-queues" id="sp-queues"></div>
-      <div class="sp-hinweis" id="sp-hinweis"></div>
     </div>
   </section>
 </section>
@@ -5305,7 +5296,6 @@
 
     renderWochenTabelle(moDieserWoche, d(heuteWoche.mo));
     renderQueues(moDieserWoche);
-    renderHinweis();
 
     // Überschrift der Sektion
     const label = document.getElementById('sp-label');
@@ -5376,27 +5366,6 @@
       return '<div class="sp-q" style="--qc:' + farben[f] + '">' +
              '<h5>' + FACH_NAME[f] + '</h5><ol>' + eintraege + '</ol></div>';
     }).join('');
-  }
-
-  function renderHinweis() {
-    document.getElementById('sp-hinweis').innerHTML =
-      '<p><b>Konrad-Kurs (Klausurenkurs ÖR I, Sept. 2026 – Febr. 2027):</b> sechs Termine, ' +
-      'je einer im Monat. Gebucht ist überall der <b>Präsenztermin in München, freitags ab '  +
-      '16:30</b> – nur aus Peru geht das nicht, dort der digitale Donnerstag ab 17:00:</p>'   +
-      '<ul><li>Fr 18.9.2026 – zwei Tage nach dem Probeexamen</li>'                            +
-      '<li>Do 15.10.2026 <b>digital aus Peru</b> – 10:00 Ortszeit, also mitten in der '       +
-      'Werkstatt; Präsenz in München fällt weg</li>'                                          +
-      '<li>Fr 20.11.2026</li><li>Fr 18.12.2026</li><li>Fr 15.1.2027</li>'                     +
-      '<li>Fr 12.2.2027 – nach dem 31.1. und damit außerhalb des Wochenplans</li></ul>'       +
-      '<p>An einem Konrad-Freitag entfällt der Fall 16:15–18:00. Er rückt auf den '           +
-      '<b>Donnerstag 14:00–16:00</b>, in den Slot der Werkstatt-Vorbereitung – sie geht an '  +
-      'diesem Donnerstag also unvorbereitet in die Klausurwerkstatt. Die Woche behält damit ' +
-      'ihre neun Fälle.</p>' +
-      '<p><b>Klausurwerkstatt aus Peru:</b> 16–20 Uhr deutscher Zeit sind dort 9–13 Uhr ' +
-      '(bis zur Zeitumstellung am 25.10.) bzw. 10–14 Uhr danach. Nur der 22.10. fällt in ' +
-      'die Reisewoche und entfällt.</p>' +
-      '<p><b>Nach dem 31. Januar</b> nur noch Wiederholung, kein neuer Stoff. Der letzte ' +
-      'Werkstatt-Termin am 4.2. liegt schon in dieser Phase.</p>';
   }
 
   try { render(); }
