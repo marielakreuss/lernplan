@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "15.09.2026 14:09",
+  "lastSync": "15.09.2026 20:21",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4775,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-15"
   },
   "ankiFach": {
-    "stand": "15.09.2026 14:09",
+    "stand": "15.09.2026 20:06",
     "faecher": {
       "Zivilrecht": {
         "total": 1955,
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "15.09.2026 14:09",
+    "stand": "15.09.2026 20:21",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 51,
     "limit": 25,
-    "stand": "15.09.2026 14:09",
+    "stand": "15.09.2026 20:21",
     "slots": [
       {
         "tag": "Mo",
@@ -1483,12 +1483,31 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
+      "title": "UKK 2309 - abgegeben am 15.9.26",
+      "status": "Nicht nachbereitet",
+      "woche": 51,
+      "datum": "2026-09-15",
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "SicherheitsR / PolizeiR"
+      ],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/UKK-2309-abgegeben-am-15-9-26-3dc539e733aa80c1a5a9c6aad691cd84"
+    },
+    {
       "title": "UKK 3211 (Probestex) - nicht abgegeben, gegliedert",
       "status": "Nicht nachbereitet",
       "woche": 51,
       "datum": "2026-09-14",
-      "rechtsgebiet": [],
-      "fach": "",
+      "rechtsgebiet": [
+        "Strafrecht BT",
+        "Strafrecht AT",
+        "StPO"
+      ],
+      "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
@@ -5863,8 +5882,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 135,
     "inBearbeitung": 27,
-    "total": 311,
-    "klkGesamt": 56,
-    "klkAbgegeben": 25
+    "total": 312,
+    "klkGesamt": 57,
+    "klkAbgegeben": 26
   }
 };
