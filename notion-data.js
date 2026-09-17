@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.09.2026 10:43",
+  "lastSync": "17.09.2026 16:49",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4805,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-17"
   },
   "ankiFach": {
-    "stand": "17.09.2026 06:54",
+    "stand": "17.09.2026 16:49",
     "faecher": {
       "Zivilrecht": {
         "total": 1955,
@@ -1204,8 +1204,8 @@ window.NOTION_DATA = {
         "faellig": 750
       },
       "Strafrecht": {
-        "total": 651,
-        "neu": 3,
+        "total": 667,
+        "neu": 19,
         "lernen": 538,
         "aufbau": 15,
         "sitzt": 95,
@@ -1214,7 +1214,7 @@ window.NOTION_DATA = {
     }
   },
   "ankiGebiet": {
-    "stand": "17.09.2026 06:54",
+    "stand": "17.09.2026 16:49",
     "gebiete": {
       "BGB AT": {
         "fach": "Zivilrecht",
@@ -1389,7 +1389,7 @@ window.NOTION_DATA = {
       },
       "StrafR AT": {
         "fach": "Strafrecht",
-        "total": 174,
+        "total": 190,
         "faellig": 167,
         "u30": 160,
         "u90": 107,
@@ -1419,7 +1419,7 @@ window.NOTION_DATA = {
   "wiederholung": {
     "woche": 51,
     "limit": 25,
-    "stand": "17.09.2026 06:54",
+    "stand": "17.09.2026 16:49",
     "slots": [
       {
         "tag": "Mo",
@@ -2579,7 +2579,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 4",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 51,
       "datum": "2026-09-17",
       "rechtsgebiet": [
@@ -5881,7 +5881,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 135,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 312,
     "klkGesamt": 57,
     "klkAbgegeben": 26
