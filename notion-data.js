@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.09.2026 16:49",
+  "lastSync": "17.09.2026 17:57",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4805,
@@ -1185,7 +1185,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-17"
   },
   "ankiFach": {
-    "stand": "17.09.2026 16:49",
+    "stand": "17.09.2026 17:57",
     "faecher": {
       "Zivilrecht": {
         "total": 1955,
@@ -1213,267 +1213,26 @@ window.NOTION_DATA = {
       }
     }
   },
-  "ankiGebiet": {
-    "stand": "17.09.2026 16:49",
-    "gebiete": {
-      "BGB AT": {
-        "fach": "Zivilrecht",
-        "total": 304,
-        "faellig": 222,
-        "u30": 149,
-        "u90": 45,
-        "rated30": 29,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
-      },
-      "SchuldR AT": {
-        "fach": "Zivilrecht",
-        "total": 223,
-        "faellig": 127,
-        "u30": 34,
-        "u90": 0,
-        "rated30": 32,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR AT\" OR deck:\"A SchuldR AT\") -is:suspended is:due -deck:filtered"
-      },
-      "SchuldR BT": {
-        "fach": "Zivilrecht",
-        "total": 307,
-        "faellig": 220,
-        "u30": 60,
-        "u90": 8,
-        "rated30": 93,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::2 SchuldR BT\") -is:suspended is:due -deck:filtered"
-      },
-      "SachenR": {
-        "fach": "Zivilrecht",
-        "total": 320,
-        "faellig": 276,
-        "u30": 287,
-        "u90": 246,
-        "rated30": 2,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
-      },
-      "FamilienR": {
-        "fach": "Zivilrecht",
-        "total": 72,
-        "faellig": 72,
-        "u30": 69,
-        "u90": 69,
-        "rated30": 1,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::4 Familienrecht\") -is:suspended is:due -deck:filtered"
-      },
-      "ErbR": {
-        "fach": "Zivilrecht",
-        "total": 100,
-        "faellig": 99,
-        "u30": 97,
-        "u90": 79,
-        "rated30": 1,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::5 Erbrecht\") -is:suspended is:due -deck:filtered"
-      },
-      "ZPO I": {
-        "fach": "Zivilrecht",
-        "total": 178,
-        "faellig": 173,
-        "u30": 144,
-        "u90": 142,
-        "rated30": 30,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::6 ZPO I\") -is:suspended is:due -deck:filtered"
-      },
-      "ZPO II": {
-        "fach": "Zivilrecht",
-        "total": 77,
-        "faellig": 77,
-        "u30": 77,
-        "u90": 70,
-        "rated30": 0,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::7 ZPO II\") -is:suspended is:due -deck:filtered"
-      },
-      "HGB": {
-        "fach": "Zivilrecht",
-        "total": 77,
-        "faellig": 71,
-        "u30": 57,
-        "u90": 43,
-        "rated30": 5,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::8 HandelsR\") -is:suspended is:due -deck:filtered"
-      },
-      "GesellschaftsR": {
-        "fach": "Zivilrecht",
-        "total": 72,
-        "faellig": 69,
-        "u30": 68,
-        "u90": 66,
-        "rated30": 0,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::9 GesellschaftsR\") -is:suspended is:due -deck:filtered"
-      },
-      "ArbeitsR": {
-        "fach": "Zivilrecht",
-        "total": 225,
-        "faellig": 203,
-        "u30": 12,
-        "u90": 12,
-        "rated30": 213,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::x10 ArbeitsR\") -is:suspended is:due -deck:filtered"
-      },
-      "EuropaR": {
-        "fach": "Öffentliches Recht",
-        "total": 82,
-        "faellig": 79,
-        "u30": 77,
-        "u90": 73,
-        "rated30": 1,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::1 EuropaR\") -is:suspended is:due -deck:filtered"
-      },
-      "Staatsrecht": {
-        "fach": "Öffentliches Recht",
-        "total": 156,
-        "faellig": 147,
-        "u30": 122,
-        "u90": 122,
-        "rated30": 1,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::2 Staatsrecht\") -is:suspended is:due -deck:filtered"
-      },
-      "Grundrechte": {
-        "fach": "Öffentliches Recht",
-        "total": 64,
-        "faellig": 59,
-        "u30": 58,
-        "u90": 57,
-        "rated30": 1,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::3 Grundrechte\") -is:suspended is:due -deck:filtered"
-      },
-      "StaatshaftungsR": {
-        "fach": "Öffentliches Recht",
-        "total": 40,
-        "faellig": 40,
-        "u30": 39,
-        "u90": 37,
-        "rated30": 0,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::4 Staatshaftungsrecht\") -is:suspended is:due -deck:filtered"
-      },
-      "VerwR AT": {
-        "fach": "Öffentliches Recht",
-        "total": 259,
-        "faellig": 135,
-        "u30": 20,
-        "u90": 1,
-        "rated30": 158,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::5 VerwaltungsR AT\" OR deck:\"A VerwaltungsR AT\") -is:suspended is:due -deck:filtered"
-      },
-      "KommunalR": {
-        "fach": "Öffentliches Recht",
-        "total": 63,
-        "faellig": 61,
-        "u30": 58,
-        "u90": 58,
-        "rated30": 5,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::6 KommunalR\") -is:suspended is:due -deck:filtered"
-      },
-      "BauR": {
-        "fach": "Öffentliches Recht",
-        "total": 162,
-        "faellig": 117,
-        "u30": 0,
-        "u90": 0,
-        "rated30": 156,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::7 BauR\") -is:suspended is:due -deck:filtered"
-      },
-      "PolizeiR": {
-        "fach": "Öffentliches Recht",
-        "total": 68,
-        "faellig": 66,
-        "u30": 65,
-        "u90": 65,
-        "rated30": 2,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::8 Polizei- und SicherheitsR\") -is:suspended is:due -deck:filtered"
-      },
-      "StrafR AT": {
-        "fach": "Strafrecht",
-        "total": 190,
-        "faellig": 167,
-        "u30": 160,
-        "u90": 107,
-        "rated30": 0,
-        "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR AT\") -is:suspended is:due -deck:filtered"
-      },
-      "StrafR BT": {
-        "fach": "Strafrecht",
-        "total": 363,
-        "faellig": 346,
-        "u30": 333,
-        "u90": 252,
-        "rated30": 0,
-        "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR BT\") -is:suspended is:due -deck:filtered"
-      },
-      "StPO": {
-        "fach": "Strafrecht",
-        "total": 114,
-        "faellig": 114,
-        "u30": 114,
-        "u90": 0,
-        "rated30": 0,
-        "suche": "(deck:\"STEX 🥳::Strafrecht::StPO\") -is:suspended is:due -deck:filtered"
-      }
-    }
-  },
   "wiederholung": {
-    "woche": 51,
-    "limit": 25,
-    "stand": "17.09.2026 16:49",
-    "slots": [
+    "stand": "17.09.2026 17:57",
+    "datum": "2026-09-17",
+    "faelle": [
+      "StGB · Fall 04"
+    ],
+    "gebiet": "StrafR BT",
+    "fach": "Strafrecht",
+    "teile": [
       {
-        "tag": "Mo",
-        "wtag": 1,
-        "fach": "Zivilrecht",
-        "gebiet": "SachenR",
-        "faellig": 276,
-        "limit": 25,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::3 SachenR\") -is:suspended is:due -deck:filtered"
+        "name": "Fall",
+        "offen": 17
       },
       {
-        "tag": "Di",
-        "wtag": 2,
-        "fach": "Öffentliches Recht",
-        "gebiet": "Staatsrecht",
-        "faellig": 147,
-        "limit": 25,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::2 Staatsrecht\") -is:suspended is:due -deck:filtered"
+        "name": "Anschluss",
+        "offen": 45
       },
       {
-        "tag": "Mi",
-        "wtag": 3,
-        "fach": "Strafrecht",
-        "gebiet": "StrafR BT",
-        "faellig": 346,
-        "limit": 25,
-        "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR BT\") -is:suspended is:due -deck:filtered"
-      },
-      {
-        "tag": "Do",
-        "wtag": 4,
-        "fach": "Zivilrecht",
-        "gebiet": "BGB AT",
-        "faellig": 222,
-        "limit": 25,
-        "suche": "(deck:\"STEX 🥳::Zivilrecht::1 BGB AT\") -is:suspended is:due -deck:filtered"
-      },
-      {
-        "tag": "Fr",
-        "wtag": 5,
-        "fach": "Öffentliches Recht",
-        "gebiet": "EuropaR",
-        "faellig": 79,
-        "limit": 25,
-        "suche": "(deck:\"STEX 🥳::Öffentliches Recht::1 EuropaR\") -is:suspended is:due -deck:filtered"
-      },
-      {
-        "tag": "Sa",
-        "wtag": 6,
-        "fach": "Strafrecht",
-        "gebiet": "StrafR AT",
-        "faellig": 167,
-        "limit": 25,
-        "suche": "(deck:\"STEX 🥳::Strafrecht::StrafR AT\") -is:suspended is:due -deck:filtered"
+        "name": "Rechtsgebiet",
+        "offen": 20
       }
     ]
   },
@@ -1482,6 +1241,21 @@ window.NOTION_DATA = {
     "nachbereitet": 135
   },
   "cases": [
+    {
+      "title": "KW 4 - gegliedert, angehört",
+      "status": "In Bearbeitung",
+      "woche": 51,
+      "datum": "2026-09-17",
+      "rechtsgebiet": [
+        "BGB AT",
+        "HGB"
+      ],
+      "fach": "",
+      "typ": "Hauptkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-4-gegliedert-angeh-rt-3de539e733aa802284d7c6aed5f19699"
+    },
     {
       "title": "UKK 2309 - abgegeben am 15.9.26",
       "status": "Nicht nachbereitet",
@@ -5881,8 +5655,8 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 135,
-    "inBearbeitung": 28,
-    "total": 312,
+    "inBearbeitung": 29,
+    "total": 313,
     "klkGesamt": 57,
     "klkAbgegeben": 26
   }
