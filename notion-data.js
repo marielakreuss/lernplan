@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.09.2026 17:57",
+  "lastSync": "17.09.2026 22:25",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4805,
+    "reviewedToday": 34,
+    "dueNow": 4798,
     "history": [
       {
         "date": "2025-09-29",
@@ -1180,20 +1180,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-08",
         "count": 118
+      },
+      {
+        "date": "2026-09-17",
+        "count": 34
       }
     ],
     "stand": "2026-09-17"
   },
   "ankiFach": {
-    "stand": "17.09.2026 17:57",
+    "stand": "17.09.2026 22:25",
     "faecher": {
       "Zivilrecht": {
-        "total": 1955,
-        "neu": 0,
-        "lernen": 706,
+        "total": 1957,
+        "neu": 2,
+        "lernen": 709,
         "aufbau": 171,
-        "sitzt": 1078,
-        "faellig": 1652
+        "sitzt": 1075,
+        "faellig": 1645
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1205,8 +1209,8 @@ window.NOTION_DATA = {
       },
       "Strafrecht": {
         "total": 667,
-        "neu": 19,
-        "lernen": 538,
+        "neu": 10,
+        "lernen": 547,
         "aufbau": 15,
         "sitzt": 95,
         "faellig": 627
@@ -1214,17 +1218,19 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "17.09.2026 17:57",
+    "stand": "17.09.2026 22:25",
     "datum": "2026-09-17",
     "faelle": [
-      "StGB · Fall 04"
+      "ZR · 04",
+      "StGB · Fall 04",
+      "HGB · Fall 01"
     ],
     "gebiet": "StrafR BT",
     "fach": "Strafrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 17
+        "offen": 29
       },
       {
         "name": "Anschluss",
