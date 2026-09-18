@@ -448,6 +448,38 @@
     .sfact .sf-v { font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; }
     .sfact .sf-l { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-sub); font-weight: 600; margin-top: 0.15rem; }
 
+    /* Karteikarten-Verlauf: pro Tag, welche Gebiete und Fälle dran waren.
+       Die Fachfarbe der Gebiets-Pillen trägt Bedeutung (ZR/ÖR/StrafR). */
+    .kv { display: grid; }
+    .kv-row {
+      display: grid; grid-template-columns: 5.2rem 1fr; gap: 0.9rem;
+      padding: 0.7rem 0.1rem; border-bottom: 1px solid var(--border);
+    }
+    .kv-row:last-child { border-bottom: 0; }
+    .kv-tag { font-size: 0.78rem; color: var(--text-sub); line-height: 1.35; }
+    .kv-tag b { display: block; font-size: 0.8rem; color: var(--text); font-weight: 650; }
+    .kv-row.heute .kv-tag b { color: var(--accent); }
+    .kv-zahl { font-size: 0.8rem; color: var(--text-muted); }
+    .kv-zahl b { font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--text); }
+    .kv-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+    .kv-chips .rot-fach { font-weight: 550; }
+    .kv-chips .rot-fach b { font-weight: 700; margin-left: 0.15rem; }
+    .kv-mehr { font-size: 0.7rem; color: var(--text-sub); align-self: center; }
+    .kv-faelle { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.4rem; line-height: 1.5; }
+    .kv-faelle .kv-l { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-sub); font-weight: 650; margin-right: 0.3rem; }
+    .kv.zu .kv-alt { display: none; }
+    .kv-mehr-btn {
+      justify-self: start; margin-top: 0.6rem; background: none; border: 1px solid var(--border-strong);
+      border-radius: 999px; padding: 0.3rem 0.8rem; font: inherit; font-size: 0.74rem;
+      color: var(--text-muted); cursor: pointer;
+    }
+    .kv-mehr-btn:hover { background: var(--accent-soft); }
+    .kv-pause { font-size: 0.72rem; color: var(--text-sub); padding: 0.45rem 0.1rem; border-bottom: 1px solid var(--border); font-style: italic; }
+    @media (max-width: 560px) {
+      .kv-row { grid-template-columns: 1fr; gap: 0.25rem; }
+      .kv-tag b { display: inline; margin-right: 0.3rem; }
+    }
+
     .heat { display: flex; gap: 4px; overflow-x: auto; padding: 0.1rem 0 0.35rem; }
     .heat-col { display: flex; flex-direction: column; gap: 4px; flex: 0 0 auto; }
     .heat-cell {
@@ -1757,6 +1789,12 @@
     </div>
   </section>
 
+  <div class="section-label">Karteikarten-Verlauf <span>· wann welche Karten dran waren</span></div>
+  <section class="card glass rise d2">
+    <h4>Letzte drei Wochen <span class="h4-note" id="kv-stand"></span></h4>
+    <div class="kv" id="kv"></div>
+  </section>
+
   <div class="section-label">Fortschritt nach Rechtsgebiet</div>
   <div class="fach-grid rise d3" id="fach-grid"></div>
   <div class="fach-note" id="fach-note"></div>
@@ -2106,6 +2144,7 @@
       // Gleiche Regel für „Wiederholung heute": auch sie stammt aus Anki
       // und kann in einer Cloud-Sync-Datei fehlen.
       if (alt.wiederholung && standZeit(alt.wiederholung) > standZeit(d.wiederholung)) d.wiederholung = alt.wiederholung;
+      if (alt.ankiVerlauf && standZeit(alt.ankiVerlauf) > standZeit(d.ankiVerlauf)) d.ankiVerlauf = alt.ankiVerlauf;
     }
     // „Heute gelernt" nur zeigen, wenn der Anki-Stand auch von heute ist –
     // sonst würde ein übernommener Stand die Heatmap für heute auffüllen.
@@ -2350,6 +2389,7 @@
     if (typeof initWeekBoxLogDots === 'function') initWeekBoxLogDots();
     if (typeof renderStreak      === 'function') renderStreak();
     if (typeof renderHeatmap     === 'function') renderHeatmap();
+    if (typeof renderKartenVerlauf === 'function') renderKartenVerlauf();
     if (typeof renderHeroChips   === 'function') renderHeroChips();
     if (typeof renderNowWeekdots === 'function') renderNowWeekdots();
     if (typeof pomoZaehlerRender === 'function') pomoZaehlerRender();
@@ -2928,6 +2968,75 @@
       html += '</div>';
     }
     el.innerHTML = html;
+  }
+
+  /* ── KARTEIKARTEN-VERLAUF ─────────────────────────────────────────────
+     Pro Tag: wie viele Karten dran waren (verschiedene Karten, nicht
+     Antworten – deshalb kleiner als die Heatmap-Zahl), wie viele davon zum
+     ersten Mal, welche Rechtsgebiete und welche Fälle. Kommt aus
+     sync-notion.py (fetch_karten_verlauf), gleiche Fall-Erkennung wie das
+     Anki-Add-on. Tage ohne Karten werden zu einer Pausenzeile zusammengefasst. */
+  function renderKartenVerlauf() {
+    const box = document.getElementById('kv');
+    if (!box) return;
+    const v = window.NOTION_DATA && window.NOTION_DATA.ankiVerlauf;
+    setzeText('kv-stand', v ? '· Stand ' + v.stand : '');
+    if (!v || !Array.isArray(v.tage) || !v.tage.length) {
+      box.innerHTML = '<span class="fokus-leer">Noch kein Verlauf – der Sync braucht Anki einmal offen.</span>';
+      return;
+    }
+    const FK = { 'Zivilrecht': 'zr', 'Öffentliches Recht': 'or', 'Strafrecht': 'sr' };
+    const kurz = g => g.replace(/^x?\d+\s+/, '');
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const tagAus = iso => { const [y, m, d] = iso.split('-').map(Number); return new Date(y, m - 1, d); };
+    const heuteIso = isoOf(TODAY);
+    const faelleText = l => l.map(f => `${esc(f.name)} <span class="rot-zahl">${f.n}</span>`).join(' · ');
+
+    const SICHTBAR = 7;                 // Lerntage, die ohne Aufklappen zu sehen sind
+    let html = '', vorher = null;
+    v.tage.forEach((t, i) => {
+      const alt = i >= SICHTBAR ? ' kv-alt' : '';
+      const d = tagAus(t.datum);
+      if (vorher) {
+        const luecke = Math.round((vorher - d) / DAY) - 1;
+        if (luecke > 0) html += `<div class="kv-pause${alt}">${luecke === 1 ? '1 Tag' : luecke + ' Tage'} ohne Karten</div>`;
+      }
+      vorher = d;
+
+      const zahl = [];
+      if (t.karten) zahl.push(`<b>${t.karten}</b> Karten` + (t.neu ? ` · ${t.neu} zum ersten Mal` : ''));
+      if (t.angelegt) zahl.push(`${t.angelegt} neu angelegt`);
+
+      const MAX = 5;
+      const pillen = t.gebiete.slice(0, MAX).map(g =>
+        `<span class="rot-fach rot-f-${FK[g.fach] || 'zr'}" title="${esc(g.fach)}">${esc(kurz(g.gebiet))}<b>${g.n}</b></span>`).join('') +
+        (t.gebiete.length > MAX ? `<span class="kv-mehr">+${t.gebiete.length - MAX} weitere</span>` : '');
+
+      let faelle = '';
+      if (t.faelle.length) faelle += `<div class="kv-faelle"><span class="kv-l">Fälle</span>${faelleText(t.faelle)}</div>`;
+      if (t.faelleAngelegt.length) faelle += `<div class="kv-faelle"><span class="kv-l">Angelegt</span>${faelleText(t.faelleAngelegt)}</div>`;
+
+      html += `<div class="kv-row${alt}${t.datum === heuteIso ? ' heute' : ''}">
+        <div class="kv-tag"><b>${t.datum === heuteIso ? 'Heute' : d.toLocaleDateString('de-DE', { weekday: 'long' })}</b>${d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' })}</div>
+        <div>
+          <div class="kv-zahl">${zahl.join(' · ')}</div>
+          ${pillen ? `<div class="kv-chips">${pillen}</div>` : ''}
+          ${faelle}
+        </div>
+      </div>`;
+    });
+    box.innerHTML = html;
+    box.classList.add('zu');
+    if (v.tage.length > SICHTBAR) {
+      const knopf = document.createElement('button');
+      knopf.className = 'kv-mehr-btn';
+      knopf.textContent = `Ältere Tage zeigen (${v.tage.length - SICHTBAR})`;
+      knopf.onclick = () => {
+        const zu = box.classList.toggle('zu');
+        knopf.textContent = zu ? `Ältere Tage zeigen (${v.tage.length - SICHTBAR})` : 'Weniger zeigen';
+      };
+      box.appendChild(knopf);
+    }
   }
 
   // ── FÄLLE PRO WOCHE: vorgenommen vs. nachbereitet ──
@@ -4360,6 +4469,7 @@
   renderNow();
   renderStreak();
   renderHeatmap();
+  renderKartenVerlauf();
   renderFaelleProWoche();
   pomoInit();
 

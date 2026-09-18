@@ -110,7 +110,7 @@ def main():
     # Anki läuft nur auf dem Mac (AnkiConnect, localhost:8765) – hier in der
     # Cloud ist es nie erreichbar. Deshalb den letzten bekannten Anki-Stand aus
     # der vorhandenen notion-data.js übernehmen, statt ihn zu überschreiben.
-    # Wichtig: auch "ankiFach" und "wiederholung" mitnehmen, sonst
+    # Wichtig: auch "ankiFach", "wiederholung" und "ankiVerlauf" mitnehmen, sonst
     # fällt die Karteikarten-Kachel bei jedem Cloud-Sync wieder auf „Kein
     # Anki-Stand" zurück und die Kachel „Wiederholung heute" verschwindet. Jedes neue
     # Anki-Feld in sync-notion.py muss hier ergänzt werden – genau das war schon
@@ -119,6 +119,7 @@ def main():
     old_anki = None
     old_anki_fach = None
     old_wiederholung = None
+    old_verlauf = None
     try:
         with open("notion-data.js", "r", encoding="utf-8") as f:
             content = f.read()
@@ -128,6 +129,7 @@ def main():
             old_anki         = old.get("anki")
             old_anki_fach    = old.get("ankiFach")
             old_wiederholung = old.get("wiederholung")
+            old_verlauf      = old.get("ankiVerlauf")
     except Exception:
         pass
 
@@ -136,6 +138,7 @@ def main():
         "anki":         old_anki,
         "ankiFach":     old_anki_fach,
         "wiederholung": old_wiederholung,
+        "ankiVerlauf":  old_verlauf,
         "rhythmCheck": {"currentWeek": get_week(date.today()), "nachbereitet": nachbereitet_hk},
         "cases":       cases,
         "stats": {
