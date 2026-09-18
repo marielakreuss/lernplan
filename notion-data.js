@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.09.2026 16:53",
+  "lastSync": "18.09.2026 19:02",
   "anki": {
     "reviewedToday": 5,
     "dueNow": 4828,
@@ -1193,7 +1193,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-18"
   },
   "ankiFach": {
-    "stand": "18.09.2026 16:53",
+    "stand": "18.09.2026 19:02",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1222,7 +1222,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "18.09.2026 16:53",
+    "stand": "18.09.2026 19:02",
     "datum": "2026-09-18",
     "faelle": [],
     "gebiet": "3 SachenR",
@@ -1243,7 +1243,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.09.2026 16:53",
+    "stand": "18.09.2026 19:02",
     "tage": [
       {
         "datum": "2026-09-18",
@@ -2032,11 +2032,14 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-3-nicht-abgegeben-gegliedert-3d6539e733aa805eac95cfb05f0efcdf"
     },
     {
-      "title": "Konrad 1 - Licht für Kühe",
+      "title": "Konrad 1: Licht für Kühe",
       "status": "Nicht nachbereitet",
       "woche": 51,
       "datum": "2026-09-18",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "BauR",
+        "VerwaltungsR AT"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2048,7 +2051,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 51,
       "datum": "2026-09-18",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "VerfassungsR",
+        "Europarecht",
+        "VerwaltungsR AT"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
