@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.09.2026 19:02",
+  "lastSync": "18.09.2026 23:00",
   "anki": {
-    "reviewedToday": 5,
-    "dueNow": 4828,
+    "reviewedToday": 37,
+    "dueNow": 4814,
     "history": [
       {
         "date": "2025-09-29",
@@ -1187,13 +1187,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-18",
-        "count": 5
+        "count": 37
       }
     ],
     "stand": "2026-09-18"
   },
   "ankiFach": {
-    "stand": "18.09.2026 19:02",
+    "stand": "18.09.2026 23:00",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1201,7 +1201,7 @@ window.NOTION_DATA = {
         "lernen": 719,
         "aufbau": 169,
         "sitzt": 1069,
-        "faellig": 1655
+        "faellig": 1644
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1209,7 +1209,7 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 754
+        "faellig": 753
       },
       "Strafrecht": {
         "total": 667,
@@ -1217,12 +1217,12 @@ window.NOTION_DATA = {
         "lernen": 554,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 643
+        "faellig": 641
       }
     }
   },
   "wiederholung": {
-    "stand": "18.09.2026 19:02",
+    "stand": "18.09.2026 23:00",
     "datum": "2026-09-18",
     "faelle": [],
     "gebiet": "3 SachenR",
@@ -1230,11 +1230,11 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 3
+        "offen": 0
       },
       {
         "name": "Anschluss",
-        "offen": 45
+        "offen": 34
       },
       {
         "name": "Rechtsgebiet",
@@ -1243,14 +1243,24 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.09.2026 19:02",
+    "stand": "18.09.2026 23:00",
     "tage": [
       {
         "datum": "2026-09-18",
-        "karten": 4,
+        "karten": 20,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 12
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 3
+          },
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
@@ -1265,9 +1275,27 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "9 GesellschaftsR",
             "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
           }
         ],
-        "faelle": [],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 3
+          },
+          {
+            "name": "ArbR · Fall 06",
+            "n": 3
+          },
+          {
+            "name": "ArbR · Fall 10",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": []
       },
       {
