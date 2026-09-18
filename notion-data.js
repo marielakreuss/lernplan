@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.09.2026 06:04",
+  "lastSync": "18.09.2026 09:56",
   "anki": {
-    "reviewedToday": 34,
-    "dueNow": 4798,
+    "reviewedToday": 4,
+    "dueNow": 4828,
     "history": [
       {
         "date": "2025-09-29",
@@ -1183,21 +1183,25 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-17",
-        "count": 34
+        "count": 101
+      },
+      {
+        "date": "2026-09-18",
+        "count": 4
       }
     ],
-    "stand": "2026-09-17"
+    "stand": "2026-09-18"
   },
   "ankiFach": {
-    "stand": "17.09.2026 22:25",
+    "stand": "18.09.2026 09:56",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
-        "neu": 2,
-        "lernen": 709,
-        "aufbau": 171,
-        "sitzt": 1075,
-        "faellig": 1645
+        "neu": 0,
+        "lernen": 719,
+        "aufbau": 169,
+        "sitzt": 1069,
+        "faellig": 1655
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1205,32 +1209,28 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 750
+        "faellig": 754
       },
       "Strafrecht": {
         "total": 667,
-        "neu": 10,
-        "lernen": 547,
+        "neu": 3,
+        "lernen": 554,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 627
+        "faellig": 643
       }
     }
   },
   "wiederholung": {
-    "stand": "17.09.2026 22:25",
-    "datum": "2026-09-17",
-    "faelle": [
-      "ZR · 04",
-      "StGB · Fall 04",
-      "HGB · Fall 01"
-    ],
-    "gebiet": "StrafR BT",
-    "fach": "Strafrecht",
+    "stand": "18.09.2026 09:56",
+    "datum": "2026-09-18",
+    "faelle": [],
+    "gebiet": "3 SachenR",
+    "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 29
+        "offen": 3
       },
       {
         "name": "Anschluss",
@@ -1238,7 +1238,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 20
+        "offen": 31
       }
     ]
   },
