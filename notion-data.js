@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.09.2026 10:18",
+  "lastSync": "18.09.2026 12:23",
   "anki": {
     "reviewedToday": 5,
     "dueNow": 4828,
@@ -1193,7 +1193,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-18"
   },
   "ankiFach": {
-    "stand": "18.09.2026 10:57",
+    "stand": "18.09.2026 12:23",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1222,7 +1222,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "18.09.2026 10:57",
+    "stand": "18.09.2026 12:23",
     "datum": "2026-09-18",
     "faelle": [],
     "gebiet": "3 SachenR",
@@ -1239,6 +1239,648 @@ window.NOTION_DATA = {
       {
         "name": "Rechtsgebiet",
         "offen": 31
+      }
+    ]
+  },
+  "ankiVerlauf": {
+    "stand": "18.09.2026 12:23",
+    "tage": [
+      {
+        "datum": "2026-09-18",
+        "karten": 4,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "8 HandelsR",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "9 GesellschaftsR",
+            "n": 1
+          }
+        ],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-09-17",
+        "karten": 54,
+        "neu": 18,
+        "angelegt": 4,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 17
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "9 GesellschaftsR",
+            "n": 16
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "8 HandelsR",
+            "n": 11
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 3
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "HGB · Fall 01",
+            "n": 20
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 16
+          },
+          {
+            "name": "ZR · 04",
+            "n": 9
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-09-08",
+        "karten": 71,
+        "neu": 35,
+        "angelegt": 35,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 71
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 09",
+            "n": 19
+          },
+          {
+            "name": "ArbR · Fall 10",
+            "n": 16
+          },
+          {
+            "name": "ArbR · Fall 01",
+            "n": 14
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 7
+          },
+          {
+            "name": "ArbR · Fall 08",
+            "n": 6
+          },
+          {
+            "name": "ArbR · Fall 02",
+            "n": 4
+          },
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "ArbR · Fall 09",
+            "n": 19
+          },
+          {
+            "name": "ArbR · Fall 10",
+            "n": 16
+          }
+        ]
+      },
+      {
+        "datum": "2026-09-07",
+        "karten": 57,
+        "neu": 11,
+        "angelegt": 11,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 57
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 01",
+            "n": 23
+          },
+          {
+            "name": "ArbR · Fall 02",
+            "n": 13
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 6
+          },
+          {
+            "name": "ArbR · Fall 08",
+            "n": 6
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 5
+          },
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "ArbR · Fall 08",
+            "n": 6
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 5
+          }
+        ]
+      },
+      {
+        "datum": "2026-09-06",
+        "karten": 96,
+        "neu": 16,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 89
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 3
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 03",
+            "n": 29
+          },
+          {
+            "name": "ArbR · Fall 04",
+            "n": 16
+          },
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 11
+          },
+          {
+            "name": "ArbR · Fall 05",
+            "n": 11
+          },
+          {
+            "name": "ArbR · Fall 01",
+            "n": 10
+          },
+          {
+            "name": "ArbR · Fall 06",
+            "n": 10
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 8
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-09-05",
+        "karten": 27,
+        "neu": 0,
+        "angelegt": 16,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 26
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 03",
+            "n": 8
+          },
+          {
+            "name": "ArbR · Fall 01",
+            "n": 7
+          },
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 7
+          },
+          {
+            "name": "ArbR · Fall 04",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "ArbR · Fall 06",
+            "n": 8
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 8
+          }
+        ]
+      },
+      {
+        "datum": "2026-09-04",
+        "karten": 74,
+        "neu": 56,
+        "angelegt": 28,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 71
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 20
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 17
+          },
+          {
+            "name": "ArbR · Fall 04",
+            "n": 16
+          },
+          {
+            "name": "ArbR · Fall 05",
+            "n": 10
+          },
+          {
+            "name": "ArbR · Fall 01",
+            "n": 9
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "ArbR · Fall 04",
+            "n": 16
+          },
+          {
+            "name": "ArbR · Fall 05",
+            "n": 10
+          }
+        ]
+      },
+      {
+        "datum": "2026-09-03",
+        "karten": 72,
+        "neu": 22,
+        "angelegt": 21,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 69
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 01",
+            "n": 41
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 22
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 5
+          },
+          {
+            "name": "ArbR · Fall 02",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "ArbR · Fall 03",
+            "n": 21
+          }
+        ]
+      },
+      {
+        "datum": "2026-09-02",
+        "karten": 130,
+        "neu": 52,
+        "angelegt": 28,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 59
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "A VerwaltungsR AT",
+            "n": 46
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 23
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BauR · Fall 10",
+            "n": 32
+          },
+          {
+            "name": "BauR · Fall 09",
+            "n": 17
+          },
+          {
+            "name": "BauR · Fall 08",
+            "n": 16
+          },
+          {
+            "name": "BauR · Fall 06",
+            "n": 15
+          },
+          {
+            "name": "BauR · Fall 04",
+            "n": 11
+          },
+          {
+            "name": "BauR · Fall 01",
+            "n": 8
+          },
+          {
+            "name": "BauR · Fall 03",
+            "n": 8
+          },
+          {
+            "name": "BauR · Fall 07",
+            "n": 5
+          },
+          {
+            "name": "VerwRAT · Fall 08",
+            "n": 5
+          },
+          {
+            "name": "BauR · Fall 05",
+            "n": 4
+          },
+          {
+            "name": "BauR · Fall 02",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 19
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 8
+          }
+        ]
+      },
+      {
+        "datum": "2026-09-01",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 32,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": [
+          {
+            "name": "BauR · Fall 10",
+            "n": 32
+          }
+        ]
+      },
+      {
+        "datum": "2026-08-31",
+        "karten": 90,
+        "neu": 22,
+        "angelegt": 21,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 50
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 25
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "A VerwaltungsR AT",
+            "n": 14
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BauR · Fall 01",
+            "n": 15
+          },
+          {
+            "name": "BauR · Fall 06",
+            "n": 13
+          },
+          {
+            "name": "BauR · Fall 08",
+            "n": 11
+          },
+          {
+            "name": "BauR · Fall 04",
+            "n": 10
+          },
+          {
+            "name": "BauR · Fall 09",
+            "n": 10
+          },
+          {
+            "name": "BauR · Fall 02",
+            "n": 8
+          },
+          {
+            "name": "BauR · Fall 05",
+            "n": 8
+          },
+          {
+            "name": "BauR · Fall 03",
+            "n": 7
+          },
+          {
+            "name": "VerwRAT · Fall 08",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": [
+          {
+            "name": "BauR · Fall 09",
+            "n": 14
+          },
+          {
+            "name": "BauR · Fall 04",
+            "n": 4
+          },
+          {
+            "name": "BauR · Fall 08",
+            "n": 3
+          }
+        ]
+      },
+      {
+        "datum": "2026-08-30",
+        "karten": 68,
+        "neu": 12,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 40
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 26
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BauR · Fall 01",
+            "n": 13
+          },
+          {
+            "name": "BauR · Fall 04",
+            "n": 11
+          },
+          {
+            "name": "BauR · Fall 03",
+            "n": 9
+          },
+          {
+            "name": "BauR · Fall 06",
+            "n": 8
+          },
+          {
+            "name": "BauR · Fall 08",
+            "n": 6
+          },
+          {
+            "name": "VerwRAT · Fall 07",
+            "n": 5
+          },
+          {
+            "name": "BauR · Fall 02",
+            "n": 3
+          },
+          {
+            "name": "BauR · Fall 05",
+            "n": 3
+          },
+          {
+            "name": "VerwRAT · Fall 05",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
       }
     ]
   },
