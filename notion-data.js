@@ -1,8 +1,8 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.09.2026 09:56",
+  "lastSync": "18.09.2026 10:57",
   "anki": {
-    "reviewedToday": 4,
+    "reviewedToday": 5,
     "dueNow": 4828,
     "history": [
       {
@@ -1187,13 +1187,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-18",
-        "count": 4
+        "count": 5
       }
     ],
     "stand": "2026-09-18"
   },
   "ankiFach": {
-    "stand": "18.09.2026 09:56",
+    "stand": "18.09.2026 10:57",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1222,7 +1222,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "18.09.2026 09:56",
+    "stand": "18.09.2026 10:57",
     "datum": "2026-09-18",
     "faelle": [],
     "gebiet": "3 SachenR",
