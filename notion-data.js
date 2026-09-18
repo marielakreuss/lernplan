@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.09.2026 12:23",
+  "lastSync": "18.09.2026 16:53",
   "anki": {
     "reviewedToday": 5,
     "dueNow": 4828,
@@ -1193,7 +1193,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-18"
   },
   "ankiFach": {
-    "stand": "18.09.2026 12:23",
+    "stand": "18.09.2026 16:53",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1222,7 +1222,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "18.09.2026 12:23",
+    "stand": "18.09.2026 16:53",
     "datum": "2026-09-18",
     "faelle": [],
     "gebiet": "3 SachenR",
@@ -1243,7 +1243,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.09.2026 12:23",
+    "stand": "18.09.2026 16:53",
     "tage": [
       {
         "datum": "2026-09-18",
@@ -1890,6 +1890,54 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
+      "title": "UKK 2311 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": 52,
+      "datum": "2026-09-26",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-2311-nicht-abgegeben-3df539e733aa80c0b96fc5947031856d"
+    },
+    {
+      "title": "UKK 1486 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": 51,
+      "datum": "2026-09-19",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1486-nicht-abgegeben-3df539e733aa80689c9cd5175c2754c6"
+    },
+    {
+      "title": "Konrad 3",
+      "status": "Nicht nachbereitet",
+      "woche": 52,
+      "datum": "2026-09-26",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Hauptkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-3-3df539e733aa801294f4ff7ab5e24408"
+    },
+    {
+      "title": "UKK 2310 - nicht abgegeben",
+      "status": "Nicht nachbereitet",
+      "woche": 51,
+      "datum": "2026-09-16",
+      "rechtsgebiet": [],
+      "fach": "",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-2310-nicht-abgegeben-3df539e733aa80e7bbafc4e65f7147f0"
+    },
+    {
       "title": "KW 4 - gegliedert, angehört",
       "status": "In Bearbeitung",
       "woche": 51,
@@ -1899,7 +1947,7 @@ window.NOTION_DATA = {
         "HGB"
       ],
       "fach": "",
-      "typ": "Hauptkurs",
+      "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
       "url": "https://app.notion.com/p/KW-4-gegliedert-angeh-rt-3de539e733aa802284d7c6aed5f19699"
@@ -1996,7 +2044,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/Konrad-1-Licht-f-r-K-he-3d6539e733aa80b2bdbbffbc0cf1ac04"
     },
     {
-      "title": "Konrad 1: Dachdeckersorgen",
+      "title": "Konrad 2: Dachdeckersorgen",
       "status": "Nicht nachbereitet",
       "woche": 51,
       "datum": "2026-09-18",
@@ -2005,7 +2053,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-1-Dachdeckersorgen-3d6539e733aa803cb8ffeacba7f53c6c"
+      "url": "https://app.notion.com/p/Konrad-2-Dachdeckersorgen-3d6539e733aa803cb8ffeacba7f53c6c"
     },
     {
       "title": "UKK 1483 (Probestex) - abgegeben am 9.9.26",
@@ -6304,8 +6352,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 135,
     "inBearbeitung": 29,
-    "total": 313,
-    "klkGesamt": 57,
+    "total": 317,
+    "klkGesamt": 61,
     "klkAbgegeben": 26
   }
 };
