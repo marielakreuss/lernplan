@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.09.2026 10:01",
+  "lastSync": "19.09.2026 12:09",
   "anki": {
-    "reviewedToday": 92,
-    "dueNow": 4779,
+    "reviewedToday": 72,
+    "dueNow": 4790,
     "history": [
       {
         "date": "2025-09-29",
@@ -1188,20 +1188,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-18",
         "count": 92
+      },
+      {
+        "date": "2026-09-19",
+        "count": 86
       }
     ],
     "stand": "2026-09-19"
   },
   "ankiFach": {
-    "stand": "19.09.2026 00:01",
+    "stand": "19.09.2026 12:09",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
         "neu": 0,
-        "lernen": 719,
+        "lernen": 721,
         "aufbau": 169,
-        "sitzt": 1069,
-        "faellig": 1619
+        "sitzt": 1067,
+        "faellig": 1628
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1209,23 +1213,23 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 743
+        "faellig": 747
       },
       "Strafrecht": {
-        "total": 667,
-        "neu": 3,
+        "total": 668,
+        "neu": 4,
         "lernen": 554,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 641
+        "faellig": 639
       }
     }
   },
   "wiederholung": {
-    "stand": "19.09.2026 00:01",
+    "stand": "19.09.2026 12:09",
     "datum": "2026-09-19",
     "faelle": [],
-    "gebiet": "3 SachenR",
+    "gebiet": "1 BGB AT",
     "fach": "Zivilrecht",
     "teile": [
       {
@@ -1234,17 +1238,102 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 0
+        "offen": 22
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 30
+        "offen": 35
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "19.09.2026 00:01",
+    "stand": "19.09.2026 12:09",
     "tage": [
+      {
+        "datum": "2026-09-19",
+        "karten": 58,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 30
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 13
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 9
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 7
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 5
+          },
+          {
+            "name": "ArbR · Fall 06",
+            "n": 5
+          },
+          {
+            "name": "SachenR · Fall 18",
+            "n": 5
+          },
+          {
+            "name": "BauR · Fall 10",
+            "n": 5
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 4
+          },
+          {
+            "name": "ArbR · Fall 08",
+            "n": 4
+          },
+          {
+            "name": "ArbR · Fall 04",
+            "n": 3
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 3
+          },
+          {
+            "name": "ArbR · Fall 10",
+            "n": 3
+          },
+          {
+            "name": "SachenR · Fall 19",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-09-18",
         "karten": 50,
