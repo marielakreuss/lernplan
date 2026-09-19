@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.09.2026 12:09",
+  "lastSync": "19.09.2026 13:10",
   "anki": {
     "reviewedToday": 72,
     "dueNow": 4790,
@@ -1197,7 +1197,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-19"
   },
   "ankiFach": {
-    "stand": "19.09.2026 12:09",
+    "stand": "19.09.2026 13:10",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1216,8 +1216,8 @@ window.NOTION_DATA = {
         "faellig": 747
       },
       "Strafrecht": {
-        "total": 668,
-        "neu": 4,
+        "total": 671,
+        "neu": 7,
         "lernen": 554,
         "aufbau": 15,
         "sitzt": 95,
@@ -1226,7 +1226,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "19.09.2026 12:09",
+    "stand": "19.09.2026 13:10",
     "datum": "2026-09-19",
     "faelle": [],
     "gebiet": "1 BGB AT",
@@ -1247,13 +1247,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "19.09.2026 12:09",
+    "stand": "19.09.2026 13:10",
     "tage": [
       {
         "datum": "2026-09-19",
         "karten": 58,
         "neu": 0,
-        "angelegt": 0,
+        "angelegt": 1,
         "gebiete": [
           {
             "fach": "Zivilrecht",
