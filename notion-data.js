@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.09.2026 11:34",
+  "lastSync": "21.09.2026 14:13",
   "anki": {
-    "reviewedToday": 72,
-    "dueNow": 4790,
+    "reviewedToday": 0,
+    "dueNow": 4852,
     "history": [
       {
         "date": "2025-09-29",
@@ -1191,13 +1191,17 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-19",
-        "count": 86
+        "count": 183
+      },
+      {
+        "date": "2026-09-20",
+        "count": 56
       }
     ],
-    "stand": "2026-09-19"
+    "stand": "2026-09-21"
   },
   "ankiFach": {
-    "stand": "19.09.2026 13:10",
+    "stand": "21.09.2026 14:13",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1205,7 +1209,7 @@ window.NOTION_DATA = {
         "lernen": 721,
         "aufbau": 169,
         "sitzt": 1067,
-        "faellig": 1628
+        "faellig": 1668
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1213,52 +1217,99 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 747
+        "faellig": 760
       },
       "Strafrecht": {
-        "total": 671,
-        "neu": 7,
+        "total": 680,
+        "neu": 15,
         "lernen": 554,
-        "aufbau": 15,
+        "aufbau": 16,
         "sitzt": 95,
-        "faellig": 639
+        "faellig": 649
       }
     }
   },
   "wiederholung": {
-    "stand": "19.09.2026 13:10",
-    "datum": "2026-09-19",
-    "faelle": [],
-    "gebiet": "1 BGB AT",
+    "stand": "21.09.2026 14:13",
+    "datum": "2026-09-21",
+    "faelle": [
+      "StGB · Fall 01",
+      "StGB · Fall 02",
+      "StGB · Fall 04",
+      "StGB · Fall 06"
+    ],
+    "gebiet": "2 SchuldR BT",
     "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 0
+        "offen": 60
       },
       {
         "name": "Anschluss",
-        "offen": 22
+        "offen": 45
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 35
+        "offen": 20
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "19.09.2026 13:10",
+    "stand": "21.09.2026 14:13",
     "tage": [
       {
-        "datum": "2026-09-19",
-        "karten": 58,
+        "datum": "2026-09-20",
+        "karten": 35,
         "neu": 0,
-        "angelegt": 1,
+        "angelegt": 0,
         "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 35
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BGBAT · Fall 16",
+            "n": 6
+          },
+          {
+            "name": "BGBAT · Fall 18",
+            "n": 6
+          },
+          {
+            "name": "BGBAT · Fall 01",
+            "n": 3
+          },
+          {
+            "name": "BGBAT · Fall 14",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-09-19",
+        "karten": 122,
+        "neu": 5,
+        "angelegt": 6,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 37
+          },
           {
             "fach": "Zivilrecht",
             "gebiet": "x10 ArbeitsR",
             "n": 30
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 27
           },
           {
             "fach": "Zivilrecht",
@@ -1271,8 +1322,8 @@ window.NOTION_DATA = {
             "n": 9
           },
           {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
             "n": 4
           },
           {
@@ -1287,6 +1338,18 @@ window.NOTION_DATA = {
           }
         ],
         "faelle": [
+          {
+            "name": "StGB · Fall 01",
+            "n": 36
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 21
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 7
+          },
           {
             "name": "ArbR · Fall 02a",
             "n": 7
@@ -1306,10 +1369,6 @@ window.NOTION_DATA = {
           {
             "name": "BauR · Fall 10",
             "n": 5
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 4
           },
           {
             "name": "ArbR · Fall 08",
@@ -1332,7 +1391,12 @@ window.NOTION_DATA = {
             "n": 3
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "StGB · Fall 04",
+            "n": 4
+          }
+        ]
       },
       {
         "datum": "2026-09-18",
@@ -1878,153 +1942,6 @@ window.NOTION_DATA = {
             "n": 32
           }
         ]
-      },
-      {
-        "datum": "2026-08-31",
-        "karten": 90,
-        "neu": 22,
-        "angelegt": 21,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 50
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 25
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "A VerwaltungsR AT",
-            "n": 14
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BauR · Fall 01",
-            "n": 15
-          },
-          {
-            "name": "BauR · Fall 06",
-            "n": 13
-          },
-          {
-            "name": "BauR · Fall 08",
-            "n": 11
-          },
-          {
-            "name": "BauR · Fall 04",
-            "n": 10
-          },
-          {
-            "name": "BauR · Fall 09",
-            "n": 10
-          },
-          {
-            "name": "BauR · Fall 02",
-            "n": 8
-          },
-          {
-            "name": "BauR · Fall 05",
-            "n": 8
-          },
-          {
-            "name": "BauR · Fall 03",
-            "n": 7
-          },
-          {
-            "name": "VerwRAT · Fall 08",
-            "n": 4
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "BauR · Fall 09",
-            "n": 14
-          },
-          {
-            "name": "BauR · Fall 04",
-            "n": 4
-          },
-          {
-            "name": "BauR · Fall 08",
-            "n": 3
-          }
-        ]
-      },
-      {
-        "datum": "2026-08-30",
-        "karten": 68,
-        "neu": 12,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 40
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 26
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BauR · Fall 01",
-            "n": 13
-          },
-          {
-            "name": "BauR · Fall 04",
-            "n": 11
-          },
-          {
-            "name": "BauR · Fall 03",
-            "n": 9
-          },
-          {
-            "name": "BauR · Fall 06",
-            "n": 8
-          },
-          {
-            "name": "BauR · Fall 08",
-            "n": 6
-          },
-          {
-            "name": "VerwRAT · Fall 07",
-            "n": 5
-          },
-          {
-            "name": "BauR · Fall 02",
-            "n": 3
-          },
-          {
-            "name": "BauR · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "VerwRAT · Fall 05",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
@@ -2034,12 +1951,24 @@ window.NOTION_DATA = {
   },
   "cases": [
     {
+      "title": "KW 5 - StrafR (Strafbarkeitsrisiken)",
+      "status": "Nicht nachbereitet",
+      "woche": 52,
+      "datum": "2026-09-24",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-5-StrafR-Strafbarkeitsrisiken-3e2539e733aa804a8afcd55410ea7a35"
+    },
+    {
       "title": "UKK 2311 - nicht abgegeben",
       "status": "Nicht nachbereitet",
       "woche": 52,
       "datum": "2026-09-26",
       "rechtsgebiet": [],
-      "fach": "",
+      "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
@@ -2051,23 +1980,23 @@ window.NOTION_DATA = {
       "woche": 51,
       "datum": "2026-09-19",
       "rechtsgebiet": [],
-      "fach": "",
+      "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
       "url": "https://app.notion.com/p/UKK-1486-nicht-abgegeben-3df539e733aa80689c9cd5175c2754c6"
     },
     {
-      "title": "Konrad 3",
+      "title": "Konrad 3 - Geld für die Uhrenindustrie",
       "status": "Nicht nachbereitet",
       "woche": 52,
       "datum": "2026-09-26",
       "rechtsgebiet": [],
-      "fach": "",
-      "typ": "Hauptkurs",
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-3-3df539e733aa801294f4ff7ab5e24408"
+      "url": "https://app.notion.com/p/Konrad-3-Geld-f-r-die-Uhrenindustrie-3df539e733aa801294f4ff7ab5e24408"
     },
     {
       "title": "UKK 2310 - nicht abgegeben",
@@ -2075,7 +2004,7 @@ window.NOTION_DATA = {
       "woche": 51,
       "datum": "2026-09-16",
       "rechtsgebiet": [],
-      "fach": "",
+      "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
@@ -3186,8 +3115,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": 29,
-      "datum": "2026-04-15",
+      "woche": 52,
+      "datum": "2026-09-23",
       "rechtsgebiet": [
         "Strafrecht AT",
         "StrafR"
@@ -3231,8 +3160,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 2",
       "status": "In Bearbeitung",
-      "woche": 51,
-      "datum": "2026-09-18",
+      "woche": 52,
+      "datum": "2026-09-23",
       "rechtsgebiet": [
         "Strafrecht AT",
         "StrafR"
@@ -3401,8 +3330,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-25",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -3415,8 +3344,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-23",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -3429,8 +3358,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 4",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-23",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -3443,8 +3372,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-22",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -3457,8 +3386,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 2",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-21",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -3471,8 +3400,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 1",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-21",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -5056,8 +4985,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 2",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-25",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -5084,8 +5013,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 1",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 52,
+      "datum": "2026-09-25",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -6503,8 +6432,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 136,
     "inBearbeitung": 28,
-    "total": 317,
-    "klkGesamt": 61,
+    "total": 318,
+    "klkGesamt": 63,
     "klkAbgegeben": 26
   }
 };
