@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.09.2026 17:29",
+  "lastSync": "21.09.2026 18:39",
   "anki": {
     "reviewedToday": 91,
     "dueNow": 4807,
@@ -2245,7 +2245,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 6,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KW-2-abgegeben-am-29-8-26-3cb539e733aa80a9a7fcd372a34efbbc"
     },
