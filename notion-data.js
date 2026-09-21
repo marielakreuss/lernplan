@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.09.2026 14:13",
+  "lastSync": "21.09.2026 15:27",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4852,
+    "reviewedToday": 91,
+    "dueNow": 4807,
     "history": [
       {
         "date": "2025-09-29",
@@ -1196,12 +1196,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-20",
         "count": 56
+      },
+      {
+        "date": "2026-09-21",
+        "count": 91
       }
     ],
     "stand": "2026-09-21"
   },
   "ankiFach": {
-    "stand": "21.09.2026 14:13",
+    "stand": "21.09.2026 15:27",
     "faecher": {
       "Zivilrecht": {
         "total": 1957,
@@ -1209,7 +1213,7 @@ window.NOTION_DATA = {
         "lernen": 721,
         "aufbau": 169,
         "sitzt": 1067,
-        "faellig": 1668
+        "faellig": 1639
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1217,7 +1221,7 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 760
+        "faellig": 745
       },
       "Strafrecht": {
         "total": 680,
@@ -1225,12 +1229,12 @@ window.NOTION_DATA = {
         "lernen": 554,
         "aufbau": 16,
         "sitzt": 95,
-        "faellig": 649
+        "faellig": 648
       }
     }
   },
   "wiederholung": {
-    "stand": "21.09.2026 14:13",
+    "stand": "21.09.2026 15:27",
     "datum": "2026-09-21",
     "faelle": [
       "StGB · Fall 01",
@@ -1247,7 +1251,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 45
+        "offen": 14
       },
       {
         "name": "Rechtsgebiet",
@@ -1256,8 +1260,82 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.09.2026 14:13",
+    "stand": "21.09.2026 15:27",
     "tage": [
+      {
+        "datum": "2026-09-21",
+        "karten": 49,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 27
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 14
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 4
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "9 GesellschaftsR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BauR · Fall 10",
+            "n": 9
+          },
+          {
+            "name": "ArbR · Fall 03",
+            "n": 7
+          },
+          {
+            "name": "ArbR · Fall 06",
+            "n": 5
+          },
+          {
+            "name": "ArbR · Fall 10",
+            "n": 5
+          },
+          {
+            "name": "ArbR · Fall 02a",
+            "n": 3
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 3
+          },
+          {
+            "name": "BauR · Fall 04",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-09-20",
         "karten": 35,
