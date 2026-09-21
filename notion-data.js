@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.09.2026 18:39",
+  "lastSync": "21.09.2026 19:40",
   "anki": {
     "reviewedToday": 91,
-    "dueNow": 4807,
+    "dueNow": 4804,
     "history": [
       {
         "date": "2025-09-29",
@@ -1205,7 +1205,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-21"
   },
   "ankiFach": {
-    "stand": "21.09.2026 17:29",
+    "stand": "21.09.2026 19:40",
     "faecher": {
       "Zivilrecht": {
         "total": 1976,
@@ -1213,7 +1213,7 @@ window.NOTION_DATA = {
         "lernen": 721,
         "aufbau": 169,
         "sitzt": 1067,
-        "faellig": 1639
+        "faellig": 1641
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1229,18 +1229,16 @@ window.NOTION_DATA = {
         "lernen": 554,
         "aufbau": 16,
         "sitzt": 95,
-        "faellig": 648
+        "faellig": 643
       }
     }
   },
   "wiederholung": {
-    "stand": "21.09.2026 17:29",
+    "stand": "21.09.2026 19:40",
     "datum": "2026-09-21",
     "faelle": [
-      "StGB · Fall 01",
-      "StGB · Fall 02",
-      "StGB · Fall 04",
-      "StGB · Fall 06"
+      "SchuldRBT1 · Fall 01",
+      "SchuldRBT2 · Fall 01"
     ],
     "gebiet": "2 SchuldR BT",
     "fach": "Zivilrecht",
@@ -1260,7 +1258,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.09.2026 17:29",
+    "stand": "21.09.2026 19:40",
     "tage": [
       {
         "datum": "2026-09-21",
