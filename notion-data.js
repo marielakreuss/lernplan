@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "22.09.2026 15:47",
+  "lastSync": "22.09.2026 16:48",
   "anki": {
     "reviewedToday": 99,
     "dueNow": 4849,
@@ -1209,11 +1209,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-22"
   },
   "ankiFach": {
-    "stand": "22.09.2026 15:46",
+    "stand": "22.09.2026 16:48",
     "faecher": {
       "Zivilrecht": {
-        "total": 1981,
-        "neu": 5,
+        "total": 1995,
+        "neu": 19,
         "lernen": 741,
         "aufbau": 167,
         "sitzt": 1068,
@@ -1238,7 +1238,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "22.09.2026 15:46",
+    "stand": "22.09.2026 16:48",
     "datum": "2026-09-22",
     "faelle": [
       "SchuldRBT1 · Fall 01",
@@ -1262,13 +1262,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "22.09.2026 15:46",
+    "stand": "22.09.2026 16:48",
     "tage": [
       {
         "datum": "2026-09-22",
         "karten": 60,
         "neu": 45,
-        "angelegt": 4,
+        "angelegt": 18,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1342,7 +1342,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "SchuldRBT2 · Fall 02",
-            "n": 4
+            "n": 18
           }
         ]
       },
@@ -2100,7 +2100,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 52,
-    "nachbereitet": 136
+    "nachbereitet": 138
   },
   "cases": [
     {
@@ -3538,7 +3538,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 2",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-21",
       "rechtsgebiet": [
@@ -3552,7 +3552,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 1",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-21",
       "rechtsgebiet": [
@@ -6583,7 +6583,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 136,
+    "nachbereitet": 138,
     "inBearbeitung": 28,
     "total": 318,
     "klkGesamt": 63,
