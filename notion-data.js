@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "22.09.2026 10:40",
+  "lastSync": "22.09.2026 14:45",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4859,
+    "reviewedToday": 15,
+    "dueNow": 4864,
     "history": [
       {
         "date": "2025-09-29",
@@ -1200,52 +1200,56 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-21",
         "count": 91
+      },
+      {
+        "date": "2026-09-22",
+        "count": 15
       }
     ],
     "stand": "2026-09-22"
   },
   "ankiFach": {
-    "stand": "22.09.2026 08:21",
+    "stand": "22.09.2026 14:45",
     "faecher": {
       "Zivilrecht": {
         "total": 1976,
-        "neu": 19,
-        "lernen": 721,
+        "neu": 17,
+        "lernen": 724,
         "aufbau": 169,
-        "sitzt": 1067,
-        "faellig": 1682
+        "sitzt": 1066,
+        "faellig": 1681
       },
       "Öffentliches Recht": {
         "total": 851,
-        "neu": 16,
-        "lernen": 496,
+        "neu": 11,
+        "lernen": 501,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 758
+        "faellig": 763
       },
       "Strafrecht": {
         "total": 680,
-        "neu": 15,
-        "lernen": 554,
+        "neu": 10,
+        "lernen": 559,
         "aufbau": 16,
         "sitzt": 95,
-        "faellig": 644
+        "faellig": 645
       }
     }
   },
   "wiederholung": {
-    "stand": "22.09.2026 08:21",
+    "stand": "22.09.2026 14:45",
     "datum": "2026-09-22",
     "faelle": [
       "SchuldRBT1 · Fall 01",
       "SchuldRBT2 · Fall 01"
     ],
-    "gebiet": "2 SchuldR BT",
+    "gebiet": "x10 ArbeitsR",
     "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 60
+        "offen": 54
       },
       {
         "name": "Anschluss",
@@ -1258,8 +1262,52 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "22.09.2026 08:21",
+    "stand": "22.09.2026 14:45",
     "tage": [
+      {
+        "datum": "2026-09-22",
+        "karten": 14,
+        "neu": 8,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 5
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 3
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "EuropaR · Fall 05",
+            "n": 5
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-09-21",
         "karten": 49,
