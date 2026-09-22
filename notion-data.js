@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.09.2026 22:55",
+  "lastSync": "22.09.2026 08:21",
   "anki": {
-    "reviewedToday": 91,
-    "dueNow": 4804,
+    "reviewedToday": 0,
+    "dueNow": 4859,
     "history": [
       {
         "date": "2025-09-29",
@@ -1202,10 +1202,10 @@ window.NOTION_DATA = {
         "count": 91
       }
     ],
-    "stand": "2026-09-21"
+    "stand": "2026-09-22"
   },
   "ankiFach": {
-    "stand": "21.09.2026 19:40",
+    "stand": "22.09.2026 08:21",
     "faecher": {
       "Zivilrecht": {
         "total": 1976,
@@ -1213,7 +1213,7 @@ window.NOTION_DATA = {
         "lernen": 721,
         "aufbau": 169,
         "sitzt": 1067,
-        "faellig": 1641
+        "faellig": 1682
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1221,7 +1221,7 @@ window.NOTION_DATA = {
         "lernen": 496,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 745
+        "faellig": 758
       },
       "Strafrecht": {
         "total": 680,
@@ -1229,13 +1229,13 @@ window.NOTION_DATA = {
         "lernen": 554,
         "aufbau": 16,
         "sitzt": 95,
-        "faellig": 643
+        "faellig": 644
       }
     }
   },
   "wiederholung": {
-    "stand": "21.09.2026 19:40",
-    "datum": "2026-09-21",
+    "stand": "22.09.2026 08:21",
+    "datum": "2026-09-22",
     "faelle": [
       "SchuldRBT1 · Fall 01",
       "SchuldRBT2 · Fall 01"
@@ -1249,7 +1249,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 14
+        "offen": 45
       },
       {
         "name": "Rechtsgebiet",
@@ -1258,7 +1258,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.09.2026 19:40",
+    "stand": "22.09.2026 08:21",
     "tage": [
       {
         "datum": "2026-09-21",
@@ -2007,20 +2007,6 @@ window.NOTION_DATA = {
           {
             "name": "ArbR · Fall 03",
             "n": 8
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-01",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 32,
-        "gebiete": [],
-        "faelle": [],
-        "faelleAngelegt": [
-          {
-            "name": "BauR · Fall 10",
-            "n": 32
           }
         ]
       }
