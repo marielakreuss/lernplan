@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.09.2026 13:58",
+  "lastSync": "23.09.2026 15:12",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4908,
@@ -1209,11 +1209,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-23"
   },
   "ankiFach": {
-    "stand": "23.09.2026 13:58",
+    "stand": "23.09.2026 15:12",
     "faecher": {
       "Zivilrecht": {
-        "total": 2003,
-        "neu": 27,
+        "total": 2005,
+        "neu": 29,
         "lernen": 741,
         "aufbau": 167,
         "sitzt": 1068,
@@ -1228,8 +1228,8 @@ window.NOTION_DATA = {
         "faellig": 776
       },
       "Strafrecht": {
-        "total": 688,
-        "neu": 6,
+        "total": 690,
+        "neu": 8,
         "lernen": 570,
         "aufbau": 17,
         "sitzt": 95,
@@ -1238,7 +1238,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "23.09.2026 13:58",
+    "stand": "23.09.2026 15:12",
     "datum": "2026-09-23",
     "faelle": [
       "SchuldRBT2 · Fall 02",
@@ -1262,19 +1262,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.09.2026 13:58",
+    "stand": "23.09.2026 15:12",
     "tage": [
       {
         "datum": "2026-09-23",
         "karten": 0,
         "neu": 0,
-        "angelegt": 4,
+        "angelegt": 7,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "StGB · Fall 02",
-            "n": 4
+            "n": 6
           }
         ]
       },
@@ -2029,7 +2029,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 52,
-    "nachbereitet": 139
+    "nachbereitet": 140
   },
   "cases": [
     {
@@ -3198,7 +3198,7 @@ window.NOTION_DATA = {
       "title": "Fall 5",
       "status": "Nicht nachbereitet",
       "woche": 52,
-      "datum": "2026-09-23",
+      "datum": "2026-09-25",
       "rechtsgebiet": [
         "Strafrecht AT",
         "StrafR"
@@ -3241,7 +3241,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 2",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
       "rechtsgebiet": [
@@ -3413,7 +3413,7 @@ window.NOTION_DATA = {
       "title": "Fall 6",
       "status": "Nicht nachbereitet",
       "woche": 52,
-      "datum": "2026-09-25",
+      "datum": "2026-09-23",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6512,8 +6512,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 139,
-    "inBearbeitung": 28,
+    "nachbereitet": 140,
+    "inBearbeitung": 27,
     "total": 318,
     "klkGesamt": 63,
     "klkAbgegeben": 26
