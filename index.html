@@ -2660,9 +2660,9 @@
   mkPhase('peruReise',
     new Date(2026,9,19), new Date(2026,9,25), 0, 'urlaub',
     'Peru – Reise (komplett frei) 🌄',
-    { faelle: '0', faelleSub: 'Pause', klausuren: '2', klausurenSub: 'Mo 19. + Sa 24.10.', kartenSub: 'nur wenn gewollt' },
-    [{ text: 'Reise 18.–23.10.: komplett frei – reisen & genießen', type: 'success' },
-     'Mo 19.10.: Konrad-Klausur – sonst keine Lernpflicht, Karteikarten nur wenn du Lust hast',
+    { faelle: '0', faelleSub: 'Pause', klausuren: '3', klausurenSub: 'Do 22. · Fr 23. · Sa 24.10.', kartenSub: 'nur wenn gewollt' },
+    [{ text: 'Reise 18.–23.10.: reisen & genießen – bis auf Werkstatt und Konrad frei', type: 'success' },
+     'Do 22.10. Werkstatt online (ZR), Fr 23.10. Konrad-Klausur – sonst keine Lernpflicht, Karteikarten nur wenn du Lust hast',
      'Ab 24.10. geht die Lernphase wieder los – gleich mit Uni-KK 1488 (ZR)']
   );
   mkPhase('peruLernphase',
@@ -4587,6 +4587,7 @@
     peruLern: {std:'~3 h',  b:[B.karte15, B.mittag, B.altNachb]},
     peruDo:   {std:'1,5 h + 4 h', b:[B.karte15, B.mittag, B.kwPeru]},
     peruKonrad:{std:'5 h + 1,5 h', b:[B.konradKl, B.mittag, B.karte15]},
+    peruReiseDo:{std:'4 h', b:[B.kwPeru]},
     // Konrad-Wochen mit Präsenztermin: der Freitag verliert den Fall
     // 16:15–18:00, dafür rückt am Donnerstag ein Fall in den Slot, in dem
     // sonst die Werkstatt vorbereitet wird – sie geht dort unvorbereitet hin.
@@ -4624,8 +4625,8 @@
     // 14.10.: Konrad-Klausur
     peruAnkunftK:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruKonrad, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.peruFrei},
     peruReise:  {Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.sa, So:TAG.peruFrei},
-    // 19.10.: Konrad-Klausur
-    peruReiseK: {Mo:TAG.peruKonrad, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.sa, So:TAG.peruFrei},
+    // 22.10.: Werkstatt online, 23.10.: Konrad-Klausur
+    peruReiseK: {Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruReiseDo, Fr:TAG.peruKonrad, Sa:TAG.sa, So:TAG.peruFrei},
     peruLernen: {Mo:TAG.peruLern, Di:TAG.peruLern, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.so},
     weihnacht:  {Mo:TAG.weihMo, Di:TAG.weihMo, Mi:TAG.weihLang, Do:TAG.weihDo, Fr:TAG.weihLang, Sa:TAG.sa, So:TAG.so},
     // 26.12.: Uni-Klausurenkurs pausiert, Samstag frei
@@ -4671,7 +4672,7 @@
              frNote:'Präsenz München – aus Peru nicht möglich'},
      n:0,  g:[]},
     {mo:'2026-10-19', sa:{q:'Uni-KK 1488',f:'Zivilrecht'}, ph:'Peru · Reisewoche', r:'peruReiseK',
-     kw:null, kwAus:'22.10. verpasst – Reisewoche',
+     kw:{d:'2026-10-22',f:'Zivilrecht',t:'N.N.',peru:'9–13 Uhr Ortszeit'},
      n:0,  g:[]},
     {mo:'2026-10-26', sa:{q:'Uni-KK 2312',f:'Öffentliches Recht'}, ph:'Peru · Lernphase',  r:'peruLernen',
      kw:{d:'2026-10-29',f:'Öffentliches Recht',t:'Einkaufsparadies Vendicampo',peru:'10–14 Uhr Ortszeit'},
