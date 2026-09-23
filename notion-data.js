@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.09.2026 15:12",
+  "lastSync": "23.09.2026 16:50",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4908,
@@ -1209,11 +1209,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-23"
   },
   "ankiFach": {
-    "stand": "23.09.2026 15:12",
+    "stand": "23.09.2026 16:50",
     "faecher": {
       "Zivilrecht": {
-        "total": 2005,
-        "neu": 29,
+        "total": 2011,
+        "neu": 35,
         "lernen": 741,
         "aufbau": 167,
         "sitzt": 1068,
@@ -1238,7 +1238,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "23.09.2026 15:12",
+    "stand": "23.09.2026 16:50",
     "datum": "2026-09-23",
     "faelle": [
       "SchuldRBT2 · Fall 02",
@@ -1262,16 +1262,20 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.09.2026 15:12",
+    "stand": "23.09.2026 16:50",
     "tage": [
       {
         "datum": "2026-09-23",
         "karten": 0,
         "neu": 0,
-        "angelegt": 7,
+        "angelegt": 13,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
+          {
+            "name": "SchuldRBT2 · Fall 04",
+            "n": 7
+          },
           {
             "name": "StGB · Fall 02",
             "n": 6
