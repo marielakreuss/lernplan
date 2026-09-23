@@ -2652,17 +2652,17 @@
   mkPhase('peruAnkommen',
     new Date(2026,9,12), new Date(2026,9,17), 0, 'peru',
     'Peru – Ankommen & sanfter Einstieg',
-    { faelle: '0', faelleSub: 'keine neuen', klausuren: '2', klausurenSub: 'Do + Sa', kartenSub: 'ab 14.10. täglich' },
+    { faelle: '0', faelleSub: 'keine neuen', klausuren: '3', klausurenSub: 'Mi + Do + Sa', kartenSub: 'ab 14.10. täglich' },
     ['12.–13.10.: komplett frei – ankommen & Jetlag auskurieren',
-     '14.–17.10.: sanft starten – Werkstatt 15.10. + Uni-KK 3212 (Sa 17.10.), Karteikarten täglich (ruhig)',
+     '14.–17.10.: Konrad-Klausur (Mi 14.10.), Werkstatt 15.10., Uni-KK 3212 (Sa 17.10.), Karteikarten täglich (ruhig)',
      { text: 'Ab So 18.10. beginnt die freie Reise-Woche', type: 'important' }]
   );
   mkPhase('peruReise',
     new Date(2026,9,19), new Date(2026,9,25), 0, 'urlaub',
     'Peru – Reise (komplett frei) 🌄',
-    { faelle: '0', faelleSub: 'Pause', klausuren: '1', klausurenSub: 'Sa 24.10.', kartenSub: 'nur wenn gewollt' },
+    { faelle: '0', faelleSub: 'Pause', klausuren: '2', klausurenSub: 'Mo 19. + Sa 24.10.', kartenSub: 'nur wenn gewollt' },
     [{ text: 'Reise 18.–23.10.: komplett frei – reisen & genießen', type: 'success' },
-     'Keine Lernpflicht, Karteikarten nur wenn du Lust hast',
+     'Mo 19.10.: Konrad-Klausur – sonst keine Lernpflicht, Karteikarten nur wenn du Lust hast',
      'Ab 24.10. geht die Lernphase wieder los – gleich mit Uni-KK 1488 (ZR)']
   );
   mkPhase('peruLernphase',
@@ -4541,6 +4541,8 @@
     kw:        {t:'16:00–20:00', l:'Klausurwerkstatt',       k:'kw',      s:'ab'},
     kwPeru:    {t:'siehe unten', l:'Klausurwerkstatt online', k:'kw',     s:'ab'},
     klausur:   {t:'9:00–14:00',  l:'Klausur schreiben',      k:'klausur', s:'vm'},
+    // Konrad-Klausur unter der Woche (Peru), Uhrzeit frei wählbar
+    konradKl:  {t:'5 h',         l:'Konrad-Klausur schreiben · ÖR', k:'klausur', s:'vm'},
     pauseSa:   {t:'14:00–15:00', l:'Pause',                  k:'pause',   s:'mi'},
     klausurNb: {t:'15:00–16:00', l:'Klausur nachbereiten',   k:'klausur', s:'nm'},
     frei:      {t:'',            l:'Ruhetag',                k:'frei',    s:'vm'},
@@ -4584,6 +4586,7 @@
     peruFrei: {std:'frei',  b:[B.freiTag]},
     peruLern: {std:'~3 h',  b:[B.karte15, B.mittag, B.altNachb]},
     peruDo:   {std:'1,5 h + 4 h', b:[B.karte15, B.mittag, B.kwPeru]},
+    peruKonrad:{std:'5 h + 1,5 h', b:[B.konradKl, B.mittag, B.karte15]},
     // Konrad-Wochen mit Präsenztermin: der Freitag verliert den Fall
     // 16:15–18:00, dafür rückt am Donnerstag ein Fall in den Slot, in dem
     // sonst die Werkstatt vorbereitet wird – sie geht dort unvorbereitet hin.
@@ -4618,7 +4621,11 @@
     probe1:     {Mo:TAG.moProbe, Di:TAG.diTag, Mi:TAG.probeTag, Do:TAG.probeTag, Fr:TAG.probeTag, Sa:TAG.probeTag, So:TAG.so},
     probe2:     {Mo:TAG.probeTag, Di:TAG.probeTag, Mi:TAG.probeTag, Do:TAG.doProbe, Fr:TAG.nachProbe, Sa:TAG.sa, So:TAG.so},
     peruAnkunft:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.peruFrei},
+    // 14.10.: Konrad-Klausur
+    peruAnkunftK:{Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruKonrad, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.peruFrei},
     peruReise:  {Mo:TAG.peruFrei, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.sa, So:TAG.peruFrei},
+    // 19.10.: Konrad-Klausur
+    peruReiseK: {Mo:TAG.peruKonrad, Di:TAG.peruFrei, Mi:TAG.peruFrei, Do:TAG.peruFrei, Fr:TAG.peruFrei, Sa:TAG.sa, So:TAG.peruFrei},
     peruLernen: {Mo:TAG.peruLern, Di:TAG.peruLern, Mi:TAG.peruLern, Do:TAG.peruDo, Fr:TAG.peruLern, Sa:TAG.sa, So:TAG.so},
     weihnacht:  {Mo:TAG.weihMo, Di:TAG.weihMo, Mi:TAG.weihLang, Do:TAG.weihDo, Fr:TAG.weihLang, Sa:TAG.sa, So:TAG.so},
     // 26.12.: Uni-Klausurenkurs pausiert, Samstag frei
@@ -4657,16 +4664,16 @@
     {mo:'2026-10-05', sa:{q:'Uni-KK 1487',f:'Zivilrecht'}, ph:'Regelwoche',        r:'normal',
      kw:{d:'2026-10-08',f:'Öffentliches Recht',t:'Theaterkritik'},
      n:9,  g:[['SchuldR BT 2',2],['SachenR',4],['KommunalR',3]]},
-    {mo:'2026-10-12', sa:{q:'Uni-KK 3212',f:'Strafrecht'}, ph:'Peru · Ankommen',   r:'peruAnkunft',
+    {mo:'2026-10-12', sa:{q:'Uni-KK 3212',f:'Strafrecht'}, ph:'Peru · Ankommen',   r:'peruAnkunftK',
      kw:{d:'2026-10-15',f:'Strafrecht',t:'Strafbarkeitsrisiken II',peru:'9–13 Uhr Ortszeit'},
      konrad:{nr:2, do:'2026-10-15', fr:'2026-10-16', wahl:'do',
              doNote:'aus Peru 10:00 Ortszeit – gleichzeitig Werkstatt',
              frNote:'Präsenz München – aus Peru nicht möglich'},
      n:0,  g:[]},
-    {mo:'2026-10-19', sa:{q:'Uni-KK 1488',f:'Zivilrecht'}, ph:'Peru · Reisewoche', r:'peruReise',
+    {mo:'2026-10-19', sa:{q:'Uni-KK 1488',f:'Zivilrecht'}, ph:'Peru · Reisewoche', r:'peruReiseK',
      kw:null, kwAus:'22.10. verpasst – Reisewoche',
      n:0,  g:[]},
-    {mo:'2026-10-26', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Peru · Lernphase',  r:'peruLernen',
+    {mo:'2026-10-26', sa:{q:'Uni-KK 2312',f:'Öffentliches Recht'}, ph:'Peru · Lernphase',  r:'peruLernen',
      kw:{d:'2026-10-29',f:'Öffentliches Recht',t:'Einkaufsparadies Vendicampo',peru:'10–14 Uhr Ortszeit'},
      n:0,  g:[]},
     {mo:'2026-11-02', sa:{q:'Uni-KK 1489',f:'Zivilrecht'}, ph:'Peru · Lernphase',  r:'peruLernen',
