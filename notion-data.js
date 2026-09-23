@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.09.2026 18:53",
+  "lastSync": "23.09.2026 23:03",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 4908,
+    "reviewedToday": 45,
+    "dueNow": 4918,
     "history": [
       {
         "date": "2025-09-29",
@@ -1204,20 +1204,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-22",
         "count": 99
+      },
+      {
+        "date": "2026-09-23",
+        "count": 45
       }
     ],
     "stand": "2026-09-23"
   },
   "ankiFach": {
-    "stand": "23.09.2026 18:53",
+    "stand": "23.09.2026 23:03",
     "faecher": {
       "Zivilrecht": {
-        "total": 2027,
-        "neu": 51,
-        "lernen": 741,
+        "total": 2028,
+        "neu": 24,
+        "lernen": 769,
         "aufbau": 167,
         "sitzt": 1068,
-        "faellig": 1698
+        "faellig": 1708
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1229,8 +1233,8 @@ window.NOTION_DATA = {
       },
       "Strafrecht": {
         "total": 690,
-        "neu": 8,
-        "lernen": 570,
+        "neu": 6,
+        "lernen": 572,
         "aufbau": 17,
         "sitzt": 95,
         "faellig": 661
@@ -1238,7 +1242,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "23.09.2026 18:53",
+    "stand": "23.09.2026 23:03",
     "datum": "2026-09-23",
     "faelle": [
       "StGB · Fall 02",
@@ -1255,7 +1259,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 60
+        "offen": 40
       },
       {
         "name": "Anschluss",
@@ -1268,19 +1272,39 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.09.2026 18:53",
+    "stand": "23.09.2026 23:03",
     "tage": [
       {
         "datum": "2026-09-23",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 29,
-        "gebiete": [],
-        "faelle": [],
+        "karten": 30,
+        "neu": 30,
+        "angelegt": 30,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 28
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 2
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 02",
+            "n": 19
+          },
+          {
+            "name": "SchuldRBT2 · Fall 03",
+            "n": 8
+          }
+        ],
         "faelleAngelegt": [
           {
             "name": "SchuldRBT2 · Fall 05",
-            "n": 14
+            "n": 15
           },
           {
             "name": "SchuldRBT2 · Fall 04",
@@ -2043,7 +2067,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 52,
-    "nachbereitet": 141
+    "nachbereitet": 142
   },
   "cases": [
     {
@@ -3439,7 +3463,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 5",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
       "rechtsgebiet": [
@@ -6526,7 +6550,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 141,
+    "nachbereitet": 142,
     "inBearbeitung": 27,
     "total": 318,
     "klkGesamt": 63,
