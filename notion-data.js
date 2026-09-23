@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.09.2026 17:52",
+  "lastSync": "23.09.2026 18:53",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4908,
@@ -1209,11 +1209,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-23"
   },
   "ankiFach": {
-    "stand": "23.09.2026 17:52",
+    "stand": "23.09.2026 18:53",
     "faecher": {
       "Zivilrecht": {
-        "total": 2020,
-        "neu": 44,
+        "total": 2027,
+        "neu": 51,
         "lernen": 741,
         "aufbau": 167,
         "sitzt": 1068,
@@ -1238,18 +1238,24 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "23.09.2026 17:52",
+    "stand": "23.09.2026 18:53",
     "datum": "2026-09-23",
     "faelle": [
+      "StGB · Fall 02",
+      "SachenR · Fall 14",
+      "SchuldRAT · Fall 12",
       "SchuldRBT2 · Fall 02",
-      "SchuldRBT2 · Fall 03"
+      "SchuldRBT2 · Fall 03",
+      "SchuldRBT2 · Fall 04",
+      "SchuldRBT2 · Fall 05",
+      "ZPOII · Fall 4"
     ],
     "gebiet": "StrafR AT",
     "fach": "Strafrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 30
+        "offen": 60
       },
       {
         "name": "Anschluss",
@@ -1262,23 +1268,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.09.2026 17:52",
+    "stand": "23.09.2026 18:53",
     "tage": [
       {
         "datum": "2026-09-23",
         "karten": 0,
         "neu": 0,
-        "angelegt": 22,
+        "angelegt": 29,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
-            "name": "SchuldRBT2 · Fall 04",
-            "n": 9
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 14
           },
           {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 7
+            "name": "SchuldRBT2 · Fall 04",
+            "n": 9
           },
           {
             "name": "StGB · Fall 02",
