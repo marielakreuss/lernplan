@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.09.2026 10:32",
+  "lastSync": "23.09.2026 12:57",
   "anki": {
-    "reviewedToday": 99,
-    "dueNow": 4849,
+    "reviewedToday": 0,
+    "dueNow": 4908,
     "history": [
       {
         "date": "2025-09-29",
@@ -1206,18 +1206,18 @@ window.NOTION_DATA = {
         "count": 99
       }
     ],
-    "stand": "2026-09-22"
+    "stand": "2026-09-23"
   },
   "ankiFach": {
-    "stand": "22.09.2026 17:49",
+    "stand": "23.09.2026 12:57",
     "faecher": {
       "Zivilrecht": {
-        "total": 1999,
-        "neu": 23,
+        "total": 2003,
+        "neu": 27,
         "lernen": 741,
         "aufbau": 167,
         "sitzt": 1068,
-        "faellig": 1672
+        "faellig": 1698
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1225,31 +1225,31 @@ window.NOTION_DATA = {
         "lernen": 512,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 758
+        "faellig": 776
       },
       "Strafrecht": {
-        "total": 680,
-        "neu": 0,
-        "lernen": 569,
-        "aufbau": 16,
+        "total": 684,
+        "neu": 2,
+        "lernen": 570,
+        "aufbau": 17,
         "sitzt": 95,
-        "faellig": 644
+        "faellig": 661
       }
     }
   },
   "wiederholung": {
-    "stand": "22.09.2026 17:49",
-    "datum": "2026-09-22",
+    "stand": "23.09.2026 12:57",
+    "datum": "2026-09-23",
     "faelle": [
-      "SchuldRBT1 · Fall 01",
-      "SchuldRBT2 · Fall 01"
+      "SchuldRBT2 · Fall 02",
+      "SchuldRBT2 · Fall 03"
     ],
-    "gebiet": "x10 ArbeitsR",
-    "fach": "Zivilrecht",
+    "gebiet": "StrafR AT",
+    "fach": "Strafrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 18
+        "offen": 30
       },
       {
         "name": "Anschluss",
@@ -1262,13 +1262,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "22.09.2026 17:49",
+    "stand": "23.09.2026 12:57",
     "tage": [
       {
         "datum": "2026-09-22",
         "karten": 60,
         "neu": 45,
-        "angelegt": 22,
+        "angelegt": 26,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1346,7 +1346,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 03",
-            "n": 4
+            "n": 8
           }
         ]
       },
@@ -2008,95 +2008,6 @@ window.NOTION_DATA = {
           {
             "name": "ArbR · Fall 03",
             "n": 21
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-02",
-        "karten": 130,
-        "neu": 52,
-        "angelegt": 28,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 101
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 26
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BauR · Fall 10",
-            "n": 32
-          },
-          {
-            "name": "BauR · Fall 09",
-            "n": 17
-          },
-          {
-            "name": "BauR · Fall 08",
-            "n": 16
-          },
-          {
-            "name": "BauR · Fall 06",
-            "n": 15
-          },
-          {
-            "name": "BauR · Fall 04",
-            "n": 11
-          },
-          {
-            "name": "BauR · Fall 01",
-            "n": 8
-          },
-          {
-            "name": "BauR · Fall 03",
-            "n": 8
-          },
-          {
-            "name": "BauR · Fall 07",
-            "n": 5
-          },
-          {
-            "name": "VerwRAT · Fall 08",
-            "n": 5
-          },
-          {
-            "name": "BauR · Fall 05",
-            "n": 4
-          },
-          {
-            "name": "BauR · Fall 02",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 19
-          },
-          {
-            "name": "ArbR · Fall 03",
-            "n": 8
           }
         ]
       }
