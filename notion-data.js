@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "24.09.2026 10:50",
+  "lastSync": "24.09.2026 22:48",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4968,
@@ -2457,16 +2457,20 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-1490-3e5539e733aa81f48298ca315b5ebf93"
     },
     {
-      "title": "KW 5 - StrafR (Strafbarkeitsrisiken)",
+      "title": "KW 5 - StrafR (Strafbarkeitsrisiken) - geschrieben am 24.9.26",
       "status": "Nicht nachbereitet",
       "woche": 52,
       "datum": "2026-09-24",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "Strafrecht BT",
+        "Strafrecht AT",
+        "StPO"
+      ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
-      "url": "https://app.notion.com/p/KW-5-StrafR-Strafbarkeitsrisiken-3e2539e733aa804a8afcd55410ea7a35"
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/KW-5-StrafR-Strafbarkeitsrisiken-geschrieben-am-24-9-26-3e2539e733aa804a8afcd55410ea7a35"
     },
     {
       "title": "UKK 2311 - nicht abgegeben",
@@ -6940,6 +6944,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 27,
     "total": 353,
     "klkGesamt": 98,
-    "klkAbgegeben": 26
+    "klkAbgegeben": 27
   }
 };
