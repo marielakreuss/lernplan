@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.09.2026 06:10",
+  "lastSync": "24.09.2026 10:10",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4968,
@@ -1213,7 +1213,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-24"
   },
   "ankiFach": {
-    "stand": "24.09.2026 06:10",
+    "stand": "24.09.2026 10:10",
     "faecher": {
       "Zivilrecht": {
         "total": 2028,
@@ -1242,7 +1242,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "24.09.2026 06:10",
+    "stand": "24.09.2026 10:10",
     "datum": "2026-09-24",
     "faelle": [
       "StGB · Fall 02",
@@ -1272,7 +1272,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "24.09.2026 06:10",
+    "stand": "24.09.2026 10:10",
     "tage": [
       {
         "datum": "2026-09-23",
@@ -2036,6 +2036,426 @@ window.NOTION_DATA = {
     "nachbereitet": 142
   },
   "cases": [
+    {
+      "title": "KW 8 - Strafbarkeitsrisiken II",
+      "status": "Nicht nachbereitet",
+      "woche": 55,
+      "datum": "2026-10-16",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-8-Strafbarkeitsrisiken-II-3e5539e733aa8106aacaefadca70bb86"
+    },
+    {
+      "title": "Konrad 4",
+      "status": "Nicht nachbereitet",
+      "woche": 53,
+      "datum": "2026-10-03",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-4-3e5539e733aa81188c45ca9dcfd2b774"
+    },
+    {
+      "title": "KW 13 - Ölgemälde und Wein",
+      "status": "Nicht nachbereitet",
+      "woche": 60,
+      "datum": "2026-11-19",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-13-lgem-lde-und-Wein-3e5539e733aa8126b33ded6e6da4958c"
+    },
+    {
+      "title": "Konrad 9",
+      "status": "Nicht nachbereitet",
+      "woche": 66,
+      "datum": "2027-01-02",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-9-3e5539e733aa8136a2caff6f3f31b81e"
+    },
+    {
+      "title": "KW 21 - Tankt in Österreich",
+      "status": "Nicht nachbereitet",
+      "woche": 70,
+      "datum": "2027-01-28",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-21-Tankt-in-sterreich-3e5539e733aa81389057fb7773d23349"
+    },
+    {
+      "title": "KW 17 - An der Tankstelle",
+      "status": "Nicht nachbereitet",
+      "woche": 64,
+      "datum": "2026-12-17",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-17-An-der-Tankstelle-3e5539e733aa8146aebcf123fc04c3e1"
+    },
+    {
+      "title": "KW 14 - Brand mit Folgen",
+      "status": "Nicht nachbereitet",
+      "woche": 61,
+      "datum": "2026-11-26",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-14-Brand-mit-Folgen-3e5539e733aa8153adecc93b204ca410"
+    },
+    {
+      "title": "KW 12 - Strafbarkeitsrisiken III",
+      "status": "Nicht nachbereitet",
+      "woche": 59,
+      "datum": "2026-11-12",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-12-Strafbarkeitsrisiken-III-3e5539e733aa816c927bcad72e71164c"
+    },
+    {
+      "title": "KW 19 - Strafbarkeitsrisiken IV",
+      "status": "Nicht nachbereitet",
+      "woche": 68,
+      "datum": "2027-01-14",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-19-Strafbarkeitsrisiken-IV-3e5539e733aa817e8c0bd3fab57af90c"
+    },
+    {
+      "title": "KW 16 - Datenschutz im Landtag",
+      "status": "Nicht nachbereitet",
+      "woche": 63,
+      "datum": "2026-12-10",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-16-Datenschutz-im-Landtag-3e5539e733aa8187838bd771368f85d9"
+    },
+    {
+      "title": "Konrad 11",
+      "status": "Nicht nachbereitet",
+      "woche": 70,
+      "datum": "2027-01-30",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-11-3e5539e733aa81878d59ee32c15d1738"
+    },
+    {
+      "title": "KW 7 - Theaterkritik",
+      "status": "Nicht nachbereitet",
+      "woche": 54,
+      "datum": "2026-10-08",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-7-Theaterkritik-3e5539e733aa81909befdc2cb84bce79"
+    },
+    {
+      "title": "UKK 2312",
+      "status": "Nicht nachbereitet",
+      "woche": 57,
+      "datum": "2026-11-01",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-2312-3e5539e733aa8194bbd4eae8f6691303"
+    },
+    {
+      "title": "Konrad 7",
+      "status": "Nicht nachbereitet",
+      "woche": 60,
+      "datum": "2026-11-21",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-7-3e5539e733aa81978f7bd13e82eb63d2"
+    },
+    {
+      "title": "UKK 3212",
+      "status": "Nicht nachbereitet",
+      "woche": 55,
+      "datum": "2026-10-17",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-3212-3e5539e733aa8197aaa5ea68463ba47c"
+    },
+    {
+      "title": "KW 6 - Traktor auf Abwegen",
+      "status": "Nicht nachbereitet",
+      "woche": 53,
+      "datum": "2026-10-01",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-6-Traktor-auf-Abwegen-3e5539e733aa81a28b9cda45666d31e0"
+    },
+    {
+      "title": "KW 9 - N.N.",
+      "status": "Nicht nachbereitet",
+      "woche": 56,
+      "datum": "2026-10-22",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-9-N-N-3e5539e733aa81abaa28f3b6276f9b77"
+    },
+    {
+      "title": "UKK 1487",
+      "status": "Nicht nachbereitet",
+      "woche": 54,
+      "datum": "2026-10-10",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1487-3e5539e733aa81b5b0e1dd9dc999c460"
+    },
+    {
+      "title": "KW 10 - Einkaufsparadies Vendicampo",
+      "status": "Nicht nachbereitet",
+      "woche": 57,
+      "datum": "2026-10-29",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-10-Einkaufsparadies-Vendicampo-3e5539e733aa81bbb6d9f03c5142b6dc"
+    },
+    {
+      "title": "KW 15 - Hangover",
+      "status": "Nicht nachbereitet",
+      "woche": 62,
+      "datum": "2026-12-03",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-15-Hangover-3e5539e733aa81c8ae5bd0e2d671d48c"
+    },
+    {
+      "title": "UKK 1489",
+      "status": "Nicht nachbereitet",
+      "woche": 58,
+      "datum": "2026-11-05",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1489-3e5539e733aa81c99b7ed67c44e57703"
+    },
+    {
+      "title": "UKK 1491",
+      "status": "Nicht nachbereitet",
+      "woche": 62,
+      "datum": "2026-12-05",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1491-3e5539e733aa81ca92f3c570aeb6346e"
+    },
+    {
+      "title": "UKK 3213",
+      "status": "Nicht nachbereitet",
+      "woche": 61,
+      "datum": "2026-11-28",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-3213-3e5539e733aa81cb956dcedb2c3ee713"
+    },
+    {
+      "title": "UKK 1492",
+      "status": "Nicht nachbereitet",
+      "woche": 64,
+      "datum": "2026-12-19",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1492-3e5539e733aa81d18908ed8499dfe8d3"
+    },
+    {
+      "title": "Konrad 5",
+      "status": "Nicht nachbereitet",
+      "woche": 55,
+      "datum": "2026-10-14",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-5-3e5539e733aa81d4a6f3d7f3ef8b1164"
+    },
+    {
+      "title": "UKK 1488",
+      "status": "Nicht nachbereitet",
+      "woche": 56,
+      "datum": "2026-10-24",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1488-3e5539e733aa81d982d8d9ce512729ab"
+    },
+    {
+      "title": "KW 11 - Ungebremste Jungfernfahrt",
+      "status": "Nicht nachbereitet",
+      "woche": 58,
+      "datum": "2026-11-04",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-11-Ungebremste-Jungfernfahrt-3e5539e733aa81dabf5ac18632ae1cb6"
+    },
+    {
+      "title": "Konrad 8",
+      "status": "Nicht nachbereitet",
+      "woche": 63,
+      "datum": "2026-12-12",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-8-3e5539e733aa81db89b4d067d6c61143"
+    },
+    {
+      "title": "KW 20 - N.N.",
+      "status": "Nicht nachbereitet",
+      "woche": 69,
+      "datum": "2027-01-21",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-20-N-N-3e5539e733aa81dcbcc8f981eefbd708"
+    },
+    {
+      "title": "Konrad 6",
+      "status": "Nicht nachbereitet",
+      "woche": 56,
+      "datum": "2026-10-23",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-6-3e5539e733aa81eb943dfabd655fd9d1"
+    },
+    {
+      "title": "KW 18 - Solaris",
+      "status": "Nicht nachbereitet",
+      "woche": 67,
+      "datum": "2027-01-07",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/KW-18-Solaris-3e5539e733aa81ee876ecb3ee2ef350b"
+    },
+    {
+      "title": "UKK 3214",
+      "status": "Nicht nachbereitet",
+      "woche": 69,
+      "datum": "2027-01-23",
+      "rechtsgebiet": [],
+      "fach": "Strafrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-3214-3e5539e733aa81ef8c69e9e410926b69"
+    },
+    {
+      "title": "UKK 1493",
+      "status": "Nicht nachbereitet",
+      "woche": 68,
+      "datum": "2027-01-16",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1493-3e5539e733aa81f2a4fed84a1830b95b"
+    },
+    {
+      "title": "Konrad 10",
+      "status": "Nicht nachbereitet",
+      "woche": 67,
+      "datum": "2027-01-09",
+      "rechtsgebiet": [],
+      "fach": "Öffentliches Recht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/Konrad-10-3e5539e733aa81f3b9aecc9f71e8d932"
+    },
+    {
+      "title": "UKK 1490",
+      "status": "Nicht nachbereitet",
+      "woche": 59,
+      "datum": "2026-11-14",
+      "rechtsgebiet": [],
+      "fach": "Zivilrecht",
+      "typ": "Klausurenkurs",
+      "bewertung": null,
+      "abgegeben": false,
+      "url": "https://app.notion.com/p/UKK-1490-3e5539e733aa81f48298ca315b5ebf93"
+    },
     {
       "title": "KW 5 - StrafR (Strafbarkeitsrisiken)",
       "status": "Nicht nachbereitet",
@@ -6518,8 +6938,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 142,
     "inBearbeitung": 27,
-    "total": 318,
-    "klkGesamt": 63,
+    "total": 353,
+    "klkGesamt": 98,
     "klkAbgegeben": 26
   }
 };
