@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "25.09.2026 16:49",
+  "lastSync": "25.09.2026 22:55",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4976,
@@ -2201,7 +2201,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-6-Traktor-auf-Abwegen-3e5539e733aa81a28b9cda45666d31e0"
     },
     {
-      "title": "KW 9 - N.N.",
+      "title": "KW 9 - Waschanlage Caracas",
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-22",
@@ -2210,7 +2210,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/KW-9-N-N-3e5539e733aa81abaa28f3b6276f9b77"
+      "url": "https://app.notion.com/p/KW-9-Waschanlage-Caracas-3e5539e733aa81abaa28f3b6276f9b77"
     },
     {
       "title": "UKK 1487",
@@ -3375,8 +3375,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 53,
+      "datum": "2026-10-02",
       "rechtsgebiet": [
         "StPO"
       ],
@@ -3798,8 +3798,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 7",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 53,
+      "datum": "2026-09-28",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -5467,8 +5467,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 2",
       "status": "Nicht nachbereitet",
-      "woche": 52,
-      "datum": "2026-09-25",
+      "woche": 53,
+      "datum": "2026-10-02",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -5481,8 +5481,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 3",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 53,
+      "datum": "2026-10-02",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -5494,9 +5494,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 1",
-      "status": "Nicht nachbereitet",
-      "woche": 52,
-      "datum": "2026-09-25",
+      "status": "In Bearbeitung",
+      "woche": 53,
+      "datum": "2026-09-28",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -6588,8 +6588,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 15",
       "status": "In Bearbeitung",
-      "woche": null,
-      "datum": null,
+      "woche": 53,
+      "datum": "2026-10-02",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6602,8 +6602,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 14 (Vertiefungsfall zur Kausalität und Zurechnungsfragen)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 53,
+      "datum": "2026-09-30",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6742,8 +6742,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 12 (Hausaufgabe)",
       "status": "Nicht nachbereitet",
-      "woche": 2,
-      "datum": "2025-10-07",
+      "woche": 53,
+      "datum": "2026-09-30",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6756,8 +6756,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 11 (Hausaufgabe)",
       "status": "Nicht nachbereitet",
-      "woche": 2,
-      "datum": "2025-10-07",
+      "woche": 53,
+      "datum": "2026-09-29",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6770,8 +6770,8 @@ window.NOTION_DATA = {
     {
       "title": "Fall 13",
       "status": "Nicht nachbereitet",
-      "woche": 2,
-      "datum": "2025-10-07",
+      "woche": 53,
+      "datum": "2026-09-30",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6913,7 +6913,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 144,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 353,
     "klkGesamt": 98,
     "klkAbgegeben": 27
