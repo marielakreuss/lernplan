@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.09.2026 22:48",
+  "lastSync": "25.09.2026 02:01",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4968,
@@ -1210,10 +1210,10 @@ window.NOTION_DATA = {
         "count": 81
       }
     ],
-    "stand": "2026-09-24"
+    "stand": "2026-09-25"
   },
   "ankiFach": {
-    "stand": "24.09.2026 10:10",
+    "stand": "25.09.2026 02:01",
     "faecher": {
       "Zivilrecht": {
         "total": 2028,
@@ -1242,8 +1242,8 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "24.09.2026 10:10",
-    "datum": "2026-09-24",
+    "stand": "25.09.2026 02:01",
+    "datum": "2026-09-25",
     "faelle": [
       "StGB · Fall 02",
       "SachenR · Fall 14",
@@ -1272,7 +1272,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "24.09.2026 10:10",
+    "stand": "25.09.2026 02:01",
     "tage": [
       {
         "datum": "2026-09-23",
@@ -1971,61 +1971,6 @@ window.NOTION_DATA = {
           {
             "name": "ArbR · Fall 07",
             "n": 8
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-04",
-        "karten": 74,
-        "neu": 56,
-        "angelegt": 28,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 71
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 20
-          },
-          {
-            "name": "ArbR · Fall 03",
-            "n": 17
-          },
-          {
-            "name": "ArbR · Fall 04",
-            "n": 16
-          },
-          {
-            "name": "ArbR · Fall 05",
-            "n": 10
-          },
-          {
-            "name": "ArbR · Fall 01",
-            "n": 9
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "ArbR · Fall 04",
-            "n": 16
-          },
-          {
-            "name": "ArbR · Fall 05",
-            "n": 10
           }
         ]
       }
