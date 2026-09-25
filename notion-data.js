@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "25.09.2026 10:53",
+  "lastSync": "25.09.2026 13:51",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4977,
@@ -1213,7 +1213,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-25"
   },
   "ankiFach": {
-    "stand": "25.09.2026 12:18",
+    "stand": "25.09.2026 13:51",
     "faecher": {
       "Zivilrecht": {
         "total": 2028,
@@ -1232,17 +1232,17 @@ window.NOTION_DATA = {
         "faellig": 781
       },
       "Strafrecht": {
-        "total": 703,
-        "neu": 13,
-        "lernen": 578,
+        "total": 706,
+        "neu": 15,
+        "lernen": 579,
         "aufbau": 17,
         "sitzt": 95,
-        "faellig": 672
+        "faellig": 673
       }
     }
   },
   "wiederholung": {
-    "stand": "25.09.2026 12:18",
+    "stand": "25.09.2026 13:51",
     "datum": "2026-09-25",
     "faelle": [
       "StGB · Fall 02",
@@ -1270,19 +1270,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "25.09.2026 12:18",
+    "stand": "25.09.2026 13:51",
     "tage": [
       {
         "datum": "2026-09-25",
         "karten": 0,
         "neu": 0,
-        "angelegt": 8,
+        "angelegt": 10,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "StGB · Fall 05",
-            "n": 8
+            "n": 10
           }
         ]
       },
@@ -1990,7 +1990,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 52,
-    "nachbereitet": 142
+    "nachbereitet": 143
   },
   "cases": [
     {
@@ -3581,7 +3581,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 5",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-25",
       "rechtsgebiet": [
@@ -6897,7 +6897,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 142,
+    "nachbereitet": 143,
     "inBearbeitung": 27,
     "total": 353,
     "klkGesamt": 98,
