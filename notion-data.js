@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "25.09.2026 14:52",
+  "lastSync": "25.09.2026 16:49",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4977,
+    "dueNow": 4976,
     "history": [
       {
         "date": "2025-09-29",
@@ -1213,19 +1213,19 @@ window.NOTION_DATA = {
     "stand": "2026-09-25"
   },
   "ankiFach": {
-    "stand": "25.09.2026 14:52",
+    "stand": "25.09.2026 16:49",
     "faecher": {
       "Zivilrecht": {
-        "total": 2035,
-        "neu": 21,
+        "total": 2037,
+        "neu": 23,
         "lernen": 778,
         "aufbau": 168,
         "sitzt": 1068,
         "faellig": 1752
       },
       "Öffentliches Recht": {
-        "total": 851,
-        "neu": 0,
+        "total": 862,
+        "neu": 11,
         "lernen": 512,
         "aufbau": 83,
         "sitzt": 256,
@@ -1237,12 +1237,12 @@ window.NOTION_DATA = {
         "lernen": 579,
         "aufbau": 17,
         "sitzt": 95,
-        "faellig": 673
+        "faellig": 672
       }
     }
   },
   "wiederholung": {
-    "stand": "25.09.2026 14:52",
+    "stand": "25.09.2026 16:49",
     "datum": "2026-09-25",
     "faelle": [
       "StGB · Fall 01",
@@ -1256,14 +1256,15 @@ window.NOTION_DATA = {
       "SchuldRAT · Fall 12",
       "SchuldRBT2 · Fall 04",
       "SchuldRBT2 · Fall 05",
-      "SchuldRBT2 · Fall 06"
+      "SchuldRBT2 · Fall 06",
+      "KommunalR · Fall 1"
     ],
     "gebiet": "6 ZPO I",
     "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 60
+        "offen": 61
       },
       {
         "name": "Anschluss",
@@ -1276,23 +1277,27 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "25.09.2026 14:52",
+    "stand": "25.09.2026 16:49",
     "tage": [
       {
         "datum": "2026-09-25",
         "karten": 0,
         "neu": 0,
-        "angelegt": 16,
+        "angelegt": 29,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
+          {
+            "name": "KommunalR · Fall 1",
+            "n": 11
+          },
           {
             "name": "StGB · Fall 05",
             "n": 10
           },
           {
             "name": "SchuldRBT2 · Fall 06",
-            "n": 6
+            "n": 8
           }
         ]
       },
@@ -2000,7 +2005,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 52,
-    "nachbereitet": 143
+    "nachbereitet": 144
   },
   "cases": [
     {
@@ -3806,7 +3811,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Fall 6",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
       "rechtsgebiet": [
@@ -6907,7 +6912,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 143,
+    "nachbereitet": 144,
     "inBearbeitung": 27,
     "total": 353,
     "klkGesamt": 98,
