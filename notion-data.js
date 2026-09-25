@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "25.09.2026 02:01",
+  "lastSync": "25.09.2026 11:16",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4968,
+    "dueNow": 4977,
     "history": [
       {
         "date": "2025-09-29",
@@ -1213,7 +1213,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-25"
   },
   "ankiFach": {
-    "stand": "25.09.2026 02:01",
+    "stand": "25.09.2026 11:16",
     "faecher": {
       "Zivilrecht": {
         "total": 2028,
@@ -1221,7 +1221,7 @@ window.NOTION_DATA = {
         "lernen": 778,
         "aufbau": 167,
         "sitzt": 1068,
-        "faellig": 1744
+        "faellig": 1751
       },
       "Öffentliches Recht": {
         "total": 851,
@@ -1232,30 +1232,28 @@ window.NOTION_DATA = {
         "faellig": 781
       },
       "Strafrecht": {
-        "total": 690,
-        "neu": 0,
+        "total": 694,
+        "neu": 4,
         "lernen": 578,
         "aufbau": 17,
         "sitzt": 95,
-        "faellig": 670
+        "faellig": 672
       }
     }
   },
   "wiederholung": {
-    "stand": "25.09.2026 02:01",
+    "stand": "25.09.2026 11:16",
     "datum": "2026-09-25",
     "faelle": [
       "StGB · Fall 02",
+      "StGB · Fall 03",
       "SachenR · Fall 14",
       "SchuldRAT · Fall 12",
-      "SchuldRBT2 · Fall 02",
-      "SchuldRBT2 · Fall 03",
       "SchuldRBT2 · Fall 04",
-      "SchuldRBT2 · Fall 05",
-      "ZPOII · Fall 4"
+      "SchuldRBT2 · Fall 05"
     ],
-    "gebiet": "StrafR AT",
-    "fach": "Strafrecht",
+    "gebiet": "6 ZPO I",
+    "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
@@ -1272,8 +1270,22 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "25.09.2026 02:01",
+    "stand": "25.09.2026 11:16",
     "tage": [
+      {
+        "datum": "2026-09-25",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 4,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": [
+          {
+            "name": "StGB · Fall 05",
+            "n": 4
+          }
+        ]
+      },
       {
         "datum": "2026-09-23",
         "karten": 45,
