@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.09.2026 13:55",
+  "lastSync": "26.09.2026 14:56",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4984,
@@ -1217,7 +1217,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-26"
   },
   "ankiFach": {
-    "stand": "26.09.2026 13:55",
+    "stand": "26.09.2026 14:56",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1246,7 +1246,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "26.09.2026 13:55",
+    "stand": "26.09.2026 14:56",
     "datum": "2026-09-26",
     "faelle": [
       "StGB · Fall 01",
@@ -1274,7 +1274,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.09.2026 13:55",
+    "stand": "26.09.2026 14:56",
     "tage": [
       {
         "datum": "2026-09-25",
@@ -2432,18 +2432,6 @@ window.NOTION_DATA = {
       "bewertung": null,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KW-5-StrafR-Strafbarkeitsrisiken-geschrieben-am-24-9-26-3e2539e733aa804a8afcd55410ea7a35"
-    },
-    {
-      "title": "UKK 2311 - nicht abgegeben",
-      "status": "Nicht nachbereitet",
-      "woche": 52,
-      "datum": "2026-09-26",
-      "rechtsgebiet": [],
-      "fach": "Öffentliches Recht",
-      "typ": "Klausurenkurs",
-      "bewertung": null,
-      "abgegeben": false,
-      "url": "https://app.notion.com/p/UKK-2311-nicht-abgegeben-3df539e733aa80c0b96fc5947031856d"
     },
     {
       "title": "UKK 1486 - nicht abgegeben",
@@ -6903,8 +6891,8 @@ window.NOTION_DATA = {
   "stats": {
     "nachbereitet": 144,
     "inBearbeitung": 28,
-    "total": 353,
-    "klkGesamt": 98,
+    "total": 352,
+    "klkGesamt": 97,
     "klkAbgegeben": 27
   }
 };
