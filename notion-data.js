@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.09.2026 14:56",
+  "lastSync": "26.09.2026 17:58",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4984,
@@ -1217,7 +1217,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-26"
   },
   "ankiFach": {
-    "stand": "26.09.2026 14:56",
+    "stand": "26.09.2026 17:58",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1246,7 +1246,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "26.09.2026 14:56",
+    "stand": "26.09.2026 17:58",
     "datum": "2026-09-26",
     "faelle": [
       "StGB · Fall 01",
@@ -1274,7 +1274,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.09.2026 14:56",
+    "stand": "26.09.2026 17:58",
     "tage": [
       {
         "datum": "2026-09-25",
@@ -2010,7 +2010,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-8-Strafbarkeitsrisiken-II-3e5539e733aa8106aacaefadca70bb86"
     },
     {
-      "title": "Konrad 4",
+      "title": "Konrad 4 - Taching",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-03",
@@ -2019,7 +2019,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-4-3e5539e733aa81188c45ca9dcfd2b774"
+      "url": "https://app.notion.com/p/Konrad-4-Taching-3e5539e733aa81188c45ca9dcfd2b774"
     },
     {
       "title": "KW 13 - Ölgemälde und Wein",
