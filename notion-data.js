@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.09.2026 10:34",
+  "lastSync": "26.09.2026 13:55",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4976,
+    "dueNow": 4984,
     "history": [
       {
         "date": "2025-09-29",
@@ -1208,12 +1208,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-23",
         "count": 81
+      },
+      {
+        "date": "2026-09-25",
+        "count": 40
       }
     ],
-    "stand": "2026-09-25"
+    "stand": "2026-09-26"
   },
   "ankiFach": {
-    "stand": "25.09.2026 16:49",
+    "stand": "26.09.2026 13:55",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1221,15 +1225,15 @@ window.NOTION_DATA = {
         "lernen": 778,
         "aufbau": 168,
         "sitzt": 1068,
-        "faellig": 1752
+        "faellig": 1754
       },
       "Öffentliches Recht": {
-        "total": 862,
-        "neu": 11,
+        "total": 868,
+        "neu": 17,
         "lernen": 512,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 781
+        "faellig": 784
       },
       "Strafrecht": {
         "total": 706,
@@ -1237,34 +1241,27 @@ window.NOTION_DATA = {
         "lernen": 579,
         "aufbau": 17,
         "sitzt": 95,
-        "faellig": 672
+        "faellig": 675
       }
     }
   },
   "wiederholung": {
-    "stand": "25.09.2026 16:49",
-    "datum": "2026-09-25",
+    "stand": "26.09.2026 13:55",
+    "datum": "2026-09-26",
     "faelle": [
       "StGB · Fall 01",
-      "StGB · Fall 02",
       "StGB · Fall 03",
       "StGB · Fall 04",
       "StGB · Fall 05",
-      "StGB · Fall 06",
-      "StGB · Fall 09",
-      "SachenR · Fall 14",
-      "SchuldRAT · Fall 12",
-      "SchuldRBT2 · Fall 04",
-      "SchuldRBT2 · Fall 05",
       "SchuldRBT2 · Fall 06",
       "KommunalR · Fall 1"
     ],
-    "gebiet": "6 ZPO I",
-    "fach": "Zivilrecht",
+    "gebiet": "7 BauR",
+    "fach": "Öffentliches Recht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 61
+        "offen": 60
       },
       {
         "name": "Anschluss",
@@ -1277,19 +1274,57 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "25.09.2026 16:49",
+    "stand": "26.09.2026 13:55",
     "tage": [
       {
         "datum": "2026-09-25",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 29,
-        "gebiete": [],
-        "faelle": [],
+        "karten": 34,
+        "neu": 25,
+        "angelegt": 35,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 17
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 12
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 15
+          },
+          {
+            "name": "StGB · Fall 05",
+            "n": 10
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 6
+          },
+          {
+            "name": "SchuldRBT2 · Fall 04",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": [
           {
             "name": "KommunalR · Fall 1",
-            "n": 11
+            "n": 17
           },
           {
             "name": "StGB · Fall 05",
@@ -1903,14 +1938,14 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-09-06",
-        "karten": 96,
+        "karten": 94,
         "neu": 16,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "x10 ArbeitsR",
-            "n": 89
+            "n": 87
           },
           {
             "fach": "Zivilrecht",
@@ -1938,15 +1973,15 @@ window.NOTION_DATA = {
           },
           {
             "name": "ArbR · Fall 05",
-            "n": 11
-          },
-          {
-            "name": "ArbR · Fall 01",
             "n": 10
           },
           {
             "name": "ArbR · Fall 06",
             "n": 10
+          },
+          {
+            "name": "ArbR · Fall 01",
+            "n": 9
           },
           {
             "name": "ArbR · Fall 07",
@@ -1954,52 +1989,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-09-05",
-        "karten": 27,
-        "neu": 0,
-        "angelegt": 16,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 26
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "ArbR · Fall 03",
-            "n": 8
-          },
-          {
-            "name": "ArbR · Fall 01",
-            "n": 7
-          },
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 7
-          },
-          {
-            "name": "ArbR · Fall 04",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "ArbR · Fall 06",
-            "n": 8
-          },
-          {
-            "name": "ArbR · Fall 07",
-            "n": 8
-          }
-        ]
       }
     ]
   },
