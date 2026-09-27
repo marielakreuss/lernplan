@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.09.2026 11:06",
+  "lastSync": "27.09.2026 18:55",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 4987,
@@ -1217,7 +1217,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-27"
   },
   "ankiFach": {
-    "stand": "27.09.2026 06:51",
+    "stand": "27.09.2026 18:55",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1246,7 +1246,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "27.09.2026 06:51",
+    "stand": "27.09.2026 18:55",
     "datum": "2026-09-27",
     "faelle": [
       "StGB · Fall 01",
@@ -1256,7 +1256,7 @@ window.NOTION_DATA = {
       "SchuldRBT2 · Fall 06",
       "KommunalR · Fall 1"
     ],
-    "gebiet": "7 BauR",
+    "gebiet": "2 Staatsrecht",
     "fach": "Öffentliches Recht",
     "teile": [
       {
@@ -1274,7 +1274,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.09.2026 06:51",
+    "stand": "27.09.2026 18:55",
     "tage": [
       {
         "datum": "2026-09-25",
