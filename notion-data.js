@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.09.2026 22:15",
+  "lastSync": "27.09.2026 06:51",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 4984,
+    "dueNow": 4987,
     "history": [
       {
         "date": "2025-09-29",
@@ -1214,10 +1214,10 @@ window.NOTION_DATA = {
         "count": 40
       }
     ],
-    "stand": "2026-09-26"
+    "stand": "2026-09-27"
   },
   "ankiFach": {
-    "stand": "26.09.2026 17:58",
+    "stand": "27.09.2026 06:51",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1225,7 +1225,7 @@ window.NOTION_DATA = {
         "lernen": 778,
         "aufbau": 168,
         "sitzt": 1068,
-        "faellig": 1754
+        "faellig": 1756
       },
       "Öffentliches Recht": {
         "total": 868,
@@ -1233,7 +1233,7 @@ window.NOTION_DATA = {
         "lernen": 512,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 784
+        "faellig": 785
       },
       "Strafrecht": {
         "total": 706,
@@ -1246,8 +1246,8 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "26.09.2026 17:58",
-    "datum": "2026-09-26",
+    "stand": "27.09.2026 06:51",
+    "datum": "2026-09-27",
     "faelle": [
       "StGB · Fall 01",
       "StGB · Fall 03",
@@ -1274,7 +1274,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.09.2026 17:58",
+    "stand": "27.09.2026 06:51",
     "tage": [
       {
         "datum": "2026-09-25",
@@ -1935,60 +1935,6 @@ window.NOTION_DATA = {
             "n": 5
           }
         ]
-      },
-      {
-        "datum": "2026-09-06",
-        "karten": 94,
-        "neu": 16,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 87
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 4
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 3
-          }
-        ],
-        "faelle": [
-          {
-            "name": "ArbR · Fall 03",
-            "n": 29
-          },
-          {
-            "name": "ArbR · Fall 04",
-            "n": 16
-          },
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 11
-          },
-          {
-            "name": "ArbR · Fall 05",
-            "n": 10
-          },
-          {
-            "name": "ArbR · Fall 06",
-            "n": 10
-          },
-          {
-            "name": "ArbR · Fall 01",
-            "n": 9
-          },
-          {
-            "name": "ArbR · Fall 07",
-            "n": 8
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
