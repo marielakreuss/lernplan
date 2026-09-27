@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.09.2026 19:56",
+  "lastSync": "27.09.2026 20:57",
   "anki": {
-    "reviewedToday": 49,
-    "dueNow": 4977,
+    "reviewedToday": 104,
+    "dueNow": 4955,
     "history": [
       {
         "date": "2025-09-29",
@@ -1215,13 +1215,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-27",
-        "count": 49
+        "count": 104
       }
     ],
     "stand": "2026-09-27"
   },
   "ankiFach": {
-    "stand": "27.09.2026 19:56",
+    "stand": "27.09.2026 20:57",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1229,28 +1229,28 @@ window.NOTION_DATA = {
         "lernen": 786,
         "aufbau": 167,
         "sitzt": 1069,
-        "faellig": 1758
+        "faellig": 1754
       },
       "Öffentliches Recht": {
         "total": 868,
-        "neu": 9,
-        "lernen": 520,
+        "neu": 0,
+        "lernen": 529,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 791
+        "faellig": 784
       },
       "Strafrecht": {
         "total": 706,
         "neu": 10,
-        "lernen": 584,
+        "lernen": 586,
         "aufbau": 16,
-        "sitzt": 96,
-        "faellig": 657
+        "sitzt": 94,
+        "faellig": 646
       }
     }
   },
   "wiederholung": {
-    "stand": "27.09.2026 19:56",
+    "stand": "27.09.2026 20:57",
     "datum": "2026-09-27",
     "faelle": [
       "StGB · Fall 01",
@@ -1265,11 +1265,11 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 29
+        "offen": 0
       },
       {
         "name": "Anschluss",
-        "offen": 45
+        "offen": 43
       },
       {
         "name": "Rechtsgebiet",
@@ -1278,56 +1278,84 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.09.2026 19:56",
+    "stand": "27.09.2026 20:57",
     "tage": [
       {
         "datum": "2026-09-27",
-        "karten": 42,
-        "neu": 21,
+        "karten": 67,
+        "neu": 30,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR BT",
-            "n": 17
+            "n": 19
           },
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
-            "n": 8
+            "n": 15
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 8
+            "n": 13
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 5
+            "n": 6
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "x10 ArbeitsR",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
           }
         ],
         "faelle": [
           {
             "name": "StGB · Fall 01",
-            "n": 16
+            "n": 24
+          },
+          {
+            "name": "KommunalR · Fall 1",
+            "n": 17
           },
           {
             "name": "SchuldRBT2 · Fall 06",
             "n": 9
           },
           {
-            "name": "KommunalR · Fall 1",
-            "n": 8
-          },
-          {
             "name": "StGB · Fall 05",
             "n": 5
+          },
+          {
+            "name": "EuropaR · Fall 05",
+            "n": 4
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
