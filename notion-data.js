@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "28.09.2026 13:50",
+  "lastSync": "28.09.2026 12:29",
   "anki": {
     "reviewedToday": 104,
     "dueNow": 4955,
@@ -2884,7 +2884,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2149-abgegeben-am-16-5-362539e733aa8030b699c779d158dbd7"
     },
     {
-      "title": "Fall 19",
+      "title": "BGB AT Fall19",
       "status": "Nachbereitet",
       "woche": 33,
       "datum": "2026-05-13",
@@ -2895,7 +2895,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-19-9de2b15407dc4a0882fb002cb996a0e9"
+      "url": "https://app.notion.com/p/BGB-AT-Fall19-9de2b15407dc4a0882fb002cb996a0e9"
     },
     {
       "title": "KLK 2148 - abgegeben am 11.5.",
@@ -3058,7 +3058,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2142-abgegeben-am-20-3-334539e733aa807f9f76f6d9ec53cac0"
     },
     {
-      "title": "Fall 12",
+      "title": "VerwaltungsR AT Fall12",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3069,10 +3069,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-310539e733aa80e0ab32dd8d4371e0a7"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall12-310539e733aa80e0ab32dd8d4371e0a7"
     },
     {
-      "title": "Fall 11",
+      "title": "VerwaltungsR AT Fall11",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3083,10 +3083,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-310539e733aa80e6b610db1630912f6b"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall11-310539e733aa80e6b610db1630912f6b"
     },
     {
-      "title": "Fall 10",
+      "title": "VerwaltungsR AT Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3097,10 +3097,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-310539e733aa808480b1d58848204808"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall10-310539e733aa808480b1d58848204808"
     },
     {
-      "title": "Fall 9",
+      "title": "VerwaltungsR AT Fall09",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3111,10 +3111,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-310539e733aa8021a849de8d4f0bc1f1"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall09-310539e733aa8021a849de8d4f0bc1f1"
     },
     {
-      "title": "Fall 8",
+      "title": "VerwaltungsR AT Fall08",
       "status": "Nachbereitet",
       "woche": 47,
       "datum": "2026-08-19",
@@ -3125,10 +3125,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-310539e733aa80728336f9d89ab23335"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall08-310539e733aa80728336f9d89ab23335"
     },
     {
-      "title": "Fall 7",
+      "title": "VerwaltungsR AT Fall07",
       "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-05",
@@ -3139,10 +3139,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa80cda320ca90992aa3b4"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall07-310539e733aa80cda320ca90992aa3b4"
     },
     {
-      "title": "Fall 6",
+      "title": "VerwaltungsR AT Fall06",
       "status": "Nachbereitet",
       "woche": 44,
       "datum": "2026-07-27",
@@ -3153,10 +3153,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa8004a696d62b59c00eee"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall06-310539e733aa8004a696d62b59c00eee"
     },
     {
-      "title": "Fall 5",
+      "title": "VerwaltungsR AT Fall05",
       "status": "Nachbereitet",
       "woche": 43,
       "datum": "2026-07-22",
@@ -3167,10 +3167,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa807db800fa615527cda3"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall05-310539e733aa807db800fa615527cda3"
     },
     {
-      "title": "Fall 4",
+      "title": "VerwaltungsR AT Fall04",
       "status": "Nachbereitet",
       "woche": 43,
       "datum": "2026-07-23",
@@ -3181,10 +3181,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa80eb9c68da7e01425981"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall04-310539e733aa80eb9c68da7e01425981"
     },
     {
-      "title": "Fall 3",
+      "title": "VerwaltungsR AT Fall03",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3195,10 +3195,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa802a8728f4adcc27f967"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall03-310539e733aa802a8728f4adcc27f967"
     },
     {
-      "title": "Fall 2",
+      "title": "VerwaltungsR AT Fall02",
       "status": "Nachbereitet",
       "woche": 40,
       "datum": "2026-07-01",
@@ -3209,10 +3209,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa80e897adf8c939376320"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall02-310539e733aa80e897adf8c939376320"
     },
     {
-      "title": "Fall 1",
+      "title": "VerwaltungsR AT Fall01",
       "status": "Nachbereitet",
       "woche": 39,
       "datum": "2026-06-24",
@@ -3223,10 +3223,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa80d48a05da27c50f879d"
+      "url": "https://app.notion.com/p/VerwaltungsR-AT-Fall01-310539e733aa80d48a05da27c50f879d"
     },
     {
-      "title": "Fall 14",
+      "title": "StPO Fall14",
       "status": "Nicht nachbereitet",
       "woche": 40,
       "datum": "2026-07-03",
@@ -3237,10 +3237,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-310539e733aa8065b638e974295a3fce"
+      "url": "https://app.notion.com/p/StPO-Fall14-310539e733aa8065b638e974295a3fce"
     },
     {
-      "title": "Fall 13",
+      "title": "StPO Fall13",
       "status": "Nachbereitet",
       "woche": 39,
       "datum": "2026-06-25",
@@ -3251,10 +3251,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-310539e733aa801cad94e4f989acf4c2"
+      "url": "https://app.notion.com/p/StPO-Fall13-310539e733aa801cad94e4f989acf4c2"
     },
     {
-      "title": "Fall 12",
+      "title": "StPO Fall12",
       "status": "Nachbereitet",
       "woche": 38,
       "datum": "2026-06-17",
@@ -3265,10 +3265,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-310539e733aa801397f3c9f70e095165"
+      "url": "https://app.notion.com/p/StPO-Fall12-310539e733aa801397f3c9f70e095165"
     },
     {
-      "title": "Fall 11",
+      "title": "StPO Fall11",
       "status": "Nachbereitet",
       "woche": 38,
       "datum": "2026-06-17",
@@ -3279,10 +3279,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-310539e733aa8050bc86f90e580f29f6"
+      "url": "https://app.notion.com/p/StPO-Fall11-310539e733aa8050bc86f90e580f29f6"
     },
     {
-      "title": "Fall 10",
+      "title": "StPO Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3293,10 +3293,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-310539e733aa80a581d7fbd4f1b247ba"
+      "url": "https://app.notion.com/p/StPO-Fall10-310539e733aa80a581d7fbd4f1b247ba"
     },
     {
-      "title": "Fall 9",
+      "title": "StPO Fall09",
       "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-10",
@@ -3307,10 +3307,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-310539e733aa80688084e5753977e339"
+      "url": "https://app.notion.com/p/StPO-Fall09-310539e733aa80688084e5753977e339"
     },
     {
-      "title": "Fall 8",
+      "title": "StPO Fall08",
       "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-10",
@@ -3321,10 +3321,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-310539e733aa804c94bdcce386d61237"
+      "url": "https://app.notion.com/p/StPO-Fall08-310539e733aa804c94bdcce386d61237"
     },
     {
-      "title": "Fall 7",
+      "title": "StPO Fall07",
       "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-10",
@@ -3335,10 +3335,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa8027a531cdba828df6a6"
+      "url": "https://app.notion.com/p/StPO-Fall07-310539e733aa8027a531cdba828df6a6"
     },
     {
-      "title": "Fall 6",
+      "title": "StPO Fall06",
       "status": "Nicht nachbereitet",
       "woche": 36,
       "datum": "2026-06-03",
@@ -3349,10 +3349,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa80d0848ac959a666811a"
+      "url": "https://app.notion.com/p/StPO-Fall06-310539e733aa80d0848ac959a666811a"
     },
     {
-      "title": "Fall 5",
+      "title": "StPO Fall05",
       "status": "Nachbereitet",
       "woche": 40,
       "datum": "2026-07-03",
@@ -3363,10 +3363,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa802ea354ff5bceb1f6d1"
+      "url": "https://app.notion.com/p/StPO-Fall05-310539e733aa802ea354ff5bceb1f6d1"
     },
     {
-      "title": "Fall 4",
+      "title": "StPO Fall04",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3377,10 +3377,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa80f9bb60ed8568781b80"
+      "url": "https://app.notion.com/p/StPO-Fall04-310539e733aa80f9bb60ed8568781b80"
     },
     {
-      "title": "Fall 3",
+      "title": "StPO Fall03",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-02",
@@ -3391,10 +3391,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa80358d0fec290befe0bb"
+      "url": "https://app.notion.com/p/StPO-Fall03-310539e733aa80358d0fec290befe0bb"
     },
     {
-      "title": "Fall 2",
+      "title": "StPO Fall02",
       "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-08",
@@ -3405,10 +3405,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa8082bbdefad1fe0278fd"
+      "url": "https://app.notion.com/p/StPO-Fall02-310539e733aa8082bbdefad1fe0278fd"
     },
     {
-      "title": "Fall 1",
+      "title": "StPO Fall01",
       "status": "Nachbereitet",
       "woche": 36,
       "datum": "2026-06-03",
@@ -3419,10 +3419,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa8053af95e466e0373edf"
+      "url": "https://app.notion.com/p/StPO-Fall01-310539e733aa8053af95e466e0373edf"
     },
     {
-      "title": "Fall 17",
+      "title": "Strafrecht AT Fall17",
       "status": "Nachbereitet",
       "woche": 34,
       "datum": "2026-05-22",
@@ -3434,10 +3434,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-17-310539e733aa8018a774c5a2331db720"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall17-310539e733aa8018a774c5a2331db720"
     },
     {
-      "title": "Fall 16",
+      "title": "Strafrecht AT Fall16",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3449,10 +3449,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-16-310539e733aa807c9fc7c127b653a8e5"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall16-310539e733aa807c9fc7c127b653a8e5"
     },
     {
-      "title": "Fall 15",
+      "title": "Strafrecht AT Fall15",
       "status": "Nachbereitet",
       "woche": 34,
       "datum": "2026-05-22",
@@ -3464,10 +3464,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-15-310539e733aa8029a208db2950c72e51"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall15-310539e733aa8029a208db2950c72e51"
     },
     {
-      "title": "Fall 14",
+      "title": "Strafrecht AT Fall14",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3479,10 +3479,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-310539e733aa80d3b589e35137f48a4d"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall14-310539e733aa80d3b589e35137f48a4d"
     },
     {
-      "title": "Fall 13",
+      "title": "Strafrecht AT Fall13",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3494,10 +3494,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-310539e733aa80c98f3bf5d7070b277a"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall13-310539e733aa80c98f3bf5d7070b277a"
     },
     {
-      "title": "Fall 12",
+      "title": "Strafrecht AT Fall12",
       "status": "In Bearbeitung",
       "woche": 33,
       "datum": "2026-05-13",
@@ -3509,10 +3509,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-310539e733aa805e8afccc926f3b5198"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall12-310539e733aa805e8afccc926f3b5198"
     },
     {
-      "title": "Fall 11",
+      "title": "Strafrecht AT Fall11",
       "status": "Nachbereitet",
       "woche": 33,
       "datum": "2026-05-14",
@@ -3524,10 +3524,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-310539e733aa8000a1a6c01a023d8f48"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall11-310539e733aa8000a1a6c01a023d8f48"
     },
     {
-      "title": "Fall 10",
+      "title": "Strafrecht AT Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3539,10 +3539,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-310539e733aa80f59287c673cc50bd75"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall10-310539e733aa80f59287c673cc50bd75"
     },
     {
-      "title": "Fall 9",
+      "title": "Strafrecht AT Fall09",
       "status": "Nachbereitet",
       "woche": 32,
       "datum": "2026-05-06",
@@ -3554,10 +3554,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-310539e733aa8016a2fad8aa51081b45"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall09-310539e733aa8016a2fad8aa51081b45"
     },
     {
-      "title": "Fall 8",
+      "title": "Strafrecht AT Fall08",
       "status": "Nachbereitet",
       "woche": 31,
       "datum": "2026-04-29",
@@ -3569,10 +3569,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-310539e733aa80af9433f33214fdcbf8"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall08-310539e733aa80af9433f33214fdcbf8"
     },
     {
-      "title": "Fall 7",
+      "title": "Strafrecht AT Fall07",
       "status": "Nachbereitet",
       "woche": 31,
       "datum": "2026-04-27",
@@ -3584,10 +3584,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa80ef83a7da24ad3b477e"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall07-310539e733aa80ef83a7da24ad3b477e"
     },
     {
-      "title": "Fall 6",
+      "title": "Strafrecht AT Fall06",
       "status": "Nachbereitet",
       "woche": 30,
       "datum": "2026-04-22",
@@ -3599,10 +3599,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa80828658e20cc58952c1"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall06-310539e733aa80828658e20cc58952c1"
     },
     {
-      "title": "Fall 5",
+      "title": "Strafrecht AT Fall05",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-25",
@@ -3614,10 +3614,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa80229b3adce315297361"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall05-310539e733aa80229b3adce315297361"
     },
     {
-      "title": "Fall 4",
+      "title": "Strafrecht AT Fall04",
       "status": "Nachbereitet",
       "woche": 51,
       "datum": "2026-09-17",
@@ -3629,10 +3629,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa800ba813ddf3fdd9f019"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall04-310539e733aa800ba813ddf3fdd9f019"
     },
     {
-      "title": "Fall 3",
+      "title": "Strafrecht AT Fall03",
       "status": "Nachbereitet",
       "woche": 27,
       "datum": "2026-04-01",
@@ -3644,10 +3644,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa80338fd6e600bda4e1c8"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall03-310539e733aa80338fd6e600bda4e1c8"
     },
     {
-      "title": "Fall 2",
+      "title": "Strafrecht AT Fall02",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
@@ -3659,10 +3659,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa80aab40dd73366f2009c"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall02-310539e733aa80aab40dd73366f2009c"
     },
     {
-      "title": "Fall 1",
+      "title": "Strafrecht AT Fall01",
       "status": "Nachbereitet",
       "woche": 24,
       "datum": "2026-03-11",
@@ -3674,10 +3674,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa8052823bddbb2953e814"
+      "url": "https://app.notion.com/p/Strafrecht-AT-Fall01-310539e733aa8052823bddbb2953e814"
     },
     {
-      "title": "Fall 9",
+      "title": "SchuldR BT Fall09",
       "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-07",
@@ -3688,10 +3688,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-310539e733aa80d0aa79e0d22a2e1703"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall09-310539e733aa80d0aa79e0d22a2e1703"
     },
     {
-      "title": "Fall 8",
+      "title": "SchuldR BT Fall08",
       "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-04",
@@ -3702,10 +3702,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-310539e733aa80eab04ff0d50c78c864"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall08-310539e733aa80eab04ff0d50c78c864"
     },
     {
-      "title": "Fall 7",
+      "title": "SchuldR BT Fall07",
       "status": "Nachbereitet",
       "woche": 47,
       "datum": "2026-08-18",
@@ -3716,10 +3716,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa80588721fbd671a80954"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall07-310539e733aa80588721fbd671a80954"
     },
     {
-      "title": "Fall 6",
+      "title": "SchuldR BT Fall06",
       "status": "Nachbereitet",
       "woche": 47,
       "datum": "2026-08-21",
@@ -3730,10 +3730,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa80459513ea20a876d3f4"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall06-310539e733aa80459513ea20a876d3f4"
     },
     {
-      "title": "Fall 5",
+      "title": "SchuldR BT Fall05",
       "status": "Nicht nachbereitet",
       "woche": 46,
       "datum": "2026-08-11",
@@ -3744,10 +3744,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa80e3bb33c61a0cc04e88"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall05-310539e733aa80e3bb33c61a0cc04e88"
     },
     {
-      "title": "Fall 4",
+      "title": "SchuldR BT Fall04",
       "status": "Nachbereitet",
       "woche": 44,
       "datum": "2026-07-31",
@@ -3758,10 +3758,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa809483aed30a61a72cf5"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall04-310539e733aa809483aed30a61a72cf5"
     },
     {
-      "title": "Fall 3",
+      "title": "SchuldR BT Fall03",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3772,10 +3772,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa805ea1bcdd5074db7314"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall03-310539e733aa805ea1bcdd5074db7314"
     },
     {
-      "title": "Fall 2",
+      "title": "SchuldR BT Fall02",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3786,10 +3786,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa8087bf54eacd0fc98471"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall02-310539e733aa8087bf54eacd0fc98471"
     },
     {
-      "title": "Fall 1 (+ Mangelbegriff- Aufsatz!)",
+      "title": "SchuldR BT Fall01 (+ Mangelbegriff- Aufsatz!)",
       "status": "Nachbereitet",
       "woche": 43,
       "datum": "2026-07-24",
@@ -3800,10 +3800,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-Mangelbegriff-Aufsatz-310539e733aa802687ddf544bd7adb57"
+      "url": "https://app.notion.com/p/SchuldR-BT-Fall01-Mangelbegriff-Aufsatz-310539e733aa802687ddf544bd7adb57"
     },
     {
-      "title": "Fall 7",
+      "title": "SchuldR BT 2 Fall07",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-09-28",
@@ -3814,10 +3814,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa805a95dcf2962f6fd634"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall07-310539e733aa805a95dcf2962f6fd634"
     },
     {
-      "title": "Fall 6",
+      "title": "SchuldR BT 2 Fall06",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
@@ -3828,10 +3828,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa80ddac9efdbac663c95f"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall06-310539e733aa80ddac9efdbac663c95f"
     },
     {
-      "title": "Fall 5",
+      "title": "SchuldR BT 2 Fall05",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
@@ -3842,10 +3842,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa8072a7a9cbf21e627679"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall05-310539e733aa8072a7a9cbf21e627679"
     },
     {
-      "title": "Fall 4",
+      "title": "SchuldR BT 2 Fall04",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-23",
@@ -3856,10 +3856,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa80ecbc13cc5606e79bb5"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall04-310539e733aa80ecbc13cc5606e79bb5"
     },
     {
-      "title": "Fall 3",
+      "title": "SchuldR BT 2 Fall03",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-22",
@@ -3870,10 +3870,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa80cea86cdd888557e403"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall03-310539e733aa80cea86cdd888557e403"
     },
     {
-      "title": "Fall 2",
+      "title": "SchuldR BT 2 Fall02",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-21",
@@ -3884,10 +3884,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa809ab36aeb58a2bfbb20"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall02-310539e733aa809ab36aeb58a2bfbb20"
     },
     {
-      "title": "Fall 1",
+      "title": "SchuldR BT 2 Fall01",
       "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-21",
@@ -3898,10 +3898,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa80c88132c8d437d4013b"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall01-310539e733aa80c88132c8d437d4013b"
     },
     {
-      "title": "Fall 22",
+      "title": "SchuldR AT Fall22",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3912,10 +3912,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-22-310539e733aa8069a188d9e8d852c188"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall22-310539e733aa8069a188d9e8d852c188"
     },
     {
-      "title": "Fall 21",
+      "title": "SchuldR AT Fall21",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3926,10 +3926,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-21-310539e733aa807bb628d05ba982c0eb"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall21-310539e733aa807bb628d05ba982c0eb"
     },
     {
-      "title": "Fall 20",
+      "title": "SchuldR AT Fall20",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3940,10 +3940,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-20-310539e733aa806797a7c5dc421f65e1"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall20-310539e733aa806797a7c5dc421f65e1"
     },
     {
-      "title": "Fall 19",
+      "title": "SchuldR AT Fall19",
       "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-03",
@@ -3954,10 +3954,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-19-310539e733aa80c19803f9aff7a4d09f"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall19-310539e733aa80c19803f9aff7a4d09f"
     },
     {
-      "title": "Fall 18",
+      "title": "SchuldR AT Fall18",
       "status": "Nachbereitet",
       "woche": 43,
       "datum": "2026-07-21",
@@ -3968,10 +3968,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-18-310539e733aa80369b18cf3806aab332"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall18-310539e733aa80369b18cf3806aab332"
     },
     {
-      "title": "Fall 17",
+      "title": "SchuldR AT Fall17",
       "status": "Nachbereitet",
       "woche": 40,
       "datum": "2026-06-30",
@@ -3982,10 +3982,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-17-310539e733aa80cfb447e388c9986e28"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall17-310539e733aa80cfb447e388c9986e28"
     },
     {
-      "title": "Fall 16",
+      "title": "SchuldR AT Fall16",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -3996,10 +3996,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-16-310539e733aa80198b0fe32d0501e1e8"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall16-310539e733aa80198b0fe32d0501e1e8"
     },
     {
-      "title": "Fall 15",
+      "title": "SchuldR AT Fall15",
       "status": "Nachbereitet",
       "woche": 39,
       "datum": "2026-06-23",
@@ -4010,10 +4010,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-15-310539e733aa80898578c9a8f6b8eec2"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall15-310539e733aa80898578c9a8f6b8eec2"
     },
     {
-      "title": "Fall 14",
+      "title": "SchuldR AT Fall14",
       "status": "Nachbereitet",
       "woche": 39,
       "datum": "2026-06-23",
@@ -4024,10 +4024,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-310539e733aa80aba5f0cabd60614c2e"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall14-310539e733aa80aba5f0cabd60614c2e"
     },
     {
-      "title": "Fall 13",
+      "title": "SchuldR AT Fall13",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4038,10 +4038,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-310539e733aa80b98e75f18f04b1bfc5"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall13-310539e733aa80b98e75f18f04b1bfc5"
     },
     {
-      "title": "Fall 12",
+      "title": "SchuldR AT Fall12",
       "status": "Nachbereitet",
       "woche": 38,
       "datum": "2026-06-16",
@@ -4052,10 +4052,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-310539e733aa80a98243cf646fa399a8"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall12-310539e733aa80a98243cf646fa399a8"
     },
     {
-      "title": "Fall 11",
+      "title": "SchuldR AT Fall11",
       "status": "Nachbereitet",
       "woche": 39,
       "datum": "2026-06-22",
@@ -4066,10 +4066,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-310539e733aa8096ae3ad7e574e11640"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall11-310539e733aa8096ae3ad7e574e11640"
     },
     {
-      "title": "Fall 10",
+      "title": "SchuldR AT Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4080,10 +4080,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-310539e733aa80b58db4cf8d0d5867e6"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall10-310539e733aa80b58db4cf8d0d5867e6"
     },
     {
-      "title": "Fall 9",
+      "title": "SchuldR AT Fall09",
       "status": "Nicht nachbereitet",
       "woche": 37,
       "datum": "2026-06-09",
@@ -4094,10 +4094,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-310539e733aa80c9b176dea19a78669f"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall09-310539e733aa80c9b176dea19a78669f"
     },
     {
-      "title": "Fall 8",
+      "title": "SchuldR AT Fall08",
       "status": "Nachbereitet",
       "woche": 37,
       "datum": "2026-06-09",
@@ -4108,10 +4108,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-310539e733aa80648fa2d6f05a542a91"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall08-310539e733aa80648fa2d6f05a542a91"
     },
     {
-      "title": "Fall 7",
+      "title": "SchuldR AT Fall07",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4122,10 +4122,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa804faaf0d971b17a634b"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall07-310539e733aa804faaf0d971b17a634b"
     },
     {
-      "title": "Fall 6",
+      "title": "SchuldR AT Fall06",
       "status": "Nachbereitet",
       "woche": 36,
       "datum": "2026-06-04",
@@ -4136,10 +4136,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa8088b9effa9aefbd62db"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall06-310539e733aa8088b9effa9aefbd62db"
     },
     {
-      "title": "Fall 5",
+      "title": "SchuldR AT Fall05",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4150,10 +4150,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa80489f33dbb81f323b3e"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall05-310539e733aa80489f33dbb81f323b3e"
     },
     {
-      "title": "Fall 4",
+      "title": "SchuldR AT Fall04",
       "status": "Nachbereitet",
       "woche": 36,
       "datum": "2026-06-02",
@@ -4164,10 +4164,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa808291a2e2b0787d9789"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall04-310539e733aa808291a2e2b0787d9789"
     },
     {
-      "title": "Fall 3",
+      "title": "SchuldR AT Fall03",
       "status": "Nachbereitet",
       "woche": 34,
       "datum": "2026-05-21",
@@ -4178,10 +4178,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa80389d87fe82c888ec18"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall03-310539e733aa80389d87fe82c888ec18"
     },
     {
-      "title": "Fall 2",
+      "title": "SchuldR AT Fall02",
       "status": "Nachbereitet",
       "woche": 34,
       "datum": "2026-05-20",
@@ -4192,10 +4192,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa8008a4d7e4b4778a764a"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall02-310539e733aa8008a4d7e4b4778a764a"
     },
     {
-      "title": "Fall 1",
+      "title": "SchuldR AT Fall01",
       "status": "Nachbereitet",
       "woche": 34,
       "datum": "2026-05-19",
@@ -4206,10 +4206,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa80bf9c46d5abe8d218a4"
+      "url": "https://app.notion.com/p/SchuldR-AT-Fall01-310539e733aa80bf9c46d5abe8d218a4"
     },
     {
-      "title": "Fall 20",
+      "title": "BGB AT Fall20",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4220,10 +4220,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-20-310539e733aa80e5895ed22fde528933"
+      "url": "https://app.notion.com/p/BGB-AT-Fall20-310539e733aa80e5895ed22fde528933"
     },
     {
-      "title": "Fall 18",
+      "title": "BGB AT Fall18",
       "status": "Nachbereitet",
       "woche": 33,
       "datum": "2026-05-12",
@@ -4234,10 +4234,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-18-310539e733aa8077aca2db3ade1541fc"
+      "url": "https://app.notion.com/p/BGB-AT-Fall18-310539e733aa8077aca2db3ade1541fc"
     },
     {
-      "title": "Fall 17",
+      "title": "BGB AT Fall17",
       "status": "Nachbereitet",
       "woche": 32,
       "datum": "2026-05-05",
@@ -4248,10 +4248,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-17-310539e733aa8039970ed92f7a6e3b5d"
+      "url": "https://app.notion.com/p/BGB-AT-Fall17-310539e733aa8039970ed92f7a6e3b5d"
     },
     {
-      "title": "Fall 16",
+      "title": "BGB AT Fall16",
       "status": "Nachbereitet",
       "woche": 32,
       "datum": "2026-05-05",
@@ -4262,10 +4262,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-16-310539e733aa8099a74acbfd9c59a969"
+      "url": "https://app.notion.com/p/BGB-AT-Fall16-310539e733aa8099a74acbfd9c59a969"
     },
     {
-      "title": "Fall 15",
+      "title": "BGB AT Fall15",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4276,10 +4276,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-15-310539e733aa8042b92cc92cf18da0f7"
+      "url": "https://app.notion.com/p/BGB-AT-Fall15-310539e733aa8042b92cc92cf18da0f7"
     },
     {
-      "title": "Fall 14",
+      "title": "BGB AT Fall14",
       "status": "Nachbereitet",
       "woche": 32,
       "datum": "2026-05-04",
@@ -4290,10 +4290,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-310539e733aa805a844fecd04774eb86"
+      "url": "https://app.notion.com/p/BGB-AT-Fall14-310539e733aa805a844fecd04774eb86"
     },
     {
-      "title": "Fall 13",
+      "title": "BGB AT Fall13",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4304,10 +4304,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-310539e733aa80e2bcafededb965f415"
+      "url": "https://app.notion.com/p/BGB-AT-Fall13-310539e733aa80e2bcafededb965f415"
     },
     {
-      "title": "Fall 12",
+      "title": "BGB AT Fall12",
       "status": "Nachbereitet",
       "woche": 30,
       "datum": "2026-04-21",
@@ -4318,10 +4318,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-310539e733aa80519330c4c29aa31355"
+      "url": "https://app.notion.com/p/BGB-AT-Fall12-310539e733aa80519330c4c29aa31355"
     },
     {
-      "title": "Fall 11",
+      "title": "BGB AT Fall11",
       "status": "Nachbereitet",
       "woche": 30,
       "datum": "2026-04-21",
@@ -4332,10 +4332,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-310539e733aa804da615d9756ff8741d"
+      "url": "https://app.notion.com/p/BGB-AT-Fall11-310539e733aa804da615d9756ff8741d"
     },
     {
-      "title": "Fall 10",
+      "title": "BGB AT Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4346,10 +4346,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-310539e733aa80ea8af7e4215a80dc42"
+      "url": "https://app.notion.com/p/BGB-AT-Fall10-310539e733aa80ea8af7e4215a80dc42"
     },
     {
-      "title": "Fall 9",
+      "title": "BGB AT Fall09",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4360,10 +4360,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-310539e733aa808bafbcefc6a531c126"
+      "url": "https://app.notion.com/p/BGB-AT-Fall09-310539e733aa808bafbcefc6a531c126"
     },
     {
-      "title": "Fall 8b",
+      "title": "BGB AT Fall08b",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4374,10 +4374,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8b-310539e733aa8018b191d56e0b27eec1"
+      "url": "https://app.notion.com/p/BGB-AT-Fall08b-310539e733aa8018b191d56e0b27eec1"
     },
     {
-      "title": "Fall 8a",
+      "title": "BGB AT Fall08a",
       "status": "Nachbereitet",
       "woche": 30,
       "datum": "2026-04-20",
@@ -4388,10 +4388,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8a-310539e733aa802f8117f991575e7613"
+      "url": "https://app.notion.com/p/BGB-AT-Fall08a-310539e733aa802f8117f991575e7613"
     },
     {
-      "title": "Fall 8",
+      "title": "BGB AT Fall08",
       "status": "Nachbereitet",
       "woche": 29,
       "datum": "2026-04-14",
@@ -4402,10 +4402,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-310539e733aa80eea058dbc9e2f8a2a5"
+      "url": "https://app.notion.com/p/BGB-AT-Fall08-310539e733aa80eea058dbc9e2f8a2a5"
     },
     {
-      "title": "Fall 7",
+      "title": "BGB AT Fall07",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4416,10 +4416,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-310539e733aa80d19c5bc11f54f4a503"
+      "url": "https://app.notion.com/p/BGB-AT-Fall07-310539e733aa80d19c5bc11f54f4a503"
     },
     {
-      "title": "Fall 6",
+      "title": "BGB AT Fall06",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4430,10 +4430,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-310539e733aa80ae8cd7c3efb81d6591"
+      "url": "https://app.notion.com/p/BGB-AT-Fall06-310539e733aa80ae8cd7c3efb81d6591"
     },
     {
-      "title": "Fall 5",
+      "title": "BGB AT Fall05",
       "status": "Nachbereitet",
       "woche": 27,
       "datum": "2026-03-31",
@@ -4444,10 +4444,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-310539e733aa805d8696f0d56107fb63"
+      "url": "https://app.notion.com/p/BGB-AT-Fall05-310539e733aa805d8696f0d56107fb63"
     },
     {
-      "title": "Fall 4",
+      "title": "BGB AT Fall04",
       "status": "Nachbereitet",
       "woche": 26,
       "datum": "2026-03-24",
@@ -4458,10 +4458,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-310539e733aa80ab8f23d5772332dd85"
+      "url": "https://app.notion.com/p/BGB-AT-Fall04-310539e733aa80ab8f23d5772332dd85"
     },
     {
-      "title": "Fall 3",
+      "title": "BGB AT Fall03",
       "status": "Nachbereitet",
       "woche": 26,
       "datum": "2026-03-24",
@@ -4472,10 +4472,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-310539e733aa8058812de3edea0031eb"
+      "url": "https://app.notion.com/p/BGB-AT-Fall03-310539e733aa8058812de3edea0031eb"
     },
     {
-      "title": "Fall 2",
+      "title": "BGB AT Fall02",
       "status": "Nachbereitet",
       "woche": 25,
       "datum": "2026-03-19",
@@ -4486,10 +4486,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-310539e733aa80d78b88fa3bf055b83a"
+      "url": "https://app.notion.com/p/BGB-AT-Fall02-310539e733aa80d78b88fa3bf055b83a"
     },
     {
-      "title": "Fall 1",
+      "title": "BGB AT Fall01",
       "status": "Nachbereitet",
       "woche": 24,
       "datum": "2026-03-10",
@@ -4500,10 +4500,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-310539e733aa8092bf41df2d7025c852"
+      "url": "https://app.notion.com/p/BGB-AT-Fall01-310539e733aa8092bf41df2d7025c852"
     },
     {
-      "title": "Fall 7",
+      "title": "ZPO II Fall07",
       "status": "Nachbereitet",
       "woche": 22,
       "datum": "2026-02-24",
@@ -4514,10 +4514,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-309539e733aa805fad74e3dffa62772c"
+      "url": "https://app.notion.com/p/ZPO-II-Fall07-309539e733aa805fad74e3dffa62772c"
     },
     {
-      "title": "Fall 6a",
+      "title": "ZPO II Fall06a",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4528,10 +4528,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6a-309539e733aa8025aa3fd5bddea6c465"
+      "url": "https://app.notion.com/p/ZPO-II-Fall06a-309539e733aa8025aa3fd5bddea6c465"
     },
     {
-      "title": "Fall 6",
+      "title": "ZPO II Fall06",
       "status": "Nachbereitet",
       "woche": 22,
       "datum": "2026-02-24",
@@ -4542,10 +4542,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-309539e733aa805aaca5d6d898257fdc"
+      "url": "https://app.notion.com/p/ZPO-II-Fall06-309539e733aa805aaca5d6d898257fdc"
     },
     {
-      "title": "Fall 5",
+      "title": "ZPO II Fall05",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4556,10 +4556,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-309539e733aa80de8f31e1527539febd"
+      "url": "https://app.notion.com/p/ZPO-II-Fall05-309539e733aa80de8f31e1527539febd"
     },
     {
-      "title": "Fall 4",
+      "title": "ZPO II Fall04",
       "status": "Nachbereitet",
       "woche": 22,
       "datum": "2026-02-24",
@@ -4570,10 +4570,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-309539e733aa80a8be8afcd5c6c9a2fe"
+      "url": "https://app.notion.com/p/ZPO-II-Fall04-309539e733aa80a8be8afcd5c6c9a2fe"
     },
     {
-      "title": "Fall 3",
+      "title": "ZPO II Fall03",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4584,10 +4584,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-309539e733aa802eb11cded89bfd75a6"
+      "url": "https://app.notion.com/p/ZPO-II-Fall03-309539e733aa802eb11cded89bfd75a6"
     },
     {
-      "title": "Fall 2",
+      "title": "ZPO II Fall02",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4598,10 +4598,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-309539e733aa8003bc48fcad0ddc4fbc"
+      "url": "https://app.notion.com/p/ZPO-II-Fall02-309539e733aa8003bc48fcad0ddc4fbc"
     },
     {
-      "title": "Fall 1",
+      "title": "ZPO II Fall01",
       "status": "Nicht nachbereitet",
       "woche": 21,
       "datum": "2026-02-17",
@@ -4612,7 +4612,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-309539e733aa8094a76df0cad16bafd4"
+      "url": "https://app.notion.com/p/ZPO-II-Fall01-309539e733aa8094a76df0cad16bafd4"
     },
     {
       "title": "KLK 2136 - abgegeben am 7.2.",
@@ -4660,7 +4660,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2135-nicht-abgegeben-2fa539e733aa80638e4cc553af9b37bc"
     },
     {
-      "title": "Fall 8a",
+      "title": "HGB Fall08a",
       "status": "Nicht nachbereitet",
       "woche": 21,
       "datum": "2026-02-18",
@@ -4671,10 +4671,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8a-2f6539e733aa809e84a6ff149cbbe1b6"
+      "url": "https://app.notion.com/p/HGB-Fall08a-2f6539e733aa809e84a6ff149cbbe1b6"
     },
     {
-      "title": "Fall 1a",
+      "title": "HGB Fall01a",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4685,10 +4685,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1a-2f6539e733aa80218a66df0886d31f80"
+      "url": "https://app.notion.com/p/HGB-Fall01a-2f6539e733aa80218a66df0886d31f80"
     },
     {
-      "title": "Fall 13",
+      "title": "HGB Fall13",
       "status": "Nachbereitet",
       "woche": 27,
       "datum": "2026-03-30",
@@ -4699,10 +4699,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-2f6539e733aa80bf8f26d425b435865d"
+      "url": "https://app.notion.com/p/HGB-Fall13-2f6539e733aa80bf8f26d425b435865d"
     },
     {
-      "title": "Fall 12",
+      "title": "HGB Fall12",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4713,10 +4713,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-2f6539e733aa80cfa0e9fb5058f0dd46"
+      "url": "https://app.notion.com/p/HGB-Fall12-2f6539e733aa80cfa0e9fb5058f0dd46"
     },
     {
-      "title": "Fall 11",
+      "title": "HGB Fall11",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4727,10 +4727,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-2f6539e733aa806f9b1ac764fbd834a1"
+      "url": "https://app.notion.com/p/HGB-Fall11-2f6539e733aa806f9b1ac764fbd834a1"
     },
     {
-      "title": "Fall 10",
+      "title": "HGB Fall10",
       "status": "Nachbereitet",
       "woche": 26,
       "datum": "2026-03-23",
@@ -4741,10 +4741,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-2f6539e733aa80ff8731d05231332f9a"
+      "url": "https://app.notion.com/p/HGB-Fall10-2f6539e733aa80ff8731d05231332f9a"
     },
     {
-      "title": "Fall 9",
+      "title": "HGB Fall09",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4755,10 +4755,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-2f6539e733aa80c7bfafddbd7689760b"
+      "url": "https://app.notion.com/p/HGB-Fall09-2f6539e733aa80c7bfafddbd7689760b"
     },
     {
-      "title": "Fall 8",
+      "title": "HGB Fall08",
       "status": "Nachbereitet",
       "woche": 21,
       "datum": "2026-02-18",
@@ -4769,10 +4769,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-2f6539e733aa80fcbfbdccdeab969429"
+      "url": "https://app.notion.com/p/HGB-Fall08-2f6539e733aa80fcbfbdccdeab969429"
     },
     {
-      "title": "Fall 7",
+      "title": "HGB Fall07",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -4783,10 +4783,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-2f6539e733aa8080aba6ddee593922ed"
+      "url": "https://app.notion.com/p/HGB-Fall07-2f6539e733aa8080aba6ddee593922ed"
     },
     {
-      "title": "Fall 6",
+      "title": "HGB Fall06",
       "status": "Nachbereitet",
       "woche": 23,
       "datum": "2026-03-04",
@@ -4797,10 +4797,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-2f6539e733aa8014a265c73d5d93dd4e"
+      "url": "https://app.notion.com/p/HGB-Fall06-2f6539e733aa8014a265c73d5d93dd4e"
     },
     {
-      "title": "Fall 5",
+      "title": "HGB Fall05",
       "status": "Nachbereitet",
       "woche": 24,
       "datum": "2026-03-13",
@@ -4811,10 +4811,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2f6539e733aa8061bf0dd76c1b396bdd"
+      "url": "https://app.notion.com/p/HGB-Fall05-2f6539e733aa8061bf0dd76c1b396bdd"
     },
     {
-      "title": "Fall 4",
+      "title": "HGB Fall04",
       "status": "Nachbereitet",
       "woche": 24,
       "datum": "2026-03-13",
@@ -4825,10 +4825,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2f6539e733aa805c87b4d52bd709a097"
+      "url": "https://app.notion.com/p/HGB-Fall04-2f6539e733aa805c87b4d52bd709a097"
     },
     {
-      "title": "Fall 3",
+      "title": "HGB Fall03",
       "status": "Nachbereitet",
       "woche": 23,
       "datum": "2026-03-03",
@@ -4839,10 +4839,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-2f6539e733aa80d1901ec19ce1a893f5"
+      "url": "https://app.notion.com/p/HGB-Fall03-2f6539e733aa80d1901ec19ce1a893f5"
     },
     {
-      "title": "Fall 2",
+      "title": "HGB Fall02",
       "status": "Nachbereitet",
       "woche": 23,
       "datum": "2026-03-03",
@@ -4853,10 +4853,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2f6539e733aa8008a406dfbef4007767"
+      "url": "https://app.notion.com/p/HGB-Fall02-2f6539e733aa8008a406dfbef4007767"
     },
     {
-      "title": "Fall 1",
+      "title": "HGB Fall01",
       "status": "Nachbereitet",
       "woche": 19,
       "datum": "2026-02-04",
@@ -4867,10 +4867,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2f5539e733aa809fbba0ef7b2b060067"
+      "url": "https://app.notion.com/p/HGB-Fall01-2f5539e733aa809fbba0ef7b2b060067"
     },
     {
-      "title": "Fall 15",
+      "title": "ZPO I Fall15",
       "status": "Nachbereitet",
       "woche": 18,
       "datum": "2026-01-30",
@@ -4881,10 +4881,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-15-2ed539e733aa80b2aec8d0ba3fe7279e"
+      "url": "https://app.notion.com/p/ZPO-I-Fall15-2ed539e733aa80b2aec8d0ba3fe7279e"
     },
     {
-      "title": "ArbR Fall 10 (sehr wichtig)",
+      "title": "ArbeitsR Fall10 (sehr wichtig)",
       "status": "Nachbereitet",
       "woche": 50,
       "datum": "2026-09-08",
@@ -4895,10 +4895,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-10-sehr-wichtig-2ed539e733aa801e841bcc41c11c61b0"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall10-sehr-wichtig-2ed539e733aa801e841bcc41c11c61b0"
     },
     {
-      "title": "ArbR Fall 9 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
+      "title": "ArbeitsR Fall09 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nachbereitet",
       "woche": 50,
       "datum": "2026-09-08",
@@ -4909,10 +4909,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-9-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa800b9dfff17f16c6d888"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall09-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa800b9dfff17f16c6d888"
     },
     {
-      "title": "ArbR Fall 8 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
+      "title": "ArbeitsR Fall08 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nachbereitet",
       "woche": 50,
       "datum": "2026-09-07",
@@ -4923,10 +4923,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-8-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa807b90afd4f8133fdc62"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall08-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa807b90afd4f8133fdc62"
     },
     {
-      "title": "ArbR Fall 7 (sehr wichtig)",
+      "title": "ArbeitsR Fall07 (sehr wichtig)",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-04",
@@ -4937,10 +4937,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-7-sehr-wichtig-2ed539e733aa80e8ad5ffb859154c98b"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall07-sehr-wichtig-2ed539e733aa80e8ad5ffb859154c98b"
     },
     {
-      "title": "ArbR Fall 6",
+      "title": "ArbeitsR Fall06",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-04",
@@ -4951,10 +4951,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-6-2ed539e733aa80e9abfcdcf00244aac1"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall06-2ed539e733aa80e9abfcdcf00244aac1"
     },
     {
-      "title": "ArbR Fall 5",
+      "title": "ArbeitsR Fall05",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-03",
@@ -4965,10 +4965,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-5-2ed539e733aa80a7b7e4ff86baafdcbd"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall05-2ed539e733aa80a7b7e4ff86baafdcbd"
     },
     {
-      "title": "ArbR Fall 4",
+      "title": "ArbeitsR Fall04",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-04",
@@ -4979,10 +4979,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-4-2ed539e733aa80e99a0ec808e375e2d2"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall04-2ed539e733aa80e99a0ec808e375e2d2"
     },
     {
-      "title": "ArbR Fall 3 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
+      "title": "ArbeitsR Fall03 (Vertiefungsfalll zur selbstständigen Bearbeitung)",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-03",
@@ -4993,10 +4993,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-3-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa808286cafb5988900dc5"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall03-Vertiefungsfalll-zur-selbstst-ndigen-Bearbeitung-2ed539e733aa808286cafb5988900dc5"
     },
     {
-      "title": "ArbR Fall 2a (Vertiefungsfall)",
+      "title": "ArbeitsR Fall02a (Vertiefungsfall)",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-02",
@@ -5007,10 +5007,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-2a-Vertiefungsfall-2ed539e733aa80949c3ec6ffb2595d18"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall02a-Vertiefungsfall-2ed539e733aa80949c3ec6ffb2595d18"
     },
     {
-      "title": "ArbR Fall 2 (sehr wichtig)",
+      "title": "ArbeitsR Fall02 (sehr wichtig)",
       "status": "Nachbereitet",
       "woche": 18,
       "datum": "2026-01-29",
@@ -5021,10 +5021,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-2-sehr-wichtig-2ed539e733aa8090ab65cbc94f0793bc"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall02-sehr-wichtig-2ed539e733aa8090ab65cbc94f0793bc"
     },
     {
-      "title": "ArbR Fall 1 (sehr wichtig)",
+      "title": "ArbeitsR Fall01 (sehr wichtig)",
       "status": "Nachbereitet",
       "woche": 35,
       "datum": "2026-05-26",
@@ -5035,7 +5035,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/ArbR-Fall-1-sehr-wichtig-2ed539e733aa8091bb7cc686d1cd8365"
+      "url": "https://app.notion.com/p/ArbeitsR-Fall01-sehr-wichtig-2ed539e733aa8091bb7cc686d1cd8365"
     },
     {
       "title": "KLK 2133 - nicht abgegeben",
@@ -5052,7 +5052,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2133-nicht-abgegeben-2ed539e733aa80f3a656f492cbe318bc"
     },
     {
-      "title": "Fall 11",
+      "title": "Europarecht Fall11",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5063,10 +5063,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-2e5539e733aa80b693dae339c7aab731"
+      "url": "https://app.notion.com/p/Europarecht-Fall11-2e5539e733aa80b693dae339c7aab731"
     },
     {
-      "title": "Fall 10",
+      "title": "Europarecht Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5077,10 +5077,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-2e5539e733aa803d9401defc3062e7db"
+      "url": "https://app.notion.com/p/Europarecht-Fall10-2e5539e733aa803d9401defc3062e7db"
     },
     {
-      "title": "Fall 9",
+      "title": "Europarecht Fall09",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5091,10 +5091,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-2e5539e733aa80c6bbe4c1abddbc4914"
+      "url": "https://app.notion.com/p/Europarecht-Fall09-2e5539e733aa80c6bbe4c1abddbc4914"
     },
     {
-      "title": "Fall 8",
+      "title": "Europarecht Fall08",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5105,10 +5105,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-2e5539e733aa80c991b5f52c9676b931"
+      "url": "https://app.notion.com/p/Europarecht-Fall08-2e5539e733aa80c991b5f52c9676b931"
     },
     {
-      "title": "Fall 7",
+      "title": "Europarecht Fall07",
       "status": "Nicht nachbereitet",
       "woche": 28,
       "datum": "2026-04-10",
@@ -5119,10 +5119,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-2e5539e733aa80c38e05f555d4182012"
+      "url": "https://app.notion.com/p/Europarecht-Fall07-2e5539e733aa80c38e05f555d4182012"
     },
     {
-      "title": "Fall 6",
+      "title": "Europarecht Fall06",
       "status": "Nicht nachbereitet",
       "woche": 28,
       "datum": "2026-04-10",
@@ -5133,10 +5133,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-2e5539e733aa80f696f4eab074d3bda5"
+      "url": "https://app.notion.com/p/Europarecht-Fall06-2e5539e733aa80f696f4eab074d3bda5"
     },
     {
-      "title": "Fall 5",
+      "title": "Europarecht Fall05",
       "status": "Nachbereitet",
       "woche": 28,
       "datum": "2026-04-10",
@@ -5147,10 +5147,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2e5539e733aa80e28693d06b5cb31f37"
+      "url": "https://app.notion.com/p/Europarecht-Fall05-2e5539e733aa80e28693d06b5cb31f37"
     },
     {
-      "title": "Fall 4",
+      "title": "Europarecht Fall04",
       "status": "Nachbereitet",
       "woche": 28,
       "datum": "2026-04-09",
@@ -5161,10 +5161,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2e5539e733aa80349995cf1f966fc966"
+      "url": "https://app.notion.com/p/Europarecht-Fall04-2e5539e733aa80349995cf1f966fc966"
     },
     {
-      "title": "Fall 3",
+      "title": "Europarecht Fall03",
       "status": "Nachbereitet",
       "woche": 28,
       "datum": "2026-04-08",
@@ -5175,10 +5175,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-2e5539e733aa8061b089da9350898512"
+      "url": "https://app.notion.com/p/Europarecht-Fall03-2e5539e733aa8061b089da9350898512"
     },
     {
-      "title": "Fall 2",
+      "title": "Europarecht Fall02",
       "status": "Nachbereitet",
       "woche": 28,
       "datum": "2026-04-07",
@@ -5189,10 +5189,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2e5539e733aa80628ef0c252aeadebb6"
+      "url": "https://app.notion.com/p/Europarecht-Fall02-2e5539e733aa80628ef0c252aeadebb6"
     },
     {
-      "title": "Fall 1",
+      "title": "Europarecht Fall01",
       "status": "Nachbereitet",
       "woche": 28,
       "datum": "2026-04-07",
@@ -5203,7 +5203,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2e5539e733aa80e7a9e0d21db2fda1b6"
+      "url": "https://app.notion.com/p/Europarecht-Fall01-2e5539e733aa80e7a9e0d21db2fda1b6"
     },
     {
       "title": "KLK 2132 - abgegeben am 10.1.",
@@ -5220,7 +5220,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2132-abgegeben-am-10-1-2e4539e733aa80e5b354cc6acb58f30b"
     },
     {
-      "title": "Fall 8 (Vertiefungsfall)",
+      "title": "ErbR Fall08 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5231,10 +5231,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-Vertiefungsfall-2e3539e733aa807386fbd0a5b067775d"
+      "url": "https://app.notion.com/p/ErbR-Fall08-Vertiefungsfall-2e3539e733aa807386fbd0a5b067775d"
     },
     {
-      "title": "Fall 7",
+      "title": "ErbR Fall07",
       "status": "In Bearbeitung",
       "woche": 19,
       "datum": "2026-02-03",
@@ -5245,10 +5245,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-2e3539e733aa809aa8d6f86c04d70595"
+      "url": "https://app.notion.com/p/ErbR-Fall07-2e3539e733aa809aa8d6f86c04d70595"
     },
     {
-      "title": "Fall 6",
+      "title": "ErbR Fall06",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5259,10 +5259,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-2e3539e733aa80598cbfd693bef9b99f"
+      "url": "https://app.notion.com/p/ErbR-Fall06-2e3539e733aa80598cbfd693bef9b99f"
     },
     {
-      "title": "Fall 5",
+      "title": "ErbR Fall05",
       "status": "Nachbereitet",
       "woche": 19,
       "datum": "2026-02-03",
@@ -5273,10 +5273,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2e3539e733aa80a6948ce470651d0cc4"
+      "url": "https://app.notion.com/p/ErbR-Fall05-2e3539e733aa80a6948ce470651d0cc4"
     },
     {
-      "title": "Fall 4",
+      "title": "ErbR Fall04",
       "status": "Nachbereitet",
       "woche": 19,
       "datum": "2026-02-02",
@@ -5287,10 +5287,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2e3539e733aa809fad48f6702ad35879"
+      "url": "https://app.notion.com/p/ErbR-Fall04-2e3539e733aa809fad48f6702ad35879"
     },
     {
-      "title": "Fall 3",
+      "title": "ErbR Fall03",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5301,10 +5301,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-2e3539e733aa802abaeed7f830204945"
+      "url": "https://app.notion.com/p/ErbR-Fall03-2e3539e733aa802abaeed7f830204945"
     },
     {
-      "title": "Fall 2",
+      "title": "ErbR Fall02",
       "status": "In Bearbeitung",
       "woche": 18,
       "datum": "2026-01-27",
@@ -5315,10 +5315,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2e3539e733aa80df8d8ec7e0f1ff61bc"
+      "url": "https://app.notion.com/p/ErbR-Fall02-2e3539e733aa80df8d8ec7e0f1ff61bc"
     },
     {
-      "title": "Fall 1",
+      "title": "ErbR Fall01",
       "status": "Nachbereitet",
       "woche": 18,
       "datum": "2026-01-27",
@@ -5329,10 +5329,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2e3539e733aa8022b52fcf8caa271bc8"
+      "url": "https://app.notion.com/p/ErbR-Fall01-2e3539e733aa8022b52fcf8caa271bc8"
     },
     {
-      "title": "Fall 6 (Vertiefungsfall); nicht examenrelevant!",
+      "title": "FamilienR Fall06 (Vertiefungsfall); nicht examenrelevant!",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5343,10 +5343,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-Vertiefungsfall-nicht-examenrelevant-2e0539e733aa802ebe9af3141910a78f"
+      "url": "https://app.notion.com/p/FamilienR-Fall06-Vertiefungsfall-nicht-examenrelevant-2e0539e733aa802ebe9af3141910a78f"
     },
     {
-      "title": "Fall 5 (Vertiefungsfall)",
+      "title": "FamilienR Fall05 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5357,10 +5357,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-Vertiefungsfall-2e0539e733aa805d9a59eec557abbf50"
+      "url": "https://app.notion.com/p/FamilienR-Fall05-Vertiefungsfall-2e0539e733aa805d9a59eec557abbf50"
     },
     {
-      "title": "Fall 4",
+      "title": "FamilienR Fall04",
       "status": "Nachbereitet",
       "woche": 17,
       "datum": "2026-01-20",
@@ -5371,10 +5371,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2e0539e733aa800f8b20f9ed5f20122b"
+      "url": "https://app.notion.com/p/FamilienR-Fall04-2e0539e733aa800f8b20f9ed5f20122b"
     },
     {
-      "title": "Fall 3",
+      "title": "FamilienR Fall03",
       "status": "Nachbereitet",
       "woche": 16,
       "datum": "2026-01-13",
@@ -5385,10 +5385,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-2e0539e733aa80cc8ebffa4610da99e8"
+      "url": "https://app.notion.com/p/FamilienR-Fall03-2e0539e733aa80cc8ebffa4610da99e8"
     },
     {
-      "title": "Fall 2",
+      "title": "FamilienR Fall02",
       "status": "Nachbereitet",
       "woche": 15,
       "datum": "2026-01-06",
@@ -5399,10 +5399,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2e0539e733aa803d8080ca1270fb5032"
+      "url": "https://app.notion.com/p/FamilienR-Fall02-2e0539e733aa803d8080ca1270fb5032"
     },
     {
-      "title": "Fall 1",
+      "title": "FamilienR Fall01",
       "status": "Nachbereitet",
       "woche": 15,
       "datum": "2026-01-06",
@@ -5413,7 +5413,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2e0539e733aa80609f24eae4f713a259"
+      "url": "https://app.notion.com/p/FamilienR-Fall01-2e0539e733aa80609f24eae4f713a259"
     },
     {
       "title": "KLK 2131 - abgegeben am 3.1.",
@@ -5458,7 +5458,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2129-nicht-abgegeben-2dd539e733aa80a8a385cdc3cab65b9a"
     },
     {
-      "title": "Fall 4",
+      "title": "KommunalR Fall04",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5469,10 +5469,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2dc539e733aa80c7b076f3c9608389ba"
+      "url": "https://app.notion.com/p/KommunalR-Fall04-2dc539e733aa80c7b076f3c9608389ba"
     },
     {
-      "title": "Fall 2",
+      "title": "KommunalR Fall02",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-02",
@@ -5483,10 +5483,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2dc539e733aa80dcbba2ec60b8c883fb"
+      "url": "https://app.notion.com/p/KommunalR-Fall02-2dc539e733aa80dcbba2ec60b8c883fb"
     },
     {
-      "title": "Fall 3",
+      "title": "KommunalR Fall03",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-02",
@@ -5497,10 +5497,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-2dc539e733aa80dd97b0c0f2401c5e7c"
+      "url": "https://app.notion.com/p/KommunalR-Fall03-2dc539e733aa80dd97b0c0f2401c5e7c"
     },
     {
-      "title": "Fall 1",
+      "title": "KommunalR Fall01",
       "status": "In Bearbeitung",
       "woche": 53,
       "datum": "2026-09-28",
@@ -5511,10 +5511,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2dc539e733aa805db92bc1b1883f16c3"
+      "url": "https://app.notion.com/p/KommunalR-Fall01-2dc539e733aa805db92bc1b1883f16c3"
     },
     {
-      "title": "Fall 5",
+      "title": "StaatshaftungsR Fall05",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5525,10 +5525,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2dc539e733aa80de9b3ed95495bef877"
+      "url": "https://app.notion.com/p/StaatshaftungsR-Fall05-2dc539e733aa80de9b3ed95495bef877"
     },
     {
-      "title": "Fall 4",
+      "title": "StaatshaftungsR Fall04",
       "status": "Nachbereitet",
       "woche": 23,
       "datum": "2026-03-03",
@@ -5539,10 +5539,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2dc539e733aa80fca91eda9065589a03"
+      "url": "https://app.notion.com/p/StaatshaftungsR-Fall04-2dc539e733aa80fca91eda9065589a03"
     },
     {
-      "title": "Fall 3 (Vertiefungsfall)",
+      "title": "StaatshaftungsR Fall03 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5553,10 +5553,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-Vertiefungsfall-2dc539e733aa80c1a5dce510fcb42c27"
+      "url": "https://app.notion.com/p/StaatshaftungsR-Fall03-Vertiefungsfall-2dc539e733aa80c1a5dce510fcb42c27"
     },
     {
-      "title": "Fall 2",
+      "title": "StaatshaftungsR Fall02",
       "status": "Nicht nachbereitet",
       "woche": 20,
       "datum": "2026-02-10",
@@ -5567,10 +5567,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2dc539e733aa802f944bdd933cdb73e7"
+      "url": "https://app.notion.com/p/StaatshaftungsR-Fall02-2dc539e733aa802f944bdd933cdb73e7"
     },
     {
-      "title": "Fall 1",
+      "title": "StaatshaftungsR Fall01",
       "status": "Nachbereitet",
       "woche": 20,
       "datum": "2026-02-10",
@@ -5581,10 +5581,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2dc539e733aa802fa222c34b6e55e339"
+      "url": "https://app.notion.com/p/StaatshaftungsR-Fall01-2dc539e733aa802fa222c34b6e55e339"
     },
     {
-      "title": "Fall 14",
+      "title": "ZPO I Fall14",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5595,10 +5595,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-2c5539e733aa80ffae92feb1e8556a88"
+      "url": "https://app.notion.com/p/ZPO-I-Fall14-2c5539e733aa80ffae92feb1e8556a88"
     },
     {
-      "title": "Fall 13",
+      "title": "ZPO I Fall13",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5609,10 +5609,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-2c5539e733aa804ea078e7a0a0523a67"
+      "url": "https://app.notion.com/p/ZPO-I-Fall13-2c5539e733aa804ea078e7a0a0523a67"
     },
     {
-      "title": "Fall 12",
+      "title": "ZPO I Fall12",
       "status": "Nachbereitet",
       "woche": 17,
       "datum": "2026-01-21",
@@ -5623,10 +5623,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-2c5539e733aa800f8769df058d773df6"
+      "url": "https://app.notion.com/p/ZPO-I-Fall12-2c5539e733aa800f8769df058d773df6"
     },
     {
-      "title": "Fall 11",
+      "title": "ZPO I Fall11",
       "status": "Nachbereitet",
       "woche": 17,
       "datum": "2026-01-21",
@@ -5637,10 +5637,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-2c5539e733aa806fbed2fb7bd7f0d08a"
+      "url": "https://app.notion.com/p/ZPO-I-Fall11-2c5539e733aa806fbed2fb7bd7f0d08a"
     },
     {
-      "title": "Fall 10",
+      "title": "ZPO I Fall10",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5651,10 +5651,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-2c5539e733aa805ca816e7cbefe8538e"
+      "url": "https://app.notion.com/p/ZPO-I-Fall10-2c5539e733aa805ca816e7cbefe8538e"
     },
     {
-      "title": "Fall 9",
+      "title": "ZPO I Fall09",
       "status": "Nachbereitet",
       "woche": 16,
       "datum": "2026-01-14",
@@ -5665,10 +5665,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-2c5539e733aa80c0aeabde7be130ac65"
+      "url": "https://app.notion.com/p/ZPO-I-Fall09-2c5539e733aa80c0aeabde7be130ac65"
     },
     {
-      "title": "Fall 8",
+      "title": "ZPO I Fall08",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5679,10 +5679,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-2c5539e733aa806d9c83cc0b685844cf"
+      "url": "https://app.notion.com/p/ZPO-I-Fall08-2c5539e733aa806d9c83cc0b685844cf"
     },
     {
-      "title": "Fall 7",
+      "title": "ZPO I Fall07",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5693,10 +5693,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-2c5539e733aa806f89f7d50842b8186f"
+      "url": "https://app.notion.com/p/ZPO-I-Fall07-2c5539e733aa806f89f7d50842b8186f"
     },
     {
-      "title": "Fall 6",
+      "title": "ZPO I Fall06",
       "status": "Nachbereitet",
       "woche": 16,
       "datum": "2026-01-12",
@@ -5707,10 +5707,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-2c5539e733aa8017a621cc0ae166e330"
+      "url": "https://app.notion.com/p/ZPO-I-Fall06-2c5539e733aa8017a621cc0ae166e330"
     },
     {
-      "title": "Fall 5",
+      "title": "ZPO I Fall05",
       "status": "Nachbereitet",
       "woche": 15,
       "datum": "2026-01-07",
@@ -5721,10 +5721,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2c5539e733aa80459b79feacbfffab34"
+      "url": "https://app.notion.com/p/ZPO-I-Fall05-2c5539e733aa80459b79feacbfffab34"
     },
     {
-      "title": "Fall 4",
+      "title": "ZPO I Fall04",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -5735,10 +5735,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2c5539e733aa80a3b4fada218c11b4a0"
+      "url": "https://app.notion.com/p/ZPO-I-Fall04-2c5539e733aa80a3b4fada218c11b4a0"
     },
     {
-      "title": "Fall 3",
+      "title": "ZPO I Fall03",
       "status": "Nachbereitet",
       "woche": 12,
       "datum": "2025-12-17",
@@ -5749,10 +5749,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-2c5539e733aa80f59b7ce3351b711ebf"
+      "url": "https://app.notion.com/p/ZPO-I-Fall03-2c5539e733aa80f59b7ce3351b711ebf"
     },
     {
-      "title": "Fall 2",
+      "title": "ZPO I Fall02",
       "status": "Nachbereitet",
       "woche": 12,
       "datum": "2025-12-17",
@@ -5763,10 +5763,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2c5539e733aa806e8a22c64e65e386c9"
+      "url": "https://app.notion.com/p/ZPO-I-Fall02-2c5539e733aa806e8a22c64e65e386c9"
     },
     {
-      "title": "Fall 1",
+      "title": "ZPO I Fall01",
       "status": "In Bearbeitung",
       "woche": 12,
       "datum": "2025-12-17",
@@ -5777,10 +5777,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2c5539e733aa8009b2d1e89143331720"
+      "url": "https://app.notion.com/p/ZPO-I-Fall01-2c5539e733aa8009b2d1e89143331720"
     },
     {
-      "title": "BauR Fall 10",
+      "title": "BauR Fall10",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-09-01",
@@ -5791,10 +5791,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-10-2c5539e733aa80e2be5ecd618b4225e6"
+      "url": "https://app.notion.com/p/BauR-Fall10-2c5539e733aa80e2be5ecd618b4225e6"
     },
     {
-      "title": "BauR Fall 9",
+      "title": "BauR Fall09",
       "status": "Nachbereitet",
       "woche": 49,
       "datum": "2026-08-31",
@@ -5805,10 +5805,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-9-2c5539e733aa8042a7e9dad4cc6abaad"
+      "url": "https://app.notion.com/p/BauR-Fall09-2c5539e733aa8042a7e9dad4cc6abaad"
     },
     {
-      "title": "BauR Fall 8",
+      "title": "BauR Fall08",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-28",
@@ -5819,10 +5819,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-8-2c5539e733aa805d9faefd1b9ae66e65"
+      "url": "https://app.notion.com/p/BauR-Fall08-2c5539e733aa805d9faefd1b9ae66e65"
     },
     {
-      "title": "BauR Fall 7",
+      "title": "BauR Fall07",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-27",
@@ -5833,10 +5833,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-7-2c5539e733aa804eace4f22c624eeb53"
+      "url": "https://app.notion.com/p/BauR-Fall07-2c5539e733aa804eace4f22c624eeb53"
     },
     {
-      "title": "BauR Fall 6",
+      "title": "BauR Fall06",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-27",
@@ -5847,10 +5847,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-6-2c5539e733aa80fcaed1f5e923246183"
+      "url": "https://app.notion.com/p/BauR-Fall06-2c5539e733aa80fcaed1f5e923246183"
     },
     {
-      "title": "BauR Fall 5",
+      "title": "BauR Fall05",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-26",
@@ -5861,10 +5861,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-5-2c3539e733aa80ee87d1fb7c70de9c97"
+      "url": "https://app.notion.com/p/BauR-Fall05-2c3539e733aa80ee87d1fb7c70de9c97"
     },
     {
-      "title": "BauR Fall 4",
+      "title": "BauR Fall04",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-26",
@@ -5875,10 +5875,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-4-2c3539e733aa80168943e91b4efe0ac7"
+      "url": "https://app.notion.com/p/BauR-Fall04-2c3539e733aa80168943e91b4efe0ac7"
     },
     {
-      "title": "BauR Fall 3",
+      "title": "BauR Fall03",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-26",
@@ -5889,10 +5889,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-3-2c3539e733aa801fb7d9da02018afdb1"
+      "url": "https://app.notion.com/p/BauR-Fall03-2c3539e733aa801fb7d9da02018afdb1"
     },
     {
-      "title": "BauR Fall 2",
+      "title": "BauR Fall02",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-25",
@@ -5903,10 +5903,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-2-2c3539e733aa806ea8ece7e2114c7db7"
+      "url": "https://app.notion.com/p/BauR-Fall02-2c3539e733aa806ea8ece7e2114c7db7"
     },
     {
-      "title": "BauR Fall 1",
+      "title": "BauR Fall01",
       "status": "Nachbereitet",
       "woche": 48,
       "datum": "2026-08-24",
@@ -5917,7 +5917,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/BauR-Fall-1-2c3539e733aa80f4ace2ccb7e28bca85"
+      "url": "https://app.notion.com/p/BauR-Fall01-2c3539e733aa80f4ace2ccb7e28bca85"
     },
     {
       "title": "KLK 2128 - gegliedert am 28.11., abgegeben am 30.11.",
@@ -6002,7 +6002,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2127-abgegeben-am-22-11-2b4539e733aa80bfb6e6d82fb0c90720"
     },
     {
-      "title": "Fall 14 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall14 (Vertiefungsfall)",
       "status": "Nachbereitet",
       "woche": 15,
       "datum": "2026-01-06",
@@ -6013,10 +6013,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-Vertiefungsfall-2ae539e733aa804a923fe64ade5ec56b"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall14-Vertiefungsfall-2ae539e733aa804a923fe64ade5ec56b"
     },
     {
-      "title": "Fall 13 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall13 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": 12,
       "datum": "2025-12-16",
@@ -6027,10 +6027,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-Vertiefungsfall-2ae539e733aa802fbf46cb7bf5a10d65"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall13-Vertiefungsfall-2ae539e733aa802fbf46cb7bf5a10d65"
     },
     {
-      "title": "Fall 12",
+      "title": "VerfassungsR Fall12",
       "status": "Nachbereitet",
       "woche": 15,
       "datum": "2026-01-05",
@@ -6041,10 +6041,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-2ae539e733aa80d09e09e635a47f44c7"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall12-2ae539e733aa80d09e09e635a47f44c7"
     },
     {
-      "title": "Fall 11 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall11 (Vertiefungsfall)",
       "status": "Nachbereitet",
       "woche": 12,
       "datum": "2025-12-16",
@@ -6055,10 +6055,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-Vertiefungsfall-2ae539e733aa80268b19e0f0e458e4ef"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall11-Vertiefungsfall-2ae539e733aa80268b19e0f0e458e4ef"
     },
     {
-      "title": "VerfR Fall 10",
+      "title": "VerfassungsR Fall10",
       "status": "Nachbereitet",
       "woche": 11,
       "datum": "2025-12-09",
@@ -6069,10 +6069,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/VerfR-Fall-10-2ae539e733aa806db7f6c475e0cf0bce"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall10-2ae539e733aa806db7f6c475e0cf0bce"
     },
     {
-      "title": "VerfRFall 9 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall09 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6083,10 +6083,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/VerfRFall-9-Vertiefungsfall-2ae539e733aa80eca888f47ee596ca65"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall09-Vertiefungsfall-2ae539e733aa80eca888f47ee596ca65"
     },
     {
-      "title": "VerfR Fall 8",
+      "title": "VerfassungsR Fall08",
       "status": "Nachbereitet",
       "woche": 11,
       "datum": "2025-12-09",
@@ -6097,10 +6097,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/VerfR-Fall-8-2ae539e733aa80d28ce6fd0d4030aaf8"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall08-2ae539e733aa80d28ce6fd0d4030aaf8"
     },
     {
-      "title": "Fall 7 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall07 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6111,10 +6111,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-Vertiefungsfall-2ae539e733aa80679b34eca167179e26"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall07-Vertiefungsfall-2ae539e733aa80679b34eca167179e26"
     },
     {
-      "title": "Fall 6 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall06 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": 10,
       "datum": "2025-12-02",
@@ -6125,10 +6125,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-Vertiefungsfall-2ae539e733aa8038977ed7dc6cd006a4"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall06-Vertiefungsfall-2ae539e733aa8038977ed7dc6cd006a4"
     },
     {
-      "title": "Fall 5",
+      "title": "VerfassungsR Fall05",
       "status": "In Bearbeitung",
       "woche": 10,
       "datum": "2025-12-02",
@@ -6139,10 +6139,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-2ae539e733aa8002a37ad43149169b16"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall05-2ae539e733aa8002a37ad43149169b16"
     },
     {
-      "title": "Fall 4",
+      "title": "VerfassungsR Fall04",
       "status": "Nachbereitet",
       "woche": 10,
       "datum": "2025-12-02",
@@ -6153,10 +6153,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-2ae539e733aa80e087d9e6663b4f6a31"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall04-2ae539e733aa80e087d9e6663b4f6a31"
     },
     {
-      "title": "Fall 3 (Vertiefungsfall)",
+      "title": "VerfassungsR Fall03 (Vertiefungsfall)",
       "status": "In Bearbeitung",
       "woche": 9,
       "datum": "2025-11-25",
@@ -6167,10 +6167,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-Vertiefungsfall-2ae539e733aa80b2b6b4f9930490162b"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall03-Vertiefungsfall-2ae539e733aa80b2b6b4f9930490162b"
     },
     {
-      "title": "Fall 2",
+      "title": "VerfassungsR Fall02",
       "status": "Nachbereitet",
       "woche": 14,
       "datum": "2026-01-02",
@@ -6181,10 +6181,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-2ae539e733aa808aa8bcf685e4f567a7"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall02-2ae539e733aa808aa8bcf685e4f567a7"
     },
     {
-      "title": "Fall 1",
+      "title": "VerfassungsR Fall01",
       "status": "Nachbereitet",
       "woche": 8,
       "datum": "2025-11-18",
@@ -6195,10 +6195,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-2ae539e733aa80839f61e266af70e029"
+      "url": "https://app.notion.com/p/VerfassungsR-Fall01-2ae539e733aa80839f61e266af70e029"
     },
     {
-      "title": "Fall 20",
+      "title": "SachenR Fall20",
       "status": "Nicht nachbereitet",
       "woche": 11,
       "datum": "2025-12-09",
@@ -6209,10 +6209,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-20-2ae539e733aa803ea11ae91e2dc32162"
+      "url": "https://app.notion.com/p/SachenR-Fall20-2ae539e733aa803ea11ae91e2dc32162"
     },
     {
-      "title": "Fall 19",
+      "title": "SachenR Fall19",
       "status": "In Bearbeitung",
       "woche": 11,
       "datum": "2025-12-09",
@@ -6223,10 +6223,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-19-2ae539e733aa809c8b58e7f46b6b9c25"
+      "url": "https://app.notion.com/p/SachenR-Fall19-2ae539e733aa809c8b58e7f46b6b9c25"
     },
     {
-      "title": "Fall 18",
+      "title": "SachenR Fall18",
       "status": "In Bearbeitung",
       "woche": 10,
       "datum": "2025-12-02",
@@ -6237,10 +6237,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-18-2ae539e733aa80e09722f74f16698e65"
+      "url": "https://app.notion.com/p/SachenR-Fall18-2ae539e733aa80e09722f74f16698e65"
     },
     {
-      "title": "Fall 17",
+      "title": "SachenR Fall17",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6251,10 +6251,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-17-2ae539e733aa804ba42eec0996a130e5"
+      "url": "https://app.notion.com/p/SachenR-Fall17-2ae539e733aa804ba42eec0996a130e5"
     },
     {
-      "title": "Fall 16",
+      "title": "SachenR Fall16",
       "status": "In Bearbeitung",
       "woche": 9,
       "datum": "2025-11-26",
@@ -6265,10 +6265,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-16-2ae539e733aa80a183fbe1e77da916e7"
+      "url": "https://app.notion.com/p/SachenR-Fall16-2ae539e733aa80a183fbe1e77da916e7"
     },
     {
-      "title": "Fall 15",
+      "title": "SachenR Fall15",
       "status": "In Bearbeitung",
       "woche": 9,
       "datum": "2025-11-26",
@@ -6279,10 +6279,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-15-2ae539e733aa80c2a801c387d1696eb8"
+      "url": "https://app.notion.com/p/SachenR-Fall15-2ae539e733aa80c2a801c387d1696eb8"
     },
     {
-      "title": "Fall 13",
+      "title": "SachenR Fall13",
       "status": "Nachbereitet",
       "woche": 8,
       "datum": "2025-11-19",
@@ -6293,10 +6293,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-2ab539e733aa8049b8aad427d2022b01"
+      "url": "https://app.notion.com/p/SachenR-Fall13-2ab539e733aa8049b8aad427d2022b01"
     },
     {
-      "title": "Fall 12",
+      "title": "SachenR Fall12",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6307,10 +6307,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-2ab539e733aa80f69b9ad6df3eecefdc"
+      "url": "https://app.notion.com/p/SachenR-Fall12-2ab539e733aa80f69b9ad6df3eecefdc"
     },
     {
-      "title": "Fall 14",
+      "title": "SachenR Fall14",
       "status": "In Bearbeitung",
       "woche": 8,
       "datum": "2025-11-19",
@@ -6321,10 +6321,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-2a1539e733aa80cb87f0ce901b5e315a"
+      "url": "https://app.notion.com/p/SachenR-Fall14-2a1539e733aa80cb87f0ce901b5e315a"
     },
     {
-      "title": "PolR - Fall 9",
+      "title": "SicherheitsR / PolizeiR Fall09",
       "status": "In Bearbeitung",
       "woche": 7,
       "datum": "2025-11-11",
@@ -6335,10 +6335,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-9-2a0539e733aa80e39c0ccd2ca27b91eb"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall09-2a0539e733aa80e39c0ccd2ca27b91eb"
     },
     {
-      "title": "PolR - Fall 8 (Vertiefungsfall)",
+      "title": "SicherheitsR / PolizeiR Fall08 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6349,10 +6349,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-8-Vertiefungsfall-2a0539e733aa80aba363e8c3a3f84302"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall08-Vertiefungsfall-2a0539e733aa80aba363e8c3a3f84302"
     },
     {
-      "title": "PolR - Fall 7",
+      "title": "SicherheitsR / PolizeiR Fall07",
       "status": "In Bearbeitung",
       "woche": 7,
       "datum": "2025-11-11",
@@ -6363,10 +6363,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-7-2a0539e733aa808cb389e83e7759ea94"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall07-2a0539e733aa808cb389e83e7759ea94"
     },
     {
-      "title": "PolR - Fall 6 (Vertiefungsfall)",
+      "title": "SicherheitsR / PolizeiR Fall06 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6377,10 +6377,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-6-Vertiefungsfall-2a0539e733aa800cb9b3e25e7c2fc9cc"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall06-Vertiefungsfall-2a0539e733aa800cb9b3e25e7c2fc9cc"
     },
     {
-      "title": "PolR - Fall 5 (Vertiefungsfall)",
+      "title": "SicherheitsR / PolizeiR Fall05 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6391,10 +6391,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-5-Vertiefungsfall-2a0539e733aa80ab983ecefdd341c6e2"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall05-Vertiefungsfall-2a0539e733aa80ab983ecefdd341c6e2"
     },
     {
-      "title": "PolR - Fall 4",
+      "title": "SicherheitsR / PolizeiR Fall04",
       "status": "In Bearbeitung",
       "woche": 6,
       "datum": "2025-11-04",
@@ -6405,10 +6405,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-4-2a0539e733aa8086bd07c6e5bd4dc25b"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall04-2a0539e733aa8086bd07c6e5bd4dc25b"
     },
     {
-      "title": "PolR - Fall 3",
+      "title": "SicherheitsR / PolizeiR Fall03",
       "status": "Nachbereitet",
       "woche": 6,
       "datum": "2025-11-04",
@@ -6419,10 +6419,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-3-2a0539e733aa8033a43dd3ea861a279a"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall03-2a0539e733aa8033a43dd3ea861a279a"
     },
     {
-      "title": "Fall 11  (Wiederholungsfall zur selbstständigen Bearbeitung)",
+      "title": "SachenR Fall11 (Wiederholungsfall zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6433,10 +6433,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-Wiederholungsfall-zur-selbstst-ndigen-Bearbeitung-29b539e733aa80efb675f77b1459b2e2"
+      "url": "https://app.notion.com/p/SachenR-Fall11-Wiederholungsfall-zur-selbstst-ndigen-Bearbeitung-29b539e733aa80efb675f77b1459b2e2"
     },
     {
-      "title": "Fall 10",
+      "title": "SachenR Fall10",
       "status": "Nicht nachbereitet",
       "woche": 7,
       "datum": "2025-11-12",
@@ -6447,10 +6447,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-29b539e733aa80a39a68dff8ead3d646"
+      "url": "https://app.notion.com/p/SachenR-Fall10-29b539e733aa80a39a68dff8ead3d646"
     },
     {
-      "title": "Fall 9",
+      "title": "SachenR Fall09",
       "status": "Nachbereitet",
       "woche": 7,
       "datum": "2025-11-12",
@@ -6461,10 +6461,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-29b539e733aa80f4bb82f71ad06ab323"
+      "url": "https://app.notion.com/p/SachenR-Fall09-29b539e733aa80f4bb82f71ad06ab323"
     },
     {
-      "title": "Fall 8",
+      "title": "SachenR Fall08",
       "status": "Nachbereitet",
       "woche": 7,
       "datum": "2025-11-12",
@@ -6475,10 +6475,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-29b539e733aa80f28615ecf24b8c438e"
+      "url": "https://app.notion.com/p/SachenR-Fall08-29b539e733aa80f28615ecf24b8c438e"
     },
     {
-      "title": "Fall 7",
+      "title": "SachenR Fall07",
       "status": "Nachbereitet",
       "woche": 5,
       "datum": "2025-10-29",
@@ -6489,10 +6489,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-29b539e733aa800f8ef2c98e3a6fa3e3"
+      "url": "https://app.notion.com/p/SachenR-Fall07-29b539e733aa800f8ef2c98e3a6fa3e3"
     },
     {
-      "title": "Fall 6",
+      "title": "SachenR Fall06",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6503,10 +6503,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-29b539e733aa808fb23fc37525b38cfc"
+      "url": "https://app.notion.com/p/SachenR-Fall06-29b539e733aa808fb23fc37525b38cfc"
     },
     {
-      "title": "Fall 5",
+      "title": "SachenR Fall05",
       "status": "Nachbereitet",
       "woche": 5,
       "datum": "2025-10-29",
@@ -6517,10 +6517,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-29b539e733aa80d9910cebabcd7af260"
+      "url": "https://app.notion.com/p/SachenR-Fall05-29b539e733aa80d9910cebabcd7af260"
     },
     {
-      "title": "Fall 2",
+      "title": "SachenR Fall02",
       "status": "In Bearbeitung",
       "woche": null,
       "datum": null,
@@ -6531,10 +6531,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-2-29b539e733aa80159cd5db6d43ab13eb"
+      "url": "https://app.notion.com/p/SachenR-Fall02-29b539e733aa80159cd5db6d43ab13eb"
     },
     {
-      "title": "Fall 4",
+      "title": "SachenR Fall04",
       "status": "Nicht nachbereitet",
       "woche": 4,
       "datum": "2025-10-22",
@@ -6545,10 +6545,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-4-295539e733aa80f89892ef3cd5f9e1c5"
+      "url": "https://app.notion.com/p/SachenR-Fall04-295539e733aa80f89892ef3cd5f9e1c5"
     },
     {
-      "title": "Fall 3",
+      "title": "SachenR Fall03",
       "status": "In Bearbeitung",
       "woche": 4,
       "datum": "2025-10-22",
@@ -6559,10 +6559,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-3-295539e733aa80328122edf5eae1ad8d"
+      "url": "https://app.notion.com/p/SachenR-Fall03-295539e733aa80328122edf5eae1ad8d"
     },
     {
-      "title": "Fall 1",
+      "title": "SachenR Fall01",
       "status": "Nachbereitet",
       "woche": 14,
       "datum": "2025-12-30",
@@ -6573,7 +6573,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-1-295539e733aa80df8c34e579946f6949"
+      "url": "https://app.notion.com/p/SachenR-Fall01-295539e733aa80df8c34e579946f6949"
     },
     {
       "title": "KLK 2122 - abgegeben am 21.10.25",
@@ -6593,7 +6593,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2122-abgegeben-am-21-10-25-293539e733aa8090a860f7eb7987f6c7"
     },
     {
-      "title": "Fall 15",
+      "title": "SchuldR BT 2 Fall15",
       "status": "In Bearbeitung",
       "woche": 53,
       "datum": "2026-10-02",
@@ -6604,10 +6604,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-15-28c539e733aa80dcb9a9d202d7faac9c"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall15-28c539e733aa80dcb9a9d202d7faac9c"
     },
     {
-      "title": "Fall 14 (Vertiefungsfall zur Kausalität und Zurechnungsfragen)",
+      "title": "SchuldR BT 2 Fall14 (Vertiefungsfall zur Kausalität und Zurechnungsfragen)",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-09-30",
@@ -6618,10 +6618,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-14-Vertiefungsfall-zur-Kausalit-t-und-Zurechnungsfragen-28c539e733aa807baa4fcac237afd514"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall14-Vertiefungsfall-zur-Kausalit-t-und-Zurechnungsfragen-28c539e733aa807baa4fcac237afd514"
     },
     {
-      "title": "Fall 18 (abschließender Vertiefungsfall)",
+      "title": "SchuldR BT 2 Fall18 (abschließender Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": null,
       "datum": null,
@@ -6632,10 +6632,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-18-abschlie-ender-Vertiefungsfall-28c539e733aa8062a6b8fa4dd89daaf4"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall18-abschlie-ender-Vertiefungsfall-28c539e733aa8062a6b8fa4dd89daaf4"
     },
     {
-      "title": "Fall 17",
+      "title": "SchuldR BT 2 Fall17",
       "status": "In Bearbeitung",
       "woche": 3,
       "datum": "2025-10-14",
@@ -6646,10 +6646,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-17-28c539e733aa803599cad5054a1c6522"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall17-28c539e733aa803599cad5054a1c6522"
     },
     {
-      "title": "Fall 16",
+      "title": "SchuldR BT 2 Fall16",
       "status": "Nachbereitet",
       "woche": 3,
       "datum": "2025-10-14",
@@ -6660,10 +6660,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-16-28c539e733aa80c9a719e1da5775c761"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall16-28c539e733aa80c9a719e1da5775c761"
     },
     {
-      "title": "PolR - Fall 2",
+      "title": "SicherheitsR / PolizeiR Fall02",
       "status": "In Bearbeitung",
       "woche": 3,
       "datum": "2025-10-15",
@@ -6674,10 +6674,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-2-28c539e733aa8065a2fee53f20d5d5c8"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall02-28c539e733aa8065a2fee53f20d5d5c8"
     },
     {
-      "title": "PolR - Fall 1",
+      "title": "SicherheitsR / PolizeiR Fall01",
       "status": "Nachbereitet",
       "woche": 3,
       "datum": "2025-10-15",
@@ -6688,7 +6688,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/PolR-Fall-1-28c539e733aa803786abfc2e88bf27cc"
+      "url": "https://app.notion.com/p/SicherheitsR-PolizeiR-Fall01-28c539e733aa803786abfc2e88bf27cc"
     },
     {
       "title": "KLK 2121 - abgeben am 11.10.25",
@@ -6719,7 +6719,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2120-nicht-abgegeben-nicht-angeh-rt-286539e733aa802ba52ceb4e2920092a"
     },
     {
-      "title": "Fall 9",
+      "title": "KommunalR Fall09",
       "status": "In Bearbeitung",
       "woche": 2,
       "datum": "2025-10-08",
@@ -6730,10 +6730,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-285539e733aa8048b31ed45ca9b06ac2"
+      "url": "https://app.notion.com/p/KommunalR-Fall09-285539e733aa8048b31ed45ca9b06ac2"
     },
     {
-      "title": "Fall 8",
+      "title": "KommunalR Fall08",
       "status": "Nachbereitet",
       "woche": 2,
       "datum": "2025-10-08",
@@ -6744,10 +6744,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-285539e733aa80f8ae38c06970865dc1"
+      "url": "https://app.notion.com/p/KommunalR-Fall08-285539e733aa80f8ae38c06970865dc1"
     },
     {
-      "title": "Fall 12 (Hausaufgabe)",
+      "title": "SchuldR BT 2 Fall12 (Hausaufgabe)",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-09-30",
@@ -6758,10 +6758,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-12-Hausaufgabe-285539e733aa807e9911e63c73d5a1ff"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall12-Hausaufgabe-285539e733aa807e9911e63c73d5a1ff"
     },
     {
-      "title": "Fall 11 (Hausaufgabe)",
+      "title": "SchuldR BT 2 Fall11 (Hausaufgabe)",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-09-29",
@@ -6772,10 +6772,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-11-Hausaufgabe-285539e733aa80d5bb70d0311c8229e7"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall11-Hausaufgabe-285539e733aa80d5bb70d0311c8229e7"
     },
     {
-      "title": "Fall 13",
+      "title": "SchuldR BT 2 Fall13",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-09-30",
@@ -6786,10 +6786,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-13-285539e733aa80a4b8b0ffdb4d36c195"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall13-285539e733aa80a4b8b0ffdb4d36c195"
     },
     {
-      "title": "Fall 10",
+      "title": "SchuldR BT 2 Fall10",
       "status": "Nachbereitet",
       "woche": 2,
       "datum": "2025-10-07",
@@ -6800,10 +6800,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-10-285539e733aa8001b683f554239b719e"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall10-285539e733aa8001b683f554239b719e"
     },
     {
-      "title": "Fall 7 (Vertiefung)",
+      "title": "KommunalR Fall07 (Vertiefung)",
       "status": "In Bearbeitung",
       "woche": 1,
       "datum": "2025-10-01",
@@ -6814,10 +6814,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-7-Vertiefung-27f539e733aa80d2a030ffcfe378fcca"
+      "url": "https://app.notion.com/p/KommunalR-Fall07-Vertiefung-27f539e733aa80d2a030ffcfe378fcca"
     },
     {
-      "title": "Fall 6",
+      "title": "KommunalR Fall06",
       "status": "In Bearbeitung",
       "woche": 1,
       "datum": "2025-10-01",
@@ -6828,7 +6828,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-6-27f539e733aa80919c19ec2164620c60"
+      "url": "https://app.notion.com/p/KommunalR-Fall06-27f539e733aa80919c19ec2164620c60"
     },
     {
       "title": "KLK 2119 - abgegeben am 27.9.25",
@@ -6846,7 +6846,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2119-abgegeben-am-27-9-25-27d539e733aa80b0a628e948881c2fe4"
     },
     {
-      "title": "Fall 9",
+      "title": "SchuldR BT 2 Fall09",
       "status": "Nachbereitet",
       "woche": 1,
       "datum": "2025-09-30",
@@ -6857,10 +6857,10 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-9-27d539e733aa8005b6aacef51d90e4a6"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall09-27d539e733aa8005b6aacef51d90e4a6"
     },
     {
-      "title": "Fall 8",
+      "title": "SchuldR BT 2 Fall08",
       "status": "Nachbereitet",
       "woche": 1,
       "datum": "2025-09-30",
@@ -6871,7 +6871,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-8-27d539e733aa8038b2c0e2166cf9d4b2"
+      "url": "https://app.notion.com/p/SchuldR-BT-2-Fall08-27d539e733aa8038b2c0e2166cf9d4b2"
     },
     {
       "title": "KLK 2118 - nicht abgegeben, angehört",
@@ -6904,7 +6904,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KLK-2117-nicht-abgegeben-angeh-rt-278539e733aa80e58d6fd0b24337f1db"
     },
     {
-      "title": "Fall 5",
+      "title": "KommunalR Fall05",
       "status": "Nachbereitet",
       "woche": 1,
       "datum": "2025-09-24",
@@ -6915,7 +6915,7 @@ window.NOTION_DATA = {
       "typ": "Hauptkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Fall-5-278539e733aa80e7b62df80522c2b458"
+      "url": "https://app.notion.com/p/KommunalR-Fall05-278539e733aa80e7b62df80522c2b458"
     }
   ],
   "stats": {
