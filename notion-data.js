@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.09.2026 16:10",
+  "lastSync": "28.09.2026 17:12",
   "anki": {
     "reviewedToday": 152,
     "dueNow": 4939,
@@ -1225,7 +1225,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-28"
   },
   "ankiFach": {
-    "stand": "28.09.2026 16:10",
+    "stand": "28.09.2026 17:12",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1236,8 +1236,8 @@ window.NOTION_DATA = {
         "faellig": 1744
       },
       "Öffentliches Recht": {
-        "total": 868,
-        "neu": 0,
+        "total": 871,
+        "neu": 3,
         "lernen": 529,
         "aufbau": 83,
         "sitzt": 256,
@@ -1254,7 +1254,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "28.09.2026 16:10",
+    "stand": "28.09.2026 17:12",
     "datum": "2026-09-28",
     "faelle": [],
     "gebiet": "5 VerwaltungsR AT",
@@ -1275,13 +1275,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "28.09.2026 16:10",
+    "stand": "28.09.2026 17:12",
     "tage": [
       {
         "datum": "2026-09-28",
         "karten": 90,
         "neu": 0,
-        "angelegt": 0,
+        "angelegt": 3,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1370,7 +1370,12 @@ window.NOTION_DATA = {
             "n": 3
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "KommunalR · Fall 1",
+            "n": 3
+          }
+        ]
       },
       {
         "datum": "2026-09-27",
