@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.09.2026 17:12",
+  "lastSync": "28.09.2026 18:25",
   "anki": {
     "reviewedToday": 152,
     "dueNow": 4939,
@@ -1225,7 +1225,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-28"
   },
   "ankiFach": {
-    "stand": "28.09.2026 17:12",
+    "stand": "28.09.2026 18:25",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1236,8 +1236,8 @@ window.NOTION_DATA = {
         "faellig": 1744
       },
       "Öffentliches Recht": {
-        "total": 871,
-        "neu": 3,
+        "total": 877,
+        "neu": 9,
         "lernen": 529,
         "aufbau": 83,
         "sitzt": 256,
@@ -1254,15 +1254,17 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "28.09.2026 17:12",
+    "stand": "28.09.2026 18:25",
     "datum": "2026-09-28",
-    "faelle": [],
+    "faelle": [
+      "KommunalR · Fall 1"
+    ],
     "gebiet": "5 VerwaltungsR AT",
     "fach": "Öffentliches Recht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 9
+        "offen": 33
       },
       {
         "name": "Anschluss",
@@ -1275,13 +1277,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "28.09.2026 17:12",
+    "stand": "28.09.2026 18:25",
     "tage": [
       {
         "datum": "2026-09-28",
         "karten": 90,
         "neu": 0,
-        "angelegt": 3,
+        "angelegt": 9,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1373,7 +1375,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "KommunalR · Fall 1",
-            "n": 3
+            "n": 9
           }
         ]
       },
@@ -2072,7 +2074,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 53,
-    "nachbereitet": 144
+    "nachbereitet": 145
   },
   "cases": [
     {
@@ -5549,7 +5551,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KommunalR Fall01",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 53,
       "datum": "2026-09-28",
       "rechtsgebiet": [
@@ -6967,8 +6969,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 144,
-    "inBearbeitung": 28,
+    "nachbereitet": 145,
+    "inBearbeitung": 27,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 27
