@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.09.2026 14:54",
+  "lastSync": "28.09.2026 16:10",
   "anki": {
-    "reviewedToday": 81,
-    "dueNow": 4982,
+    "reviewedToday": 152,
+    "dueNow": 4939,
     "history": [
       {
         "date": "2025-09-29",
@@ -1219,13 +1219,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-28",
-        "count": 81
+        "count": 152
       }
     ],
     "stand": "2026-09-28"
   },
   "ankiFach": {
-    "stand": "28.09.2026 14:54",
+    "stand": "28.09.2026 16:10",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1233,7 +1233,7 @@ window.NOTION_DATA = {
         "lernen": 801,
         "aufbau": 167,
         "sitzt": 1069,
-        "faellig": 1756
+        "faellig": 1744
       },
       "Öffentliches Recht": {
         "total": 868,
@@ -1241,7 +1241,7 @@ window.NOTION_DATA = {
         "lernen": 529,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 799
+        "faellig": 772
       },
       "Strafrecht": {
         "total": 706,
@@ -1249,12 +1249,12 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 656
+        "faellig": 652
       }
     }
   },
   "wiederholung": {
-    "stand": "28.09.2026 14:54",
+    "stand": "28.09.2026 16:10",
     "datum": "2026-09-28",
     "faelle": [],
     "gebiet": "5 VerwaltungsR AT",
@@ -1266,32 +1266,37 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 30
+        "offen": 10
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 20
+        "offen": 10
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "28.09.2026 14:54",
+    "stand": "28.09.2026 16:10",
     "tage": [
       {
         "datum": "2026-09-28",
-        "karten": 58,
+        "karten": 90,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 25
+            "n": 31
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 20
           },
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
-            "n": 12
+            "n": 13
           },
           {
             "fach": "Zivilrecht",
@@ -1301,7 +1306,7 @@ window.NOTION_DATA = {
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR BT",
-            "n": 6
+            "n": 7
           },
           {
             "fach": "Öffentliches Recht",
@@ -1311,12 +1316,12 @@ window.NOTION_DATA = {
           {
             "fach": "Öffentliches Recht",
             "gebiet": "3 Grundrechte",
-            "n": 2
+            "n": 4
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "1 EuropaR",
-            "n": 1
+            "n": 3
           }
         ],
         "faelle": [
@@ -1325,28 +1330,44 @@ window.NOTION_DATA = {
             "n": 15
           },
           {
+            "name": "EuropaR · Fall 05",
+            "n": 11
+          },
+          {
             "name": "StGB · Fall 05",
             "n": 10
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 8
           },
           {
             "name": "ArbR · Fall 09",
             "n": 7
           },
           {
-            "name": "EuropaR · Fall 05",
+            "name": "SchuldRBT2 · Fall 01",
             "n": 7
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 6
           },
           {
             "name": "SchuldRBT2 · Fall 03",
             "n": 5
           },
           {
+            "name": "BauR · Fall 03",
+            "n": 5
+          },
+          {
             "name": "SchuldRBT2 · Fall 02",
             "n": 4
+          },
+          {
+            "name": "BauR · Fall 06",
+            "n": 3
+          },
+          {
+            "name": "EuropaR · Fall 03",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
