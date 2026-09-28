@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.09.2026 18:25",
+  "lastSync": "28.09.2026 20:53",
   "anki": {
     "reviewedToday": 152,
     "dueNow": 4939,
@@ -3854,7 +3854,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SchuldR BT 2 Fall07",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 53,
       "datum": "2026-09-28",
       "rechtsgebiet": [
@@ -6970,7 +6970,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 145,
-    "inBearbeitung": 27,
+    "inBearbeitung": 28,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 27
