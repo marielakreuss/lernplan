@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.09.2026 22:40",
+  "lastSync": "28.09.2026 13:50",
   "anki": {
     "reviewedToday": 104,
     "dueNow": 4955,
@@ -1221,7 +1221,7 @@ window.NOTION_DATA = {
     "stand": "2026-09-27"
   },
   "ankiFach": {
-    "stand": "27.09.2026 20:57",
+    "stand": "27.09.2026 21:58",
     "faecher": {
       "Zivilrecht": {
         "total": 2037,
@@ -1250,7 +1250,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "27.09.2026 20:57",
+    "stand": "27.09.2026 21:58",
     "datum": "2026-09-27",
     "faelle": [
       "StGB · Fall 01",
@@ -1278,7 +1278,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.09.2026 20:57",
+    "stand": "27.09.2026 21:58",
     "tage": [
       {
         "datum": "2026-09-27",
@@ -2023,7 +2023,7 @@ window.NOTION_DATA = {
     ]
   },
   "rhythmCheck": {
-    "currentWeek": 52,
+    "currentWeek": 53,
     "nachbereitet": 144
   },
   "cases": [
