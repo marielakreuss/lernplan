@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "29.09.2026 11:52",
+  "lastSync": "29.09.2026 16:20",
   "anki": {
-    "reviewedToday": 152,
-    "dueNow": 4939,
+    "reviewedToday": 86,
+    "dueNow": 4985,
     "history": [
       {
         "date": "2025-09-29",
@@ -1220,28 +1220,32 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-28",
         "count": 152
+      },
+      {
+        "date": "2026-09-29",
+        "count": 86
       }
     ],
-    "stand": "2026-09-28"
+    "stand": "2026-09-29"
   },
   "ankiFach": {
-    "stand": "28.09.2026 18:25",
+    "stand": "29.09.2026 16:20",
     "faecher": {
       "Zivilrecht": {
-        "total": 2037,
+        "total": 2039,
         "neu": 0,
-        "lernen": 801,
+        "lernen": 806,
         "aufbau": 167,
-        "sitzt": 1069,
-        "faellig": 1744
+        "sitzt": 1066,
+        "faellig": 1758
       },
       "Öffentliches Recht": {
         "total": 877,
-        "neu": 9,
-        "lernen": 529,
+        "neu": 0,
+        "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 772
+        "faellig": 788
       },
       "Strafrecht": {
         "total": 706,
@@ -1249,41 +1253,121 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 652
+        "faellig": 668
       }
     }
   },
   "wiederholung": {
-    "stand": "28.09.2026 18:25",
-    "datum": "2026-09-28",
+    "stand": "29.09.2026 16:20",
+    "datum": "2026-09-29",
     "faelle": [
+      "HGB · Fall 05",
+      "SchuldRBT2 · Fall 07",
+      "SchuldRBT2 · Fall 08",
       "KommunalR · Fall 1"
     ],
-    "gebiet": "5 VerwaltungsR AT",
-    "fach": "Öffentliches Recht",
+    "gebiet": "2 SchuldR AT",
+    "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 33
+        "offen": 1
       },
       {
         "name": "Anschluss",
-        "offen": 10
+        "offen": 45
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 10
+        "offen": 20
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "28.09.2026 18:25",
+    "stand": "29.09.2026 16:20",
     "tage": [
+      {
+        "datum": "2026-09-29",
+        "karten": 60,
+        "neu": 11,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 15
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 11
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 9
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 9
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 6
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "8 HandelsR",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "9 GesellschaftsR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "KommunalR · Fall 1",
+            "n": 19
+          },
+          {
+            "name": "SchuldRBT2 · Fall 08",
+            "n": 14
+          },
+          {
+            "name": "HGB · Fall 05",
+            "n": 13
+          },
+          {
+            "name": "SchuldRBT2 · Fall 07",
+            "n": 6
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-09-28",
         "karten": 90,
         "neu": 0,
-        "angelegt": 9,
+        "angelegt": 11,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -2016,59 +2100,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-09-08",
-        "karten": 71,
-        "neu": 35,
-        "angelegt": 35,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 71
-          }
-        ],
-        "faelle": [
-          {
-            "name": "ArbR · Fall 09",
-            "n": 19
-          },
-          {
-            "name": "ArbR · Fall 10",
-            "n": 16
-          },
-          {
-            "name": "ArbR · Fall 01",
-            "n": 14
-          },
-          {
-            "name": "ArbR · Fall 03",
-            "n": 7
-          },
-          {
-            "name": "ArbR · Fall 08",
-            "n": 6
-          },
-          {
-            "name": "ArbR · Fall 02",
-            "n": 4
-          },
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 4
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "ArbR · Fall 09",
-            "n": 19
-          },
-          {
-            "name": "ArbR · Fall 10",
-            "n": 16
-          }
-        ]
       }
     ]
   },
@@ -2090,7 +2121,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-8-Strafbarkeitsrisiken-II-3e5539e733aa8106aacaefadca70bb86"
     },
     {
-      "title": "Konrad 4 - Taching",
+      "title": "Konrad 4: Taching",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-03",
@@ -2526,15 +2557,17 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-1486-nicht-abgegeben-3df539e733aa80689c9cd5175c2754c6"
     },
     {
-      "title": "Konrad 3 - Geld für die Uhrenindustrie",
+      "title": "Konrad 3: Geld für die Uhrenindustrie",
       "status": "Nicht nachbereitet",
       "woche": 52,
       "datum": "2026-09-26",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "VerfassungsR"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/Konrad-3-Geld-f-r-die-Uhrenindustrie-3df539e733aa801294f4ff7ab5e24408"
     },
     {
@@ -2558,7 +2591,7 @@ window.NOTION_DATA = {
         "BGB AT",
         "HGB"
       ],
-      "fach": "",
+      "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
@@ -6973,6 +7006,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 28,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 27
+    "klkAbgegeben": 28
   }
 };
