@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "29.09.2026 17:21",
+  "lastSync": "29.09.2026 18:23",
   "anki": {
     "reviewedToday": 184,
     "dueNow": 4920,
@@ -1229,11 +1229,11 @@ window.NOTION_DATA = {
     "stand": "2026-09-29"
   },
   "ankiFach": {
-    "stand": "29.09.2026 17:21",
+    "stand": "29.09.2026 18:22",
     "faecher": {
       "Zivilrecht": {
-        "total": 2040,
-        "neu": 1,
+        "total": 2045,
+        "neu": 6,
         "lernen": 812,
         "aufbau": 159,
         "sitzt": 1068,
@@ -1258,7 +1258,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "29.09.2026 17:21",
+    "stand": "29.09.2026 18:22",
     "datum": "2026-09-29",
     "faelle": [
       "HGB · Fall 05",
@@ -1284,13 +1284,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "29.09.2026 17:21",
+    "stand": "29.09.2026 18:22",
     "tage": [
       {
         "datum": "2026-09-29",
         "karten": 125,
         "neu": 11,
-        "angelegt": 1,
+        "angelegt": 6,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1409,7 +1409,12 @@ window.NOTION_DATA = {
             "n": 3
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "SchuldRBT2 · Fall 11",
+            "n": 5
+          }
+        ]
       },
       {
         "datum": "2026-09-28",
@@ -2153,7 +2158,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 53,
-    "nachbereitet": 145
+    "nachbereitet": 146
   },
   "cases": [
     {
@@ -3935,7 +3940,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SchuldR BT 2 Fall07",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 53,
       "datum": "2026-09-28",
       "rechtsgebiet": [
@@ -7050,8 +7055,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 145,
-    "inBearbeitung": 28,
+    "nachbereitet": 146,
+    "inBearbeitung": 27,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 28
