@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "30.09.2026 12:48",
+  "lastSync": "30.09.2026 11:39",
   "anki": {
     "reviewedToday": 99,
     "dueNow": 4940,
@@ -2262,7 +2262,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 53,
-    "nachbereitet": 147
+    "nachbereitet": 148
   },
   "cases": [
     {
@@ -6988,7 +6988,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SchuldR BT 2 Fall12 (Hausaufgabe)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 53,
       "datum": "2026-09-30",
       "rechtsgebiet": [
@@ -7159,7 +7159,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 147,
+    "nachbereitet": 148,
     "inBearbeitung": 27,
     "total": 352,
     "klkGesamt": 97,
