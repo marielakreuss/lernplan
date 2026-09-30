@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "29.09.2026 23:16",
+  "lastSync": "30.09.2026 08:07",
   "anki": {
     "reviewedToday": 184,
     "dueNow": 4920,
