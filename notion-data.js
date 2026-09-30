@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "30.09.2026 09:08",
+  "lastSync": "30.09.2026 12:48",
   "anki": {
-    "reviewedToday": 49,
-    "dueNow": 4977,
+    "reviewedToday": 99,
+    "dueNow": 4940,
     "history": [
       {
         "date": "2025-09-29",
@@ -1227,13 +1227,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-09-30",
-        "count": 49
+        "count": 99
       }
     ],
     "stand": "2026-09-30"
   },
   "ankiFach": {
-    "stand": "30.09.2026 09:08",
+    "stand": "30.09.2026 12:48",
     "faecher": {
       "Zivilrecht": {
         "total": 2045,
@@ -1241,7 +1241,7 @@ window.NOTION_DATA = {
         "lernen": 822,
         "aufbau": 159,
         "sitzt": 1064,
-        "faellig": 1739
+        "faellig": 1722
       },
       "Öffentliches Recht": {
         "total": 877,
@@ -1249,7 +1249,7 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 799
+        "faellig": 793
       },
       "Strafrecht": {
         "total": 706,
@@ -1257,12 +1257,12 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 666
+        "faellig": 654
       }
     }
   },
   "wiederholung": {
-    "stand": "30.09.2026 09:08",
+    "stand": "30.09.2026 12:48",
     "datum": "2026-09-30",
     "faelle": [
       "SchuldRBT2 · Fall 07",
@@ -1277,7 +1277,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 40
+        "offen": 10
       },
       {
         "name": "Rechtsgebiet",
@@ -1286,18 +1286,28 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "30.09.2026 09:08",
+    "stand": "30.09.2026 12:48",
     "tage": [
       {
         "datum": "2026-09-30",
-        "karten": 34,
+        "karten": 63,
         "neu": 6,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 16
+            "n": 30
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 8
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 7
           },
           {
             "fach": "Zivilrecht",
@@ -1305,23 +1315,33 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 4
-          },
-          {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
             "n": 4
           },
           {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
             "n": 3
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 1
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "9 GesellschaftsR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "1 EuropaR",
             "n": 1
           },
           {
@@ -1332,6 +1352,18 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 9
+          },
+          {
+            "name": "SchuldRBT2 · Fall 01",
+            "n": 7
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 5
+          },
+          {
             "name": "SchuldRBT2 · Fall 07",
             "n": 5
           },
@@ -1340,12 +1372,20 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
-            "name": "SchuldRBT2 · Fall 01",
+            "name": "EuropaR · Fall 05",
+            "n": 5
+          },
+          {
+            "name": "StGB · Fall 02",
             "n": 4
           },
           {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 4
+            "name": "StGB · Fall 05",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT2 · Fall 02",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
