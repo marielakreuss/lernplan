@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "30.09.2026 08:07",
+  "lastSync": "30.09.2026 09:08",
   "anki": {
-    "reviewedToday": 184,
-    "dueNow": 4920,
+    "reviewedToday": 49,
+    "dueNow": 4977,
     "history": [
       {
         "date": "2025-09-29",
@@ -1224,20 +1224,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-29",
         "count": 184
+      },
+      {
+        "date": "2026-09-30",
+        "count": 49
       }
     ],
-    "stand": "2026-09-29"
+    "stand": "2026-09-30"
   },
   "ankiFach": {
-    "stand": "29.09.2026 18:22",
+    "stand": "30.09.2026 09:08",
     "faecher": {
       "Zivilrecht": {
         "total": 2045,
-        "neu": 6,
-        "lernen": 812,
+        "neu": 0,
+        "lernen": 822,
         "aufbau": 159,
-        "sitzt": 1068,
-        "faellig": 1715
+        "sitzt": 1064,
+        "faellig": 1739
       },
       "Öffentliches Recht": {
         "total": 877,
@@ -1245,7 +1249,7 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 778
+        "faellig": 799
       },
       "Strafrecht": {
         "total": 706,
@@ -1253,39 +1257,99 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 656
+        "faellig": 666
       }
     }
   },
   "wiederholung": {
-    "stand": "29.09.2026 18:22",
-    "datum": "2026-09-29",
+    "stand": "30.09.2026 09:08",
+    "datum": "2026-09-30",
     "faelle": [
-      "HGB · Fall 05",
       "SchuldRBT2 · Fall 07",
-      "SchuldRBT2 · Fall 08",
-      "KommunalR · Fall 1"
+      "SchuldRBT2 · Fall 11"
     ],
-    "gebiet": "2 SchuldR AT",
-    "fach": "Zivilrecht",
+    "gebiet": "StPO",
+    "fach": "Strafrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 1
+        "offen": 3
       },
       {
         "name": "Anschluss",
-        "offen": 0
+        "offen": 40
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 0
+        "offen": 20
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "29.09.2026 18:22",
+    "stand": "30.09.2026 09:08",
     "tage": [
+      {
+        "datum": "2026-09-30",
+        "karten": 34,
+        "neu": 6,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 16
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 5
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 4
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "9 GesellschaftsR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 07",
+            "n": 5
+          },
+          {
+            "name": "SchuldRBT2 · Fall 11",
+            "n": 5
+          },
+          {
+            "name": "SchuldRBT2 · Fall 01",
+            "n": 4
+          },
+          {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-09-29",
         "karten": 125,
