@@ -1746,8 +1746,6 @@
     <div class="stat glass">
       <div class="s-label">Klausuren abgegeben</div>
       <div class="s-value" id="klk-abg-count">—</div>
-      <div class="s-track"><i id="klk-abg-track" style="width:0%"></i></div>
-      <div class="s-sub" id="klk-abg-sub">—</div>
     </div>
     <div class="stat glass">
       <div class="s-label">Karten letzte 7 Tage</div>
@@ -2847,11 +2845,7 @@
       p + '% · ' + k.inArbeit + ' in Bearbeitung · ' + (k.gesamt - k.nachbereitet - k.inArbeit) + ' offen';
     requestAnimationFrame(() => { document.getElementById('klk-track').style.width = p + '%'; });
 
-    const pa = k.gesamt ? Math.round(k.abgegeben / k.gesamt * 100) : 0;
-    document.getElementById('klk-abg-count').innerHTML = k.abgegeben + '<small>/ ' + k.gesamt + '</small>';
-    document.getElementById('klk-abg-sub').textContent =
-      pa + '% geschrieben · ' + Math.max(0, k.abgegeben - k.nachbereitet) + ' warten auf Nachbereitung';
-    requestAnimationFrame(() => { document.getElementById('klk-abg-track').style.width = pa + '%'; });
+    document.getElementById('klk-abg-count').textContent = k.abgegeben;
   }
   updateKlausurenCounter();
 
