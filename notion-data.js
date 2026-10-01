@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "01.10.2026 14:23",
+  "lastSync": "01.10.2026 18:32",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5018,
@@ -1233,7 +1233,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-01"
   },
   "ankiFach": {
-    "stand": "01.10.2026 14:23",
+    "stand": "01.10.2026 18:32",
     "faecher": {
       "Zivilrecht": {
         "total": 2068,
@@ -1262,7 +1262,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "01.10.2026 14:23",
+    "stand": "01.10.2026 18:32",
     "datum": "2026-10-01",
     "faelle": [
       "SchuldRBT2 · Fall 10",
@@ -1288,7 +1288,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "01.10.2026 14:23",
+    "stand": "01.10.2026 18:32",
     "tage": [
       {
         "datum": "2026-09-30",
@@ -2457,16 +2457,22 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-3212-3e5539e733aa8197aaa5ea68463ba47c"
     },
     {
-      "title": "KW 6 - Traktor auf Abwegen",
+      "title": "KW 6 - Traktor auf Abwegen (nur Teil 1 abgegeben, keine Zeit mehr)",
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-01",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "HGB",
+        "ZPO I",
+        "SchuldR AT",
+        "SchuldR BT 2",
+        "BGB AT"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
-      "url": "https://app.notion.com/p/KW-6-Traktor-auf-Abwegen-3e5539e733aa81a28b9cda45666d31e0"
+      "abgegeben": true,
+      "url": "https://app.notion.com/p/KW-6-Traktor-auf-Abwegen-nur-Teil-1-abgegeben-keine-Zeit-mehr-3e5539e733aa81a28b9cda45666d31e0"
     },
     {
       "title": "KW 9 - Waschanlage Caracas",
@@ -7174,6 +7180,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 27,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 28
+    "klkAbgegeben": 29
   }
 };
