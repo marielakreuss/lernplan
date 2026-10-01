@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "01.10.2026 18:32",
+  "lastSync": "01.10.2026 21:29",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5018,
@@ -1233,7 +1233,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-01"
   },
   "ankiFach": {
-    "stand": "01.10.2026 18:32",
+    "stand": "01.10.2026 21:29",
     "faecher": {
       "Zivilrecht": {
         "total": 2068,
@@ -1262,7 +1262,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "01.10.2026 18:32",
+    "stand": "01.10.2026 21:29",
     "datum": "2026-10-01",
     "faelle": [
       "SchuldRBT2 · Fall 10",
@@ -1288,7 +1288,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "01.10.2026 18:32",
+    "stand": "01.10.2026 21:29",
     "tage": [
       {
         "datum": "2026-09-30",
@@ -1504,16 +1504,16 @@ window.NOTION_DATA = {
             "n": 6
           },
           {
-            "name": "SchuldRBT2 · Fall 04",
-            "n": 5
-          },
-          {
             "name": "SchuldRBT2 · Fall 06",
             "n": 5
           },
           {
             "name": "EuropaR · Fall 05",
             "n": 5
+          },
+          {
+            "name": "SchuldRBT2 · Fall 04",
+            "n": 4
           },
           {
             "name": "SchuldRAT · Fall 11",
@@ -1800,7 +1800,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 04",
-            "n": 10
+            "n": 9
           },
           {
             "name": "StGB · Fall 02",
@@ -1818,7 +1818,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 04",
-            "n": 9
+            "n": 8
           },
           {
             "name": "StGB · Fall 02",
