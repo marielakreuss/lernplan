@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "01.10.2026 12:08",
+  "lastSync": "01.10.2026 14:23",
   "anki": {
-    "reviewedToday": 99,
-    "dueNow": 4940,
+    "reviewedToday": 0,
+    "dueNow": 5018,
     "history": [
       {
         "date": "2025-09-29",
@@ -1230,18 +1230,18 @@ window.NOTION_DATA = {
         "count": 99
       }
     ],
-    "stand": "2026-09-30"
+    "stand": "2026-10-01"
   },
   "ankiFach": {
-    "stand": "30.09.2026 16:38",
+    "stand": "01.10.2026 14:23",
     "faecher": {
       "Zivilrecht": {
-        "total": 2067,
-        "neu": 22,
+        "total": 2068,
+        "neu": 23,
         "lernen": 822,
         "aufbau": 159,
         "sitzt": 1064,
-        "faellig": 1722
+        "faellig": 1777
       },
       "Öffentliches Recht": {
         "total": 877,
@@ -1249,7 +1249,7 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 793
+        "faellig": 802
       },
       "Strafrecht": {
         "total": 706,
@@ -1257,27 +1257,29 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 654
+        "faellig": 668
       }
     }
   },
   "wiederholung": {
-    "stand": "30.09.2026 16:38",
-    "datum": "2026-09-30",
+    "stand": "01.10.2026 14:23",
+    "datum": "2026-10-01",
     "faelle": [
-      "SchuldRBT2 · Fall 07",
-      "SchuldRBT2 · Fall 11"
+      "SchuldRBT2 · Fall 10",
+      "SchuldRBT2 · Fall 11",
+      "SchuldRBT2 · Fall 12",
+      "SchuldRBT2 · Fall 13"
     ],
-    "gebiet": "StPO",
-    "fach": "Strafrecht",
+    "gebiet": "5 Erbrecht",
+    "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 3
+        "offen": 60
       },
       {
         "name": "Anschluss",
-        "offen": 10
+        "offen": 45
       },
       {
         "name": "Rechtsgebiet",
@@ -1286,13 +1288,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "30.09.2026 16:38",
+    "stand": "01.10.2026 14:23",
     "tage": [
       {
         "datum": "2026-09-30",
         "karten": 63,
         "neu": 6,
-        "angelegt": 22,
+        "angelegt": 23,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1391,7 +1393,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "SchuldRBT2 · Fall 13",
-            "n": 18
+            "n": 19
           },
           {
             "name": "SchuldRBT2 · Fall 11",
