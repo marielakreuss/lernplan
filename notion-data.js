@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.10.2026 17:49",
+  "lastSync": "02.10.2026 21:35",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5040,
+    "reviewedToday": 5,
+    "dueNow": 5025,
     "history": [
       {
         "date": "2025-09-29",
@@ -1228,12 +1228,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-09-30",
         "count": 99
+      },
+      {
+        "date": "2026-10-02",
+        "count": 5
       }
     ],
     "stand": "2026-10-02"
   },
   "ankiFach": {
-    "stand": "02.10.2026 17:49",
+    "stand": "02.10.2026 21:35",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
@@ -1241,11 +1245,11 @@ window.NOTION_DATA = {
         "lernen": 822,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1791
+        "faellig": 1776
       },
       "Öffentliches Recht": {
-        "total": 881,
-        "neu": 4,
+        "total": 899,
+        "neu": 22,
         "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
@@ -1262,20 +1266,29 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "02.10.2026 17:49",
+    "stand": "02.10.2026 21:35",
     "datum": "2026-10-02",
     "faelle": [
+      "ZR · 06",
+      "BGBAT · Fall 11",
+      "BGBAT · Fall 14",
+      "SchuldRAT · Fall 11",
+      "SchuldRAT · Fall 18",
       "SchuldRBT2 · Fall 10",
       "SchuldRBT2 · Fall 11",
       "SchuldRBT2 · Fall 12",
-      "SchuldRBT2 · Fall 13"
+      "SchuldRBT2 · Fall 13",
+      "SchuldRBT2 · Fall 14",
+      "SchuldRBT2 · Fall 15",
+      "KommunalR · Fall 1",
+      "KommunalR · Fall 2"
     ],
-    "gebiet": "5 Erbrecht",
-    "fach": "Zivilrecht",
+    "gebiet": "1 EuropaR",
+    "fach": "Öffentliches Recht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 60
+        "offen": 71
       },
       {
         "name": "Anschluss",
@@ -1288,16 +1301,26 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "02.10.2026 17:49",
+    "stand": "02.10.2026 21:35",
     "tage": [
       {
         "datum": "2026-10-02",
-        "karten": 0,
+        "karten": 5,
         "neu": 0,
-        "angelegt": 29,
-        "gebiete": [],
+        "angelegt": 47,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "1 EuropaR",
+            "n": 5
+          }
+        ],
         "faelle": [],
         "faelleAngelegt": [
+          {
+            "name": "KommunalR · Fall 2",
+            "n": 22
+          },
           {
             "name": "SchuldRBT2 · Fall 15",
             "n": 20
@@ -1305,10 +1328,6 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 14",
             "n": 5
-          },
-          {
-            "name": "KommunalR · Fall 2",
-            "n": 4
           }
         ]
       },
@@ -2295,7 +2314,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 53,
-    "nachbereitet": 151
+    "nachbereitet": 152
   },
   "cases": [
     {
@@ -5739,8 +5758,8 @@ window.NOTION_DATA = {
     {
       "title": "KommunalR Fall04",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 54,
+      "datum": "2026-10-09",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -5752,7 +5771,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KommunalR Fall02",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 53,
       "datum": "2026-10-02",
       "rechtsgebiet": [
@@ -5767,8 +5786,8 @@ window.NOTION_DATA = {
     {
       "title": "KommunalR Fall03",
       "status": "Nicht nachbereitet",
-      "woche": 53,
-      "datum": "2026-10-02",
+      "woche": 54,
+      "datum": "2026-10-07",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -6717,8 +6736,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall10",
       "status": "Nicht nachbereitet",
-      "woche": 7,
-      "datum": "2025-11-12",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6773,8 +6792,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall06",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 54,
+      "datum": "2026-10-09",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6801,8 +6820,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall02",
       "status": "In Bearbeitung",
-      "woche": null,
-      "datum": null,
+      "woche": 54,
+      "datum": "2026-10-06",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6815,8 +6834,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall04",
       "status": "Nicht nachbereitet",
-      "woche": 4,
-      "datum": "2025-10-22",
+      "woche": 54,
+      "datum": "2026-10-07",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6829,8 +6848,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall03",
       "status": "In Bearbeitung",
-      "woche": 4,
-      "datum": "2025-10-22",
+      "woche": 54,
+      "datum": "2026-10-06",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6902,8 +6921,8 @@ window.NOTION_DATA = {
     {
       "title": "SchuldR BT 2 Fall18 (abschließender Vertiefungsfall)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 54,
+      "datum": "2026-10-05",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -6916,8 +6935,8 @@ window.NOTION_DATA = {
     {
       "title": "SchuldR BT 2 Fall17",
       "status": "In Bearbeitung",
-      "woche": 3,
-      "datum": "2025-10-14",
+      "woche": 54,
+      "datum": "2026-10-05",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -7084,8 +7103,8 @@ window.NOTION_DATA = {
     {
       "title": "KommunalR Fall07 (Vertiefung)",
       "status": "In Bearbeitung",
-      "woche": 1,
-      "datum": "2025-10-01",
+      "woche": 54,
+      "datum": "2026-10-07",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -7098,8 +7117,8 @@ window.NOTION_DATA = {
     {
       "title": "KommunalR Fall06",
       "status": "In Bearbeitung",
-      "woche": 1,
-      "datum": "2025-10-01",
+      "woche": 54,
+      "datum": "2026-10-09",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -7198,7 +7217,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 151,
+    "nachbereitet": 152,
     "inBearbeitung": 26,
     "total": 352,
     "klkGesamt": 97,
