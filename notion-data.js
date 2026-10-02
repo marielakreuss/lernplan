@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.10.2026 15:46",
+  "lastSync": "02.10.2026 17:49",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5040,
@@ -1233,7 +1233,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-02"
   },
   "ankiFach": {
-    "stand": "02.10.2026 15:46",
+    "stand": "02.10.2026 17:49",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
@@ -1244,8 +1244,8 @@ window.NOTION_DATA = {
         "faellig": 1791
       },
       "Öffentliches Recht": {
-        "total": 877,
-        "neu": 0,
+        "total": 881,
+        "neu": 4,
         "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
@@ -1262,7 +1262,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "02.10.2026 15:46",
+    "stand": "02.10.2026 17:49",
     "datum": "2026-10-02",
     "faelle": [
       "SchuldRBT2 · Fall 10",
@@ -1288,13 +1288,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "02.10.2026 15:46",
+    "stand": "02.10.2026 17:49",
     "tage": [
       {
         "datum": "2026-10-02",
         "karten": 0,
         "neu": 0,
-        "angelegt": 25,
+        "angelegt": 29,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
@@ -1305,6 +1305,10 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 14",
             "n": 5
+          },
+          {
+            "name": "KommunalR · Fall 2",
+            "n": 4
           }
         ]
       },
