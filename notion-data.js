@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.10.2026 07:59",
+  "lastSync": "02.10.2026 12:39",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5040,
@@ -479,11 +479,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-20",
-        "count": 125
+        "count": 124
       },
       {
         "date": "2026-02-21",
-        "count": 41
+        "count": 40
       },
       {
         "date": "2026-02-22",
@@ -495,7 +495,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-24",
-        "count": 102
+        "count": 101
       },
       {
         "date": "2026-02-25",
@@ -515,7 +515,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-02",
-        "count": 62
+        "count": 61
       },
       {
         "date": "2026-03-03",
@@ -559,7 +559,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-15",
-        "count": 205
+        "count": 204
       },
       {
         "date": "2026-03-16",
@@ -803,7 +803,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-05-20",
-        "count": 143
+        "count": 142
       },
       {
         "date": "2026-05-21",
@@ -1233,14 +1233,14 @@ window.NOTION_DATA = {
     "stand": "2026-10-02"
   },
   "ankiFach": {
-    "stand": "02.10.2026 07:59",
+    "stand": "02.10.2026 12:39",
     "faecher": {
       "Zivilrecht": {
-        "total": 2068,
-        "neu": 23,
+        "total": 2072,
+        "neu": 28,
         "lernen": 822,
         "aufbau": 159,
-        "sitzt": 1064,
+        "sitzt": 1063,
         "faellig": 1791
       },
       "Öffentliches Recht": {
@@ -1262,7 +1262,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "02.10.2026 07:59",
+    "stand": "02.10.2026 12:39",
     "datum": "2026-10-02",
     "faelle": [
       "SchuldRBT2 · Fall 10",
@@ -1288,8 +1288,22 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "02.10.2026 07:59",
+    "stand": "02.10.2026 12:39",
     "tage": [
+      {
+        "datum": "2026-10-02",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 4,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": [
+          {
+            "name": "SchuldRBT2 · Fall 14",
+            "n": 4
+          }
+        ]
+      },
       {
         "datum": "2026-09-30",
         "karten": 63,
