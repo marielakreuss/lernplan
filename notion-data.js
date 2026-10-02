@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.10.2026 11:39",
+  "lastSync": "02.10.2026 14:45",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5040,
@@ -1233,11 +1233,11 @@ window.NOTION_DATA = {
     "stand": "2026-10-02"
   },
   "ankiFach": {
-    "stand": "02.10.2026 12:39",
+    "stand": "02.10.2026 14:45",
     "faecher": {
       "Zivilrecht": {
-        "total": 2072,
-        "neu": 28,
+        "total": 2082,
+        "neu": 38,
         "lernen": 822,
         "aufbau": 159,
         "sitzt": 1063,
@@ -1262,7 +1262,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "02.10.2026 12:39",
+    "stand": "02.10.2026 14:45",
     "datum": "2026-10-02",
     "faelle": [
       "SchuldRBT2 · Fall 10",
@@ -1288,19 +1288,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "02.10.2026 12:39",
+    "stand": "02.10.2026 14:45",
     "tage": [
       {
         "datum": "2026-10-02",
         "karten": 0,
         "neu": 0,
-        "angelegt": 4,
+        "angelegt": 14,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 9
+          },
+          {
             "name": "SchuldRBT2 · Fall 14",
-            "n": 4
+            "n": 5
           }
         ]
       },
@@ -2287,7 +2291,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 53,
-    "nachbereitet": 149
+    "nachbereitet": 150
   },
   "cases": [
     {
@@ -6879,7 +6883,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SchuldR BT 2 Fall14 (Vertiefungsfall zur Kausalität und Zurechnungsfragen)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 53,
       "datum": "2026-09-30",
       "rechtsgebiet": [
@@ -7190,7 +7194,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 149,
+    "nachbereitet": 150,
     "inBearbeitung": 27,
     "total": 352,
     "klkGesamt": 97,
