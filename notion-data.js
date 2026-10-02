@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "01.10.2026 23:33",
+  "lastSync": "02.10.2026 07:59",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5018,
+    "dueNow": 5040,
     "history": [
       {
         "date": "2025-09-29",
@@ -1230,10 +1230,10 @@ window.NOTION_DATA = {
         "count": 99
       }
     ],
-    "stand": "2026-10-01"
+    "stand": "2026-10-02"
   },
   "ankiFach": {
-    "stand": "01.10.2026 21:29",
+    "stand": "02.10.2026 07:59",
     "faecher": {
       "Zivilrecht": {
         "total": 2068,
@@ -1241,7 +1241,7 @@ window.NOTION_DATA = {
         "lernen": 822,
         "aufbau": 159,
         "sitzt": 1064,
-        "faellig": 1777
+        "faellig": 1791
       },
       "Öffentliches Recht": {
         "total": 877,
@@ -1249,7 +1249,7 @@ window.NOTION_DATA = {
         "lernen": 538,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 802
+        "faellig": 807
       },
       "Strafrecht": {
         "total": 706,
@@ -1257,13 +1257,13 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 668
+        "faellig": 671
       }
     }
   },
   "wiederholung": {
-    "stand": "01.10.2026 21:29",
-    "datum": "2026-10-01",
+    "stand": "02.10.2026 07:59",
+    "datum": "2026-10-02",
     "faelle": [
       "SchuldRBT2 · Fall 10",
       "SchuldRBT2 · Fall 11",
@@ -1288,7 +1288,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "01.10.2026 21:29",
+    "stand": "02.10.2026 07:59",
     "tage": [
       {
         "datum": "2026-09-30",
