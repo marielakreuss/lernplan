@@ -3,37 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#EFF5F1">
+  <meta name="theme-color" content="#F1E4DF">
   <title>Staatsexamen 2027</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Lora:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Lora:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* ── Grundfläche: helles Creme, Pastellflächen tragen die Farbe ── */
-      --bg:            #FBF6F0;
-      --surface:       rgba(255,255,255,0.88);
-      --surface-solid: #FFFFFF;
-      --surface-2:     rgba(255,255,255,0.62);
-      --border:        rgba(60,44,34,0.09);
-      --border-strong: rgba(60,44,34,0.15);
-      --text:          #241F1C;
-      --text-muted:    #6B6058;
-      --text-sub:      #A79B90;
+      /* ── Grundfläche: Blush-Glas. Rosé-Sand als Licht, Milchglas als
+         Karten, Anthrazit als einziger harter Kontrast (Pillen, Pfeile). ── */
+      --bg:            #F1E4DF;
+      --surface:       rgba(255,248,246,0.58);
+      --surface-solid: #FFFBFA;
+      --surface-2:     rgba(255,255,255,0.55);
+      --border:        rgba(90,52,48,0.08);
+      --border-strong: rgba(90,52,48,0.14);
+      --glass-edge:    rgba(255,255,255,0.75);
+      --text:          #2A2322;
+      --text-muted:    #6E5F5C;
+      --text-sub:      #A6918D;
+      --ink:           #232020;   /* dunkle Pillen & Karten */
 
-      /* ── Rechtsgebiete (führen die Farbe) ─────────── */
-      --zr:   #2F8A63;  --zr-l: #9FE0C4;  --zr-bg: #DDF3E8;  --zr-deep: #1D6146;
-      --or:   #6257A6;  --or-l: #C3BBEE;  --or-bg: #E8E4FA;  --or-deep: #443C7B;
-      --sr:   #C0566A;  --sr-l: #F3B3BB;  --sr-bg: #FCE3E4;  --sr-deep: #8E3A4B;
+      /* ── Rechtsgebiete (führen die Farbe) ─────────────
+         Salbei · Lavendel · Terrakotta – gedämpft, damit sie neben dem
+         Rosé nicht schreien, aber klar unterscheidbar bleiben. */
+      --zr:   #4E8A6A;  --zr-l: #B4DCC6;  --zr-bg: #E4F1E9;  --zr-deep: #2F6249;
+      --or:   #7468B0;  --or-l: #CBC4EE;  --or-bg: #ECE9F9;  --or-deep: #4D4386;
+      --sr:   #C26A4C;  --sr-l: #EDBDA8;  --sr-bg: #F9E6DD;  --sr-deep: #8A452C;
 
-      /* Primär: warmes Apricot – kein Fachbezug, kollidiert mit keiner
-         der drei Fachfarben und trägt als Fläche wie als Linie. */
-      --accent:      #B5793A;   /* Text, Linien, Ränder – trägt Kontrast */
-      --accent-fill: #F0BA80;   /* große Flächen: Balken, Heatmap, Fortschritt */
-      --accent-l:    #FAE0BE;
-      --accent-soft: #FDF2E4;
+      /* Primär: Altrosa – die Farbe der Inspiration. Terrakotta (StrafR)
+         liegt warm-orange daneben, kollidiert also nicht. */
+      --accent:      #B4596D;   /* Text, Linien, Ränder – trägt Kontrast */
+      --accent-fill: #EFA9B4;   /* große Flächen: Balken, Heatmap, Fortschritt */
+      --accent-l:    #F8D3D8;
+      --accent-soft: #FCEBEC;
 
       /* ── Phasen: Pastellflächen, je Phase ein eigener Ton ─── */
       --rep-bg: #F3EEE7;     --rep-border: #E0D6C8;     --rep-text: #6E6153;
@@ -48,10 +53,10 @@
       --past-bg: #F4EFE9;    --past-border: #E4DBD0;    --past-text: #9A8F84;
       --future-bg: #FDFAF6;  --future-border: #EDE5DB;  --future-text: #B4A99E;
 
-      --radius:    24px;
-      --radius-sm: 16px;
-      --shadow:    0 1px 2px rgba(70,50,38,0.04), 0 14px 34px -16px rgba(70,50,38,0.18);
-      --shadow-lg: 0 2px 6px rgba(70,50,38,0.05), 0 30px 60px -24px rgba(70,50,38,0.24);
+      --radius:    30px;
+      --radius-sm: 18px;
+      --shadow:    0 1px 2px rgba(110,60,55,0.04), 0 18px 40px -20px rgba(110,60,55,0.22);
+      --shadow-lg: 0 2px 6px rgba(110,60,55,0.05), 0 34px 70px -28px rgba(110,60,55,0.30);
     }
 
     html { -webkit-text-size-adjust: 100%; }
@@ -96,7 +101,7 @@
     @media (prefers-reduced-motion: reduce) { .rise { animation: none; } }
 
     .section-label {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 0.72rem;
       text-transform: uppercase;
       letter-spacing: 0.13em;
@@ -123,7 +128,7 @@
       pointer-events: none;
     }
     .ring-num {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.9rem;
       font-weight: 600;
       line-height: 1;
@@ -179,7 +184,7 @@
     }
     @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
     .now-head h2 {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.42rem;
       font-weight: 600;
       letter-spacing: -0.02em;
@@ -225,7 +230,7 @@
       color: var(--text-sub); font-weight: 600; margin-bottom: 0.28rem;
     }
     .now-pill .np-value {
-      font-family: 'Outfit', sans-serif; font-size: 1.28rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.28rem; font-weight: 600;
       line-height: 1; letter-spacing: -0.02em;
     }
     .now-pill .np-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.28rem; }
@@ -333,7 +338,7 @@
     .gauge:last-child { margin-bottom: 0; }
     .gauge-top { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.4rem; }
     .gauge-label { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-sub); font-weight: 600; }
-    .gauge-val { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.02em; }
+    .gauge-val { font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.02em; }
     .gauge-val small { font-family: 'DM Sans', sans-serif; font-size: 0.74rem; font-weight: 400; color: var(--text-muted); margin-left: 0.25rem; }
     .track { position: relative; height: 9px; border-radius: 999px; background: rgba(62,50,34,0.08); overflow: visible; }
     .track > i {
@@ -381,13 +386,13 @@
     .pomo-time {
       position: absolute; inset: 0;
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Outfit', sans-serif; font-size: 1.32rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.32rem; font-weight: 600;
       letter-spacing: -0.02em; color: var(--text);
       font-variant-numeric: tabular-nums;
     }
     .pomo-main { flex: 1 1 210px; min-width: 0; }
     .pomo-mode {
-      font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 600;
       letter-spacing: -0.01em; color: var(--pc);
     }
     .pomo-hint { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem; line-height: 1.45; }
@@ -406,7 +411,7 @@
     .pomo-btn.primary:hover { color: #fff; }
     .pomo-count { display: flex; gap: 1.4rem; flex-wrap: wrap; margin-left: auto; }
     .pomo-count .pc-v {
-      font-family: 'Outfit', sans-serif; font-size: 1.35rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 600;
       letter-spacing: -0.02em; line-height: 1;
     }
     .pomo-count .pc-l {
@@ -442,10 +447,10 @@
       border: 1px solid #E2D2AE;
     }
     .streak-flame.cold { background: linear-gradient(140deg, #F2F0EA, #E9E4DA); border-color: var(--border-strong); filter: grayscale(1); opacity: .8; }
-    .streak-num { font-family: 'Outfit', sans-serif; font-size: 1.85rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; }
+    .streak-num { font-family: 'Poppins', sans-serif; font-size: 1.85rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; }
     .streak-cap { font-size: 0.76rem; color: var(--text-muted); margin-top: 0.22rem; }
     .streak-facts { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-left: auto; }
-    .sfact .sf-v { font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; }
+    .sfact .sf-v { font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; }
     .sfact .sf-l { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-sub); font-weight: 600; margin-top: 0.15rem; }
 
     /* Karteikarten-Verlauf: pro Tag, welche Gebiete und Fälle dran waren.
@@ -460,7 +465,7 @@
     .kv-tag b { display: block; font-size: 0.8rem; color: var(--text); font-weight: 650; }
     .kv-row.heute .kv-tag b { color: var(--accent); }
     .kv-zahl { font-size: 0.8rem; color: var(--text-muted); }
-    .kv-zahl b { font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--text); }
+    .kv-zahl b { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--text); }
     .kv-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
     .kv-chips .rot-fach { font-weight: 550; }
     .kv-chips .rot-fach b { font-weight: 700; margin-left: 0.15rem; }
@@ -522,7 +527,7 @@
     /* ── FÄLLE PRO WOCHE ─────────────────────────── */
     .wk-head { margin-bottom: 0.6rem; }
     .wk-summary { font-size: 0.76rem; color: var(--text-muted); }
-    .wk-summary b { font-family: 'Outfit', sans-serif; font-weight: 600; color: var(--text); }
+    .wk-summary b { font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--text); }
 
     .wk-chart { width: 100%; }
     .wk-chart svg { display: block; width: 100%; height: auto; overflow: visible; }
@@ -555,7 +560,7 @@
       color: var(--text-sub); font-weight: 600; margin-bottom: 0.45rem;
     }
     .stat .s-value {
-      font-family: 'Outfit', sans-serif; font-size: 1.85rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.85rem; font-weight: 600;
       line-height: 1; letter-spacing: -0.035em; color: var(--text);
     }
     .stat .s-value small { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 400; color: var(--text-sub); margin-left: 0.2rem; letter-spacing: 0; }
@@ -578,24 +583,24 @@
     .fach-card > * { position: relative; }
     .fach-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.05rem; }
     .fach-head h4 {
-      font-family: 'Outfit', sans-serif; font-size: 1.12rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.12rem; font-weight: 600;
       letter-spacing: -0.02em; color: var(--fcd);
     }
     .fach-mark {
       width: 26px; height: 26px; border-radius: 9px; flex-shrink: 0;
       background: linear-gradient(140deg, var(--fc), var(--fcl));
       display: flex; align-items: center; justify-content: center;
-      color: #fff; font-family: 'Outfit', sans-serif; font-size: 0.72rem; font-weight: 700;
+      color: #fff; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 700;
     }
     .fach-pct {
       margin-left: auto;
-      font-family: 'Outfit', sans-serif; font-size: 0.98rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.98rem; font-weight: 600;
       color: var(--fcd); letter-spacing: -0.02em;
     }
     .fm { margin-bottom: 1rem; }
     .fm:last-child { margin-bottom: 0; }
     .fm-label { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-sub); font-weight: 600; margin-bottom: 0.3rem; }
-    .fm-value { font-family: 'Outfit', sans-serif; font-size: 1.35rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; color: var(--text); }
+    .fm-value { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 600; line-height: 1; letter-spacing: -0.03em; color: var(--text); }
     .fm-value small { font-family: 'DM Sans', sans-serif; font-size: 0.76rem; font-weight: 400; color: var(--text-muted); margin-left: 0.3rem; letter-spacing: 0; }
     .fm-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.32rem; line-height: 1.45; }
     .fm-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(62,50,34,0.08); margin-top: 0.45rem; }
@@ -617,7 +622,7 @@
       gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.9rem;
     }
     .weeks-head h3 {
-      font-family: 'Outfit', sans-serif; font-size: 0.95rem; font-weight: 600; letter-spacing: -0.01em;
+      font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 600; letter-spacing: -0.01em;
     }
     .weeks-head p { font-size: 0.75rem; color: var(--text-sub); margin-top: 0.1rem; }
 
@@ -639,7 +644,7 @@
       background: var(--future-bg); border-color: var(--future-border); color: var(--future-text);
       position: relative;
     }
-    .week-box .wnum { font-size: 0.79rem; font-weight: 700; font-family: 'Outfit', sans-serif; letter-spacing: -0.01em; }
+    .week-box .wnum { font-size: 0.79rem; font-weight: 700; font-family: 'Poppins', sans-serif; letter-spacing: -0.01em; }
     .week-box .wdate { font-size: 0.61rem; opacity: 0.78; margin-top: 0.08rem; }
     .week-box .wlog-dot { font-size: 0.64rem; line-height: 1; margin-top: 0.12rem; height: 0.7rem; }
     .week-box:hover { transform: translateY(-3px); box-shadow: 0 10px 22px -10px rgba(20,50,40,0.32); z-index: 2; }
@@ -678,7 +683,7 @@
       background: var(--accent); color: #fff;
       font-size: 0.53rem; font-weight: 700; letter-spacing: 0.09em;
       padding: 0.13rem 0.42rem; border-radius: 999px;
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     /* ══ BOTTOM SHEET ═════════════════════════════════ */
@@ -717,7 +722,7 @@
     .detail-panel.dp-future  { background: #FAF8F3; border-color: var(--border-strong); }
 
     .detail-panel-header { margin-bottom: 1rem; }
-    .detail-panel-header h3 { font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; }
+    .detail-panel-header h3 { font-family: 'Poppins', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; }
     .detail-panel-header .cases-goal { font-size: 0.88rem; font-weight: 600; color: var(--accent); margin-top: 0.25rem; }
     .detail-panel-header .date-range { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.15rem; }
 
@@ -730,7 +735,7 @@
       display: flex; flex-direction: column; gap: 0.15rem;
     }
     .kz-label { font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--text-sub); font-weight: 600; }
-    .kz-value { font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 600; color: var(--text); line-height: 1.1; letter-spacing: -0.02em; }
+    .kz-value { font-family: 'Poppins', sans-serif; font-size: 1.2rem; font-weight: 600; color: var(--text); line-height: 1.1; letter-spacing: -0.02em; }
     .kz-value.live { color: var(--accent); }
     .kz-sub { font-size: 0.71rem; color: var(--text-muted); }
     .kz-live-badge {
@@ -896,7 +901,7 @@
       border-bottom: 1px solid var(--border);
     }
     .sp-head h3 {
-      font-family: 'Outfit', sans-serif; font-size: 1.24rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.24rem; font-weight: 600;
       letter-spacing: -0.01em; margin: 0.15rem 0 0.15rem;
     }
     .sp-sub { font-size: 0.83rem; color: var(--text-muted); margin: 0; }
@@ -984,7 +989,7 @@
     .sp-grid-wrap { overflow-x: auto; padding: 0 1.6rem 1.3rem; }
     .sp-grid { border-collapse: separate; border-spacing: 0.3rem; width: 100%; min-width: 640px; }
     .sp-grid th {
-      font-family: 'Outfit', sans-serif; font-size: 0.78rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.78rem; font-weight: 600;
       color: var(--text-muted); text-align: center; padding: 0.2rem 0 0.4rem;
     }
     .sp-grid th.sp-heute { color: var(--accent); }
@@ -1058,7 +1063,7 @@
     .sp-tag.rest { background: var(--past-bg); color: var(--text-muted); }
     .sp-queues { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 1.3rem; }
     .sp-q h5 {
-      font-family: 'Outfit', sans-serif; font-size: 0.82rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.82rem; font-weight: 600;
       margin: 0 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--qc, var(--border-strong));
     }
     .sp-q ol { margin: 0; padding-left: 1.1rem; font-size: 0.79rem; line-height: 1.75; }
@@ -1142,7 +1147,7 @@
     .side-brand { padding: 0 0.5rem; }
     .side-brand b {
       display: block;
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.04rem; font-weight: 600; letter-spacing: -0.02em;
     }
     .side-brand span {
@@ -1169,7 +1174,7 @@
     .nav-item {
       display: flex; align-items: center; gap: 0.65rem; width: 100%;
       border: none; background: none; cursor: pointer;
-      font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 500;
+      font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 500;
       color: var(--text-muted);
       padding: 0.62rem 0.95rem; border-radius: 999px;
       text-align: left; white-space: nowrap;
@@ -1206,7 +1211,7 @@
       gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1.4rem;
     }
     .topbar h1 {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: clamp(1.5rem, 2.6vw, 2.05rem);
       font-weight: 600; letter-spacing: -0.025em; line-height: 1.1;
     }
@@ -1222,7 +1227,7 @@
 
     .card { padding: 1.2rem 1.35rem; }
     .card > h4 {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 0.71rem; text-transform: uppercase; letter-spacing: 0.13em;
       color: var(--text-sub); font-weight: 600; margin-bottom: 0.85rem;
       display: flex; align-items: baseline; gap: 0.5rem;
@@ -1251,7 +1256,7 @@
       color: var(--text-sub); font-weight: 600;
     }
     .tile .t-v {
-      font-family: 'Outfit', sans-serif; font-size: 1.45rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.45rem; font-weight: 600;
       letter-spacing: -0.025em; margin-top: 0.22rem; line-height: 1.1;
     }
     .tile .t-s { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.15rem; line-height: 1.4; }
@@ -1311,12 +1316,12 @@
 
     .zs-head { margin-bottom: 1.6rem; }
     .zs-eyebrow {
-      font-family: 'Outfit', sans-serif; font-size: 0.7rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.7rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.14em; color: var(--text-sub);
       margin-bottom: 0.75rem;
     }
     .zs-title {
-      font-family: 'Outfit', sans-serif; font-size: clamp(1.9rem, 4vw, 2.9rem);
+      font-family: 'Poppins', sans-serif; font-size: clamp(1.9rem, 4vw, 2.9rem);
       font-weight: 600; line-height: 1.1; letter-spacing: -0.03em;
       color: var(--text); margin-bottom: 0.8rem;
     }
@@ -1335,7 +1340,7 @@
       box-shadow: var(--shadow);
     }
     .zs-kpi b {
-      font-family: 'Outfit', sans-serif; font-size: 1.85rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.85rem; font-weight: 600;
       line-height: 1; letter-spacing: -0.03em; display: block;
       font-variant-numeric: tabular-nums; color: var(--text);
     }
@@ -1350,7 +1355,7 @@
 
     .zs-card { padding: 1.3rem 1.4rem; }
     .zs-chart { display: block; width: 100%; height: auto; overflow: visible; }
-    .zs-ax { font-family: 'Outfit', sans-serif; font-size: 10.5px; fill: var(--text-sub); }
+    .zs-ax { font-family: 'Poppins', sans-serif; font-size: 10.5px; fill: var(--text-sub); }
     .zs-ax.zs-acc { fill: var(--accent); }
     .zs-ax.zs-b   { font-weight: 600; fill: var(--text-muted); }
     .zs-dot { stroke: var(--surface-solid); stroke-width: 1.5; }
@@ -1373,7 +1378,7 @@
     .zs-tabelle { overflow-x: auto; }
     .zs-tabelle table { border-collapse: collapse; width: 100%; min-width: 460px; }
     .zs-tabelle th {
-      font-family: 'Outfit', sans-serif; font-size: 0.68rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.68rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-sub);
       text-align: left; padding: 0 0.9rem 0.6rem 0; border-bottom: 1px solid var(--border);
       white-space: nowrap;
@@ -1405,7 +1410,7 @@
       border-color: var(--accent-l);
     }
     .zs-hebel-kopf {
-      font-family: 'Outfit', sans-serif; font-size: 1.22rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.22rem; font-weight: 600;
       letter-spacing: -0.02em; color: var(--accent); margin-bottom: 0.6rem;
     }
     .zs-hebel > p { font-size: 0.92rem; line-height: 1.65; color: var(--text-muted); max-width: 68ch; }
@@ -1415,7 +1420,7 @@
       border-radius: var(--radius-sm); padding: 0.9rem 1rem;
     }
     .zs-beleg b {
-      display: block; font-family: 'Outfit', sans-serif; font-size: 0.8rem;
+      display: block; font-family: 'Poppins', sans-serif; font-size: 0.8rem;
       font-weight: 600; color: var(--text); margin-bottom: 0.4rem;
     }
     .zs-beleg span { font-size: 0.78rem; line-height: 1.55; color: var(--text-muted); }
@@ -1425,13 +1430,13 @@
     @media (max-width: 900px) { .zs-befunde { grid-template-columns: 1fr; } }
     .zs-befund { padding: 1.25rem 1.35rem; position: relative; }
     .zs-nr {
-      font-family: 'Outfit', sans-serif; font-size: 0.72rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600;
       letter-spacing: 0.1em; color: var(--accent);
       background: var(--accent-soft); border-radius: 999px;
       padding: 0.2rem 0.6rem; display: inline-block; margin-bottom: 0.7rem;
     }
     .zs-befund h4 {
-      font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 600;
       letter-spacing: -0.015em; color: var(--text); margin-bottom: 0.5rem; line-height: 1.3;
     }
     .zs-befund > p { font-size: 0.86rem; line-height: 1.62; color: var(--text-muted); }
@@ -1476,17 +1481,369 @@
     @media (max-width: 660px)  { .zs-moves { grid-template-columns: 1fr; } }
     .zs-move { padding: 1.2rem 1.3rem; }
     .zs-move-tag {
-      font-family: 'Outfit', sans-serif; font-size: 0.64rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 0.64rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-sub);
       margin-bottom: 0.55rem;
     }
     .zs-move h4 {
-      font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 600;
+      font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600;
       letter-spacing: -0.015em; color: var(--text); margin-bottom: 0.45rem; line-height: 1.3;
     }
     .zs-move p { font-size: 0.84rem; line-height: 1.6; color: var(--text-muted); }
     .zs-move.keep { background: linear-gradient(140deg, var(--zr-bg), var(--surface-solid) 78%); border-color: var(--zr-l); }
     .zs-move.keep .zs-move-tag { color: var(--zr); }
+
+    /* ══════════════════════════════════════════════════════════════
+       BLUSH GLASS · Design 2026
+       Milchglas auf warmem Rosé-Licht, große ruhige Typografie,
+       Anthrazit nur für Pillen, Pfeile und die eine dunkle Karte.
+       Steht bewusst am Ende: überschreibt die Basis, ohne sie zu löschen.
+       ══════════════════════════════════════════════════════════════ */
+
+    /* Phasen: dieselben Töne, eine Spur ins Rosé gezogen */
+    :root {
+      --rep-bg: #F5ECE8;     --rep-border: #E6D5CF;     --rep-text: #7A6560;
+      --fokus-bg: #FCE9DC;   --fokus-border: #F0C6A8;   --fokus-text: #94593A;
+      --probe-bg: #FBE4E7;   --probe-border: #EFB7C0;   --probe-text: #9E4558;
+      --examen-bg: #F9DCE1;  --examen-border: #E9A9B5;  --examen-text: #8E3B50;
+      --past-bg: #F3EAE7;    --past-border: #E5D8D4;    --past-text: #A08F8B;
+      --future-bg: rgba(255,251,250,0.7); --future-border: #EEE1DD; --future-text: #B9A8A4;
+    }
+
+    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+    /* Licht: Abendhimmel oben, Sand unten, zwei weiche Rosé-Kugeln */
+    body::before {
+      background:
+        radial-gradient(900px 600px at 12% -10%, rgba(255,214,200,0.85), transparent 65%),
+        radial-gradient(800px 560px at 92% 4%,  rgba(244,190,200,0.70), transparent 62%),
+        radial-gradient(700px 700px at 70% 70%, rgba(239,169,180,0.35), transparent 65%),
+        radial-gradient(900px 600px at 10% 105%, rgba(214,170,150,0.40), transparent 62%),
+        linear-gradient(180deg, #F6E6E0 0%, #F1E2DD 45%, #EEDDD6 100%);
+    }
+    body::after {
+      content: ''; position: fixed; z-index: -1; pointer-events: none;
+      width: 420px; height: 420px; border-radius: 50%;
+      right: -120px; top: 38vh;
+      background: radial-gradient(circle at 35% 30%, #FBD9DE, #EFA9B4 55%, #E3929F);
+      filter: blur(60px); opacity: 0.45;
+    }
+
+    .glass {
+      background: var(--surface);
+      -webkit-backdrop-filter: blur(28px) saturate(1.35);
+      backdrop-filter: blur(28px) saturate(1.35);
+      border: 1px solid var(--glass-edge);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,0.6);
+    }
+
+    /* Überschriften: Poppins, leicht und groß */
+    .section-label { font-weight: 500; letter-spacing: 0.16em; color: var(--text-sub); margin: 2rem 0 0.8rem; }
+    .card > h4 { font-weight: 500; letter-spacing: 0.15em; }
+    .topbar h1 { font-weight: 300; letter-spacing: -0.035em; font-size: clamp(1.7rem, 3vw, 2.5rem); }
+    .topbar h1 em { font-family: 'Poppins', sans-serif; font-style: normal; font-weight: 500; color: var(--accent); }
+    .zs-title, .now-head h2, .sp-head h3 { font-weight: 400; letter-spacing: -0.03em; }
+    .stat .s-value, .ring-num, .streak-num, .zs-kpi b, .fm-value, .kz-value, .np-value, .pomo-time { font-weight: 500; }
+
+    /* Buttons: Anthrazit-Pille wie in der Vorlage */
+    .btn, .pomo-btn.primary {
+      background: var(--ink); border-color: var(--ink);
+      box-shadow: 0 10px 22px -12px rgba(35,32,32,0.7);
+    }
+    .btn.ghost, .pomo-btn {
+      background: rgba(255,255,255,0.7); border: 1px solid var(--glass-edge);
+      box-shadow: 0 2px 8px -4px rgba(110,60,55,0.18);
+    }
+    .btn-add { background: var(--ink); border-radius: 999px; }
+
+    /* Innere Flächen: weiße, weiche Pillen statt Kästen */
+    .now-block, .now-pill, .tile, .zs-beleg, .zs-kpi, .kz-item, .tracking-block, .side-streak {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--glass-edge);
+    }
+    .zs-kpi { box-shadow: var(--shadow); }
+    .sp-b { border-radius: 999px; border: 1px solid var(--glass-edge); border-left-width: 4px; padding: 0.62rem 1.05rem; }
+    .sp-b.k-pause { border-color: var(--border-strong); border-left-width: 1px; }
+    .track, .stat .s-track, .fm-bar { background: rgba(90,52,48,0.07); }
+    .status-badge.open { background: rgba(255,255,255,0.8); border: 1px solid var(--border); }
+
+    /* ── Seitenleiste ─────────────────────────────── */
+    .side {
+      background: rgba(255,246,244,0.42);
+      border-right: 1px solid var(--glass-edge);
+      -webkit-backdrop-filter: blur(26px) saturate(1.3);
+      backdrop-filter: blur(26px) saturate(1.3);
+    }
+    .side-brand b { font-weight: 400; font-size: 1.12rem; letter-spacing: -0.02em; color: var(--text-muted); }
+    .side-brand b::after { content: '_'; color: var(--accent); margin-left: 1px; }
+    .nav-item { font-weight: 400; }
+    .nav-item:hover { background: rgba(255,255,255,0.7); }
+    .nav-item.on { background: var(--ink); font-weight: 500; }
+    .side-streak { border-radius: 999px; padding: 0.5rem 0.9rem 0.5rem 0.5rem; }
+    .side-streak .streak-flame {
+      width: 38px; height: 38px; border-radius: 50%; font-size: 1.05rem;
+      background: #fff; border: 1px solid var(--border);
+    }
+    .side-streak .streak-flame.cold { filter: grayscale(1); }
+
+    /* ── Wochenraster: weichere, rundere Kacheln ── */
+    .week-box { border-radius: 18px; border-width: 1px; }
+    .week-box.current { box-shadow: 0 0 0 2.5px var(--ink), 0 14px 28px -12px rgba(180,89,109,0.55); }
+    .week-box.current .wnum { color: var(--ink); }
+    .week-box.current::before { background: var(--ink); }
+
+    .detail-panel { background: rgba(253,245,243,0.96); border-top-width: 0; border-radius: 30px 30px 0 0; }
+    .detail-panel[class*="dp-"] { background: rgba(253,245,243,0.96); }
+
+    /* Geschafftes soll sich nach Erfolg anfühlen, nicht nach Grau:
+       vergangene Wochen in hellem Rosé mit deutlichem Haken. */
+    .weeks-card { --past-bg: #FBE3E6; --past-border: #F2C3CA; --past-text: #B4596D; }
+    .week-box.past::after { opacity: .85; font-size: 0.66rem; font-weight: 700; }
+    .now-head h2 { font-size: 1.9rem; font-weight: 300; }
+
+    /* ── Tagesablauf mit konkreten Fällen ─────────── */
+    .sp-fall {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      color: var(--text); font-weight: 500; text-decoration: none;
+      background: rgba(255,255,255,0.75); border-radius: 999px;
+      padding: 0.22rem 0.75rem 0.22rem 0.6rem; white-space: nowrap;
+      max-width: 60%; overflow: hidden; text-overflow: ellipsis;
+      transition: background .15s, color .15s;
+    }
+    a.sp-fall:hover { background: #fff; color: var(--accent); }
+    .fw-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; display: inline-block; background: var(--text-sub); }
+    .st-progress .fw-dot { background: var(--or); }
+    .st-open .fw-dot { background: transparent; box-shadow: inset 0 0 0 1.5px var(--text-sub); }
+    .st-done .fw-dot { background: var(--zr); }
+
+    /* Wochenstand unter dem Tagesablauf */
+    .fw { padding: 1.05rem 1.6rem 1.25rem; border-top: 1px solid var(--glass-edge); background: rgba(255,255,255,0.22); }
+    .fw-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem; flex-wrap: wrap; }
+    .fw-t { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; color: var(--text-sub); }
+    .fw-n { font-size: 0.82rem; color: var(--text-muted); }
+    .fw-n b { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1.05rem; color: var(--text); }
+    .fw-bar { height: 6px; border-radius: 999px; background: rgba(90,52,48,0.08); margin: 0.55rem 0 0.85rem; overflow: hidden; }
+    .fw-bar i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent-fill), var(--accent-l)); }
+    .fw-sub { font-size: 0.7rem; color: var(--text-sub); margin-bottom: 0.35rem; }
+    .fw-list { list-style: none; display: grid; gap: 0.1rem; }
+    .fw-i { display: flex; align-items: center; gap: 0.55rem; font-size: 0.84rem; padding: 0.28rem 0; min-width: 0; }
+    .fw-i a, .fw-i > span:not(.fw-st) { color: var(--text); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+    .fw-i a:hover { color: var(--accent); }
+    .fw-i.st-done a, .fw-i.st-done > span { color: var(--text-muted); }
+    .fw-st { margin-left: auto; font-size: 0.7rem; color: var(--text-sub); white-space: nowrap; }
+    .st-progress .fw-st { color: var(--or-deep); }
+    .fw-ok { font-size: 0.82rem; color: var(--zr-deep); }
+    .fw-done { margin-top: 0.5rem; }
+    .fw-done summary {
+      cursor: pointer; font-size: 0.76rem; font-weight: 600; color: var(--zr-deep);
+      list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      background: var(--zr-bg); border-radius: 999px; padding: 0.22rem 0.75rem;
+    }
+    .fw-done summary::-webkit-details-marker { display: none; }
+    .fw-done[open] summary { margin-bottom: 0.4rem; }
+    .fw-sync { font-size: 0.66rem; color: var(--text-sub); margin-top: 0.75rem; }
+
+    /* Karteikarten: Fokus der Woche als ruhige Fußzeile */
+    .kk-fokus { margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--border); }
+    .kk-fokus-l { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.11em; font-weight: 700; color: var(--text-sub); margin-bottom: 0.45rem; }
+    .kk-fokus-l span { text-transform: none; letter-spacing: 0.02em; font-weight: 400; }
+    .rot-row { border-bottom-color: rgba(90,52,48,0.06); }
+
+    /* Check-in mit Absprung in die Woche */
+    .ci-btn { width: 100%; margin-top: 0.9rem; }
+    .weekdot { border-radius: 999px; padding: 0.55rem 0.1rem 0.5rem; background: rgba(255,255,255,0.7); border-color: var(--glass-edge); }
+    .weekdot.today { border-color: var(--ink); box-shadow: 0 0 0 2px rgba(35,32,32,0.08); }
+
+    /* Fokus-Timer: Zähler in der schmalen Spalte sauber unter den Knöpfen */
+    .pomo-count { margin-left: 0; width: 100%; justify-content: space-between; padding-top: 0.9rem; border-top: 1px solid var(--border); }
+
+    @media (max-width: 640px) {
+      .fw { padding: 1rem 1.1rem 1.1rem; }
+      .sp-fall { max-width: 100%; margin-left: 0; }
+    }
+
+    /* ══ HERO · Reiter „Heute" ══════════════════════════════════════ */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+      grid-template-areas: "today date" "dark date";
+      gap: 1rem;
+    }
+    .h-card { position: relative; border-radius: 34px; overflow: hidden; }
+
+    /* Glas-Karte „Heute" – das Login-Formular der Vorlage */
+    .h-today {
+      grid-area: today;
+      padding: 1.6rem 1.7rem 1.3rem;
+      background: linear-gradient(160deg, rgba(255,240,238,0.72), rgba(246,214,214,0.50));
+      -webkit-backdrop-filter: blur(30px) saturate(1.4);
+      backdrop-filter: blur(30px) saturate(1.4);
+      border: 1px solid var(--glass-edge);
+      box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.7);
+    }
+    .h-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.7rem; }
+    .h-brand { font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 1rem; color: var(--text-sub); letter-spacing: -0.01em; }
+    .h-brand i { font-style: normal; color: var(--accent); }
+    .h-top-r { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 0.95rem; color: var(--text); }
+    .h-title-row { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; margin-bottom: 1.25rem; }
+    .h-title { font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.85rem; letter-spacing: -0.03em; }
+    .h-chip {
+      font-size: 0.72rem; font-weight: 500; color: var(--text-muted);
+      border: 1.5px solid rgba(90,52,48,0.22); border-radius: 999px;
+      padding: 0.3rem 0.85rem; background: rgba(255,255,255,0.35); white-space: nowrap;
+    }
+    .h-field {
+      display: flex; align-items: center; gap: 0.7rem;
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(255,255,255,0.85);
+      border-radius: 999px;
+      padding: 0.42rem 0.48rem 0.42rem 0.42rem;
+      margin-bottom: 0.6rem;
+      box-shadow: 0 6px 16px -12px rgba(110,60,55,0.35);
+    }
+    .h-ic {
+      width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+      background: #fff; color: var(--text);
+      display: inline-flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 6px -2px rgba(110,60,55,0.25);
+    }
+    .h-fl { font-size: 0.86rem; color: var(--text-muted); white-space: nowrap; }
+    .h-fv {
+      margin-left: auto; font-family: 'Poppins', sans-serif; font-weight: 500;
+      font-size: 1.05rem; letter-spacing: -0.02em; white-space: nowrap;
+    }
+    .h-fv small { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.74rem; color: var(--text-sub); }
+    .h-tag {
+      background: #fff; border-radius: 999px; padding: 0.38rem 0.85rem;
+      font-size: 0.72rem; font-weight: 600; color: var(--text); white-space: nowrap;
+      box-shadow: 0 2px 6px -3px rgba(110,60,55,0.3);
+    }
+    .h-tag-wide { max-width: 11rem; overflow: hidden; text-overflow: ellipsis; font-weight: 500; color: var(--text-muted); }
+    .h-foot { display: flex; align-items: center; gap: 1rem; margin-top: 1.1rem; }
+    .h-fine { font-size: 0.74rem; line-height: 1.55; color: var(--text-muted); flex: 1; }
+    /* Schalter mit Pfeil – startet den Fokus-Timer */
+    .h-toggle {
+      position: relative; flex-shrink: 0; width: 66px; height: 40px;
+      border: none; background: none; cursor: pointer; padding: 0;
+    }
+    .h-toggle::before {
+      content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 40px; height: 22px; border-radius: 999px; background: var(--ink); opacity: 0.88;
+    }
+    .h-toggle-knob {
+      position: absolute; right: 0; top: 0; width: 40px; height: 40px; border-radius: 50%;
+      background: var(--ink); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 18px -8px rgba(35,32,32,0.8);
+      transition: transform .2s cubic-bezier(.22,.9,.3,1);
+    }
+    .h-toggle:hover .h-toggle-knob { transform: translateX(3px); }
+    .h-link {
+      display: block; margin: 1.1rem auto 0; background: none; border: none; cursor: pointer;
+      font: inherit; font-size: 0.8rem; font-weight: 600; color: var(--text);
+    }
+    .h-link:hover { color: var(--accent); }
+
+    /* Dunkle Karte – „References / Discover" der Vorlage */
+    .h-dark {
+      grid-area: dark;
+      background: var(--ink); color: #fff;
+      padding: 1.5rem 1.7rem 1.4rem; cursor: pointer;
+      box-shadow: var(--shadow-lg);
+      transition: transform .2s cubic-bezier(.22,.9,.3,1);
+      display: flex; flex-direction: column;
+    }
+    .h-dark:hover { transform: translateY(-2px); }
+    .h-dark::after {
+      content: ''; position: absolute; right: -60px; top: -70px; width: 200px; height: 200px;
+      border-radius: 50%; background: radial-gradient(circle, rgba(239,169,180,0.45), transparent 70%);
+      pointer-events: none;
+    }
+    .h-dark-t { font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.7rem; letter-spacing: -0.03em; line-height: 1.15; }
+    .h-dark-s { font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 0.95rem; color: rgba(255,255,255,0.55); margin-top: 0.35rem; line-height: 1.45; max-width: 34ch; }
+    .h-dark-row { display: flex; align-items: center; gap: 1.2rem; margin-top: auto; padding-top: 1.3rem; }
+    .h-dark-prog { flex: 1; height: 4px; border-radius: 999px; background: rgba(255,255,255,0.14); overflow: hidden; }
+    .h-dark-prog i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #F8D3D8, #EFA9B4); }
+    .h-dark-link { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 400; white-space: nowrap; }
+
+    /* Datumskarte – „Jan 2025" der Vorlage */
+    .h-date {
+      grid-area: date;
+      min-height: 520px;
+      background: rgba(255,253,252,0.92);
+      border: 1px solid #fff;
+      box-shadow: var(--shadow-lg);
+      padding: 0.75rem;
+    }
+    .h-orb {
+      position: absolute; left: 18%; top: 44%; width: 280px; height: 280px; border-radius: 50%;
+      background: radial-gradient(circle, #F2A9B6 0%, rgba(242,169,182,0.55) 40%, transparent 70%);
+      filter: blur(18px); opacity: 0.9; pointer-events: none;
+    }
+    .h-disc {
+      position: absolute; right: -14%; top: 33%; width: 58%; aspect-ratio: 1; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #FAD0D6, #F5B5BF 60%, #F0A6B2);
+      display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+      padding-left: 24%; color: #7E3346;
+    }
+    .h-disc b { font-family: 'Poppins', sans-serif; font-size: clamp(2.6rem, 4.4vw, 3.6rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1; }
+    .h-disc span { font-size: 0.78rem; font-weight: 500; line-height: 1.3; margin-top: 0.35rem; opacity: 0.8; }
+    .h-panel {
+      position: relative; z-index: 2;
+      width: 44%; min-width: 180px; height: 100%;
+      background: rgba(236,234,233,0.62);
+      -webkit-backdrop-filter: blur(22px);
+      backdrop-filter: blur(22px);
+      border-radius: 26px;
+      padding: 1.6rem 1.4rem 1.3rem;
+      display: flex; flex-direction: column;
+    }
+    .h-big {
+      font-family: 'Poppins', sans-serif; font-weight: 400;
+      font-size: clamp(2.8rem, 5vw, 4.1rem); line-height: 1.02; letter-spacing: -0.045em;
+      color: var(--text);
+    }
+    .h-big-2 { color: #A9A3A1; font-size: clamp(2.2rem, 3.8vw, 3.2rem); }
+    .h-meta { margin-top: auto; padding-top: 2.5rem; font-size: 0.86rem; line-height: 1.55; color: var(--text-muted); }
+    .h-mark { margin-top: 2.2rem; display: flex; flex-direction: column; align-items: center; gap: 0.2rem; color: var(--text); }
+    .h-mark span { font-family: 'Poppins', sans-serif; font-size: 0.78rem; font-weight: 500; }
+    .h-aside {
+      position: absolute; z-index: 2; top: 1.6rem; right: 1.7rem; text-align: right;
+      font-family: 'Poppins', sans-serif; font-size: 0.88rem; color: var(--text); line-height: 1.6;
+    }
+    .h-aside span { color: var(--text-muted); }
+    .h-cta { position: absolute; z-index: 3; right: 1.1rem; bottom: 1.1rem; display: flex; align-items: center; }
+    .cta-pill {
+      background: var(--ink); color: #fff; border: none; cursor: pointer;
+      font: inherit; font-size: 0.78rem; font-weight: 500;
+      border-radius: 999px; padding: 0.78rem 1.2rem; margin-right: -6px;
+    }
+    .cta-dot {
+      width: 42px; height: 42px; border-radius: 50%; border: 2.5px solid #fff;
+      background: var(--ink); color: #fff; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 18px -8px rgba(35,32,32,0.8);
+      transition: transform .2s cubic-bezier(.22,.9,.3,1);
+    }
+    .h-cta:hover .cta-dot { transform: translateX(3px); }
+
+    @media (max-width: 1180px) {
+      .hero { grid-template-columns: 1fr; grid-template-areas: "date" "today" "dark"; }
+      .h-date { min-height: 440px; }
+    }
+    @media (max-width: 560px) {
+      .h-today { padding: 1.3rem 1.2rem 1.1rem; }
+      .h-title { font-size: 1.55rem; }
+      .h-field { gap: 0.5rem; }
+      .h-fl { font-size: 0.8rem; }
+      .h-tag { padding: 0.32rem 0.6rem; font-size: 0.68rem; }
+      .h-tag-wide { display: none; }
+      .h-date { min-height: 420px; }
+      .h-panel { width: 54%; padding: 1.3rem 1rem 1.1rem; }
+      .h-disc { width: 70%; right: -22%; top: 34%; padding-left: 22%; }
+      .h-aside { font-size: 0.74rem; top: 1.2rem; right: 1.1rem; }
+      .h-dark-t { font-size: 1.4rem; }
+    }
 
   </style>
 </head>
@@ -1509,9 +1866,9 @@
         <svg viewBox="0 0 132 132">
           <defs>
             <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%"   stop-color="#D5BE96"/>
-              <stop offset="55%"  stop-color="#8C6D45"/>
-              <stop offset="100%" stop-color="#9C9184"/>
+              <stop offset="0%"   stop-color="#F8D3D8"/>
+              <stop offset="55%"  stop-color="#E58C9D"/>
+              <stop offset="100%" stop-color="#B4596D"/>
             </linearGradient>
           </defs>
           <circle cx="66" cy="66" r="57" fill="none" stroke="rgba(62,50,34,0.09)" stroke-width="9"/>
@@ -1575,37 +1932,22 @@
      ══════════════════════════════════════════════════════════════════ -->
 <section class="tab on" id="tab-heute">
 
-  <div class="tiles rise d1" id="heute-tiles"></div>
+  <div class="hero rise d1" id="heute-tiles"></div>
 
   <div class="g2" style="margin-top:1rem">
     <div class="gcol">
 
-      <!-- Tagesablauf aus dem Stundenplan -->
+      <!-- Tagesablauf + Fälle: jeder Fall-Block trägt den konkreten Notion-Fall,
+           darunter der Wochenstand. Ersetzt die frühere Extra-Karte „Fälle dieser Woche". -->
       <section class="sp glass rise d2" id="stundenplan-heute">
         <div class="sp-today" style="padding-top:1.15rem">
           <div class="sp-today-h" id="sp-today-h">Heute</div>
           <div class="sp-vorschau" id="sp-vorschau" style="display:none"></div>
           <ul class="sp-blocks" id="sp-blocks"></ul>
         </div>
+        <div class="fw" id="now-notion"></div>
       </section>
 
-      <!-- Konkrete Fälle aus Notion -->
-      <section class="card glass rise d3">
-        <h4>Fälle dieser Woche <span class="h4-note notion-sync-time" id="now-sync"></span></h4>
-        <div id="now-notion"></div>
-      </section>
-
-      <!-- Karteikarten-Fokus, abgeleitet aus den Fällen der Woche -->
-      <section class="card glass rise d4">
-        <h4>Karteikarten-Fokus <span class="h4-note" id="now-week-hint"></span></h4>
-        <div class="now-fokus" id="now-fokus"></div>
-      </section>
-
-      <!-- Wiederholung heute: was das Anki-Add-on in „0 Heute ⭐" gelegt hat -->
-      <section class="card glass rise d4">
-        <h4>Wiederholung heute <span class="h4-note" id="rot-stand"></span></h4>
-        <div class="rot-heute" id="rot-heute"></div>
-      </section>
     </div>
 
     <div class="gcol">
@@ -1649,19 +1991,21 @@
     </div>
   </section>
 
-      <!-- Check-in der laufenden Woche -->
+      <!-- Check-in + Absprung in die Wochenansicht in einer Karte -->
       <section class="card glass rise d3">
-        <h4>Check-in diese Woche <span class="h4-note">· Tag antippen</span></h4>
+        <h4>Check-in <span class="h4-note" id="heute-week-label"></span></h4>
         <div class="weekdots" id="now-weekdots"></div>
+        <button class="btn ghost ci-btn" onclick="openCurrentWeek()">Woche öffnen · Fälle, Klausuren, Notizen</button>
       </section>
 
-      <!-- Absprung in die Wochenansicht -->
+      <!-- Karteikarten: Tageswiederholung aus Anki + Fokus der Woche in einer Karte -->
       <section class="card glass rise d4">
-        <h4>Woche <span class="h4-note" id="heute-week-label"></span></h4>
-        <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.55;margin-bottom:0.8rem">
-          Fälle abhaken, Klausuren eintragen und den Tages-Check-in schreiben.
-        </p>
-        <button class="btn" onclick="openCurrentWeek()" style="width:100%">Woche öffnen</button>
+        <h4>Karteikarten heute <span class="h4-note" id="rot-stand"></span></h4>
+        <div class="rot-heute" id="rot-heute"></div>
+        <div class="kk-fokus">
+          <div class="kk-fokus-l">Fokus der Woche <span id="now-week-hint"></span></div>
+          <div class="now-fokus" id="now-fokus"></div>
+        </div>
       </section>
     </div>
   </div>
@@ -3338,7 +3682,7 @@
 
     if (gebiete.length) {
       const suche = ankiSuche(gebiete);
-      box.innerHTML = 'Passend zu den Fällen dieser Woche: ' +
+      box.innerHTML =
         gebiete.map(name => `<span class="fokus-tag">${name}</span>`).join('') +
         (suche
           ? `<button type="button" class="fokus-copy" data-suche="${suche.replace(/"/g, '&quot;')}"
@@ -3483,30 +3827,59 @@
     }, 60);
   }
 
+  /* Offene Hauptkurs-Fälle der Woche in der Reihenfolge, in der sie dran
+     sind: heute datierte zuerst, dann angefangene, dann nach Nummer. Der
+     Tagesablauf zieht daraus je Fall-Block den nächsten passenden Fall. */
+  function offeneFaelleWoche() {
+    if (!window.NOTION_DATA) return [];
+    const heute = isoOf(TODAY);
+    const nr = t => { const m = /Fall\s*0*(\d+)/i.exec(t); return m ? +m[1] : 999; };
+    return window.NOTION_DATA.cases
+      .filter(c => c.woche === currentWeekN && c.typ === 'Hauptkurs' && c.status !== 'Nachbereitet')
+      .sort((x, y) =>
+        ((y.datum === heute) - (x.datum === heute)) ||
+        ((y.status === 'In Bearbeitung') - (x.status === 'In Bearbeitung')) ||
+        (nr(x.title) - nr(y.title)) || x.title.localeCompare(y.title, 'de'));
+  }
+
+  /* Wochenstand unter dem Tagesablauf: Fortschritt, offene Fälle, die heute
+     nicht schon in einem Block stehen, und die erledigten zum Aufklappen. */
   function renderNowNotion() {
-    const box  = document.getElementById('now-notion');
-    const sync = document.getElementById('now-sync');
+    const box = document.getElementById('now-notion');
+    if (!box) return;
     if (!window.NOTION_DATA) {
-      box.innerHTML = '<p class="notion-empty-hint">Wird beim nächsten Notion-Sync geladen.</p>';
+      box.innerHTML = '<p class="notion-empty-hint">Fälle kommen mit dem nächsten Notion-Sync.</p>';
       return;
     }
-    sync.textContent = '· Stand ' + window.NOTION_DATA.lastSync;
     const wCases = window.NOTION_DATA.cases.filter(c => c.woche === currentWeekN && c.typ === 'Hauptkurs');
+    const zeit   = String(window.NOTION_DATA.lastSync).split(' ').pop();
     if (!wCases.length) {
       box.innerHTML = '<p class="notion-empty-hint">Für diese Woche stehen in Notion noch keine Fälle.</p>';
       return;
     }
-    const statusCls = { 'Nachbereitet': 'done', 'In Bearbeitung': 'progress' };
-    box.innerHTML = wCases.map(c => {
-      const cls = statusCls[c.status] || 'open';
-      const lbl = c.status === 'Nachbereitet' ? 'Nachbereitet' : c.status === 'In Bearbeitung' ? 'In Bearbeitung' : 'Offen';
-      const rg  = (c.rechtsgebiet || []).join(', ');
-      return `<div class="notion-row">
-        <span class="status-badge ${cls}">${lbl}</span>
-        <span class="notion-case-title">${c.title}</span>
-        ${rg ? `<span class="notion-rg">${rg}</span>` : ''}
-      </div>`;
-    }).join('');
+    const heuteVergeben = window.HEUTE_FAELLE || new Set();
+    const fertig = wCases.filter(c => c.status === 'Nachbereitet');
+    const offen  = offeneFaelleWoche().filter(c => !heuteVergeben.has(c.title));
+    const imPlan = heuteVergeben.size;
+    const pct    = Math.round(fertig.length / wCases.length * 100);
+    const link   = c => c.url
+      ? `<a href="${c.url}" target="_blank" rel="noopener">${c.title}</a>` : `<span>${c.title}</span>`;
+    const zeile  = c => {
+      const st = c.status === 'Nachbereitet' ? 'done' : c.status === 'In Bearbeitung' ? 'progress' : 'open';
+      const lb = st === 'done' ? '' : st === 'progress' ? 'angefangen' : 'offen';
+      return `<li class="fw-i st-${st}"><i class="fw-dot"></i>${link(c)}${lb ? `<span class="fw-st">${lb}</span>` : ''}</li>`;
+    };
+
+    box.innerHTML = `
+      <div class="fw-head">
+        <span class="fw-t">Fälle diese Woche</span>
+        <span class="fw-n"><b>${fertig.length}</b> von ${wCases.length} nachbereitet</span>
+      </div>
+      <div class="fw-bar" title="${pct}% nachbereitet"><i style="width:${pct}%"></i></div>
+      ${offen.length ? `<div class="fw-sub">${imPlan ? 'Außerdem noch offen' : 'Noch offen'}</div><ul class="fw-list">${offen.map(zeile).join('')}</ul>`
+        : `<p class="fw-ok">${imPlan ? 'Alles Offene steht heute im Plan.' : 'Alle Fälle der Woche nachbereitet ✓'}</p>`}
+      ${fertig.length ? `<details class="fw-done"><summary>${fertig.length} nachbereitet ✓</summary><ul class="fw-list">${fertig.map(zeile).join('')}</ul></details>` : ''}
+      <div class="fw-sync">Notion · Stand ${zeit}</div>`;
   }
 
   /* Die drei Kacheln oben im Reiter „Heute": nur Zahlen, die heute etwas
@@ -3522,24 +3895,117 @@
       : [];
     const offen   = faelleW.filter(c => c.status !== 'Nachbereitet').length;
 
+    const fertig  = faelleW.length - offen;
+    const s       = berechneStreaks();
+    const titel   = wochenTitel(currentWeekN);
+    const wtag    = TODAY.toLocaleDateString('de-DE', { weekday: 'short' }).replace('.', '');
+    const tagMon  = TODAY.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' }).replace('.', '');
+    const sync    = window.NOTION_DATA ? 'Stand ' + String(window.NOTION_DATA.lastSync).split(' ').pop() : 'kein Sync';
+
+    // Ein Satz pro Tag – rotiert über das Datum, damit er morgens nicht
+    // derselbe ist wie gestern. Serie und Fortschritt fließen ein, wenn sie
+    // etwas zu sagen haben.
+    const SAETZE = [
+      ['Eins nach dem anderen.', 'Ein Fall, dann der nächste. So entsteht ein Examen.'],
+      ['Dranbleiben zählt.', 'Nicht der perfekte Tag macht es, sondern der nächste normale.'],
+      ['Du bist weiter, als du denkst.', 'Die Kurve zeigt nach oben – seit Monaten.'],
+      ['Tiefe statt Tempo.', 'Zwei, drei Schwerpunkte – und dort wirklich schreiben.'],
+      ['Heute reicht heute.', 'Was im Plan steht, ist genug. Mehr musst du nicht.'],
+      ['Kleine Schritte, großes Ziel.', 'Jede Karte heute ist eine Lücke weniger im März.'],
+      ['Ruhig und klar.', 'Lesen, gliedern, schreiben. Du kennst den Ablauf.'],
+      ['Prädikat im Blick.', 'Die letzten Klausuren zeigen, dass es geht.'],
+      ['Stark angefangen, stark zu Ende.', 'Der Weg ist gebaut – du gehst ihn nur noch.'],
+      ['Fokus ist ein Muskel.', '25 Minuten, Handy weg. Dann eine Pause, die du dir verdient hast.']
+    ];
+    const tagNr = Math.floor((TODAY - new Date(TODAY.getFullYear(), 0, 0)) / DAY);
+    let [kopf, zeile] = SAETZE[tagNr % SAETZE.length];
+    if (s.cur >= 3) zeile = s.cur + ' Tage am Stück gelernt. ' + zeile;
+
+    const pfeil = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    const ic = {
+      fall:  '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 4h10l4 4v12H5z M15 4v4h4 M8 13h8 M8 17h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>',
+      karte: '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="3" y="6" width="14" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 3h12a2 2 0 0 1 2 2v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+      stift: '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z M14 7l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>'
+    };
+
     box.innerHTML = `
-      <div class="tile">
-        <div class="t-l">Fälle noch offen</div>
-        <div class="t-v">${window.NOTION_DATA ? offen : '—'}</div>
-        <div class="t-s">${window.NOTION_DATA
-          ? (faelleW.length ? 'von ' + faelleW.length + ' dieser Woche' : 'in Notion noch nichts geplant')
-          : 'Notion-Stand fehlt'} · Soll ${sollFaelle(currentWeekN)}</div>
-      </div>
-      <div class="tile">
-        <div class="t-l">Karten heute</div>
-        <div class="t-v">${a ? heute.toLocaleString('de-DE') : '—'}</div>
-        <div class="t-s">${a ? a.dueNow.toLocaleString('de-DE') + ' noch fällig' : 'Anki war beim Sync zu'}</div>
-      </div>
-      <div class="tile">
-        <div class="t-l">Klausur diese Woche</div>
-        <div class="t-v" style="font-size:1.15rem">${sollKlausuren(currentWeekN)}</div>
-        <div class="t-s">${kz ? kz.klausurenSub : ''}</div>
-      </div>`;
+      <article class="h-card h-today">
+        <div class="h-top">
+          <span class="h-brand">Stex 2027<i>_</i></span>
+          <span class="h-top-r">Woche ${currentWeekN}</span>
+        </div>
+        <div class="h-title-row">
+          <h2 class="h-title">Heute</h2>
+          <span class="h-chip" title="Notion-Sync">${sync}</span>
+        </div>
+        <div class="h-field">
+          <span class="h-ic">${ic.fall}</span>
+          <span class="h-fl">Fälle offen</span>
+          <span class="h-fv">${window.NOTION_DATA ? offen + (faelleW.length ? ' <small>von ' + faelleW.length + '</small>' : '') : '—'}</span>
+          <span class="h-tag">Soll ${sollFaelle(currentWeekN)}</span>
+        </div>
+        <div class="h-field">
+          <span class="h-ic">${ic.karte}</span>
+          <span class="h-fl">Karten heute</span>
+          <span class="h-fv">${a ? heute.toLocaleString('de-DE') : '—'}</span>
+          <span class="h-tag">${a ? a.dueNow.toLocaleString('de-DE') + ' fällig' : 'Anki zu'}</span>
+        </div>
+        <div class="h-field">
+          <span class="h-ic">${ic.stift}</span>
+          <span class="h-fl">Klausuren</span>
+          <span class="h-fv">${sollKlausuren(currentWeekN)}</span>
+          ${kz && kz.klausurenSub ? `<span class="h-tag h-tag-wide">${kz.klausurenSub}</span>` : ''}
+        </div>
+        <div class="h-foot">
+          <p class="h-fine">${faelleW.length && fertig > 0
+            ? fertig + (fertig === 1 ? ' Fall' : ' Fälle') + ' dieser Woche schon nachbereitet – ' + (offen ? 'der Rest ist machbar.' : 'Woche geschafft!')
+            : 'Ein Fokusblock reicht, um anzufangen. Der Rest kommt von allein.'}</p>
+          <button type="button" class="h-toggle" onclick="document.getElementById('pomo').scrollIntoView({behavior:'smooth',block:'center'}); pomoToggle();" title="Fokus-Timer starten">
+            <span class="h-toggle-knob">${pfeil}</span>
+          </button>
+        </div>
+        <button type="button" class="h-link" onclick="zeigeReiter('fortschritt')">Fortschritt ansehen</button>
+      </article>
+
+      <article class="h-card h-dark" onclick="zeigeReiter('zwischenstand')" role="button" tabindex="0">
+        <h3 class="h-dark-t">${kopf}</h3>
+        <p class="h-dark-s">${zeile}</p>
+        <div class="h-dark-row">
+          <div class="h-dark-prog" title="${pct}% der Zeit bis zum Examen">
+            <i style="width:${pct}%"></i>
+          </div>
+          <span class="h-dark-link">Zwischenstand</span>
+        </div>
+      </article>
+
+      <article class="h-card h-date">
+        <div class="h-orb" aria-hidden="true"></div>
+        <div class="h-disc" aria-hidden="true">
+          <b>${daysLeft}</b>
+          <span>Tage bis<br>zum Examen</span>
+        </div>
+        <div class="h-panel">
+          <div class="h-big">${wtag}</div>
+          <div class="h-big h-big-2">${tagMon}</div>
+          <div class="h-meta">
+            ${titel}<br>
+            Woche ${currentWeekN} von ${totalWeeks}<br>
+            ${pct}&thinsp;% geschafft
+          </div>
+          <div class="h-mark">
+            <svg viewBox="0 0 40 24" width="34" height="20" aria-hidden="true"><path d="M3 18 Q11 2 20 12 T37 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <span>Stex.plan</span>
+          </div>
+        </div>
+        <div class="h-aside">
+          Staatsexamen Bayern<br>
+          <span>3. März 2027</span>
+        </div>
+        <div class="h-cta">
+          <button type="button" class="cta-pill" onclick="openCurrentWeek()">Woche öffnen</button>
+          <button type="button" class="cta-dot" onclick="openCurrentWeek()" aria-label="Woche öffnen">${pfeil}</button>
+        </div>
+      </article>`;
   }
 
   function renderHeroChips() { /* ersetzt durch Seitenleiste + Kacheln */ }
@@ -3561,9 +4027,9 @@
 
   // ── FORTSCHRITT NACH RECHTSGEBIET ──────────────────
   const FAECHER = [
-    { name: 'Zivilrecht',         kurz: 'ZR', color: '#2E8465', light: '#86C9AC', bg: '#EAF4EF', deep: '#1E5E47' },
-    { name: 'Öffentliches Recht', kurz: 'ÖR', color: '#43698F', light: '#9BBAD6', bg: '#EBF0F6', deep: '#2C4A67' },
-    { name: 'Strafrecht',         kurz: 'SR', color: '#B25169', light: '#E3A8B6', bg: '#F8EDF0', deep: '#843B4E' },
+    { name: 'Zivilrecht',         kurz: 'ZR', color: '#4E8A6A', light: '#B4DCC6', bg: '#E4F1E9', deep: '#2F6249' },
+    { name: 'Öffentliches Recht', kurz: 'ÖR', color: '#7468B0', light: '#CBC4EE', bg: '#ECE9F9', deep: '#4D4386' },
+    { name: 'Strafrecht',         kurz: 'SR', color: '#C26A4C', light: '#EDBDA8', bg: '#F9E6DD', deep: '#8A452C' },
   ];
   const NOTE_MAX = 13;
 
@@ -4215,7 +4681,7 @@
       if (!hint) {
         hint = document.createElement('span');
         hint.className = 'save-hint';
-        hint.style.cssText = 'font-size:0.72rem;color:#8C6D45;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
+        hint.style.cssText = 'font-size:0.72rem;color:#B4596D;opacity:0;transition:opacity 0.2s;margin-left:0.5rem;';
         hint.textContent = 'Gespeichert ✓';
         const dateEl = form.querySelector('.daily-form-date');
         if (dateEl) dateEl.appendChild(hint);
@@ -5399,9 +5865,18 @@
     } else if (!tagRaster.b.length) {
       liste.innerHTML = '<li class="sp-b k-pause"><span class="sp-b-l">Kein Ablauf hinterlegt.</span></li>';
     } else {
+      // Je Fall-Block den nächsten offenen Notion-Fall desselben Gebiets
+      const pool = (heuteKey && typeof offeneFaelleWoche === 'function') ? offeneFaelleWoche() : [];
+      const vergeben = new Set();
+      const fallFuer = gebiet => {
+        const c = pool.find(x => !vergeben.has(x.title) && (x.rechtsgebiet || []).includes(gebiet));
+        if (c) vergeben.add(c.title);
+        return c || null;
+      };
       liste.innerHTML = tagRaster.b.map((block, i) => {
         const hw = heuteWoche;
         const gebiet = block.f ? zuteilungHeute[zeigeTag + '#' + i] : null;
+        const fall = gebiet && gebiet !== 'Reserve' ? fallFuer(gebiet) : null;
         const fach = gebiet ? FACH_VON_GEBIET[gebiet] : null;
         const zeit = (block === B.kwPeru && hw.kw && hw.kw.peru)
           ? '16–20 Uhr DE' : block.t;
@@ -5418,9 +5893,15 @@
                (gewaehlt ? ' gewaehlt' : '') + '">' +
                '<span class="sp-b-t">' + esc(zeit) + '</span>' +
                '<span class="sp-b-l">' + esc(block.l) + '</span>' +
-               (notiz ? '<span class="sp-b-n">' + esc(notiz) + '</span>' : '') +
+               (fall
+                 ? '<a class="sp-b-n sp-fall st-' + (fall.status === 'In Bearbeitung' ? 'progress' : 'open') + '"' +
+                   (fall.url ? ' href="' + esc(fall.url) + '" target="_blank" rel="noopener"' : '') +
+                   ' title="' + esc(gebiet) + ' · in Notion öffnen"><i class="fw-dot"></i>' + esc(fall.title) + '</a>'
+                 : notiz ? '<span class="sp-b-n">' + esc(notiz) + '</span>' : '') +
                '</li>';
       }).join('');
+      window.HEUTE_FAELLE = vergeben;
+      if (typeof renderNowNotion === 'function') renderNowNotion();
     }
 
     // Wochengitter
