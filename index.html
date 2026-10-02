@@ -1831,7 +1831,7 @@
     <div class="weeks-grid" id="weeks-grid"></div>
   </section>
 
-  <div class="section-label">Stundenplan bis 31. Januar <span>· Reihenfolge der Rechtsgebiete</span></div>
+  <div class="section-label">Stundenplan bis zum Examen <span>· Reihenfolge der Rechtsgebiete</span></div>
   <section class="sp glass rise d2">
     <div class="sp-inner" style="padding:1.3rem 1.6rem 1.5rem">
       <div class="sp-weeks-wrap"><table class="sp-weeks" id="sp-weeks"></table></div>
@@ -2704,12 +2704,14 @@
   );
   mkPhase('wiederholung',
     new Date(2027,1,1), new Date(2027,2,2), 0, 'wieder',
-    'Letzte 6 Wochen – reine Wiederholung',
-    { faelle: '0', faelleSub: 'kein Neustoff', klausuren: 'tägl.', klausurenSub: 'Prüfungssimulation', kartenSub: '2 h / Tag' },
-    ['Vollständige Wiederholung aller 255 Fälle',
-     'Tägliches Klausurtraining unter Prüfungsbedingungen',
+    'Letzte 4 Wochen – Wiederholung',
+    { faelle: '0', faelleSub: 'kein Neustoff', klausuren: '1 / Wo', klausurenSub: 'Sa schreiben (12.2. zusätzlich Fr)', kartenSub: '~2 h / Tag · alle Fächer' },
+    [{ text: 'MERKER Mo 1.2.: Größte Baustellen aus allen Korrekturen prüfen, Fehlerliste anlegen und diesen Plan danach anpassen', type: 'important' },
+     'Jede Woche alle Rechtsgebiete: Karteikarten ZR/ÖR/StrafR, je eine Examensfall-Skizze (90 min) und Gutachten-Bausteine pro Fach – Tagesablauf im Stundenplan',
+     'Restliche Klausuren nachbereiten → Fehlerliste; Samstagsklausur am Montagnachmittag nachbereiten',
      'Samstagsklausuren: 6.2. Uni-KK 1494 (ZR) · 13.2. Uni-KK 1495 (ZR) · 20.2. Konrad (ÖR, statt Uni 2317) · 27.2. Uni-KK 3215 (StrafR)',
-     'Karteikarten 2h täglich – alle Rechtsgebiete',
+     'Fr 12.2.: Examensklausur ZR (Altfall) – zusammen mit Sa 13.2. zwei Klausurtage hintereinander',
+     '1.–2.3.: nur noch Fehlerliste, Bausteine und Schemata – nichts Neues',
      { text: 'Schlaf, Sport und mentale Stabilität zählen hier genauso', type: 'success' }],
     255
   );
@@ -4561,7 +4563,36 @@
     // Einmal im Monat ab September, Datum kommt jeweils ~14 Tage vorher per Mail.
     // Sie wählt pro Monat eine der beiden Varianten.
     konradDo:  {t:'17:00–19:30', l:'Konrad-Kurs digital',    k:'konrad', s:'ab'},
-    konradFr:  {t:'16:30–19:00', l:'Konrad-Kurs München',    k:'konrad', s:'ab'}
+    konradFr:  {t:'16:30–19:00', l:'Konrad-Kurs München',    k:'konrad', s:'ab'},
+    // Wiederholung Februar 2027: keine Fall-Slots mehr. Jede Woche läuft
+    // durch alle drei Fächer (ZR mit dem größten Anteil, drei der sechs
+    // Examensklausuren). Examensfälle nur als Lösungsskizze in 90 min.
+    wMerker:   {t:'14:00–15:30', l:'Merker: größte Baustellen aus allen Korrekturen prüfen → Fehlerliste anlegen, Februar-Plan anpassen', k:'prep', s:'nm'},
+    wKarteZRmo:{t:'15:45–17:15', l:'Karteikarten · ZR',      k:'karte',   s:'nm'},
+    wKarteNm:  {t:'14:30–16:00', l:'Karteikarten · ZR',      k:'karte',   s:'nm'},
+    wKarteNmOR:{t:'14:30–16:00', l:'Karteikarten · ÖR',      k:'karte',   s:'nm'},
+    wSaNachb:  {t:'16:15–17:45', l:'Samstagsklausur nachbereiten → Fehlerliste', k:'klausur', s:'ab'},
+    wBausteinOR:{t:'16:15–17:45', l:'Gutachten-Bausteine · ÖR', k:'vertief', s:'ab'},
+    wSkizzeZR: {t:'9:00–10:30',  l:'Examensfall-Skizze · ZR', k:'fall',   s:'vm'},
+    wSkizzeSR: {t:'9:00–10:30',  l:'Examensfall-Skizze · StrafR', k:'fall', s:'vm'},
+    wSkizzeOR: {t:'9:00–10:30',  l:'Examensfall-Skizze · ÖR', k:'fall',   s:'vm'},
+    wKarteVmZR:{t:'10:45–12:00', l:'Karteikarten · ZR',      k:'karte',   s:'vm'},
+    wKarteVmSR:{t:'10:45–12:00', l:'Karteikarten · StrafR',  k:'karte',   s:'vm'},
+    wKarteVmOR:{t:'10:45–12:00', l:'Karteikarten · ÖR',      k:'karte',   s:'vm'},
+    wBausteinZR:{t:'14:00–15:30', l:'Gutachten-Bausteine · ZR', k:'vertief', s:'nm'},
+    wBausteinSR:{t:'14:00–15:30', l:'Gutachten-Bausteine · StrafR', k:'vertief', s:'nm'},
+    wRestNb:   {t:'14:00–15:30', l:'Restliche Klausuren nachbereiten → Fehlerliste', k:'klausur', s:'nm'},
+    wRestNb2:  {t:'15:45–17:15', l:'Restliche Klausuren nachbereiten → Fehlerliste', k:'klausur', s:'nm'},
+    wKarte2ZR: {t:'15:45–17:15', l:'Karteikarten · ZR',      k:'karte',   s:'nm'},
+    wKarte2SR: {t:'15:45–17:15', l:'Karteikarten · StrafR',  k:'karte',   s:'nm'},
+    wFehler:   {t:'17:30–18:30', l:'Fehlerliste durchgehen', k:'klausur', s:'ab'},
+    wLuecken:  {t:'17:30–18:30', l:'Lücken aus der Fehlerliste schließen', k:'vertief', s:'ab'},
+    examKl:    {t:'9:00–14:00',  l:'Examensklausur ZR schreiben (Altfall, 5 h) – Doppel-Simulation mit Sa', k:'klausur', s:'vm'},
+    examPause: {t:'14:00–15:00', l:'Pause',                  k:'pause',   s:'mi'},
+    examKarte: {t:'15:00–16:00', l:'Karteikarten (leicht)',  k:'karte',   s:'nm'},
+    letzteRunde:{t:'14:30–16:00', l:'Fehlerliste, Bausteine & Schemata durchblättern – nichts Neues', k:'karte', s:'nm'},
+    unterlagen:{t:'16:15–17:00', l:'Gesetze, Ausweis, Ladung, Anfahrt prüfen', k:'prep', s:'ab'},
+    examen:    {t:'',            l:'Staatsexamen – erste Klausur', k:'klausur', s:'vm'}
   };
 
   const TAG = {
@@ -4618,7 +4649,19 @@
     urlaubTag:   {std:'—',       b:[B.urlaub]},
     repFall:     {std:'6 h',     b:[B.rep,    B.fallNm]},
     arbeitFall:  {std:'6 h',     b:[B.arbeit, B.fallNm]},
-    arbeitFallKw:{std:'6 h + 4 h', b:[B.arbeit, B.fallNm, B.kw]}
+    arbeitFallKw:{std:'6 h + 4 h', b:[B.arbeit, B.fallNm, B.kw]},
+    // Wiederholung Februar 2027. Mo/Di vormittags Arbeit, deshalb dort
+    // keine Klausur; geschrieben wird samstags (und einmal freitags).
+    wMoStart: {std:'3 h',    b:[B.arbeit, B.wMerker, B.wKarteZRmo]},
+    wMo:      {std:'3 h',    b:[B.arbeit, B.wKarteNm, B.wSaNachb]},
+    wDi:      {std:'3 h',    b:[B.arbeit, B.wKarteNmOR, B.wBausteinOR]},
+    wMi:      {std:'7,25 h', b:[B.wSkizzeZR, B.wKarteVmZR, B.mittag, B.wBausteinZR, B.wRestNb2, B.wFehler]},
+    wDo:      {std:'7,25 h', b:[B.wSkizzeSR, B.wKarteVmSR, B.mittag, B.wBausteinSR, B.wKarte2ZR, B.wLuecken]},
+    wFr:      {std:'7,25 h', b:[B.wSkizzeOR, B.wKarteVmOR, B.mittag, B.wRestNb, B.wKarte2SR, B.wFehler]},
+    wFrKlausur:{std:'6 h',   b:[B.examKl, B.examPause, B.examKarte]},
+    wLetzte:  {std:'1,5 h',  b:[B.arbeit, B.letzteRunde]},
+    wLetzteDi:{std:'2,25 h', b:[B.arbeit, B.letzteRunde, B.unterlagen]},
+    wExamen:  {std:'Examen', b:[B.examen]}
   };
 
   const FACH_KURZ = {'Zivilrecht':'ZR', 'Öffentliches Recht':'ÖR', 'Strafrecht':'StrafR'};
@@ -4647,7 +4690,12 @@
     peruLernenMi:{Mo:TAG.peruLern, Di:TAG.peruLern, Mi:TAG.peruKwDo, Do:TAG.sa, Fr:TAG.peruLern, Sa:TAG.peruLern, So:TAG.so},
     weihnacht:  {Mo:TAG.weihMo, Di:TAG.weihMo, Mi:TAG.weihLang, Do:TAG.weihDo, Fr:TAG.weihLang, Sa:TAG.sa, So:TAG.so},
     // 26.12.: Uni-Klausurenkurs pausiert, Samstag frei
-    weihnachtFrei:{Mo:TAG.weihMo, Di:TAG.weihMo, Mi:TAG.weihLang, Do:TAG.weihDo, Fr:TAG.weihLang, Sa:TAG.so, So:TAG.so}
+    weihnachtFrei:{Mo:TAG.weihMo, Di:TAG.weihMo, Mi:TAG.weihLang, Do:TAG.weihDo, Fr:TAG.weihLang, Sa:TAG.so, So:TAG.so},
+    wiederStart:  {Mo:TAG.wMoStart, Di:TAG.wDi, Mi:TAG.wMi, Do:TAG.wDo, Fr:TAG.wFr,       Sa:TAG.sa, So:TAG.so},
+    wieder:       {Mo:TAG.wMo,      Di:TAG.wDi, Mi:TAG.wMi, Do:TAG.wDo, Fr:TAG.wFr,       Sa:TAG.sa, So:TAG.so},
+    // 12.2.: Examenswoche simulieren – Fr Altfall, Sa Uni-KK an zwei Tagen hintereinander
+    wiederDoppel: {Mo:TAG.wMo,      Di:TAG.wDi, Mi:TAG.wMi, Do:TAG.wDo, Fr:TAG.wFrKlausur, Sa:TAG.sa, So:TAG.so},
+    examenswoche: {Mo:TAG.wLetzte,  Di:TAG.wLetzteDi, Mi:TAG.wExamen, Do:TAG.leer, Fr:TAG.leer, Sa:TAG.leer, So:TAG.leer}
   };
 
   // 24 Wochen. mo = Montag der Kalenderwoche. g = Rechtsgebiete dieser Woche.
@@ -4741,7 +4789,23 @@
      n:9,  g:[['ErbR',5],['VerfassungsR',3],['Reserve',1]]},
     {mo:'2027-01-25', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Januar',            r:'normal',
      kw:{d:'2027-01-28',f:'Öffentliches Recht',t:'Tankt in Österreich'},
-     n:9,  g:[['FamilienR',2],['StrafR',2],['VerfassungsR',3],['Reserve',2]]}
+     n:9,  g:[['FamilienR',2],['StrafR',2],['VerfassungsR',3],['Reserve',2]]},
+    // Ab Februar: kein Neustoff mehr, keine Fall-Slots. Jede Woche alle Fächer.
+    {mo:'2027-02-01', sa:{q:'Uni-KK 1494',f:'Zivilrecht'}, ph:'Wiederholung',      r:'wiederStart',
+     kw:null, kwAus:'Termin noch offen',
+     n:0,  g:[]},
+    {mo:'2027-02-08', sa:{q:'Uni-KK 1495',f:'Zivilrecht'}, ph:'Wiederholung',      r:'wiederDoppel',
+     kw:null, kwAus:'Termin noch offen',
+     n:0,  g:[]},
+    {mo:'2027-02-15', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Wiederholung',   r:'wieder',
+     kw:null, kwAus:'Termin noch offen',
+     n:0,  g:[]},
+    {mo:'2027-02-22', sa:{q:'Uni-KK 3215',f:'Strafrecht'}, ph:'Wiederholung',      r:'wieder',
+     kw:null, kwAus:'Termin noch offen',
+     n:0,  g:[]},
+    {mo:'2027-03-01', ph:'Examenswoche',      r:'examenswoche',
+     kw:null, kwAus:'—',
+     n:0,  g:[]}
   ];
 
   // Offene + in Bearbeitung befindliche Hauptkurs-Fälle. Steht seit
@@ -4914,7 +4978,7 @@
     let geschrieben = 0, probe = 0;
     TAGE.forEach(tag => {
       rasterFuer(w, tag).b.forEach(block => {
-        if (block === B.klausur) geschrieben++;
+        if (block === B.klausur || block === B.examKl) geschrieben++;
         if (block === B.probe)   probe++;
       });
     });
