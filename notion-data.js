@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.10.2026 10:52",
+  "lastSync": "03.10.2026 18:40",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5057,
@@ -1237,7 +1237,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-03"
   },
   "ankiFach": {
-    "stand": "03.10.2026 11:07",
+    "stand": "03.10.2026 18:40",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
@@ -1266,7 +1266,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "03.10.2026 11:07",
+    "stand": "03.10.2026 18:40",
     "datum": "2026-10-03",
     "faelle": [
       "SchuldRAT · Fall 18",
@@ -1293,7 +1293,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "03.10.2026 11:07",
+    "stand": "03.10.2026 18:40",
     "tage": [
       {
         "datum": "2026-10-02",
