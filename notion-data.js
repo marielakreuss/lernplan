@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.10.2026 20:21",
+  "lastSync": "04.10.2026 21:23",
   "anki": {
-    "reviewedToday": 5,
-    "dueNow": 5104,
+    "reviewedToday": 26,
+    "dueNow": 5093,
     "history": [
       {
         "date": "2025-09-29",
@@ -1239,13 +1239,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-04",
-        "count": 22
+        "count": 43
       }
     ],
     "stand": "2026-10-04"
   },
   "ankiFach": {
-    "stand": "04.10.2026 20:21",
+    "stand": "04.10.2026 21:23",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
@@ -1253,7 +1253,7 @@ window.NOTION_DATA = {
         "lernen": 871,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1829
+        "faellig": 1820
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1269,12 +1269,12 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 675
+        "faellig": 673
       }
     }
   },
   "wiederholung": {
-    "stand": "04.10.2026 20:21",
+    "stand": "04.10.2026 21:23",
     "datum": "2026-10-04",
     "faelle": [],
     "gebiet": "6 KommunalR",
@@ -1286,7 +1286,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 43
+        "offen": 32
       },
       {
         "name": "Rechtsgebiet",
@@ -1295,31 +1295,50 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "04.10.2026 20:21",
+    "stand": "04.10.2026 21:23",
     "tage": [
       {
         "datum": "2026-10-04",
-        "karten": 19,
+        "karten": 33,
         "neu": 5,
         "angelegt": 0,
         "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 18
+          },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
             "n": 10
           },
           {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 8
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 1
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
           }
         ],
         "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 13",
+            "n": 9
+          },
           {
             "name": "KommunalR · Fall 2",
             "n": 9
@@ -1327,6 +1346,10 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 15",
             "n": 4
+          },
+          {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 3
           },
           {
             "name": "SchuldRBT2 · Fall 11",
