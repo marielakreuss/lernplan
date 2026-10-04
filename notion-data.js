@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.10.2026 22:31",
+  "lastSync": "04.10.2026 11:11",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5057,
+    "dueNow": 5106,
     "history": [
       {
         "date": "2025-09-29",
@@ -1232,28 +1232,36 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-02",
         "count": 123
+      },
+      {
+        "date": "2026-10-03",
+        "count": 64
+      },
+      {
+        "date": "2026-10-04",
+        "count": 17
       }
     ],
-    "stand": "2026-10-03"
+    "stand": "2026-10-04"
   },
   "ankiFach": {
-    "stand": "03.10.2026 18:40",
+    "stand": "04.10.2026 11:11",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
-        "neu": 30,
-        "lernen": 841,
+        "neu": 0,
+        "lernen": 871,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1801
+        "faellig": 1831
       },
       "Öffentliches Recht": {
         "total": 899,
-        "neu": 22,
-        "lernen": 538,
+        "neu": 0,
+        "lernen": 560,
         "aufbau": 83,
         "sitzt": 256,
-        "faellig": 810
+        "faellig": 829
       },
       "Strafrecht": {
         "total": 706,
@@ -1266,21 +1274,15 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "03.10.2026 18:40",
-    "datum": "2026-10-03",
-    "faelle": [
-      "SchuldRAT · Fall 18",
-      "SchuldRBT2 · Fall 14",
-      "SchuldRBT2 · Fall 15",
-      "KommunalR · Fall 1",
-      "KommunalR · Fall 2"
-    ],
-    "gebiet": "7 ZPO II",
-    "fach": "Zivilrecht",
+    "stand": "04.10.2026 11:11",
+    "datum": "2026-10-04",
+    "faelle": [],
+    "gebiet": "6 KommunalR",
+    "fach": "Öffentliches Recht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 60
+        "offen": 0
       },
       {
         "name": "Anschluss",
@@ -1288,13 +1290,108 @@ window.NOTION_DATA = {
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 20
+        "offen": 35
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "03.10.2026 18:40",
+    "stand": "04.10.2026 11:11",
     "tage": [
+      {
+        "datum": "2026-10-04",
+        "karten": 14,
+        "neu": 5,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 10
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "KommunalR · Fall 2",
+            "n": 9
+          },
+          {
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-10-03",
+        "karten": 55,
+        "neu": 47,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 22
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 17
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 10
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 20
+          },
+          {
+            "name": "KommunalR · Fall 2",
+            "n": 17
+          },
+          {
+            "name": "SchuldRBT2 · Fall 13",
+            "n": 5
+          },
+          {
+            "name": "SchuldRBT2 · Fall 14",
+            "n": 5
+          },
+          {
+            "name": "KommunalR · Fall 1",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-02",
         "karten": 84,
