@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.10.2026 18:19",
+  "lastSync": "04.10.2026 20:21",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5106,
+    "reviewedToday": 5,
+    "dueNow": 5104,
     "history": [
       {
         "date": "2025-09-29",
@@ -1239,13 +1239,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-04",
-        "count": 17
+        "count": 22
       }
     ],
     "stand": "2026-10-04"
   },
   "ankiFach": {
-    "stand": "04.10.2026 18:19",
+    "stand": "04.10.2026 20:21",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
@@ -1253,7 +1253,7 @@ window.NOTION_DATA = {
         "lernen": 871,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1831
+        "faellig": 1829
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1274,7 +1274,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "04.10.2026 18:19",
+    "stand": "04.10.2026 20:21",
     "datum": "2026-10-04",
     "faelle": [],
     "gebiet": "6 KommunalR",
@@ -1286,7 +1286,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 45
+        "offen": 43
       },
       {
         "name": "Rechtsgebiet",
@@ -1295,11 +1295,11 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "04.10.2026 18:19",
+    "stand": "04.10.2026 20:21",
     "tage": [
       {
         "datum": "2026-10-04",
-        "karten": 14,
+        "karten": 19,
         "neu": 5,
         "angelegt": 0,
         "gebiete": [
@@ -1311,7 +1311,7 @@ window.NOTION_DATA = {
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 3
+            "n": 8
           },
           {
             "fach": "Zivilrecht",
@@ -1327,6 +1327,10 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 15",
             "n": 4
+          },
+          {
+            "name": "SchuldRBT2 · Fall 11",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
