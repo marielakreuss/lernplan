@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.10.2026 21:23",
+  "lastSync": "04.10.2026 23:25",
   "anki": {
-    "reviewedToday": 26,
-    "dueNow": 5093,
+    "reviewedToday": 86,
+    "dueNow": 5052,
     "history": [
       {
         "date": "2025-09-29",
@@ -1239,13 +1239,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-04",
-        "count": 43
+        "count": 105
       }
     ],
     "stand": "2026-10-04"
   },
   "ankiFach": {
-    "stand": "04.10.2026 21:23",
+    "stand": "04.10.2026 23:25",
     "faecher": {
       "Zivilrecht": {
         "total": 2093,
@@ -1253,15 +1253,15 @@ window.NOTION_DATA = {
         "lernen": 871,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1820
+        "faellig": 1803
       },
       "Öffentliches Recht": {
         "total": 899,
         "neu": 0,
-        "lernen": 560,
-        "aufbau": 83,
-        "sitzt": 256,
-        "faellig": 829
+        "lernen": 569,
+        "aufbau": 82,
+        "sitzt": 248,
+        "faellig": 810
       },
       "Strafrecht": {
         "total": 706,
@@ -1269,12 +1269,12 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 673
+        "faellig": 665
       }
     }
   },
   "wiederholung": {
-    "stand": "04.10.2026 21:23",
+    "stand": "04.10.2026 23:25",
     "datum": "2026-10-04",
     "faelle": [],
     "gebiet": "6 KommunalR",
@@ -1286,66 +1286,115 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 32
+        "offen": 0
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 35
+        "offen": 23
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "04.10.2026 21:23",
+    "stand": "04.10.2026 23:25",
     "tage": [
       {
         "datum": "2026-10-04",
-        "karten": 33,
+        "karten": 75,
         "neu": 5,
         "angelegt": 0,
         "gebiete": [
           {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 18
-          },
-          {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
-            "n": 10
+            "n": 29
           },
           {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 2
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 26
           },
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
-            "n": 1
+            "n": 7
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 3
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
-            "n": 1
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "1 EuropaR",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR AT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
             "n": 1
           }
         ],
         "faelle": [
           {
             "name": "SchuldRBT2 · Fall 13",
-            "n": 9
+            "n": 10
           },
           {
             "name": "KommunalR · Fall 2",
             "n": 9
           },
           {
+            "name": "KommunalR · Fall 5",
+            "n": 8
+          },
+          {
+            "name": "StGB · Fall 04",
+            "n": 6
+          },
+          {
+            "name": "EuropaR · Fall 05",
+            "n": 5
+          },
+          {
+            "name": "KommunalR · Fall 9",
+            "n": 5
+          },
+          {
             "name": "SchuldRBT2 · Fall 15",
             "n": 4
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT2 · Fall 01",
+            "n": 3
           },
           {
             "name": "SchuldRBT2 · Fall 05",
@@ -1353,6 +1402,14 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 11",
+            "n": 3
+          },
+          {
+            "name": "KommunalR · Fall 1",
+            "n": 3
+          },
+          {
+            "name": "KommunalR · Fall 8",
             "n": 3
           }
         ],
