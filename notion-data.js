@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 18:17",
+  "lastSync": "06.10.2026 19:18",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5106,
+    "dueNow": 5122,
     "history": [
       {
         "date": "2025-09-29",
@@ -1249,15 +1249,15 @@ window.NOTION_DATA = {
     "stand": "2026-10-06"
   },
   "ankiFach": {
-    "stand": "06.10.2026 18:17",
+    "stand": "06.10.2026 19:18",
     "faecher": {
       "Zivilrecht": {
-        "total": 2103,
-        "neu": 7,
-        "lernen": 874,
+        "total": 2108,
+        "neu": 11,
+        "lernen": 875,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1839
+        "faellig": 1856
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1278,15 +1278,23 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "06.10.2026 18:17",
+    "stand": "06.10.2026 19:18",
     "datum": "2026-10-06",
-    "faelle": [],
+    "faelle": [
+      "BGBAT · Fall 12",
+      "SchuldRAT · Fall 18",
+      "SchuldRAT · Fall 19",
+      "SchuldRBT1 · Fall 01",
+      "SchuldRBT2 · Fall 16",
+      "SchuldRBT2 · Fall 17",
+      "SchuldRBT2 · Fall 18"
+    ],
     "gebiet": "8 HandelsR",
     "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 0
+        "offen": 59
       },
       {
         "name": "Anschluss",
@@ -1299,19 +1307,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "06.10.2026 18:17",
+    "stand": "06.10.2026 19:18",
     "tage": [
       {
         "datum": "2026-10-06",
         "karten": 0,
         "neu": 0,
-        "angelegt": 7,
+        "angelegt": 11,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "SchuldRBT2 · Fall 17",
-            "n": 6
+            "n": 10
           }
         ]
       },
@@ -2619,7 +2627,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 54,
-    "nachbereitet": 153
+    "nachbereitet": 154
   },
   "cases": [
     {
@@ -7225,7 +7233,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SchuldR BT 2 Fall18 (abschließender Vertiefungsfall)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-06",
       "rechtsgebiet": [
@@ -7522,7 +7530,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 153,
+    "nachbereitet": 154,
     "inBearbeitung": 25,
     "total": 352,
     "klkGesamt": 97,
