@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 12:30",
+  "lastSync": "06.10.2026 15:13",
   "anki": {
     "reviewedToday": 86,
     "dueNow": 5052,
@@ -7093,7 +7093,7 @@ window.NOTION_DATA = {
       "title": "SachenR Fall02",
       "status": "In Bearbeitung",
       "woche": 54,
-      "datum": "2026-10-06",
+      "datum": "2026-10-07",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -7121,7 +7121,7 @@ window.NOTION_DATA = {
       "title": "SachenR Fall03",
       "status": "In Bearbeitung",
       "woche": 54,
-      "datum": "2026-10-06",
+      "datum": "2026-10-07",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -7194,7 +7194,7 @@ window.NOTION_DATA = {
       "title": "SchuldR BT 2 Fall18 (abschließender Vertiefungsfall)",
       "status": "Nicht nachbereitet",
       "woche": 54,
-      "datum": "2026-10-05",
+      "datum": "2026-10-06",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -7208,7 +7208,7 @@ window.NOTION_DATA = {
       "title": "SchuldR BT 2 Fall17",
       "status": "In Bearbeitung",
       "woche": 54,
-      "datum": "2026-10-05",
+      "datum": "2026-10-06",
       "rechtsgebiet": [
         "SchuldR BT 2"
       ],
@@ -7376,7 +7376,7 @@ window.NOTION_DATA = {
       "title": "KommunalR Fall07 (Vertiefung)",
       "status": "In Bearbeitung",
       "woche": 54,
-      "datum": "2026-10-07",
+      "datum": "2026-10-09",
       "rechtsgebiet": [
         "KommunalR"
       ],
