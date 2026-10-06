@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 19:18",
+  "lastSync": "06.10.2026 20:19",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5122,
+    "reviewedToday": 16,
+    "dueNow": 5113,
     "history": [
       {
         "date": "2025-09-29",
@@ -1244,20 +1244,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-05",
         "count": 1
+      },
+      {
+        "date": "2026-10-06",
+        "count": 16
       }
     ],
     "stand": "2026-10-06"
   },
   "ankiFach": {
-    "stand": "06.10.2026 19:18",
+    "stand": "06.10.2026 20:19",
     "faecher": {
       "Zivilrecht": {
         "total": 2108,
-        "neu": 11,
-        "lernen": 875,
-        "aufbau": 159,
-        "sitzt": 1063,
-        "faellig": 1856
+        "neu": 8,
+        "lernen": 880,
+        "aufbau": 158,
+        "sitzt": 1062,
+        "faellig": 1847
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1278,7 +1282,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "06.10.2026 19:18",
+    "stand": "06.10.2026 20:19",
     "datum": "2026-10-06",
     "faelle": [
       "BGBAT · Fall 12",
@@ -1294,7 +1298,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 59
+        "offen": 47
       },
       {
         "name": "Anschluss",
@@ -1307,15 +1311,36 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "06.10.2026 19:18",
+    "stand": "06.10.2026 20:19",
     "tage": [
       {
         "datum": "2026-10-06",
-        "karten": 0,
-        "neu": 0,
+        "karten": 16,
+        "neu": 3,
         "angelegt": 11,
-        "gebiete": [],
-        "faelle": [],
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 12
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 16",
+            "n": 4
+          }
+        ],
         "faelleAngelegt": [
           {
             "name": "SchuldRBT2 · Fall 17",
