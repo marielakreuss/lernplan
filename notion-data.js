@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 15:13",
+  "lastSync": "06.10.2026 16:14",
   "anki": {
-    "reviewedToday": 86,
-    "dueNow": 5052,
+    "reviewedToday": 0,
+    "dueNow": 5106,
     "history": [
       {
         "date": "2025-09-29",
@@ -1239,29 +1239,33 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-04",
-        "count": 105
+        "count": 118
+      },
+      {
+        "date": "2026-10-05",
+        "count": 1
       }
     ],
-    "stand": "2026-10-04"
+    "stand": "2026-10-06"
   },
   "ankiFach": {
-    "stand": "04.10.2026 23:25",
+    "stand": "06.10.2026 16:14",
     "faecher": {
       "Zivilrecht": {
-        "total": 2093,
+        "total": 2094,
         "neu": 0,
-        "lernen": 871,
+        "lernen": 872,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1803
+        "faellig": 1837
       },
       "Öffentliches Recht": {
         "total": 899,
         "neu": 0,
-        "lernen": 569,
+        "lernen": 572,
         "aufbau": 82,
-        "sitzt": 248,
-        "faellig": 810
+        "sitzt": 245,
+        "faellig": 825
       },
       "Strafrecht": {
         "total": 706,
@@ -1269,16 +1273,16 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 665
+        "faellig": 674
       }
     }
   },
   "wiederholung": {
-    "stand": "04.10.2026 23:25",
-    "datum": "2026-10-04",
+    "stand": "06.10.2026 16:14",
+    "datum": "2026-10-06",
     "faelle": [],
-    "gebiet": "6 KommunalR",
-    "fach": "Öffentliches Recht",
+    "gebiet": "8 HandelsR",
+    "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
@@ -1286,27 +1290,42 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 0
+        "offen": 45
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 23
+        "offen": 35
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "04.10.2026 23:25",
+    "stand": "06.10.2026 16:14",
     "tage": [
       {
+        "datum": "2026-10-05",
+        "karten": 1,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "4 Familienrecht",
+            "n": 1
+          }
+        ],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
+      {
         "datum": "2026-10-04",
-        "karten": 75,
+        "karten": 82,
         "neu": 5,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
-            "n": 29
+            "n": 36
           },
           {
             "fach": "Zivilrecht",
@@ -1365,15 +1384,19 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
+            "name": "KommunalR · Fall 5",
+            "n": 10
+          },
+          {
             "name": "KommunalR · Fall 2",
             "n": 9
           },
           {
-            "name": "KommunalR · Fall 5",
-            "n": 8
+            "name": "StGB · Fall 04",
+            "n": 6
           },
           {
-            "name": "StGB · Fall 04",
+            "name": "KommunalR · Fall 9",
             "n": 6
           },
           {
@@ -1381,11 +1404,15 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
-            "name": "KommunalR · Fall 9",
-            "n": 5
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 4
           },
           {
-            "name": "SchuldRBT2 · Fall 15",
+            "name": "KommunalR · Fall 1",
+            "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 8",
             "n": 4
           },
           {
@@ -1402,14 +1429,6 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 11",
-            "n": 3
-          },
-          {
-            "name": "KommunalR · Fall 1",
-            "n": 3
-          },
-          {
-            "name": "KommunalR · Fall 8",
             "n": 3
           }
         ],
