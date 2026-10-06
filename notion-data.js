@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 01:01",
+  "lastSync": "06.10.2026 09:55",
   "anki": {
     "reviewedToday": 86,
     "dueNow": 5052,
@@ -3127,7 +3127,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 7,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1485-Probestex-abgegeben-am-11-9-2026-3d8539e733aa800ca393c20bfb7a4909"
     },
@@ -3144,7 +3144,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 7,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1484-Probestex-abgegeben-am-10-9-2026-3d7539e733aa80d5a439fcdb93ba6dc7"
     },
