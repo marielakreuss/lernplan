@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 17:16",
+  "lastSync": "06.10.2026 18:17",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5106,
@@ -1249,11 +1249,11 @@ window.NOTION_DATA = {
     "stand": "2026-10-06"
   },
   "ankiFach": {
-    "stand": "06.10.2026 17:15",
+    "stand": "06.10.2026 18:17",
     "faecher": {
       "Zivilrecht": {
-        "total": 2101,
-        "neu": 5,
+        "total": 2103,
+        "neu": 7,
         "lernen": 874,
         "aufbau": 159,
         "sitzt": 1063,
@@ -1278,7 +1278,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "06.10.2026 17:15",
+    "stand": "06.10.2026 18:17",
     "datum": "2026-10-06",
     "faelle": [],
     "gebiet": "8 HandelsR",
@@ -1299,19 +1299,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "06.10.2026 17:15",
+    "stand": "06.10.2026 18:17",
     "tage": [
       {
         "datum": "2026-10-06",
         "karten": 0,
         "neu": 0,
-        "angelegt": 5,
+        "angelegt": 7,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "SchuldRBT2 · Fall 17",
-            "n": 4
+            "n": 6
           }
         ]
       },
@@ -2619,7 +2619,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 54,
-    "nachbereitet": 152
+    "nachbereitet": 153
   },
   "cases": [
     {
@@ -7239,7 +7239,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SchuldR BT 2 Fall17",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-06",
       "rechtsgebiet": [
@@ -7522,8 +7522,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 152,
-    "inBearbeitung": 26,
+    "nachbereitet": 153,
+    "inBearbeitung": 25,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 29
