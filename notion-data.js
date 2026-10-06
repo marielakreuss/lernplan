@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 16:14",
+  "lastSync": "06.10.2026 17:16",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5106,
@@ -1249,15 +1249,15 @@ window.NOTION_DATA = {
     "stand": "2026-10-06"
   },
   "ankiFach": {
-    "stand": "06.10.2026 16:14",
+    "stand": "06.10.2026 17:15",
     "faecher": {
       "Zivilrecht": {
-        "total": 2094,
-        "neu": 0,
-        "lernen": 872,
+        "total": 2101,
+        "neu": 5,
+        "lernen": 874,
         "aufbau": 159,
         "sitzt": 1063,
-        "faellig": 1837
+        "faellig": 1839
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1278,7 +1278,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "06.10.2026 16:14",
+    "stand": "06.10.2026 17:15",
     "datum": "2026-10-06",
     "faelle": [],
     "gebiet": "8 HandelsR",
@@ -1299,8 +1299,22 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "06.10.2026 16:14",
+    "stand": "06.10.2026 17:15",
     "tage": [
+      {
+        "datum": "2026-10-06",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 5,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": [
+          {
+            "name": "SchuldRBT2 · Fall 17",
+            "n": 4
+          }
+        ]
+      },
       {
         "datum": "2026-10-05",
         "karten": 1,
