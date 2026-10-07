@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.10.2026 15:20",
+  "lastSync": "07.10.2026 16:21",
   "anki": {
-    "reviewedToday": 82,
-    "dueNow": 5060,
+    "reviewedToday": 144,
+    "dueNow": 5031,
     "history": [
       {
         "date": "2025-09-29",
@@ -1251,29 +1251,29 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-07",
-        "count": 82
+        "count": 144
       }
     ],
     "stand": "2026-10-07"
   },
   "ankiFach": {
-    "stand": "07.10.2026 15:20",
+    "stand": "07.10.2026 16:21",
     "faecher": {
       "Zivilrecht": {
-        "total": 2118,
+        "total": 2119,
         "neu": 1,
-        "lernen": 908,
-        "aufbau": 153,
+        "lernen": 910,
+        "aufbau": 152,
         "sitzt": 1056,
-        "faellig": 1789
+        "faellig": 1781
       },
       "Öffentliches Recht": {
         "total": 899,
         "neu": 0,
-        "lernen": 572,
-        "aufbau": 82,
+        "lernen": 578,
+        "aufbau": 76,
         "sitzt": 245,
-        "faellig": 825
+        "faellig": 805
       },
       "Strafrecht": {
         "total": 706,
@@ -1286,7 +1286,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "07.10.2026 15:20",
+    "stand": "07.10.2026 16:21",
     "datum": "2026-10-07",
     "faelle": [
       "SachenR · Fall 01",
@@ -1301,7 +1301,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 16
+        "offen": 10
       },
       {
         "name": "Anschluss",
@@ -1309,28 +1309,33 @@ window.NOTION_DATA = {
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 20
+        "offen": 4
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "07.10.2026 15:20",
+    "stand": "07.10.2026 16:21",
     "tage": [
       {
         "datum": "2026-10-07",
-        "karten": 55,
-        "neu": 9,
-        "angelegt": 9,
+        "karten": 80,
+        "neu": 10,
+        "angelegt": 10,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 37
+            "n": 39
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 20
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 11
+            "n": 13
           },
           {
             "fach": "Zivilrecht",
@@ -1341,24 +1346,49 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR AT",
             "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "7 ZPO II",
+            "n": 1
           }
         ],
         "faelle": [
           {
             "name": "SachenR · Fall 05",
-            "n": 15
+            "n": 16
           },
           {
             "name": "SachenR · Fall 01",
-            "n": 13
+            "n": 14
           },
           {
             "name": "SachenR · Fall 03",
-            "n": 12
+            "n": 13
           },
           {
             "name": "SchuldRBT2 · Fall 17",
-            "n": 8
+            "n": 10
+          },
+          {
+            "name": "PolR · Fall 1",
+            "n": 5
+          },
+          {
+            "name": "PolR · Fall 7",
+            "n": 4
+          },
+          {
+            "name": "PolR · Fall 2",
+            "n": 3
+          },
+          {
+            "name": "PolR · Fall 3",
+            "n": 3
+          },
+          {
+            "name": "PolR · Fall 4",
+            "n": 3
           }
         ],
         "faelleAngelegt": [
