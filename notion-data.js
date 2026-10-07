@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.10.2026 12:23",
+  "lastSync": "07.10.2026 15:20",
   "anki": {
-    "reviewedToday": 7,
-    "dueNow": 5098,
+    "reviewedToday": 82,
+    "dueNow": 5060,
     "history": [
       {
         "date": "2025-09-29",
@@ -1251,21 +1251,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-07",
-        "count": 7
+        "count": 82
       }
     ],
     "stand": "2026-10-07"
   },
   "ankiFach": {
-    "stand": "07.10.2026 12:54",
+    "stand": "07.10.2026 15:20",
     "faecher": {
       "Zivilrecht": {
         "total": 2118,
-        "neu": 9,
-        "lernen": 896,
-        "aufbau": 156,
-        "sitzt": 1057,
-        "faellig": 1828
+        "neu": 1,
+        "lernen": 908,
+        "aufbau": 153,
+        "sitzt": 1056,
+        "faellig": 1789
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1286,7 +1286,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "07.10.2026 12:54",
+    "stand": "07.10.2026 15:20",
     "datum": "2026-10-07",
     "faelle": [
       "SachenR · Fall 01",
@@ -1301,7 +1301,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 57
+        "offen": 16
       },
       {
         "name": "Anschluss",
@@ -1314,29 +1314,51 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "07.10.2026 12:54",
+    "stand": "07.10.2026 15:20",
     "tage": [
       {
         "datum": "2026-10-07",
-        "karten": 7,
-        "neu": 1,
+        "karten": 55,
+        "neu": 9,
         "angelegt": 9,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 5
+            "n": 37
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
+            "n": 11
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 5
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
             "n": 2
           }
         ],
         "faelle": [
           {
+            "name": "SachenR · Fall 05",
+            "n": 15
+          },
+          {
             "name": "SachenR · Fall 01",
-            "n": 3
+            "n": 13
+          },
+          {
+            "name": "SachenR · Fall 03",
+            "n": 12
+          },
+          {
+            "name": "SchuldRBT2 · Fall 17",
+            "n": 8
           }
         ],
         "faelleAngelegt": [
