@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "07.10.2026 16:21",
+  "lastSync": "07.10.2026 23:55",
   "anki": {
     "reviewedToday": 144,
     "dueNow": 5031,
@@ -2784,7 +2784,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 54,
-    "nachbereitet": 156
+    "nachbereitet": 157
   },
   "cases": [
     {
@@ -6257,7 +6257,7 @@ window.NOTION_DATA = {
       "title": "KommunalR Fall03",
       "status": "Nicht nachbereitet",
       "woche": 54,
-      "datum": "2026-10-07",
+      "datum": "2026-10-09",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -7263,7 +7263,7 @@ window.NOTION_DATA = {
       "title": "SachenR Fall06",
       "status": "Nicht nachbereitet",
       "woche": 54,
-      "datum": "2026-10-09",
+      "datum": "2026-10-07",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -7303,7 +7303,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall04",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-07",
       "rechtsgebiet": [
@@ -7687,7 +7687,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 156,
+    "nachbereitet": 157,
     "inBearbeitung": 23,
     "total": 352,
     "klkGesamt": 97,
