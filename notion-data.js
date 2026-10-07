@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.10.2026 11:53",
+  "lastSync": "07.10.2026 12:54",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5103,
+    "reviewedToday": 7,
+    "dueNow": 5098,
     "history": [
       {
         "date": "2025-09-29",
@@ -1248,20 +1248,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-06",
         "count": 109
+      },
+      {
+        "date": "2026-10-07",
+        "count": 7
       }
     ],
     "stand": "2026-10-07"
   },
   "ankiFach": {
-    "stand": "07.10.2026 11:53",
+    "stand": "07.10.2026 12:54",
     "faecher": {
       "Zivilrecht": {
-        "total": 2114,
-        "neu": 6,
-        "lernen": 894,
+        "total": 2118,
+        "neu": 9,
+        "lernen": 896,
         "aufbau": 156,
-        "sitzt": 1058,
-        "faellig": 1833
+        "sitzt": 1057,
+        "faellig": 1828
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1282,9 +1286,13 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "07.10.2026 11:53",
+    "stand": "07.10.2026 12:54",
     "datum": "2026-10-07",
     "faelle": [
+      "SachenR · Fall 01",
+      "SachenR · Fall 02",
+      "SachenR · Fall 03",
+      "SachenR · Fall 05",
       "SchuldRBT1 · Fall 01",
       "SchuldRBT2 · Fall 18"
     ],
@@ -1293,7 +1301,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 60
+        "offen": 57
       },
       {
         "name": "Anschluss",
@@ -1306,16 +1314,36 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "07.10.2026 11:53",
+    "stand": "07.10.2026 12:54",
     "tage": [
       {
         "datum": "2026-10-07",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 5,
-        "gebiete": [],
-        "faelle": [],
+        "karten": 7,
+        "neu": 1,
+        "angelegt": 9,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 5
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 2
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SachenR · Fall 01",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": [
+          {
+            "name": "SachenR · Fall 03",
+            "n": 5
+          },
           {
             "name": "SachenR · Fall 01",
             "n": 4
@@ -2704,7 +2732,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 54,
-    "nachbereitet": 154
+    "nachbereitet": 156
   },
   "cases": [
     {
@@ -7209,7 +7237,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall02",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-07",
       "rechtsgebiet": [
@@ -7237,7 +7265,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall03",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-07",
       "rechtsgebiet": [
@@ -7607,8 +7635,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 154,
-    "inBearbeitung": 25,
+    "nachbereitet": 156,
+    "inBearbeitung": 23,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 29
