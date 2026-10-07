@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "07.10.2026 10:52",
+  "lastSync": "07.10.2026 11:53",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5103,
@@ -1253,11 +1253,11 @@ window.NOTION_DATA = {
     "stand": "2026-10-07"
   },
   "ankiFach": {
-    "stand": "07.10.2026 10:51",
+    "stand": "07.10.2026 11:53",
     "faecher": {
       "Zivilrecht": {
-        "total": 2111,
-        "neu": 3,
+        "total": 2114,
+        "neu": 6,
         "lernen": 894,
         "aufbau": 156,
         "sitzt": 1058,
@@ -1282,7 +1282,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "07.10.2026 10:51",
+    "stand": "07.10.2026 11:53",
     "datum": "2026-10-07",
     "faelle": [
       "SchuldRBT1 · Fall 01",
@@ -1297,7 +1297,7 @@ window.NOTION_DATA = {
       },
       {
         "name": "Anschluss",
-        "offen": 45
+        "offen": 44
       },
       {
         "name": "Rechtsgebiet",
@@ -1306,16 +1306,21 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "07.10.2026 10:51",
+    "stand": "07.10.2026 11:53",
     "tage": [
       {
         "datum": "2026-10-07",
         "karten": 0,
         "neu": 0,
-        "angelegt": 2,
+        "angelegt": 5,
         "gebiete": [],
         "faelle": [],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "SachenR · Fall 01",
+            "n": 4
+          }
+        ]
       },
       {
         "datum": "2026-10-06",
@@ -2225,15 +2230,15 @@ window.NOTION_DATA = {
             "n": 19
           },
           {
-            "name": "SchuldRBT2 · Fall 04",
-            "n": 9
-          },
-          {
             "name": "StGB · Fall 02",
             "n": 8
           },
           {
             "name": "SchuldRBT2 · Fall 03",
+            "n": 8
+          },
+          {
+            "name": "SchuldRBT2 · Fall 04",
             "n": 8
           }
         ],
