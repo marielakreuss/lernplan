@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "06.10.2026 23:26",
+  "lastSync": "07.10.2026 10:52",
   "anki": {
-    "reviewedToday": 16,
-    "dueNow": 5113,
+    "reviewedToday": 0,
+    "dueNow": 5103,
     "history": [
       {
         "date": "2025-09-29",
@@ -1247,21 +1247,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-06",
-        "count": 16
+        "count": 109
       }
     ],
-    "stand": "2026-10-06"
+    "stand": "2026-10-07"
   },
   "ankiFach": {
-    "stand": "06.10.2026 20:19",
+    "stand": "07.10.2026 10:51",
     "faecher": {
       "Zivilrecht": {
-        "total": 2108,
-        "neu": 8,
-        "lernen": 880,
-        "aufbau": 158,
-        "sitzt": 1062,
-        "faellig": 1847
+        "total": 2111,
+        "neu": 3,
+        "lernen": 894,
+        "aufbau": 156,
+        "sitzt": 1058,
+        "faellig": 1833
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1277,28 +1277,23 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 674
+        "faellig": 678
       }
     }
   },
   "wiederholung": {
-    "stand": "06.10.2026 20:19",
-    "datum": "2026-10-06",
+    "stand": "07.10.2026 10:51",
+    "datum": "2026-10-07",
     "faelle": [
-      "BGBAT · Fall 12",
-      "SchuldRAT · Fall 18",
-      "SchuldRAT · Fall 19",
       "SchuldRBT1 · Fall 01",
-      "SchuldRBT2 · Fall 16",
-      "SchuldRBT2 · Fall 17",
       "SchuldRBT2 · Fall 18"
     ],
-    "gebiet": "8 HandelsR",
-    "fach": "Zivilrecht",
+    "gebiet": "8 Polizei- und SicherheitsR",
+    "fach": "Öffentliches Recht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 47
+        "offen": 60
       },
       {
         "name": "Anschluss",
@@ -1306,39 +1301,91 @@ window.NOTION_DATA = {
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 35
+        "offen": 20
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "06.10.2026 20:19",
+    "stand": "07.10.2026 10:51",
     "tage": [
       {
+        "datum": "2026-10-07",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 2,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
+      {
         "datum": "2026-10-06",
-        "karten": 16,
-        "neu": 3,
+        "karten": 80,
+        "neu": 11,
         "angelegt": 11,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 12
+            "n": 50
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
-            "n": 3
+            "n": 14
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
+            "n": 8
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 5
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
             "n": 1
           }
         ],
         "faelle": [
           {
+            "name": "SchuldRBT2 · Fall 17",
+            "n": 15
+          },
+          {
             "name": "SchuldRBT2 · Fall 16",
-            "n": 4
+            "n": 12
+          },
+          {
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 6
+          },
+          {
+            "name": "BGBAT · Fall 01",
+            "n": 5
+          },
+          {
+            "name": "SchuldRBT2 · Fall 13",
+            "n": 5
+          },
+          {
+            "name": "BGBAT · Fall 03",
+            "n": 3
+          },
+          {
+            "name": "BGBAT · Fall 12",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT2 · Fall 03",
+            "n": 3
           }
         ],
         "faelleAngelegt": [
