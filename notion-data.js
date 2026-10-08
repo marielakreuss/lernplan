@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.10.2026 12:32",
+  "lastSync": "08.10.2026 15:59",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5094,
@@ -1257,7 +1257,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-08"
   },
   "ankiFach": {
-    "stand": "08.10.2026 10:52",
+    "stand": "08.10.2026 15:59",
     "faecher": {
       "Zivilrecht": {
         "total": 2123,
@@ -1286,7 +1286,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "08.10.2026 10:52",
+    "stand": "08.10.2026 15:59",
     "datum": "2026-10-08",
     "faelle": [
       "SachenR · Fall 01",
@@ -1311,7 +1311,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "08.10.2026 10:52",
+    "stand": "08.10.2026 15:59",
     "tage": [
       {
         "datum": "2026-10-07",
@@ -3347,7 +3347,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 2,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1483-Probestex-abgegeben-am-9-9-26-3d6539e733aa805b8235e231944f1e77"
     },
