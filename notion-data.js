@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "08.10.2026 09:51",
+  "lastSync": "08.10.2026 10:53",
   "anki": {
-    "reviewedToday": 144,
-    "dueNow": 5031,
+    "reviewedToday": 0,
+    "dueNow": 5094,
     "history": [
       {
         "date": "2025-09-29",
@@ -87,15 +87,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-22",
-        "count": 172
+        "count": 171
       },
       {
         "date": "2025-10-23",
-        "count": 38
+        "count": 36
       },
       {
         "date": "2025-10-24",
-        "count": 178
+        "count": 177
       },
       {
         "date": "2025-10-26",
@@ -103,23 +103,23 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-27",
-        "count": 64
+        "count": 63
       },
       {
         "date": "2025-10-28",
-        "count": 39
+        "count": 38
       },
       {
         "date": "2025-10-29",
-        "count": 61
+        "count": 60
       },
       {
         "date": "2025-10-30",
-        "count": 104
+        "count": 103
       },
       {
         "date": "2025-10-31",
-        "count": 66
+        "count": 65
       },
       {
         "date": "2025-11-02",
@@ -127,7 +127,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-03",
-        "count": 103
+        "count": 102
       },
       {
         "date": "2025-11-04",
@@ -139,7 +139,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-06",
-        "count": 134
+        "count": 133
       },
       {
         "date": "2025-11-07",
@@ -151,7 +151,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-10",
-        "count": 126
+        "count": 125
       },
       {
         "date": "2025-11-11",
@@ -163,7 +163,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-13",
-        "count": 197
+        "count": 196
       },
       {
         "date": "2025-11-14",
@@ -179,7 +179,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-18",
-        "count": 117
+        "count": 116
       },
       {
         "date": "2025-11-19",
@@ -215,7 +215,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-29",
-        "count": 209
+        "count": 208
       },
       {
         "date": "2025-11-30",
@@ -343,7 +343,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-10",
-        "count": 93
+        "count": 92
       },
       {
         "date": "2026-01-11",
@@ -471,7 +471,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 160
+        "count": 159
       },
       {
         "date": "2026-02-19",
@@ -1254,18 +1254,18 @@ window.NOTION_DATA = {
         "count": 144
       }
     ],
-    "stand": "2026-10-07"
+    "stand": "2026-10-08"
   },
   "ankiFach": {
-    "stand": "07.10.2026 16:21",
+    "stand": "08.10.2026 10:52",
     "faecher": {
       "Zivilrecht": {
-        "total": 2119,
-        "neu": 1,
+        "total": 2123,
+        "neu": 6,
         "lernen": 910,
         "aufbau": 152,
-        "sitzt": 1056,
-        "faellig": 1781
+        "sitzt": 1055,
+        "faellig": 1825
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1273,7 +1273,7 @@ window.NOTION_DATA = {
         "lernen": 578,
         "aufbau": 76,
         "sitzt": 245,
-        "faellig": 805
+        "faellig": 824
       },
       "Strafrecht": {
         "total": 706,
@@ -1286,41 +1286,38 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "07.10.2026 16:21",
-    "datum": "2026-10-07",
+    "stand": "08.10.2026 10:52",
+    "datum": "2026-10-08",
     "faelle": [
       "SachenR · Fall 01",
       "SachenR · Fall 02",
-      "SachenR · Fall 03",
-      "SachenR · Fall 05",
-      "SchuldRBT1 · Fall 01",
-      "SchuldRBT2 · Fall 18"
+      "SachenR · Fall 04"
     ],
-    "gebiet": "8 Polizei- und SicherheitsR",
-    "fach": "Öffentliches Recht",
+    "gebiet": "StrafR BT",
+    "fach": "Strafrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 10
+        "offen": 50
       },
       {
         "name": "Anschluss",
-        "offen": 44
+        "offen": 45
       },
       {
         "name": "Rechtsgebiet",
-        "offen": 4
+        "offen": 20
       }
     ]
   },
   "ankiVerlauf": {
-    "stand": "07.10.2026 16:21",
+    "stand": "08.10.2026 10:52",
     "tage": [
       {
         "datum": "2026-10-07",
         "karten": 80,
         "neu": 10,
-        "angelegt": 10,
+        "angelegt": 15,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1392,6 +1389,10 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": [
+          {
+            "name": "SachenR · Fall 04",
+            "n": 6
+          },
           {
             "name": "SachenR · Fall 03",
             "n": 5
@@ -2718,64 +2719,6 @@ window.NOTION_DATA = {
           {
             "name": "ArbR · Fall 06",
             "n": 4
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-09-17",
-        "karten": 54,
-        "neu": 18,
-        "angelegt": 4,
-        "gebiete": [
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 17
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 16
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "8 HandelsR",
-            "n": 11
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 4
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 3
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "HGB · Fall 01",
-            "n": 20
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 16
-          },
-          {
-            "name": "ZR · 04",
-            "n": 9
           }
         ],
         "faelleAngelegt": []
