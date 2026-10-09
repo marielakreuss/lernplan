@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.10.2026 16:51",
+  "lastSync": "09.10.2026 17:52",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5084,
@@ -1261,7 +1261,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-09"
   },
   "ankiFach": {
-    "stand": "09.10.2026 16:51",
+    "stand": "09.10.2026 17:52",
     "faecher": {
       "Zivilrecht": {
         "total": 2123,
@@ -1272,8 +1272,8 @@ window.NOTION_DATA = {
         "faellig": 1813
       },
       "Öffentliches Recht": {
-        "total": 901,
-        "neu": 3,
+        "total": 905,
+        "neu": 7,
         "lernen": 578,
         "aufbau": 76,
         "sitzt": 244,
@@ -1290,7 +1290,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "09.10.2026 16:51",
+    "stand": "09.10.2026 17:52",
     "datum": "2026-10-09",
     "faelle": [
       "SachenR · Fall 01",
@@ -1315,19 +1315,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "09.10.2026 16:51",
+    "stand": "09.10.2026 17:52",
     "tage": [
       {
         "datum": "2026-10-09",
         "karten": 0,
         "neu": 0,
-        "angelegt": 3,
+        "angelegt": 7,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "KommunalR · Fall 03",
-            "n": 3
+            "n": 7
           }
         ]
       },
@@ -2758,7 +2758,7 @@ window.NOTION_DATA = {
       "title": "KW 8 - Strafbarkeitsrisiken II",
       "status": "Nicht nachbereitet",
       "woche": 55,
-      "datum": "2026-10-16",
+      "datum": "2026-10-14",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
@@ -2902,7 +2902,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-7-Theaterkritik-3e5539e733aa81909befdc2cb84bce79"
     },
     {
@@ -3059,8 +3059,10 @@ window.NOTION_DATA = {
       "title": "Konrad 5",
       "status": "Nicht nachbereitet",
       "woche": 55,
-      "datum": "2026-10-14",
-      "rechtsgebiet": [],
+      "datum": "2026-10-16",
+      "rechtsgebiet": [
+        "VerfassungsR"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -7665,6 +7667,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 23,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 29
+    "klkAbgegeben": 30
   }
 };
