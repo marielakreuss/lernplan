@@ -1,17 +1,17 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.10.2026 12:21",
+  "lastSync": "09.10.2026 15:46",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5084,
     "history": [
       {
         "date": "2025-09-29",
-        "count": 56
+        "count": 53
       },
       {
         "date": "2025-09-30",
-        "count": 56
+        "count": 55
       },
       {
         "date": "2025-10-01",
@@ -27,7 +27,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-05",
-        "count": 162
+        "count": 161
       },
       {
         "date": "2025-10-06",
@@ -47,7 +47,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-10",
-        "count": 128
+        "count": 126
       },
       {
         "date": "2025-10-12",
@@ -55,7 +55,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-13",
-        "count": 50
+        "count": 49
       },
       {
         "date": "2025-10-14",
@@ -135,7 +135,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-05",
-        "count": 165
+        "count": 164
       },
       {
         "date": "2025-11-06",
@@ -415,7 +415,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-01",
-        "count": 42
+        "count": 41
       },
       {
         "date": "2026-02-02",
@@ -1011,7 +1011,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-07-22",
-        "count": 106
+        "count": 105
       },
       {
         "date": "2026-07-23",
@@ -1261,7 +1261,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-09"
   },
   "ankiFach": {
-    "stand": "09.10.2026 08:42",
+    "stand": "09.10.2026 15:45",
     "faecher": {
       "Zivilrecht": {
         "total": 2123,
@@ -1273,10 +1273,10 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 899,
-        "neu": 0,
+        "neu": 1,
         "lernen": 578,
         "aufbau": 76,
-        "sitzt": 245,
+        "sitzt": 244,
         "faellig": 825
       },
       "Strafrecht": {
@@ -1290,7 +1290,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "09.10.2026 08:42",
+    "stand": "09.10.2026 15:45",
     "datum": "2026-10-09",
     "faelle": [
       "SachenR · Fall 01",
@@ -1315,8 +1315,17 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "09.10.2026 08:42",
+    "stand": "09.10.2026 15:45",
     "tage": [
+      {
+        "datum": "2026-10-09",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 1,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-08",
         "karten": 66,
@@ -1466,23 +1475,23 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
-            "name": "PolR · Fall 1",
+            "name": "PolR · Fall 01",
             "n": 5
           },
           {
-            "name": "PolR · Fall 7",
+            "name": "PolR · Fall 07",
             "n": 4
           },
           {
-            "name": "PolR · Fall 2",
+            "name": "PolR · Fall 02",
             "n": 3
           },
           {
-            "name": "PolR · Fall 3",
+            "name": "PolR · Fall 03",
             "n": 3
           },
           {
-            "name": "PolR · Fall 4",
+            "name": "PolR · Fall 04",
             "n": 3
           }
         ],
@@ -1662,11 +1671,11 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
-            "name": "KommunalR · Fall 5",
+            "name": "KommunalR · Fall 05",
             "n": 10
           },
           {
-            "name": "KommunalR · Fall 2",
+            "name": "KommunalR · Fall 02",
             "n": 9
           },
           {
@@ -1674,7 +1683,7 @@ window.NOTION_DATA = {
             "n": 6
           },
           {
-            "name": "KommunalR · Fall 9",
+            "name": "KommunalR · Fall 09",
             "n": 6
           },
           {
@@ -1686,11 +1695,11 @@ window.NOTION_DATA = {
             "n": 4
           },
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 4
           },
           {
-            "name": "KommunalR · Fall 8",
+            "name": "KommunalR · Fall 08",
             "n": 4
           },
           {
@@ -1755,7 +1764,7 @@ window.NOTION_DATA = {
             "n": 20
           },
           {
-            "name": "KommunalR · Fall 2",
+            "name": "KommunalR · Fall 02",
             "n": 17
           },
           {
@@ -1767,7 +1776,7 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 3
           }
         ],
@@ -1845,7 +1854,7 @@ window.NOTION_DATA = {
             "n": 8
           },
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 7
           },
           {
@@ -1887,7 +1896,7 @@ window.NOTION_DATA = {
         ],
         "faelleAngelegt": [
           {
-            "name": "KommunalR · Fall 2",
+            "name": "KommunalR · Fall 02",
             "n": 22
           },
           {
@@ -2090,7 +2099,7 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 24
           },
           {
@@ -2236,7 +2245,7 @@ window.NOTION_DATA = {
         ],
         "faelleAngelegt": [
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 9
           }
         ]
@@ -2299,7 +2308,7 @@ window.NOTION_DATA = {
             "n": 24
           },
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 17
           },
           {
@@ -2368,7 +2377,7 @@ window.NOTION_DATA = {
         ],
         "faelleAngelegt": [
           {
-            "name": "KommunalR · Fall 1",
+            "name": "KommunalR · Fall 01",
             "n": 17
           },
           {
