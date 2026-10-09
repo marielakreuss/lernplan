@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.10.2026 00:01",
+  "lastSync": "09.10.2026 08:42",
   "anki": {
-    "reviewedToday": 59,
-    "dueNow": 5058,
+    "reviewedToday": 0,
+    "dueNow": 5084,
     "history": [
       {
         "date": "2025-09-29",
@@ -1255,13 +1255,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-08",
-        "count": 59
+        "count": 87
       }
     ],
-    "stand": "2026-10-08"
+    "stand": "2026-10-09"
   },
   "ankiFach": {
-    "stand": "08.10.2026 22:40",
+    "stand": "09.10.2026 08:42",
     "faecher": {
       "Zivilrecht": {
         "total": 2123,
@@ -1269,7 +1269,7 @@ window.NOTION_DATA = {
         "lernen": 910,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1789
+        "faellig": 1813
       },
       "Öffentliches Recht": {
         "total": 899,
@@ -1277,7 +1277,7 @@ window.NOTION_DATA = {
         "lernen": 578,
         "aufbau": 76,
         "sitzt": 245,
-        "faellig": 824
+        "faellig": 825
       },
       "Strafrecht": {
         "total": 706,
@@ -1285,13 +1285,13 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 678
+        "faellig": 679
       }
     }
   },
   "wiederholung": {
-    "stand": "08.10.2026 22:40",
-    "datum": "2026-10-08",
+    "stand": "09.10.2026 08:42",
+    "datum": "2026-10-09",
     "faelle": [
       "SachenR · Fall 01",
       "SachenR · Fall 02",
@@ -1302,7 +1302,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 8
+        "offen": 29
       },
       {
         "name": "Anschluss",
@@ -1315,11 +1315,11 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "08.10.2026 22:40",
+    "stand": "09.10.2026 08:42",
     "tage": [
       {
         "datum": "2026-10-08",
-        "karten": 50,
+        "karten": 66,
         "neu": 6,
         "angelegt": 0,
         "gebiete": [
@@ -1331,17 +1331,22 @@ window.NOTION_DATA = {
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 6
+            "n": 14
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
-            "n": 5
+            "n": 8
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "7 ZPO II",
             "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
           },
           {
             "fach": "Zivilrecht",
@@ -1351,6 +1356,26 @@ window.NOTION_DATA = {
           {
             "fach": "Zivilrecht",
             "gebiet": "9 GesellschaftsR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
             "n": 1
           }
         ],
@@ -1368,7 +1393,19 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
+            "name": "SchuldRBT2 · Fall 13",
+            "n": 5
+          },
+          {
             "name": "SachenR · Fall 02",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT2 · Fall 15",
             "n": 3
           }
         ],
@@ -2598,7 +2635,7 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-09-19",
-        "karten": 122,
+        "karten": 111,
         "neu": 5,
         "angelegt": 6,
         "gebiete": [
@@ -2618,11 +2655,6 @@ window.NOTION_DATA = {
             "n": 27
           },
           {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 13
-          },
-          {
             "fach": "Öffentliches Recht",
             "gebiet": "7 BauR",
             "n": 9
@@ -2631,6 +2663,11 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 2
           },
           {
             "fach": "Zivilrecht",
@@ -2669,10 +2706,6 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
-            "name": "SachenR · Fall 18",
-            "n": 5
-          },
-          {
             "name": "BauR · Fall 10",
             "n": 5
           },
@@ -2691,10 +2724,6 @@ window.NOTION_DATA = {
           {
             "name": "ArbR · Fall 10",
             "n": 3
-          },
-          {
-            "name": "SachenR · Fall 19",
-            "n": 3
           }
         ],
         "faelleAngelegt": [
@@ -2703,86 +2732,6 @@ window.NOTION_DATA = {
             "n": 4
           }
         ]
-      },
-      {
-        "datum": "2026-09-18",
-        "karten": 50,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 31
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 9
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "8 HandelsR",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "ArbR · Fall 07",
-            "n": 8
-          },
-          {
-            "name": "ArbR · Fall 10",
-            "n": 8
-          },
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 6
-          },
-          {
-            "name": "ArbR · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "BauR · Fall 10",
-            "n": 5
-          },
-          {
-            "name": "ArbR · Fall 06",
-            "n": 4
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
