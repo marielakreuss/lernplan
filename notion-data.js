@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "08.10.2026 22:40",
+  "lastSync": "09.10.2026 00:01",
   "anki": {
     "reviewedToday": 59,
     "dueNow": 5058,
@@ -2808,7 +2808,10 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 53,
       "datum": "2026-10-03",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "BauR"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2928,7 +2931,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 54,
       "datum": "2026-10-08",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "KommunalR",
+        "SicherheitsR / PolizeiR"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
