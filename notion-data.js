@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.10.2026 17:52",
+  "lastSync": "09.10.2026 22:16",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5084,
@@ -2751,7 +2751,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 54,
-    "nachbereitet": 157
+    "nachbereitet": 158
   },
   "cases": [
     {
@@ -6231,7 +6231,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KommunalR Fall03",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-09",
       "rechtsgebiet": [
@@ -7663,7 +7663,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 157,
+    "nachbereitet": 158,
     "inBearbeitung": 23,
     "total": 352,
     "klkGesamt": 97,
