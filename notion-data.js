@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "10.10.2026 09:36",
+  "lastSync": "10.10.2026 10:37",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5084,
+    "dueNow": 5114,
     "history": [
       {
         "date": "2025-09-29",
@@ -1258,26 +1258,26 @@ window.NOTION_DATA = {
         "count": 87
       }
     ],
-    "stand": "2026-10-09"
+    "stand": "2026-10-10"
   },
   "ankiFach": {
-    "stand": "09.10.2026 17:52",
+    "stand": "10.10.2026 10:37",
     "faecher": {
       "Zivilrecht": {
-        "total": 2123,
-        "neu": 0,
+        "total": 2131,
+        "neu": 8,
         "lernen": 910,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1813
+        "faellig": 1821
       },
       "Öffentliches Recht": {
-        "total": 905,
-        "neu": 7,
+        "total": 914,
+        "neu": 16,
         "lernen": 578,
         "aufbau": 76,
         "sitzt": 244,
-        "faellig": 825
+        "faellig": 846
       },
       "Strafrecht": {
         "total": 706,
@@ -1285,24 +1285,40 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 679
+        "faellig": 680
       }
     }
   },
   "wiederholung": {
-    "stand": "09.10.2026 17:52",
-    "datum": "2026-10-09",
+    "stand": "10.10.2026 10:37",
+    "datum": "2026-10-10",
     "faelle": [
-      "SachenR · Fall 01",
-      "SachenR · Fall 02",
-      "SachenR · Fall 04"
+      "BauR · Fall 05",
+      "EuropaR · Fall 04",
+      "KommunalR · Fall 01",
+      "KommunalR · Fall 02",
+      "KommunalR · Fall 03",
+      "KommunalR · Fall 05",
+      "KommunalR · Fall 06",
+      "KommunalR · Fall 08",
+      "KommunalR · Fall 09",
+      "PolR · Fall 01",
+      "PolR · Fall 02",
+      "PolR · Fall 03",
+      "PolR · Fall 04",
+      "PolR · Fall 07",
+      "VerwRAT · Fall 01",
+      "VerwRAT · Fall 02",
+      "VerwRAT · Fall 04",
+      "VerwRAT · Fall 05",
+      "VerwRAT · Fall 06"
     ],
-    "gebiet": "StrafR BT",
-    "fach": "Strafrecht",
+    "gebiet": "1 BGB AT",
+    "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 29
+        "offen": 60
       },
       {
         "name": "Anschluss",
@@ -1315,19 +1331,33 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "09.10.2026 17:52",
+    "stand": "10.10.2026 10:37",
     "tage": [
+      {
+        "datum": "2026-10-10",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 8,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": [
+          {
+            "name": "UKK · 1487",
+            "n": 8
+          }
+        ]
+      },
       {
         "datum": "2026-10-09",
         "karten": 0,
         "neu": 0,
-        "angelegt": 7,
+        "angelegt": 16,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "KommunalR · Fall 03",
-            "n": 7
+            "n": 16
           }
         ]
       },
@@ -2646,106 +2676,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-09-19",
-        "karten": 111,
-        "neu": 5,
-        "angelegt": 6,
-        "gebiete": [
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 37
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 30
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 27
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 9
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 4
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "StGB · Fall 01",
-            "n": 36
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 21
-          },
-          {
-            "name": "StGB · Fall 02",
-            "n": 7
-          },
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 7
-          },
-          {
-            "name": "ArbR · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "ArbR · Fall 06",
-            "n": 5
-          },
-          {
-            "name": "BauR · Fall 10",
-            "n": 5
-          },
-          {
-            "name": "ArbR · Fall 08",
-            "n": 4
-          },
-          {
-            "name": "ArbR · Fall 04",
-            "n": 3
-          },
-          {
-            "name": "ArbR · Fall 07",
-            "n": 3
-          },
-          {
-            "name": "ArbR · Fall 10",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "StGB · Fall 04",
-            "n": 4
-          }
-        ]
       }
     ]
   },
