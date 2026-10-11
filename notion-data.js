@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "10.10.2026 23:04",
+  "lastSync": "11.10.2026 04:32",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5114,
+    "dueNow": 5123,
     "history": [
       {
         "date": "2025-09-29",
@@ -1258,10 +1258,10 @@ window.NOTION_DATA = {
         "count": 87
       }
     ],
-    "stand": "2026-10-10"
+    "stand": "2026-10-11"
   },
   "ankiFach": {
-    "stand": "10.10.2026 10:37",
+    "stand": "11.10.2026 04:32",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1269,7 +1269,7 @@ window.NOTION_DATA = {
         "lernen": 910,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1821
+        "faellig": 1829
       },
       "Öffentliches Recht": {
         "total": 914,
@@ -1277,7 +1277,7 @@ window.NOTION_DATA = {
         "lernen": 578,
         "aufbau": 76,
         "sitzt": 244,
-        "faellig": 846
+        "faellig": 847
       },
       "Strafrecht": {
         "total": 706,
@@ -1290,8 +1290,8 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "10.10.2026 10:37",
-    "datum": "2026-10-10",
+    "stand": "11.10.2026 04:32",
+    "datum": "2026-10-11",
     "faelle": [
       "BauR · Fall 05",
       "EuropaR · Fall 04",
@@ -1331,7 +1331,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "10.10.2026 10:37",
+    "stand": "11.10.2026 04:32",
     "tage": [
       {
         "datum": "2026-10-10",
@@ -2644,38 +2644,6 @@ window.NOTION_DATA = {
             "n": 17
           }
         ]
-      },
-      {
-        "datum": "2026-09-20",
-        "karten": 35,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 35
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BGBAT · Fall 16",
-            "n": 6
-          },
-          {
-            "name": "BGBAT · Fall 18",
-            "n": 6
-          },
-          {
-            "name": "BGBAT · Fall 01",
-            "n": 3
-          },
-          {
-            "name": "BGBAT · Fall 14",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
