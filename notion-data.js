@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "11.10.2026 23:18",
+  "lastSync": "12.10.2026 10:22",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5123,
+    "dueNow": 5129,
     "history": [
       {
         "date": "2025-09-29",
@@ -1258,10 +1258,10 @@ window.NOTION_DATA = {
         "count": 87
       }
     ],
-    "stand": "2026-10-11"
+    "stand": "2026-10-12"
   },
   "ankiFach": {
-    "stand": "11.10.2026 18:12",
+    "stand": "12.10.2026 10:22",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1269,7 +1269,7 @@ window.NOTION_DATA = {
         "lernen": 910,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1829
+        "faellig": 1835
       },
       "Öffentliches Recht": {
         "total": 914,
@@ -1290,8 +1290,8 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "11.10.2026 18:12",
-    "datum": "2026-10-11",
+    "stand": "12.10.2026 10:22",
+    "datum": "2026-10-12",
     "faelle": [
       "BauR · Fall 05",
       "EuropaR · Fall 04",
@@ -1331,7 +1331,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "11.10.2026 18:12",
+    "stand": "12.10.2026 10:22",
     "tage": [
       {
         "datum": "2026-10-10",
@@ -2565,90 +2565,11 @@ window.NOTION_DATA = {
             "n": 8
           }
         ]
-      },
-      {
-        "datum": "2026-09-21",
-        "karten": 49,
-        "neu": 0,
-        "angelegt": 17,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 27
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 14
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 4
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BauR · Fall 10",
-            "n": 9
-          },
-          {
-            "name": "ArbR · Fall 03",
-            "n": 7
-          },
-          {
-            "name": "ArbR · Fall 06",
-            "n": 5
-          },
-          {
-            "name": "ArbR · Fall 10",
-            "n": 5
-          },
-          {
-            "name": "ArbR · Fall 02a",
-            "n": 3
-          },
-          {
-            "name": "ArbR · Fall 07",
-            "n": 3
-          },
-          {
-            "name": "BauR · Fall 04",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "SchuldRBT2 · Fall 01",
-            "n": 17
-          }
-        ]
       }
     ]
   },
   "rhythmCheck": {
-    "currentWeek": 54,
+    "currentWeek": 55,
     "nachbereitet": 158
   },
   "cases": [
