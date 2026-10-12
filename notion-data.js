@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "12.10.2026 10:22",
+  "lastSync": "12.10.2026 14:01",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5129,
@@ -2795,11 +2795,16 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 54,
       "datum": "2026-10-10",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "BGB AT",
+        "SchuldR BT",
+        "SchuldR AT",
+        "ZPO I"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1487-3e5539e733aa81b5b0e1dd9dc999c460"
     },
     {
@@ -7486,6 +7491,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 23,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 30
+    "klkAbgegeben": 31
   }
 };
