@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.10.2026 13:18",
+  "lastSync": "13.10.2026 14:54",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5127,
@@ -1265,7 +1265,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-13"
   },
   "ankiFach": {
-    "stand": "13.10.2026 13:18",
+    "stand": "13.10.2026 14:54",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1276,8 +1276,8 @@ window.NOTION_DATA = {
         "faellig": 1842
       },
       "Öffentliches Recht": {
-        "total": 919,
-        "neu": 8,
+        "total": 924,
+        "neu": 13,
         "lernen": 591,
         "aufbau": 76,
         "sitzt": 244,
@@ -1294,7 +1294,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "13.10.2026 13:18",
+    "stand": "13.10.2026 14:54",
     "datum": "2026-10-13",
     "faelle": [],
     "gebiet": "x10 ArbeitsR",
@@ -1315,19 +1315,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.10.2026 13:18",
+    "stand": "13.10.2026 14:54",
     "tage": [
       {
         "datum": "2026-10-13",
         "karten": 0,
         "neu": 0,
-        "angelegt": 5,
+        "angelegt": 10,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "KommunalR · Fall 04",
-            "n": 5
+            "n": 10
           }
         ]
       },
