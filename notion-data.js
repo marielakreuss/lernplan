@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.10.2026 23:29",
+  "lastSync": "13.10.2026 20:18",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5127,
@@ -1265,7 +1265,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-13"
   },
   "ankiFach": {
-    "stand": "13.10.2026 14:54",
+    "stand": "13.10.2026 20:18",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1294,7 +1294,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "13.10.2026 14:54",
+    "stand": "13.10.2026 20:18",
     "datum": "2026-10-13",
     "faelle": [],
     "gebiet": "x10 ArbeitsR",
@@ -1315,7 +1315,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.10.2026 14:54",
+    "stand": "13.10.2026 20:18",
     "tage": [
       {
         "datum": "2026-10-13",
@@ -2668,7 +2668,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 55,
-    "nachbereitet": 158
+    "nachbereitet": 159
   },
   "cases": [
     {
@@ -6125,9 +6125,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "KommunalR Fall04",
-      "status": "Nicht nachbereitet",
-      "woche": 54,
-      "datum": "2026-10-09",
+      "status": "Nachbereitet",
+      "woche": 55,
+      "datum": "2026-10-13",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -7585,7 +7585,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 158,
+    "nachbereitet": 159,
     "inBearbeitung": 23,
     "total": 352,
     "klkGesamt": 97,
