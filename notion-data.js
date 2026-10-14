@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.10.2026 10:55",
+  "lastSync": "14.10.2026 09:43",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5127,
+    "dueNow": 5143,
     "history": [
       {
         "date": "2025-09-29",
@@ -1262,10 +1262,10 @@ window.NOTION_DATA = {
         "count": 146
       }
     ],
-    "stand": "2026-10-13"
+    "stand": "2026-10-14"
   },
   "ankiFach": {
-    "stand": "13.10.2026 20:18",
+    "stand": "14.10.2026 09:43",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1273,15 +1273,15 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1842
+        "faellig": 1846
       },
       "Öffentliches Recht": {
-        "total": 924,
-        "neu": 13,
+        "total": 929,
+        "neu": 18,
         "lernen": 591,
         "aufbau": 76,
         "sitzt": 244,
-        "faellig": 840
+        "faellig": 852
       },
       "Strafrecht": {
         "total": 706,
@@ -1294,15 +1294,22 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "13.10.2026 20:18",
-    "datum": "2026-10-13",
-    "faelle": [],
+    "stand": "14.10.2026 09:43",
+    "datum": "2026-10-14",
+    "faelle": [
+      "KommunalR · Fall 03",
+      "KommunalR · Fall 04",
+      "KommunalR · Fall 05",
+      "KommunalR · Fall 06",
+      "PolR · Fall 07",
+      "VerwRAT · Fall 05"
+    ],
     "gebiet": "x10 ArbeitsR",
     "fach": "Zivilrecht",
     "teile": [
       {
         "name": "Fall",
-        "offen": 3
+        "offen": 60
       },
       {
         "name": "Anschluss",
@@ -1315,19 +1322,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.10.2026 20:18",
+    "stand": "14.10.2026 09:43",
     "tage": [
       {
         "datum": "2026-10-13",
         "karten": 0,
         "neu": 0,
-        "angelegt": 10,
+        "angelegt": 15,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
             "name": "KommunalR · Fall 04",
             "n": 10
+          },
+          {
+            "name": "KommunalR · Fall 06",
+            "n": 5
           }
         ]
       },
@@ -1890,11 +1901,11 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 10
+            "name": "KommunalR · Fall 05",
+            "n": 11
           },
           {
-            "name": "KommunalR · Fall 05",
+            "name": "SchuldRBT2 · Fall 13",
             "n": 10
           },
           {
@@ -2606,61 +2617,6 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 06",
             "n": 8
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-23",
-        "karten": 45,
-        "neu": 45,
-        "angelegt": 30,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 36
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 8
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SchuldRBT2 · Fall 02",
-            "n": 19
-          },
-          {
-            "name": "StGB · Fall 02",
-            "n": 8
-          },
-          {
-            "name": "SchuldRBT2 · Fall 03",
-            "n": 8
-          },
-          {
-            "name": "SchuldRBT2 · Fall 04",
-            "n": 8
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 15
-          },
-          {
-            "name": "SchuldRBT2 · Fall 04",
-            "n": 8
-          },
-          {
-            "name": "StGB · Fall 02",
-            "n": 6
           }
         ]
       }
