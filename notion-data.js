@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
   "lastSync": "15.10.2026 10:37",
   "anki": {
-    "reviewedToday": 198,
-    "dueNow": 5034,
+    "reviewedToday": 37,
+    "dueNow": 5115,
     "history": [
       {
         "date": "2025-09-29",
@@ -1264,12 +1264,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-14",
         "count": 198
+      },
+      {
+        "date": "2026-10-15",
+        "count": 37
       }
     ],
     "stand": "2026-10-15"
   },
   "ankiFach": {
-    "stand": "15.10.2026 01:13",
+    "stand": "15.10.2026 10:37",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1277,7 +1281,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1823
+        "faellig": 1845
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1285,7 +1289,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 789
+        "faellig": 830
       },
       "Strafrecht": {
         "total": 706,
@@ -1293,7 +1297,7 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 655
+        "faellig": 673
       }
     }
   },
@@ -1326,8 +1330,75 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "15.10.2026 01:13",
+    "stand": "15.10.2026 10:37",
     "tage": [
+      {
+        "datum": "2026-10-15",
+        "karten": 22,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 8
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 3
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "StGB · Fall 05",
+            "n": 6
+          },
+          {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 5
+          },
+          {
+            "name": "KommunalR · Fall 01",
+            "n": 4
+          },
+          {
+            "name": "SchuldRBT2 · Fall 06",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-14",
         "karten": 128,
@@ -2681,7 +2752,7 @@ window.NOTION_DATA = {
         "datum": "2026-09-25",
         "karten": 34,
         "neu": 25,
-        "angelegt": 35,
+        "angelegt": 34,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -2729,7 +2800,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "StGB · Fall 05",
-            "n": 10
+            "n": 9
           },
           {
             "name": "SchuldRBT2 · Fall 06",
@@ -2748,7 +2819,7 @@ window.NOTION_DATA = {
       "title": "KW 8 - Strafbarkeitsrisiken II",
       "status": "Nicht nachbereitet",
       "woche": 55,
-      "datum": "2026-10-14",
+      "datum": "2026-10-16",
       "rechtsgebiet": [],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
