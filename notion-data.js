@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.10.2026 21:38",
+  "lastSync": "15.10.2026 01:13",
   "anki": {
-    "reviewedToday": 150,
-    "dueNow": 5062,
+    "reviewedToday": 198,
+    "dueNow": 5034,
     "history": [
       {
         "date": "2025-09-29",
@@ -1263,13 +1263,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-14",
-        "count": 150
+        "count": 198
       }
     ],
-    "stand": "2026-10-14"
+    "stand": "2026-10-15"
   },
   "ankiFach": {
-    "stand": "14.10.2026 21:38",
+    "stand": "15.10.2026 01:13",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1277,7 +1277,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1825
+        "faellig": 1823
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1285,7 +1285,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 791
+        "faellig": 789
       },
       "Strafrecht": {
         "total": 706,
@@ -1293,7 +1293,7 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 675
+        "faellig": 655
       }
     }
   },
@@ -1326,18 +1326,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "14.10.2026 21:38",
+    "stand": "15.10.2026 01:13",
     "tage": [
       {
         "datum": "2026-10-14",
-        "karten": 105,
+        "karten": 128,
         "neu": 15,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
-            "n": 55
+            "n": 57
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 23
           },
           {
             "fach": "Öffentliches Recht",
@@ -1352,12 +1357,7 @@ window.NOTION_DATA = {
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
-            "n": 5
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 3
+            "n": 6
           },
           {
             "fach": "Zivilrecht",
@@ -1388,11 +1388,15 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "KommunalR · Fall 05",
-            "n": 37
+            "n": 38
           },
           {
             "name": "KommunalR · Fall 03",
             "n": 14
+          },
+          {
+            "name": "StGB · Fall 06",
+            "n": 13
           },
           {
             "name": "KommunalR · Fall 02",
@@ -1407,11 +1411,19 @@ window.NOTION_DATA = {
             "n": 7
           },
           {
+            "name": "StGB · Fall 03",
+            "n": 5
+          },
+          {
             "name": "KommunalR · Fall 06",
             "n": 5
           },
           {
             "name": "SchuldRBT2 · Fall 05",
+            "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 01",
             "n": 4
           },
           {
@@ -1424,10 +1436,6 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 13",
-            "n": 3
-          },
-          {
-            "name": "KommunalR · Fall 01",
             "n": 3
           }
         ],
