@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.10.2026 20:36",
+  "lastSync": "14.10.2026 21:38",
   "anki": {
-    "reviewedToday": 25,
-    "dueNow": 5135,
+    "reviewedToday": 150,
+    "dueNow": 5062,
     "history": [
       {
         "date": "2025-09-29",
@@ -1263,13 +1263,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-14",
-        "count": 26
+        "count": 150
       }
     ],
     "stand": "2026-10-14"
   },
   "ankiFach": {
-    "stand": "14.10.2026 20:36",
+    "stand": "14.10.2026 21:38",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1277,15 +1277,15 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1846
+        "faellig": 1825
       },
       "Öffentliches Recht": {
         "total": 929,
-        "neu": 16,
-        "lernen": 593,
-        "aufbau": 76,
-        "sitzt": 244,
-        "faellig": 842
+        "neu": 0,
+        "lernen": 612,
+        "aufbau": 74,
+        "sitzt": 243,
+        "faellig": 791
       },
       "Strafrecht": {
         "total": 706,
@@ -1293,12 +1293,12 @@ window.NOTION_DATA = {
         "lernen": 596,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 678
+        "faellig": 675
       }
     }
   },
   "wiederholung": {
-    "stand": "14.10.2026 20:36",
+    "stand": "14.10.2026 21:38",
     "datum": "2026-10-14",
     "faelle": [
       "KommunalR · Fall 03",
@@ -1313,11 +1313,11 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 48
+        "offen": 0
       },
       {
         "name": "Anschluss",
-        "offen": 45
+        "offen": 2
       },
       {
         "name": "Rechtsgebiet",
@@ -1326,23 +1326,58 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "14.10.2026 20:36",
+    "stand": "14.10.2026 21:38",
     "tage": [
       {
         "datum": "2026-10-14",
-        "karten": 16,
-        "neu": 0,
+        "karten": 105,
+        "neu": 15,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
-            "n": 9
+            "n": 55
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 6
+            "n": 22
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 10
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 5
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 3
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
           },
           {
             "fach": "Öffentliches Recht",
@@ -1353,10 +1388,46 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "KommunalR · Fall 05",
-            "n": 13
+            "n": 37
           },
           {
             "name": "KommunalR · Fall 03",
+            "n": 14
+          },
+          {
+            "name": "KommunalR · Fall 02",
+            "n": 10
+          },
+          {
+            "name": "KommunalR · Fall 04",
+            "n": 10
+          },
+          {
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 7
+          },
+          {
+            "name": "KommunalR · Fall 06",
+            "n": 5
+          },
+          {
+            "name": "SchuldRBT2 · Fall 05",
+            "n": 4
+          },
+          {
+            "name": "StGB · Fall 05",
+            "n": 3
+          },
+          {
+            "name": "UKK · 1487",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT2 · Fall 13",
+            "n": 3
+          },
+          {
+            "name": "KommunalR · Fall 01",
             "n": 3
           }
         ],
