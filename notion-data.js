@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.10.2026 22:48",
+  "lastSync": "14.10.2026 20:36",
   "anki": {
-    "reviewedToday": 1,
-    "dueNow": 5142,
+    "reviewedToday": 25,
+    "dueNow": 5135,
     "history": [
       {
         "date": "2025-09-29",
@@ -1263,13 +1263,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-14",
-        "count": 1
+        "count": 26
       }
     ],
     "stand": "2026-10-14"
   },
   "ankiFach": {
-    "stand": "14.10.2026 17:15",
+    "stand": "14.10.2026 20:36",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1281,11 +1281,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 929,
-        "neu": 18,
-        "lernen": 591,
+        "neu": 16,
+        "lernen": 593,
         "aufbau": 76,
         "sitzt": 244,
-        "faellig": 851
+        "faellig": 842
       },
       "Strafrecht": {
         "total": 706,
@@ -1298,7 +1298,7 @@ window.NOTION_DATA = {
     }
   },
   "wiederholung": {
-    "stand": "14.10.2026 17:15",
+    "stand": "14.10.2026 20:36",
     "datum": "2026-10-14",
     "faelle": [
       "KommunalR · Fall 03",
@@ -1313,7 +1313,7 @@ window.NOTION_DATA = {
     "teile": [
       {
         "name": "Fall",
-        "offen": 59
+        "offen": 48
       },
       {
         "name": "Anschluss",
@@ -1326,21 +1326,40 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "14.10.2026 17:15",
+    "stand": "14.10.2026 20:36",
     "tage": [
       {
         "datum": "2026-10-14",
-        "karten": 1,
+        "karten": 16,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 9
+          },
+          {
+            "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
+            "n": 6
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
             "n": 1
           }
         ],
-        "faelle": [],
+        "faelle": [
+          {
+            "name": "KommunalR · Fall 05",
+            "n": 13
+          },
+          {
+            "name": "KommunalR · Fall 03",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": []
       },
       {
@@ -3129,7 +3148,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/Konrad-3-Geld-f-r-die-Uhrenindustrie-3df539e733aa801294f4ff7ab5e24408"
     },
     {
-      "title": "UKK 2310 - nicht abgegeben",
+      "title": "UKK 2310 (Probestex) - nicht abgegeben",
       "status": "Nicht nachbereitet",
       "woche": 51,
       "datum": "2026-09-16",
@@ -3138,7 +3157,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/UKK-2310-nicht-abgegeben-3df539e733aa80e7bbafc4e65f7147f0"
+      "url": "https://app.notion.com/p/UKK-2310-Probestex-nicht-abgegeben-3df539e733aa80e7bbafc4e65f7147f0"
     },
     {
       "title": "KW 4 - gegliedert, angehört",
@@ -3156,7 +3175,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-4-gegliedert-angeh-rt-3de539e733aa802284d7c6aed5f19699"
     },
     {
-      "title": "UKK 2309 - abgegeben am 15.9.26",
+      "title": "UKK 2309 (Probestex) - abgegeben am 15.9.26",
       "status": "Nicht nachbereitet",
       "woche": 51,
       "datum": "2026-09-15",
@@ -3166,9 +3185,9 @@ window.NOTION_DATA = {
       ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 4,
       "abgegeben": true,
-      "url": "https://app.notion.com/p/UKK-2309-abgegeben-am-15-9-26-3dc539e733aa80c1a5a9c6aad691cd84"
+      "url": "https://app.notion.com/p/UKK-2309-Probestex-abgegeben-am-15-9-26-3dc539e733aa80c1a5a9c6aad691cd84"
     },
     {
       "title": "UKK 3211 (Probestex) - nicht abgegeben, gegliedert",
