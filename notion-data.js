@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "15.10.2026 18:04",
+  "lastSync": "15.10.2026 21:11",
   "anki": {
-    "reviewedToday": 43,
-    "dueNow": 5113,
+    "reviewedToday": 66,
+    "dueNow": 5103,
     "history": [
       {
         "date": "2025-09-29",
@@ -1267,13 +1267,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-15",
-        "count": 43
+        "count": 66
       }
     ],
     "stand": "2026-10-15"
   },
   "ankiFach": {
-    "stand": "15.10.2026 18:04",
+    "stand": "15.10.2026 21:10",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1281,7 +1281,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1845
+        "faellig": 1838
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1289,7 +1289,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 829
+        "faellig": 823
       },
       "Strafrecht": {
         "total": 706,
@@ -1330,23 +1330,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "15.10.2026 18:04",
+    "stand": "15.10.2026 21:10",
     "tage": [
       {
         "datum": "2026-10-15",
-        "karten": 27,
+        "karten": 37,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 8
+            "n": 13
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
-            "n": 5
+            "n": 8
           },
           {
             "fach": "Strafrecht",
@@ -1370,6 +1370,11 @@ window.NOTION_DATA = {
           },
           {
             "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
             "n": 1
           },
@@ -1382,7 +1387,7 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "KommunalR · Fall 01",
-            "n": 8
+            "n": 9
           },
           {
             "name": "StGB · Fall 05",
@@ -1390,11 +1395,19 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRBT2 · Fall 05",
-            "n": 5
+            "n": 6
           },
           {
             "name": "SchuldRBT2 · Fall 06",
             "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 02",
+            "n": 4
+          },
+          {
+            "name": "SchuldRBT2 · Fall 11",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -3124,8 +3137,8 @@ window.NOTION_DATA = {
     {
       "title": "Konrad 5",
       "status": "Nicht nachbereitet",
-      "woche": 55,
-      "datum": "2026-10-16",
+      "woche": 56,
+      "datum": "2026-10-23",
       "rechtsgebiet": [
         "VerfassungsR"
       ],
@@ -3186,8 +3199,8 @@ window.NOTION_DATA = {
     {
       "title": "Konrad 6",
       "status": "Nicht nachbereitet",
-      "woche": 56,
-      "datum": "2026-10-23",
+      "woche": 57,
+      "datum": "2026-10-26",
       "rechtsgebiet": [],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
