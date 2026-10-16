@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "16.10.2026 12:54",
+  "lastSync": "16.10.2026 22:18",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5128,
@@ -2798,7 +2798,7 @@ window.NOTION_DATA = {
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-8-Strafbarkeitsrisiken-II-3e5539e733aa8106aacaefadca70bb86"
     },
     {
@@ -7707,6 +7707,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 31
+    "klkAbgegeben": 32
   }
 };
