@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "16.10.2026 09:47",
+  "lastSync": "16.10.2026 12:54",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5128,
@@ -1273,7 +1273,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-16"
   },
   "ankiFach": {
-    "stand": "16.10.2026 09:47",
+    "stand": "16.10.2026 12:54",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1292,12 +1292,12 @@ window.NOTION_DATA = {
         "faellig": 834
       },
       "Strafrecht": {
-        "total": 706,
+        "total": 708,
         "neu": 0,
-        "lernen": 596,
+        "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 675
+        "faellig": 677
       }
     }
   },
@@ -1330,7 +1330,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "16.10.2026 09:47",
+    "stand": "16.10.2026 12:54",
     "tage": [
       {
         "datum": "2026-10-15",
@@ -2789,7 +2789,12 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 55,
       "datum": "2026-10-16",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "StPO",
+        "StrafR",
+        "Strafrecht BT",
+        "Strafrecht AT"
+      ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
