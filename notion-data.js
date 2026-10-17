@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "16.10.2026 22:18",
+  "lastSync": "16.10.2026 20:21",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5128,
+    "reviewedToday": 5,
+    "dueNow": 5129,
     "history": [
       {
         "date": "2025-09-29",
@@ -1268,12 +1268,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-15",
         "count": 112
+      },
+      {
+        "date": "2026-10-16",
+        "count": 5
       }
     ],
     "stand": "2026-10-16"
   },
   "ankiFach": {
-    "stand": "16.10.2026 12:54",
+    "stand": "16.10.2026 20:21",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1281,7 +1285,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1852
+        "faellig": 1851
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1289,7 +1293,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 834
+        "faellig": 832
       },
       "Strafrecht": {
         "total": 708,
@@ -1297,7 +1301,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 677
+        "faellig": 681
       }
     }
   },
@@ -1330,8 +1334,33 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "16.10.2026 12:54",
+    "stand": "16.10.2026 20:21",
     "tage": [
+      {
+        "datum": "2026-10-16",
+        "karten": 3,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
+          }
+        ],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-15",
         "karten": 65,
