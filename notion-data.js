@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.10.2026 11:42",
+  "lastSync": "19.10.2026 17:41",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5117,
+    "dueNow": 5141,
     "history": [
       {
         "date": "2025-09-29",
@@ -1282,10 +1282,10 @@ window.NOTION_DATA = {
         "count": 17
       }
     ],
-    "stand": "2026-10-18"
+    "stand": "2026-10-19"
   },
   "ankiFach": {
-    "stand": "18.10.2026 09:32",
+    "stand": "19.10.2026 17:41",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1293,7 +1293,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1852
+        "faellig": 1860
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1301,7 +1301,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 827
+        "faellig": 836
       },
       "Strafrecht": {
         "total": 708,
@@ -1309,7 +1309,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 673
+        "faellig": 680
       }
     }
   },
@@ -1342,7 +1342,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.10.2026 09:32",
+    "stand": "19.10.2026 17:41",
     "tage": [
       {
         "datum": "2026-10-18",
@@ -2841,106 +2841,6 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 11",
             "n": 5
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-28",
-        "karten": 90,
-        "neu": 0,
-        "angelegt": 11,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 31
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 20
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 13
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "x10 ArbeitsR",
-            "n": 8
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 7
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 4
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 4
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "1 EuropaR",
-            "n": 3
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 15
-          },
-          {
-            "name": "EuropaR · Fall 05",
-            "n": 11
-          },
-          {
-            "name": "StGB · Fall 05",
-            "n": 10
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 8
-          },
-          {
-            "name": "ArbR · Fall 09",
-            "n": 7
-          },
-          {
-            "name": "SchuldRBT2 · Fall 01",
-            "n": 7
-          },
-          {
-            "name": "SchuldRBT2 · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "BauR · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 02",
-            "n": 4
-          },
-          {
-            "name": "BauR · Fall 06",
-            "n": 3
-          },
-          {
-            "name": "EuropaR · Fall 03",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 9
           }
         ]
       }
