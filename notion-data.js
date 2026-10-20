@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "19.10.2026 23:12",
+  "lastSync": "20.10.2026 10:43",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5141,
@@ -3308,7 +3308,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 7,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KW-5-StrafR-Strafbarkeitsrisiken-geschrieben-am-24-9-26-3e2539e733aa804a8afcd55410ea7a35"
     },
