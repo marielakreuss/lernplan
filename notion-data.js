@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.10.2026 10:46",
+  "lastSync": "23.10.2026 09:49",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5141,
+    "dueNow": 5176,
     "history": [
       {
         "date": "2025-09-29",
@@ -1282,10 +1282,10 @@ window.NOTION_DATA = {
         "count": 17
       }
     ],
-    "stand": "2026-10-19"
+    "stand": "2026-10-23"
   },
   "ankiFach": {
-    "stand": "19.10.2026 17:41",
+    "stand": "23.10.2026 09:48",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1293,7 +1293,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1860
+        "faellig": 1884
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1301,7 +1301,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 836
+        "faellig": 845
       },
       "Strafrecht": {
         "total": 708,
@@ -1309,7 +1309,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 680
+        "faellig": 682
       }
     }
   },
@@ -1342,7 +1342,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "19.10.2026 17:41",
+    "stand": "23.10.2026 09:48",
     "tage": [
       {
         "datum": "2026-10-18",
@@ -2475,374 +2475,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-02",
-        "karten": 84,
-        "neu": 19,
-        "angelegt": 47,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 35
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "1 EuropaR",
-            "n": 20
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 8
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 5
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 4
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 3
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 14
-          },
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 8
-          },
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 7
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 6
-          },
-          {
-            "name": "EuropaR · Fall 04",
-            "n": 6
-          },
-          {
-            "name": "SchuldRBT2 · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 11",
-            "n": 5
-          },
-          {
-            "name": "EuropaR · Fall 01",
-            "n": 5
-          },
-          {
-            "name": "EuropaR · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "EuropaR · Fall 02",
-            "n": 4
-          },
-          {
-            "name": "StGB · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "EuropaR · Fall 05",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "KommunalR · Fall 02",
-            "n": 22
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 20
-          },
-          {
-            "name": "SchuldRBT2 · Fall 14",
-            "n": 5
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-30",
-        "karten": 63,
-        "neu": 6,
-        "angelegt": 23,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 30
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 8
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 7
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 5
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 4
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 3
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StPO",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "1 EuropaR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 9
-          },
-          {
-            "name": "SchuldRBT2 · Fall 01",
-            "n": 7
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 07",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 11",
-            "n": 5
-          },
-          {
-            "name": "EuropaR · Fall 05",
-            "n": 5
-          },
-          {
-            "name": "StGB · Fall 02",
-            "n": 4
-          },
-          {
-            "name": "StGB · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 02",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 19
-          },
-          {
-            "name": "SchuldRBT2 · Fall 11",
-            "n": 3
-          }
-        ]
-      },
-      {
-        "datum": "2026-09-29",
-        "karten": 125,
-        "neu": 11,
-        "angelegt": 6,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 33
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 26
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 14
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 13
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 11
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 9
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "8 HandelsR",
-            "n": 4
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 4
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 3
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 2
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "1 EuropaR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 24
-          },
-          {
-            "name": "SchuldRBT2 · Fall 08",
-            "n": 14
-          },
-          {
-            "name": "HGB · Fall 05",
-            "n": 13
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 9
-          },
-          {
-            "name": "SchuldRBT2 · Fall 02",
-            "n": 9
-          },
-          {
-            "name": "SchuldRBT2 · Fall 07",
-            "n": 6
-          },
-          {
-            "name": "SchuldRBT2 · Fall 06",
-            "n": 5
-          },
-          {
-            "name": "EuropaR · Fall 05",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 04",
-            "n": 4
-          },
-          {
-            "name": "SchuldRAT · Fall 11",
-            "n": 3
-          },
-          {
-            "name": "SchuldRAT · Fall 18",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "SchuldRBT2 · Fall 11",
-            "n": 5
-          }
-        ]
       }
     ]
   },
@@ -3065,7 +2697,7 @@ window.NOTION_DATA = {
       "title": "KW 9 - Waschanlage Caracas",
       "status": "Nicht nachbereitet",
       "woche": 56,
-      "datum": "2026-10-22",
+      "datum": "2026-10-23",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
@@ -3166,10 +2798,8 @@ window.NOTION_DATA = {
       "title": "Konrad 5",
       "status": "Nicht nachbereitet",
       "woche": 56,
-      "datum": "2026-10-23",
-      "rechtsgebiet": [
-        "VerfassungsR"
-      ],
+      "datum": "2026-10-24",
+      "rechtsgebiet": [],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -3180,7 +2810,7 @@ window.NOTION_DATA = {
       "title": "UKK 1488",
       "status": "Nicht nachbereitet",
       "woche": 56,
-      "datum": "2026-10-24",
+      "datum": "2026-10-25",
       "rechtsgebiet": [],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
