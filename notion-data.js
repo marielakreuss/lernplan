@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.10.2026 09:58",
+  "lastSync": "24.10.2026 11:00",
   "anki": {
-    "reviewedToday": 17,
-    "dueNow": 5168,
+    "reviewedToday": 0,
+    "dueNow": 5167,
     "history": [
       {
         "date": "2025-09-29",
@@ -1283,13 +1283,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-23",
-        "count": 17
+        "count": 61
       }
     ],
-    "stand": "2026-10-23"
+    "stand": "2026-10-24"
   },
   "ankiFach": {
-    "stand": "23.10.2026 22:29",
+    "stand": "24.10.2026 11:00",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1297,7 +1297,7 @@ window.NOTION_DATA = {
         "lernen": 918,
         "aufbau": 157,
         "sitzt": 1056,
-        "faellig": 1884
+        "faellig": 1886
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1305,7 +1305,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 837
+        "faellig": 834
       },
       "Strafrecht": {
         "total": 708,
@@ -1346,23 +1346,51 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.10.2026 22:29",
+    "stand": "24.10.2026 11:00",
     "tage": [
       {
         "datum": "2026-10-23",
-        "karten": 13,
+        "karten": 40,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 13
+            "n": 36
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
           }
         ],
         "faelle": [
           {
             "name": "BauR · Fall 03",
+            "n": 8
+          },
+          {
+            "name": "BauR · Fall 06",
+            "n": 5
+          },
+          {
+            "name": "VerwRAT · Fall 07",
             "n": 3
           }
         ],
@@ -2438,67 +2466,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-03",
-        "karten": 60,
-        "neu": 52,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 22
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 22
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 10
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 02",
-            "n": 22
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 20
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 14",
-            "n": 5
-          },
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
@@ -2828,7 +2795,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-1492-3e5539e733aa81d18908ed8499dfe8d3"
     },
     {
-      "title": "Konrad 5:",
+      "title": "Konrad 5: Landwirtschaft und Geld",
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-24",
@@ -2837,7 +2804,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-5-3e5539e733aa81d4a6f3d7f3ef8b1164"
+      "url": "https://app.notion.com/p/Konrad-5-Landwirtschaft-und-Geld-3e5539e733aa81d4a6f3d7f3ef8b1164"
     },
     {
       "title": "UKK 1488",
@@ -2888,7 +2855,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-20-N-N-3e5539e733aa81dcbcc8f981eefbd708"
     },
     {
-      "title": "Konrad 6",
+      "title": "Konrad 6: Kampfhund Leila",
       "status": "Nicht nachbereitet",
       "woche": 57,
       "datum": "2026-10-26",
@@ -2897,7 +2864,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-6-3e5539e733aa81eb943dfabd655fd9d1"
+      "url": "https://app.notion.com/p/Konrad-6-Kampfhund-Leila-3e5539e733aa81eb943dfabd655fd9d1"
     },
     {
       "title": "KW 18 - Solaris",
