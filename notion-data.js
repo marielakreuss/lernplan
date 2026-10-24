@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.10.2026 22:43",
+  "lastSync": "23.10.2026 20:24",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5176,
@@ -1285,7 +1285,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-23"
   },
   "ankiFach": {
-    "stand": "23.10.2026 17:06",
+    "stand": "23.10.2026 20:24",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1342,7 +1342,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.10.2026 17:06",
+    "stand": "23.10.2026 20:24",
     "tage": [
       {
         "datum": "2026-10-18",
@@ -2668,11 +2668,15 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 55,
       "datum": "2026-10-17",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "Strafrecht AT",
+        "Strafrecht BT",
+        "StPO"
+      ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-3212-3e5539e733aa8197aaa5ea68463ba47c"
     },
     {
@@ -2694,7 +2698,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-6-Traktor-auf-Abwegen-nur-Teil-1-abgegeben-keine-Zeit-mehr-3e5539e733aa81a28b9cda45666d31e0"
     },
     {
-      "title": "KW 9 - Waschanlage Caracas",
+      "title": "KW 9 - Waschanlage Caracas; angefangen aber abgebrochen weil geisteskrank unkonzentriert",
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-23",
@@ -2703,7 +2707,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/KW-9-Waschanlage-Caracas-3e5539e733aa81abaa28f3b6276f9b77"
+      "url": "https://app.notion.com/p/KW-9-Waschanlage-Caracas-angefangen-aber-abgebrochen-weil-geisteskrank-unkonzentriert-3e5539e733aa81abaa28f3b6276f9b77"
     },
     {
       "title": "UKK 1487",
@@ -7404,6 +7408,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 32
+    "klkAbgegeben": 33
   }
 };
