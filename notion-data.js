@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.10.2026 20:24",
+  "lastSync": "23.10.2026 22:29",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5176,
+    "reviewedToday": 17,
+    "dueNow": 5168,
     "history": [
       {
         "date": "2025-09-29",
@@ -1280,12 +1280,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-18",
         "count": 17
+      },
+      {
+        "date": "2026-10-23",
+        "count": 17
       }
     ],
     "stand": "2026-10-23"
   },
   "ankiFach": {
-    "stand": "23.10.2026 20:24",
+    "stand": "23.10.2026 22:29",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1301,7 +1305,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 845
+        "faellig": 837
       },
       "Strafrecht": {
         "total": 708,
@@ -1342,8 +1346,28 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.10.2026 20:24",
+    "stand": "23.10.2026 22:29",
     "tage": [
+      {
+        "datum": "2026-10-23",
+        "karten": 13,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 13
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BauR · Fall 03",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-18",
         "karten": 16,
