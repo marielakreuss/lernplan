@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.10.2026 10:02",
+  "lastSync": "24.10.2026 09:58",
   "anki": {
     "reviewedToday": 17,
     "dueNow": 5168,
@@ -2726,7 +2726,12 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-23",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "SchuldR BT",
+        "SchuldR AT",
+        "BGB AT",
+        "ZPO I"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2823,7 +2828,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-1492-3e5539e733aa81d18908ed8499dfe8d3"
     },
     {
-      "title": "Konrad 5",
+      "title": "Konrad 5:",
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-24",
