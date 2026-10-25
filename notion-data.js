@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "25.10.2026 10:27",
+  "lastSync": "25.10.2026 09:49",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5167,
+    "reviewedToday": 5,
+    "dueNow": 5141,
     "history": [
       {
         "date": "2025-09-29",
@@ -1284,20 +1284,28 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-23",
         "count": 61
+      },
+      {
+        "date": "2026-10-24",
+        "count": 49
+      },
+      {
+        "date": "2026-10-25",
+        "count": 5
       }
     ],
-    "stand": "2026-10-24"
+    "stand": "2026-10-25"
   },
   "ankiFach": {
-    "stand": "24.10.2026 11:00",
+    "stand": "25.10.2026 09:49",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
         "neu": 0,
-        "lernen": 918,
-        "aufbau": 157,
-        "sitzt": 1056,
-        "faellig": 1886
+        "lernen": 919,
+        "aufbau": 147,
+        "sitzt": 1065,
+        "faellig": 1862
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1305,7 +1313,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 834
+        "faellig": 832
       },
       "Strafrecht": {
         "total": 708,
@@ -1346,8 +1354,75 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "24.10.2026 11:00",
+    "stand": "25.10.2026 09:49",
     "tage": [
+      {
+        "datum": "2026-10-25",
+        "karten": 5,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 1
+          }
+        ],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-10-24",
+        "karten": 37,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 35
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRAT · Fall 18",
+            "n": 8
+          },
+          {
+            "name": "SchuldRAT · Fall 11",
+            "n": 4
+          },
+          {
+            "name": "SchuldRAT · Fall 04",
+            "n": 3
+          },
+          {
+            "name": "SchuldRAT · Fall 06",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-23",
         "karten": 40,
@@ -2340,131 +2415,17 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-10-05",
-        "karten": 2,
+        "karten": 1,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "4 Familienrecht",
-            "n": 2
+            "n": 1
           }
         ],
         "faelle": [],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-04",
-        "karten": 74,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 30
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 24
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 7
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "1 EuropaR",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 05",
-            "n": 11
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 10
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 6
-          },
-          {
-            "name": "KommunalR · Fall 09",
-            "n": 6
-          },
-          {
-            "name": "EuropaR · Fall 05",
-            "n": 5
-          },
-          {
-            "name": "KommunalR · Fall 02",
-            "n": 4
-          },
-          {
-            "name": "KommunalR · Fall 08",
-            "n": 4
-          },
-          {
-            "name": "StGB · Fall 02",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 01",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 11",
-            "n": 3
-          },
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 3
-          }
-        ],
         "faelleAngelegt": []
       }
     ]
@@ -2803,7 +2764,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/Konrad-5-Landwirtschaft-und-Geld-3e5539e733aa81d4a6f3d7f3ef8b1164"
     },
     {
@@ -7404,6 +7365,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 33
+    "klkAbgegeben": 34
   }
 };
