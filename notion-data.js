@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.10.2026 12:02",
+  "lastSync": "26.10.2026 13:05",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5141,
@@ -1301,7 +1301,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-26"
   },
   "ankiFach": {
-    "stand": "26.10.2026 12:00",
+    "stand": "26.10.2026 13:05",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1358,7 +1358,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.10.2026 12:00",
+    "stand": "26.10.2026 13:05",
     "tage": [
       {
         "datum": "2026-10-26",
@@ -2805,7 +2805,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-24",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "KommunalR",
+        "Europarecht"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2817,7 +2821,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 56,
       "datum": "2026-10-25",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "SchuldR BT",
+        "BGB AT",
+        "SachenR"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2865,7 +2873,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 57,
       "datum": "2026-10-26",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "KommunalR",
+        "SicherheitsR / PolizeiR",
+        "VerwaltungsR AT"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
