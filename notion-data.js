@@ -1,8 +1,8 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.10.2026 11:58",
+  "lastSync": "26.10.2026 09:56",
   "anki": {
-    "reviewedToday": 5,
+    "reviewedToday": 0,
     "dueNow": 5141,
     "history": [
       {
@@ -1291,13 +1291,17 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-25",
-        "count": 5
+        "count": 61
+      },
+      {
+        "date": "2026-10-26",
+        "count": 2
       }
     ],
-    "stand": "2026-10-25"
+    "stand": "2026-10-26"
   },
   "ankiFach": {
-    "stand": "25.10.2026 09:49",
+    "stand": "26.10.2026 09:55",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1354,31 +1358,87 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "25.10.2026 09:49",
+    "stand": "26.10.2026 09:55",
     "tage": [
       {
-        "datum": "2026-10-25",
-        "karten": 5,
+        "datum": "2026-10-26",
+        "karten": 2,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 2
+            "gebiet": "2 SchuldR BT",
+            "n": 1
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
             "n": 1
           }
         ],
         "faelle": [],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-10-25",
+        "karten": 45,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 23
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 8
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 6
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "KommunalR · Fall 03",
+            "n": 14
+          },
+          {
+            "name": "UKK · 1487",
+            "n": 8
+          },
+          {
+            "name": "KommunalR · Fall 04",
+            "n": 8
+          },
+          {
+            "name": "SchuldRBT2 · Fall 17",
+            "n": 5
+          },
+          {
+            "name": "KommunalR · Fall 06",
+            "n": 4
+          }
+        ],
         "faelleAngelegt": []
       },
       {
@@ -2412,21 +2472,6 @@ window.NOTION_DATA = {
             "n": 10
           }
         ]
-      },
-      {
-        "datum": "2026-10-05",
-        "karten": 1,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "4 Familienrecht",
-            "n": 1
-          }
-        ],
-        "faelle": [],
-        "faelleAngelegt": []
       }
     ]
   },
