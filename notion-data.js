@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "26.10.2026 13:05",
+  "lastSync": "26.10.2026 23:26",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5141,
@@ -2690,7 +2690,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 3,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KW-6-Traktor-auf-Abwegen-nur-Teil-1-abgegeben-keine-Zeit-mehr-3e5539e733aa81a28b9cda45666d31e0"
     },
@@ -2881,7 +2881,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/Konrad-6-Kampfhund-Leila-3e5539e733aa81eb943dfabd655fd9d1"
     },
     {
@@ -7422,6 +7422,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 36
+    "klkAbgegeben": 37
   }
 };
