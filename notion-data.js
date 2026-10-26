@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.10.2026 09:56",
+  "lastSync": "26.10.2026 12:02",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5141,
@@ -1301,7 +1301,7 @@ window.NOTION_DATA = {
     "stand": "2026-10-26"
   },
   "ankiFach": {
-    "stand": "26.10.2026 09:55",
+    "stand": "26.10.2026 12:00",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1358,7 +1358,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.10.2026 09:55",
+    "stand": "26.10.2026 12:00",
     "tage": [
       {
         "datum": "2026-10-26",
@@ -2821,7 +2821,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1488-3e5539e733aa81d982d8d9ce512729ab"
     },
     {
@@ -3154,7 +3154,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-1-gegliedert-Besprechung-am-20-8-3c3539e733aa80c7babcf3d9b6c6c06b"
     },
     {
@@ -7410,6 +7410,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 34
+    "klkAbgegeben": 36
   }
 };
