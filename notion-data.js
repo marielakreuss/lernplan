@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.10.2026 23:26",
+  "lastSync": "26.10.2026 21:58",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5141,
+    "reviewedToday": 4,
+    "dueNow": 5140,
     "history": [
       {
         "date": "2025-09-29",
@@ -1295,21 +1295,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-26",
-        "count": 2
+        "count": 6
       }
     ],
     "stand": "2026-10-26"
   },
   "ankiFach": {
-    "stand": "26.10.2026 13:05",
+    "stand": "26.10.2026 21:58",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
         "neu": 0,
-        "lernen": 919,
-        "aufbau": 147,
-        "sitzt": 1065,
-        "faellig": 1862
+        "lernen": 921,
+        "aufbau": 144,
+        "sitzt": 1066,
+        "faellig": 1861
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1358,14 +1358,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.10.2026 13:05",
+    "stand": "26.10.2026 21:58",
     "tage": [
       {
         "datum": "2026-10-26",
-        "karten": 2,
+        "karten": 5,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "5 Erbrecht",
+            "n": 3
+          },
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
