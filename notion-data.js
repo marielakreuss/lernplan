@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "29.10.2026 12:01",
+  "lastSync": "29.10.2026 10:07",
   "anki": {
-    "reviewedToday": 4,
-    "dueNow": 5140,
+    "reviewedToday": 0,
+    "dueNow": 5144,
     "history": [
       {
         "date": "2025-09-29",
@@ -1295,21 +1295,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-26",
-        "count": 6
+        "count": 73
       }
     ],
-    "stand": "2026-10-26"
+    "stand": "2026-10-29"
   },
   "ankiFach": {
-    "stand": "26.10.2026 21:58",
+    "stand": "29.10.2026 10:07",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
         "neu": 0,
-        "lernen": 921,
+        "lernen": 932,
         "aufbau": 144,
-        "sitzt": 1066,
-        "faellig": 1861
+        "sitzt": 1055,
+        "faellig": 1854
       },
       "Öffentliches Recht": {
         "total": 929,
@@ -1317,7 +1317,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 832
+        "faellig": 843
       },
       "Strafrecht": {
         "total": 708,
@@ -1358,18 +1358,18 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.10.2026 21:58",
+    "stand": "29.10.2026 10:07",
     "tage": [
       {
         "datum": "2026-10-26",
-        "karten": 5,
+        "karten": 37,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "5 Erbrecht",
-            "n": 3
+            "n": 35
           },
           {
             "fach": "Zivilrecht",
@@ -1382,7 +1382,24 @@ window.NOTION_DATA = {
             "n": 1
           }
         ],
-        "faelle": [],
+        "faelle": [
+          {
+            "name": "ErbR · Fall 05",
+            "n": 10
+          },
+          {
+            "name": "ErbR · Fall 07",
+            "n": 10
+          },
+          {
+            "name": "ErbR · Fall 04",
+            "n": 6
+          },
+          {
+            "name": "ErbR · Fall 01",
+            "n": 5
+          }
+        ],
         "faelleAngelegt": []
       },
       {
@@ -2213,268 +2230,6 @@ window.NOTION_DATA = {
           {
             "name": "KommunalR · Fall 03",
             "n": 16
-          }
-        ]
-      },
-      {
-        "datum": "2026-10-08",
-        "karten": 66,
-        "neu": 6,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 35
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 14
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 8
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "7 ZPO II",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "8 HandelsR",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "9 GesellschaftsR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SachenR · Fall 01",
-            "n": 24
-          },
-          {
-            "name": "SachenR · Fall 04",
-            "n": 10
-          },
-          {
-            "name": "SachenR · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 5
-          },
-          {
-            "name": "SachenR · Fall 02",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-07",
-        "karten": 80,
-        "neu": 10,
-        "angelegt": 15,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 39
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 20
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 13
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 5
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "7 ZPO II",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SachenR · Fall 05",
-            "n": 16
-          },
-          {
-            "name": "SachenR · Fall 01",
-            "n": 14
-          },
-          {
-            "name": "SachenR · Fall 03",
-            "n": 13
-          },
-          {
-            "name": "SchuldRBT2 · Fall 17",
-            "n": 10
-          },
-          {
-            "name": "PolR · Fall 01",
-            "n": 5
-          },
-          {
-            "name": "PolR · Fall 07",
-            "n": 4
-          },
-          {
-            "name": "PolR · Fall 02",
-            "n": 3
-          },
-          {
-            "name": "PolR · Fall 03",
-            "n": 3
-          },
-          {
-            "name": "PolR · Fall 04",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "SachenR · Fall 04",
-            "n": 6
-          },
-          {
-            "name": "SachenR · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "SachenR · Fall 01",
-            "n": 4
-          }
-        ]
-      },
-      {
-        "datum": "2026-10-06",
-        "karten": 80,
-        "neu": 11,
-        "angelegt": 11,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 50
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 14
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 8
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 5
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 2
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SchuldRBT2 · Fall 17",
-            "n": 15
-          },
-          {
-            "name": "SchuldRBT2 · Fall 16",
-            "n": 12
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 6
-          },
-          {
-            "name": "BGBAT · Fall 01",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 5
-          },
-          {
-            "name": "BGBAT · Fall 03",
-            "n": 3
-          },
-          {
-            "name": "BGBAT · Fall 12",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 03",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "SchuldRBT2 · Fall 17",
-            "n": 10
           }
         ]
       }
