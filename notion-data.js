@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "02.11.2026 14:21",
+  "lastSync": "02.11.2026 14:44",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5144,
+    "dueNow": 5157,
     "history": [
       {
         "date": "2025-09-29",
@@ -1282,6 +1282,10 @@ window.NOTION_DATA = {
         "count": 17
       },
       {
+        "date": "2026-10-19",
+        "count": 45
+      },
+      {
         "date": "2026-10-23",
         "count": 61
       },
@@ -1296,12 +1300,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-10-26",
         "count": 73
+      },
+      {
+        "date": "2026-10-29",
+        "count": 78
       }
     ],
-    "stand": "2026-10-29"
+    "stand": "2026-11-02"
   },
   "ankiFach": {
-    "stand": "29.10.2026 10:07",
+    "stand": "02.11.2026 14:44",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1309,15 +1317,15 @@ window.NOTION_DATA = {
         "lernen": 932,
         "aufbau": 144,
         "sitzt": 1055,
-        "faellig": 1854
+        "faellig": 1863
       },
       "Öffentliches Recht": {
-        "total": 929,
-        "neu": 0,
+        "total": 930,
+        "neu": 1,
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 843
+        "faellig": 851
       },
       "Strafrecht": {
         "total": 708,
@@ -1325,7 +1333,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 682
+        "faellig": 678
       }
     }
   },
@@ -1358,8 +1366,54 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "29.10.2026 10:07",
+    "stand": "02.11.2026 14:44",
     "tage": [
+      {
+        "datum": "2026-11-02",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 1,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-10-29",
+        "karten": 60,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 54
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 6
+          }
+        ],
+        "faelle": [
+          {
+            "name": "StGB · Fall 11",
+            "n": 18
+          },
+          {
+            "name": "StGB · Fall 12",
+            "n": 17
+          },
+          {
+            "name": "BauR · Fall 10",
+            "n": 5
+          },
+          {
+            "name": "StGB · Fall 15",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-10-26",
         "karten": 37,
@@ -1548,6 +1602,91 @@ window.NOTION_DATA = {
           },
           {
             "name": "VerwRAT · Fall 07",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-10-19",
+        "karten": 39,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 8
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 7
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 7
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 5
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "BauR · Fall 10",
+            "n": 5
+          },
+          {
+            "name": "StrafR · 08",
+            "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 03",
+            "n": 4
+          },
+          {
+            "name": "SchuldRBT2 · Fall 15",
+            "n": 3
+          },
+          {
+            "name": "KommunalR · Fall 01",
+            "n": 3
+          },
+          {
+            "name": "KommunalR · Fall 04",
             "n": 3
           }
         ],
@@ -2014,224 +2153,6 @@ window.NOTION_DATA = {
             "n": 5
           }
         ]
-      },
-      {
-        "datum": "2026-10-12",
-        "karten": 86,
-        "neu": 8,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 40
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 16
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 8
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 6
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 4
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "1 EuropaR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 03",
-            "n": 13
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 9
-          },
-          {
-            "name": "UKK · 1487",
-            "n": 8
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 8
-          },
-          {
-            "name": "SchuldRBT1 · Fall 07",
-            "n": 5
-          },
-          {
-            "name": "StGB · Fall 04",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 02",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 14",
-            "n": 3
-          },
-          {
-            "name": "EuropaR · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "KommunalR · Fall 02",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-11",
-        "karten": 65,
-        "neu": 16,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 32
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 24
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 05",
-            "n": 29
-          },
-          {
-            "name": "KommunalR · Fall 03",
-            "n": 19
-          },
-          {
-            "name": "VerwRAT · Fall 01",
-            "n": 7
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-10",
-        "karten": 9,
-        "neu": 0,
-        "angelegt": 8,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 5
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 4
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 05",
-            "n": 8
-          }
-        ],
-        "faelleAngelegt": [
-          {
-            "name": "UKK · 1487",
-            "n": 8
-          }
-        ]
-      },
-      {
-        "datum": "2026-10-09",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 16,
-        "gebiete": [],
-        "faelle": [],
-        "faelleAngelegt": [
-          {
-            "name": "KommunalR · Fall 03",
-            "n": 16
-          }
-        ]
       }
     ]
   },
@@ -2392,7 +2313,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 5,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KW-7-Theaterkritik-3e5539e733aa81909befdc2cb84bce79"
     },
@@ -2401,7 +2322,10 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 57,
       "datum": "2026-11-01",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "SicherheitsR / PolizeiR",
+        "VerwaltungsR AT"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2480,11 +2404,12 @@ window.NOTION_DATA = {
         "BGB AT",
         "SchuldR BT",
         "SchuldR AT",
-        "ZPO I"
+        "ZPO I",
+        "ErbR"
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 4,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1487-3e5539e733aa81b5b0e1dd9dc999c460"
     },
