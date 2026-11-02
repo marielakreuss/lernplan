@@ -1,6 +1,6 @@
 // Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "01.11.2026 23:13",
+  "lastSync": "02.11.2026 14:21",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5144,
@@ -2236,7 +2236,7 @@ window.NOTION_DATA = {
     ]
   },
   "rhythmCheck": {
-    "currentWeek": 57,
+    "currentWeek": 58,
     "nachbereitet": 160
   },
   "cases": [
@@ -2493,7 +2493,11 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 57,
       "datum": "2026-10-29",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "BauR",
+        "VerwaltungsR AT",
+        "KommunalR"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
