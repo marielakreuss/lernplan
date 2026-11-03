@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.11.2026 13:20",
+  "lastSync": "03.11.2026 10:21",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5157,
+    "dueNow": 5162,
     "history": [
       {
         "date": "2025-09-29",
@@ -1306,10 +1306,10 @@ window.NOTION_DATA = {
         "count": 78
       }
     ],
-    "stand": "2026-11-02"
+    "stand": "2026-11-03"
   },
   "ankiFach": {
-    "stand": "02.11.2026 14:44",
+    "stand": "03.11.2026 10:21",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1317,7 +1317,7 @@ window.NOTION_DATA = {
         "lernen": 932,
         "aufbau": 144,
         "sitzt": 1055,
-        "faellig": 1863
+        "faellig": 1865
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1325,7 +1325,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 851
+        "faellig": 852
       },
       "Strafrecht": {
         "total": 708,
@@ -1333,7 +1333,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 678
+        "faellig": 680
       }
     }
   },
@@ -1366,7 +1366,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "02.11.2026 14:44",
+    "stand": "03.11.2026 10:21",
     "tage": [
       {
         "datum": "2026-11-02",
@@ -2135,24 +2135,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-13",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 15,
-        "gebiete": [],
-        "faelle": [],
-        "faelleAngelegt": [
-          {
-            "name": "KommunalR · Fall 04",
-            "n": 10
-          },
-          {
-            "name": "KommunalR · Fall 06",
-            "n": 5
-          }
-        ]
       }
     ]
   },
