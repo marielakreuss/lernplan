@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.11.2026 00:15",
+  "lastSync": "03.11.2026 20:53",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5162,
+    "reviewedToday": 12,
+    "dueNow": 5158,
     "history": [
       {
         "date": "2025-09-29",
@@ -1302,14 +1302,22 @@ window.NOTION_DATA = {
         "count": 73
       },
       {
+        "date": "2026-10-27",
+        "count": 41
+      },
+      {
         "date": "2026-10-29",
         "count": 78
+      },
+      {
+        "date": "2026-11-03",
+        "count": 12
       }
     ],
     "stand": "2026-11-03"
   },
   "ankiFach": {
-    "stand": "03.11.2026 17:46",
+    "stand": "03.11.2026 20:53",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
@@ -1317,7 +1325,7 @@ window.NOTION_DATA = {
         "lernen": 932,
         "aufbau": 144,
         "sitzt": 1055,
-        "faellig": 1865
+        "faellig": 1861
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1366,8 +1374,36 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "03.11.2026 17:46",
+    "stand": "03.11.2026 20:53",
     "tage": [
+      {
+        "datum": "2026-11-03",
+        "karten": 12,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 12
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SachenR · Fall 13",
+            "n": 4
+          },
+          {
+            "name": "SachenR · Fall 18",
+            "n": 3
+          },
+          {
+            "name": "SachenR · Fall 19",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-11-02",
         "karten": 0,
@@ -1409,6 +1445,80 @@ window.NOTION_DATA = {
           },
           {
             "name": "StGB · Fall 15",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-10-27",
+        "karten": 36,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 12
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 9
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 7
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SchuldRBT2 · Fall 17",
+            "n": 6
+          },
+          {
+            "name": "KommunalR · Fall 04",
+            "n": 6
+          },
+          {
+            "name": "SachenR · Fall 03",
+            "n": 5
+          },
+          {
+            "name": "SachenR · Fall 04",
+            "n": 5
+          },
+          {
+            "name": "KommunalR · Fall 03",
+            "n": 5
+          },
+          {
+            "name": "SachenR · Fall 01",
+            "n": 3
+          },
+          {
+            "name": "KommunalR · Fall 06",
             "n": 3
           }
         ],
@@ -2408,7 +2518,7 @@ window.NOTION_DATA = {
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-10-Einkaufsparadies-Vendicampo-3e5539e733aa81bbb6d9f03c5142b6dc"
     },
     {
@@ -7093,6 +7203,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 37
+    "klkAbgegeben": 38
   }
 };
