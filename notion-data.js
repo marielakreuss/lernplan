@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "03.11.2026 20:53",
+  "lastSync": "03.11.2026 21:55",
   "anki": {
-    "reviewedToday": 12,
-    "dueNow": 5158,
+    "reviewedToday": 56,
+    "dueNow": 5137,
     "history": [
       {
         "date": "2025-09-29",
@@ -1311,21 +1311,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-03",
-        "count": 12
+        "count": 56
       }
     ],
     "stand": "2026-11-03"
   },
   "ankiFach": {
-    "stand": "03.11.2026 20:53",
+    "stand": "03.11.2026 21:55",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
         "neu": 0,
-        "lernen": 932,
+        "lernen": 933,
         "aufbau": 144,
-        "sitzt": 1055,
-        "faellig": 1861
+        "sitzt": 1054,
+        "faellig": 1840
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1374,32 +1374,32 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "03.11.2026 20:53",
+    "stand": "03.11.2026 21:55",
     "tage": [
       {
         "datum": "2026-11-03",
-        "karten": 12,
+        "karten": 32,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 12
+            "n": 32
           }
         ],
         "faelle": [
           {
-            "name": "SachenR · Fall 13",
-            "n": 4
-          },
-          {
             "name": "SachenR · Fall 18",
-            "n": 3
+            "n": 11
           },
           {
             "name": "SachenR · Fall 19",
-            "n": 3
+            "n": 10
+          },
+          {
+            "name": "SachenR · Fall 13",
+            "n": 4
           }
         ],
         "faelleAngelegt": []
