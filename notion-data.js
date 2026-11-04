@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "04.11.2026 13:32",
+  "lastSync": "04.11.2026 10:56",
   "anki": {
-    "reviewedToday": 56,
-    "dueNow": 5137,
+    "reviewedToday": 0,
+    "dueNow": 5163,
     "history": [
       {
         "date": "2025-09-29",
@@ -1311,21 +1311,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-03",
-        "count": 56
+        "count": 79
       }
     ],
-    "stand": "2026-11-03"
+    "stand": "2026-11-04"
   },
   "ankiFach": {
-    "stand": "03.11.2026 21:55",
+    "stand": "04.11.2026 10:56",
     "faecher": {
       "Zivilrecht": {
         "total": 2131,
         "neu": 0,
-        "lernen": 933,
-        "aufbau": 144,
+        "lernen": 934,
+        "aufbau": 143,
         "sitzt": 1054,
-        "faellig": 1840
+        "faellig": 1866
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1374,28 +1374,28 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "03.11.2026 21:55",
+    "stand": "04.11.2026 10:56",
     "tage": [
       {
         "datum": "2026-11-03",
-        "karten": 32,
+        "karten": 41,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 32
+            "n": 41
           }
         ],
         "faelle": [
           {
             "name": "SachenR · Fall 18",
-            "n": 11
+            "n": 16
           },
           {
             "name": "SachenR · Fall 19",
-            "n": 10
+            "n": 11
           },
           {
             "name": "SachenR · Fall 13",
@@ -2132,119 +2132,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-14",
-        "karten": 128,
-        "neu": 15,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 57
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 23
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 22
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 10
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 6
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 3
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 3
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 05",
-            "n": 38
-          },
-          {
-            "name": "KommunalR · Fall 03",
-            "n": 14
-          },
-          {
-            "name": "StGB · Fall 06",
-            "n": 13
-          },
-          {
-            "name": "KommunalR · Fall 02",
-            "n": 10
-          },
-          {
-            "name": "KommunalR · Fall 04",
-            "n": 10
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 7
-          },
-          {
-            "name": "StGB · Fall 03",
-            "n": 5
-          },
-          {
-            "name": "KommunalR · Fall 06",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 4
-          },
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 4
-          },
-          {
-            "name": "StGB · Fall 05",
-            "n": 3
-          },
-          {
-            "name": "UKK · 1487",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
@@ -2618,7 +2505,13 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 58,
       "datum": "2026-11-04",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "BGB AT",
+        "SchuldR AT",
+        "SchuldR BT 2",
+        "SchuldR BT",
+        "ZPO I"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
