@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "05.11.2026 01:06",
+  "lastSync": "05.11.2026 13:46",
   "anki": {
     "reviewedToday": 8,
     "dueNow": 5160,
@@ -2456,7 +2456,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-11-Ungebremste-Jungfernfahrt-3e5539e733aa81dabf5ac18632ae1cb6"
     },
     {
@@ -7037,6 +7037,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 38
+    "klkAbgegeben": 39
   }
 };
