@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "05.11.2026 00:36",
+  "lastSync": "05.11.2026 00:04",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5163,
+    "reviewedToday": 2,
+    "dueNow": 5162,
     "history": [
       {
         "date": "2025-09-29",
@@ -1312,12 +1312,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-03",
         "count": 79
+      },
+      {
+        "date": "2026-11-05",
+        "count": 2
       }
     ],
-    "stand": "2026-11-04"
+    "stand": "2026-11-05"
   },
   "ankiFach": {
-    "stand": "04.11.2026 13:22",
+    "stand": "05.11.2026 00:04",
     "faecher": {
       "Zivilrecht": {
         "total": 2132,
@@ -1325,7 +1329,7 @@ window.NOTION_DATA = {
         "lernen": 934,
         "aufbau": 143,
         "sitzt": 1054,
-        "faellig": 1866
+        "faellig": 1865
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1374,8 +1378,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "04.11.2026 13:22",
+    "stand": "05.11.2026 00:04",
     "tage": [
+      {
+        "datum": "2026-11-05",
+        "karten": 2,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          }
+        ],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-11-04",
         "karten": 0,
@@ -2041,102 +2060,6 @@ window.NOTION_DATA = {
           },
           {
             "name": "KommunalR · Fall 06",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-15",
-        "karten": 65,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 21
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 18
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 8
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 6
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 4
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 3
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "KommunalR · Fall 01",
-            "n": 11
-          },
-          {
-            "name": "SchuldRBT2 · Fall 05",
-            "n": 7
-          },
-          {
-            "name": "VerfR · Fall 04",
-            "n": 7
-          },
-          {
-            "name": "StGB · Fall 05",
-            "n": 6
-          },
-          {
-            "name": "VerfR · Fall 08",
-            "n": 6
-          },
-          {
-            "name": "SchuldRBT2 · Fall 06",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 13",
-            "n": 5
-          },
-          {
-            "name": "KommunalR · Fall 02",
-            "n": 4
-          },
-          {
-            "name": "SchuldRBT2 · Fall 11",
-            "n": 3
-          },
-          {
-            "name": "VerfR · Fall 01",
             "n": 3
           }
         ],
