@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "05.11.2026 00:04",
+  "lastSync": "05.11.2026 01:06",
   "anki": {
-    "reviewedToday": 2,
-    "dueNow": 5162,
+    "reviewedToday": 8,
+    "dueNow": 5160,
     "history": [
       {
         "date": "2025-09-29",
@@ -1315,13 +1315,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-05",
-        "count": 2
+        "count": 8
       }
     ],
     "stand": "2026-11-05"
   },
   "ankiFach": {
-    "stand": "05.11.2026 00:04",
+    "stand": "05.11.2026 01:06",
     "faecher": {
       "Zivilrecht": {
         "total": 2132,
@@ -1329,7 +1329,7 @@ window.NOTION_DATA = {
         "lernen": 934,
         "aufbau": 143,
         "sitzt": 1054,
-        "faellig": 1865
+        "faellig": 1863
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1378,21 +1378,30 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "05.11.2026 00:04",
+    "stand": "05.11.2026 01:06",
     "tage": [
       {
         "datum": "2026-11-05",
-        "karten": 2,
+        "karten": 8,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
-            "n": 2
+            "n": 8
           }
         ],
-        "faelle": [],
+        "faelle": [
+          {
+            "name": "BGBAT · Fall 16",
+            "n": 3
+          },
+          {
+            "name": "BGBAT · Fall 18",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": []
       },
       {
