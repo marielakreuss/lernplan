@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "09.11.2026 22:00",
+  "lastSync": "09.11.2026 23:02",
   "anki": {
-    "reviewedToday": 26,
-    "dueNow": 5167,
+    "reviewedToday": 62,
+    "dueNow": 5159,
     "history": [
       {
         "date": "2025-09-29",
@@ -1327,13 +1327,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-09",
-        "count": 26
+        "count": 62
       }
     ],
     "stand": "2026-11-09"
   },
   "ankiFach": {
-    "stand": "09.11.2026 22:00",
+    "stand": "09.11.2026 23:02",
     "faecher": {
       "Zivilrecht": {
         "total": 2132,
@@ -1341,7 +1341,7 @@ window.NOTION_DATA = {
         "lernen": 937,
         "aufbau": 136,
         "sitzt": 1058,
-        "faellig": 1865
+        "faellig": 1857
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1390,31 +1390,39 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "09.11.2026 22:00",
+    "stand": "09.11.2026 23:02",
     "tage": [
       {
         "datum": "2026-11-09",
-        "karten": 16,
+        "karten": 26,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "x10 ArbeitsR",
-            "n": 16
+            "n": 26
           }
         ],
         "faelle": [
+          {
+            "name": "ArbR · Fall 01",
+            "n": 6
+          },
           {
             "name": "ArbR · Fall 03",
             "n": 5
           },
           {
-            "name": "ArbR · Fall 08",
+            "name": "ArbR · Fall 10",
+            "n": 4
+          },
+          {
+            "name": "ArbR · Fall 02",
             "n": 3
           },
           {
-            "name": "ArbR · Fall 10",
+            "name": "ArbR · Fall 08",
             "n": 3
           }
         ],
