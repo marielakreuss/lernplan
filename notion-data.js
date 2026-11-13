@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.11.2026 22:23",
+  "lastSync": "13.11.2026 23:25",
   "anki": {
-    "reviewedToday": 2,
-    "dueNow": 5205,
+    "reviewedToday": 8,
+    "dueNow": 5203,
     "history": [
       {
         "date": "2025-09-29",
@@ -1331,13 +1331,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-13",
-        "count": 2
+        "count": 8
       }
     ],
     "stand": "2026-11-13"
   },
   "ankiFach": {
-    "stand": "13.11.2026 22:23",
+    "stand": "13.11.2026 23:25",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1361,7 +1361,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 692
+        "faellig": 690
       }
     }
   },
@@ -1394,21 +1394,30 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.11.2026 22:23",
+    "stand": "13.11.2026 23:25",
     "tage": [
       {
         "datum": "2026-11-13",
-        "karten": 2,
+        "karten": 8,
         "neu": 0,
         "angelegt": 32,
         "gebiete": [
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
-            "n": 2
+            "n": 8
           }
         ],
-        "faelle": [],
+        "faelle": [
+          {
+            "name": "StGB · Fall 03",
+            "n": 5
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": [
           {
             "name": "StrafR · 08",
