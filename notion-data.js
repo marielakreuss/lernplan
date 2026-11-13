@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.11.2026 17:10",
+  "lastSync": "13.11.2026 21:20",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5193,
@@ -1333,11 +1333,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-13"
   },
   "ankiFach": {
-    "stand": "13.11.2026 17:10",
+    "stand": "13.11.2026 21:20",
     "faecher": {
       "Zivilrecht": {
-        "total": 2132,
-        "neu": 1,
+        "total": 2136,
+        "neu": 5,
         "lernen": 937,
         "aufbau": 136,
         "sitzt": 1058,
@@ -1352,8 +1352,8 @@ window.NOTION_DATA = {
         "faellig": 860
       },
       "Strafrecht": {
-        "total": 709,
-        "neu": 1,
+        "total": 728,
+        "neu": 20,
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
@@ -1390,16 +1390,25 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.11.2026 17:10",
+    "stand": "13.11.2026 21:20",
     "tage": [
       {
         "datum": "2026-11-13",
         "karten": 0,
         "neu": 0,
-        "angelegt": 1,
+        "angelegt": 24,
         "gebiete": [],
         "faelle": [],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "StrafR · 08",
+            "n": 20
+          },
+          {
+            "name": "UKK · 1487",
+            "n": 4
+          }
+        ]
       },
       {
         "datum": "2026-11-09",
@@ -1545,20 +1554,20 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
+            "name": "StrafR · 08",
+            "n": 13
+          },
+          {
             "name": "StGB · Fall 11",
-            "n": 18
+            "n": 13
           },
           {
             "name": "StGB · Fall 12",
-            "n": 17
+            "n": 12
           },
           {
             "name": "BauR · Fall 10",
             "n": 5
-          },
-          {
-            "name": "StGB · Fall 15",
-            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -1627,7 +1636,7 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
-            "name": "SachenR · Fall 01",
+            "name": "UKK · 1487",
             "n": 3
           },
           {
@@ -1659,11 +1668,11 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
-            "name": "ErbR · Fall 04",
-            "n": 6
+            "name": "ErbR · Fall 01",
+            "n": 5
           },
           {
-            "name": "ErbR · Fall 01",
+            "name": "ErbR · Fall 04",
             "n": 5
           }
         ],
@@ -1839,7 +1848,7 @@ window.NOTION_DATA = {
   "cases": [
     {
       "title": "KW 8 - Strafbarkeitsrisiken II",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 55,
       "datum": "2026-10-16",
       "rechtsgebiet": [
@@ -6789,7 +6798,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 160,
+    "nachbereitet": 161,
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
