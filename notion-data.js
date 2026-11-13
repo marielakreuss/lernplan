@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.11.2026 21:20",
+  "lastSync": "13.11.2026 22:23",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5193,
+    "reviewedToday": 2,
+    "dueNow": 5205,
     "history": [
       {
         "date": "2025-09-29",
@@ -1328,20 +1328,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-09",
         "count": 103
+      },
+      {
+        "date": "2026-11-13",
+        "count": 2
       }
     ],
     "stand": "2026-11-13"
   },
   "ankiFach": {
-    "stand": "13.11.2026 21:20",
+    "stand": "13.11.2026 22:23",
     "faecher": {
       "Zivilrecht": {
-        "total": 2136,
-        "neu": 5,
+        "total": 2144,
+        "neu": 13,
         "lernen": 937,
         "aufbau": 136,
         "sitzt": 1058,
-        "faellig": 1887
+        "faellig": 1888
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1357,7 +1361,7 @@ window.NOTION_DATA = {
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 681
+        "faellig": 692
       }
     }
   },
@@ -1390,14 +1394,20 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.11.2026 21:20",
+    "stand": "13.11.2026 22:23",
     "tage": [
       {
         "datum": "2026-11-13",
-        "karten": 0,
+        "karten": 2,
         "neu": 0,
-        "angelegt": 24,
-        "gebiete": [],
+        "angelegt": 32,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 2
+          }
+        ],
         "faelle": [],
         "faelleAngelegt": [
           {
@@ -1406,7 +1416,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "UKK · 1487",
-            "n": 4
+            "n": 12
           }
         ]
       },
@@ -2082,7 +2092,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "UKK 1487",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-10",
       "rechtsgebiet": [
@@ -6798,7 +6808,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 161,
+    "nachbereitet": 162,
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
