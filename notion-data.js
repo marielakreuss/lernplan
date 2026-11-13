@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.11.2026 16:08",
+  "lastSync": "13.11.2026 17:10",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5193,
@@ -1333,7 +1333,7 @@ window.NOTION_DATA = {
     "stand": "2026-11-13"
   },
   "ankiFach": {
-    "stand": "13.11.2026 16:08",
+    "stand": "13.11.2026 17:10",
     "faecher": {
       "Zivilrecht": {
         "total": 2132,
@@ -1352,8 +1352,8 @@ window.NOTION_DATA = {
         "faellig": 860
       },
       "Strafrecht": {
-        "total": 708,
-        "neu": 0,
+        "total": 709,
+        "neu": 1,
         "lernen": 598,
         "aufbau": 16,
         "sitzt": 94,
@@ -1390,8 +1390,17 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.11.2026 16:08",
+    "stand": "13.11.2026 17:10",
     "tage": [
+      {
+        "datum": "2026-11-13",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 1,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-11-09",
         "karten": 51,
@@ -1921,7 +1930,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-14-Brand-mit-Folgen-3e5539e733aa8153adecc93b204ca410"
     },
     {
-      "title": "KW 12 - Strafbarkeitsrisiken III",
+      "title": "krank KW 12 - Strafbarkeitsrisiken III",
       "status": "Nicht nachbereitet",
       "woche": 59,
       "datum": "2026-11-12",
@@ -1930,7 +1939,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/KW-12-Strafbarkeitsrisiken-III-3e5539e733aa816c927bcad72e71164c"
+      "url": "https://app.notion.com/p/krank-KW-12-Strafbarkeitsrisiken-III-3e5539e733aa816c927bcad72e71164c"
     },
     {
       "title": "KW 19 - Strafbarkeitsrisiken IV",
@@ -2295,7 +2304,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/Konrad-10-3e5539e733aa81f3b9aecc9f71e8d932"
     },
     {
-      "title": "UKK 1490",
+      "title": "krank UKK 1490",
       "status": "Nicht nachbereitet",
       "woche": 59,
       "datum": "2026-11-14",
@@ -2304,7 +2313,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/UKK-1490-3e5539e733aa81f48298ca315b5ebf93"
+      "url": "https://app.notion.com/p/krank-UKK-1490-3e5539e733aa81f48298ca315b5ebf93"
     },
     {
       "title": "KW 5 - StrafR (Strafbarkeitsrisiken) - geschrieben am 24.9.26",
