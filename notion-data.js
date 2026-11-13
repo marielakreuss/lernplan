@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.11.2026 13:42",
+  "lastSync": "13.11.2026 16:08",
   "anki": {
-    "reviewedToday": 62,
-    "dueNow": 5159,
+    "reviewedToday": 0,
+    "dueNow": 5193,
     "history": [
       {
         "date": "2025-09-29",
@@ -1327,13 +1327,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-09",
-        "count": 62
+        "count": 103
       }
     ],
-    "stand": "2026-11-09"
+    "stand": "2026-11-13"
   },
   "ankiFach": {
-    "stand": "09.11.2026 23:02",
+    "stand": "13.11.2026 16:08",
     "faecher": {
       "Zivilrecht": {
         "total": 2132,
@@ -1341,7 +1341,7 @@ window.NOTION_DATA = {
         "lernen": 937,
         "aufbau": 136,
         "sitzt": 1058,
-        "faellig": 1857
+        "faellig": 1887
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1349,7 +1349,7 @@ window.NOTION_DATA = {
         "lernen": 612,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 856
+        "faellig": 860
       },
       "Strafrecht": {
         "total": 708,
@@ -1390,23 +1390,27 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "09.11.2026 23:02",
+    "stand": "13.11.2026 16:08",
     "tage": [
       {
         "datum": "2026-11-09",
-        "karten": 26,
+        "karten": 51,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "x10 ArbeitsR",
-            "n": 26
+            "n": 51
           }
         ],
         "faelle": [
           {
             "name": "ArbR · Fall 01",
+            "n": 16
+          },
+          {
+            "name": "ArbR · Fall 09",
             "n": 6
           },
           {
@@ -1414,11 +1418,23 @@ window.NOTION_DATA = {
             "n": 5
           },
           {
+            "name": "ArbR · Fall 06",
+            "n": 5
+          },
+          {
+            "name": "ArbR · Fall 07",
+            "n": 4
+          },
+          {
             "name": "ArbR · Fall 10",
             "n": 4
           },
           {
             "name": "ArbR · Fall 02",
+            "n": 3
+          },
+          {
+            "name": "ArbR · Fall 02a",
             "n": 3
           },
           {
