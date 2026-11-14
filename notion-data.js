@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.11.2026 00:32",
+  "lastSync": "14.11.2026 12:30",
   "anki": {
-    "reviewedToday": 76,
-    "dueNow": 5187,
+    "reviewedToday": 0,
+    "dueNow": 5226,
     "history": [
       {
         "date": "2025-09-29",
@@ -1335,13 +1335,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-14",
-        "count": 68
+        "count": 93
       }
     ],
     "stand": "2026-11-14"
   },
   "ankiFach": {
-    "stand": "14.11.2026 01:06",
+    "stand": "14.11.2026 12:30",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1349,7 +1349,7 @@ window.NOTION_DATA = {
         "lernen": 952,
         "aufbau": 136,
         "sitzt": 1056,
-        "faellig": 1878
+        "faellig": 1896
       },
       "Öffentliches Recht": {
         "total": 930,
@@ -1357,7 +1357,7 @@ window.NOTION_DATA = {
         "lernen": 613,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 860
+        "faellig": 861
       },
       "Strafrecht": {
         "total": 728,
@@ -1365,7 +1365,7 @@ window.NOTION_DATA = {
         "lernen": 618,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 675
+        "faellig": 704
       }
     }
   },
@@ -1398,11 +1398,11 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "14.11.2026 01:06",
+    "stand": "14.11.2026 12:30",
     "tage": [
       {
         "datum": "2026-11-14",
-        "karten": 60,
+        "karten": 72,
         "neu": 34,
         "angelegt": 0,
         "gebiete": [
@@ -1412,14 +1412,14 @@ window.NOTION_DATA = {
             "n": 23
           },
           {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 21
+          },
+          {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 10
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR AT",
-            "n": 9
           },
           {
             "fach": "Zivilrecht",
@@ -1466,8 +1466,20 @@ window.NOTION_DATA = {
             "n": 12
           },
           {
+            "name": "StGB · Fall 03",
+            "n": 6
+          },
+          {
+            "name": "StGB · Fall 06",
+            "n": 4
+          },
+          {
             "name": "BGBAT · Fall 05",
             "n": 4
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -1733,10 +1745,6 @@ window.NOTION_DATA = {
           {
             "name": "UKK · 1487",
             "n": 3
-          },
-          {
-            "name": "KommunalR · Fall 06",
-            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -1813,7 +1821,7 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "KommunalR · Fall 03",
-            "n": 13
+            "n": 12
           },
           {
             "name": "UKK · 1487",
@@ -1826,10 +1834,6 @@ window.NOTION_DATA = {
           {
             "name": "SchuldRBT2 · Fall 17",
             "n": 5
-          },
-          {
-            "name": "KommunalR · Fall 06",
-            "n": 3
           }
         ],
         "faelleAngelegt": []
