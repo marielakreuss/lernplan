@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.11.2026 17:45",
+  "lastSync": "14.11.2026 23:40",
   "anki": {
-    "reviewedToday": 31,
-    "dueNow": 5214,
+    "reviewedToday": 45,
+    "dueNow": 5205,
     "history": [
       {
         "date": "2025-09-29",
@@ -1335,13 +1335,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-14",
-        "count": 124
+        "count": 138
       }
     ],
     "stand": "2026-11-14"
   },
   "ankiFach": {
-    "stand": "14.11.2026 17:44",
+    "stand": "14.11.2026 23:40",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1353,11 +1353,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 947,
-        "neu": 10,
-        "lernen": 620,
+        "neu": 7,
+        "lernen": 623,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 866
+        "faellig": 863
       },
       "Strafrecht": {
         "total": 728,
@@ -1365,7 +1365,7 @@ window.NOTION_DATA = {
         "lernen": 618,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 688
+        "faellig": 679
       }
     }
   },
@@ -1398,12 +1398,12 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "14.11.2026 17:45",
+    "stand": "14.11.2026 23:40",
     "tage": [
       {
         "datum": "2026-11-14",
-        "karten": 83,
-        "neu": 41,
+        "karten": 87,
+        "neu": 44,
         "angelegt": 17,
         "gebiete": [
           {
@@ -1422,18 +1422,23 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 7
+          },
+          {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
             "n": 6
           },
           {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 6
-          },
-          {
             "fach": "Strafrecht",
             "gebiet": "StPO",
+            "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
             "n": 4
           },
           {
@@ -1449,12 +1454,7 @@ window.NOTION_DATA = {
           {
             "fach": "Öffentliches Recht",
             "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 2
+            "n": 3
           },
           {
             "fach": "Zivilrecht",
@@ -1482,7 +1482,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "ÖR · 07",
-            "n": 8
+            "n": 11
           },
           {
             "name": "StGB · Fall 03",
@@ -1499,6 +1499,10 @@ window.NOTION_DATA = {
           {
             "name": "BGBAT · Fall 05",
             "n": 4
+          },
+          {
+            "name": "VerwRAT · Fall 01",
+            "n": 3
           }
         ],
         "faelleAngelegt": [
