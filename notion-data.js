@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "14.11.2026 12:46",
+  "lastSync": "14.11.2026 17:45",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5226,
+    "reviewedToday": 31,
+    "dueNow": 5214,
     "history": [
       {
         "date": "2025-09-29",
@@ -1335,13 +1335,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-14",
-        "count": 93
+        "count": 124
       }
     ],
     "stand": "2026-11-14"
   },
   "ankiFach": {
-    "stand": "14.11.2026 12:30",
+    "stand": "14.11.2026 17:44",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1349,23 +1349,23 @@ window.NOTION_DATA = {
         "lernen": 952,
         "aufbau": 136,
         "sitzt": 1056,
-        "faellig": 1896
+        "faellig": 1895
       },
       "Öffentliches Recht": {
-        "total": 930,
-        "neu": 0,
-        "lernen": 613,
+        "total": 947,
+        "neu": 10,
+        "lernen": 620,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 861
+        "faellig": 866
       },
       "Strafrecht": {
         "total": 728,
         "neu": 0,
         "lernen": 618,
-        "aufbau": 16,
-        "sitzt": 94,
-        "faellig": 704
+        "aufbau": 15,
+        "sitzt": 95,
+        "faellig": 688
       }
     }
   },
@@ -1398,13 +1398,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "14.11.2026 12:30",
+    "stand": "14.11.2026 17:45",
     "tage": [
       {
         "datum": "2026-11-14",
-        "karten": 72,
-        "neu": 34,
-        "angelegt": 0,
+        "karten": 83,
+        "neu": 41,
+        "angelegt": 17,
         "gebiete": [
           {
             "fach": "Strafrecht",
@@ -1414,7 +1414,7 @@ window.NOTION_DATA = {
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
-            "n": 21
+            "n": 22
           },
           {
             "fach": "Zivilrecht",
@@ -1424,6 +1424,11 @@ window.NOTION_DATA = {
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
+            "n": 6
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
             "n": 6
           },
           {
@@ -1440,6 +1445,16 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "6 ZPO I",
             "n": 3
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 2
           },
           {
             "fach": "Zivilrecht",
@@ -1466,8 +1481,16 @@ window.NOTION_DATA = {
             "n": 12
           },
           {
+            "name": "ÖR · 07",
+            "n": 8
+          },
+          {
             "name": "StGB · Fall 03",
             "n": 6
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 4
           },
           {
             "name": "StGB · Fall 06",
@@ -1476,13 +1499,14 @@ window.NOTION_DATA = {
           {
             "name": "BGBAT · Fall 05",
             "n": 4
-          },
-          {
-            "name": "StGB · Fall 02",
-            "n": 3
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "ÖR · 07",
+            "n": 17
+          }
+        ]
       },
       {
         "datum": "2026-11-13",
