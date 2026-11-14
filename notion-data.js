@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "14.11.2026 12:30",
+  "lastSync": "14.11.2026 12:46",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5226,
@@ -2039,7 +2039,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KW 7 - Theaterkritik",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 54,
       "datum": "2026-10-08",
       "rechtsgebiet": [
@@ -6849,7 +6849,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 162,
+    "nachbereitet": 163,
     "inBearbeitung": 22,
     "total": 352,
     "klkGesamt": 97,
