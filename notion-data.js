@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "13.11.2026 23:25",
+  "lastSync": "14.11.2026 01:07",
   "anki": {
-    "reviewedToday": 8,
-    "dueNow": 5203,
+    "reviewedToday": 76,
+    "dueNow": 5187,
     "history": [
       {
         "date": "2025-09-29",
@@ -1332,36 +1332,40 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-13",
         "count": 8
+      },
+      {
+        "date": "2026-11-14",
+        "count": 68
       }
     ],
-    "stand": "2026-11-13"
+    "stand": "2026-11-14"
   },
   "ankiFach": {
-    "stand": "13.11.2026 23:25",
+    "stand": "14.11.2026 01:06",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
-        "neu": 13,
-        "lernen": 937,
+        "neu": 0,
+        "lernen": 952,
         "aufbau": 136,
-        "sitzt": 1058,
-        "faellig": 1888
+        "sitzt": 1056,
+        "faellig": 1878
       },
       "Öffentliches Recht": {
         "total": 930,
-        "neu": 1,
-        "lernen": 612,
+        "neu": 0,
+        "lernen": 613,
         "aufbau": 74,
         "sitzt": 243,
         "faellig": 860
       },
       "Strafrecht": {
         "total": 728,
-        "neu": 20,
-        "lernen": 598,
+        "neu": 0,
+        "lernen": 618,
         "aufbau": 16,
         "sitzt": 94,
-        "faellig": 690
+        "faellig": 675
       }
     }
   },
@@ -1394,8 +1398,80 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "13.11.2026 23:25",
+    "stand": "14.11.2026 01:06",
     "tage": [
+      {
+        "datum": "2026-11-14",
+        "karten": 60,
+        "neu": 34,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 23
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 10
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 9
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 6
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "5 Erbrecht",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "StrafR · 08",
+            "n": 21
+          },
+          {
+            "name": "UKK · 1487",
+            "n": 15
+          },
+          {
+            "name": "StGB · Fall 01",
+            "n": 12
+          },
+          {
+            "name": "BGBAT · Fall 05",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-11-13",
         "karten": 8,
@@ -1805,54 +1881,6 @@ window.NOTION_DATA = {
           },
           {
             "name": "SchuldRAT · Fall 06",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-24",
-        "karten": 40,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 36
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 1
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BauR · Fall 03",
-            "n": 8
-          },
-          {
-            "name": "BauR · Fall 06",
-            "n": 5
-          },
-          {
-            "name": "VerwRAT · Fall 07",
             "n": 3
           }
         ],
