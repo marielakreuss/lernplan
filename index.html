@@ -5817,7 +5817,7 @@
 
   // Welcher konkrete Notion-Fall liegt auf welchem Fall-Slot? Ab heute
   // werden alle Slots der kommenden Wochen der Reihe nach mit den offenen
-  // Fällen ihres Gebiets belegt: angefangene zuerst, dann nach Fallnummer.
+  // Fällen ihres Gebiets belegt, streng nach Fallnummer.
   // Erledigte Fälle fallen beim nächsten Sync heraus, der Rest rückt nach.
   // Schlüssel: 'YYYY-MM-DD|Tag#Blockindex' (Montag der Woche).
   let fahrplanCache = null;
@@ -5836,8 +5836,8 @@
     });
     // Nummer hinter „Fall“ – auch bei „Fall01a“ oder „Fall11 (Wiederholung…)“
     const nr = c => { const m = /Fall\s*0*(\d+)/i.exec(c.title || ''); return m ? +m[1] : 999; };
+    // Streng der Reihe nach – auch angefangene Fälle rücken nicht vor.
     Object.values(proGebiet).forEach(liste => liste.sort((x, y) =>
-      ((y.status === 'In Bearbeitung') - (x.status === 'In Bearbeitung')) ||
       (nr(x) - nr(y)) || String(x.title).localeCompare(String(y.title), 'de')));
 
     const heute = new Date(); heute.setHours(0, 0, 0, 0);
