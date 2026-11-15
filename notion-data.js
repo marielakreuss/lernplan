@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "15.11.2026 10:32",
+  "lastSync": "15.11.2026 11:35",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5229,
@@ -11,11 +11,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-09-30",
-        "count": 55
+        "count": 52
       },
       {
         "date": "2025-10-01",
-        "count": 66
+        "count": 65
       },
       {
         "date": "2025-10-02",
@@ -27,7 +27,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-05",
-        "count": 161
+        "count": 160
       },
       {
         "date": "2025-10-06",
@@ -87,7 +87,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-22",
-        "count": 171
+        "count": 167
       },
       {
         "date": "2025-10-23",
@@ -95,7 +95,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-24",
-        "count": 177
+        "count": 176
       },
       {
         "date": "2025-10-26",
@@ -119,7 +119,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-31",
-        "count": 65
+        "count": 64
       },
       {
         "date": "2025-11-02",
@@ -151,7 +151,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-10",
-        "count": 125
+        "count": 124
       },
       {
         "date": "2025-11-11",
@@ -215,7 +215,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-29",
-        "count": 208
+        "count": 207
       },
       {
         "date": "2025-11-30",
@@ -1263,7 +1263,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-11",
-        "count": 86
+        "count": 83
       },
       {
         "date": "2026-10-12",
@@ -1275,7 +1275,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-15",
-        "count": 240
+        "count": 239
       },
       {
         "date": "2026-10-16",
@@ -1341,7 +1341,7 @@ window.NOTION_DATA = {
     "stand": "2026-11-15"
   },
   "ankiFach": {
-    "stand": "15.11.2026 10:32",
+    "stand": "15.11.2026 11:35",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1357,7 +1357,7 @@ window.NOTION_DATA = {
         "lernen": 630,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 878
+        "faellig": 903
       },
       "Strafrecht": {
         "total": 728,
@@ -1398,7 +1398,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "15.11.2026 10:32",
+    "stand": "15.11.2026 11:35",
     "tage": [
       {
         "datum": "2026-11-14",
@@ -3435,8 +3435,8 @@ window.NOTION_DATA = {
     {
       "title": "Strafrecht AT Fall10",
       "status": "Nicht nachbereitet",
-      "woche": 59,
-      "datum": "2026-11-13",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "Strafrecht AT",
         "StrafR"
@@ -6176,8 +6176,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall15",
       "status": "In Bearbeitung",
-      "woche": 59,
-      "datum": "2026-11-11",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6204,8 +6204,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall12",
       "status": "Nicht nachbereitet",
-      "woche": 59,
-      "datum": "2026-11-11",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6218,8 +6218,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall14",
       "status": "In Bearbeitung",
-      "woche": 59,
-      "datum": "2026-11-11",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6302,8 +6302,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall04",
       "status": "In Bearbeitung",
-      "woche": 59,
-      "datum": "2026-11-13",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6330,8 +6330,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall11 (Wiederholungsfall zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
-      "woche": 59,
-      "datum": "2026-11-11",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6344,8 +6344,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall10",
       "status": "Nicht nachbereitet",
-      "woche": 59,
-      "datum": "2026-11-10",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6571,8 +6571,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall02",
       "status": "In Bearbeitung",
-      "woche": 59,
-      "datum": "2026-11-13",
+      "woche": null,
+      "datum": null,
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6627,8 +6627,8 @@ window.NOTION_DATA = {
     {
       "title": "KommunalR Fall09",
       "status": "In Bearbeitung",
-      "woche": 2,
-      "datum": "2025-10-08",
+      "woche": 59,
+      "datum": "2026-11-15",
       "rechtsgebiet": [
         "KommunalR"
       ],
@@ -6711,8 +6711,8 @@ window.NOTION_DATA = {
     {
       "title": "KommunalR Fall07 (Vertiefung)",
       "status": "In Bearbeitung",
-      "woche": 54,
-      "datum": "2026-10-09",
+      "woche": 59,
+      "datum": "2026-11-15",
       "rechtsgebiet": [
         "KommunalR"
       ],
