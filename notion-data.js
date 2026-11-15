@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "15.11.2026 12:37",
+  "lastSync": "15.11.2026 13:39",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5254,
@@ -1341,7 +1341,7 @@ window.NOTION_DATA = {
     "stand": "2026-11-15"
   },
   "ankiFach": {
-    "stand": "15.11.2026 12:37",
+    "stand": "15.11.2026 13:39",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1352,8 +1352,8 @@ window.NOTION_DATA = {
         "faellig": 1894
       },
       "Öffentliches Recht": {
-        "total": 954,
-        "neu": 7,
+        "total": 958,
+        "neu": 11,
         "lernen": 630,
         "aufbau": 74,
         "sitzt": 243,
@@ -1398,23 +1398,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "15.11.2026 12:37",
+    "stand": "15.11.2026 13:39",
     "tage": [
       {
         "datum": "2026-11-15",
         "karten": 0,
         "neu": 0,
-        "angelegt": 7,
+        "angelegt": 11,
         "gebiete": [],
         "faelle": [],
         "faelleAngelegt": [
           {
-            "name": "KommunalR · Fall 06",
-            "n": 4
+            "name": "KommunalR · Fall 07",
+            "n": 7
           },
           {
-            "name": "KommunalR · Fall 07",
-            "n": 3
+            "name": "KommunalR · Fall 06",
+            "n": 4
           }
         ]
       },
@@ -1888,7 +1888,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 59,
-    "nachbereitet": 160
+    "nachbereitet": 161
   },
   "cases": [
     {
@@ -6728,7 +6728,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KommunalR Fall07 (Vertiefung)",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 59,
       "datum": "2026-11-15",
       "rechtsgebiet": [
@@ -6843,8 +6843,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 163,
-    "inBearbeitung": 22,
+    "nachbereitet": 164,
+    "inBearbeitung": 21,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 39
