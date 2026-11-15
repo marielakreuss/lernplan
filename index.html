@@ -5826,10 +5826,13 @@
     const plan = {};
     const cases = (window.NOTION_DATA && window.NOTION_DATA.cases) || [];
     const proGebiet = {};
+    const datiert = {};            // 'YYYY-MM-DD|Gebiet' -> Fälle mit diesem Datum (auch erledigte)
     cases.forEach(c => {
-      if (c.typ !== 'Hauptkurs' || c.status === 'Nachbereitet') return;
+      if (c.typ !== 'Hauptkurs') return;
       const g = (c.rechtsgebiet || []).map(planGebiet).find(x => FACH_VON_GEBIET[x]);
-      if (g) (proGebiet[g] = proGebiet[g] || []).push(c);
+      if (!g) return;
+      if (c.datum) (datiert[c.datum + '|' + g] = datiert[c.datum + '|' + g] || []).push(c);
+      if (c.status !== 'Nachbereitet') (proGebiet[g] = proGebiet[g] || []).push(c);
     });
     // Nummer hinter „Fall“ – auch bei „Fall01a“ oder „Fall11 (Wiederholung…)“
     const nr = c => { const m = /Fall\s*0*(\d+)/i.exec(c.title || ''); return m ? +m[1] : 999; };
@@ -5845,11 +5848,20 @@
       const zuteilung = verteile(w);
       TAGE.forEach((tag, idx) => {
         const tagDatum = new Date(mo); tagDatum.setDate(tagDatum.getDate() + idx);
-        if (tagDatum < heute) return;            // vergangene Tage nicht mehr belegen
+        const tagIso = isoTag(tagDatum);
         rasterFuer(w, tag).b.forEach((block, i) => {
           if (!block.f) return;
           const g = zuteilung[tag + '#' + i];
-          const c = g && proGebiet[g] && proGebiet[g].shift();
+          if (!g) return;
+          // Bis einschließlich heute zuerst, was in Notion auf diesen Tag
+          // datiert ist – auch schon nachbereitete Fälle (mit ✓ im Gitter).
+          let c = tagDatum <= heute && (datiert[tagIso + '|' + g] || []).shift();
+          if (c) {
+            const pool = proGebiet[g] || [];
+            if (pool.includes(c)) pool.splice(pool.indexOf(c), 1);
+          } else if (tagDatum >= heute) {
+            c = proGebiet[g] && proGebiet[g].shift();
+          }
           if (c) plan[w.mo + '|' + tag + '#' + i] = c;
         });
       });
@@ -5857,7 +5869,7 @@
     return (fahrplanCache = plan);
   }
   // Kurzname fürs Wochengitter: Zusätze ab der Klammer weglassen.
-  const fallKurz = c => String(c.title || '')
+  const fallKurz = c => (c.status === 'Nachbereitet' ? '✓ ' : '') + String(c.title || '')
     .replace(/\s*\(.*$/, '').replace('SicherheitsR / PolizeiR', 'PolizeiR');
 
   // ── Rendern ───────────────────────────────────────────────────────
