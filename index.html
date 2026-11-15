@@ -1010,6 +1010,8 @@
       border-left: 2.5px solid var(--bk, var(--border-strong));
       background: var(--surface-solid);
     }
+    .sp-e a.sp-e-fall { color: inherit; text-decoration: none; }
+    .sp-e a.sp-e-fall:hover { text-decoration: underline; }
     .sp-e span { display: block; font-variant-numeric: tabular-nums; font-size: 0.63rem; color: var(--text-sub); }
     .sp-e.k-fall   { --bk: var(--accent-fill); background: var(--accent-soft); font-weight: 600; }
     .sp-e.k-fix    { --bk: var(--border-strong); background: var(--past-bg); color: var(--text-muted); }
@@ -5813,6 +5815,51 @@
     return summe;
   }
 
+  // Welcher konkrete Notion-Fall liegt auf welchem Fall-Slot? Ab heute
+  // werden alle Slots der kommenden Wochen der Reihe nach mit den offenen
+  // Fällen ihres Gebiets belegt: angefangene zuerst, dann nach Fallnummer.
+  // Erledigte Fälle fallen beim nächsten Sync heraus, der Rest rückt nach.
+  // Schlüssel: 'YYYY-MM-DD|Tag#Blockindex' (Montag der Woche).
+  let fahrplanCache = null;
+  function fallFahrplan() {
+    if (fahrplanCache) return fahrplanCache;
+    const plan = {};
+    const cases = (window.NOTION_DATA && window.NOTION_DATA.cases) || [];
+    const proGebiet = {};
+    cases.forEach(c => {
+      if (c.typ !== 'Hauptkurs' || c.status === 'Nachbereitet') return;
+      const g = (c.rechtsgebiet || []).map(planGebiet).find(x => FACH_VON_GEBIET[x]);
+      if (g) (proGebiet[g] = proGebiet[g] || []).push(c);
+    });
+    // Nummer hinter „Fall“ – auch bei „Fall01a“ oder „Fall11 (Wiederholung…)“
+    const nr = c => { const m = /Fall\s*0*(\d+)/i.exec(c.title || ''); return m ? +m[1] : 999; };
+    Object.values(proGebiet).forEach(liste => liste.sort((x, y) =>
+      ((y.status === 'In Bearbeitung') - (x.status === 'In Bearbeitung')) ||
+      (nr(x) - nr(y)) || String(x.title).localeCompare(String(y.title), 'de')));
+
+    const heute = new Date(); heute.setHours(0, 0, 0, 0);
+    const abMontag = montagVon(heute).getTime();
+    W.forEach(w => {
+      const mo = d(w.mo);
+      if (mo.getTime() < abMontag || !w.g.length) return;
+      const zuteilung = verteile(w);
+      TAGE.forEach((tag, idx) => {
+        const tagDatum = new Date(mo); tagDatum.setDate(tagDatum.getDate() + idx);
+        if (tagDatum < heute) return;            // vergangene Tage nicht mehr belegen
+        rasterFuer(w, tag).b.forEach((block, i) => {
+          if (!block.f) return;
+          const g = zuteilung[tag + '#' + i];
+          const c = g && proGebiet[g] && proGebiet[g].shift();
+          if (c) plan[w.mo + '|' + tag + '#' + i] = c;
+        });
+      });
+    });
+    return (fahrplanCache = plan);
+  }
+  // Kurzname fürs Wochengitter: Zusätze ab der Klammer weglassen.
+  const fallKurz = c => String(c.title || '')
+    .replace(/\s*\(.*$/, '').replace('SicherheitsR / PolizeiR', 'PolizeiR');
+
   // ── Rendern ───────────────────────────────────────────────────────
   // `zeigeIndex` ist die Woche, die die Wochenansicht zeigt - über die
   // Pfeile im Kopf oder einen Klick in die Wochentabelle auch eine andere
@@ -5941,7 +5988,9 @@
       liste.innerHTML = tagRaster.b.map((block, i) => {
         const hw = heuteWoche;
         const gebiet = block.f ? zuteilungHeute[zeigeTag + '#' + i] : null;
-        const fall = gebiet && gebiet !== 'Reserve' ? fallFuer(gebiet) : null;
+        const fall = gebiet && gebiet !== 'Reserve'
+          ? (fallFahrplan()[hw.mo + '|' + zeigeTag + '#' + i] || fallFuer(gebiet)) : null;
+        if (fall) vergeben.add(fall.title);
         const fach = gebiet ? FACH_VON_GEBIET[gebiet] : null;
         const zeit = (block === B.kwPeru && hw.kw && hw.kw.peru)
           ? '16–20 Uhr DE' : block.t;
@@ -6004,9 +6053,17 @@
           if ((block === B.kw || block === B.kwE) && woche.kw)  { klFach = FACH_KEY[woche.kw.f]; }
           const fachK = gebiet ? FACH_VON_GEBIET[gebiet] : klFach;
           const gewaehlt = block.k === 'konrad' && woche.konrad && woche.konrad.wahl;
+          // Konkreter Notion-Fall für diesen Slot, mit Link
+          const fall = gebiet && gebiet !== 'Reserve' ? fallFahrplan()[woche.mo + '|' + tag + '#' + i] : null;
+          const inhaltText = fall
+            ? (fall.url
+                ? '<a class="sp-e-fall" href="' + esc(fall.url) + '" target="_blank" rel="noopener" title="' +
+                  esc(fall.title) + ' · in Notion öffnen">' + esc(fallKurz(fall)) + '</a>'
+                : esc(fallKurz(fall)))
+            : esc(text);
           return '<div class="sp-e k-' + block.k + (fachK ? ' f-' + fachK : '') +
                  (gewaehlt ? ' gewaehlt' : '') +
-                 '">' + esc(text) +
+                 '">' + inhaltText +
                  (block.t ? '<span>' + esc(block.t) + '</span>' : '') + '</div>';
         }).join('');
         zeile += '<td class="' + (tag === heuteImGitter ? 'sp-heute-c' : '') + '">' +
