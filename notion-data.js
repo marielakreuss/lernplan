@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "15.11.2026 11:35",
+  "lastSync": "15.11.2026 12:37",
   "anki": {
     "reviewedToday": 0,
-    "dueNow": 5229,
+    "dueNow": 5254,
     "history": [
       {
         "date": "2025-09-29",
@@ -11,11 +11,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-09-30",
-        "count": 52
+        "count": 55
       },
       {
         "date": "2025-10-01",
-        "count": 65
+        "count": 66
       },
       {
         "date": "2025-10-02",
@@ -27,7 +27,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-05",
-        "count": 160
+        "count": 161
       },
       {
         "date": "2025-10-06",
@@ -87,7 +87,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-22",
-        "count": 167
+        "count": 171
       },
       {
         "date": "2025-10-23",
@@ -95,7 +95,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-24",
-        "count": 176
+        "count": 177
       },
       {
         "date": "2025-10-26",
@@ -119,7 +119,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-31",
-        "count": 64
+        "count": 65
       },
       {
         "date": "2025-11-02",
@@ -151,7 +151,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-10",
-        "count": 124
+        "count": 125
       },
       {
         "date": "2025-11-11",
@@ -215,7 +215,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-29",
-        "count": 207
+        "count": 208
       },
       {
         "date": "2025-11-30",
@@ -1263,7 +1263,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-11",
-        "count": 83
+        "count": 86
       },
       {
         "date": "2026-10-12",
@@ -1275,7 +1275,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-10-15",
-        "count": 239
+        "count": 240
       },
       {
         "date": "2026-10-16",
@@ -1341,7 +1341,7 @@ window.NOTION_DATA = {
     "stand": "2026-11-15"
   },
   "ankiFach": {
-    "stand": "15.11.2026 11:35",
+    "stand": "15.11.2026 12:37",
     "faecher": {
       "Zivilrecht": {
         "total": 2144,
@@ -1352,8 +1352,8 @@ window.NOTION_DATA = {
         "faellig": 1894
       },
       "Öffentliches Recht": {
-        "total": 947,
-        "neu": 0,
+        "total": 954,
+        "neu": 7,
         "lernen": 630,
         "aufbau": 74,
         "sitzt": 243,
@@ -1398,8 +1398,26 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "15.11.2026 11:35",
+    "stand": "15.11.2026 12:37",
     "tage": [
+      {
+        "datum": "2026-11-15",
+        "karten": 0,
+        "neu": 0,
+        "angelegt": 7,
+        "gebiete": [],
+        "faelle": [],
+        "faelleAngelegt": [
+          {
+            "name": "KommunalR · Fall 06",
+            "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 07",
+            "n": 3
+          }
+        ]
+      },
       {
         "datum": "2026-11-14",
         "karten": 101,
