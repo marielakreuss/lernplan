@@ -4996,12 +4996,18 @@
   const FACH_KEY  = { 'Zivilrecht':'zr', 'Öffentliches Recht':'or', 'Strafrecht':'sr' };
   const FACH_NAME = { zr:'Zivilrecht', or:'Öffentliches Recht', sr:'Strafrecht' };
 
-  // Reihenfolge der Rechtsgebiete – wird von oben nach unten abgearbeitet
+  // Reihenfolge der Rechtsgebiete – wird von oben nach unten abgearbeitet.
+  // Seit 15.11.2026 läuft jedes Fach als eigene Spur (pro Woche ca. 5 ZR,
+  // 3 ÖR, 1 StrafR). Innerhalb der Spur wird jedes Gebiet am Stück
+  // abgeschlossen, bevor das nächste beginnt – kein Gebiet wird unterbrochen.
+  // ZR: SachenR → ZPO I → SchuldR AT → BGB AT → SchuldR BT → HGB → ZPO II → ErbR → FamilienR
+  // ÖR: PolizeiR → VerfassungsR → EuropaR → VerwR AT → StaatshaftungsR
+  // SR: StrafR → StPO
   const QUEUES = {
     zr: [['SchuldR BT 2',14],['SachenR',14],['ZPO I',7],['SchuldR AT',9],['BGB AT',8],
          ['SchuldR BT',5],['HGB',6],['ZPO II',5],['ErbR',5],['FamilienR',2],['ArbeitsR',9]],
-    or: [['BauR',10],['KommunalR',7],['PolizeiR',7],['EuropaR',6],['VerwR AT',6],
-         ['StaatshaftungsR',3],['VerfassungsR',6]],
+    or: [['BauR',10],['KommunalR',7],['PolizeiR',7],['VerfassungsR',6],['EuropaR',6],
+         ['VerwR AT',6],['StaatshaftungsR',3]],
     sr: [['StrafR',8],['StPO',5]]
   };
 
@@ -5264,43 +5270,43 @@
      konrad:{nr:3, do:'2026-11-19', fr:'2026-11-20', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
-     n:9,  g:[['SachenR',4],['ZPO I',2],['PolizeiR',2],['StPO',1]]},
+     n:9,  g:[['SachenR',5],['PolizeiR',3],['StrafR',1]]},
     {mo:'2026-11-23', sa:{q:'Uni-KK 3213',f:'Strafrecht'}, ph:'Endspurt',          r:'endspurt',
      kw:{d:'2026-11-26',f:'Öffentliches Recht',t:'Brand mit Folgen'},
-     n:9,  g:[['ZPO I',5],['PolizeiR',3],['StrafR',1]]},
+     n:9,  g:[['SachenR',5],['PolizeiR',3],['StrafR',1]]},
     {mo:'2026-11-30', sa:{q:'Uni-KK 1491',f:'Zivilrecht'}, ph:'Endspurt',          r:'endspurt',
      kw:{d:'2026-12-03',f:'Zivilrecht',t:'Hangover'},
-     n:9,  g:[['SchuldR AT',6],['EuropaR',2],['StPO',1]]},
+     n:9,  g:[['ZPO I',5],['PolizeiR',1],['VerfassungsR',2],['StrafR',1]]},
     {mo:'2026-12-07', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Endspurt',          r:'endspurt',
      kw:{d:'2026-12-10',f:'Öffentliches Recht',t:'Datenschutz im Landtag'},
-     n:9,  g:[['SchuldR AT',3],['BGB AT',3],['EuropaR',3]]},
+     n:9,  g:[['ZPO I',2],['SchuldR AT',3],['VerfassungsR',3],['StrafR',1]]},
     {mo:'2026-12-14', sa:{q:'Uni-KK 1492',f:'Zivilrecht'}, ph:'Endspurt',          r:'endspurt',
      kw:{d:'2026-12-17',f:'Zivilrecht',t:'An der Tankstelle'},
      konrad:{nr:4, do:'2026-12-17', fr:'2026-12-18', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
-     n:9,  g:[['BGB AT',5],['EuropaR',1],['VerwR AT',2],['StrafR',1]]},
+     n:9,  g:[['SchuldR AT',5],['VerfassungsR',1],['EuropaR',2],['StrafR',1]]},
     {mo:'2026-12-21', ph:'Weihnachten',       r:'weihnachtFrei',
      kw:null, kwAus:'Kein Termin am 24.12.',
-     n:7,  g:[['SchuldR BT',3],['VerwR AT',2],['SachenR',2]]},
+     n:7,  g:[['SchuldR AT',1],['BGB AT',3],['EuropaR',2],['StPO',1]]},
     {mo:'2026-12-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Weihnachten',       r:'weihnacht',
      kw:null, kwAus:'Kein Termin am 31.12.',
-     n:7,  g:[['HGB',1],['VerwR AT',1],['SachenR',2],['PolizeiR',1],['Reserve',2]]},
+     n:7,  g:[['BGB AT',4],['EuropaR',2],['StPO',1]]},
     {mo:'2027-01-04', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Januar',            r:'endspurt',
      kw:{d:'2027-01-07',f:'Zivilrecht',t:'Solaris'},
-     n:9,  g:[['HGB',5],['StPO',1],['Reserve',3]]},
+     n:9,  g:[['BGB AT',1],['SchuldR BT',3],['HGB',2],['VerwR AT',2],['StPO',1]], doVorzug:false},  // sonst rutscht der Rest des alten Gebiets hinter das neue
     {mo:'2027-01-11', sa:{q:'Uni-KK 1493',f:'Zivilrecht'}, ph:'Januar',            r:'endspurt',
      kw:{d:'2027-01-14',f:'Strafrecht',t:'Strafbarkeitsrisiken IV'},
      konrad:{nr:5, do:'2027-01-14', fr:'2027-01-15', wahl:'fr',
              doNote:'gleichzeitig Klausurwerkstatt',
              frNote:'Fall rückt auf Do 14:00–16:00'},
-     n:9,  g:[['ZPO II',5],['StaatshaftungsR',3],['StPO',1]]},
+     n:9,  g:[['HGB',4],['ZPO II',2],['VerwR AT',2],['StPO',1]]},
     {mo:'2027-01-18', sa:{q:'Uni-KK 3214',f:'Strafrecht'}, ph:'Januar',            r:'endspurt',
      kw:{d:'2027-01-21',f:'Zivilrecht',t:'N.N.'},
-     n:9,  g:[['ErbR',5],['VerfassungsR',3],['Reserve',1]]},
+     n:9,  g:[['ZPO II',3],['ErbR',3],['VerwR AT',1],['StaatshaftungsR',1],['StPO',1]], doVorzug:false},  // sonst rutscht der Rest des alten Gebiets hinter das neue
     {mo:'2027-01-25', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Januar',            r:'endspurt',
      kw:{d:'2027-01-28',f:'Öffentliches Recht',t:'Tankt in Österreich'},
-     n:9,  g:[['FamilienR',2],['StrafR',2],['VerfassungsR',3],['Reserve',2]]},
+     n:9,  g:[['ErbR',2],['FamilienR',2],['StaatshaftungsR',2],['Reserve',3]]},
     // Ab Februar: kein Neustoff mehr, keine Fall-Slots. Jede Woche alle Fächer.
     {mo:'2027-02-01', sa:{q:'Uni-KK 1494',f:'Zivilrecht'}, ph:'Wiederholung',      r:'wiederStart',
      kw:null, kwAus:'Termin noch offen',
