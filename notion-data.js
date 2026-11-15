@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "15.11.2026 21:58",
+  "lastSync": "15.11.2026 23:00",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5254,
+    "reviewedToday": 1,
+    "dueNow": 5236,
     "history": [
       {
         "date": "2025-09-29",
@@ -1336,28 +1336,32 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-14",
         "count": 171
+      },
+      {
+        "date": "2026-11-15",
+        "count": 1
       }
     ],
     "stand": "2026-11-15"
   },
   "ankiFach": {
-    "stand": "15.11.2026 21:58",
+    "stand": "15.11.2026 23:00",
     "faecher": {
       "Zivilrecht": {
-        "total": 2147,
-        "neu": 3,
+        "total": 2164,
+        "neu": 20,
         "lernen": 952,
         "aufbau": 136,
         "sitzt": 1056,
-        "faellig": 1894
+        "faellig": 1900
       },
       "Öffentliches Recht": {
         "total": 962,
-        "neu": 15,
-        "lernen": 630,
+        "neu": 11,
+        "lernen": 634,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 903
+        "faellig": 877
       },
       "Strafrecht": {
         "total": 728,
@@ -1398,19 +1402,53 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "15.11.2026 21:58",
+    "stand": "15.11.2026 23:00",
     "tage": [
       {
         "datum": "2026-11-15",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 18,
-        "gebiete": [],
-        "faelle": [],
+        "karten": 6,
+        "neu": 4,
+        "angelegt": 35,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "KommunalR · Fall 06",
+            "n": 4
+          }
+        ],
         "faelleAngelegt": [
+          {
+            "name": "ZR · 06",
+            "n": 16
+          },
           {
             "name": "KommunalR · Fall 07",
             "n": 7
+          },
+          {
+            "name": "SachenR · Fall 06",
+            "n": 4
           },
           {
             "name": "KommunalR · Fall 06",
@@ -1419,10 +1457,6 @@ window.NOTION_DATA = {
           {
             "name": "KommunalR · Fall 09",
             "n": 4
-          },
-          {
-            "name": "SachenR · Fall 06",
-            "n": 3
           }
         ]
       },
@@ -1896,7 +1930,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 59,
-    "nachbereitet": 162
+    "nachbereitet": 163
   },
   "cases": [
     {
@@ -2100,7 +2134,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KW 6 - Traktor auf Abwegen (nur Teil 1 abgegeben, keine Zeit mehr)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 53,
       "datum": "2026-10-01",
       "rechtsgebiet": [
@@ -6425,7 +6459,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall06",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 59,
       "datum": "2026-11-10",
       "rechtsgebiet": [
@@ -6851,7 +6885,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 165,
+    "nachbereitet": 167,
     "inBearbeitung": 20,
     "total": 352,
     "klkGesamt": 97,
