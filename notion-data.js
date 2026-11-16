@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "16.11.2026 20:17",
+  "lastSync": "16.11.2026 21:19",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5263,
@@ -1349,11 +1349,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-16"
   },
   "ankiFach": {
-    "stand": "16.11.2026 20:17",
+    "stand": "16.11.2026 21:19",
     "faecher": {
       "Zivilrecht": {
-        "total": 2166,
-        "neu": 3,
+        "total": 2178,
+        "neu": 15,
         "lernen": 972,
         "aufbau": 136,
         "sitzt": 1055,
@@ -1406,13 +1406,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "16.11.2026 20:17",
+    "stand": "16.11.2026 21:19",
     "tage": [
       {
         "datum": "2026-11-16",
         "karten": 34,
         "neu": 9,
-        "angelegt": 3,
+        "angelegt": 15,
         "gebiete": [
           {
             "fach": "Strafrecht",
@@ -1501,7 +1501,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "SachenR · Fall 10",
-            "n": 3
+            "n": 15
           }
         ]
       },
@@ -2018,7 +2018,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 60,
-    "nachbereitet": 163
+    "nachbereitet": 164
   },
   "cases": [
     {
@@ -3583,8 +3583,8 @@ window.NOTION_DATA = {
     {
       "title": "Strafrecht AT Fall10",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-18",
       "rechtsgebiet": [
         "Strafrecht AT",
         "StrafR"
@@ -6324,8 +6324,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall15",
       "status": "In Bearbeitung",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-18",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6352,8 +6352,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall12",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-17",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6366,8 +6366,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall14",
       "status": "In Bearbeitung",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-18",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6436,8 +6436,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall05 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-20",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6450,8 +6450,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall04",
       "status": "In Bearbeitung",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-20",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6478,8 +6478,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall11 (Wiederholungsfall zur selbstständigen Bearbeitung)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-17",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6491,9 +6491,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall10",
-      "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "status": "Nachbereitet",
+      "woche": 60,
+      "datum": "2026-11-16",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6719,8 +6719,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall02",
       "status": "In Bearbeitung",
-      "woche": null,
-      "datum": null,
+      "woche": 60,
+      "datum": "2026-11-20",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6973,7 +6973,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 167,
+    "nachbereitet": 168,
     "inBearbeitung": 20,
     "total": 352,
     "klkGesamt": 97,
