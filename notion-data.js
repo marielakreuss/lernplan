@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "16.11.2026 21:19",
+  "lastSync": "16.11.2026 22:21",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5263,
+    "reviewedToday": 88,
+    "dueNow": 5213,
     "history": [
       {
         "date": "2025-09-29",
@@ -1343,21 +1343,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-16",
-        "count": 35
+        "count": 123
       }
     ],
     "stand": "2026-11-16"
   },
   "ankiFach": {
-    "stand": "16.11.2026 21:19",
+    "stand": "16.11.2026 22:21",
     "faecher": {
       "Zivilrecht": {
-        "total": 2178,
-        "neu": 15,
-        "lernen": 972,
+        "total": 2197,
+        "neu": 0,
+        "lernen": 1006,
         "aufbau": 136,
         "sitzt": 1055,
-        "faellig": 1925
+        "faellig": 1890
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1365,7 +1365,7 @@ window.NOTION_DATA = {
         "lernen": 645,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 885
+        "faellig": 864
       },
       "Strafrecht": {
         "total": 728,
@@ -1373,7 +1373,7 @@ window.NOTION_DATA = {
         "lernen": 618,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 688
+        "faellig": 682
       }
     }
   },
@@ -1406,73 +1406,78 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "16.11.2026 21:19",
+    "stand": "16.11.2026 22:21",
     "tage": [
       {
         "datum": "2026-11-16",
-        "karten": 34,
-        "neu": 9,
-        "angelegt": 15,
+        "karten": 103,
+        "neu": 43,
+        "angelegt": 34,
         "gebiete": [
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 6
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 6
-          },
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 3
+            "n": 22
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 14
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 3
+            "n": 13
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 11
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 9
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 7
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 7
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
+            "n": 6
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
             "n": 3
           },
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "6 ZPO I",
-            "n": 2
+            "n": 3
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 2
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StPO",
-            "n": 1
+            "n": 3
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "5 Erbrecht",
-            "n": 1
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 2
           },
           {
             "fach": "Öffentliches Recht",
@@ -1482,23 +1487,51 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
+            "name": "UKK · 1488",
+            "n": 19
+          },
+          {
             "name": "ZR · 06",
-            "n": 12
+            "n": 17
+          },
+          {
+            "name": "SachenR · Fall 10",
+            "n": 15
           },
           {
             "name": "StrafR · 08",
-            "n": 9
+            "n": 13
           },
           {
             "name": "ÖR · 07",
-            "n": 6
+            "n": 10
           },
           {
             "name": "UKK · 1487",
-            "n": 3
+            "n": 7
+          },
+          {
+            "name": "KommunalR · Fall 07",
+            "n": 7
+          },
+          {
+            "name": "SachenR · Fall 06",
+            "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 06",
+            "n": 4
+          },
+          {
+            "name": "KommunalR · Fall 09",
+            "n": 4
           }
         ],
         "faelleAngelegt": [
+          {
+            "name": "UKK · 1488",
+            "n": 19
+          },
           {
             "name": "SachenR · Fall 10",
             "n": 15
@@ -2367,7 +2400,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "UKK 1488",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 56,
       "datum": "2026-10-25",
       "rechtsgebiet": [
@@ -6973,7 +7006,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 168,
+    "nachbereitet": 169,
     "inBearbeitung": 20,
     "total": 352,
     "klkGesamt": 97,
