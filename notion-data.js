@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "16.11.2026 14:23",
+  "lastSync": "16.11.2026 18:12",
   "anki": {
-    "reviewedToday": 48,
-    "dueNow": 5221,
+    "reviewedToday": 0,
+    "dueNow": 5263,
     "history": [
       {
         "date": "2025-09-29",
@@ -87,7 +87,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-22",
-        "count": 171
+        "count": 170
       },
       {
         "date": "2025-10-23",
@@ -95,15 +95,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-24",
-        "count": 177
+        "count": 172
       },
       {
         "date": "2025-10-26",
-        "count": 122
+        "count": 120
       },
       {
         "date": "2025-10-27",
-        "count": 63
+        "count": 62
       },
       {
         "date": "2025-10-28",
@@ -115,15 +115,15 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-10-30",
-        "count": 103
+        "count": 101
       },
       {
         "date": "2025-10-31",
-        "count": 65
+        "count": 63
       },
       {
         "date": "2025-11-02",
-        "count": 62
+        "count": 61
       },
       {
         "date": "2025-11-03",
@@ -131,7 +131,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-04",
-        "count": 169
+        "count": 168
       },
       {
         "date": "2025-11-05",
@@ -143,11 +143,11 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-07",
-        "count": 63
+        "count": 62
       },
       {
         "date": "2025-11-09",
-        "count": 132
+        "count": 130
       },
       {
         "date": "2025-11-10",
@@ -155,7 +155,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-11",
-        "count": 84
+        "count": 83
       },
       {
         "date": "2025-11-12",
@@ -167,7 +167,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-14",
-        "count": 80
+        "count": 79
       },
       {
         "date": "2025-11-16",
@@ -183,7 +183,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2025-11-19",
-        "count": 39
+        "count": 38
       },
       {
         "date": "2025-11-20",
@@ -343,7 +343,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-01-10",
-        "count": 92
+        "count": 91
       },
       {
         "date": "2026-01-11",
@@ -471,7 +471,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-02-17",
-        "count": 159
+        "count": 158
       },
       {
         "date": "2026-02-19",
@@ -611,7 +611,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-03-28",
-        "count": 202
+        "count": 201
       },
       {
         "date": "2026-03-29",
@@ -1343,21 +1343,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-16",
-        "count": 1
+        "count": 35
       }
     ],
     "stand": "2026-11-16"
   },
   "ankiFach": {
-    "stand": "16.11.2026 00:03",
+    "stand": "16.11.2026 18:12",
     "faecher": {
       "Zivilrecht": {
         "total": 2164,
-        "neu": 9,
-        "lernen": 963,
+        "neu": 1,
+        "lernen": 972,
         "aufbau": 136,
-        "sitzt": 1056,
-        "faellig": 1897
+        "sitzt": 1055,
+        "faellig": 1925
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1365,7 +1365,7 @@ window.NOTION_DATA = {
         "lernen": 645,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 867
+        "faellig": 885
       },
       "Strafrecht": {
         "total": 728,
@@ -1373,7 +1373,7 @@ window.NOTION_DATA = {
         "lernen": 618,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 692
+        "faellig": 688
       }
     }
   },
@@ -1406,21 +1406,98 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "16.11.2026 00:03",
+    "stand": "16.11.2026 18:12",
     "tage": [
       {
         "datum": "2026-11-16",
-        "karten": 1,
-        "neu": 0,
-        "angelegt": 0,
+        "karten": 34,
+        "neu": 9,
+        "angelegt": 1,
         "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 6
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 6
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 3
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 3
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
+          },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "5 Erbrecht",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
             "n": 1
           }
         ],
-        "faelle": [],
+        "faelle": [
+          {
+            "name": "ZR · 06",
+            "n": 12
+          },
+          {
+            "name": "StrafR · 08",
+            "n": 9
+          },
+          {
+            "name": "ÖR · 07",
+            "n": 6
+          },
+          {
+            "name": "UKK · 1487",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": []
       },
       {
@@ -1902,24 +1979,24 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-10-27",
-        "karten": 35,
+        "karten": 34,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "5 Erbrecht",
-            "n": 35
+            "n": 34
           }
         ],
         "faelle": [
           {
-            "name": "ErbR · Fall 05",
+            "name": "ErbR · Fall 07",
             "n": 10
           },
           {
-            "name": "ErbR · Fall 07",
-            "n": 10
+            "name": "ErbR · Fall 05",
+            "n": 9
           },
           {
             "name": "ErbR · Fall 01",
