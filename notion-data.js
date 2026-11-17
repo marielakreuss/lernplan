@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.11.2026 02:40",
+  "lastSync": "17.11.2026 14:30",
   "anki": {
-    "reviewedToday": 88,
-    "dueNow": 5213,
+    "reviewedToday": 0,
+    "dueNow": 5277,
     "history": [
       {
         "date": "2025-09-29",
@@ -1343,13 +1343,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-16",
-        "count": 123
+        "count": 137
       }
     ],
-    "stand": "2026-11-16"
+    "stand": "2026-11-17"
   },
   "ankiFach": {
-    "stand": "16.11.2026 22:21",
+    "stand": "17.11.2026 14:30",
     "faecher": {
       "Zivilrecht": {
         "total": 2197,
@@ -1357,7 +1357,7 @@ window.NOTION_DATA = {
         "lernen": 1006,
         "aufbau": 136,
         "sitzt": 1055,
-        "faellig": 1890
+        "faellig": 1945
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1365,7 +1365,7 @@ window.NOTION_DATA = {
         "lernen": 645,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 864
+        "faellig": 877
       },
       "Strafrecht": {
         "total": 728,
@@ -1373,7 +1373,7 @@ window.NOTION_DATA = {
         "lernen": 618,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 682
+        "faellig": 690
       }
     }
   },
@@ -1406,7 +1406,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "16.11.2026 22:21",
+    "stand": "17.11.2026 14:30",
     "tage": [
       {
         "datum": "2026-11-16",
@@ -2011,38 +2011,6 @@ window.NOTION_DATA = {
           {
             "name": "UKK · 1487",
             "n": 3
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-27",
-        "karten": 34,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "5 Erbrecht",
-            "n": 34
-          }
-        ],
-        "faelle": [
-          {
-            "name": "ErbR · Fall 07",
-            "n": 10
-          },
-          {
-            "name": "ErbR · Fall 05",
-            "n": 9
-          },
-          {
-            "name": "ErbR · Fall 01",
-            "n": 5
-          },
-          {
-            "name": "ErbR · Fall 04",
-            "n": 5
           }
         ],
         "faelleAngelegt": []
