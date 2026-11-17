@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.11.2026 16:35",
+  "lastSync": "17.11.2026 17:42",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5277,
+    "reviewedToday": 33,
+    "dueNow": 5265,
     "history": [
       {
         "date": "2025-09-29",
@@ -1344,20 +1344,24 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-16",
         "count": 137
+      },
+      {
+        "date": "2026-11-17",
+        "count": 33
       }
     ],
     "stand": "2026-11-17"
   },
   "ankiFach": {
-    "stand": "17.11.2026 16:35",
+    "stand": "17.11.2026 17:42",
     "faecher": {
       "Zivilrecht": {
-        "total": 2201,
-        "neu": 4,
-        "lernen": 1006,
+        "total": 2222,
+        "neu": 10,
+        "lernen": 1021,
         "aufbau": 136,
         "sitzt": 1055,
-        "faellig": 1945
+        "faellig": 1932
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1406,16 +1410,63 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "17.11.2026 16:35",
+    "stand": "17.11.2026 17:42",
     "tage": [
       {
         "datum": "2026-11-17",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 4,
-        "gebiete": [],
-        "faelle": [],
+        "karten": 35,
+        "neu": 15,
+        "angelegt": 25,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 11
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 10
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 9
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 4
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "7 ZPO II",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SachenR · Fall 10",
+            "n": 15
+          },
+          {
+            "name": "UKK · 1485",
+            "n": 11
+          },
+          {
+            "name": "UKK · 1488",
+            "n": 4
+          },
+          {
+            "name": "SachenR · Fall 12",
+            "n": 3
+          }
+        ],
         "faelleAngelegt": [
+          {
+            "name": "UKK · 1485",
+            "n": 21
+          },
           {
             "name": "SachenR · Fall 12",
             "n": 3
@@ -2616,7 +2667,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "UKK 1485 (Probestex) - abgegeben am 11.9.2026",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 50,
       "datum": "2026-09-11",
       "rechtsgebiet": [
@@ -6988,7 +7039,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 171,
+    "nachbereitet": 172,
     "inBearbeitung": 20,
     "total": 352,
     "klkGesamt": 97,
