@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "17.11.2026 15:16",
+  "lastSync": "17.11.2026 16:35",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5277,
@@ -1349,11 +1349,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-17"
   },
   "ankiFach": {
-    "stand": "17.11.2026 15:32",
+    "stand": "17.11.2026 16:35",
     "faecher": {
       "Zivilrecht": {
-        "total": 2198,
-        "neu": 1,
+        "total": 2201,
+        "neu": 4,
         "lernen": 1006,
         "aufbau": 136,
         "sitzt": 1055,
@@ -1406,16 +1406,21 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "17.11.2026 15:32",
+    "stand": "17.11.2026 16:35",
     "tage": [
       {
         "datum": "2026-11-17",
         "karten": 0,
         "neu": 0,
-        "angelegt": 1,
+        "angelegt": 4,
         "gebiete": [],
         "faelle": [],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "SachenR · Fall 12",
+            "n": 3
+          }
+        ]
       },
       {
         "datum": "2026-11-16",
@@ -1496,11 +1501,11 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
-            "name": "UKK · 1488",
-            "n": 19
+            "name": "ZR · 06",
+            "n": 17
           },
           {
-            "name": "ZR · 06",
+            "name": "UKK · 1488",
             "n": 17
           },
           {
@@ -1539,7 +1544,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "UKK · 1488",
-            "n": 19
+            "n": 17
           },
           {
             "name": "SachenR · Fall 10",
@@ -1725,7 +1730,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "UKK · 1487",
-            "n": 15
+            "n": 14
           },
           {
             "name": "StGB · Fall 01",
@@ -1788,7 +1793,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "UKK · 1487",
-            "n": 12
+            "n": 11
           }
         ]
       },
