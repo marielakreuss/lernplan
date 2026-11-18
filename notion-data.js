@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.11.2026 11:03",
+  "lastSync": "18.11.2026 12:09",
   "anki": {
-    "reviewedToday": 52,
-    "dueNow": 5282,
+    "reviewedToday": 81,
+    "dueNow": 5263,
     "history": [
       {
         "date": "2025-09-29",
@@ -1351,21 +1351,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-18",
-        "count": 52
+        "count": 81
       }
     ],
     "stand": "2026-11-18"
   },
   "ankiFach": {
-    "stand": "18.11.2026 11:02",
+    "stand": "18.11.2026 12:09",
     "faecher": {
       "Zivilrecht": {
-        "total": 2222,
-        "neu": 0,
-        "lernen": 1034,
+        "total": 2223,
+        "neu": 1,
+        "lernen": 1035,
         "aufbau": 135,
-        "sitzt": 1053,
-        "faellig": 1934
+        "sitzt": 1052,
+        "faellig": 1915
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1414,17 +1414,27 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.11.2026 11:02",
+    "stand": "18.11.2026 12:09",
     "tage": [
       {
         "datum": "2026-11-18",
-        "karten": 47,
+        "karten": 60,
         "neu": 0,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 14
+          },
+          {
+            "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
+            "n": 13
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "7 ZPO II",
             "n": 12
           },
           {
@@ -1436,16 +1446,6 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
             "n": 9
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "7 ZPO II",
-            "n": 8
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 6
           },
           {
             "fach": "Zivilrecht",
@@ -1461,11 +1461,11 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "UKK · 1485",
-            "n": 14
+            "n": 21
           },
           {
             "name": "ZPOII · Fall 4",
-            "n": 8
+            "n": 12
           },
           {
             "name": "ZR · 06",
