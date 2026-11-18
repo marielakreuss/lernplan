@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.11.2026 14:37",
+  "lastSync": "18.11.2026 15:40",
   "anki": {
     "reviewedToday": 81,
     "dueNow": 5268,
@@ -1357,11 +1357,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-18"
   },
   "ankiFach": {
-    "stand": "18.11.2026 14:37",
+    "stand": "18.11.2026 15:40",
     "faecher": {
       "Zivilrecht": {
-        "total": 2224,
-        "neu": 2,
+        "total": 2228,
+        "neu": 6,
         "lernen": 1035,
         "aufbau": 135,
         "sitzt": 1052,
@@ -1414,13 +1414,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.11.2026 14:37",
+    "stand": "18.11.2026 15:40",
     "tage": [
       {
         "datum": "2026-11-18",
         "karten": 60,
         "neu": 0,
-        "angelegt": 1,
+        "angelegt": 5,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1484,7 +1484,12 @@ window.NOTION_DATA = {
             "n": 3
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "SachenR · Fall 15",
+            "n": 4
+          }
+        ]
       },
       {
         "datum": "2026-11-17",
@@ -2388,7 +2393,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 5,
       "abgegeben": true,
       "url": "https://app.notion.com/p/KW-10-Einkaufsparadies-Vendicampo-3e5539e733aa81bbb6d9f03c5142b6dc"
     },
