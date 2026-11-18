@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.11.2026 16:42",
+  "lastSync": "18.11.2026 17:45",
   "anki": {
-    "reviewedToday": 81,
-    "dueNow": 5268,
+    "reviewedToday": 123,
+    "dueNow": 5267,
     "history": [
       {
         "date": "2025-09-29",
@@ -1351,21 +1351,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-18",
-        "count": 81
+        "count": 123
       }
     ],
     "stand": "2026-11-18"
   },
   "ankiFach": {
-    "stand": "18.11.2026 16:42",
+    "stand": "18.11.2026 17:45",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
-        "neu": 17,
-        "lernen": 1035,
-        "aufbau": 135,
-        "sitzt": 1052,
-        "faellig": 1920
+        "neu": 0,
+        "lernen": 1052,
+        "aufbau": 134,
+        "sitzt": 1053,
+        "faellig": 1915
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1376,12 +1376,12 @@ window.NOTION_DATA = {
         "faellig": 888
       },
       "Strafrecht": {
-        "total": 751,
-        "neu": 23,
-        "lernen": 618,
+        "total": 769,
+        "neu": 29,
+        "lernen": 630,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 695
+        "faellig": 699
       }
     }
   },
@@ -1414,23 +1414,33 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.11.2026 16:42",
+    "stand": "18.11.2026 17:45",
     "tage": [
       {
         "datum": "2026-11-18",
-        "karten": 60,
-        "neu": 0,
-        "angelegt": 39,
+        "karten": 93,
+        "neu": 29,
+        "angelegt": 57,
         "gebiete": [
           {
             "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 28
+          },
+          {
+            "fach": "Zivilrecht",
             "gebiet": "2 SchuldR BT",
-            "n": 14
+            "n": 15
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 13
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 12
           },
           {
             "fach": "Zivilrecht",
@@ -1443,9 +1453,9 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 9
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 1
           },
           {
             "fach": "Zivilrecht",
@@ -1459,6 +1469,10 @@ window.NOTION_DATA = {
           }
         ],
         "faelle": [
+          {
+            "name": "StGB · Fall 10",
+            "n": 27
+          },
           {
             "name": "UKK · 1485",
             "n": 21
@@ -1487,11 +1501,15 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "StGB · Fall 10",
-            "n": 23
+            "n": 37
           },
           {
-            "name": "SachenR · Fall 15",
-            "n": 15
+            "name": "StrafR · 05",
+            "n": 11
+          },
+          {
+            "name": "SachenR · Fall 10",
+            "n": 7
           }
         ]
       },
@@ -1889,7 +1907,7 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "StrafR · 08",
-            "n": 21
+            "n": 20
           },
           {
             "name": "ÖR · 07",
@@ -1900,20 +1918,20 @@ window.NOTION_DATA = {
             "n": 14
           },
           {
-            "name": "StGB · Fall 01",
-            "n": 12
+            "name": "StrafR · 05",
+            "n": 8
           },
           {
-            "name": "StGB · Fall 03",
-            "n": 6
+            "name": "StGB · Fall 01",
+            "n": 7
           },
           {
             "name": "VerwRAT · Fall 01",
             "n": 6
           },
           {
-            "name": "StGB · Fall 02",
-            "n": 4
+            "name": "StGB · Fall 03",
+            "n": 5
           },
           {
             "name": "StGB · Fall 06",
@@ -1922,6 +1940,10 @@ window.NOTION_DATA = {
           {
             "name": "BGBAT · Fall 05",
             "n": 4
+          },
+          {
+            "name": "StGB · Fall 02",
+            "n": 3
           }
         ],
         "faelleAngelegt": [
@@ -1945,11 +1967,11 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
-            "name": "StGB · Fall 03",
-            "n": 5
+            "name": "StGB · Fall 02",
+            "n": 3
           },
           {
-            "name": "StGB · Fall 02",
+            "name": "StGB · Fall 03",
             "n": 3
           }
         ],
@@ -2130,7 +2152,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 60,
-    "nachbereitet": 168
+    "nachbereitet": 169
   },
   "cases": [
     {
@@ -3694,7 +3716,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Strafrecht AT Fall10",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 60,
       "datum": "2026-11-18",
       "rechtsgebiet": [
@@ -7085,7 +7107,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 174,
+    "nachbereitet": 175,
     "inBearbeitung": 18,
     "total": 352,
     "klkGesamt": 97,
