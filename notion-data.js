@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "18.11.2026 14:52",
+  "lastSync": "18.11.2026 16:42",
   "anki": {
     "reviewedToday": 81,
     "dueNow": 5268,
@@ -1357,11 +1357,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-18"
   },
   "ankiFach": {
-    "stand": "18.11.2026 15:40",
+    "stand": "18.11.2026 16:42",
     "faecher": {
       "Zivilrecht": {
-        "total": 2228,
-        "neu": 6,
+        "total": 2239,
+        "neu": 17,
         "lernen": 1035,
         "aufbau": 135,
         "sitzt": 1052,
@@ -1376,8 +1376,8 @@ window.NOTION_DATA = {
         "faellig": 888
       },
       "Strafrecht": {
-        "total": 728,
-        "neu": 0,
+        "total": 751,
+        "neu": 23,
         "lernen": 618,
         "aufbau": 15,
         "sitzt": 95,
@@ -1414,13 +1414,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.11.2026 15:40",
+    "stand": "18.11.2026 16:42",
     "tage": [
       {
         "datum": "2026-11-18",
         "karten": 60,
         "neu": 0,
-        "angelegt": 5,
+        "angelegt": 39,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1486,8 +1486,12 @@ window.NOTION_DATA = {
         ],
         "faelleAngelegt": [
           {
+            "name": "StGB · Fall 10",
+            "n": 23
+          },
+          {
             "name": "SachenR · Fall 15",
-            "n": 4
+            "n": 15
           }
         ]
       },
@@ -2126,7 +2130,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 60,
-    "nachbereitet": 167
+    "nachbereitet": 168
   },
   "cases": [
     {
@@ -6431,7 +6435,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall15",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 60,
       "datum": "2026-11-18",
       "rechtsgebiet": [
@@ -7081,8 +7085,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 173,
-    "inBearbeitung": 19,
+    "nachbereitet": 174,
+    "inBearbeitung": 18,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 39
