@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "19.11.2026 10:53",
+  "lastSync": "19.11.2026 14:58",
   "anki": {
     "reviewedToday": 0,
     "dueNow": 5341,
@@ -2204,7 +2204,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-13-lgem-lde-und-Wein-3e5539e733aa8126b33ded6e6da4958c"
     },
     {
@@ -2519,7 +2519,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 4,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-1488-3e5539e733aa81d982d8d9ce512729ab"
     },
@@ -2679,7 +2679,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 6,
       "abgegeben": true,
       "url": "https://app.notion.com/p/Konrad-3-Geld-f-r-die-Uhrenindustrie-3df539e733aa801294f4ff7ab5e24408"
     },
@@ -2863,7 +2863,7 @@ window.NOTION_DATA = {
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": true,
+      "abgegeben": false,
       "url": "https://app.notion.com/p/KW-1-gegliedert-Besprechung-am-20-8-3c3539e733aa80c7babcf3d9b6c6c06b"
     },
     {
