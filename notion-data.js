@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "18.11.2026 17:45",
+  "lastSync": "19.11.2026 01:33",
   "anki": {
     "reviewedToday": 123,
     "dueNow": 5267,
@@ -2635,7 +2635,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KW 5 - StrafR (Strafbarkeitsrisiken) - geschrieben am 24.9.26",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 52,
       "datum": "2026-09-24",
       "rechtsgebiet": [
@@ -7107,7 +7107,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 175,
+    "nachbereitet": 176,
     "inBearbeitung": 18,
     "total": 352,
     "klkGesamt": 97,
