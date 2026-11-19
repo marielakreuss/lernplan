@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "19.11.2026 09:50",
+  "lastSync": "19.11.2026 10:53",
   "anki": {
-    "reviewedToday": 123,
-    "dueNow": 5267,
+    "reviewedToday": 0,
+    "dueNow": 5341,
     "history": [
       {
         "date": "2025-09-29",
@@ -1351,13 +1351,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-18",
-        "count": 123
+        "count": 160
       }
     ],
-    "stand": "2026-11-18"
+    "stand": "2026-11-19"
   },
   "ankiFach": {
-    "stand": "18.11.2026 17:45",
+    "stand": "19.11.2026 10:52",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1365,7 +1365,7 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 1915
+        "faellig": 1968
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1373,15 +1373,15 @@ window.NOTION_DATA = {
         "lernen": 645,
         "aufbau": 74,
         "sitzt": 243,
-        "faellig": 888
+        "faellig": 897
       },
       "Strafrecht": {
-        "total": 769,
-        "neu": 29,
+        "total": 781,
+        "neu": 41,
         "lernen": 630,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 699
+        "faellig": 711
       }
     }
   },
@@ -1414,14 +1414,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "18.11.2026 17:45",
+    "stand": "19.11.2026 10:53",
     "tage": [
       {
         "datum": "2026-11-18",
-        "karten": 93,
+        "karten": 113,
         "neu": 29,
-        "angelegt": 57,
+        "angelegt": 69,
         "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 32
+          },
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
@@ -1436,11 +1441,6 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 13
-          },
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 12
           },
           {
             "fach": "Zivilrecht",
@@ -1482,8 +1482,16 @@ window.NOTION_DATA = {
             "n": 12
           },
           {
+            "name": "StGB · Fall 11",
+            "n": 8
+          },
+          {
             "name": "ZR · 06",
             "n": 6
+          },
+          {
+            "name": "StGB · Fall 12",
+            "n": 4
           },
           {
             "name": "BGBAT · Fall 14",
@@ -1505,7 +1513,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "StrafR · 05",
-            "n": 11
+            "n": 23
           },
           {
             "name": "SachenR · Fall 10",
