@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.11.2026 10:42",
+  "lastSync": "20.11.2026 13:39",
   "anki": {
-    "reviewedToday": 9,
-    "dueNow": 5358,
+    "reviewedToday": 16,
+    "dueNow": 5355,
     "history": [
       {
         "date": "2025-09-29",
@@ -1355,13 +1355,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-20",
-        "count": 9
+        "count": 16
       }
     ],
     "stand": "2026-11-20"
   },
   "ankiFach": {
-    "stand": "20.11.2026 10:42",
+    "stand": "20.11.2026 13:39",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1369,7 +1369,7 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 1985
+        "faellig": 1986
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1418,11 +1418,11 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "20.11.2026 10:42",
+    "stand": "20.11.2026 13:39",
     "tage": [
       {
         "datum": "2026-11-20",
-        "karten": 9,
+        "karten": 10,
         "neu": 1,
         "angelegt": 0,
         "gebiete": [
@@ -1434,7 +1434,7 @@ window.NOTION_DATA = {
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 3
+            "n": 4
           }
         ],
         "faelle": [
