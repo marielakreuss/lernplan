@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.11.2026 01:29",
+  "lastSync": "20.11.2026 10:42",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5341,
+    "reviewedToday": 9,
+    "dueNow": 5358,
     "history": [
       {
         "date": "2025-09-29",
@@ -1352,12 +1352,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-18",
         "count": 160
+      },
+      {
+        "date": "2026-11-20",
+        "count": 9
       }
     ],
-    "stand": "2026-11-19"
+    "stand": "2026-11-20"
   },
   "ankiFach": {
-    "stand": "19.11.2026 10:52",
+    "stand": "20.11.2026 10:42",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1365,7 +1369,7 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 1968
+        "faellig": 1985
       },
       "Öffentliches Recht": {
         "total": 962,
@@ -1377,8 +1381,8 @@ window.NOTION_DATA = {
       },
       "Strafrecht": {
         "total": 781,
-        "neu": 41,
-        "lernen": 630,
+        "neu": 40,
+        "lernen": 631,
         "aufbau": 15,
         "sitzt": 95,
         "faellig": 711
@@ -1414,8 +1418,33 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "19.11.2026 10:53",
+    "stand": "20.11.2026 10:42",
     "tage": [
+      {
+        "datum": "2026-11-20",
+        "karten": 9,
+        "neu": 1,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 6
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 3
+          }
+        ],
+        "faelle": [
+          {
+            "name": "StGB · Fall 10",
+            "n": 9
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-11-18",
         "karten": 113,
@@ -2117,43 +2146,6 @@ window.NOTION_DATA = {
         "angelegt": 1,
         "gebiete": [],
         "faelle": [],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-10-30",
-        "karten": 60,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Strafrecht",
-            "gebiet": "StrafR BT",
-            "n": 54
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "7 BauR",
-            "n": 6
-          }
-        ],
-        "faelle": [
-          {
-            "name": "StrafR · 08",
-            "n": 13
-          },
-          {
-            "name": "StGB · Fall 11",
-            "n": 13
-          },
-          {
-            "name": "StGB · Fall 12",
-            "n": 12
-          },
-          {
-            "name": "BauR · Fall 10",
-            "n": 5
-          }
-        ],
         "faelleAngelegt": []
       }
     ]
