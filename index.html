@@ -5096,6 +5096,8 @@
     karteNm:   {t:'14:30–15:15', l:'Karteikarten',           k:'karte',   s:'nm'},
     fallSpaet: {t:'15:15–16:45', l:'Fall',                   k:'fall',    s:'nm', f:1},
     fallAbend: {t:'17:00–18:30', l:'Fall',                   k:'fall',    s:'ab', f:1},
+    // Puffer-Fall (28./29.12.): kein Notion-Slot, sondern Zeit für das, was liegen geblieben ist
+    pufferAb:  {t:'17:00–18:30', l:'Puffer-Fall',            k:'fall',    s:'ab'},
     nachber:   {t:'17:00–18:00', l:'Klausur nachbereiten', k:'klausur', s:'ab'},
     vertief:   {t:'17:30–18:30', l:'Vertiefung',             k:'vertief', s:'ab'},
     fallNm:    {t:'14:00–15:30', l:'Fall',                   k:'fall',    s:'nm', f:1},
@@ -5228,6 +5230,7 @@
     weihDrei: {std:'6,75 h', b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2, B.nbWeihAb]},
     weihSo:   {std:'5 h',    b:[B.fallVm, B.nbSoVm, B.mittag, B.fallNm, B.nbWeihNm]},
     weihDo:   {std:'frei',  b:[B.freiTag]},
+    weihPuffer:{std:'6,75 h', b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.nbWeihNm, B.pufferAb]},
     // 9.–14.11.2026 nach Peru krank; So 15.11. KommunalR fertig + SachenR + 1 Klausur
     krankTag: {std:'—',     b:[B.krank]},
     soNachKrank:{std:'5,5 h', b:[B.fallVm, B.karteVm, B.mittag, B.fallNm, B.fallNm2, B.nbWeihAb]},
@@ -5280,6 +5283,7 @@
     // 2.11.: Werkstatt schon Mi 4.11., Uni-KK Do 5.11.
     peruLernenMi:{Mo:TAG.peruLern, Di:TAG.peruLern, Mi:TAG.peruKwDo, Do:TAG.sa, Fr:TAG.peruLern, Sa:TAG.peruLern, So:TAG.so},
     // 31.12. und 1.1. frei, Sa 2.1. Konrad-Klausur
+    weihnachtPuffer:{Mo:TAG.weihPuffer, Di:TAG.weihPuffer, Mi:TAG.weihDrei, Do:TAG.weihDo, Fr:TAG.weihDo, Sa:TAG.sa, So:TAG.so},
     weihnacht:  {Mo:TAG.weihZwei, Di:TAG.weihZwei, Mi:TAG.weihDrei, Do:TAG.weihDo, Fr:TAG.weihDo, Sa:TAG.sa, So:TAG.so},
     // 21./22.12. erst ab mittags, 24.–26.12. frei (Uni-KK pausiert), So 27.12. Lerntag
     weihnachtFrei:{Mo:TAG.weihNm, Di:TAG.weihNm, Mi:TAG.weihDrei, Do:TAG.weihDo, Fr:TAG.weihDo, Sa:TAG.so, So:TAG.weihSo},
@@ -5365,7 +5369,7 @@
     {mo:'2026-12-21', ph:'Weihnachten',       r:'weihnachtFrei',
      kw:null, kwAus:'Kein Termin am 24.12.',
      n:7,  g:[['SchuldR AT',1],['BGB AT',3],['EuropaR',2],['StPO',1]]},
-    {mo:'2026-12-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Weihnachten',       r:'weihnacht',
+    {mo:'2026-12-28', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Weihnachten',       r:'weihnachtPuffer',
      kw:null, kwAus:'Kein Termin am 31.12.',
      n:7,  g:[['BGB AT',4],['EuropaR',2],['StPO',1]]},
     {mo:'2027-01-04', sa:{q:'Konrad',f:'Öffentliches Recht'}, ph:'Januar',            r:'endspurt',
