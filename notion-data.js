@@ -1,6 +1,6 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.11.2026 14:40",
+  "lastSync": "20.11.2026 17:27",
   "anki": {
     "reviewedToday": 17,
     "dueNow": 5359,
@@ -1361,7 +1361,7 @@ window.NOTION_DATA = {
     "stand": "2026-11-20"
   },
   "ankiFach": {
-    "stand": "20.11.2026 14:41",
+    "stand": "20.11.2026 17:27",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1372,8 +1372,8 @@ window.NOTION_DATA = {
         "faellig": 1986
       },
       "Öffentliches Recht": {
-        "total": 986,
-        "neu": 24,
+        "total": 1003,
+        "neu": 41,
         "lernen": 645,
         "aufbau": 74,
         "sitzt": 243,
@@ -1418,13 +1418,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "20.11.2026 14:41",
+    "stand": "20.11.2026 17:27",
     "tage": [
       {
         "datum": "2026-11-20",
         "karten": 10,
         "neu": 1,
-        "angelegt": 24,
+        "angelegt": 41,
         "gebiete": [
           {
             "fach": "Strafrecht",
@@ -1446,7 +1446,11 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "UKK · 2309",
-            "n": 24
+            "n": 26
+          },
+          {
+            "name": "PolR · Fall 02",
+            "n": 15
           }
         ]
       },
