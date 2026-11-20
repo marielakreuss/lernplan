@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "20.11.2026 13:39",
+  "lastSync": "20.11.2026 14:41",
   "anki": {
-    "reviewedToday": 16,
-    "dueNow": 5355,
+    "reviewedToday": 17,
+    "dueNow": 5359,
     "history": [
       {
         "date": "2025-09-29",
@@ -1355,13 +1355,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-20",
-        "count": 16
+        "count": 17
       }
     ],
     "stand": "2026-11-20"
   },
   "ankiFach": {
-    "stand": "20.11.2026 13:39",
+    "stand": "20.11.2026 14:41",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1372,8 +1372,8 @@ window.NOTION_DATA = {
         "faellig": 1986
       },
       "Öffentliches Recht": {
-        "total": 962,
-        "neu": 0,
+        "total": 986,
+        "neu": 24,
         "lernen": 645,
         "aufbau": 74,
         "sitzt": 243,
@@ -1418,13 +1418,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "20.11.2026 13:39",
+    "stand": "20.11.2026 14:41",
     "tage": [
       {
         "datum": "2026-11-20",
         "karten": 10,
         "neu": 1,
-        "angelegt": 0,
+        "angelegt": 24,
         "gebiete": [
           {
             "fach": "Strafrecht",
@@ -1443,7 +1443,12 @@ window.NOTION_DATA = {
             "n": 9
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "UKK · 2309",
+            "n": 24
+          }
+        ]
       },
       {
         "datum": "2026-11-18",
