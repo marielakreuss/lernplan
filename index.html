@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#F1E4DF">
+  <meta name="theme-color" content="#ECE9E3">
   <title>Staatsexamen 2027</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1846,6 +1846,80 @@
       .h-aside { font-size: 0.74rem; top: 1.2rem; right: 1.1rem; }
       .h-dark-t { font-size: 1.4rem; }
     }
+
+    /* ══════════════════════════════════════════════════════════════
+       LEINEN · Design 20.11.2026
+       Weniger Rosé, weniger Deko: warmes Leinen-Grau als Fläche,
+       Papierweiß für Karten, Oliv als einziger Akzent, Serifen für
+       große Titel. Steht am Ende und überschreibt Blush Glass.
+       ══════════════════════════════════════════════════════════════ */
+    :root {
+      --bg:            #ECE9E3;
+      --surface:       rgba(250,249,246,0.86);
+      --surface-solid: #FAF9F6;
+      --surface-2:     rgba(255,255,255,0.6);
+      --border:        rgba(43,42,39,0.08);
+      --border-strong: rgba(43,42,39,0.15);
+      --glass-edge:    rgba(255,255,255,0.9);
+      --text:          #2B2A27;
+      --text-muted:    #66635C;
+      --text-sub:      #9C978D;
+      --ink:           #2B2A27;
+      /* Rechtsgebiete: gedämpft, klar getrennt vom Oliv-Akzent */
+      --zr:   #4F7A80;  --zr-l: #B9CFD1;  --zr-bg: #E5EDEE;  --zr-deep: #345A5F;
+      --or:   #6C6890;  --or-l: #C9C6DC;  --or-bg: #ECEBF2;  --or-deep: #4A4669;
+      --sr:   #B0694C;  --sr-l: #E3C1B2;  --sr-bg: #F4E8E2;  --sr-deep: #7F4630;
+      --accent:      #5E6B47;
+      --accent-fill: #A7B08F;
+      --accent-l:    #D6DBC8;
+      --accent-soft: #ECEEE4;
+      --rep-bg: #EFEDE8;     --rep-border: #DCD8CF;     --rep-text: #6B665C;
+      --urlaub-bg: #E4ECE3;  --urlaub-border: #BCCDBA;  --urlaub-text: #44633F;
+      --fokus-bg: #F2EADD;   --fokus-border: #DDCBAE;   --fokus-text: #7D6237;
+      --peru-bg: #E2EBEC;    --peru-border: #B7CCCE;    --peru-text: #3E6266;
+      --postrep-bg: #EAE9F0; --postrep-border: #C9C6DA; --postrep-text: #514D72;
+      --probe-bg: #F1E6E0;   --probe-border: #DDC2B5;   --probe-text: #85503A;
+      --wieder-bg: #E6EAF0;  --wieder-border: #C1CBD8;  --wieder-text: #4A5870;
+      --examen-bg: #EFE6D2;  --examen-border: #D6C094;  --examen-text: #75592A;
+      --past-bg: #E9E7E1;    --past-border: #D9D5CC;    --past-text: #8D887E;
+      --future-bg: rgba(250,249,246,0.75); --future-border: #E2DED6; --future-text: #ABA69C;
+      --radius:    22px;
+      --radius-sm: 14px;
+      --shadow:    0 1px 2px rgba(43,42,39,0.04), 0 12px 30px -20px rgba(43,42,39,0.18);
+      --shadow-lg: 0 2px 4px rgba(43,42,39,0.04), 0 24px 50px -28px rgba(43,42,39,0.24);
+    }
+    body::before { background: linear-gradient(180deg, #EFECE6 0%, #E9E6DF 100%); }
+    body::after { display: none; }
+    .glass { -webkit-backdrop-filter: none; backdrop-filter: none; }
+
+    /* Serifen-Titel statt Poppins-Leichtgewicht */
+    .h-title, .h-dark-t, .now-head h2, .weeks-head h3, #sp-title {
+      font-family: 'Lora', Georgia, serif; font-weight: 600; letter-spacing: -0.015em;
+    }
+
+    /* Seitenleiste und Detailpanel: Papier statt Rosé-Glas */
+    .side { background: rgba(246,244,239,0.92); -webkit-backdrop-filter: none; backdrop-filter: none; border-right-color: var(--border); }
+    .detail-panel, .detail-panel[class*="dp-"] { background: rgba(250,249,246,0.98); }
+    .weeks-card { --past-bg: #E4E7DA; --past-border: #CBD1BA; --past-text: #5E6B47; }
+    .week-box.current { box-shadow: 0 0 0 2px var(--ink), 0 12px 24px -14px rgba(43,42,39,0.4); }
+
+    /* Hero „Heute": keine Rosé-Verläufe, keine Farbkugeln */
+    .h-today { background: var(--surface-solid); -webkit-backdrop-filter: none; backdrop-filter: none; border-color: var(--border); }
+    .h-field { background: #F2F0EB; border-color: transparent; box-shadow: none; }
+    .h-ic, .h-tag { box-shadow: 0 1px 3px rgba(43,42,39,0.12); }
+    .h-chip { border-color: var(--border-strong); background: transparent; }
+    .h-dark::after { background: radial-gradient(circle, rgba(167,176,143,0.28), transparent 70%); }
+    .h-dark-prog i, .fw-bar i { background: var(--accent-fill); }
+    .h-date { background: var(--surface-solid); border-color: var(--border); }
+    .h-orb { display: none; }
+    .h-disc { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-l); }
+    .h-panel { background: rgba(236,233,227,0.75); -webkit-backdrop-filter: none; backdrop-filter: none; }
+    .h-fl, .h-fine { color: var(--text-muted); }
+
+    /* Countdown-Ring: Oliv statt Rosé */
+    #ringGrad stop:nth-child(1) { stop-color: #D6DBC8; }
+    #ringGrad stop:nth-child(2) { stop-color: #A7B08F; }
+    #ringGrad stop:nth-child(3) { stop-color: #5E6B47; }
 
   </style>
 </head>
@@ -5425,7 +5499,69 @@
       const key = s.tag + '#' + s.i;
       if (zuteilung[key] === null) zuteilung[key] = flach.shift() || 'Reserve';
     });
-    return zuteilung;
+    return wochenPlan(woche, zuteilung).gebiet;
+  }
+
+  // Notion-Daten gehen vor (seit 20.11.2026): Schiebt sie innerhalb der
+  // Woche Fälle hin und her (Mi StrafR statt Fr, dafür Fr ÖR), liegt jeder
+  // auf Notion datierte Hauptkurs-Fall auf einem Slot seines Tages – auch
+  // erledigte. Die Woche behält ihre Gebiets-Mischung: was ein datierter
+  // Fall verbraucht, fehlt nur an anderer Stelle derselben Woche, die übrigen
+  // Slots behalten ihr Plan-Gebiet, soweit es noch übrig ist. Spätere Wochen
+  // bleiben unberührt. `fest` = Slot -> datierter Notion-Fall.
+  function wochenPlan(woche, basis) {
+    const gebiet = Object.assign({}, basis), fest = {};
+    const cases = (typeof window !== 'undefined' && window.NOTION_DATA &&
+                   window.NOTION_DATA.cases) || [];
+    const mo = d(woche.mo);
+    const vonIso = isoTag(mo);
+    const so = new Date(mo); so.setDate(so.getDate() + 6);
+    const bisIso = isoTag(so);
+    const gebietVon = c => (c.rechtsgebiet || []).map(planGebiet).find(x => FACH_VON_GEBIET[x]);
+    const nr = c => { const m = /Fall\s*0*(\d+)/i.exec(c.title || ''); return m ? +m[1] : 999; };
+    const datiert = cases.filter(c => c.typ === 'Hauptkurs' && c.datum &&
+        c.datum >= vonIso && c.datum <= bisIso && gebietVon(c))
+      .sort((x, y) => x.datum.localeCompare(y.datum) || (gebietVon(x) < gebietVon(y) ? -1 : gebietVon(x) > gebietVon(y) ? 1 : 0) ||
+                      (nr(x) - nr(y)));
+    if (!datiert.length) return {gebiet, fest};
+
+    const keys = Object.keys(basis);               // Slots in Wochen-Reihenfolge
+    const tagVon = iso => TAGE[(d(iso).getDay() + 6) % 7];
+    const frei = new Set(keys);
+    const ueber = [];
+    datiert.forEach(c => {
+      const k = keys.find(k => frei.has(k) && k.split('#')[0] === tagVon(c.datum));
+      if (k) { fest[k] = c; frei.delete(k); } else ueber.push(c);
+    });
+    // Mehr Fälle an einem Tag als Slots: auf freie Slots derselben Woche,
+    // zuerst die davor (die sind ohnehin vorbei), dann die danach.
+    ueber.forEach(c => {
+      const t = TAGE.indexOf(tagVon(c.datum));
+      const kandidaten = keys.filter(k => frei.has(k));
+      const k = kandidaten.filter(k => TAGE.indexOf(k.split('#')[0]) <= t).pop() || kandidaten[0];
+      if (k) { fest[k] = c; frei.delete(k); }
+    });
+
+    // Gebiets-Mischung der Woche: was die datierten Fälle verbraucht haben, abziehen.
+    const uebrig = {};
+    woche.g.forEach(([g, n]) => { uebrig[g] = (uebrig[g] || 0) + n; });
+    Object.keys(fest).forEach(k => {
+      const g = gebietVon(fest[k]);
+      gebiet[k] = g;
+      if (uebrig[g] > 0) uebrig[g]--;
+    });
+    // Restliche Slots: Plan-Gebiet behalten, solange davon noch etwas übrig ist,
+    // sonst das nächste noch offene Gebiet der Woche.
+    const offen = [];
+    keys.filter(k => frei.has(k)).forEach(k => {
+      const g = basis[k];
+      if (uebrig[g] > 0) uebrig[g]--; else offen.push(k);
+    });
+    offen.forEach(k => {
+      const g = woche.g.map(([n]) => n).find(n => uebrig[n] > 0);
+      if (g) { gebiet[k] = g; uebrig[g]--; } else gebiet[k] = 'Reserve';
+    });
+    return {gebiet, fest};
   }
 
   // ══ Kalender-Baukasten · Anfang ═══════════════════════════════════
@@ -5826,12 +5962,16 @@
     const plan = {};
     const cases = (window.NOTION_DATA && window.NOTION_DATA.cases) || [];
     const proGebiet = {};
-    const datiert = {};            // 'YYYY-MM-DD|Gebiet' -> Fälle mit diesem Datum (auch erledigte)
+    const heute = new Date(); heute.setHours(0, 0, 0, 0);
+    const abMontag = montagVon(heute).getTime();
+    const abIso = isoTag(montagVon(heute));
     cases.forEach(c => {
       if (c.typ !== 'Hauptkurs') return;
       const g = (c.rechtsgebiet || []).map(planGebiet).find(x => FACH_VON_GEBIET[x]);
       if (!g) return;
-      if (c.datum) (datiert[c.datum + '|' + g] = datiert[c.datum + '|' + g] || []).push(c);
+      // Ab dieser Woche datierte Fälle liegen fest auf ihrem Tag (wochenPlan)
+      // und rücken nicht über die Fallnummer in andere Slots.
+      if (c.datum && c.datum >= abIso) return;
       if (c.status !== 'Nachbereitet') (proGebiet[g] = proGebiet[g] || []).push(c);
     });
     // Nummer hinter „Fall“ – auch bei „Fall01a“ oder „Fall11 (Wiederholung…)“
@@ -5840,26 +5980,21 @@
     Object.values(proGebiet).forEach(liste => liste.sort((x, y) =>
       (nr(x) - nr(y)) || String(x.title).localeCompare(String(y.title), 'de')));
 
-    const heute = new Date(); heute.setHours(0, 0, 0, 0);
-    const abMontag = montagVon(heute).getTime();
     W.forEach(w => {
       const mo = d(w.mo);
       if (mo.getTime() < abMontag || !w.g.length) return;
       const zuteilung = verteile(w);
+      const fest = wochenPlan(w, zuteilung).fest;
       TAGE.forEach((tag, idx) => {
         const tagDatum = new Date(mo); tagDatum.setDate(tagDatum.getDate() + idx);
-        const tagIso = isoTag(tagDatum);
         rasterFuer(w, tag).b.forEach((block, i) => {
           if (!block.f) return;
           const g = zuteilung[tag + '#' + i];
           if (!g) return;
-          // Bis einschließlich heute zuerst, was in Notion auf diesen Tag
-          // datiert ist – auch schon nachbereitete Fälle (mit ✓ im Gitter).
-          let c = tagDatum <= heute && (datiert[tagIso + '|' + g] || []).shift();
-          if (c) {
-            const pool = proGebiet[g] || [];
-            if (pool.includes(c)) pool.splice(pool.indexOf(c), 1);
-          } else if (tagDatum >= heute) {
+          // Was in Notion auf diesen Tag datiert ist, steht fest (erledigte
+          // mit ✓). Sonst ab heute der nächste offene Fall des Gebiets.
+          let c = fest[tag + '#' + i];
+          if (!c && tagDatum >= heute && g !== 'Reserve') {
             c = proGebiet[g] && proGebiet[g].shift();
           }
           if (c) plan[w.mo + '|' + tag + '#' + i] = c;
