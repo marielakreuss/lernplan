@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "20.11.2026 14:41",
+  "lastSync": "20.11.2026 14:40",
   "anki": {
     "reviewedToday": 17,
     "dueNow": 5359,
@@ -2709,7 +2709,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "UKK 2309 (Probestex) - abgegeben am 15.9.26",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 51,
       "datum": "2026-09-15",
       "rechtsgebiet": [
@@ -7112,7 +7112,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 176,
+    "nachbereitet": 177,
     "inBearbeitung": 18,
     "total": 352,
     "klkGesamt": 97,
