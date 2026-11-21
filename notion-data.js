@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.11.2026 16:16",
+  "lastSync": "21.11.2026 17:18",
   "anki": {
-    "reviewedToday": 44,
-    "dueNow": 5376,
+    "reviewedToday": 103,
+    "dueNow": 5352,
     "history": [
       {
         "date": "2025-09-29",
@@ -1359,13 +1359,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-21",
-        "count": 44
+        "count": 103
       }
     ],
     "stand": "2026-11-21"
   },
   "ankiFach": {
-    "stand": "21.11.2026 16:16",
+    "stand": "21.11.2026 17:18",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1376,12 +1376,12 @@ window.NOTION_DATA = {
         "faellig": 2002
       },
       "Öffentliches Recht": {
-        "total": 1003,
-        "neu": 23,
-        "lernen": 661,
+        "total": 1010,
+        "neu": 7,
+        "lernen": 682,
         "aufbau": 74,
-        "sitzt": 245,
-        "faellig": 895
+        "sitzt": 247,
+        "faellig": 880
       },
       "Strafrecht": {
         "total": 781,
@@ -1389,7 +1389,7 @@ window.NOTION_DATA = {
         "lernen": 633,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 714
+        "faellig": 705
       }
     }
   },
@@ -1422,23 +1422,38 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.11.2026 16:16",
+    "stand": "21.11.2026 17:18",
     "tage": [
       {
         "datum": "2026-11-21",
-        "karten": 27,
-        "neu": 20,
-        "angelegt": 0,
+        "karten": 69,
+        "neu": 43,
+        "angelegt": 7,
         "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 25
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 12
+          },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
             "n": 10
           },
           {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
             "n": 9
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 8
           },
           {
             "fach": "Strafrecht",
@@ -1447,18 +1462,8 @@ window.NOTION_DATA = {
           },
           {
             "fach": "Öffentliches Recht",
-            "gebiet": "3 Grundrechte",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
-            "n": 2
-          },
-          {
-            "fach": "Öffentliches Recht",
             "gebiet": "2 Staatsrecht",
-            "n": 1
+            "n": 2
           },
           {
             "fach": "Öffentliches Recht",
@@ -1469,14 +1474,27 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "UKK · 2309",
-            "n": 21
+            "n": 29
+          },
+          {
+            "name": "PolR · Fall 02",
+            "n": 15
           },
           {
             "name": "KommunalR · Fall 05",
-            "n": 3
+            "n": 11
+          },
+          {
+            "name": "StGB · Fall 10",
+            "n": 8
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "PolR · Fall 02",
+            "n": 7
+          }
+        ]
       },
       {
         "datum": "2026-11-20",
@@ -2237,7 +2255,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 60,
-    "nachbereitet": 169
+    "nachbereitet": 170
   },
   "cases": [
     {
@@ -6937,7 +6955,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SicherheitsR / PolizeiR Fall02",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 60,
       "datum": "2026-11-20",
       "rechtsgebiet": [
@@ -7192,8 +7210,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 177,
-    "inBearbeitung": 18,
+    "nachbereitet": 178,
+    "inBearbeitung": 17,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 39
