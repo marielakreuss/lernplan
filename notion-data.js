@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.11.2026 13:57",
+  "lastSync": "21.11.2026 15:13",
   "anki": {
-    "reviewedToday": 8,
-    "dueNow": 5378,
+    "reviewedToday": 21,
+    "dueNow": 5377,
     "history": [
       {
         "date": "2025-09-29",
@@ -1359,13 +1359,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-21",
-        "count": 9
+        "count": 21
       }
     ],
     "stand": "2026-11-21"
   },
   "ankiFach": {
-    "stand": "21.11.2026 14:11",
+    "stand": "21.11.2026 15:13",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1377,10 +1377,10 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 1003,
-        "neu": 37,
-        "lernen": 647,
+        "neu": 30,
+        "lernen": 655,
         "aufbau": 74,
-        "sitzt": 245,
+        "sitzt": 244,
         "faellig": 896
       },
       "Strafrecht": {
@@ -1422,17 +1422,22 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.11.2026 14:11",
+    "stand": "21.11.2026 15:13",
     "tage": [
       {
         "datum": "2026-11-21",
-        "karten": 8,
-        "neu": 6,
+        "karten": 17,
+        "neu": 13,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
+            "n": 6
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
             "n": 5
           },
           {
@@ -1444,12 +1449,27 @@ window.NOTION_DATA = {
             "fach": "Öffentliches Recht",
             "gebiet": "2 Staatsrecht",
             "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 1
           }
         ],
         "faelle": [
           {
             "name": "UKK · 2309",
-            "n": 5
+            "n": 13
           }
         ],
         "faelleAngelegt": []
