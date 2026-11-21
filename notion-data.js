@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.11.2026 15:13",
+  "lastSync": "21.11.2026 16:16",
   "anki": {
-    "reviewedToday": 21,
-    "dueNow": 5377,
+    "reviewedToday": 44,
+    "dueNow": 5376,
     "history": [
       {
         "date": "2025-09-29",
@@ -1359,13 +1359,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-21",
-        "count": 21
+        "count": 44
       }
     ],
     "stand": "2026-11-21"
   },
   "ankiFach": {
-    "stand": "21.11.2026 15:13",
+    "stand": "21.11.2026 16:16",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1377,11 +1377,11 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 1003,
-        "neu": 30,
-        "lernen": 655,
+        "neu": 23,
+        "lernen": 661,
         "aufbau": 74,
-        "sitzt": 244,
-        "faellig": 896
+        "sitzt": 245,
+        "faellig": 895
       },
       "Strafrecht": {
         "total": 781,
@@ -1422,23 +1422,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.11.2026 15:13",
+    "stand": "21.11.2026 16:16",
     "tage": [
       {
         "datum": "2026-11-21",
-        "karten": 17,
-        "neu": 13,
+        "karten": 27,
+        "neu": 20,
         "angelegt": 0,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 6
+            "n": 10
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 5
+            "n": 9
           },
           {
             "fach": "Strafrecht",
@@ -1447,17 +1447,17 @@ window.NOTION_DATA = {
           },
           {
             "fach": "Öffentliches Recht",
-            "gebiet": "2 Staatsrecht",
-            "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
             "gebiet": "3 Grundrechte",
-            "n": 1
+            "n": 2
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
             "n": 1
           },
           {
@@ -1469,7 +1469,11 @@ window.NOTION_DATA = {
         "faelle": [
           {
             "name": "UKK · 2309",
-            "n": 13
+            "n": 21
+          },
+          {
+            "name": "KommunalR · Fall 05",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
