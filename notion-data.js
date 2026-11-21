@@ -1,8 +1,8 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.11.2026 09:50",
+  "lastSync": "21.11.2026 14:11",
   "anki": {
-    "reviewedToday": 0,
+    "reviewedToday": 8,
     "dueNow": 5378,
     "history": [
       {
@@ -1355,13 +1355,17 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-20",
-        "count": 17
+        "count": 79
+      },
+      {
+        "date": "2026-11-21",
+        "count": 9
       }
     ],
     "stand": "2026-11-21"
   },
   "ankiFach": {
-    "stand": "21.11.2026 09:50",
+    "stand": "21.11.2026 14:11",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1373,16 +1377,16 @@ window.NOTION_DATA = {
       },
       "Öffentliches Recht": {
         "total": 1003,
-        "neu": 41,
-        "lernen": 645,
+        "neu": 37,
+        "lernen": 647,
         "aufbau": 74,
-        "sitzt": 243,
-        "faellig": 897
+        "sitzt": 245,
+        "faellig": 896
       },
       "Strafrecht": {
         "total": 781,
-        "neu": 40,
-        "lernen": 631,
+        "neu": 38,
+        "lernen": 633,
         "aufbau": 15,
         "sitzt": 95,
         "faellig": 714
@@ -1418,29 +1422,77 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.11.2026 09:50",
+    "stand": "21.11.2026 14:11",
     "tage": [
       {
+        "datum": "2026-11-21",
+        "karten": 8,
+        "neu": 6,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 5
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "UKK · 2309",
+            "n": 5
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
         "datum": "2026-11-20",
-        "karten": 10,
-        "neu": 1,
+        "karten": 57,
+        "neu": 39,
         "angelegt": 41,
         "gebiete": [
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR BT",
-            "n": 6
+            "n": 31
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 4
+            "n": 13
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 12
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 1
           }
         ],
         "faelle": [
           {
             "name": "StGB · Fall 10",
-            "n": 9
+            "n": 27
+          },
+          {
+            "name": "StrafR · 05",
+            "n": 21
+          },
+          {
+            "name": "SachenR · Fall 10",
+            "n": 7
           }
         ],
         "faelleAngelegt": [
