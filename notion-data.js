@@ -1,6 +1,6 @@
-// Automatisch generiert von sync-notion.py
+// Automatisch generiert von GitHub Actions
 window.NOTION_DATA = {
-  "lastSync": "21.11.2026 17:18",
+  "lastSync": "21.11.2026 23:58",
   "anki": {
     "reviewedToday": 103,
     "dueNow": 5352,
@@ -2255,7 +2255,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 60,
-    "nachbereitet": 170
+    "nachbereitet": 171
   },
   "cases": [
     {
@@ -3790,8 +3790,8 @@ window.NOTION_DATA = {
     {
       "title": "Strafrecht AT Fall12",
       "status": "In Bearbeitung",
-      "woche": 33,
-      "datum": "2026-05-13",
+      "woche": 61,
+      "datum": "2026-11-26",
       "rechtsgebiet": [
         "Strafrecht AT",
         "StrafR"
@@ -6491,8 +6491,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall20",
       "status": "Nicht nachbereitet",
-      "woche": 11,
-      "datum": "2025-12-09",
+      "woche": 61,
+      "datum": "2026-11-25",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6505,8 +6505,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall19",
       "status": "In Bearbeitung",
-      "woche": 11,
-      "datum": "2025-12-09",
+      "woche": 61,
+      "datum": "2026-11-24",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6519,8 +6519,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall18",
       "status": "In Bearbeitung",
-      "woche": 10,
-      "datum": "2025-12-02",
+      "woche": 61,
+      "datum": "2026-11-24",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6533,8 +6533,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall17",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 61,
+      "datum": "2026-11-24",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6547,8 +6547,8 @@ window.NOTION_DATA = {
     {
       "title": "SachenR Fall16",
       "status": "In Bearbeitung",
-      "woche": 9,
-      "datum": "2025-11-26",
+      "woche": 61,
+      "datum": "2026-11-24",
       "rechtsgebiet": [
         "SachenR"
       ],
@@ -6645,8 +6645,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall07",
       "status": "In Bearbeitung",
-      "woche": 7,
-      "datum": "2025-11-11",
+      "woche": 61,
+      "datum": "2026-11-27",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6659,8 +6659,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall06 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
-      "woche": null,
-      "datum": null,
+      "woche": 61,
+      "datum": "2026-11-27",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6673,8 +6673,8 @@ window.NOTION_DATA = {
     {
       "title": "SicherheitsR / PolizeiR Fall05 (Vertiefungsfall)",
       "status": "Nicht nachbereitet",
-      "woche": 60,
-      "datum": "2026-11-20",
+      "woche": 61,
+      "datum": "2026-11-27",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6686,9 +6686,9 @@ window.NOTION_DATA = {
     },
     {
       "title": "SicherheitsR / PolizeiR Fall04",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 60,
-      "datum": "2026-11-20",
+      "datum": "2026-11-21",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -6957,7 +6957,7 @@ window.NOTION_DATA = {
       "title": "SicherheitsR / PolizeiR Fall02",
       "status": "Nachbereitet",
       "woche": 60,
-      "datum": "2026-11-20",
+      "datum": "2026-11-21",
       "rechtsgebiet": [
         "SicherheitsR / PolizeiR"
       ],
@@ -7210,8 +7210,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 178,
-    "inBearbeitung": 17,
+    "nachbereitet": 179,
+    "inBearbeitung": 16,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 39
