@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "21.11.2026 23:58",
+  "lastSync": "22.11.2026 11:05",
   "anki": {
-    "reviewedToday": 103,
-    "dueNow": 5352,
+    "reviewedToday": 0,
+    "dueNow": 5416,
     "history": [
       {
         "date": "2025-09-29",
@@ -1362,10 +1362,10 @@ window.NOTION_DATA = {
         "count": 103
       }
     ],
-    "stand": "2026-11-21"
+    "stand": "2026-11-22"
   },
   "ankiFach": {
-    "stand": "21.11.2026 17:18",
+    "stand": "22.11.2026 11:05",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1373,15 +1373,15 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 2002
+        "faellig": 2004
       },
       "Öffentliches Recht": {
-        "total": 1010,
-        "neu": 7,
+        "total": 1024,
+        "neu": 21,
         "lernen": 682,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 880
+        "faellig": 933
       },
       "Strafrecht": {
         "total": 781,
@@ -1389,7 +1389,7 @@ window.NOTION_DATA = {
         "lernen": 633,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 705
+        "faellig": 714
       }
     }
   },
@@ -1422,13 +1422,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "21.11.2026 17:18",
+    "stand": "22.11.2026 11:05",
     "tage": [
       {
         "datum": "2026-11-21",
         "karten": 69,
         "neu": 43,
-        "angelegt": 7,
+        "angelegt": 21,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
@@ -1490,6 +1490,10 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": [
+          {
+            "name": "PolR · Fall 04",
+            "n": 14
+          },
           {
             "name": "PolR · Fall 02",
             "n": 7
@@ -2430,7 +2434,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/UKK-2312-3e5539e733aa8194bbd4eae8f6691303"
     },
     {
-      "title": "Konrad 7",
+      "title": "Konrad 7: Großdorf",
       "status": "Nicht nachbereitet",
       "woche": 60,
       "datum": "2026-11-21",
@@ -2439,7 +2443,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-7-3e5539e733aa81978f7bd13e82eb63d2"
+      "url": "https://app.notion.com/p/Konrad-7-Gro-dorf-3e5539e733aa81978f7bd13e82eb63d2"
     },
     {
       "title": "UKK 3212",
@@ -2637,7 +2641,7 @@ window.NOTION_DATA = {
       "url": "https://app.notion.com/p/KW-11-Ungebremste-Jungfernfahrt-3e5539e733aa81dabf5ac18632ae1cb6"
     },
     {
-      "title": "Konrad 8",
+      "title": "Konrad 8: Trubel in Bad Berg",
       "status": "Nicht nachbereitet",
       "woche": 63,
       "datum": "2026-12-12",
@@ -2646,7 +2650,7 @@ window.NOTION_DATA = {
       "typ": "Klausurenkurs",
       "bewertung": null,
       "abgegeben": false,
-      "url": "https://app.notion.com/p/Konrad-8-3e5539e733aa81db89b4d067d6c61143"
+      "url": "https://app.notion.com/p/Konrad-8-Trubel-in-Bad-Berg-3e5539e733aa81db89b4d067d6c61143"
     },
     {
       "title": "KW 20 - N.N.",
