@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.11.2026 10:24",
+  "lastSync": "23.11.2026 11:26",
   "anki": {
-    "reviewedToday": 16,
-    "dueNow": 5476,
+    "reviewedToday": 79,
+    "dueNow": 5440,
     "history": [
       {
         "date": "2025-09-29",
@@ -1335,19 +1335,19 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-14",
-        "count": 171
+        "count": 169
       },
       {
         "date": "2026-11-15",
-        "count": 47
+        "count": 46
       },
       {
         "date": "2026-11-16",
-        "count": 137
+        "count": 136
       },
       {
         "date": "2026-11-17",
-        "count": 96
+        "count": 95
       },
       {
         "date": "2026-11-18",
@@ -1367,13 +1367,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-23",
-        "count": 16
+        "count": 78
       }
     ],
     "stand": "2026-11-23"
   },
   "ankiFach": {
-    "stand": "23.11.2026 10:24",
+    "stand": "23.11.2026 11:26",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1381,15 +1381,15 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 2009
+        "faellig": 1981
       },
       "Öffentliches Recht": {
-        "total": 1027,
+        "total": 1026,
         "neu": 0,
-        "lernen": 706,
+        "lernen": 705,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 949
+        "faellig": 939
       },
       "Strafrecht": {
         "total": 781,
@@ -1397,7 +1397,7 @@ window.NOTION_DATA = {
         "lernen": 671,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 753
+        "faellig": 750
       }
     }
   },
@@ -1430,23 +1430,73 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.11.2026 10:24",
+    "stand": "23.11.2026 11:26",
     "tage": [
       {
         "datum": "2026-11-23",
-        "karten": 9,
+        "karten": 53,
         "neu": 8,
         "angelegt": 0,
         "gebiete": [
           {
-            "fach": "Öffentliches Recht",
-            "gebiet": "5 VerwaltungsR AT",
-            "n": 4
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 12
           },
           {
             "fach": "Öffentliches Recht",
             "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 10
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 8
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 7
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
             "n": 4
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "2 Staatsrecht",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 1
           },
           {
             "fach": "Öffentliches Recht",
@@ -1456,12 +1506,40 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
+            "name": "UKK · 2309",
+            "n": 8
+          },
+          {
+            "name": "StGB · Fall 10",
+            "n": 7
+          },
+          {
+            "name": "UKK · 1485",
+            "n": 6
+          },
+          {
+            "name": "UKK · 1488",
+            "n": 5
+          },
+          {
+            "name": "SachenR · Fall 10",
+            "n": 5
+          },
+          {
             "name": "PolR · Fall 04",
             "n": 5
           },
           {
+            "name": "ZR · 06",
+            "n": 4
+          },
+          {
             "name": "Konrad · 07",
             "n": 4
+          },
+          {
+            "name": "PolR · Fall 02",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -1777,7 +1855,7 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-11-17",
-        "karten": 74,
+        "karten": 73,
         "neu": 25,
         "angelegt": 25,
         "gebiete": [
@@ -1809,7 +1887,7 @@ window.NOTION_DATA = {
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 4
+            "n": 3
           },
           {
             "fach": "Öffentliches Recht",
@@ -1871,7 +1949,7 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-11-16",
-        "karten": 103,
+        "karten": 102,
         "neu": 43,
         "angelegt": 34,
         "gebiete": [
@@ -1913,7 +1991,7 @@ window.NOTION_DATA = {
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 6
+            "n": 5
           },
           {
             "fach": "Strafrecht",
@@ -1973,7 +2051,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "KommunalR · Fall 07",
-            "n": 7
+            "n": 6
           },
           {
             "name": "SachenR · Fall 06",
@@ -2001,7 +2079,7 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-11-15",
-        "karten": 44,
+        "karten": 43,
         "neu": 26,
         "angelegt": 35,
         "gebiete": [
@@ -2023,7 +2101,7 @@ window.NOTION_DATA = {
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 5
+            "n": 4
           },
           {
             "fach": "Zivilrecht",
@@ -2057,7 +2135,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "KommunalR · Fall 07",
-            "n": 7
+            "n": 6
           },
           {
             "name": "BGBAT · Fall 05",
@@ -2083,7 +2161,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "KommunalR · Fall 07",
-            "n": 7
+            "n": 6
           },
           {
             "name": "SachenR · Fall 06",
@@ -2101,9 +2179,9 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-11-14",
-        "karten": 101,
-        "neu": 51,
-        "angelegt": 17,
+        "karten": 100,
+        "neu": 50,
+        "angelegt": 16,
         "gebiete": [
           {
             "fach": "Strafrecht",
@@ -2118,7 +2196,7 @@ window.NOTION_DATA = {
           {
             "fach": "Öffentliches Recht",
             "gebiet": "5 VerwaltungsR AT",
-            "n": 14
+            "n": 13
           },
           {
             "fach": "Zivilrecht",
@@ -2173,7 +2251,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "ÖR · 07",
-            "n": 18
+            "n": 17
           },
           {
             "name": "UKK · 1487",
@@ -2211,7 +2289,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "ÖR · 07",
-            "n": 17
+            "n": 16
           }
         ]
       },
