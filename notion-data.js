@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "23.11.2026 00:31",
+  "lastSync": "23.11.2026 10:24",
   "anki": {
-    "reviewedToday": 0,
-    "dueNow": 5416,
+    "reviewedToday": 16,
+    "dueNow": 5476,
     "history": [
       {
         "date": "2025-09-29",
@@ -1360,12 +1360,20 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-21",
         "count": 103
+      },
+      {
+        "date": "2026-11-22",
+        "count": 67
+      },
+      {
+        "date": "2026-11-23",
+        "count": 16
       }
     ],
-    "stand": "2026-11-22"
+    "stand": "2026-11-23"
   },
   "ankiFach": {
-    "stand": "22.11.2026 14:21",
+    "stand": "23.11.2026 10:24",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1373,23 +1381,23 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 2004
+        "faellig": 2009
       },
       "Öffentliches Recht": {
         "total": 1027,
-        "neu": 24,
-        "lernen": 682,
+        "neu": 0,
+        "lernen": 706,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 933
+        "faellig": 949
       },
       "Strafrecht": {
         "total": 781,
-        "neu": 38,
-        "lernen": 633,
+        "neu": 0,
+        "lernen": 671,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 714
+        "faellig": 753
       }
     }
   },
@@ -1422,15 +1430,111 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "22.11.2026 14:21",
+    "stand": "23.11.2026 10:24",
     "tage": [
       {
+        "datum": "2026-11-23",
+        "karten": 9,
+        "neu": 8,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 4
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "PolR · Fall 04",
+            "n": 5
+          },
+          {
+            "name": "Konrad · 07",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
         "datum": "2026-11-22",
-        "karten": 0,
-        "neu": 0,
+        "karten": 54,
+        "neu": 16,
         "angelegt": 3,
-        "gebiete": [],
-        "faelle": [],
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 25
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 12
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 10
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 2
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "4 Staatshaftungsrecht",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "StrafR · 05",
+            "n": 21
+          },
+          {
+            "name": "StGB · Fall 10",
+            "n": 9
+          },
+          {
+            "name": "PolR · Fall 04",
+            "n": 9
+          },
+          {
+            "name": "SachenR · Fall 10",
+            "n": 7
+          },
+          {
+            "name": "PolR · Fall 02",
+            "n": 7
+          }
+        ],
         "faelleAngelegt": [
           {
             "name": "Konrad · 07",
@@ -2259,15 +2363,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-11-02",
-        "karten": 0,
-        "neu": 0,
-        "angelegt": 1,
-        "gebiete": [],
-        "faelle": [],
-        "faelleAngelegt": []
       }
     ]
   },
@@ -2471,7 +2566,7 @@ window.NOTION_DATA = {
       ],
       "fach": "Strafrecht",
       "typ": "Klausurenkurs",
-      "bewertung": null,
+      "bewertung": 5,
       "abgegeben": true,
       "url": "https://app.notion.com/p/UKK-3212-3e5539e733aa8197aaa5ea68463ba47c"
     },
