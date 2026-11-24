@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.11.2026 04:29",
+  "lastSync": "24.11.2026 10:09",
   "anki": {
-    "reviewedToday": 89,
-    "dueNow": 5431,
+    "reviewedToday": 15,
+    "dueNow": 5473,
     "history": [
       {
         "date": "2025-09-29",
@@ -1368,12 +1368,16 @@ window.NOTION_DATA = {
       {
         "date": "2026-11-23",
         "count": 88
+      },
+      {
+        "date": "2026-11-24",
+        "count": 15
       }
     ],
-    "stand": "2026-11-23"
+    "stand": "2026-11-24"
   },
   "ankiFach": {
-    "stand": "23.11.2026 12:29",
+    "stand": "24.11.2026 10:09",
     "faecher": {
       "Zivilrecht": {
         "total": 2239,
@@ -1381,7 +1385,7 @@ window.NOTION_DATA = {
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 1981
+        "faellig": 2009
       },
       "Öffentliches Recht": {
         "total": 1026,
@@ -1389,7 +1393,7 @@ window.NOTION_DATA = {
         "lernen": 705,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 935
+        "faellig": 953
       },
       "Strafrecht": {
         "total": 781,
@@ -1397,7 +1401,7 @@ window.NOTION_DATA = {
         "lernen": 671,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 750
+        "faellig": 746
       }
     }
   },
@@ -1430,8 +1434,42 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "23.11.2026 12:29",
+    "stand": "24.11.2026 10:09",
     "tage": [
+      {
+        "datum": "2026-11-24",
+        "karten": 12,
+        "neu": 0,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 7
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR AT",
+            "n": 4
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StPO",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "StrafR · 05",
+            "n": 7
+          },
+          {
+            "name": "StGB · Fall 10",
+            "n": 4
+          }
+        ],
+        "faelleAngelegt": []
+      },
       {
         "datum": "2026-11-23",
         "karten": 53,
@@ -2416,28 +2454,24 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-11-04",
-        "karten": 41,
+        "karten": 16,
         "neu": 0,
         "angelegt": 1,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 41
+            "n": 16
           }
         ],
         "faelle": [
           {
             "name": "SachenR · Fall 18",
-            "n": 16
+            "n": 6
           },
           {
             "name": "SachenR · Fall 19",
-            "n": 11
-          },
-          {
-            "name": "SachenR · Fall 13",
-            "n": 4
+            "n": 5
           }
         ],
         "faelleAngelegt": []
@@ -2486,7 +2520,10 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 60,
       "datum": "2026-11-19",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "SachenR",
+        "BGB AT"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -2534,11 +2571,15 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 61,
       "datum": "2026-11-26",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "SicherheitsR / PolizeiR",
+        "StaatshaftungsR",
+        "VerwaltungsR AT"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
-      "abgegeben": false,
+      "abgegeben": true,
       "url": "https://app.notion.com/p/KW-14-Brand-mit-Folgen-3e5539e733aa8153adecc93b204ca410"
     },
     {
@@ -7405,6 +7446,6 @@ window.NOTION_DATA = {
     "inBearbeitung": 16,
     "total": 352,
     "klkGesamt": 97,
-    "klkAbgegeben": 39
+    "klkAbgegeben": 40
   }
 };
