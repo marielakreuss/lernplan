@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.11.2026 10:09",
+  "lastSync": "24.11.2026 11:11",
   "anki": {
-    "reviewedToday": 15,
-    "dueNow": 5473,
+    "reviewedToday": 60,
+    "dueNow": 5438,
     "history": [
       {
         "date": "2025-09-29",
@@ -1363,7 +1363,7 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-22",
-        "count": 67
+        "count": 66
       },
       {
         "date": "2026-11-23",
@@ -1371,29 +1371,29 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-24",
-        "count": 15
+        "count": 60
       }
     ],
     "stand": "2026-11-24"
   },
   "ankiFach": {
-    "stand": "24.11.2026 10:09",
+    "stand": "24.11.2026 11:11",
     "faecher": {
       "Zivilrecht": {
-        "total": 2239,
-        "neu": 0,
+        "total": 2241,
+        "neu": 2,
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
-        "faellig": 2009
+        "faellig": 1996
       },
       "Öffentliches Recht": {
-        "total": 1026,
+        "total": 1025,
         "neu": 0,
-        "lernen": 705,
+        "lernen": 704,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 953
+        "faellig": 933
       },
       "Strafrecht": {
         "total": 781,
@@ -1401,7 +1401,7 @@ window.NOTION_DATA = {
         "lernen": 671,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 746
+        "faellig": 744
       }
     }
   },
@@ -1434,14 +1434,24 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "24.11.2026 10:09",
+    "stand": "24.11.2026 11:11",
     "tage": [
       {
         "datum": "2026-11-24",
-        "karten": 12,
+        "karten": 44,
         "neu": 0,
-        "angelegt": 0,
+        "angelegt": 2,
         "gebiete": [
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 12
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 8
+          },
           {
             "fach": "Strafrecht",
             "gebiet": "StrafR BT",
@@ -1453,19 +1463,70 @@ window.NOTION_DATA = {
             "n": 4
           },
           {
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 3
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "6 ZPO I",
+            "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 2
+          },
+          {
             "fach": "Strafrecht",
             "gebiet": "StPO",
+            "n": 1
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "3 Grundrechte",
+            "n": 1
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "7 BauR",
             "n": 1
           }
         ],
         "faelle": [
           {
+            "name": "StGB · Fall 10",
+            "n": 10
+          },
+          {
             "name": "StrafR · 05",
             "n": 7
           },
           {
-            "name": "StGB · Fall 10",
+            "name": "PolR · Fall 04",
+            "n": 7
+          },
+          {
+            "name": "PolR · Fall 02",
+            "n": 6
+          },
+          {
+            "name": "SachenR · Fall 10",
             "n": 4
+          },
+          {
+            "name": "UKK · 1485",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -1584,8 +1645,8 @@ window.NOTION_DATA = {
       },
       {
         "datum": "2026-11-22",
-        "karten": 54,
-        "neu": 16,
+        "karten": 53,
+        "neu": 15,
         "angelegt": 3,
         "gebiete": [
           {
@@ -1622,11 +1683,6 @@ window.NOTION_DATA = {
             "fach": "Öffentliches Recht",
             "gebiet": "3 Grundrechte",
             "n": 1
-          },
-          {
-            "fach": "Öffentliches Recht",
-            "gebiet": "4 Staatshaftungsrecht",
-            "n": 1
           }
         ],
         "faelle": [
@@ -1648,7 +1704,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "PolR · Fall 02",
-            "n": 7
+            "n": 6
           }
         ],
         "faelleAngelegt": [
@@ -1662,7 +1718,7 @@ window.NOTION_DATA = {
         "datum": "2026-11-21",
         "karten": 69,
         "neu": 43,
-        "angelegt": 21,
+        "angelegt": 20,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
@@ -1730,7 +1786,7 @@ window.NOTION_DATA = {
           },
           {
             "name": "PolR · Fall 02",
-            "n": 7
+            "n": 6
           }
         ]
       },
