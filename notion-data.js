@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "24.11.2026 16:40",
+  "lastSync": "24.11.2026 17:43",
   "anki": {
     "reviewedToday": 60,
     "dueNow": 5438,
@@ -1377,11 +1377,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-24"
   },
   "ankiFach": {
-    "stand": "24.11.2026 16:40",
+    "stand": "24.11.2026 17:43",
     "faecher": {
       "Zivilrecht": {
-        "total": 2277,
-        "neu": 38,
+        "total": 2288,
+        "neu": 49,
         "lernen": 1052,
         "aufbau": 134,
         "sitzt": 1053,
@@ -1434,13 +1434,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "24.11.2026 16:40",
+    "stand": "24.11.2026 17:43",
     "tage": [
       {
         "datum": "2026-11-24",
         "karten": 44,
         "neu": 0,
-        "angelegt": 38,
+        "angelegt": 49,
         "gebiete": [
           {
             "fach": "Öffentliches Recht",
@@ -1532,19 +1532,23 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "SachenR · Fall 19",
-            "n": 12
+            "n": 14
+          },
+          {
+            "name": "KLK · 2160",
+            "n": 13
           },
           {
             "name": "SachenR · Fall 17",
             "n": 11
           },
           {
-            "name": "SachenR · Fall 18",
-            "n": 8
-          },
-          {
             "name": "SachenR · Fall 16",
             "n": 7
+          },
+          {
+            "name": "SachenR · Fall 18",
+            "n": 4
           }
         ]
       },
@@ -2539,12 +2543,12 @@ window.NOTION_DATA = {
         ],
         "faelle": [
           {
-            "name": "SachenR · Fall 18",
+            "name": "SachenR · Fall 19",
             "n": 5
           },
           {
-            "name": "SachenR · Fall 19",
-            "n": 5
+            "name": "SachenR · Fall 18",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
@@ -2553,7 +2557,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 61,
-    "nachbereitet": 174
+    "nachbereitet": 175
   },
   "cases": [
     {
@@ -2739,7 +2743,10 @@ window.NOTION_DATA = {
       "status": "Nicht nachbereitet",
       "woche": 60,
       "datum": "2026-11-21",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "VerwaltungsR AT",
+        "BauR"
+      ],
       "fach": "Öffentliches Recht",
       "typ": "Klausurenkurs",
       "bewertung": null,
@@ -3282,10 +3289,14 @@ window.NOTION_DATA = {
     },
     {
       "title": "KLK 2160 - abgegeben am 8.8.2026",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 45,
       "datum": "2026-08-08",
-      "rechtsgebiet": [],
+      "rechtsgebiet": [
+        "SchuldR BT 2",
+        "SachenR",
+        "BGB AT"
+      ],
       "fach": "Zivilrecht",
       "typ": "Klausurenkurs",
       "bewertung": 9,
@@ -6809,7 +6820,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall19",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 61,
       "datum": "2026-11-24",
       "rechtsgebiet": [
@@ -7515,8 +7526,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 182,
-    "inBearbeitung": 14,
+    "nachbereitet": 184,
+    "inBearbeitung": 13,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 40
