@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.11.2026 16:05",
+  "lastSync": "26.11.2026 21:02",
   "anki": {
-    "reviewedToday": 60,
-    "dueNow": 5438,
+    "reviewedToday": 5,
+    "dueNow": 5495,
     "history": [
       {
         "date": "2025-09-29",
@@ -1371,21 +1371,25 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-24",
-        "count": 60
+        "count": 84
+      },
+      {
+        "date": "2026-11-26",
+        "count": 5
       }
     ],
-    "stand": "2026-11-24"
+    "stand": "2026-11-26"
   },
   "ankiFach": {
-    "stand": "24.11.2026 17:43",
+    "stand": "26.11.2026 21:02",
     "faecher": {
       "Zivilrecht": {
-        "total": 2288,
-        "neu": 49,
-        "lernen": 1052,
-        "aufbau": 134,
+        "total": 2289,
+        "neu": 33,
+        "lernen": 1068,
+        "aufbau": 135,
         "sitzt": 1053,
-        "faellig": 1996
+        "faellig": 2023
       },
       "Öffentliches Recht": {
         "total": 1025,
@@ -1393,7 +1397,7 @@ window.NOTION_DATA = {
         "lernen": 704,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 933
+        "faellig": 953
       },
       "Strafrecht": {
         "total": 781,
@@ -1401,7 +1405,7 @@ window.NOTION_DATA = {
         "lernen": 671,
         "aufbau": 15,
         "sitzt": 95,
-        "faellig": 744
+        "faellig": 754
       }
     }
   },
@@ -1434,23 +1438,48 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "24.11.2026 17:43",
+    "stand": "26.11.2026 21:02",
     "tage": [
       {
-        "datum": "2026-11-24",
-        "karten": 44,
-        "neu": 0,
-        "angelegt": 49,
+        "datum": "2026-11-26",
+        "karten": 5,
+        "neu": 1,
+        "angelegt": 1,
         "gebiete": [
           {
-            "fach": "Öffentliches Recht",
-            "gebiet": "8 Polizei- und SicherheitsR",
-            "n": 12
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 3
           },
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
-            "n": 8
+            "n": 2
+          }
+        ],
+        "faelle": [
+          {
+            "name": "SachenR · Fall 17",
+            "n": 3
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
+        "datum": "2026-11-24",
+        "karten": 65,
+        "neu": 17,
+        "angelegt": 49,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 23
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 12
           },
           {
             "fach": "Strafrecht",
@@ -1458,19 +1487,24 @@ window.NOTION_DATA = {
             "n": 7
           },
           {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 6
+          },
+          {
             "fach": "Strafrecht",
             "gebiet": "StrafR AT",
             "n": 4
           },
           {
-            "fach": "Öffentliches Recht",
-            "gebiet": "6 KommunalR",
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
             "n": 3
           },
           {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 2
+            "fach": "Öffentliches Recht",
+            "gebiet": "6 KommunalR",
+            "n": 3
           },
           {
             "fach": "Zivilrecht",
@@ -1485,11 +1519,6 @@ window.NOTION_DATA = {
           {
             "fach": "Strafrecht",
             "gebiet": "StPO",
-            "n": 1
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
             "n": 1
           },
           {
@@ -1509,7 +1538,15 @@ window.NOTION_DATA = {
             "n": 10
           },
           {
+            "name": "SachenR · Fall 17",
+            "n": 10
+          },
+          {
             "name": "StrafR · 05",
+            "n": 7
+          },
+          {
+            "name": "SachenR · Fall 16",
             "n": 7
           },
           {
@@ -2492,66 +2529,6 @@ window.NOTION_DATA = {
           }
         ],
         "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-11-05",
-        "karten": 46,
-        "neu": 0,
-        "angelegt": 0,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "1 BGB AT",
-            "n": 46
-          }
-        ],
-        "faelle": [
-          {
-            "name": "BGBAT · Fall 16",
-            "n": 6
-          },
-          {
-            "name": "BGBAT · Fall 18",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 15",
-            "n": 5
-          },
-          {
-            "name": "SchuldRBT2 · Fall 01",
-            "n": 3
-          },
-          {
-            "name": "SchuldRBT2 · Fall 06",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
-      },
-      {
-        "datum": "2026-11-04",
-        "karten": 16,
-        "neu": 0,
-        "angelegt": 1,
-        "gebiete": [
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 16
-          }
-        ],
-        "faelle": [
-          {
-            "name": "SachenR · Fall 19",
-            "n": 5
-          },
-          {
-            "name": "SachenR · Fall 18",
-            "n": 3
-          }
-        ],
-        "faelleAngelegt": []
       }
     ]
   },
@@ -2645,7 +2622,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "KW 14 - Brand mit Folgen",
-      "status": "Nicht nachbereitet",
+      "status": "In Bearbeitung",
       "woche": 61,
       "datum": "2026-11-26",
       "rechtsgebiet": [
@@ -7527,7 +7504,7 @@ window.NOTION_DATA = {
   ],
   "stats": {
     "nachbereitet": 184,
-    "inBearbeitung": 13,
+    "inBearbeitung": 14,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 40
