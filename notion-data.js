@@ -1,6 +1,6 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.11.2026 21:02",
+  "lastSync": "26.11.2026 22:04",
   "anki": {
     "reviewedToday": 5,
     "dueNow": 5495,
@@ -1381,11 +1381,11 @@ window.NOTION_DATA = {
     "stand": "2026-11-26"
   },
   "ankiFach": {
-    "stand": "26.11.2026 21:02",
+    "stand": "26.11.2026 22:04",
     "faecher": {
       "Zivilrecht": {
-        "total": 2289,
-        "neu": 33,
+        "total": 2290,
+        "neu": 34,
         "lernen": 1068,
         "aufbau": 135,
         "sitzt": 1053,
@@ -1438,13 +1438,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.11.2026 21:02",
+    "stand": "26.11.2026 22:04",
     "tage": [
       {
         "datum": "2026-11-26",
         "karten": 5,
         "neu": 1,
-        "angelegt": 1,
+        "angelegt": 2,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -2534,7 +2534,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 61,
-    "nachbereitet": 175
+    "nachbereitet": 176
   },
   "cases": [
     {
@@ -6783,7 +6783,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SachenR Fall20",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 61,
       "datum": "2026-11-25",
       "rechtsgebiet": [
@@ -7503,7 +7503,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 184,
+    "nachbereitet": 185,
     "inBearbeitung": 14,
     "total": 352,
     "klkGesamt": 97,
