@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.11.2026 02:31",
+  "lastSync": "27.11.2026 10:28",
   "anki": {
-    "reviewedToday": 62,
-    "dueNow": 5492,
+    "reviewedToday": 26,
+    "dueNow": 5532,
     "history": [
       {
         "date": "2025-09-29",
@@ -1379,21 +1379,21 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-27",
-        "count": 23
+        "count": 49
       }
     ],
     "stand": "2026-11-27"
   },
   "ankiFach": {
-    "stand": "27.11.2026 03:22",
+    "stand": "27.11.2026 10:28",
     "faecher": {
       "Zivilrecht": {
         "total": 2290,
         "neu": 5,
-        "lernen": 1097,
-        "aufbau": 135,
-        "sitzt": 1053,
-        "faellig": 2023
+        "lernen": 1100,
+        "aufbau": 136,
+        "sitzt": 1049,
+        "faellig": 2043
       },
       "Öffentliches Recht": {
         "total": 1025,
@@ -1401,7 +1401,7 @@ window.NOTION_DATA = {
         "lernen": 704,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 953
+        "faellig": 960
       },
       "Strafrecht": {
         "total": 788,
@@ -1409,7 +1409,7 @@ window.NOTION_DATA = {
         "lernen": 677,
         "aufbau": 15,
         "sitzt": 96,
-        "faellig": 751
+        "faellig": 762
       }
     }
   },
@@ -1442,14 +1442,19 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.11.2026 03:22",
+    "stand": "27.11.2026 10:28",
     "tage": [
       {
         "datum": "2026-11-27",
-        "karten": 23,
+        "karten": 43,
         "neu": 14,
         "angelegt": 0,
         "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 21
+          },
           {
             "fach": "Zivilrecht",
             "gebiet": "3 SachenR",
@@ -1464,11 +1469,6 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 2
-          },
-          {
-            "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR AT",
-            "n": 1
           }
         ],
         "faelle": [
@@ -1483,6 +1483,18 @@ window.NOTION_DATA = {
           {
             "name": "SachenR · Fall 17",
             "n": 6
+          },
+          {
+            "name": "SchuldRAT · Fall 11",
+            "n": 3
+          },
+          {
+            "name": "SchuldRAT · Fall 18",
+            "n": 3
+          },
+          {
+            "name": "SchuldRBT1 · Fall 01",
+            "n": 3
           }
         ],
         "faelleAngelegt": []
