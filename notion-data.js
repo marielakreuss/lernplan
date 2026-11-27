@@ -1,8 +1,8 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.11.2026 11:31",
+  "lastSync": "27.11.2026 14:31",
   "anki": {
-    "reviewedToday": 35,
+    "reviewedToday": 59,
     "dueNow": 5527,
     "history": [
       {
@@ -1379,13 +1379,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-27",
-        "count": 58
+        "count": 82
       }
     ],
     "stand": "2026-11-27"
   },
   "ankiFach": {
-    "stand": "27.11.2026 11:31",
+    "stand": "27.11.2026 14:31",
     "faecher": {
       "Zivilrecht": {
         "total": 2290,
@@ -1396,9 +1396,9 @@ window.NOTION_DATA = {
         "faellig": 2040
       },
       "Öffentliches Recht": {
-        "total": 1032,
-        "neu": 7,
-        "lernen": 704,
+        "total": 1042,
+        "neu": 0,
+        "lernen": 721,
         "aufbau": 74,
         "sitzt": 247,
         "faellig": 960
@@ -1442,18 +1442,23 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.11.2026 11:31",
+    "stand": "27.11.2026 14:31",
     "tage": [
       {
         "datum": "2026-11-27",
-        "karten": 43,
-        "neu": 14,
-        "angelegt": 8,
+        "karten": 60,
+        "neu": 31,
+        "angelegt": 18,
         "gebiete": [
           {
             "fach": "Zivilrecht",
             "gebiet": "2 SchuldR AT",
             "n": 21
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "8 Polizei- und SicherheitsR",
+            "n": 16
           },
           {
             "fach": "Zivilrecht",
@@ -1469,9 +1474,18 @@ window.NOTION_DATA = {
             "fach": "Zivilrecht",
             "gebiet": "1 BGB AT",
             "n": 2
+          },
+          {
+            "fach": "Öffentliches Recht",
+            "gebiet": "5 VerwaltungsR AT",
+            "n": 1
           }
         ],
         "faelle": [
+          {
+            "name": "PolR · Fall 05",
+            "n": 17
+          },
           {
             "name": "KLK · 2160",
             "n": 7
@@ -1500,7 +1514,7 @@ window.NOTION_DATA = {
         "faelleAngelegt": [
           {
             "name": "PolR · Fall 05",
-            "n": 7
+            "n": 17
           }
         ]
       },
@@ -2633,7 +2647,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 61,
-    "nachbereitet": 177
+    "nachbereitet": 178
   },
   "cases": [
     {
@@ -7064,7 +7078,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "SicherheitsR / PolizeiR Fall05 (Vertiefungsfall)",
-      "status": "Nicht nachbereitet",
+      "status": "Nachbereitet",
       "woche": 61,
       "datum": "2026-11-27",
       "rechtsgebiet": [
@@ -7602,7 +7616,7 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 186,
+    "nachbereitet": 187,
     "inBearbeitung": 13,
     "total": 352,
     "klkGesamt": 97,
