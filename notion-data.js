@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "26.11.2026 23:07",
+  "lastSync": "27.11.2026 03:22",
   "anki": {
-    "reviewedToday": 5,
-    "dueNow": 5495,
+    "reviewedToday": 62,
+    "dueNow": 5492,
     "history": [
       {
         "date": "2025-09-29",
@@ -1375,18 +1375,22 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-26",
-        "count": 5
+        "count": 39
+      },
+      {
+        "date": "2026-11-27",
+        "count": 23
       }
     ],
-    "stand": "2026-11-26"
+    "stand": "2026-11-27"
   },
   "ankiFach": {
-    "stand": "26.11.2026 23:07",
+    "stand": "27.11.2026 03:22",
     "faecher": {
       "Zivilrecht": {
         "total": 2290,
-        "neu": 34,
-        "lernen": 1068,
+        "neu": 5,
+        "lernen": 1097,
         "aufbau": 135,
         "sitzt": 1053,
         "faellig": 2023
@@ -1401,11 +1405,11 @@ window.NOTION_DATA = {
       },
       "Strafrecht": {
         "total": 788,
-        "neu": 7,
-        "lernen": 671,
+        "neu": 0,
+        "lernen": 677,
         "aufbau": 15,
-        "sitzt": 95,
-        "faellig": 754
+        "sitzt": 96,
+        "faellig": 751
       }
     }
   },
@@ -1438,26 +1442,99 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "26.11.2026 23:07",
+    "stand": "27.11.2026 03:22",
     "tage": [
       {
+        "datum": "2026-11-27",
+        "karten": 23,
+        "neu": 14,
+        "angelegt": 0,
+        "gebiete": [
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "3 SachenR",
+            "n": 15
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 5
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "1 BGB AT",
+            "n": 2
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR AT",
+            "n": 1
+          }
+        ],
+        "faelle": [
+          {
+            "name": "KLK · 2160",
+            "n": 7
+          },
+          {
+            "name": "SachenR · Fall 19",
+            "n": 7
+          },
+          {
+            "name": "SachenR · Fall 17",
+            "n": 6
+          }
+        ],
+        "faelleAngelegt": []
+      },
+      {
         "datum": "2026-11-26",
-        "karten": 5,
-        "neu": 1,
+        "karten": 36,
+        "neu": 23,
         "angelegt": 9,
         "gebiete": [
           {
             "fach": "Zivilrecht",
-            "gebiet": "2 SchuldR BT",
-            "n": 3
+            "gebiet": "3 SachenR",
+            "n": 17
+          },
+          {
+            "fach": "Strafrecht",
+            "gebiet": "StrafR BT",
+            "n": 10
           },
           {
             "fach": "Zivilrecht",
-            "gebiet": "3 SachenR",
-            "n": 2
+            "gebiet": "1 BGB AT",
+            "n": 5
+          },
+          {
+            "fach": "Zivilrecht",
+            "gebiet": "2 SchuldR BT",
+            "n": 4
           }
         ],
         "faelle": [
+          {
+            "name": "StGB · Fall 12",
+            "n": 7
+          },
+          {
+            "name": "SachenR · Fall 16",
+            "n": 7
+          },
+          {
+            "name": "SachenR · Fall 19",
+            "n": 7
+          },
+          {
+            "name": "KLK · 2160",
+            "n": 4
+          },
+          {
+            "name": "SachenR · Fall 18",
+            "n": 4
+          },
           {
             "name": "SachenR · Fall 17",
             "n": 3
@@ -2539,7 +2616,7 @@ window.NOTION_DATA = {
   },
   "rhythmCheck": {
     "currentWeek": 61,
-    "nachbereitet": 176
+    "nachbereitet": 177
   },
   "cases": [
     {
@@ -4087,7 +4164,7 @@ window.NOTION_DATA = {
     },
     {
       "title": "Strafrecht AT Fall12",
-      "status": "In Bearbeitung",
+      "status": "Nachbereitet",
       "woche": 61,
       "datum": "2026-11-26",
       "rechtsgebiet": [
@@ -7508,8 +7585,8 @@ window.NOTION_DATA = {
     }
   ],
   "stats": {
-    "nachbereitet": 185,
-    "inBearbeitung": 14,
+    "nachbereitet": 186,
+    "inBearbeitung": 13,
     "total": 352,
     "klkGesamt": 97,
     "klkAbgegeben": 40
