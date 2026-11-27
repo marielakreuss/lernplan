@@ -1,9 +1,9 @@
 // Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "27.11.2026 10:28",
+  "lastSync": "27.11.2026 11:31",
   "anki": {
-    "reviewedToday": 26,
-    "dueNow": 5532,
+    "reviewedToday": 35,
+    "dueNow": 5527,
     "history": [
       {
         "date": "2025-09-29",
@@ -1379,13 +1379,13 @@ window.NOTION_DATA = {
       },
       {
         "date": "2026-11-27",
-        "count": 49
+        "count": 58
       }
     ],
     "stand": "2026-11-27"
   },
   "ankiFach": {
-    "stand": "27.11.2026 10:28",
+    "stand": "27.11.2026 11:31",
     "faecher": {
       "Zivilrecht": {
         "total": 2290,
@@ -1393,19 +1393,19 @@ window.NOTION_DATA = {
         "lernen": 1100,
         "aufbau": 136,
         "sitzt": 1049,
-        "faellig": 2043
+        "faellig": 2040
       },
       "Öffentliches Recht": {
-        "total": 1025,
-        "neu": 0,
+        "total": 1032,
+        "neu": 7,
         "lernen": 704,
         "aufbau": 74,
         "sitzt": 247,
         "faellig": 960
       },
       "Strafrecht": {
-        "total": 788,
-        "neu": 0,
+        "total": 789,
+        "neu": 1,
         "lernen": 677,
         "aufbau": 15,
         "sitzt": 96,
@@ -1442,13 +1442,13 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.11.2026 10:28",
+    "stand": "27.11.2026 11:31",
     "tage": [
       {
         "datum": "2026-11-27",
         "karten": 43,
         "neu": 14,
-        "angelegt": 0,
+        "angelegt": 8,
         "gebiete": [
           {
             "fach": "Zivilrecht",
@@ -1497,7 +1497,12 @@ window.NOTION_DATA = {
             "n": 3
           }
         ],
-        "faelleAngelegt": []
+        "faelleAngelegt": [
+          {
+            "name": "PolR · Fall 05",
+            "n": 7
+          }
+        ]
       },
       {
         "datum": "2026-11-26",
