@@ -1,9 +1,9 @@
-// Automatisch generiert von GitHub Actions
+// Automatisch generiert von sync-notion.py
 window.NOTION_DATA = {
-  "lastSync": "28.11.2026 02:20",
+  "lastSync": "28.11.2026 09:26",
   "anki": {
-    "reviewedToday": 59,
-    "dueNow": 5527,
+    "reviewedToday": 0,
+    "dueNow": 5555,
     "history": [
       {
         "date": "2025-09-29",
@@ -1382,10 +1382,10 @@ window.NOTION_DATA = {
         "count": 82
       }
     ],
-    "stand": "2026-11-27"
+    "stand": "2026-11-28"
   },
   "ankiFach": {
-    "stand": "27.11.2026 14:31",
+    "stand": "28.11.2026 09:26",
     "faecher": {
       "Zivilrecht": {
         "total": 2290,
@@ -1393,7 +1393,7 @@ window.NOTION_DATA = {
         "lernen": 1100,
         "aufbau": 136,
         "sitzt": 1049,
-        "faellig": 2040
+        "faellig": 2050
       },
       "Öffentliches Recht": {
         "total": 1042,
@@ -1401,7 +1401,7 @@ window.NOTION_DATA = {
         "lernen": 721,
         "aufbau": 74,
         "sitzt": 247,
-        "faellig": 960
+        "faellig": 977
       },
       "Strafrecht": {
         "total": 789,
@@ -1409,7 +1409,7 @@ window.NOTION_DATA = {
         "lernen": 677,
         "aufbau": 15,
         "sitzt": 96,
-        "faellig": 762
+        "faellig": 763
       }
     }
   },
@@ -1442,7 +1442,7 @@ window.NOTION_DATA = {
     ]
   },
   "ankiVerlauf": {
-    "stand": "27.11.2026 14:31",
+    "stand": "28.11.2026 09:26",
     "tage": [
       {
         "datum": "2026-11-27",
